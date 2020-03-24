@@ -1,1 +1,1 @@
-# covid19japan-data
+Data repository for covid19japan.com
