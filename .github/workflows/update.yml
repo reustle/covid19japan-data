@@ -26,6 +26,6 @@ jobs:
           author_name: Alastair Tse
           author_email: alastair@liquidx.net
           message: "Update Summary Data"
-          add: "*.json"
+          add: "summary/*"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
