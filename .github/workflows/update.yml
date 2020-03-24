@@ -3,14 +3,22 @@ on: [push]
 
 jobs:
   summarize:
-    name: Summarize
+    name: summarize
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - name: checkout
+        uses: actions/checkout@v1
 
-      - name: Generate Summary
+      - name: summarize
         run: |
           cd $GITHUB_WORKSPACE
           npm install
           node index.js
       
+      - name: commit and push
+        uses: stefanzweifel/git-auto-commit-action@v4.1.1        
+        with:
+          commit_message: Update Summary
+          branch: ${{ github.head_ref }}
+          file_pattern: summary/\*.json
+          
