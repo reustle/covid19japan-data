@@ -1,6 +1,9 @@
 const moment = require('moment')
 
-const fetch_patient_data = require('./src/fetch_patient_data.js')
+const FetchPatientData = require('./src/fetch_patient_data.js')
+const Summarize = require('./src/summarize.js')
+
 const dateString = moment().format('YYYY_MM_DD')
-fetch_patient_data.run(`./patient_data/${dateString}.json`)
+//FetchPatientData.fetchPatientData(`./patient_data/${dateString}.json`)
+Summarize.summarize(`./patient_data/${dateString}.json`, `./summary/${dateString}.json`)
 

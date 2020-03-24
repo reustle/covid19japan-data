@@ -79,7 +79,7 @@ const postProcessData = (rawData) => {
 }
 
 
-async function run(destinationFilename) {
+async function fetchPatientData(destinationFilename) {
   console.log('Fetching data...')
   drive({sheet: SHEET, tab: SHEET_PATIENT_DATA_TAB})
     .then(db => {
@@ -87,4 +87,4 @@ async function run(destinationFilename) {
     })
 }
 
-exports.run = run;
+exports.fetchPatientData = fetchPatientData;
