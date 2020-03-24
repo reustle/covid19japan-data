@@ -1,0 +1,945 @@
+{
+  "prefectures": [
+    [
+      "Tokyo",
+      {
+        "count": 179,
+        "cruisePassenger": 0,
+        "cruiseWorker": 7,
+        "deaths": 4,
+        "progression": [],
+        "cityCounts": {
+          "Tokyo": 49,
+          "Suginami": 1,
+          "Adachi": 3,
+          "Nerima": 1
+        }
+      }
+    ],
+    [
+      "Hokkaido",
+      {
+        "count": 163,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 5,
+        "progression": [],
+        "cityCounts": {
+          "Sapporo": 70,
+          "Nanae, Oshima": 1,
+          "Nakafurano": 2,
+          "Chitose, Ishikari": 2,
+          "Iburi": 3,
+          "Nemuro": 1,
+          "Asahikawa": 9,
+          "Ebetsu": 1,
+          "Hakodate": 3,
+          "Shiriuchi, Oshima": 1,
+          "Kitami, Okhotsk": 7,
+          "Kamikawa": 4,
+          "Biei, Kamikawa": 3,
+          "Kushiro": 7,
+          "Ishikari": 7,
+          "Okhotsk": 6,
+          "Hidaka": 2,
+          "Okhotsk ": 4,
+          "Akkeshi, Kushiro": 1,
+          "Takikawa, Sorachi": 1,
+          "Tokachi": 1,
+          "Setana, Hiyama": 3,
+          "Yakumo, Oshima": 1,
+          "Kikonai, Oshima": 1,
+          "Fukagawa, Sorachiso": 1,
+          "Nakafurano, Kamikawa": 1,
+          "Tomakomai": 2,
+          "Sorachi": 4,
+          "Sorachi Region": 1,
+          "Okhotsk (Seaside)": 5,
+          "Otaru": 3
+        }
+      }
+    ],
+    [
+      "Aichi",
+      {
+        "count": 150,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 12,
+        "progression": [],
+        "cityCounts": {
+          "Nagoya": 108,
+          "Owari": 11,
+          "Gamagori, Mikawa": 4,
+          "Mikawa": 1,
+          "Okazaki": 3,
+          "Ichinomiya": 3,
+          "Toyota": 1,
+          "Handa": 1,
+          "Kiyosu": 1,
+          "Taketoyo": 1,
+          "Kasugai": 1,
+          "Konan": 1,
+          "Chita": 2,
+          "Toyokawa": 1
+        }
+      }
+    ],
+    [
+      "Osaka",
+      {
+        "count": 132,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 2,
+        "progression": [],
+        "cityCounts": {
+          "Osaka": 48,
+          "HigashiOsaka": 1,
+          "Daito": 4,
+          "Sakai": 3,
+          "Takatsuki": 3,
+          "Suita": 10,
+          "Toyonaka": 8,
+          "Higashiosaka": 3,
+          "Minoo": 1,
+          "Kadoma": 2,
+          "Settsu": 1,
+          "Ibaraki": 3,
+          "Moriguchi": 1,
+          "Yao": 8,
+          "Higashi Osaka": 1,
+          "Kaizuka": 1,
+          "Hirakata": 4,
+          "Ikeda": 2,
+          "Matsuhara": 1,
+          "Izumi": 2,
+          "Izumisano": 2,
+          "Osaka city": 2
+        }
+      }
+    ],
+    [
+      "Hyogo",
+      {
+        "count": 113,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 6,
+        "progression": [],
+        "cityCounts": {
+          "Nishinomiya": 4,
+          "Kobe": 26,
+          "Fukusaki": 1,
+          "Himeji": 14,
+          "Itami": 24,
+          "Mitashi": 1,
+          "Tamba": 1,
+          "HImeji": 2,
+          "Amagasaki": 6,
+          "Takarazuka": 13,
+          "Ashiya": 4,
+          "Kakogawa": 1,
+          "Mita": 1,
+          "Kasai": 1,
+          "Nishimiya": 1,
+          "Tokyo": 1
+        }
+      }
+    ],
+    [
+      "Kanagawa",
+      {
+        "count": 88,
+        "cruisePassenger": 0,
+        "cruiseWorker": 4,
+        "deaths": 4,
+        "progression": [],
+        "cityCounts": {
+          "Kanagawa": 2,
+          "Sagamihara": 20,
+          "Yokohama": 17,
+          "Atsugi": 3,
+          "Kamakura": 3,
+          "Kamamura": 1,
+          "Hiratsuka": 6,
+          "Odawara": 1,
+          "Fujisawa": 5,
+          "Kawasaki": 4,
+          "Yokosuka": 3
+        }
+      }
+    ],
+    [
+      "Saitama",
+      {
+        "count": 63,
+        "cruisePassenger": 1,
+        "cruiseWorker": 1,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Gyoda": 1,
+          "Ageo": 1,
+          "Saitama": 3,
+          "Iruma": 3,
+          "Kawagoe": 3,
+          "Toda": 5,
+          "Koshigaya": 8,
+          "Saitama city": 3,
+          "Kawaguchi": 8,
+          "Soka": 1,
+          "Niiza": 1,
+          "Fukaya": 4,
+          "Shiki": 3,
+          "Kumagaya": 1,
+          "Okegawa": 1,
+          "Sayama": 1,
+          "Kasukabe": 7,
+          "Hasuda": 1,
+          "Sakado": 1
+        }
+      }
+    ],
+    [
+      "Chiba",
+      {
+        "count": 48,
+        "cruisePassenger": 2,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Chiba": 4,
+          "Ichikawa": 14,
+          "Kashiwa": 1,
+          "Matsudo": 7,
+          "Isumishi": 1,
+          "Yotsukaido": 1,
+          "Funabashi": 2,
+          "Sosa": 3,
+          "Inzai": 1,
+          "Urayasu": 1,
+          "Kisarazu": 2
+        }
+      }
+    ],
+    [
+      "Niigata",
+      {
+        "count": 28,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Niigata": 11,
+          "Kamo": 1,
+          "Higashi Ward, Niigata": 4,
+          "Chuo Ward, Niigata": 6,
+          "Minami Ward, Niigata": 1,
+          "Konan Ward, Niigata": 1,
+          "Nagaoka": 1,
+          "Ojiya": 1
+        }
+      }
+    ],
+    [
+      "Kyoto",
+      {
+        "count": 25,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Kyoto": 3,
+          "Kyoto city": 15,
+          "Yamashiro": 1,
+          "Chutan": 5,
+          "Otokuni": 1
+        }
+      }
+    ],
+    [
+      "Oita",
+      {
+        "count": 23,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Oita": 11,
+          "Oita city": 6
+        }
+      }
+    ],
+    [
+      "Wakayama",
+      {
+        "count": 17,
+        "cruisePassenger": 0,
+        "cruiseWorker": 1,
+        "deaths": 1,
+        "progression": [],
+        "cityCounts": {
+          "Yuasa": 11,
+          "Wakayama": 6
+        }
+      }
+    ],
+    [
+      "Unspecified",
+      {
+        "count": 15,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Haneda": 1,
+          "Haneda airport": 2,
+          "Kansai airport": 2
+        }
+      }
+    ],
+    [
+      "Gunma",
+      {
+        "count": 13,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Oota": 1,
+          "Ota": 4,
+          "Oizumi": 6
+        }
+      }
+    ],
+    [
+      "Kochi",
+      {
+        "count": 12,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Kochi": 8,
+          "Aki": 2
+        }
+      }
+    ],
+    [
+      "Gifu",
+      {
+        "count": 9,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Ogaki ": 2,
+          "Gifu": 2,
+          "Kakamigahara": 1,
+          "Kani": 2,
+          "Kagamigahara": 1
+        }
+      }
+    ],
+    [
+      "Mie",
+      {
+        "count": 9,
+        "cruisePassenger": 1,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Iga": 6,
+          "Kuwana": 1,
+          "Yokkaichi": 1
+        }
+      }
+    ],
+    [
+      "Nara",
+      {
+        "count": 9,
+        "cruisePassenger": 2,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Nara": 6,
+          "Yamatokoriyama": 1,
+          "Yamato-Koriyama": 1
+        }
+      }
+    ],
+    [
+      "Ishikawa",
+      {
+        "count": 8,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Kanazawa": 3,
+          "Ishikawa": 1
+        }
+      }
+    ],
+    [
+      "Kumamoto",
+      {
+        "count": 7,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Kumamoto": 3
+        }
+      }
+    ],
+    [
+      "Shiga",
+      {
+        "count": 6,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Otsu": 4,
+          "Higashiomi": 2
+        }
+      }
+    ],
+    [
+      "Tochigi",
+      {
+        "count": 6,
+        "cruisePassenger": 1,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Utsunomiya": 1,
+          "Oyama": 1
+        }
+      }
+    ],
+    [
+      "Fukuoka",
+      {
+        "count": 6,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Kita-Kyushu": 1,
+          "Fukuoka": 1,
+          "Munakata": 1,
+          "Kitakyushu": 1
+        }
+      }
+    ],
+    [
+      "Okinawa",
+      {
+        "count": 6,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Naha": 1
+        }
+      }
+    ],
+    [
+      "Ibaraki",
+      {
+        "count": 5,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Hitachinaka": 1,
+          "Tsukuba": 1,
+          "Amimachi": 1,
+          "Tsuchiura": 1
+        }
+      }
+    ],
+    [
+      "undefined",
+      {
+        "count": 4,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {}
+      }
+    ],
+    [
+      "Yamaguchi",
+      {
+        "count": 4,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Shimonoseki": 4
+        }
+      }
+    ],
+    [
+      "Nagano",
+      {
+        "count": 4,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Nagano": 1,
+          "Matsumoto": 1,
+          "Nanmoku-mura": 1,
+          "Matusmoto": 1
+        }
+      }
+    ],
+    [
+      "Hiroshima",
+      {
+        "count": 3,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Hiroshima": 1,
+          "Onomichi": 2
+        }
+      }
+    ],
+    [
+      "Miyazaki",
+      {
+        "count": 3,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Miyazaki": 1,
+          "Takachiho": 1
+        }
+      }
+    ],
+    [
+      "Ehime",
+      {
+        "count": 3,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Ainan": 1,
+          "Matsuyama": 2
+        }
+      }
+    ],
+    [
+      "Shizuoka",
+      {
+        "count": 3,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Shizuoka": 3
+        }
+      }
+    ],
+    [
+      "Aomori",
+      {
+        "count": 2,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {}
+      }
+    ],
+    [
+      "Fukushima",
+      {
+        "count": 2,
+        "cruisePassenger": 1,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Iwaki": 1,
+          "Koriyama": 1
+        }
+      }
+    ],
+    [
+      "Yamanashi",
+      {
+        "count": 2,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Yamanashi": 1
+        }
+      }
+    ],
+    [
+      "Akita",
+      {
+        "count": 2,
+        "cruisePassenger": 1,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {}
+      }
+    ],
+    [
+      "Okayama",
+      {
+        "count": 1,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Okayama": 1
+        }
+      }
+    ],
+    [
+      "Fukui",
+      {
+        "count": 1,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Fukui": 1
+        }
+      }
+    ],
+    [
+      "Kagawa",
+      {
+        "count": 1,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Marukame": 1
+        }
+      }
+    ],
+    [
+      "Nagasaki",
+      {
+        "count": 1,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Sanuki": 1
+        }
+      }
+    ],
+    [
+      "Saga",
+      {
+        "count": 1,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Saga": 1
+        }
+      }
+    ],
+    [
+      "Miyagi",
+      {
+        "count": 1,
+        "cruisePassenger": 1,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Sendai": 1
+        }
+      }
+    ],
+    [
+      "Tokushima",
+      {
+        "count": 1,
+        "cruisePassenger": 1,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Aizumi": 1
+        }
+      }
+    ]
+  ],
+  "daily": {
+    "2020-01-15": {
+      "infected": 1,
+      "deaths": 0
+    },
+    "2020-01-24": {
+      "infected": 1,
+      "deaths": 0
+    },
+    "2020-01-25": {
+      "infected": 1,
+      "deaths": 0
+    },
+    "2020-01-26": {
+      "infected": 1,
+      "deaths": 0
+    },
+    "2020-01-28": {
+      "infected": 3,
+      "deaths": 0
+    },
+    "2020-01-29": {
+      "infected": 1,
+      "deaths": 0
+    },
+    "2020-01-30": {
+      "infected": 4,
+      "deaths": 0
+    },
+    "2020-01-31": {
+      "infected": 1,
+      "deaths": 0
+    },
+    "2020-02-01": {
+      "infected": 3,
+      "deaths": 0
+    },
+    "2020-02-04": {
+      "infected": 3,
+      "deaths": 0
+    },
+    "2020-02-05": {
+      "infected": 3,
+      "deaths": 0
+    },
+    "2020-02-08": {
+      "infected": 1,
+      "deaths": 0
+    },
+    "2020-02-10": {
+      "infected": 2,
+      "deaths": 0
+    },
+    "2020-02-11": {
+      "infected": 1,
+      "deaths": 0
+    },
+    "2020-02-12": {
+      "infected": 1,
+      "deaths": 0
+    },
+    "2020-02-13": {
+      "infected": 5,
+      "deaths": 0
+    },
+    "2020-02-14": {
+      "infected": 8,
+      "deaths": 0
+    },
+    "2020-02-15": {
+      "infected": 11,
+      "deaths": 0
+    },
+    "2020-02-16": {
+      "infected": 6,
+      "deaths": 0
+    },
+    "2020-02-17": {
+      "infected": 9,
+      "deaths": 0
+    },
+    "2020-02-18": {
+      "infected": 11,
+      "deaths": 0
+    },
+    "2020-02-19": {
+      "infected": 6,
+      "deaths": 0
+    },
+    "2020-02-20": {
+      "infected": 10,
+      "deaths": 0
+    },
+    "2020-02-21": {
+      "infected": 16,
+      "deaths": 0
+    },
+    "2020-02-22": {
+      "infected": 25,
+      "deaths": 0
+    },
+    "2020-02-23": {
+      "infected": 12,
+      "deaths": 0
+    },
+    "2020-02-24": {
+      "infected": 11,
+      "deaths": 0
+    },
+    "2020-02-25": {
+      "infected": 13,
+      "deaths": 0
+    },
+    "2020-02-26": {
+      "infected": 19,
+      "deaths": 0
+    },
+    "2020-02-27": {
+      "infected": 25,
+      "deaths": 0
+    },
+    "2020-02-28": {
+      "infected": 18,
+      "deaths": 0
+    },
+    "2020-02-29": {
+      "infected": 9,
+      "deaths": 0
+    },
+    "2020-03-01": {
+      "infected": 14,
+      "deaths": 0
+    },
+    "2020-03-02": {
+      "infected": 19,
+      "deaths": 0
+    },
+    "2020-03-03": {
+      "infected": 20,
+      "deaths": 0
+    },
+    "2020-03-04": {
+      "infected": 35,
+      "deaths": 0
+    },
+    "2020-03-05": {
+      "infected": 32,
+      "deaths": 0
+    },
+    "2020-03-06": {
+      "infected": 55,
+      "deaths": 0
+    },
+    "2020-03-07": {
+      "infected": 46,
+      "deaths": 0
+    },
+    "2020-03-08": {
+      "infected": 33,
+      "deaths": 0
+    },
+    "2020-03-09": {
+      "infected": 29,
+      "deaths": 0
+    },
+    "2020-03-10": {
+      "infected": 59,
+      "deaths": 0
+    },
+    "2020-03-11": {
+      "infected": 56,
+      "deaths": 0
+    },
+    "2020-03-12": {
+      "infected": 55,
+      "deaths": 0
+    },
+    "2020-03-13": {
+      "infected": 36,
+      "deaths": 0
+    },
+    "2020-03-14": {
+      "infected": 60,
+      "deaths": 0
+    },
+    "2020-03-15": {
+      "infected": 31,
+      "deaths": 0
+    },
+    "2020-03-16": {
+      "infected": 16,
+      "deaths": 0
+    },
+    "2020-03-17": {
+      "infected": 47,
+      "deaths": 0
+    },
+    "2020-03-18": {
+      "infected": 36,
+      "deaths": 0
+    },
+    "2020-03-19": {
+      "infected": 41,
+      "deaths": 0
+    },
+    "2020-03-20": {
+      "infected": 57,
+      "deaths": 0
+    },
+    "2020-03-21": {
+      "infected": 32,
+      "deaths": 0
+    },
+    "2020-03-22": {
+      "infected": 44,
+      "deaths": 0
+    },
+    "2020-03-23": {
+      "infected": 39,
+      "deaths": 0
+    },
+    "2020-03-24": {
+      "infected": 46,
+      "deaths": 0
+    }
+  }
+}
