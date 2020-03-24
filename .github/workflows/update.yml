@@ -1,0 +1,16 @@
+name: Summarize
+on: [push]
+
+jobs:
+  summarize:
+    name: Summarize
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Generate Summary
+        run: |
+          cd $GITHUB_WORKSPACE
+          npm install
+          node index.js
+      
