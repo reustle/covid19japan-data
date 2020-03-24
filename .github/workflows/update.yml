@@ -6,17 +6,26 @@ jobs:
     name: summarize
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v1
 
-      - name: summarize
-        run: |
-          cd $GITHUB_WORKSPACE
-          npm install
-          node index.js
-      
-      - name: commit and push
-        uses: stefanzweifel/git-auto-commit-action@v4.1.1        
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
         with:
-          commit_message: Update Summary
-          
+          node-version: 12.x
+
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Download and Summarize
+        run: node index.js
+      
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v4
+        with:
+          author_name: Alastair Tse
+          author_email: alastair@liquidx.net
+          message: "Update Summary Data"
+          add: "*.json"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
