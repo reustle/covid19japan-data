@@ -11,6 +11,7 @@ const postProcessData = (rawData) => {
   // Check validity of the row.
   const filterRow = row => {
     if (!row.patientnumber || isNaN(parseInt(row.patientNumber))) { return false }
+    if (!row.detectedPrefecture) { return false }
     return true
   }
 
@@ -80,7 +81,6 @@ const postProcessData = (rawData) => {
 
 
 async function fetchPatientData(destinationFilename) {
-  console.log('Fetching data...')
   drive({sheet: SHEET, tab: SHEET_PATIENT_DATA_TAB})
     .then(db => {
       fs.writeFileSync(destinationFilename, JSON.stringify(postProcessData(db), null, '  '))
