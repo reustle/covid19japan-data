@@ -25,9 +25,9 @@ const postProcessData = (rawData) => {
       return v
     }
 
-    return {
+    let transformedRow = {
       'patientId': parseInt(row.patientnumber),
-      'dateAnnounced': parseInt(row.dateannounced),
+      'dateAnnounced': row.dateannounced,
       'ageBracket': normalizeNumber(row.agebracket),
       'gender': unspecifiedToBlank(row.gender),
       'residence': row.residencecityprefecture,
@@ -40,14 +40,39 @@ const postProcessData = (rawData) => {
       'mhlwPatientNumber': row.mhlworigpatientnumber,
       'prefecturePatientNumber': row.prefecturepatientnumber,
       'cityPrefectureNumber': row.citypatientnumber,
-      'isCharterFlightPassenger': row.charterflightpassenger,
-      'isDisembarkedCruisePassenger': row.cruisepassengerdisembarked,
-      'isInfectedOnboardCruisePassenger': row.cruisepassengerinfectedonboard,
-      'isQuarantineOfficer': row.cruisequarantineofficer,
-      'isDetectedAtPort': row.detectedatport,
+      'prefectureSourceURL': row.prefectureurlauto,
+      'charterFlightPassenger': row.charterflightpassenger,
+      'cruisePassengerDisembarked': row.cruisepassengerdisembarked,
+      'cruisePassengerInfectedOnboard': row.cruisepassengerinfectedonboard,
+      'cruiseQuarantineOfficer': row.cruisequarantineofficer,
+      'detectedAtPort': row.detectedatport,
       'sourceURL': row.sources,
-      'prefectureSourceURL': row.prefectureurlauto
     }
+
+    // filter empty cells.
+    transformedRow = _.pickBy(transformedRow, (v, k) => {
+      if (v == '') {
+        return false
+      }
+      return true
+    })
+
+    // convert boolean fields
+    let booleanFields = [ 
+      'charterFlightPassenger', 
+      'cruisePassengerDisembarked', 
+      'cruisePassengerInfectedOnboard',
+      'cruiseQuarantineOfficer',
+      'detectedAtPort'
+    ]
+    transformedRow = _.mapValues(transformedRow, (v, k) => {
+      if (booleanFields.indexOf(k) != -1) {
+        return (v == '1')
+      }
+      return v
+    })
+
+    return transformedRow
   }
 
   return _.map(_.filter(rawData), transformRow)
@@ -58,7 +83,7 @@ async function run(destinationFilename) {
   console.log('Fetching data...')
   drive({sheet: SHEET, tab: SHEET_PATIENT_DATA_TAB})
     .then(db => {
-      fs.writeFileSync(destinationFilename, JSON.stringify(postProcessData(db)))
+      fs.writeFileSync(destinationFilename, JSON.stringify(postProcessData(db), null, '  '))
     })
 }
 
