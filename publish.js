@@ -6,7 +6,7 @@ const _ = require('lodash')
 
 // Creates a symlink to the latest version of the data (which can be served)
 const publish = () => {
-  const dateString = moment().format('YYYY_MM_DD')
+  const dateString = moment().format('YYYY-MM-DD')
   
   for (let dir of ['patient_data', 'summary']) {
     let files = fs.readdirSync(path.join('.', 'docs', dir))

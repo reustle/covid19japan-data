@@ -13,5 +13,5 @@ const fetchAndSummarize = async (dateString) => {
   Summarize.summarize(patients, daily, prefectures, `./docs/summary/${dateString}.json`)
 }
 
-const dateString = moment().format('YYYY_MM_DD')
+const dateString = moment().format('YYYY-MM-DD')
 fetchAndSummarize(dateString)

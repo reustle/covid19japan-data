@@ -22,8 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Download and Summarize
-        run: node summarize.js
+      - name: Download and Generate JSON data
+        run: node generate.js
 
       - name: Publish Latest Data
         run: node publish.js
