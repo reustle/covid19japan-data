@@ -13,5 +13,6 @@ const fetchAndSummarize = async (dateString) => {
   Summarize.summarize(patients, daily, prefectures, `./docs/summary/${dateString}.json`)
 }
 
-const dateString = moment().format('YYYY-MM-DD')
+// Add 540 = UTC+9 for JST.
+const dateString = moment().utcOffset(540).format('YYYY-MM-DD')
 fetchAndSummarize(dateString)
