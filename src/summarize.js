@@ -1,13 +1,14 @@
 // Summarizes data for site.
-
 const fs = require('fs')
 const _ = require('lodash')
 const moment = require('moment')
 
-const summarize = (fetchPatientData, summaryOutputFilename) => {
-  const patients = _.orderBy(fetchPatientData, ['dateAnnounced'], ['asc'])
-  let prefectureSummary = generatePrefectureSummary(patients)
-  let dailySummary = generateDailySummary(patients)
+
+// Merge all the data from the spreadsheet with auto-calculation
+const summarize = (patientData, manualDailyData, manualPrefectureData, summaryOutputFilename) => {
+  const patients = _.orderBy(patientData, ['dateAnnounced'], ['asc'])
+  let prefectureSummary = generatePrefectureSummary(patients, manualPrefectureData)
+  let dailySummary = generateDailySummary(patients, manualDailyData)
 
   let summary = {
     prefectures: prefectureSummary,
@@ -17,25 +18,50 @@ const summarize = (fetchPatientData, summaryOutputFilename) => {
   fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
 }
 
-const generateDailySummary = (patients) => {
+// Helper method to do parseInt safely (reverts to 0 if unparse)
+const safeParseInt = v => {
+  let result = parseInt(v)
+  if (result == NaN) {
+    return 0
+  }
+  return result
+}
+
+// Generates the daily summary
+const generateDailySummary = (patients, manualDailyData) => {
   let dailySummary = {}
   for (let patient of patients) {
     let prefectureName = patient.detectedPrefecture
     let dateAnnounced = patient.dateAnnounced
     if (!dailySummary[dateAnnounced]) {
       dailySummary[dateAnnounced] = {
-        infected: 0,
-        deaths: 0,
+        confirmed: 0,
+        recovered: 0,
+        deceased: 0,
+        critical: 0,
+        tested: 0
       }
     }
 
-    dailySummary[dateAnnounced].infected += 1
+    dailySummary[dateAnnounced].confirmed += 1
+  }
+
+  // merge manually sourced data
+  // TODO: deceased, critical should be pulled out of our patient
+  //       data. But those numbers are incomplete.
+  for (let row of manualDailyData) {
+    if (dailySummary[row.date]) {
+      dailySummary[row.date].recovered = safeParseInt(row.recovered)
+      dailySummary[row.date].deceased = safeParseInt(row.deceased)
+      dailySummary[row.date].critical = safeParseInt(row.critical)
+      dailySummary[row.date].tested = safeParseInt(row.tested)
+    }
   }
 
   return dailySummary
 }
 
-const generatePrefectureSummary = (patients) => {
+const generatePrefectureSummary = (patients, manualPrefectureData) => {
   let prefectureSummary = {}
 
   for (let patient of patients) {
@@ -78,13 +104,27 @@ const generatePrefectureSummary = (patients) => {
   // calculate sparkline array
   // appendSparkLineForAllPrefectures(patients, prefectureSummary)
 
+  // Import manual data.
+  for (let row of manualPrefectureData) {
+    if (prefectureSummary[row.prefecture]) {
+      prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered)
+      prefectureSummary[row.prefecture].deaths = safeParseInt(row.deaths)
+    }
+  }
+
   // Strip out patients list
   prefectureSummary = _.mapValues(prefectureSummary, (v, k) => { 
     delete v['patients']
     return v
   })
 
-  return _.reverse(_.sortBy(_.toPairs(prefectureSummary), [ a => a[1].count ]))
+  return _.map(
+    _.reverse(
+      _.sortBy(
+        _.toPairs(prefectureSummary), 
+        [ a => a[1].count ])),
+    (v) => { let o = {}; o[v[0]] = v[1]; return o }
+  )
 }
 
 const generateSparkLineForPrefecture = (patients, summary) => {
