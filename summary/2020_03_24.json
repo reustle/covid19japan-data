@@ -88,7 +88,7 @@
     [
       "Osaka",
       {
-        "count": 132,
+        "count": 140,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 2,
@@ -102,12 +102,12 @@
           "Suita": 10,
           "Toyonaka": 8,
           "Higashiosaka": 3,
-          "Minoo": 1,
+          "Minoo": 2,
           "Kadoma": 2,
           "Settsu": 1,
           "Ibaraki": 3,
           "Moriguchi": 1,
-          "Yao": 8,
+          "Yao": 9,
           "Higashi Osaka": 1,
           "Kaizuka": 1,
           "Hirakata": 4,
@@ -115,20 +115,20 @@
           "Matsuhara": 1,
           "Izumi": 2,
           "Izumisano": 2,
-          "Osaka city": 2
+          "Osaka city": 3
         }
       }
     ],
     [
       "Hyogo",
       {
-        "count": 113,
+        "count": 118,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 6,
         "progression": [],
         "cityCounts": {
-          "Nishinomiya": 4,
+          "Nishinomiya": 6,
           "Kobe": 26,
           "Fukusaki": 1,
           "Himeji": 14,
@@ -150,7 +150,7 @@
     [
       "Kanagawa",
       {
-        "count": 88,
+        "count": 89,
         "cruisePassenger": 0,
         "cruiseWorker": 4,
         "deaths": 4,
@@ -165,7 +165,7 @@
           "Hiratsuka": 6,
           "Odawara": 1,
           "Fujisawa": 5,
-          "Kawasaki": 4,
+          "Kawasaki": 5,
           "Yokosuka": 3
         }
       }
@@ -315,7 +315,9 @@
         "cityCounts": {
           "Oota": 1,
           "Ota": 4,
-          "Oizumi": 6
+          "Oizumi": 6,
+          "Maebashi": 1,
+          "Takasaki": 1
         }
       }
     ],
@@ -336,7 +338,7 @@
     [
       "Gifu",
       {
-        "count": 9,
+        "count": 11,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 0,
@@ -345,8 +347,43 @@
           "Ogaki ": 2,
           "Gifu": 2,
           "Kakamigahara": 1,
-          "Kani": 2,
-          "Kagamigahara": 1
+          "Kani": 3,
+          "Kagamigahara": 1,
+          "Kawabe": 1
+        }
+      }
+    ],
+    [
+      "Ibaraki",
+      {
+        "count": 10,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Hitachinaka": 1,
+          "Tsukuba": 5,
+          "Amimachi": 1,
+          "Tsuchiura": 1,
+          "Ushiku": 1
+        }
+      }
+    ],
+    [
+      "Fukuoka",
+      {
+        "count": 9,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Kita-Kyushu": 1,
+          "Fukuoka": 1,
+          "Munakata": 1,
+          "Kitakyushu": 1,
+          "Fukuoka city": 1
         }
       }
     ],
@@ -436,22 +473,6 @@
       }
     ],
     [
-      "Fukuoka",
-      {
-        "count": 6,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Kita-Kyushu": 1,
-          "Fukuoka": 1,
-          "Munakata": 1,
-          "Kitakyushu": 1
-        }
-      }
-    ],
-    [
       "Okinawa",
       {
         "count": 6,
@@ -465,7 +486,7 @@
       }
     ],
     [
-      "Ibaraki",
+      "Nagano",
       {
         "count": 5,
         "cruisePassenger": 0,
@@ -473,22 +494,11 @@
         "deaths": 0,
         "progression": [],
         "cityCounts": {
-          "Hitachinaka": 1,
-          "Tsukuba": 1,
-          "Amimachi": 1,
-          "Tsuchiura": 1
+          "Nagano": 1,
+          "Matsumoto": 2,
+          "Nanmoku-mura": 1,
+          "Matusmoto": 1
         }
-      }
-    ],
-    [
-      "undefined",
-      {
-        "count": 4,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {}
       }
     ],
     [
@@ -501,22 +511,6 @@
         "progression": [],
         "cityCounts": {
           "Shimonoseki": 4
-        }
-      }
-    ],
-    [
-      "Nagano",
-      {
-        "count": 4,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Nagano": 1,
-          "Matsumoto": 1,
-          "Nanmoku-mura": 1,
-          "Matusmoto": 1
         }
       }
     ],
@@ -938,7 +932,7 @@
       "deaths": 0
     },
     "2020-03-24": {
-      "infected": 46,
+      "infected": 67,
       "deaths": 0
     }
   }
