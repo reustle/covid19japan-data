@@ -123,7 +123,7 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
       _.sortBy(
         _.toPairs(prefectureSummary), 
         [ a => a[1].count ])),
-    (v) => { let o = {}; o[v[0]] = v[1]; return o }
+    (v) => { return {'name': v[0], 'summary': v[1]} }
   )
 }
 
