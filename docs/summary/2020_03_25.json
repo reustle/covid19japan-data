@@ -267,6 +267,21 @@
       }
     },
     {
+      "Unspecified": {
+        "count": 20,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Haneda": 1,
+          "Haneda airport": 4,
+          "Kansai airport": 2,
+          "Narita airport": 3
+        }
+      }
+    },
+    {
       "Wakayama": {
         "count": 17,
         "cruisePassenger": 0,
@@ -276,20 +291,6 @@
         "cityCounts": {
           "Yuasa": 11,
           "Wakayama": 6
-        }
-      }
-    },
-    {
-      "Unspecified": {
-        "count": 15,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Haneda": 1,
-          "Haneda airport": 2,
-          "Kansai airport": 2
         }
       }
     },
@@ -353,6 +354,19 @@
           "Amimachi": 1,
           "Tsuchiura": 1,
           "Ushiku": 1
+        }
+      }
+    },
+    {
+      "Tochigi": {
+        "count": 10,
+        "cruisePassenger": 1,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Utsunomiya": 1,
+          "Oyama": 1
         }
       }
     },
@@ -463,19 +477,6 @@
           "Shimonoseki": 4,
           "Yamaguchi": 1,
           "Yamaguchi city": 1
-        }
-      }
-    },
-    {
-      "Tochigi": {
-        "count": 6,
-        "cruisePassenger": 1,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Utsunomiya": 1,
-          "Oyama": 1
         }
       }
     },
@@ -1057,23 +1058,23 @@
       "tested": 20228
     },
     "2020-03-23": {
-      "confirmed": 39,
+      "confirmed": 40,
       "recovered": 247,
       "deceased": 41,
       "critical": 54,
       "tested": 20340
     },
     "2020-03-24": {
-      "confirmed": 69,
+      "confirmed": 72,
       "recovered": 251,
       "deceased": 42,
       "critical": 55,
       "tested": 24430
     },
     "2020-03-25": {
-      "confirmed": 88,
+      "confirmed": 93,
       "recovered": 272,
-      "deceased": 43,
+      "deceased": 44,
       "critical": 57,
       "tested": 23521
     }
