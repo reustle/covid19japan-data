@@ -31,6 +31,6 @@ jobs:
           author_name: Automated Action
           author_email: alastair@liquidx.net
           message: "Update Summary Data"
-          add: "*.json"
+          add: "*/*.json"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
