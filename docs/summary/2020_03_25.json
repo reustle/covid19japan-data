@@ -1,8 +1,8 @@
 {
   "prefectures": [
-    [
-      "Tokyo",
-      {
+    {
+      "name": "Tokyo",
+      "summary": {
         "count": 179,
         "cruisePassenger": 0,
         "cruiseWorker": 7,
@@ -15,10 +15,10 @@
           "Nerima": 1
         }
       }
-    ],
-    [
-      "Hokkaido",
-      {
+    },
+    {
+      "name": "Hokkaido",
+      "summary": {
         "count": 163,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -58,10 +58,10 @@
           "Otaru": 3
         }
       }
-    ],
-    [
-      "Aichi",
-      {
+    },
+    {
+      "name": "Aichi",
+      "summary": {
         "count": 150,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -84,10 +84,10 @@
           "Toyokawa": 1
         }
       }
-    ],
-    [
-      "Osaka",
-      {
+    },
+    {
+      "name": "Osaka",
+      "summary": {
         "count": 140,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -118,10 +118,10 @@
           "Osaka city": 3
         }
       }
-    ],
-    [
-      "Hyogo",
-      {
+    },
+    {
+      "name": "Hyogo",
+      "summary": {
         "count": 118,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -146,10 +146,10 @@
           "Tokyo": 1
         }
       }
-    ],
-    [
-      "Kanagawa",
-      {
+    },
+    {
+      "name": "Kanagawa",
+      "summary": {
         "count": 90,
         "cruisePassenger": 0,
         "cruiseWorker": 4,
@@ -169,10 +169,10 @@
           "Yokosuka": 3
         }
       }
-    ],
-    [
-      "Saitama",
-      {
+    },
+    {
+      "name": "Saitama",
+      "summary": {
         "count": 63,
         "cruisePassenger": 1,
         "cruiseWorker": 1,
@@ -200,10 +200,10 @@
           "Sakado": 1
         }
       }
-    ],
-    [
-      "Chiba",
-      {
+    },
+    {
+      "name": "Chiba",
+      "summary": {
         "count": 49,
         "cruisePassenger": 2,
         "cruiseWorker": 0,
@@ -223,10 +223,10 @@
           "Kisarazu": 2
         }
       }
-    ],
-    [
-      "Niigata",
-      {
+    },
+    {
+      "name": "Niigata",
+      "summary": {
         "count": 29,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -243,10 +243,10 @@
           "Ojiya": 1
         }
       }
-    ],
-    [
-      "Kyoto",
-      {
+    },
+    {
+      "name": "Kyoto",
+      "summary": {
         "count": 27,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -260,10 +260,10 @@
           "Otokuni": 1
         }
       }
-    ],
-    [
-      "Oita",
-      {
+    },
+    {
+      "name": "Oita",
+      "summary": {
         "count": 25,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -274,10 +274,10 @@
           "Oita city": 6
         }
       }
-    ],
-    [
-      "Wakayama",
-      {
+    },
+    {
+      "name": "Wakayama",
+      "summary": {
         "count": 17,
         "cruisePassenger": 0,
         "cruiseWorker": 1,
@@ -288,10 +288,10 @@
           "Wakayama": 6
         }
       }
-    ],
-    [
-      "Unspecified",
-      {
+    },
+    {
+      "name": "Unspecified",
+      "summary": {
         "count": 15,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -303,10 +303,10 @@
           "Kansai airport": 2
         }
       }
-    ],
-    [
-      "Gunma",
-      {
+    },
+    {
+      "name": "Gunma",
+      "summary": {
         "count": 14,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -321,10 +321,10 @@
           "Tatebayashi": 1
         }
       }
-    ],
-    [
-      "Kochi",
-      {
+    },
+    {
+      "name": "Kochi",
+      "summary": {
         "count": 12,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -335,10 +335,10 @@
           "Aki": 2
         }
       }
-    ],
-    [
-      "Gifu",
-      {
+    },
+    {
+      "name": "Gifu",
+      "summary": {
         "count": 11,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -353,10 +353,10 @@
           "Kawabe": 1
         }
       }
-    ],
-    [
-      "Ibaraki",
-      {
+    },
+    {
+      "name": "Ibaraki",
+      "summary": {
         "count": 10,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -370,10 +370,10 @@
           "Ushiku": 1
         }
       }
-    ],
-    [
-      "Fukuoka",
-      {
+    },
+    {
+      "name": "Fukuoka",
+      "summary": {
         "count": 9,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -388,10 +388,10 @@
           "Izuka": 2
         }
       }
-    ],
-    [
-      "Mie",
-      {
+    },
+    {
+      "name": "Mie",
+      "summary": {
         "count": 9,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -403,10 +403,10 @@
           "Yokkaichi": 1
         }
       }
-    ],
-    [
-      "Nara",
-      {
+    },
+    {
+      "name": "Nara",
+      "summary": {
         "count": 9,
         "cruisePassenger": 2,
         "cruiseWorker": 0,
@@ -418,10 +418,10 @@
           "Yamato-Koriyama": 1
         }
       }
-    ],
-    [
-      "Ishikawa",
-      {
+    },
+    {
+      "name": "Ishikawa",
+      "summary": {
         "count": 8,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -432,10 +432,10 @@
           "Ishikawa": 1
         }
       }
-    ],
-    [
-      "Kumamoto",
-      {
+    },
+    {
+      "name": "Kumamoto",
+      "summary": {
         "count": 7,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -445,10 +445,10 @@
           "Kumamoto": 3
         }
       }
-    ],
-    [
-      "Aomori",
-      {
+    },
+    {
+      "name": "Aomori",
+      "summary": {
         "count": 6,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -458,10 +458,10 @@
           "Hachinohe": 4
         }
       }
-    ],
-    [
-      "Shiga",
-      {
+    },
+    {
+      "name": "Shiga",
+      "summary": {
         "count": 6,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -472,10 +472,10 @@
           "Higashiomi": 2
         }
       }
-    ],
-    [
-      "Tochigi",
-      {
+    },
+    {
+      "name": "Tochigi",
+      "summary": {
         "count": 6,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -486,10 +486,10 @@
           "Oyama": 1
         }
       }
-    ],
-    [
-      "Okinawa",
-      {
+    },
+    {
+      "name": "Okinawa",
+      "summary": {
         "count": 6,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -499,10 +499,10 @@
           "Naha": 1
         }
       }
-    ],
-    [
-      "Nagano",
-      {
+    },
+    {
+      "name": "Nagano",
+      "summary": {
         "count": 5,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -515,10 +515,10 @@
           "Matusmoto": 1
         }
       }
-    ],
-    [
-      "Yamanashi",
-      {
+    },
+    {
+      "name": "Yamanashi",
+      "summary": {
         "count": 4,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -528,10 +528,10 @@
           "Yamanashi": 1
         }
       }
-    ],
-    [
-      "Yamaguchi",
-      {
+    },
+    {
+      "name": "Yamaguchi",
+      "summary": {
         "count": 4,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -541,10 +541,10 @@
           "Shimonoseki": 4
         }
       }
-    ],
-    [
-      "Hiroshima",
-      {
+    },
+    {
+      "name": "Hiroshima",
+      "summary": {
         "count": 3,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -555,10 +555,10 @@
           "Onomichi": 2
         }
       }
-    ],
-    [
-      "Miyazaki",
-      {
+    },
+    {
+      "name": "Miyazaki",
+      "summary": {
         "count": 3,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -569,10 +569,10 @@
           "Takachiho": 1
         }
       }
-    ],
-    [
-      "Ehime",
-      {
+    },
+    {
+      "name": "Ehime",
+      "summary": {
         "count": 3,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -583,10 +583,10 @@
           "Matsuyama": 2
         }
       }
-    ],
-    [
-      "Shizuoka",
-      {
+    },
+    {
+      "name": "Shizuoka",
+      "summary": {
         "count": 3,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -596,10 +596,10 @@
           "Shizuoka": 3
         }
       }
-    ],
-    [
-      "Nagasaki",
-      {
+    },
+    {
+      "name": "Nagasaki",
+      "summary": {
         "count": 2,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -609,10 +609,10 @@
           "Sanuki": 1
         }
       }
-    ],
-    [
-      "Fukushima",
-      {
+    },
+    {
+      "name": "Fukushima",
+      "summary": {
         "count": 2,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -623,10 +623,10 @@
           "Koriyama": 1
         }
       }
-    ],
-    [
-      "Akita",
-      {
+    },
+    {
+      "name": "Akita",
+      "summary": {
         "count": 2,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -634,10 +634,10 @@
         "progression": [],
         "cityCounts": {}
       }
-    ],
-    [
-      "Okayama",
-      {
+    },
+    {
+      "name": "Okayama",
+      "summary": {
         "count": 1,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -647,10 +647,10 @@
           "Okayama": 1
         }
       }
-    ],
-    [
-      "Fukui",
-      {
+    },
+    {
+      "name": "Fukui",
+      "summary": {
         "count": 1,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -660,10 +660,10 @@
           "Fukui": 1
         }
       }
-    ],
-    [
-      "Kagawa",
-      {
+    },
+    {
+      "name": "Kagawa",
+      "summary": {
         "count": 1,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -673,10 +673,10 @@
           "Marukame": 1
         }
       }
-    ],
-    [
-      "Saga",
-      {
+    },
+    {
+      "name": "Saga",
+      "summary": {
         "count": 1,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -686,10 +686,10 @@
           "Saga": 1
         }
       }
-    ],
-    [
-      "Miyagi",
-      {
+    },
+    {
+      "name": "Miyagi",
+      "summary": {
         "count": 1,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -699,10 +699,10 @@
           "Sendai": 1
         }
       }
-    ],
-    [
-      "Tokushima",
-      {
+    },
+    {
+      "name": "Tokushima",
+      "summary": {
         "count": 1,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -712,236 +712,407 @@
           "Aizumi": 1
         }
       }
-    ]
+    }
   ],
   "daily": {
     "2020-01-15": {
-      "infected": 1,
-      "deaths": 0
+      "confirmed": 1,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-01-24": {
-      "infected": 1,
-      "deaths": 0
+      "confirmed": 1,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-01-25": {
-      "infected": 1,
-      "deaths": 0
+      "confirmed": 1,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-01-26": {
-      "infected": 1,
-      "deaths": 0
+      "confirmed": 1,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-01-28": {
-      "infected": 3,
-      "deaths": 0
+      "confirmed": 3,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-01-29": {
-      "infected": 1,
-      "deaths": 0
+      "confirmed": 1,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-01-30": {
-      "infected": 4,
-      "deaths": 0
+      "confirmed": 4,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-01-31": {
-      "infected": 1,
-      "deaths": 0
+      "confirmed": 1,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-02-01": {
-      "infected": 3,
-      "deaths": 0
+      "confirmed": 3,
+      "recovered": null,
+      "deceased": 0,
+      "critical": null,
+      "tested": null
     },
     "2020-02-04": {
-      "infected": 3,
-      "deaths": 0
+      "confirmed": 3,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-02-05": {
-      "infected": 3,
-      "deaths": 0
+      "confirmed": 3,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-02-08": {
-      "infected": 1,
-      "deaths": 0
+      "confirmed": 1,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-02-10": {
-      "infected": 2,
-      "deaths": 0
+      "confirmed": 2,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-02-11": {
-      "infected": 1,
-      "deaths": 0
+      "confirmed": 1,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-02-12": {
-      "infected": 1,
-      "deaths": 0
+      "confirmed": 1,
+      "recovered": null,
+      "deceased": 0,
+      "critical": null,
+      "tested": null
     },
     "2020-02-13": {
-      "infected": 5,
-      "deaths": 0
+      "confirmed": 5,
+      "recovered": null,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-14": {
-      "infected": 8,
-      "deaths": 0
+      "confirmed": 8,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-02-15": {
-      "infected": 11,
-      "deaths": 0
+      "confirmed": 11,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     },
     "2020-02-16": {
-      "infected": 6,
-      "deaths": 0
+      "confirmed": 6,
+      "recovered": 12,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-17": {
-      "infected": 9,
-      "deaths": 0
+      "confirmed": 9,
+      "recovered": 16,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-18": {
-      "infected": 11,
-      "deaths": 0
+      "confirmed": 11,
+      "recovered": 18,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-19": {
-      "infected": 6,
-      "deaths": 0
+      "confirmed": 6,
+      "recovered": 18,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-20": {
-      "infected": 10,
-      "deaths": 0
+      "confirmed": 10,
+      "recovered": 20,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-21": {
-      "infected": 16,
-      "deaths": 0
+      "confirmed": 16,
+      "recovered": 22,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-22": {
-      "infected": 25,
-      "deaths": 0
+      "confirmed": 25,
+      "recovered": 22,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-23": {
-      "infected": 12,
-      "deaths": 0
+      "confirmed": 12,
+      "recovered": 23,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-24": {
-      "infected": 11,
-      "deaths": 0
+      "confirmed": 11,
+      "recovered": 23,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-25": {
-      "infected": 13,
-      "deaths": 0
+      "confirmed": 13,
+      "recovered": 23,
+      "deceased": 1,
+      "critical": null,
+      "tested": null
     },
     "2020-02-26": {
-      "infected": 19,
-      "deaths": 0
+      "confirmed": 19,
+      "recovered": 36,
+      "deceased": 3,
+      "critical": 15,
+      "tested": 1890
     },
     "2020-02-27": {
-      "infected": 25,
-      "deaths": 0
+      "confirmed": 25,
+      "recovered": 37,
+      "deceased": 5,
+      "critical": 16,
+      "tested": 2058
     },
     "2020-02-28": {
-      "infected": 18,
-      "deaths": 0
+      "confirmed": 18,
+      "recovered": 41,
+      "deceased": 5,
+      "critical": 20,
+      "tested": 2209
     },
     "2020-02-29": {
-      "infected": 9,
-      "deaths": 0
+      "confirmed": 9,
+      "recovered": 41,
+      "deceased": 5,
+      "critical": 20,
+      "tested": 2339
     },
     "2020-03-01": {
-      "infected": 14,
-      "deaths": 0
+      "confirmed": 14,
+      "recovered": 41,
+      "deceased": 6,
+      "critical": 20,
+      "tested": 2339
     },
     "2020-03-02": {
-      "infected": 19,
-      "deaths": 0
+      "confirmed": 19,
+      "recovered": 42,
+      "deceased": 6,
+      "critical": 23,
+      "tested": 2517
     },
     "2020-03-03": {
-      "infected": 20,
-      "deaths": 0
+      "confirmed": 20,
+      "recovered": 46,
+      "deceased": 6,
+      "critical": 24,
+      "tested": 2684
     },
     "2020-03-04": {
-      "infected": 35,
-      "deaths": 0
+      "confirmed": 35,
+      "recovered": 46,
+      "deceased": 6,
+      "critical": 24,
+      "tested": 6519
     },
     "2020-03-05": {
-      "infected": 32,
-      "deaths": 0
+      "confirmed": 32,
+      "recovered": 46,
+      "deceased": 6,
+      "critical": 24,
+      "tested": 6777
     },
     "2020-03-06": {
-      "infected": 55,
-      "deaths": 0
+      "confirmed": 55,
+      "recovered": 46,
+      "deceased": 6,
+      "critical": 24,
+      "tested": 7476
     },
     "2020-03-07": {
-      "infected": 46,
-      "deaths": 0
+      "confirmed": 46,
+      "recovered": 50,
+      "deceased": 6,
+      "critical": 30,
+      "tested": 8029
     },
     "2020-03-08": {
-      "infected": 33,
-      "deaths": 0
+      "confirmed": 33,
+      "recovered": 57,
+      "deceased": 7,
+      "critical": 27,
+      "tested": 8176
     },
     "2020-03-09": {
-      "infected": 29,
-      "deaths": 0
+      "confirmed": 29,
+      "recovered": 86,
+      "deceased": 9,
+      "critical": 33,
+      "tested": 8286
     },
     "2020-03-10": {
-      "infected": 59,
-      "deaths": 0
+      "confirmed": 59,
+      "recovered": 86,
+      "deceased": 12,
+      "critical": 31,
+      "tested": 9600
     },
     "2020-03-11": {
-      "infected": 56,
-      "deaths": 0
+      "confirmed": 56,
+      "recovered": 118,
+      "deceased": 15,
+      "critical": 26,
+      "tested": 10024
     },
     "2020-03-12": {
-      "infected": 55,
-      "deaths": 0
+      "confirmed": 55,
+      "recovered": 118,
+      "deceased": 17,
+      "critical": 29,
+      "tested": 10205
     },
     "2020-03-13": {
-      "infected": 36,
-      "deaths": 0
+      "confirmed": 36,
+      "recovered": 118,
+      "deceased": 19,
+      "critical": 32,
+      "tested": 11231
     },
     "2020-03-14": {
-      "infected": 60,
-      "deaths": 0
+      "confirmed": 60,
+      "recovered": 122,
+      "deceased": 22,
+      "critical": 35,
+      "tested": 12060
     },
     "2020-03-15": {
-      "infected": 31,
-      "deaths": 0
+      "confirmed": 31,
+      "recovered": 134,
+      "deceased": 24,
+      "critical": 36,
+      "tested": 13026
     },
     "2020-03-16": {
-      "infected": 16,
-      "deaths": 0
+      "confirmed": 16,
+      "recovered": 139,
+      "deceased": 27,
+      "critical": 41,
+      "tested": 13068
     },
     "2020-03-17": {
-      "infected": 47,
-      "deaths": 0
+      "confirmed": 47,
+      "recovered": 144,
+      "deceased": 29,
+      "critical": 46,
+      "tested": 15655
     },
     "2020-03-18": {
-      "infected": 36,
-      "deaths": 0
+      "confirmed": 36,
+      "recovered": 144,
+      "deceased": 29,
+      "critical": 46,
+      "tested": 14525
     },
     "2020-03-19": {
-      "infected": 41,
-      "deaths": 0
+      "confirmed": 41,
+      "recovered": 161,
+      "deceased": 33,
+      "critical": 46,
+      "tested": 15354
     },
     "2020-03-20": {
-      "infected": 57,
-      "deaths": 0
+      "confirmed": 57,
+      "recovered": 193,
+      "deceased": 35,
+      "critical": 50,
+      "tested": 18844
     },
     "2020-03-21": {
-      "infected": 32,
-      "deaths": 0
+      "confirmed": 32,
+      "recovered": 198,
+      "deceased": 36,
+      "critical": 55,
+      "tested": 18963
     },
     "2020-03-22": {
-      "infected": 44,
-      "deaths": 0
+      "confirmed": 44,
+      "recovered": 235,
+      "deceased": 40,
+      "critical": 57,
+      "tested": 20228
     },
     "2020-03-23": {
-      "infected": 39,
-      "deaths": 0
+      "confirmed": 39,
+      "recovered": 247,
+      "deceased": 41,
+      "critical": 54,
+      "tested": 20340
     },
     "2020-03-24": {
-      "infected": 69,
-      "deaths": 0
+      "confirmed": 69,
+      "recovered": 251,
+      "deceased": 42,
+      "critical": 55,
+      "tested": 24430
     },
     "2020-03-25": {
-      "infected": 13,
-      "deaths": 0
+      "confirmed": 13,
+      "recovered": 301,
+      "deceased": 43,
+      "critical": 55,
+      "tested": 24430
     }
   }
 }
