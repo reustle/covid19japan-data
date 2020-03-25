@@ -117,7 +117,7 @@
     },
     {
       "Hyogo": {
-        "count": 118,
+        "count": 119,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 6,
@@ -196,7 +196,7 @@
     },
     {
       "Chiba": {
-        "count": 49,
+        "count": 53,
         "cruisePassenger": 2,
         "cruiseWorker": 0,
         "deaths": 0,
@@ -205,14 +205,16 @@
           "Chiba": 4,
           "Ichikawa": 14,
           "Kashiwa": 2,
-          "Matsudo": 7,
+          "Matsudo": 8,
           "Isumishi": 1,
           "Yotsukaido": 1,
           "Funabashi": 2,
           "Sosa": 3,
           "Inzai": 1,
           "Urayasu": 1,
-          "Kisarazu": 2
+          "Kisarazu": 3,
+          "Narita": 1,
+          "Nagareyama": 1
         }
       }
     },
@@ -475,6 +477,19 @@
       }
     },
     {
+      "Yamaguchi": {
+        "count": 5,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Shimonoseki": 4,
+          "Yamaguchi": 1
+        }
+      }
+    },
+    {
       "Nagano": {
         "count": 5,
         "cruisePassenger": 0,
@@ -498,18 +513,6 @@
         "progression": [],
         "cityCounts": {
           "Yamanashi": 1
-        }
-      }
-    },
-    {
-      "Yamaguchi": {
-        "count": 4,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Shimonoseki": 4
         }
       }
     },
@@ -1066,7 +1069,7 @@
       "tested": 24430
     },
     "2020-03-25": {
-      "confirmed": 13,
+      "confirmed": 19,
       "recovered": 301,
       "deceased": 43,
       "critical": 55,
