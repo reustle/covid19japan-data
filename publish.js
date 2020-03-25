@@ -17,9 +17,9 @@ const publish = () => {
       let latestPath = path.join('.', 'docs', dir, 'latest.json')
 
       fs.unlink(latestPath, err => {
-        // ignore err deliberately.
-        console.log(`Symlink to ${latestDestPath} from ${latestPath}`)
-        fs.symlinkSync(latestDestPath, latestPath)
+        // deliberately ignore err.
+        console.log(`Symlink to ${latest} from ${latestPath}`)
+        fs.symlinkSync(latest, latestPath)
       })
     }
   }
