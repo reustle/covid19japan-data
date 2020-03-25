@@ -2,7 +2,7 @@
   "prefectures": [
     {
       "Tokyo": {
-        "count": 179,
+        "count": 220,
         "cruisePassenger": 0,
         "cruiseWorker": 7,
         "deaths": 5,
@@ -59,7 +59,7 @@
     },
     {
       "Aichi": {
-        "count": 150,
+        "count": 155,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 12,
@@ -84,7 +84,7 @@
     },
     {
       "Osaka": {
-        "count": 140,
+        "count": 147,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 2,
@@ -144,7 +144,7 @@
     },
     {
       "Kanagawa": {
-        "count": 90,
+        "count": 93,
         "cruisePassenger": 0,
         "cruiseWorker": 4,
         "deaths": 4,
@@ -159,7 +159,7 @@
           "Hiratsuka": 6,
           "Odawara": 1,
           "Fujisawa": 6,
-          "Kawasaki": 5,
+          "Kawasaki": 8,
           "Yokosuka": 3
         }
       }
@@ -219,6 +219,22 @@
       }
     },
     {
+      "Kyoto": {
+        "count": 31,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Kyoto": 3,
+          "Kyoto city": 21,
+          "Yamashiro": 1,
+          "Chutan": 5,
+          "Otokuni": 1
+        }
+      }
+    },
+    {
       "Niigata": {
         "count": 29,
         "cruisePassenger": 0,
@@ -234,22 +250,6 @@
           "Konan Ward, Niigata": 1,
           "Nagaoka": 1,
           "Ojiya": 1
-        }
-      }
-    },
-    {
-      "Kyoto": {
-        "count": 27,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Kyoto": 3,
-          "Kyoto city": 17,
-          "Yamashiro": 1,
-          "Chutan": 5,
-          "Otokuni": 1
         }
       }
     },
@@ -325,7 +325,7 @@
     },
     {
       "Gifu": {
-        "count": 11,
+        "count": 12,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 0,
@@ -334,7 +334,7 @@
           "Ogaki ": 2,
           "Gifu": 2,
           "Kakamigahara": 1,
-          "Kani": 3,
+          "Kani": 4,
           "Kagamigahara": 1,
           "Kawabe": 1
         }
@@ -402,6 +402,19 @@
       }
     },
     {
+      "Kumamoto": {
+        "count": 8,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Kumamoto": 3,
+          "Kumamoto city": 1
+        }
+      }
+    },
+    {
       "Ishikawa": {
         "count": 8,
         "cruisePassenger": 0,
@@ -411,18 +424,6 @@
         "cityCounts": {
           "Kanazawa": 3,
           "Ishikawa": 1
-        }
-      }
-    },
-    {
-      "Kumamoto": {
-        "count": 7,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Kumamoto": 3
         }
       }
     },
@@ -452,6 +453,20 @@
       }
     },
     {
+      "Yamaguchi": {
+        "count": 6,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Shimonoseki": 4,
+          "Yamaguchi": 1,
+          "Yamaguchi city": 1
+        }
+      }
+    },
+    {
       "Tochigi": {
         "count": 6,
         "cruisePassenger": 1,
@@ -473,19 +488,6 @@
         "progression": [],
         "cityCounts": {
           "Naha": 1
-        }
-      }
-    },
-    {
-      "Yamaguchi": {
-        "count": 5,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Shimonoseki": 4,
-          "Yamaguchi": 1
         }
       }
     },
@@ -513,6 +515,18 @@
         "progression": [],
         "cityCounts": {
           "Yamanashi": 1
+        }
+      }
+    },
+    {
+      "Fukui": {
+        "count": 3,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Fukui": 1
         }
       }
     },
@@ -611,18 +625,6 @@
         "progression": [],
         "cityCounts": {
           "Okayama": 1
-        }
-      }
-    },
-    {
-      "Fukui": {
-        "count": 1,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Fukui": 1
         }
       }
     },
@@ -1069,7 +1071,7 @@
       "tested": 24430
     },
     "2020-03-25": {
-      "confirmed": 23,
+      "confirmed": 88,
       "recovered": 272,
       "deceased": 43,
       "critical": 57,
