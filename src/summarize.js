@@ -4,7 +4,7 @@ const fs = require('fs')
 const _ = require('lodash')
 const moment = require('moment')
 
-const summarize = (patientDataFilename, summaryOutputFilename) => {
+const summarize = (fetchPatientData, summaryOutputFilename) => {
   const patients = _.orderBy(JSON.parse(fs.readFileSync(patientDataFilename)), ['dateAnnounced'], ['asc'])
   let prefectureSummary = generatePrefectureSummary(patients)
   let dailySummary = generateDailySummary(patients)

@@ -81,9 +81,11 @@ const postProcessData = (rawData) => {
 
 
 async function fetchPatientData(destinationFilename) {
-  drive({sheet: SHEET, tab: SHEET_PATIENT_DATA_TAB})
+  return drive({sheet: SHEET, tab: SHEET_PATIENT_DATA_TAB})
     .then(db => {
-      fs.writeFileSync(destinationFilename, JSON.stringify(postProcessData(db), null, '  '))
+      let processedData = postProcessData(db)
+      fs.writeFileSync(destinationFilename, JSON.stringify(processedData, null, '  '))
+      return processedData
     })
 }
 
