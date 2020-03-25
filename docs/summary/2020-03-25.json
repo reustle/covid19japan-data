@@ -1,8 +1,9 @@
 {
   "prefectures": [
     {
-      "Tokyo": {
-        "count": 179,
+      "name": "Tokyo",
+      "summary": {
+        "count": 220,
         "cruisePassenger": 0,
         "cruiseWorker": 7,
         "deaths": 5,
@@ -16,7 +17,8 @@
       }
     },
     {
-      "Hokkaido": {
+      "name": "Hokkaido",
+      "summary": {
         "count": 167,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -58,8 +60,9 @@
       }
     },
     {
-      "Aichi": {
-        "count": 150,
+      "name": "Aichi",
+      "summary": {
+        "count": 155,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 12,
@@ -83,8 +86,9 @@
       }
     },
     {
-      "Osaka": {
-        "count": 140,
+      "name": "Osaka",
+      "summary": {
+        "count": 147,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 2,
@@ -116,7 +120,8 @@
       }
     },
     {
-      "Hyogo": {
+      "name": "Hyogo",
+      "summary": {
         "count": 119,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -143,8 +148,9 @@
       }
     },
     {
-      "Kanagawa": {
-        "count": 90,
+      "name": "Kanagawa",
+      "summary": {
+        "count": 93,
         "cruisePassenger": 0,
         "cruiseWorker": 4,
         "deaths": 4,
@@ -159,13 +165,14 @@
           "Hiratsuka": 6,
           "Odawara": 1,
           "Fujisawa": 6,
-          "Kawasaki": 5,
+          "Kawasaki": 8,
           "Yokosuka": 3
         }
       }
     },
     {
-      "Saitama": {
+      "name": "Saitama",
+      "summary": {
         "count": 63,
         "cruisePassenger": 1,
         "cruiseWorker": 1,
@@ -195,7 +202,8 @@
       }
     },
     {
-      "Chiba": {
+      "name": "Chiba",
+      "summary": {
         "count": 53,
         "cruisePassenger": 2,
         "cruiseWorker": 0,
@@ -219,7 +227,25 @@
       }
     },
     {
-      "Niigata": {
+      "name": "Kyoto",
+      "summary": {
+        "count": 31,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Kyoto": 3,
+          "Kyoto city": 21,
+          "Yamashiro": 1,
+          "Chutan": 5,
+          "Otokuni": 1
+        }
+      }
+    },
+    {
+      "name": "Niigata",
+      "summary": {
         "count": 29,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -238,23 +264,8 @@
       }
     },
     {
-      "Kyoto": {
-        "count": 27,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Kyoto": 3,
-          "Kyoto city": 17,
-          "Yamashiro": 1,
-          "Chutan": 5,
-          "Otokuni": 1
-        }
-      }
-    },
-    {
-      "Oita": {
+      "name": "Oita",
+      "summary": {
         "count": 25,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -267,7 +278,24 @@
       }
     },
     {
-      "Wakayama": {
+      "name": "Unspecified",
+      "summary": {
+        "count": 20,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Haneda": 1,
+          "Haneda airport": 4,
+          "Kansai airport": 2,
+          "Narita airport": 3
+        }
+      }
+    },
+    {
+      "name": "Wakayama",
+      "summary": {
         "count": 17,
         "cruisePassenger": 0,
         "cruiseWorker": 1,
@@ -280,21 +308,8 @@
       }
     },
     {
-      "Unspecified": {
-        "count": 15,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Haneda": 1,
-          "Haneda airport": 2,
-          "Kansai airport": 2
-        }
-      }
-    },
-    {
-      "Gunma": {
+      "name": "Gunma",
+      "summary": {
         "count": 14,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -311,7 +326,8 @@
       }
     },
     {
-      "Kochi": {
+      "name": "Kochi",
+      "summary": {
         "count": 12,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -324,8 +340,9 @@
       }
     },
     {
-      "Gifu": {
-        "count": 11,
+      "name": "Gifu",
+      "summary": {
+        "count": 12,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 0,
@@ -334,14 +351,15 @@
           "Ogaki ": 2,
           "Gifu": 2,
           "Kakamigahara": 1,
-          "Kani": 3,
+          "Kani": 4,
           "Kagamigahara": 1,
           "Kawabe": 1
         }
       }
     },
     {
-      "Ibaraki": {
+      "name": "Ibaraki",
+      "summary": {
         "count": 10,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -357,7 +375,22 @@
       }
     },
     {
-      "Fukuoka": {
+      "name": "Tochigi",
+      "summary": {
+        "count": 10,
+        "cruisePassenger": 1,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Utsunomiya": 1,
+          "Oyama": 1
+        }
+      }
+    },
+    {
+      "name": "Fukuoka",
+      "summary": {
         "count": 9,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -374,7 +407,8 @@
       }
     },
     {
-      "Mie": {
+      "name": "Mie",
+      "summary": {
         "count": 9,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -388,7 +422,8 @@
       }
     },
     {
-      "Nara": {
+      "name": "Nara",
+      "summary": {
         "count": 9,
         "cruisePassenger": 2,
         "cruiseWorker": 0,
@@ -402,7 +437,22 @@
       }
     },
     {
-      "Ishikawa": {
+      "name": "Kumamoto",
+      "summary": {
+        "count": 8,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Kumamoto": 3,
+          "Kumamoto city": 1
+        }
+      }
+    },
+    {
+      "name": "Ishikawa",
+      "summary": {
         "count": 8,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -415,19 +465,8 @@
       }
     },
     {
-      "Kumamoto": {
-        "count": 7,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Kumamoto": 3
-        }
-      }
-    },
-    {
-      "Aomori": {
+      "name": "Aomori",
+      "summary": {
         "count": 6,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -439,7 +478,8 @@
       }
     },
     {
-      "Shiga": {
+      "name": "Shiga",
+      "summary": {
         "count": 6,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -452,20 +492,23 @@
       }
     },
     {
-      "Tochigi": {
+      "name": "Yamaguchi",
+      "summary": {
         "count": 6,
-        "cruisePassenger": 1,
+        "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 0,
         "progression": [],
         "cityCounts": {
-          "Utsunomiya": 1,
-          "Oyama": 1
+          "Shimonoseki": 4,
+          "Yamaguchi": 1,
+          "Yamaguchi city": 1
         }
       }
     },
     {
-      "Okinawa": {
+      "name": "Okinawa",
+      "summary": {
         "count": 6,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -477,20 +520,8 @@
       }
     },
     {
-      "Yamaguchi": {
-        "count": 5,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Shimonoseki": 4,
-          "Yamaguchi": 1
-        }
-      }
-    },
-    {
-      "Nagano": {
+      "name": "Nagano",
+      "summary": {
         "count": 5,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -505,7 +536,8 @@
       }
     },
     {
-      "Yamanashi": {
+      "name": "Yamanashi",
+      "summary": {
         "count": 4,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -517,7 +549,21 @@
       }
     },
     {
-      "Hiroshima": {
+      "name": "Fukui",
+      "summary": {
+        "count": 3,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Fukui": 1
+        }
+      }
+    },
+    {
+      "name": "Hiroshima",
+      "summary": {
         "count": 3,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -530,7 +576,8 @@
       }
     },
     {
-      "Miyazaki": {
+      "name": "Miyazaki",
+      "summary": {
         "count": 3,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -543,7 +590,8 @@
       }
     },
     {
-      "Ehime": {
+      "name": "Ehime",
+      "summary": {
         "count": 3,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -556,7 +604,8 @@
       }
     },
     {
-      "Shizuoka": {
+      "name": "Shizuoka",
+      "summary": {
         "count": 3,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -568,7 +617,8 @@
       }
     },
     {
-      "Nagasaki": {
+      "name": "Nagasaki",
+      "summary": {
         "count": 2,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -580,7 +630,8 @@
       }
     },
     {
-      "Fukushima": {
+      "name": "Fukushima",
+      "summary": {
         "count": 2,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -593,7 +644,8 @@
       }
     },
     {
-      "Akita": {
+      "name": "Akita",
+      "summary": {
         "count": 2,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -603,7 +655,8 @@
       }
     },
     {
-      "Okayama": {
+      "name": "Okayama",
+      "summary": {
         "count": 1,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -615,19 +668,8 @@
       }
     },
     {
-      "Fukui": {
-        "count": 1,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Fukui": 1
-        }
-      }
-    },
-    {
-      "Kagawa": {
+      "name": "Kagawa",
+      "summary": {
         "count": 1,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -639,7 +681,8 @@
       }
     },
     {
-      "Saga": {
+      "name": "Saga",
+      "summary": {
         "count": 1,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
@@ -651,7 +694,8 @@
       }
     },
     {
-      "Miyagi": {
+      "name": "Miyagi",
+      "summary": {
         "count": 1,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -663,7 +707,8 @@
       }
     },
     {
-      "Tokushima": {
+      "name": "Tokushima",
+      "summary": {
         "count": 1,
         "cruisePassenger": 1,
         "cruiseWorker": 0,
@@ -1055,23 +1100,23 @@
       "tested": 20228
     },
     "2020-03-23": {
-      "confirmed": 39,
+      "confirmed": 40,
       "recovered": 247,
       "deceased": 41,
       "critical": 54,
       "tested": 20340
     },
     "2020-03-24": {
-      "confirmed": 69,
+      "confirmed": 72,
       "recovered": 251,
       "deceased": 42,
       "critical": 55,
       "tested": 24430
     },
     "2020-03-25": {
-      "confirmed": 23,
+      "confirmed": 93,
       "recovered": 272,
-      "deceased": 43,
+      "deceased": 44,
       "critical": 57,
       "tested": 23521
     }
