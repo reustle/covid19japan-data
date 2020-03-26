@@ -147,7 +147,7 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
 }
 
 const generateDailyStatsForPrefecture = (patients, firstDay) => {
-  const lastDay = moment(patients[patients.length - 1].dateAnnounced)
+  const lastDay = moment().utcOffset(540)
   let day = moment(firstDay)
   let daily = []
   while (day <= lastDay) {
