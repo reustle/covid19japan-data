@@ -15,7 +15,7 @@ const summarize = (patientData, manualDailyData, manualPrefectureData, summaryOu
     daily: dailySummary
   }
 
-  fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
+  fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null))
 }
 
 // Helper method to do parseInt safely (reverts to 0 if unparse)
@@ -75,7 +75,6 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
         cruiseWorker: 0,
         deaths: 0,
         patients: [],
-        progression: [],
         cityCounts: {}
       }
     
@@ -102,13 +101,14 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
   }
 
   // calculate sparkline array
-  // appendSparkLineForAllPrefectures(patients, prefectureSummary)
+  appendSparkLineForAllPrefectures(patients, prefectureSummary)
 
   // Import manual data.
   for (let row of manualPrefectureData) {
     if (prefectureSummary[row.prefecture]) {
       prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered)
       prefectureSummary[row.prefecture].deaths = safeParseInt(row.deaths)
+      prefectureSummary[row.prefecture].name_ja = row.prefectureja
     }
   }
 
@@ -127,8 +127,7 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
   )
 }
 
-const generateSparkLineForPrefecture = (patients, summary) => {
-  const firstDay = moment('2020-01-08')
+const generateSparkLineForPrefecture = (patients, firstDay, summary) => {
   const lastDay = moment(patients[patients.length - 1].dateAnnounced)
   let day = moment(firstDay)
   let sparkLineData = []
@@ -142,9 +141,11 @@ const generateSparkLineForPrefecture = (patients, summary) => {
 }
 
 const appendSparkLineForAllPrefectures = (patients, prefectureSummaries) => {
+  const firstDay = moment('2020-01-08')
   for (let prefectureName in prefectureSummaries) {
     let summary = prefectureSummaries[prefectureName]
-    summary.sparkLine = generateSparkLineForPrefecture(patients, summary)
+    summary.sparkLine = generateSparkLineForPrefecture(patients, firstDay, summary)
+    summary.sparkLineStartDate = firstDay.format('YYYY-MM-DD')
   }
 }
 
