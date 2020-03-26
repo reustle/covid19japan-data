@@ -81,16 +81,16 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
 
     if (!prefectureSummary[prefectureName]) {
       prefectureSummary[prefectureName] = {
-        count: 0,
+        confirmed: 0,
         cruisePassenger: 0,
         cruiseWorker: 0,
         deaths: 0,
         patients: [],
-        cityCounts: {}
+        confirmedByCity: {}
       }
     
     }
-    prefectureSummary[prefectureName].count += 1
+    prefectureSummary[prefectureName].confirmed += 1
     if (patient.cruisePassengerDisembarked == 1) {
       prefectureSummary[prefectureName].cruisePassenger += 1
     }
@@ -101,10 +101,10 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
       prefectureSummary[prefectureName].deaths += 1
     }
     if (cityName) {
-      if (prefectureSummary[prefectureName].cityCounts[cityName]) {
-        prefectureSummary[prefectureName].cityCounts[cityName] += 1
+      if (prefectureSummary[prefectureName].confirmedByCity[cityName]) {
+        prefectureSummary[prefectureName].confirmedByCity[cityName] += 1
       } else {
-        prefectureSummary[prefectureName].cityCounts[cityName] = 1        
+        prefectureSummary[prefectureName].confirmedByCity[cityName] = 1        
       }
     }
 
@@ -133,8 +133,8 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
     _.reverse(
       _.sortBy(
         _.toPairs(prefectureSummary), 
-        [ a => a[1].count ])),
-    (v) => { return {'name': v[0], 'summary': v[1]} }
+        [ a => a[1].confirmed ])),
+    (v) => { let o = v[1]; o.name = v[0]; return o }
   )
 }
 
