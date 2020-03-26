@@ -465,6 +465,19 @@
       }
     },
     {
+      "name": "Okinawa",
+      "summary": {
+        "count": 7,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Naha": 1
+        }
+      }
+    },
+    {
       "name": "Aomori",
       "summary": {
         "count": 6,
@@ -503,19 +516,6 @@
           "Shimonoseki": 4,
           "Yamaguchi": 1,
           "Yamaguchi city": 1
-        }
-      }
-    },
-    {
-      "name": "Okinawa",
-      "summary": {
-        "count": 6,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Naha": 1
         }
       }
     },
@@ -1127,6 +1127,13 @@
       "deceased": 44,
       "critical": 57,
       "tested": 23521
+    },
+    "undefined": {
+      "confirmed": 1,
+      "recovered": 0,
+      "deceased": 0,
+      "critical": 0,
+      "tested": 0
     }
   }
 }
