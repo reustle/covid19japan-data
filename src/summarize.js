@@ -58,7 +58,7 @@ const generateDailySummary = (patients, manualDailyData) => {
     }
   }
 
-  return dailySummary
+  return _.map(_.sortBy(_.toPairs(dailySummary), a => a[0]), (v) => { let o = v[1]; o.date = v[0]; return o })
 }
 
 const generatePrefectureSummary = (patients, manualPrefectureData) => {
