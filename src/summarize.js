@@ -33,6 +33,9 @@ const generateDailySummary = (patients, manualDailyData) => {
   for (let patient of patients) {
     let prefectureName = patient.detectedPrefecture
     let dateAnnounced = patient.dateAnnounced
+    if (!patient.dateAnnounced) {
+      continue
+    }
     if (!dailySummary[dateAnnounced]) {
       dailySummary[dateAnnounced] = {
         confirmed: 0,
