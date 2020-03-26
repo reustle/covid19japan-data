@@ -3,16 +3,16 @@ const fs = require('fs')
 const _ = require('lodash')
 const moment = require('moment')
 
-
 // Merge all the data from the spreadsheet with auto-calculation
-const summarize = (patientData, manualDailyData, manualPrefectureData, summaryOutputFilename) => {
+const summarize = (patientData, manualDailyData, manualPrefectureData, lastUpdated, summaryOutputFilename) => {
   const patients = _.orderBy(patientData, ['dateAnnounced'], ['asc'])
   let prefectureSummary = generatePrefectureSummary(patients, manualPrefectureData)
   let dailySummary = generateDailySummary(patients, manualDailyData)
 
   let summary = {
     prefectures: prefectureSummary,
-    daily: dailySummary
+    daily: dailySummary,
+    updated: lastUpdated
   }
 
   fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
