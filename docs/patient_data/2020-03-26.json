@@ -15673,7 +15673,10 @@
   {
     "patientId": 1304,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
+    "ageBracket": 90,
+    "gender": "M",
+    "residence": "Tokyo",
+    "detectedCityTown": "Tokyo",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 7, unemployed",
     "sourceURL": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/03/25/28_01.html"
@@ -15681,7 +15684,10 @@
   {
     "patientId": 1305,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Tokyo",
+    "detectedCityTown": "Tokyo",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 8, unemployed",
     "sourceURL": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/03/25/28_01.html"
@@ -15689,15 +15695,19 @@
   {
     "patientId": 1306,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Tokyo",
+    "detectedCityTown": "Tokyo",
     "detectedPrefecture": "Tokyo",
-    "notes": "Tokyo 9",
+    "notes": "Tokyo 9, job unspecified",
     "sourceURL": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/03/25/28_01.html"
   },
   {
     "patientId": 1307,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 10",
     "sourceURL": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/03/25/28_01.html"
@@ -16271,6 +16281,32 @@
   {
     "patientId": null,
     "ageBracket": -1,
+    "residence": "Funabashi",
     "detectedPrefecture": "Chiba"
+  },
+  {
+    "patientId": null,
+    "ageBracket": -1,
+    "residence": "Funabashi",
+    "detectedPrefecture": "Chiba"
+  },
+  {
+    "patientId": null,
+    "ageBracket": -1,
+    "detectedPrefecture": "Miyagi"
+  },
+  {
+    "patientId": null,
+    "ageBracket": -1,
+    "detectedPrefecture": "Miyagi"
+  },
+  {
+    "patientId": null,
+    "ageBracket": -1,
+    "detectedPrefecture": "Yamaguchi"
+  },
+  {
+    "patientId": null,
+    "ageBracket": -1
   }
 ]

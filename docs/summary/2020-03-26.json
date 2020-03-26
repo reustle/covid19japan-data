@@ -9,7 +9,7 @@
         "deaths": 5,
         "progression": [],
         "cityCounts": {
-          "Tokyo": 54,
+          "Tokyo": 57,
           "Suginami": 1,
           "Adachi": 3,
           "Nerima": 1,
@@ -205,7 +205,7 @@
     {
       "name": "Chiba",
       "summary": {
-        "count": 54,
+        "count": 55,
         "cruisePassenger": 2,
         "cruiseWorker": 0,
         "deaths": 0,
@@ -466,6 +466,21 @@
       }
     },
     {
+      "name": "Yamaguchi",
+      "summary": {
+        "count": 7,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Shimonoseki": 4,
+          "Yamaguchi": 1,
+          "Yamaguchi city": 1
+        }
+      }
+    },
+    {
       "name": "Okinawa",
       "summary": {
         "count": 7,
@@ -502,21 +517,6 @@
         "cityCounts": {
           "Otsu": 4,
           "Higashiomi": 2
-        }
-      }
-    },
-    {
-      "name": "Yamaguchi",
-      "summary": {
-        "count": 6,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Shimonoseki": 4,
-          "Yamaguchi": 1,
-          "Yamaguchi city": 1
         }
       }
     },
@@ -606,6 +606,19 @@
       }
     },
     {
+      "name": "Miyagi",
+      "summary": {
+        "count": 3,
+        "cruisePassenger": 1,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Sendai": 1
+        }
+      }
+    },
+    {
       "name": "Shizuoka",
       "summary": {
         "count": 3,
@@ -657,6 +670,18 @@
       }
     },
     {
+      "name": "undefined",
+      "summary": {
+        "count": 1,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": null,
+        "progression": [],
+        "cityCounts": {},
+        "recovered": 272
+      }
+    },
+    {
       "name": "Okayama",
       "summary": {
         "count": 1,
@@ -692,19 +717,6 @@
         "progression": [],
         "cityCounts": {
           "Saga": 1
-        }
-      }
-    },
-    {
-      "name": "Miyagi",
-      "summary": {
-        "count": 1,
-        "cruisePassenger": 1,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Sendai": 1
         }
       }
     },
@@ -1130,7 +1142,7 @@
       "tested": 23521
     },
     "undefined": {
-      "confirmed": 2,
+      "confirmed": 7,
       "recovered": 0,
       "deceased": 0,
       "critical": 0,
