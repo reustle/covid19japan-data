@@ -31,7 +31,6 @@ const safeParseInt = v => {
 const generateDailySummary = (patients, manualDailyData) => {
   let dailySummary = {}
   for (let patient of patients) {
-    let prefectureName = patient.detectedPrefecture
     let dateAnnounced = patient.dateAnnounced
     if (!patient.dateAnnounced) {
       continue
@@ -39,10 +38,10 @@ const generateDailySummary = (patients, manualDailyData) => {
     if (!dailySummary[dateAnnounced]) {
       dailySummary[dateAnnounced] = {
         confirmed: 0,
-        recovered: 0,
-        deceased: 0,
-        critical: 0,
-        tested: 0
+        recoveredCummulative: 0,
+        deceasedCummulative: 0,
+        criticalCummulative: 0,
+        testedCummulative: 0
       }
     }
 
@@ -54,14 +53,23 @@ const generateDailySummary = (patients, manualDailyData) => {
   //       data. But those numbers are incomplete.
   for (let row of manualDailyData) {
     if (dailySummary[row.date]) {
-      dailySummary[row.date].recovered = safeParseInt(row.recovered)
-      dailySummary[row.date].deceased = safeParseInt(row.deceased)
-      dailySummary[row.date].critical = safeParseInt(row.critical)
-      dailySummary[row.date].tested = safeParseInt(row.tested)
+      dailySummary[row.date].recoveredCummulative = safeParseInt(row.recovered)
+      dailySummary[row.date].deceasedCummulative = safeParseInt(row.deceased)
+      dailySummary[row.date].criticalCummulative = safeParseInt(row.critical)
+      dailySummary[row.date].testedCummulative = safeParseInt(row.tested)
     }
   }
 
-  return _.map(_.sortBy(_.toPairs(dailySummary), a => a[0]), (v) => { let o = v[1]; o.date = v[0]; return o })
+  let orderedDailySummary = 
+      _.map(_.sortBy(_.toPairs(dailySummary), a => a[0]), (v) => { let o = v[1]; o.date = v[0]; return o })
+  
+  // Calculate the cummulative confirmed.
+  let confirmedCummlative = 0
+  for (let dailySum of orderedDailySummary) {
+    confirmedCummlative += dailySum.confirmed
+    dailySum.confirmedCummlative = confirmedCummlative
+  }
+  return orderedDailySummary
 }
 
 const generatePrefectureSummary = (patients, manualPrefectureData) => {
