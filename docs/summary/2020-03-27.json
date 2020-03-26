@@ -226,12 +226,12 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 155,
+      "confirmed": 158,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
-      "deaths": 18,
+      "deaths": 19,
       "confirmedByCity": {
-        "Nagoya": 108,
+        "Nagoya": 110,
         "Owari": 11,
         "Gamagori, Mikawa": 4,
         "Mikawa": 1,
@@ -244,7 +244,8 @@
         "Kasugai": 1,
         "Konan": 1,
         "Chita": 2,
-        "Toyokawa": 1
+        "Toyokawa": 1,
+        "Inuyama": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -324,16 +325,17 @@
         2,
         1,
         3,
-        5
+        5,
+        3
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 5,
+      "newlyConfirmed": 3,
       "recovered": 9,
       "name_ja": "愛知県",
       "name": "Aichi"
     },
     {
-      "confirmed": 147,
+      "confirmed": 154,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 2,
@@ -342,8 +344,8 @@
         "HigashiOsaka": 1,
         "Daito": 4,
         "Sakai": 3,
-        "Takatsuki": 3,
-        "Suita": 10,
+        "Takatsuki": 4,
+        "Suita": 11,
         "Toyonaka": 8,
         "Higashiosaka": 3,
         "Minoo": 2,
@@ -359,7 +361,7 @@
         "Matsuhara": 1,
         "Izumi": 2,
         "Izumisano": 2,
-        "Osaka city": 3
+        "Osaka city": 6
       },
       "dailyConfirmedCount": [
         0,
@@ -439,6 +441,7 @@
         6,
         3,
         8,
+        7,
         7
       ],
       "dailyConfirmedStartDate": "2020-01-08",
@@ -451,7 +454,7 @@
       "confirmed": 119,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
-      "deaths": 6,
+      "deaths": 7,
       "confirmedByCity": {
         "Nishinomiya": 6,
         "Kobe": 26,
@@ -548,23 +551,24 @@
         4,
         2,
         5,
-        1
+        1,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 5,
       "name_ja": "兵庫県",
       "name": "Hyogo"
     },
     {
-      "confirmed": 94,
+      "confirmed": 97,
       "cruisePassenger": 0,
       "cruiseWorker": 4,
       "deaths": 4,
       "confirmedByCity": {
         "Kanagawa": 2,
         "Sagamihara": 20,
-        "Yokohama": 17,
+        "Yokohama": 18,
         "Atsugi": 3,
         "Kamakura": 3,
         "Kamamura": 1,
@@ -653,10 +657,10 @@
         0,
         6,
         4,
-        1
+        4
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 4,
       "recovered": 17,
       "name_ja": "神奈川県",
       "name": "Kanagawa"
@@ -883,7 +887,7 @@
       "name": "Chiba"
     },
     {
-      "confirmed": 31,
+      "confirmed": 32,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 0,
@@ -892,7 +896,8 @@
         "Kyoto city": 21,
         "Yamashiro": 1,
         "Chutan": 5,
-        "Otokuni": 1
+        "Otokuni": 1,
+        "Nagaokakyo": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -972,10 +977,11 @@
         1,
         1,
         2,
-        4
+        4,
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 4,
+      "newlyConfirmed": 1,
       "recovered": 7,
       "name_ja": "京都府",
       "name": "Kyoto"
@@ -1073,10 +1079,11 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 3,
       "name_ja": "新潟県",
       "name": "Niigata"
@@ -1168,10 +1175,11 @@
         8,
         1,
         1,
-        2
+        2,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 2,
+      "newlyConfirmed": 0,
       "recovered": 1,
       "name_ja": "大分県",
       "name": "Oita"
@@ -1265,10 +1273,11 @@
         0,
         1,
         3,
-        1
+        1,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 12,
       "name_ja": "不明",
       "name": "Unspecified"
@@ -1354,10 +1363,17 @@
         0,
         0,
         0,
-        2
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 2,
+      "newlyConfirmed": 0,
       "recovered": 9,
       "name_ja": "和歌山県",
       "name": "Wakayama"
@@ -1453,10 +1469,11 @@
         0,
         0,
         2,
-        1
+        1,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 0,
       "name_ja": "群馬県",
       "name": "Gunma"
@@ -1631,10 +1648,28 @@
         0,
         2,
         1,
-        2
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 2,
+      "newlyConfirmed": 0,
       "recovered": 11,
       "name_ja": "高知県",
       "name": "Kochi"
@@ -1728,10 +1763,12 @@
         0,
         0,
         2,
-        5
+        5,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 5,
+      "newlyConfirmed": 0,
       "recovered": 2,
       "name_ja": "茨城県",
       "name": "Ibaraki"
@@ -1823,10 +1860,11 @@
         0,
         0,
         2,
-        4
+        4,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 4,
+      "newlyConfirmed": 0,
       "recovered": 2,
       "name_ja": "栃木県",
       "name": "Tochigi"
@@ -1921,10 +1959,12 @@
         0,
         0,
         1,
-        3
+        3,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 3,
+      "newlyConfirmed": 0,
       "recovered": 2,
       "name_ja": "福岡県",
       "name": "Fukuoka"
@@ -2010,10 +2050,18 @@
         1,
         0,
         0,
-        1
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 3,
       "name_ja": "三重県",
       "name": "Mie"
@@ -2103,10 +2151,14 @@
         0,
         0,
         0,
-        1
+        1,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 3,
       "name_ja": "奈良県",
       "name": "Nara"
@@ -2198,10 +2250,11 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 1,
       "name_ja": "熊本県",
       "name": "Kumamoto"
@@ -2288,10 +2341,16 @@
         0,
         0,
         0,
-        1
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 3,
       "name_ja": "石川県",
       "name": "Ishikawa"
@@ -2303,7 +2362,8 @@
       "deaths": 0,
       "confirmedByCity": {
         "Otsu": 4,
-        "Higashiomi": 2
+        "Higashiomi": 2,
+        "Yasu": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -2670,13 +2730,105 @@
         0,
         2,
         0,
-        4
+        4,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 4,
+      "newlyConfirmed": 0,
       "recovered": 0,
       "name_ja": "青森県",
       "name": "Aomori"
+    },
+    {
+      "confirmed": 5,
+      "cruisePassenger": 0,
+      "cruiseWorker": 0,
+      "deaths": 0,
+      "confirmedByCity": {},
+      "dailyConfirmedCount": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "dailyConfirmedStartDate": "2020-01-08",
+      "newlyConfirmed": 5,
+      "name": "undefined"
     },
     {
       "confirmed": 5,
@@ -2862,10 +3014,12 @@
         0,
         0,
         0,
-        1
+        1,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 1,
       "name_ja": "長野県",
       "name": "Nagano"
@@ -2956,10 +3110,11 @@
         0,
         0,
         0,
-        2
+        2,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 2,
+      "newlyConfirmed": 0,
       "recovered": 0,
       "name_ja": "山梨県",
       "name": "Yamanashi"
@@ -3047,10 +3202,15 @@
         0,
         0,
         1,
-        1
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 1,
       "name_ja": "広島県",
       "name": "Hiroshima"
@@ -3134,10 +3294,19 @@
         0,
         0,
         0,
-        2
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 2,
+      "newlyConfirmed": 0,
       "recovered": 0,
       "name_ja": "宮崎県",
       "name": "Miyazaki"
@@ -3222,10 +3391,18 @@
         0,
         0,
         0,
-        1
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 1,
       "name_ja": "愛媛県",
       "name": "Ehime"
@@ -3303,10 +3480,24 @@
         0,
         1,
         0,
-        1
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 1,
       "name_ja": "静岡県",
       "name": "Shizuoka"
@@ -3397,10 +3588,11 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 0,
       "name_ja": "長崎県",
       "name": "Nagasaki"
@@ -3481,10 +3673,22 @@
         0,
         0,
         0,
-        1
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 0,
       "name_ja": "福島県",
       "name": "Fukushima"
@@ -3554,10 +3758,30 @@
         0,
         0,
         0,
-        2
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 2,
+      "newlyConfirmed": 0,
       "recovered": 1,
       "name_ja": "秋田県",
       "name": "Akita"
@@ -3741,10 +3965,14 @@
         0,
         0,
         0,
-        1
+        1,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 0,
       "name_ja": "岡山県",
       "name": "Okayama"
@@ -3827,10 +4055,19 @@
         0,
         0,
         0,
-        1
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 0,
       "name_ja": "香川県",
       "name": "Kagawa"
@@ -3909,10 +4146,23 @@
         0,
         0,
         0,
-        1
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 0,
       "name_ja": "佐賀県",
       "name": "Saga"
@@ -3974,10 +4224,40 @@
         0,
         0,
         0,
-        1
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 0,
       "recovered": 0,
       "name_ja": "徳島県",
       "name": "Tokushima"
@@ -4498,14 +4778,14 @@
       "confirmedCumulative": 1299
     },
     {
-      "confirmed": 62,
+      "confirmed": 81,
       "recoveredCumulative": 272,
-      "deceasedCumulative": 44,
+      "deceasedCumulative": 46,
       "criticalCumulative": 57,
       "testedCumulative": 23521,
       "date": "2020-03-26",
-      "confirmedCumulative": 1361
+      "confirmedCumulative": 1380
     }
   ],
-  "updated": "Mar 26 2020, 14:38 JST"
+  "updated": "Mar 26 2020, 23:38 JST"
 }
