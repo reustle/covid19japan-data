@@ -16303,8 +16303,14 @@
   },
   {
     "patientId": null,
-    "ageBracket": -1,
-    "detectedPrefecture": "Miyagi"
+    "dateAnnounced": "2020-03-26",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Matsudo",
+    "detectedCityTown": "Matsudo",
+    "detectedPrefecture": "Chiba",
+    "notes": "Traveled to Austria and Germany",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351511000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
     "patientId": null,
@@ -16314,7 +16320,18 @@
   {
     "patientId": null,
     "ageBracket": -1,
-    "detectedPrefecture": "Yamaguchi"
+    "detectedPrefecture": "Miyagi"
+  },
+  {
+    "patientId": null,
+    "dateAnnounced": "2020-03-26",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Yamaguchi city",
+    "detectedCityTown": "Yamaguchi city",
+    "detectedPrefecture": "Yamaguchi",
+    "notes": "Mother of previously confirmed student",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351611000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
     "patientId": null,
@@ -16609,5 +16626,10 @@
     "residence": "Yasu city ",
     "detectedPrefecture": "Shiga",
     "notes": "Shiga #6 case, Traveled to Spain and Portugal and returned on 7１７"
+  },
+  {
+    "patientId": null,
+    "ageBracket": -1,
+    "detectedPrefecture": "Kanagawa"
   }
 ]
