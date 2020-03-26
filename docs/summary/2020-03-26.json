@@ -20,7 +20,7 @@
     {
       "name": "Hokkaido",
       "summary": {
-        "count": 167,
+        "count": 168,
         "cruisePassenger": 0,
         "cruiseWorker": 0,
         "deaths": 5,
@@ -174,7 +174,7 @@
     {
       "name": "Saitama",
       "summary": {
-        "count": 63,
+        "count": 65,
         "cruisePassenger": 1,
         "cruiseWorker": 1,
         "deaths": 0,
@@ -217,7 +217,7 @@
           "Matsudo": 8,
           "Isumishi": 1,
           "Yotsukaido": 1,
-          "Funabashi": 2,
+          "Funabashi": 4,
           "Sosa": 3,
           "Inzai": 1,
           "Urayasu": 1,
@@ -466,6 +466,20 @@
       }
     },
     {
+      "name": "Shiga",
+      "summary": {
+        "count": 7,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Otsu": 4,
+          "Higashiomi": 2
+        }
+      }
+    },
+    {
       "name": "Yamaguchi",
       "summary": {
         "count": 7,
@@ -503,20 +517,6 @@
         "progression": [],
         "cityCounts": {
           "Hachinohe": 4
-        }
-      }
-    },
-    {
-      "name": "Shiga",
-      "summary": {
-        "count": 6,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Otsu": 4,
-          "Higashiomi": 2
         }
       }
     },
@@ -667,18 +667,6 @@
         "deaths": 0,
         "progression": [],
         "cityCounts": {}
-      }
-    },
-    {
-      "name": "undefined",
-      "summary": {
-        "count": 1,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": null,
-        "progression": [],
-        "cityCounts": {},
-        "recovered": 272
       }
     },
     {
@@ -1135,7 +1123,7 @@
       "tested": 23521
     },
     "2020-03-26": {
-      "confirmed": 49,
+      "confirmed": 52,
       "recovered": 272,
       "deceased": 44,
       "critical": 57,
