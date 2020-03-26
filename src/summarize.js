@@ -111,8 +111,16 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
     prefectureSummary[prefectureName].patients.push(patient)
   }
 
-  // calculate sparkline array
-  appendSparkLineForAllPrefectures(patients, prefectureSummary)
+  for (let prefectureName of _.keys(prefectureSummary)) {
+    let prefecture = prefectureSummary[prefectureName]
+    const firstDay = moment('2020-01-08')
+    const dailyConfirmed = generateDailyStatsForPrefecture(prefecture.patients, firstDay)
+    if (dailyConfirmed && dailyConfirmed.length) {
+      prefecture.dailyConfirmedCount = dailyConfirmed
+      prefecture.dailyConfirmedStartDate = firstDay.format('YYYY-MM-DD')
+      prefecture.newlyConfirmed = dailyConfirmed[dailyConfirmed.length - 1]
+    }
+  }
 
   // Import manual data.
   for (let row of manualPrefectureData) {
@@ -138,26 +146,17 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
   )
 }
 
-const generateSparkLineForPrefecture = (patients, firstDay, summary) => {
+const generateDailyStatsForPrefecture = (patients, firstDay) => {
   const lastDay = moment(patients[patients.length - 1].dateAnnounced)
   let day = moment(firstDay)
-  let sparkLineData = []
+  let daily = []
   while (day <= lastDay) {
     let dayString = day.format('YYYY-MM-DD')
-    let reports = _.filter(summary.patients, o => { return o.dateAnnounced == dayString })
-    sparkLineData.push(reports.length)
+    let reports = _.filter(patients, o => { return o.dateAnnounced == dayString })
+    daily.push(reports.length)
     day = day.add(1, 'days')
   }
-  return sparkLineData
-}
-
-const appendSparkLineForAllPrefectures = (patients, prefectureSummaries) => {
-  const firstDay = moment('2020-01-08')
-  for (let prefectureName in prefectureSummaries) {
-    let summary = prefectureSummaries[prefectureName]
-    summary.sparkLine = generateSparkLineForPrefecture(patients, firstDay, summary)
-    summary.sparkLineStartDate = firstDay.format('YYYY-MM-DD')
-  }
+  return daily
 }
 
 exports.summarize = summarize;
