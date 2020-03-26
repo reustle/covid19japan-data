@@ -326,6 +326,24 @@
       }
     },
     {
+      "name": "Gifu",
+      "summary": {
+        "count": 14,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Ogaki ": 2,
+          "Gifu": 2,
+          "Kakamigahara": 1,
+          "Kani": 6,
+          "Kagamigahara": 1,
+          "Kawabe": 1
+        }
+      }
+    },
+    {
       "name": "Kochi",
       "summary": {
         "count": 12,
@@ -336,24 +354,6 @@
         "cityCounts": {
           "Kochi": 8,
           "Aki": 2
-        }
-      }
-    },
-    {
-      "name": "Gifu",
-      "summary": {
-        "count": 12,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Ogaki ": 2,
-          "Gifu": 2,
-          "Kakamigahara": 1,
-          "Kani": 4,
-          "Kagamigahara": 1,
-          "Kawabe": 1
         }
       }
     },
@@ -520,6 +520,20 @@
       }
     },
     {
+      "name": "Fukui",
+      "summary": {
+        "count": 5,
+        "cruisePassenger": 0,
+        "cruiseWorker": 0,
+        "deaths": 0,
+        "progression": [],
+        "cityCounts": {
+          "Fukui": 1,
+          "Fukui city": 2
+        }
+      }
+    },
+    {
       "name": "Nagano",
       "summary": {
         "count": 5,
@@ -545,19 +559,6 @@
         "progression": [],
         "cityCounts": {
           "Yamanashi": 1
-        }
-      }
-    },
-    {
-      "name": "Fukui",
-      "summary": {
-        "count": 3,
-        "cruisePassenger": 0,
-        "cruiseWorker": 0,
-        "deaths": 0,
-        "progression": [],
-        "cityCounts": {
-          "Fukui": 1
         }
       }
     },
@@ -1115,6 +1116,13 @@
     },
     "2020-03-25": {
       "confirmed": 93,
+      "recovered": 272,
+      "deceased": 44,
+      "critical": 57,
+      "tested": 23521
+    },
+    "2020-03-26": {
+      "confirmed": 4,
       "recovered": 272,
       "deceased": 44,
       "critical": 57,
