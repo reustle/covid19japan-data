@@ -38,10 +38,10 @@ const generateDailySummary = (patients, manualDailyData) => {
     if (!dailySummary[dateAnnounced]) {
       dailySummary[dateAnnounced] = {
         confirmed: 0,
-        recoveredCummulative: 0,
-        deceasedCummulative: 0,
-        criticalCummulative: 0,
-        testedCummulative: 0
+        recoveredCumulative: 0,
+        deceasedCumulative: 0,
+        criticalCumulative: 0,
+        testedCumulative: 0
       }
     }
 
@@ -53,21 +53,21 @@ const generateDailySummary = (patients, manualDailyData) => {
   //       data. But those numbers are incomplete.
   for (let row of manualDailyData) {
     if (dailySummary[row.date]) {
-      dailySummary[row.date].recoveredCummulative = safeParseInt(row.recovered)
-      dailySummary[row.date].deceasedCummulative = safeParseInt(row.deceased)
-      dailySummary[row.date].criticalCummulative = safeParseInt(row.critical)
-      dailySummary[row.date].testedCummulative = safeParseInt(row.tested)
+      dailySummary[row.date].recoveredCumulative = safeParseInt(row.recovered)
+      dailySummary[row.date].deceasedCumulative = safeParseInt(row.deceased)
+      dailySummary[row.date].criticalCumulative = safeParseInt(row.critical)
+      dailySummary[row.date].testedCumulative = safeParseInt(row.tested)
     }
   }
 
   let orderedDailySummary = 
       _.map(_.sortBy(_.toPairs(dailySummary), a => a[0]), (v) => { let o = v[1]; o.date = v[0]; return o })
   
-  // Calculate the cummulative confirmed.
-  let confirmedCummlative = 0
+  // Calculate the Cumulative confirmed.
+  let confirmedCumulative = 0
   for (let dailySum of orderedDailySummary) {
-    confirmedCummlative += dailySum.confirmed
-    dailySum.confirmedCummlative = confirmedCummlative
+    confirmedCumulative += dailySum.confirmed
+    dailySum.confirmedCumulative = confirmedCumulative
   }
   return orderedDailySummary
 }
