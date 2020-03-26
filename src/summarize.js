@@ -15,13 +15,13 @@ const summarize = (patientData, manualDailyData, manualPrefectureData, summaryOu
     daily: dailySummary
   }
 
-  fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null))
+  fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
 }
 
 // Helper method to do parseInt safely (reverts to 0 if unparse)
 const safeParseInt = v => {
   let result = parseInt(v)
-  if (result == NaN) {
+  if (isNaN(result)) {
     return 0
   }
   return result
