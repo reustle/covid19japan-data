@@ -60,7 +60,7 @@
     "ageBracket": 50,
     "gender": "F",
     "residence": "Chiba",
-    "detectedPrefecture": "Chiba",
+    "detectedPrefecture": "Unspecified",
     "patientStatus": "Discharged",
     "knownCluster": "Charter Flight",
     "mhlwPatientNumber": "18",
@@ -117,7 +117,7 @@
     "ageBracket": 50,
     "gender": "M",
     "residence": "Wuhan, China",
-    "detectedPrefecture": "Chiba",
+    "detectedPrefecture": "Unspecified",
     "notes": "Japanese who works in China",
     "knownCluster": "Charter Flight",
     "mhlwPatientNumber": "25",
@@ -165,23 +165,29 @@
   },
   {
     "patientId": 13,
-    "dateAnnounced": "2020-02-17",
+    "dateAnnounced": "2020-02-14",
     "ageBracket": -1,
+    "residence": "Saitama",
     "detectedPrefecture": "Unspecified",
     "patientStatus": "Discharged",
-    "notes": "Charter flight returner (No records except count)",
+    "notes": "Charter flight returner (Recorded in Saitama count)",
     "knownCluster": "Charter Flight",
-    "charterFlightPassenger": true
+    "prefecturePatientNumber": "Saitama#3",
+    "charterFlightPassenger": true,
+    "sourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html"
   },
   {
     "patientId": 14,
-    "dateAnnounced": "2020-02-17",
-    "ageBracket": -1,
+    "dateAnnounced": "2020-02-01",
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Unspecified",
     "patientStatus": "Discharged",
-    "notes": "Charter flight returner (No records except count)",
+    "notes": "Charter flight returner (Recorded in Saitama count)",
     "knownCluster": "Charter Flight",
-    "charterFlightPassenger": true
+    "prefecturePatientNumber": "Saitama#1",
+    "charterFlightPassenger": true,
+    "sourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html"
   },
   {
     "patientId": 15,
@@ -489,6 +495,8 @@
     "detectedPrefecture": "Okinawa",
     "patientStatus": "Recovered",
     "mhlwPatientNumber": "32",
+    "prefecturePatientNumber": "Okinawa#1",
+    "prefectureSourceURL": "https://www.pref.okinawa.lg.jp/site/hoken/chiikihoken/kekkaku/press/documents/20200214_covid19_1.pdf",
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_09539.html"
   },
   {
@@ -954,6 +962,8 @@
     "patientStatus": "Hospitalized",
     "notes": "Taxi driver, picked up Diamond Princess passenger",
     "mhlwPatientNumber": "65",
+    "prefecturePatientNumber": "Okinawa#2",
+    "prefectureSourceURL": "https://www.pref.okinawa.lg.jp/site/hoken/chiikihoken/kekkaku/press/documents/20200219_covid19_2.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200219/k10012292401000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E8%82%BA%E7%82%8E"
   },
   {
@@ -1300,7 +1310,10 @@
     "residence": "Okinawa",
     "detectedPrefecture": "Okinawa",
     "patientStatus": "Hospitalized",
-    "mhlwPatientNumber": "74"
+    "mhlwPatientNumber": "74",
+    "prefecturePatientNumber": "Okinawa#3",
+    "prefectureSourceURL": "https://www.pref.okinawa.lg.jp/site/hoken/chiikihoken/kekkaku/press/documents/20200220_covid19.pdf",
+    "sourceURL": "https://www.pref.okinawa.lg.jp/site/hoken/chiikihoken/kekkaku/press/documents/20200220_covid19.pdf"
   },
   {
     "patientId": 98,
