@@ -5344,13 +5344,15 @@
     "dateAnnounced": "2020-03-06",
     "ageBracket": 40,
     "gender": "F",
-    "residence": "Saitama",
+    "residence": "Saitama, Saitama",
+    "detectedCityTown": "Saitama",
     "detectedPrefecture": "Saitama",
     "patientStatus": "Discharged",
-    "notes": "Osaka Live House Soap Opera Classics Umeda cluster",
+    "notes": "Discharged 3/12",
     "knownCluster": "Osaka Live House Soap Opera Classics Umeda ",
     "mhlwPatientNumber": "No symptoms",
     "prefecturePatientNumber": "Saitama#10",
+    "cityPrefectureNumber": "SaitamaCity#1",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200306/k10012318191000.html"
   },
   {
@@ -8097,9 +8099,10 @@
     "residence": "Satama, Saitama",
     "detectedCityTown": "Saitama",
     "detectedPrefecture": "Saitama",
-    "patientStatus": "Hospitalized",
-    "notes": "Salary man",
+    "patientStatus": "Discharged",
+    "notes": "Salary man, Discharged 3/16",
     "prefecturePatientNumber": "Saitama#17",
+    "cityPrefectureNumber": "SaitamaCity#2",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200311/k10012326061000.html?utm_int=news-social_contents_list-items_002"
   },
   {
@@ -8872,9 +8875,10 @@
     "residence": "Saitama city",
     "detectedCityTown": "Saitama city",
     "detectedPrefecture": "Saitama",
-    "patientStatus": "Hospitalized",
-    "notes": "Unemployeed, visited Egypt",
+    "patientStatus": "Discharged",
+    "notes": "Discharged 3/21, visited Egypt",
     "prefecturePatientNumber": "Saitama#22",
+    "cityPrefectureNumber": "SaitamaCity#3",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200312/k10012328491000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -8888,6 +8892,7 @@
     "patientStatus": "Hospitalized",
     "notes": "Mom of patient 666",
     "prefecturePatientNumber": "Saitama#23",
+    "cityPrefectureNumber": "SaitamaCity#4",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200312/k10012328491000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11303,6 +11308,7 @@
     "patientStatus": "Hospitalized",
     "notes": "father of #666, Company employee",
     "prefecturePatientNumber": "Saitama#33",
+    "cityPrefectureNumber": "SaitamaCity#5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336121000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -12748,7 +12754,9 @@
     "residence": "Kasukabe",
     "detectedCityTown": "Kasukabe",
     "detectedPrefecture": "Saitama",
+    "patientStatus": "Hospitalized",
     "notes": "asympomatic",
+    "prefecturePatientNumber": "Saitama#48",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342391000.html?utm_int=word_contents_list-items_013&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -13134,7 +13142,6 @@
     "residence": "Koshigaya",
     "detectedCityTown": "Koshigaya",
     "detectedPrefecture": "Saitama",
-    "notes": "Tour guide, traveled to Europe",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342511000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -13406,6 +13413,7 @@
     "detectedCityTown": "Koshigaya",
     "detectedPrefecture": "Saitama",
     "patientStatus": "Hospitalized",
+    "notes": "Tour guide, traveled to Europe",
     "prefecturePatientNumber": "Saitama#45",
     "cityPrefectureNumber": "Koshigaya#7",
     "prefectureSourceURL": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/hokenjo/kansensho/kansen_hassei3.html",
@@ -14062,6 +14070,8 @@
     "detectedCityTown": "Hirakata",
     "detectedPrefecture": "Osaka",
     "notes": "Returing from Spain",
+    "prefecturePatientNumber": "Osaka #128",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37814_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344431000.html?utm_int=news-new_contents_list-items_010"
   },
   {
@@ -14073,6 +14083,8 @@
     "detectedCityTown": "Hirakata",
     "detectedPrefecture": "Osaka",
     "notes": "Returing from Spain",
+    "prefecturePatientNumber": "Osaka #129",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37814_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344431000.html?utm_int=news-new_contents_list-items_010"
   },
   {
@@ -14084,6 +14096,8 @@
     "detectedCityTown": "Hirakata",
     "detectedPrefecture": "Osaka",
     "notes": "Returing from Spain",
+    "prefecturePatientNumber": "Osaka #130",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37814_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344431000.html?utm_int=news-new_contents_list-items_010"
   },
   {
@@ -14094,6 +14108,8 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #126",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37814_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344431000.html?utm_int=news-new_contents_list-items_010"
   },
   {
@@ -14104,6 +14120,8 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #127",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37814_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344431000.html?utm_int=news-new_contents_list-items_010"
   },
   {
@@ -14114,6 +14132,8 @@
     "residence": "Yao",
     "detectedCityTown": "Yao",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #131",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37814_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344431000.html?utm_int=news-new_contents_list-items_010"
   },
   {
@@ -14121,10 +14141,12 @@
     "dateAnnounced": "2020-03-22",
     "ageBracket": 60,
     "gender": "F",
-    "residence": "Okayama",
-    "detectedCityTown": "Okayama",
+    "residence": "Okayama city",
+    "detectedCityTown": "Okayama city",
     "detectedPrefecture": "Okayama",
     "notes": "Okayama first",
+    "prefecturePatientNumber": "Okayama #1",
+    "prefectureSourceURL": "https://www.pref.okayama.jp/page/645925.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344461000.html?utm_int=news-new_contents_list-items_010"
   },
   {
@@ -14275,7 +14297,6 @@
     "ageBracket": 50,
     "gender": "M",
     "residence": "Ireland",
-    "detectedCityTown": "Chiba",
     "detectedPrefecture": "Chiba",
     "patientStatus": "Hospitalized",
     "notes": "Irish (Traveled via Switzerland and Holland)",
@@ -14290,7 +14311,6 @@
     "ageBracket": 40,
     "gender": "M",
     "residence": "South Africa",
-    "detectedCityTown": "Chiba",
     "detectedPrefecture": "Chiba",
     "notes": "South African (Traveled via Holland)",
     "knownCluster": "Flight from Holland",
@@ -14304,7 +14324,6 @@
     "ageBracket": 40,
     "gender": "M",
     "residence": "Zimbabwe",
-    "detectedCityTown": "Chiba",
     "detectedPrefecture": "Chiba",
     "notes": "Zimbabwe (Traveled via Holland)",
     "knownCluster": "Flight from Holland",
@@ -14317,8 +14336,8 @@
     "dateAnnounced": "2020-03-21",
     "ageBracket": 90,
     "gender": "F",
-    "residence": "Oita, Oita",
-    "detectedCityTown": "Oita",
+    "residence": "Oita city",
+    "detectedCityTown": "Oita city",
     "detectedPrefecture": "Oita",
     "knownCluster": "Oita Cluster",
     "prefecturePatientNumber": "Oita#13",
@@ -14330,7 +14349,8 @@
     "dateAnnounced": "2020-03-22",
     "ageBracket": 80,
     "gender": "F",
-    "residence": "Oita, Oita",
+    "residence": "Oita city",
+    "detectedCityTown": "Oita city",
     "detectedPrefecture": "Oita",
     "patientStatus": "Hospitalized",
     "notes": "No symptoms",
@@ -14344,7 +14364,8 @@
     "dateAnnounced": "2020-03-22",
     "ageBracket": 90,
     "gender": "F",
-    "residence": "Usuki, Oita",
+    "residence": "Usuki",
+    "detectedCityTown": "Usuki",
     "detectedPrefecture": "Oita",
     "patientStatus": "Hospitalized",
     "notes": "No symptoms",
@@ -14358,7 +14379,8 @@
     "dateAnnounced": "2020-03-22",
     "ageBracket": 20,
     "gender": "F",
-    "residence": "Oita, Oita",
+    "residence": "Oita city",
+    "detectedCityTown": "Oita city",
     "detectedPrefecture": "Oita",
     "patientStatus": "Hospitalized",
     "notes": "No symptoms",
@@ -14372,7 +14394,8 @@
     "dateAnnounced": "2020-03-22",
     "ageBracket": 30,
     "gender": "F",
-    "residence": "Oita, Oita",
+    "residence": "Oita city",
+    "detectedCityTown": "Oita city",
     "detectedPrefecture": "Oita",
     "patientStatus": "Hospitalized",
     "notes": "No symptoms",
@@ -14406,7 +14429,8 @@
     "dateAnnounced": "2020-03-23",
     "ageBracket": 30,
     "gender": "M",
-    "residence": "Osaka,Osaka",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
     "notes": "coworker of a patient returning from UK",
     "prefecturePatientNumber": "Osaka#132",
@@ -14418,7 +14442,8 @@
     "dateAnnounced": "2020-03-23",
     "ageBracket": 40,
     "gender": "F",
-    "residence": "Izumiotsu, Osaka",
+    "residence": "Izumiotsu",
+    "detectedCityTown": "Izumiotsu",
     "detectedPrefecture": "Osaka",
     "prefecturePatientNumber": "Osaka#133",
     "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/index.php?site=fumin&pageId=37824",
@@ -14429,7 +14454,8 @@
     "dateAnnounced": "2020-03-23",
     "ageBracket": 60,
     "gender": "F",
-    "residence": "Kishiwada, Osaka",
+    "residence": "Kishiwada",
+    "detectedCityTown": "Kishiwada",
     "detectedPrefecture": "Osaka",
     "notes": "Relative of Osaka#125",
     "prefecturePatientNumber": "Osaka#134",
@@ -14630,8 +14656,11 @@
     "ageBracket": 70,
     "gender": "M",
     "residence": "Hachinohe",
+    "detectedCityTown": "Hachinohe",
     "detectedPrefecture": "Aomori",
     "notes": "Visited Spain, first case in Aomori",
+    "prefecturePatientNumber": "Aomori#1",
+    "prefectureSourceURL": "https://www.pref.aomori.lg.jp/soshiki/kenko/hoken/files/200323press.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200323/k10012345831000.html"
   },
   {
@@ -14640,8 +14669,11 @@
     "ageBracket": 70,
     "gender": "F",
     "residence": "Hachinohe",
+    "detectedCityTown": "Hachinohe",
     "detectedPrefecture": "Aomori",
     "notes": "Wife of the previous patient",
+    "prefecturePatientNumber": "Aomori#2",
+    "prefectureSourceURL": "https://www.pref.aomori.lg.jp/soshiki/kenko/hoken/files/200323press.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200323/k10012345831000.html"
   },
   {
@@ -14650,6 +14682,7 @@
     "ageBracket": 80,
     "gender": "F",
     "residence": "Itami",
+    "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "notes": "Lives with Hyogo#93",
     "knownCluster": "Green Ars Itami ",
@@ -14663,6 +14696,7 @@
     "ageBracket": 30,
     "gender": "F",
     "residence": "Itami",
+    "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "notes": "Contact with Hyogo#62",
     "knownCluster": "Green Ars Itami",
@@ -14796,6 +14830,7 @@
     "detectedPrefecture": "Gunma",
     "notes": "Doctor",
     "prefecturePatientNumber": "Gunma#12",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/contents/100148662.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347541000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -14971,6 +15006,7 @@
     "detectedCityTown": "Takasaki",
     "detectedPrefecture": "Gunma",
     "prefecturePatientNumber": "Gunma#13",
+    "prefectureSourceURL": "https://www.city.takasaki.gunma.jp/docs/2020032400102/",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347541000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -15004,6 +15040,8 @@
     "detectedCityTown": "Atsugi",
     "detectedPrefecture": "Kanagawa",
     "notes": "student",
+    "prefecturePatientNumber": "Kanagwa #84",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/osirase/1369/?fbclid=IwAR2-8RAnRsixEpUFpaE-qLflTrAA-DbPaLa9r9SzOobgtGriI-ufROesEKA",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347851000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -15015,6 +15053,8 @@
     "detectedCityTown": "Hiratsuka",
     "detectedPrefecture": "Kanagawa",
     "notes": "Studied in New York",
+    "prefecturePatientNumber": "Kanagwa #83",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/osirase/1369/?fbclid=IwAR2-8RAnRsixEpUFpaE-qLflTrAA-DbPaLa9r9SzOobgtGriI-ufROesEKA",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347851000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -15023,8 +15063,11 @@
     "ageBracket": 30,
     "gender": "F",
     "residence": "Hiratsuka",
+    "detectedCityTown": "Hiratsuka",
     "detectedPrefecture": "Kanagawa",
     "notes": "House wife",
+    "prefecturePatientNumber": "Kanagwa #82",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/osirase/1369/?fbclid=IwAR2-8RAnRsixEpUFpaE-qLflTrAA-DbPaLa9r9SzOobgtGriI-ufROesEKA",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347851000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -15033,8 +15076,11 @@
     "ageBracket": 40,
     "gender": "M",
     "residence": "Foreign",
+    "detectedCityTown": "Hiratsuka",
     "detectedPrefecture": "Kanagawa",
     "notes": "Traveled to Bolivia",
+    "prefecturePatientNumber": "Kanagwa #81",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/osirase/1369/?fbclid=IwAR2-8RAnRsixEpUFpaE-qLflTrAA-DbPaLa9r9SzOobgtGriI-ufROesEKA",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347851000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -15042,9 +15088,13 @@
     "dateAnnounced": "2020-03-24",
     "ageBracket": 70,
     "gender": "M",
+    "residence": "Odawara",
+    "detectedCityTown": "Odawara",
     "detectedPrefecture": "Kanagawa",
     "patientStatus": "Hospitalized",
     "notes": "Critical",
+    "prefecturePatientNumber": "Kanagwa #85",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/osirase/1369/?fbclid=IwAR2-8RAnRsixEpUFpaE-qLflTrAA-DbPaLa9r9SzOobgtGriI-ufROesEKA",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347851000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -15151,6 +15201,7 @@
     "detectedCityTown": "Saitama city",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#60",
+    "cityPrefectureNumber": "SaitamaCity#6",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2019/0324-10.html"
   },
   {
@@ -16655,6 +16706,7 @@
     "residence": "Kani",
     "detectedCityTown": "Kani",
     "detectedPrefecture": "Gifu",
+    "notes": "Same choir as GIfu#5 and Gifu#7",
     "prefecturePatientNumber": "Gifu#14",
     "prefectureSourceURL": "https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/0326_kanjya_kisyasiryou.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012350871000.html?utm_int=word_contents_list-items_017&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -16667,7 +16719,8 @@
     "residence": "Kani",
     "detectedCityTown": "Kani",
     "detectedPrefecture": "Gifu",
-    "prefecturePatientNumber": "Gifu#14",
+    "notes": "Same choir as Gifu#7",
+    "prefecturePatientNumber": "Gifu#13",
     "prefectureSourceURL": "https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/0326_kanjya_kisyasiryou.pdf"
   },
   {
@@ -16706,6 +16759,8 @@
     "detectedCityTown": "Naha",
     "detectedPrefecture": "Okinawa",
     "notes": "Okinawa #6, if woman in her 10 found positive at Narita airport is not included, If she is counted in, he will be the #7",
+    "prefecturePatientNumber": "Okinawa#6",
+    "prefectureSourceURL": "https://www.pref.okinawa.jp/site/chijiko/kohokoryu/koho/2020_new_korona_virs.html",
     "sourceURL": "https://www.nikkei.com/article/DGXMZO57251170W0A320C2ACYZ00/"
   },
   {
@@ -16742,7 +16797,8 @@
     "residence": "Shichigahama-machi",
     "detectedCityTown": "Shichigahama-machi",
     "detectedPrefecture": "Miyagi",
-    "notes": "Miyagi #2 case, company employee",
+    "prefecturePatientNumber": "Miyagi#2",
+    "prefectureSourceURL": "https://www.pref.miyagi.jp/uploaded/attachment/783834.pdf",
     "sourceURL": "https://www.kahoku.co.jp/tohokunews/202003/20200326_13032.htmlhttps://www.kahoku.co.jp/tohokunews/202003/20200326_13032.html"
   },
   {
@@ -17220,7 +17276,9 @@
     "detectedCityTown": "Kawaguchi",
     "detectedPrefecture": "Saitama",
     "notes": "Family member of Saitama guy confirmed on March 24 and of Saitama 50, reported on March 26. Traveled to Spain and France between February 29 and March 9, 2020. ",
-    "prefecturePatientNumber": "Saitama#61",
+    "prefecturePatientNumber": "Saitama#65",
+    "cityPrefectureNumber": "Kawaguchi#10",
+    "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351681000.html"
   },
   {
@@ -17232,7 +17290,9 @@
     "detectedCityTown": "Kawaguchi ",
     "detectedPrefecture": "Saitama",
     "notes": "Family member of Saitama guy confirmed on March 24 and of Saitama 20, reported on March 26",
-    "prefecturePatientNumber": "Saitama#62",
+    "prefecturePatientNumber": "Saitama#64",
+    "cityPrefectureNumber": "Kawaguchi#9",
+    "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351681000.html"
   },
   {
@@ -17245,6 +17305,7 @@
     "detectedPrefecture": "Shiga",
     "notes": "Shiga #6 case, Traveled to Spain and Portugal and returned on 7１７",
     "prefecturePatientNumber": "Shiga#6",
+    "prefectureSourceURL": "https://www.pref.shiga.lg.jp/kensei/koho/e-shinbun/oshirase/310964.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351711000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -17255,6 +17316,7 @@
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "cityPrefectureNumber": "Yokohama#16",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351921000.html?utm_int=word_contents_list-items_044&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -17265,7 +17327,10 @@
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
-    "notes": "Works in Tokyo"
+    "notes": "Works in Tokyo",
+    "prefecturePatientNumber": "Kanagawa#95",
+    "cityPrefectureNumber": "Kawasaki#9",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html"
   },
   {
     "patientId": 1435,
@@ -17592,7 +17657,9 @@
     "residence": "Kawaguchi",
     "detectedCityTown": "Kawaguchi",
     "detectedPrefecture": "Saitama",
+    "patientStatus": "Hospitalized",
     "notes": "University student",
+    "prefecturePatientNumber": "Saitama#72",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353891000.html?utm_int=word_contents_list-items_047&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -17614,6 +17681,7 @@
     "residence": "Kawagoe",
     "detectedCityTown": "Kawagoe",
     "detectedPrefecture": "Saitama",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Saitama#71",
     "cityPrefectureNumber": "Kawagoe#4",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
@@ -17679,17 +17747,6 @@
     "detectedPrefecture": "Kanagawa",
     "prefecturePatientNumber": "Kanagawa#097",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353841000.html?utm_int=word_contents_list-items_019&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11"
-  },
-  {
-    "patientId": 1473,
-    "dateAnnounced": "2020-03-27",
-    "ageBracket": 10,
-    "gender": "M",
-    "residence": "Kawaguchi",
-    "detectedCityTown": "Kawaguchi",
-    "detectedPrefecture": "Saitama",
-    "prefecturePatientNumber": "Saitama#72",
-    "sourceURL": "https://this.kiji.is/616171056908829793"
   },
   {
     "patientId": 1474,
@@ -18511,7 +18568,49 @@
     "residence": "Wakayama",
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Discharged",
+    "notes": "Missed from more than a month ago",
     "prefecturePatientNumber": "Wakayama#11",
     "sourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html"
+  },
+  {
+    "patientId": 1560,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Saitama, Saitama",
+    "detectedCityTown": "Saitama",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#73",
+    "cityPrefectureNumber": "SaitamaCity#7"
+  },
+  {
+    "patientId": 1561,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Kasukabe",
+    "detectedCityTown": "Kasukabe",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#74"
+  },
+  {
+    "patientId": 1562,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Fukaya",
+    "detectedCityTown": "Fukaya",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#75"
+  },
+  {
+    "patientId": 1563,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Fujimino",
+    "detectedCityTown": "Fujimino",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#76"
   }
 ]

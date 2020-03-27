@@ -126,7 +126,9 @@
         "Matsuhara": 1,
         "Izumi": 2,
         "Izumisano": 2,
-        "Osaka city": 20,
+        "Osaka city": 21,
+        "Izumiotsu": 1,
+        "Kishiwada": 1,
         "Habikino": 2,
         "Ibaraki city": 1,
         "Kawachinagano": 1,
@@ -469,7 +471,7 @@
         "Kobe": 28,
         "Fukusaki": 1,
         "Himeji": 14,
-        "Itami": 27,
+        "Itami": 29,
         "Mitashi": 1,
         "Tamba": 1,
         "HImeji": 2,
@@ -581,8 +583,8 @@
         "Atsugi": 4,
         "Kamakura": 3,
         "Kamamura": 1,
-        "Hiratsuka": 7,
-        "Odawara": 1,
+        "Hiratsuka": 9,
+        "Odawara": 2,
         "Fujisawa": 6,
         "Kawasaki": 13,
         "Kanagawa": 1,
@@ -678,31 +680,32 @@
       "name": "Kanagawa"
     },
     {
-      "confirmed": 68,
+      "confirmed": 71,
       "cruisePassenger": 1,
       "cruiseWorker": 1,
       "deaths": 1,
       "confirmedByCity": {
         "Gyoda": 1,
         "Ageo": 1,
-        "Saitama": 3,
+        "Saitama": 5,
         "Iruma": 3,
         "Kawagoe": 4,
         "Toda": 5,
         "Koshigaya": 8,
         "Saitama city": 3,
-        "Kawaguchi": 11,
+        "Kawaguchi": 10,
         "Soka": 1,
         "Niiza": 1,
-        "Fukaya": 4,
+        "Fukaya": 5,
         "Shiki": 3,
         "Kumagaya": 1,
         "Okegawa": 1,
         "Sayama": 1,
-        "Kasukabe": 7,
+        "Kasukabe": 8,
         "Hasuda": 1,
         "Sakado": 1,
-        "Kawaguchi ": 1
+        "Kawaguchi ": 1,
+        "Fujimino": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -784,10 +787,10 @@
         7,
         0,
         2,
-        3
+        6
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 3,
+      "newlyConfirmed": 6,
       "recovered": 13,
       "name_ja": "埼玉県",
       "name": "Saitama"
@@ -798,7 +801,7 @@
       "cruiseWorker": 0,
       "deaths": 0,
       "confirmedByCity": {
-        "Chiba": 4,
+        "Chiba": 1,
         "Ichikawa": 15,
         "Kashiwa": 2,
         "Matsudo": 9,
@@ -1112,8 +1115,9 @@
       "cruiseWorker": 0,
       "deaths": 0,
       "confirmedByCity": {
-        "Oita": 13,
-        "Oita city": 6
+        "Oita": 12,
+        "Oita city": 10,
+        "Usuki": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -2687,7 +2691,7 @@
       "cruiseWorker": 0,
       "deaths": 0,
       "confirmedByCity": {
-        "Hachinohe": 4
+        "Hachinohe": 6
       },
       "dailyConfirmedCount": [
         0,
@@ -3561,7 +3565,7 @@
       "cruiseWorker": 0,
       "deaths": 0,
       "confirmedByCity": {
-        "Okayama": 1,
+        "Okayama city": 1,
         "Satoshou": 1
       },
       "dailyConfirmedCount": [
@@ -4943,13 +4947,13 @@
       "confirmedCumulative": 1385
     },
     {
-      "confirmed": 99,
+      "confirmed": 102,
       "recoveredCumulative": 372,
       "deceasedCumulative": 47,
       "criticalCumulative": 56,
       "testedCumulative": 27005,
       "date": "2020-03-27",
-      "confirmedCumulative": 1484
+      "confirmedCumulative": 1487
     }
   ],
   "updated": "Mar 27 2020, 22:58 JST"
