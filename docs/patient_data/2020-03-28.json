@@ -11697,7 +11697,8 @@
     "residence": "Niigata, Niigata",
     "detectedCityTown": "Niigata",
     "detectedPrefecture": "Niigata",
-    "notes": "Probably, the son of patient no. 942",
+    "prefecturePatientNumber": "Niigata#22",
+    "cityPrefectureNumber": "NiigataShi#21",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200318/k10012337791000.html?utm_int=news-social_contents_list-items_026"
   },
   {
@@ -12155,7 +12156,10 @@
     "ageBracket": 70,
     "gender": "F",
     "residence": "Niigata ",
+    "detectedCityTown": "Higashi Ward, Niigata",
     "detectedPrefecture": "Niigata",
+    "prefecturePatientNumber": "Niigata#23",
+    "cityPrefectureNumber": "NiigataShi#22",
     "sourceURL": "https://twitter.com/niigata_1ban/status/1240495801173807106"
   },
   {
@@ -12163,7 +12167,10 @@
     "dateAnnounced": "2020-03-19",
     "gender": "F",
     "residence": "Niigata",
+    "detectedCityTown": "Konan Ward, Niigata",
     "detectedPrefecture": "Niigata",
+    "prefecturePatientNumber": "Niigata#24",
+    "cityPrefectureNumber": "NiigataShi#23",
     "sourceURL": "https://twitter.com/niigata_1ban/status/1240495801173807106"
   },
   {
@@ -12502,9 +12509,11 @@
     "ageBracket": 30,
     "gender": "F",
     "residence": "Niigata",
-    "detectedCityTown": "Niigata",
+    "detectedCityTown": "Konan Ward, Niigata",
     "detectedPrefecture": "Niigata",
     "notes": "medical related",
+    "prefecturePatientNumber": "Niigata#25",
+    "cityPrefectureNumber": "NiigataShi#24",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012341871000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -13252,6 +13261,8 @@
     "detectedCityTown": "Nagaoka",
     "detectedPrefecture": "Niigata",
     "notes": "Company employee",
+    "prefecturePatientNumber": "Niigata#26",
+    "prefectureSourceURL": "https://www.pref.niigata.lg.jp/sec/kenko/corona0321.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343101000.html?utm_int=news-new_contents_list-items_001"
   },
   {
@@ -13299,6 +13310,8 @@
     "detectedCityTown": "Niigata",
     "detectedPrefecture": "Niigata",
     "notes": "Jobless",
+    "prefecturePatientNumber": "Niigata#27",
+    "prefectureSourceURL": "https://www.pref.niigata.lg.jp/sec/kenko/corona0324.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343101000.html?utm_int=news-new_contents_list-items_001"
   },
   {
@@ -17709,15 +17722,15 @@
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353421000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
-    "patientId": 1462,
-    "dateAnnounced": "2020-03-27",
-    "ageBracket": 20,
+    "patientId": null,
+    "ageBracket": 70,
     "gender": "M",
-    "residence": "Niigata city",
-    "detectedCityTown": "Niigata city",
-    "detectedPrefecture": "Niigata",
-    "notes": "Student who studied abroad",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353471000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
+    "residence": "Aichi",
+    "detectedCityTown": "Nagoya",
+    "patientStatus": "Deceased",
+    "notes": "Died on 3/16",
+    "cityPrefectureNumber": "NagoyaDeath#14",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334341000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
     "patientId": 1463,
@@ -18270,7 +18283,7 @@
     "residence": "Satoshou",
     "detectedCityTown": "Satoshou",
     "detectedPrefecture": "Okayama",
-    "notes": "traveled to Philipine ",
+    "notes": "traveled to Phillippines ",
     "prefecturePatientNumber": "Okayama #2",
     "prefectureSourceURL": "https://www.pref.okayama.jp/uploaded/attachment/269245.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354031000.html?utm_int=word_contents_list-items_040&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -18881,5 +18894,10 @@
     "prefecturePatientNumber": "Saitama#70",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2019/0326-90.html",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2019/0326-90.html"
+  },
+  {
+    "patientId": 1577,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": -1
   }
 ]
