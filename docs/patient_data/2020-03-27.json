@@ -11689,6 +11689,7 @@
     "detectedCityTown": "Inzai",
     "detectedPrefecture": "Chiba",
     "notes": "Coming back from Holland",
+    "knownCluster": "Flight from Holland",
     "prefecturePatientNumber": "Chiba #33",
     "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200318.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200318/k10012338221000.html?utm_int=news-social_contents_list-items_006"
@@ -12674,6 +12675,7 @@
     "residence": "Spain",
     "detectedPrefecture": "Chiba",
     "notes": "South Afria nationality, works in airline company",
+    "knownCluster": "Flight from Holland",
     "prefecturePatientNumber": "Chiba #40",
     "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200320.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342191000.html?utm_int=word_contents_list-items_028&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12686,6 +12688,7 @@
     "residence": "Ireland",
     "detectedPrefecture": "Chiba",
     "notes": "Ireland nationality, works in airline company",
+    "knownCluster": "Flight from Holland",
     "prefecturePatientNumber": "Chiba #41",
     "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200320.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342191000.html?utm_int=word_contents_list-items_028&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -13961,6 +13964,8 @@
     "residence": "Ichikawa",
     "detectedPrefecture": "Chiba",
     "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Chiba#45",
+    "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200322.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344301000.html?utm_int=news-new_contents_list-items_014"
   },
   {
@@ -13972,6 +13977,8 @@
     "detectedPrefecture": "Chiba",
     "patientStatus": "Hospitalized",
     "notes": "Returing from Cote d'Ivoire",
+    "prefecturePatientNumber": "Chiba#44",
+    "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200322.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344301000.html?utm_int=news-new_contents_list-items_014"
   },
   {
@@ -14253,9 +14260,14 @@
     "dateAnnounced": "2020-03-23",
     "ageBracket": 50,
     "gender": "M",
-    "residence": "Chiba",
+    "residence": "Ireland",
     "detectedCityTown": "Chiba",
     "detectedPrefecture": "Chiba",
+    "patientStatus": "Hospitalized",
+    "notes": "Irish (Traveled via Switzerland and Holland)",
+    "knownCluster": "Flight from Holland",
+    "prefecturePatientNumber": "Chiba#46",
+    "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200323.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200323/k10012345641000.html?utm_int=news-new_contents_list-items_006"
   },
   {
@@ -14263,9 +14275,13 @@
     "dateAnnounced": "2020-03-23",
     "ageBracket": 40,
     "gender": "M",
-    "residence": "Chiba",
+    "residence": "South Africa",
     "detectedCityTown": "Chiba",
     "detectedPrefecture": "Chiba",
+    "notes": "South African (Traveled via Holland)",
+    "knownCluster": "Flight from Holland",
+    "prefecturePatientNumber": "Chiba#47",
+    "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200323.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200323/k10012345641000.html?utm_int=news-new_contents_list-items_006"
   },
   {
@@ -14273,9 +14289,13 @@
     "dateAnnounced": "2020-03-23",
     "ageBracket": 40,
     "gender": "M",
-    "residence": "Chiba",
+    "residence": "Zimbabwe",
     "detectedCityTown": "Chiba",
     "detectedPrefecture": "Chiba",
+    "notes": "Zimbabwe (Traveled via Holland)",
+    "knownCluster": "Flight from Holland",
+    "prefecturePatientNumber": "Chiba#48",
+    "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200323.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200323/k10012345641000.html?utm_int=news-new_contents_list-items_006"
   },
   {
@@ -15024,12 +15044,13 @@
     "dateAnnounced": "2020-03-24",
     "ageBracket": 40,
     "gender": "M",
-    "residence": "Kisarazu",
+    "residence": "Tokyo",
     "detectedCityTown": "Kisarazu",
     "detectedPrefecture": "Chiba",
     "patientStatus": "Hospitalized",
-    "notes": "Office worker",
-    "prefecturePatientNumber": "Chiba#48",
+    "notes": "Office worker, lives in Tokyo, visiting Kisarazu",
+    "prefecturePatientNumber": "Chiba#49",
+    "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200324.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347741000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -15524,6 +15545,7 @@
     "residence": "Kashiwa",
     "detectedCityTown": "Kashiwa",
     "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#50",
     "cityPrefectureNumber": "Kashiwa#3",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012348961000.html?utm_int=news-social_contents_list-items_001"
   },
@@ -15631,7 +15653,11 @@
     "residence": "Kisarazu",
     "detectedCityTown": "Kisarazu",
     "detectedPrefecture": "Chiba",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012349881000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
+    "patientStatus": "Hospitalized",
+    "notes": "Returned from Morroco",
+    "prefecturePatientNumber": "Chiba#51",
+    "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200325.html",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200325.html"
   },
   {
     "patientId": 1290,
@@ -15641,7 +15667,11 @@
     "residence": "Matsudo",
     "detectedCityTown": "Matsudo",
     "detectedPrefecture": "Chiba",
-    "notes": "University teacher"
+    "patientStatus": "Hospitalized",
+    "notes": "Returned from Egypt, University teacher",
+    "prefecturePatientNumber": "Chiba#52",
+    "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200325.html",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200325.html"
   },
   {
     "patientId": 1291,
@@ -15651,7 +15681,11 @@
     "residence": "Narita",
     "detectedCityTown": "Narita",
     "detectedPrefecture": "Chiba",
-    "notes": "Australian"
+    "patientStatus": "Hospitalized",
+    "notes": "Returned from Thailand, Australian",
+    "prefecturePatientNumber": "Chiba#53",
+    "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200325.html",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200325.html"
   },
   {
     "patientId": 1292,
@@ -15660,7 +15694,12 @@
     "gender": "F",
     "residence": "Nagareyama",
     "detectedCityTown": "Nagareyama",
-    "detectedPrefecture": "Chiba"
+    "detectedPrefecture": "Chiba",
+    "patientStatus": "Hospitalized",
+    "notes": "Returned from Spain",
+    "prefecturePatientNumber": "Chiba#54",
+    "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200325.html",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200325.html"
   },
   {
     "patientId": 1293,
@@ -16321,7 +16360,10 @@
     "residence": "Funabashi",
     "detectedCityTown": "Funabashi",
     "detectedPrefecture": "Chiba",
-    "notes": "Works in UK",
+    "patientStatus": "Hospitalized",
+    "notes": "Returned from UK, Works in UK",
+    "prefecturePatientNumber": "Chiba#55",
+    "cityPrefectureNumber": "Funabashi#3",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351511000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -16539,7 +16581,9 @@
     "residence": "Funabashi",
     "detectedCityTown": "Funabashi",
     "detectedPrefecture": "Chiba",
-    "notes": "Traveled to Phillipine ",
+    "notes": "Traveled to Philippines ",
+    "prefecturePatientNumber": "Chiba#56",
+    "cityPrefectureNumber": "Funabashi#4",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351511000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -17238,6 +17282,7 @@
     "detectedPrefecture": "Fukui",
     "notes": "Daughter of previous patient",
     "prefecturePatientNumber": "Fukui#6",
+    "prefectureSourceURL": "http://www.city.fukui.lg.jp/fukusi/iryou/kensen/p021936.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012352311000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -17412,15 +17457,21 @@
     "residence": "Kawagoe",
     "detectedCityTown": "Kawagoe",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#71",
+    "cityPrefectureNumber": "Kawagoe#4",
+    "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353891000.html?utm_int=word_contents_list-items_047&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
     "patientId": 1467,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Fukui city",
+    "detectedCityTown": "Fukui city",
     "detectedPrefecture": "Fukui",
     "prefecturePatientNumber": "Fukui#7",
-    "sourceURL": "https://this.kiji.is/616151111186793569"
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354761000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
     "patientId": 1468,
@@ -17475,8 +17526,12 @@
   {
     "patientId": 1473,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 10,
+    "gender": "M",
+    "residence": "Kawaguchi",
+    "detectedCityTown": "Kawaguchi",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#72",
     "sourceURL": "https://this.kiji.is/616171056908829793"
   },
   {
@@ -18076,5 +18131,45 @@
     "detectedPrefecture": "Chiba",
     "prefecturePatientNumber": "Chiba#43",
     "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200321.html"
+  },
+  {
+    "patientId": 1548,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Echizen",
+    "detectedCityTown": "Echizen",
+    "detectedPrefecture": "Fukui",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354761000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
+  },
+  {
+    "patientId": 1549,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Nagoya",
+    "detectedCityTown": "Nagoya",
+    "detectedPrefecture": "Aichi",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354691000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
+  },
+  {
+    "patientId": 1550,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Nagakute",
+    "detectedCityTown": "Nagakute",
+    "detectedPrefecture": "Aichi",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354691000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
+  },
+  {
+    "patientId": 1551,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Inuyama",
+    "detectedCityTown": "Inuyama",
+    "detectedPrefecture": "Aichi",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354691000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   }
 ]
