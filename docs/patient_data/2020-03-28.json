@@ -12356,6 +12356,8 @@
     "gender": "F",
     "residence": "Kumamoto",
     "detectedPrefecture": "Kumamoto",
+    "prefecturePatientNumber": "Kumamoto#7",
+    "cityPrefectureNumber": "KumamotoCity#5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340781000.html?utm_int=news-new_contents_list-items_010"
   },
   {
@@ -16586,7 +16588,7 @@
     "residence": "Kumamoto city",
     "detectedCityTown": "Kumamoto city",
     "detectedPrefecture": "Kumamoto",
-    "prefecturePatientNumber": "Kumamoto#25",
+    "prefecturePatientNumber": "Kumamoto#8",
     "cityPrefectureNumber": "KumamotoCity#6",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012350231000.html?utm_int=word_contents_list-items_023&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
@@ -18644,6 +18646,8 @@
     "residence": "Kumamoto city",
     "detectedCityTown": "Kumamoto city",
     "detectedPrefecture": "Kumamoto",
+    "prefecturePatientNumber": "Kumamoto#9",
+    "cityPrefectureNumber": "KumamotoCity#7",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354801000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -18654,6 +18658,8 @@
     "residence": "Kumamoto city",
     "detectedCityTown": "Kumamoto city",
     "detectedPrefecture": "Kumamoto",
+    "prefecturePatientNumber": "Kumamoto#10",
+    "cityPrefectureNumber": "KumamotoCity#8",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354801000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -18898,6 +18904,37 @@
   {
     "patientId": 1577,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1
+    "ageBracket": 20,
+    "gender": "M",
+    "detectedPrefecture": "Nagano",
+    "patientStatus": "Unspecified",
+    "notes": "Lives in Tokyo, detected in Nagano",
+    "sourceURL": "https://www.chunichi.co.jp/s/article/2020032790195223.html"
+  },
+  {
+    "patientId": 1578,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Kumamoto, Kumamoto",
+    "detectedCityTown": "Kumamoto City",
+    "detectedPrefecture": "Kumamoto",
+    "patientStatus": "Unspecified",
+    "cityPrefectureNumber": "KumamotoCity#9",
+    "sourceURL": "http://www.city.kumamoto.jp/common/UploadFileDsp.aspx?c_id=5&id=26562&sub_id=186&flid=200787"
+  },
+  {
+    "patientId": 1579,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 80,
+    "gender": "F",
+    "residence": "Kochi, Kochi",
+    "detectedCityTown": "Kochi",
+    "detectedPrefecture": "Kochi",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Kochi#13",
+    "cityPrefectureNumber": "KochiCity#8",
+    "prefectureSourceURL": "https://www.pref.kochi.lg.jp/soshiki/130401/files/2020022900049/file_20203275185522_1.pdf",
+    "sourceURL": "https://www.pref.kochi.lg.jp/soshiki/130401/files/2020022900049/file_20203275185522_1.pdf"
   }
 ]
