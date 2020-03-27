@@ -443,6 +443,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Recovered",
     "notes": "Doctor, Discharged on 2/16",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "mhlwPatientNumber": "29",
     "prefecturePatientNumber": "Wakayama#1",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
@@ -472,6 +473,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Deceased",
     "notes": "Died on 2/28",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "mhlwPatientNumber": "31",
     "prefecturePatientNumber": "Wakayama#2",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
@@ -561,6 +563,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Recovered",
     "notes": "Doctor, Discharged on 2/19",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "mhlwPatientNumber": "38",
     "prefecturePatientNumber": "Wakayama#3",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
@@ -576,6 +579,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Recovered",
     "notes": "Wife of doctor #43",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "mhlwPatientNumber": "39",
     "prefecturePatientNumber": "Wakayama#4",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
@@ -591,6 +595,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Recovered",
     "notes": "Discharged 2/27",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "mhlwPatientNumber": "40",
     "prefecturePatientNumber": "Wakayama#5",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
@@ -740,6 +745,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Recovered",
     "notes": "Family of patient 45, Discharged 2/24",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "mhlwPatientNumber": "50",
     "prefecturePatientNumber": "Wakayama#6",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
@@ -755,6 +761,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Hospitalized",
     "notes": "Family of patient 45",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "mhlwPatientNumber": "51",
     "prefecturePatientNumber": "Wakayama#8",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
@@ -770,6 +777,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Recovered",
     "notes": "Discharged 2/25",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "mhlwPatientNumber": "52",
     "prefecturePatientNumber": "Wakayama#9",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
@@ -815,6 +823,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Discharged",
     "notes": "Same Hospital as patient 45",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "mhlwPatientNumber": "54",
     "prefecturePatientNumber": "Wakayama#10",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
@@ -1328,6 +1337,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Recovered",
     "notes": "Colleague of #45, Discharged 2/26",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "mhlwPatientNumber": "95",
     "prefecturePatientNumber": "Wakayama#13",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
@@ -2409,6 +2419,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Recovered",
     "notes": "Son of doctor #43 (only in wakayama records), Discharged 2/22",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "prefecturePatientNumber": "Wakayama#12",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
     "sourceURL": "https://www.pref.wakayama.lg.jp/prefg/000200/covid19_d/fil/20200218press1.pdf"
@@ -3190,8 +3201,9 @@
     "residence": "Wakayama",
     "detectedCityTown": "Yuasa",
     "detectedPrefecture": "Wakayama",
-    "patientStatus": "Hospitalized",
+    "patientStatus": "Discharged",
     "notes": "Wife of #45 (only on wakayama records)",
+    "knownCluster": "Saiseikai Arida 済生会有田病院",
     "prefecturePatientNumber": "Wakayama#7",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
     "sourceURL": "https://www.pref.wakayama.lg.jp/prefg/000200/covid19_d/fil/20200229press.pdf"
@@ -14692,17 +14704,6 @@
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200323/k10012346071000.html?utm_int=word_contents_list-items_043&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
-    "patientId": 1203,
-    "dateAnnounced": "2020-03-23",
-    "ageBracket": 20,
-    "gender": "M",
-    "residence": "Otsu",
-    "detectedCityTown": "Otsu",
-    "detectedPrefecture": "Shiga",
-    "notes": "Student studies in England",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200323/k10012345481000.html?utm_int=word_contents_list-items_044&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
-  },
-  {
     "patientId": 1204,
     "dateAnnounced": "2020-03-23",
     "ageBracket": 70,
@@ -14999,6 +15000,8 @@
     "dateAnnounced": "2020-03-24",
     "ageBracket": 10,
     "gender": "F",
+    "residence": "Atsugi",
+    "detectedCityTown": "Atsugi",
     "detectedPrefecture": "Kanagawa",
     "notes": "student",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347851000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -15008,6 +15011,8 @@
     "dateAnnounced": "2020-03-24",
     "ageBracket": 30,
     "gender": "F",
+    "residence": "Hiratsuka",
+    "detectedCityTown": "Hiratsuka",
     "detectedPrefecture": "Kanagawa",
     "notes": "Studied in New York",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347851000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -15017,6 +15022,7 @@
     "dateAnnounced": "2020-03-24",
     "ageBracket": 30,
     "gender": "F",
+    "residence": "Hiratsuka",
     "detectedPrefecture": "Kanagawa",
     "notes": "House wife",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347851000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -15612,6 +15618,8 @@
     "residence": "Fujisawa",
     "detectedCityTown": "Fujisawa",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa #89",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/osirase/1369/?fbclid=IwAR2-8RAnRsixEpUFpaE-qLflTrAA-DbPaLa9r9SzOobgtGriI-ufROesEKA",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012349151000.html"
   },
   {
@@ -16450,6 +16458,8 @@
     "detectedCityTown": "Kani",
     "detectedPrefecture": "Gifu",
     "notes": "Used gym at the same time with confirmed patient",
+    "prefecturePatientNumber": "Gifu#12",
+    "prefectureSourceURL": "https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/0325_kanjya_kisyasiryou.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012350221000.html?utm_int=word_contents_list-items_022&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -16460,75 +16470,132 @@
     "residence": "Kumamoto city",
     "detectedCityTown": "Kumamoto city",
     "detectedPrefecture": "Kumamoto",
+    "prefecturePatientNumber": "Kumamoto#25",
+    "cityPrefectureNumber": "KumamotoCity#6",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012350231000.html?utm_int=word_contents_list-items_023&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
     "patientId": 1356,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #143",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37858_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012350241000.html?utm_int=word_contents_list-items_024&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
     "patientId": 1357,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Sakai",
+    "detectedCityTown": "Sakai",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #144",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37858_4.pdf"
   },
   {
     "patientId": 1358,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Higashi Osaka",
+    "detectedCityTown": "Higashi Osaka",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #145",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37858_4.pdf"
   },
   {
     "patientId": 1359,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 80,
+    "gender": "M",
+    "residence": "Minoo",
+    "detectedCityTown": "Minoo",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #146",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37858_4.pdf"
   },
   {
     "patientId": 1360,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Habikino",
+    "detectedCityTown": "Habikino",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #147",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37858_4.pdf"
   },
   {
     "patientId": 1361,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Habikino",
+    "detectedCityTown": "Habikino",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #148",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37858_4.pdf"
   },
   {
     "patientId": 1362,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "America",
+    "detectedPrefecture": "Osaka",
+    "notes": "Medical staff, lives in USA",
+    "prefecturePatientNumber": "Osaka #149",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37858_4.pdf"
   },
   {
     "patientId": 1363,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Ashikaga",
+    "detectedCityTown": "Ashikaga",
     "detectedPrefecture": "Tochigi",
+    "prefecturePatientNumber": "Tochigi#7",
+    "prefectureSourceURL": "https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/0325_kanjya_kisyasiryou.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012350031000.html?utm_int=word_contents_list-items_032&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
     "patientId": 1364,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tochigi"
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Kanuma",
+    "detectedCityTown": "Kanuma",
+    "detectedPrefecture": "Tochigi",
+    "prefecturePatientNumber": "Tochigi#8",
+    "prefectureSourceURL": "http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/documents/8reieme.pdf"
   },
   {
     "patientId": 1365,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tochigi"
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Kanuma",
+    "detectedCityTown": "Kanuma",
+    "detectedPrefecture": "Tochigi",
+    "prefecturePatientNumber": "Tochigi#9",
+    "prefectureSourceURL": "http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/documents/9reieme.pdf"
   },
   {
     "patientId": 1366,
     "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tochigi"
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Oyama",
+    "detectedCityTown": "Oyama",
+    "detectedPrefecture": "Tochigi",
+    "prefecturePatientNumber": "Tochigi#10",
+    "prefectureSourceURL": "http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/documents/10reime.pdf"
   },
   {
     "patientId": 1367,
@@ -16588,6 +16655,8 @@
     "residence": "Kani",
     "detectedCityTown": "Kani",
     "detectedPrefecture": "Gifu",
+    "prefecturePatientNumber": "Gifu#14",
+    "prefectureSourceURL": "https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/0326_kanjya_kisyasiryou.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012350871000.html?utm_int=word_contents_list-items_017&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -16597,7 +16666,9 @@
     "gender": "F",
     "residence": "Kani",
     "detectedCityTown": "Kani",
-    "detectedPrefecture": "Gifu"
+    "detectedPrefecture": "Gifu",
+    "prefecturePatientNumber": "Gifu#14",
+    "prefectureSourceURL": "https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/0326_kanjya_kisyasiryou.pdf"
   },
   {
     "patientId": 1374,
@@ -17404,9 +17475,12 @@
     "dateAnnounced": "2020-03-26",
     "ageBracket": 10,
     "gender": "M",
+    "residence": "Oyama",
+    "detectedCityTown": "Oyama",
     "detectedPrefecture": "Tochigi",
     "notes": "Father also got infected",
     "prefecturePatientNumber": "Tochigi#11",
+    "prefectureSourceURL": "http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/documents/11reime.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012352451000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -18217,57 +18291,83 @@
     "dateAnnounced": "2020-03-27",
     "ageBracket": 30,
     "gender": "F",
-    "residence": "Osaka city",
-    "detectedCityTown": "Osaka city",
+    "residence": "Takatsuki",
+    "detectedCityTown": "Takatsuki",
     "detectedPrefecture": "Osaka",
     "prefecturePatientNumber": "Osaka #169"
   },
   {
     "patientId": 1540,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Ibaraki city",
+    "detectedCityTown": "Ibaraki city",
     "detectedPrefecture": "Osaka",
     "prefecturePatientNumber": "Osaka #170"
   },
   {
     "patientId": 1541,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
     "prefecturePatientNumber": "Osaka #171"
   },
   {
     "patientId": 1542,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Kawachinagano",
+    "detectedCityTown": "Kawachinagano",
     "detectedPrefecture": "Osaka",
+    "notes": "Traveled abroad",
     "prefecturePatientNumber": "Osaka #172"
   },
   {
     "patientId": 1543,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Tajiri",
+    "detectedCityTown": "Tajiri",
     "detectedPrefecture": "Osaka",
+    "notes": "Traveled abroad",
     "prefecturePatientNumber": "Osaka #173"
   },
   {
     "patientId": 1544,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Daito",
+    "detectedCityTown": "Daito",
     "detectedPrefecture": "Osaka",
+    "notes": "Student",
     "prefecturePatientNumber": "Osaka #174"
   },
   {
     "patientId": 1545,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "F",
+    "residence": "Sakai",
+    "detectedCityTown": "Sakai",
     "detectedPrefecture": "Osaka",
+    "patientStatus": "Hospitalized",
+    "notes": "Critical condition",
     "prefecturePatientNumber": "Osaka #175"
   },
   {
     "patientId": 1546,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Suita",
+    "detectedCityTown": "Suita",
     "detectedPrefecture": "Osaka",
     "prefecturePatientNumber": "Osaka #176"
   },
@@ -18402,5 +18502,16 @@
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukui#8",
     "sourceURL": "https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona_d/fil/200327-4.pdf"
+  },
+  {
+    "patientId": 1559,
+    "dateAnnounced": "2020-02-18",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Wakayama",
+    "detectedPrefecture": "Wakayama",
+    "patientStatus": "Discharged",
+    "prefecturePatientNumber": "Wakayama#11",
+    "sourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html"
   }
 ]
