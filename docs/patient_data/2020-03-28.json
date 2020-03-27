@@ -13199,7 +13199,8 @@
     "residence": "Otokuni",
     "detectedCityTown": "Otokuni",
     "detectedPrefecture": "Kyoto",
-    "knownCluster": "Kyoto #20",
+    "prefecturePatientNumber": "Kyoto #20",
+    "prefectureSourceURL": "#REF!",
     "sourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F"
   },
   {
@@ -13209,7 +13210,8 @@
     "residence": "Kyoto city",
     "detectedCityTown": "Kyoto city",
     "detectedPrefecture": "Kyoto",
-    "knownCluster": "Kyoto #21",
+    "prefecturePatientNumber": "Kyoto #21",
+    "prefectureSourceURL": "#REF!",
     "sourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F"
   },
   {
@@ -16250,6 +16252,9 @@
     "detectedCityTown": "Kyoto city",
     "detectedPrefecture": "Kyoto",
     "notes": "Taxi Driver",
+    "prefecturePatientNumber": "Kyoto#28",
+    "cityPrefectureNumber": "KyotoCity#19",
+    "prefectureSourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012350371000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -16260,7 +16265,10 @@
     "residence": "Kyoto city",
     "detectedCityTown": "Kyoto city",
     "detectedPrefecture": "Kyoto",
-    "notes": "Works in restaurant"
+    "notes": "Works in restaurant",
+    "prefecturePatientNumber": "Kyoto#29",
+    "cityPrefectureNumber": "KyotoCity#20",
+    "prefectureSourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F"
   },
   {
     "patientId": 1341,
@@ -16270,7 +16278,10 @@
     "residence": "Kyoto city",
     "detectedCityTown": "Kyoto city",
     "detectedPrefecture": "Kyoto",
-    "notes": "Employee"
+    "notes": "Employee",
+    "prefecturePatientNumber": "Kyoto#30",
+    "cityPrefectureNumber": "KyotoCity#21",
+    "prefectureSourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F"
   },
   {
     "patientId": 1342,
@@ -16280,7 +16291,10 @@
     "residence": "Kyoto city",
     "detectedCityTown": "Kyoto city",
     "detectedPrefecture": "Kyoto",
-    "notes": "Housewife"
+    "notes": "Housewife",
+    "prefecturePatientNumber": "Kyoto#31",
+    "cityPrefectureNumber": "KyotoCity#22",
+    "prefectureSourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F"
   },
   {
     "patientId": 1343,
@@ -16305,6 +16319,7 @@
     "detectedPrefecture": "Aichi",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Aichi#150",
+    "prefectureSourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200325.html",
     "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200325.html"
   },
   {
@@ -16317,6 +16332,7 @@
     "detectedPrefecture": "Aichi",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Aichi#151",
+    "prefectureSourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200325.html",
     "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200325.html"
   },
   {
@@ -16329,6 +16345,7 @@
     "detectedPrefecture": "Aichi",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Aichi#152",
+    "prefectureSourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200325.html",
     "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200325.html"
   },
   {
@@ -16336,11 +16353,12 @@
     "dateAnnounced": "2020-03-25",
     "ageBracket": 40,
     "gender": "M",
-    "residence": "Shiyoshi",
-    "detectedCityTown": "Shiyoshi",
+    "residence": "Miyoshi",
+    "detectedCityTown": "Miyoshi",
     "detectedPrefecture": "Aichi",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Aichi#153",
+    "prefectureSourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200325.html",
     "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200325.html"
   },
   {
@@ -16352,6 +16370,9 @@
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
     "notes": "Studied in New York",
+    "prefecturePatientNumber": "Kanagawa#87",
+    "cityPrefectureNumber": "Kawasaki#6",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012350301000.html?utm_int=word_contents_list-items_015&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -16361,7 +16382,10 @@
     "gender": "F",
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
-    "detectedPrefecture": "Kanagawa"
+    "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#88",
+    "cityPrefectureNumber": "Kawasaki#7",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html"
   },
   {
     "patientId": 1350,
@@ -16370,7 +16394,10 @@
     "gender": "M",
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
-    "detectedPrefecture": "Kanagawa"
+    "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#89",
+    "cityPrefectureNumber": "Kawasaki#8",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html"
   },
   {
     "patientId": 1377,
@@ -18062,128 +18089,187 @@
   {
     "patientId": 1527,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Nishinomiya",
+    "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
     "notes": "Baseball player",
+    "prefecturePatientNumber": "Osaka #157",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354591000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
     "patientId": 1528,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
-    "notes": "Baseball player"
+    "notes": "Baseball player",
+    "prefecturePatientNumber": "Osaka #158"
   },
   {
     "patientId": 1529,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
-    "notes": "Baseball player"
+    "notes": "Baseball player",
+    "prefecturePatientNumber": "Osaka #159"
   },
   {
     "patientId": 1530,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
-    "notes": "Traveled abroad"
+    "notes": "Traveled abroad",
+    "prefecturePatientNumber": "Osaka #160"
   },
   {
     "patientId": 1531,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
-    "notes": "Traveled abroad"
+    "notes": "Traveled abroad",
+    "prefecturePatientNumber": "Osaka #161"
   },
   {
     "patientId": 1532,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #162"
   },
   {
     "patientId": 1533,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #163"
   },
   {
     "patientId": 1534,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #164"
   },
   {
     "patientId": 1535,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #165"
   },
   {
     "patientId": 1536,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #166"
   },
   {
     "patientId": 1537,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #167"
   },
   {
     "patientId": 1538,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #168"
   },
   {
     "patientId": 1539,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Osaka city",
+    "detectedCityTown": "Osaka city",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #169"
   },
   {
     "patientId": 1540,
     "dateAnnounced": "2020-03-27",
     "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #170"
   },
   {
     "patientId": 1541,
     "dateAnnounced": "2020-03-27",
     "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #171"
   },
   {
     "patientId": 1542,
     "dateAnnounced": "2020-03-27",
     "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #172"
   },
   {
     "patientId": 1543,
     "dateAnnounced": "2020-03-27",
     "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #173"
   },
   {
     "patientId": 1544,
     "dateAnnounced": "2020-03-27",
     "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #174"
   },
   {
     "patientId": 1545,
     "dateAnnounced": "2020-03-27",
     "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #175"
   },
   {
     "patientId": 1546,
     "dateAnnounced": "2020-03-27",
     "ageBracket": -1,
-    "detectedPrefecture": "Osaka"
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #176"
   },
   {
     "patientId": 1547,
