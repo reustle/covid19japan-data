@@ -5838,7 +5838,8 @@
     "residence": "Sapporo",
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
-    "notes": "**Likely this person is deceased, still checking",
+    "patientStatus": "Deceased",
+    "notes": "Died on 3/12 (Deduced from only 70/M infected before 3/12)",
     "mhlwPatientNumber": "376",
     "prefecturePatientNumber": "Hokkaido#95",
     "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1277156",
@@ -10493,10 +10494,11 @@
     "residence": "Sorachi",
     "detectedCityTown": "Sorachi",
     "detectedPrefecture": "Hokkaido",
-    "patientStatus": "Hospitalized",
-    "notes": "Critical condition",
+    "patientStatus": "Deceased",
+    "notes": "Died on 3/15, was critical condition (Deduced because in Hokkaido data as \"健康観察終了\")",
     "prefecturePatientNumber": "Hokkaido #145",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332511000.html?utm_int=news-new_contents_list-items_032"
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315re.pdf",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332511000.html?utm_int=news-new_contents_list-items_032 "
   },
   {
     "patientId": 807,
@@ -10521,6 +10523,7 @@
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Unspecified",
     "prefecturePatientNumber": "Hokkaido #147",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315re.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332511000.html?utm_int=news-new_contents_list-items_032"
   },
   {
