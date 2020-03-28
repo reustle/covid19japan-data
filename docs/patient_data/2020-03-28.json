@@ -22402,6 +22402,7 @@
     "dateAnnounced": "2020-03-26",
     "ageBracket": 40,
     "gender": "F",
+    "residence": "Hiroshima",
     "detectedCityTown": "Hiroshima",
     "detectedPrefecture": "Hiroshima",
     "prefecturePatientNumber": "Hiroshima#4",
@@ -22413,6 +22414,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": 50,
     "gender": "M",
+    "residence": "Itami",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "notes": "Contact with Osaka(3/26 40/M)",
@@ -22425,6 +22427,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": 30,
     "gender": "M",
+    "residence": "Takarazuka",
     "detectedCityTown": "Takarazuka",
     "detectedPrefecture": "Hyogo",
     "notes": "On a cruise in Holland",
@@ -22437,10 +22440,74 @@
     "dateAnnounced": "2020-03-27",
     "ageBracket": 70,
     "gender": "M",
+    "residence": "Tsukuba Mirai",
     "detectedCityTown": "Tsukuba Mirai",
     "detectedPrefecture": "Ibaraki",
     "notes": "(Need confirmation) Second Patient at hospital",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355341000.html?utm_int=word_contents_list-items_037&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1750,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": -1,
+    "gender": "F",
+    "residence": "Yokosuka",
+    "detectedCityTown": "Yokosuka",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "Nurse",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355711000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1751,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Kawasaki",
+    "detectedCityTown": "Kawasaki",
+    "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355721000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1752,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Kawasaki",
+    "detectedCityTown": "Kawasaki",
+    "detectedPrefecture": "Kanagawa",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1753,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Kawasaki",
+    "detectedCityTown": "Kawasaki",
+    "detectedPrefecture": "Kanagawa",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1754,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Kawasaki",
+    "detectedCityTown": "Kawasaki",
+    "detectedPrefecture": "Kanagawa",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1755,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Kawasaki",
+    "detectedCityTown": "Kawasaki",
+    "detectedPrefecture": "Kanagawa",
     "confirmedPatient": true
   }
 ]
