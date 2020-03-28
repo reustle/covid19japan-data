@@ -9610,6 +9610,7 @@
     "detectedPrefecture": "Hokkaido",
     "notes": "Aeon Mall staff",
     "prefecturePatientNumber": "Hokkaido #137",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya137.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200313/k10012330751000.html?utm_int=word_contents_list-items_054&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11028,7 +11029,8 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
-    "prefecturePatientNumber": "Gunma #6",
+    "prefecturePatientNumber": "Gunma#6",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00019.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334101000.html?utm_int=news-new_contents_list-items_007"
   },
   {
@@ -11247,9 +11249,10 @@
     "residence": "Ota",
     "detectedCityTown": "Ota",
     "detectedPrefecture": "Gunma",
-    "patientStatus": "Unspecified",
+    "patientStatus": "Hospitalized",
     "notes": "father of previous patient (#425)",
-    "prefecturePatientNumber": "Gunma #7",
+    "prefecturePatientNumber": "Gunma#7",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00020.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11260,9 +11263,10 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
-    "patientStatus": "Unspecified",
+    "patientStatus": "Hospitalized",
     "notes": "Hospital worker",
-    "prefecturePatientNumber": "Gunma #8",
+    "prefecturePatientNumber": "Gunma#8",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/contents/100146522.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11273,9 +11277,10 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
-    "patientStatus": "Unspecified",
+    "patientStatus": "Hospitalized",
     "notes": "Hospital worker",
-    "prefecturePatientNumber": "Gunma #9",
+    "prefecturePatientNumber": "Gunma#9",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/contents/100146522.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11286,9 +11291,10 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
-    "patientStatus": "Unspecified",
+    "patientStatus": "Hospitalized",
     "notes": "patient hospitalized in the hospital #903 and #904 work for",
-    "prefecturePatientNumber": "Gunma #10",
+    "prefecturePatientNumber": "Gunma#10",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00023.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -12955,8 +12961,10 @@
     "residence": "Ota",
     "detectedCityTown": "Ota",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
     "notes": "Employee",
-    "prefecturePatientNumber": "Gunma #11",
+    "prefecturePatientNumber": "Gunma#11",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00024.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342081000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -14978,7 +14986,9 @@
     "residence": "Maebashi",
     "detectedCityTown": "Maebashi",
     "detectedPrefecture": "Gunma",
-    "notes": "Doctor",
+    "patientStatus": "Hospitalized",
+    "notes": "Doctor at 公立館林厚生病院",
+    "knownCluster": "公立館林厚生病院",
     "prefecturePatientNumber": "Gunma#12",
     "prefectureSourceURL": "https://www.pref.gunma.jp/contents/100148662.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347541000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -15155,6 +15165,7 @@
     "residence": "Takasaki",
     "detectedCityTown": "Takasaki",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Gunma#13",
     "prefectureSourceURL": "https://www.city.takasaki.gunma.jp/docs/2020032400102/",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347541000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -15761,6 +15772,9 @@
     "residence": "Tatebayashi",
     "detectedCityTown": "Tatebayashi",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
+    "notes": "Nurse at 公立館林厚生病院",
+    "knownCluster": "公立館林厚生病院",
     "prefecturePatientNumber": "Gunma#14",
     "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00027.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012348921000.html?utm_int=news-social_contents_list-items_001"
@@ -19164,10 +19178,15 @@
   {
     "patientId": 1586,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
-    "residence": "Tatebayashi",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Tochigi",
     "detectedCityTown": "Tatebayashi",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
+    "notes": "Lives in Tochigi, detected in Gunma. Nurse at 公立館林厚生病院",
+    "knownCluster": "公立館林厚生病院",
+    "prefecturePatientNumber": "Gunma#15",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355451000.html?utm_int=news-new_contents_list-items_006"
   },
   {
@@ -19238,7 +19257,8 @@
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Hokkaido#170",
-    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0328siryou.pdf"
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0328siryou.pdf",
+    "sourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm"
   },
   {
     "patientId": 1594,
@@ -19250,7 +19270,8 @@
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Hokkaido#171",
-    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaikenotaru0328siryou.pdf"
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaikenotaru0328siryou.pdf",
+    "sourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm"
   },
   {
     "patientId": 1596,
@@ -19262,6 +19283,7 @@
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Hokkaido#168",
-    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0326siryou2.pdf"
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0326siryou2.pdf",
+    "sourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm"
   }
 ]
