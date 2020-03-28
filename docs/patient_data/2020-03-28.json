@@ -8058,7 +8058,8 @@
     "patientStatus": "Deceased",
     "notes": "Day care user/ Died 3/22",
     "prefecturePatientNumber": "Hyogo#28",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344381000.html?utm_int=news-new_contents_list-items_009    https://www3.nhk.or.jp/news/html/20200311/k10012326501000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo1-52.html",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344381000.html?utm_int=news-new_contents_list-items_009    "
   },
   {
     "patientId": 601,
@@ -8412,7 +8413,9 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Deceased",
     "notes": "Day care center user, died on 3/10",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#27",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo1-52.html",
     "sourceURL": "https://headlines.yahoo.co.jp/hl?a=20200311-00000027-kobenext-soci"
   },
   {
@@ -10739,12 +10742,12 @@
     "residence": "Itami",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
-    "patientStatus": "Deceased",
+    "patientStatus": "Hospitalized",
     "notes": "Visited Green Ars Itami Day Care",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#74",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344381000.html?utm_int=news-new_contents_list-items_009 https://www3.nhk.or.jp/news/html/20200315/k10012332781000.html?utm_int=news-new_contents_list-items_012"
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344381000.html?utm_int=news-new_contents_list-items_009 "
   },
   {
     "patientId": 825,
@@ -11109,6 +11112,7 @@
     "detectedPrefecture": "Hyogo",
     "notes": "Nurse working in 北播磨総合医療センター",
     "prefecturePatientNumber": "Hyogo#80",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334401000.html"
   },
   {
@@ -11122,6 +11126,7 @@
     "notes": "Doctor working in Takazaruka",
     "knownCluster": "Takarazuka No 1 Hospital",
     "prefecturePatientNumber": "Hyogo#82",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334401000.html"
   },
   {
@@ -11132,6 +11137,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Hyogo#81",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html"
   },
   {
@@ -11306,6 +11312,9 @@
     "detectedCityTown": "Kobe",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hyogo#84",
+    "cityPrefectureNumber": "Kobe#23",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336211000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11313,10 +11322,14 @@
     "dateAnnounced": "2020-03-17",
     "ageBracket": 50,
     "gender": "F",
-    "residence": "Nishimiya",
-    "detectedCityTown": "Nishimiya",
+    "residence": "Nishinomiya",
+    "detectedCityTown": "Kobe",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
+    "notes": "Live in Hishinomiya, Detected in Kobe",
+    "prefecturePatientNumber": "Hyogo#85",
+    "cityPrefectureNumber": "Kobe#24",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336211000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11367,6 +11380,9 @@
     "detectedCityTown": "Kobe",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hyogo#83",
+    "cityPrefectureNumber": "Kobe#22",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336211000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11574,12 +11590,16 @@
   {
     "patientId": 935,
     "dateAnnounced": "2020-03-17",
-    "ageBracket": 50,
+    "ageBracket": 70,
     "gender": "F",
-    "residence": "Tokyo",
+    "residence": "Itami",
+    "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
+    "patientStatus": "Hospitalized",
     "notes": "Day care user",
-    "knownCluster": "Green Earth Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
+    "prefecturePatientNumber": "Hyogo#86",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336391000.html?utm_int=word_contents_list-items_018&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11952,6 +11972,7 @@
     "residence": "Takarazuka",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
+    "knownCluster": "(Indirect) Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo #89",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200318/k10012338541000.html?utm_int=news-new_contents_list-items_011"
@@ -12124,6 +12145,7 @@
     "detectedPrefecture": "Hyogo",
     "knownCluster": "仁恵病院",
     "prefecturePatientNumber": "Hyogo #92",
+    "cityPrefectureNumber": "Himeji#12",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012339241000.html?utm_int=word_contents_list-items_015&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
@@ -12400,6 +12422,10 @@
     "residence": "Itami",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
+    "patientStatus": "Hospitalized",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
+    "prefecturePatientNumber": "Hyogo#93",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340771000.html?utm_int=news-new_contents_list-items_006"
   },
   {
@@ -12826,9 +12852,11 @@
     "dateAnnounced": "2020-03-20",
     "ageBracket": 80,
     "gender": "M",
+    "residence": "Itami",
+    "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "グリーンアルス伊丹",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#96",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342181000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12838,9 +12866,11 @@
     "dateAnnounced": "2020-03-20",
     "ageBracket": 80,
     "gender": "F",
+    "residence": "Itami",
+    "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "グリーンアルス伊丹",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#97",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342181000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12850,9 +12880,11 @@
     "dateAnnounced": "2020-03-20",
     "ageBracket": 70,
     "gender": "M",
+    "residence": "Itami",
+    "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "グリーンアルス伊丹",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#98",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342181000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12863,9 +12895,10 @@
     "ageBracket": 80,
     "gender": "F",
     "residence": "Takarazuka, Hyogo",
+    "detectedCityTown": "Takarazuka",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "グリーンアルス伊丹",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#99",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342181000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12876,9 +12909,10 @@
     "ageBracket": 70,
     "gender": "M",
     "residence": "Takarazuka, Hyogo",
+    "detectedCityTown": "Takarazuka",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "グリーンアルス伊丹",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#100",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342181000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -13386,7 +13420,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Wife of Green Ars user",
-    "knownCluster": "Green Ars Itami ",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#104",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343251000.html"
@@ -13401,7 +13435,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Lives with Green Ars user",
-    "knownCluster": "Green Ars Itami ",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#105",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343251000.html"
@@ -13416,7 +13450,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Green Ars user",
-    "knownCluster": "Green Ars Itami ",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#106",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343251000.html"
@@ -13431,7 +13465,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Green Ars user",
-    "knownCluster": "Green Ars Itami ",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#107",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343251000.html"
@@ -14303,7 +14337,7 @@
     "detectedCityTown": "Takarazuka",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#110",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html"
   },
@@ -14316,7 +14350,7 @@
     "detectedCityTown": "Amagasaki",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#111",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html"
   },
@@ -14329,7 +14363,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Lives with Hyogo#87",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#109",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html"
@@ -14759,7 +14793,7 @@
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "notes": "Lives with Hyogo#93",
-    "knownCluster": "Green Ars Itami ",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#112",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012346091000.html"
@@ -14773,7 +14807,7 @@
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "notes": "Contact with Hyogo#62",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#113",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012346091000.html"
@@ -15326,7 +15360,7 @@
     "residence": "Itami",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#114",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012348131000.html?utm_int=word_contents_list-items_025&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -15339,7 +15373,7 @@
     "residence": "Itami",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#115",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html"
   },
@@ -15350,7 +15384,7 @@
     "gender": "F",
     "residence": "Itami area",
     "detectedPrefecture": "Hyogo",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#116",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html"
   },
