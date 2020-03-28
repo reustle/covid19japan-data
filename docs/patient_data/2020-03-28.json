@@ -1654,7 +1654,7 @@
     "residence": "Kamikawa",
     "detectedCityTown": "Kamikawa",
     "detectedPrefecture": "Hokkaido",
-    "patientStatus": "Deceased",
+    "patientStatus": "Hospitalized",
     "notes": "Critical condition.",
     "mhlwPatientNumber": "121",
     "prefecturePatientNumber": "Hokkaido#18",
@@ -2125,7 +2125,7 @@
     "detectedCityTown": "Kushiro",
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Deceased",
-    "notes": "Died on 3/1",
+    "notes": "Died on 2/29",
     "mhlwPatientNumber": "153",
     "prefecturePatientNumber": "Hokkaido#35",
     "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1272937",
@@ -9603,7 +9603,7 @@
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "notes": "Aeon Mall staff",
-    "cityPrefectureNumber": "Hokkaido #137",
+    "prefecturePatientNumber": "Hokkaido #137",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200313/k10012330751000.html?utm_int=word_contents_list-items_054&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -9849,6 +9849,7 @@
     "patientStatus": "Hospitalized",
     "notes": "Family of 5 (3 kids)",
     "prefecturePatientNumber": "Saitama#28",
+    "prefectureSourceURL": "#REF!",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331351000.html?utm_int=news-new_contents_list-items_005"
   },
   {
@@ -17853,7 +17854,10 @@
     "residence": "Sapporo",
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "patientStatus": "Hospitalized",
     "notes": "Self-employed",
+    "prefecturePatientNumber": "Hokkaido#169",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0327siryou.pdf",
     "sourceURL": "https://this.kiji.is/616157151032067169"
   },
   {
@@ -19193,5 +19197,49 @@
     "detectedPrefecture": "Niigata",
     "notes": "Lives in elerly care house",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355471000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
+  },
+  {
+    "patientId": 1593,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Sapporo",
+    "detectedCityTown": "Sapporo",
+    "detectedPrefecture": "Hokkaido",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hokkaido#170"
+  },
+  {
+    "patientId": 1594,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Otaru",
+    "detectedCityTown": "Otaru",
+    "detectedPrefecture": "Hokkaido",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hokkaido#171"
+  },
+  {
+    "patientId": 1595,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Asahikawa",
+    "detectedCityTown": "Asahikawa",
+    "detectedPrefecture": "Hokkaido",
+    "patientStatus": "Hospitalized",
+    "notes": "SAME PERSON as Hokkaido#11",
+    "prefecturePatientNumber": "Hokkaido#172",
+    "cityPrefectureNumber": "Asahikawa#11"
+  },
+  {
+    "patientId": 1596,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Kutchan",
+    "detectedCityTown": "Kutchan",
+    "detectedPrefecture": "Hokkaido"
   }
 ]
