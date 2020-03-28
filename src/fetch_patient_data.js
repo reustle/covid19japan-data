@@ -8,8 +8,8 @@ const SHEET_PATIENT_DATA_TAB = 1
 const postProcessData = (rawData) => {
 
   // Check validity of the row.
-  const filterRow = row => {
-    if (!row.patientnumber || isNaN(parseInt(row.patientNumber))) { return false }
+  const isValidRow = row => {
+    if (!row.patientId || isNaN(parseInt(row.patientId))) { return false }
     if (!row.detectedPrefecture) { return false }
     return true
   }
@@ -74,8 +74,9 @@ const postProcessData = (rawData) => {
 
     return transformedRow
   }
-
-  return _.map(_.filter(rawData), transformRow)
+  
+  const rows = _.filter(_.map(rawData, transformRow), isValidRow)
+  return rows
 }
 
 
