@@ -950,6 +950,7 @@
     "patientStatus": "Hospitalized",
     "mhlwPatientNumber": "63",
     "prefecturePatientNumber": "Hokkaido#3",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#2/18",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200219/k10012291671000.html"
   },
   {
@@ -1049,6 +1050,7 @@
     "detectedPrefecture": "Hokkaido",
     "mhlwPatientNumber": "72",
     "prefecturePatientNumber": "Hokkaido#5",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#2/20",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200220/k10012293901000.html"
   },
   {
@@ -1126,6 +1128,7 @@
     "patientStatus": "Discharged",
     "mhlwPatientNumber": "80",
     "prefecturePatientNumber": "Hokkaido#6",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#2/21",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200221/k10012295301000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -1139,6 +1142,7 @@
     "patientStatus": "Discharged",
     "mhlwPatientNumber": "81",
     "prefecturePatientNumber": "Hokkaido#7",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#no7",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200221/k10012295301000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -1153,6 +1157,7 @@
     "notes": "Quarantine officer working at New Chitose Airport",
     "mhlwPatientNumber": "82",
     "prefecturePatientNumber": "Hokkaido#8",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#no8",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200221/k10012295301000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -1409,9 +1414,10 @@
     "detectedCityTown": "Asahikawa",
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
-    "notes": "Restaurant owner",
+    "notes": "Discharged, but reinfected on 3/28. Also known as Hokkaido#172",
     "mhlwPatientNumber": "100",
     "prefecturePatientNumber": "Hokkaido#11",
+    "cityPrefectureNumber": "Hokkaido#172",
     "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1271917",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200222/k10012297291000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
@@ -1654,7 +1660,7 @@
     "residence": "Kamikawa",
     "detectedCityTown": "Kamikawa",
     "detectedPrefecture": "Hokkaido",
-    "patientStatus": "Deceased",
+    "patientStatus": "Hospitalized",
     "notes": "Critical condition.",
     "mhlwPatientNumber": "121",
     "prefecturePatientNumber": "Hokkaido#18",
@@ -2125,7 +2131,7 @@
     "detectedCityTown": "Kushiro",
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Deceased",
-    "notes": "Died on 3/1",
+    "notes": "Died on 2/29",
     "mhlwPatientNumber": "153",
     "prefecturePatientNumber": "Hokkaido#35",
     "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1272937",
@@ -5727,6 +5733,7 @@
     "residence": "Gunma",
     "detectedCityTown": "Oota",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
     "notes": "Critical, preschool teacher",
     "mhlwPatientNumber": "391",
     "prefecturePatientNumber": "Gunma#1",
@@ -5838,7 +5845,8 @@
     "residence": "Sapporo",
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
-    "notes": "**Likely this person is deceased, still checking",
+    "patientStatus": "Deceased",
+    "notes": "Died on 3/12 (Deduced from only 70/M infected before 3/12)",
     "mhlwPatientNumber": "376",
     "prefecturePatientNumber": "Hokkaido#95",
     "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1277156",
@@ -6277,7 +6285,7 @@
     "dateAnnounced": "2020-03-07",
     "ageBracket": 80,
     "gender": "F",
-    "residence": "Hyogo",
+    "residence": "Nishinomiya",
     "detectedCityTown": "Nishinomiya",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Deceased",
@@ -6354,6 +6362,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Nurse",
+    "knownCluster": "仁恵病院",
     "mhlwPatientNumber": "414",
     "prefecturePatientNumber": "Hyogo#11",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200308/k10012319841000.html?utm_int=news-new_contents_list-items_015"
@@ -7431,8 +7440,8 @@
     "residence": "Kawagoe",
     "detectedCityTown": "Kawagoe",
     "detectedPrefecture": "Saitama",
-    "patientStatus": "Hospitalized",
-    "notes": "Went to Egypt",
+    "patientStatus": "Deceased",
+    "notes": "Died 3/27 Went to Egypt",
     "prefecturePatientNumber": "Saitama#14",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200310/k10012323961000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
@@ -8058,7 +8067,8 @@
     "patientStatus": "Deceased",
     "notes": "Day care user/ Died 3/22",
     "prefecturePatientNumber": "Hyogo#28",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344381000.html?utm_int=news-new_contents_list-items_009    https://www3.nhk.or.jp/news/html/20200311/k10012326501000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo1-52.html",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344381000.html?utm_int=news-new_contents_list-items_009    "
   },
   {
     "patientId": 601,
@@ -8412,7 +8422,9 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Deceased",
     "notes": "Day care center user, died on 3/10",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#27",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo1-52.html",
     "sourceURL": "https://headlines.yahoo.co.jp/hl?a=20200311-00000027-kobenext-soci"
   },
   {
@@ -9197,6 +9209,7 @@
     "residence": "Ota",
     "detectedCityTown": "Ota",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Gunma#2",
     "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00014.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200312/k10012327971000.html?utm_int=word_contents_list-items_054&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -9209,7 +9222,9 @@
     "residence": "Ota",
     "detectedCityTown": "Ota",
     "detectedPrefecture": "Gunma",
-    "notes": "Nurse",
+    "patientStatus": "Hospitalized",
+    "notes": "Nurse at 医療法人真医会",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#3",
     "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00015.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200312/k10012327971000.html?utm_int=word_contents_list-items_054&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -9498,6 +9513,7 @@
     "detectedPrefecture": "Hyogo",
     "notes": "Hyogo #53, employees working at Green Ars Itami, a nursing home in Itami City",
     "prefecturePatientNumber": "Hyogo#53",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200313/k10012330531000.html"
   },
   {
@@ -9511,6 +9527,7 @@
     "patientStatus": "Hospitalized",
     "notes": "Hyogo#56, Related to patient in Osaka",
     "prefecturePatientNumber": "Hyogo#56",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200313/k10012330531000.html"
   },
   {
@@ -9596,7 +9613,8 @@
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "notes": "Aeon Mall staff",
-    "cityPrefectureNumber": "Hokkaido #137",
+    "prefecturePatientNumber": "Hokkaido #137",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya137.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200313/k10012330751000.html?utm_int=word_contents_list-items_054&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -9607,6 +9625,9 @@
     "residence": "Himeji",
     "detectedCityTown": "HImeji",
     "detectedPrefecture": "Hyogo",
+    "patientStatus": "Deceased",
+    "notes": "Died 3/26, Father of nurse Hyogo#11",
+    "knownCluster": "(Indirect) 仁恵病院",
     "prefecturePatientNumber": "Hyogo#15",
     "sourceURL": "https://www.city.himeji.lg.jp/emergencyinfo/cmsfiles/emergency/179/200309.pdf"
   },
@@ -9691,7 +9712,8 @@
     "detectedPrefecture": "Hyogo",
     "notes": "Staff at Green Ars Itami",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
-    "cityPrefectureNumber": "Hyogo#54",
+    "prefecturePatientNumber": "Hyogo#54",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html"
   },
   {
@@ -9702,7 +9724,8 @@
     "residence": "Kakogawa",
     "detectedCityTown": "Kakogawa",
     "detectedPrefecture": "Hyogo",
-    "cityPrefectureNumber": "Hyogo#55",
+    "prefecturePatientNumber": "Hyogo#55",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html"
   },
   {
@@ -9728,6 +9751,7 @@
     "detectedPrefecture": "Hokkaido",
     "notes": "Contact with 3/11 50F",
     "prefecturePatientNumber": "Hokkaido#141",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya138-142.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331461000.html"
   },
   {
@@ -9738,6 +9762,7 @@
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido#139",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya138-142.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331461000.html"
   },
   {
@@ -9748,6 +9773,7 @@
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido#138",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya138-142.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331461000.html"
   },
   {
@@ -9759,6 +9785,7 @@
     "detectedPrefecture": "Hokkaido",
     "notes": "Family of 3/11 80M",
     "prefecturePatientNumber": "Hokkaido#142",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya138-142.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331461000.html"
   },
   {
@@ -9770,6 +9797,7 @@
     "detectedPrefecture": "Hokkaido",
     "notes": "Contact with 3/11 50F",
     "prefecturePatientNumber": "Hokkaido#140",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya138-142.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331461000.html"
   },
   {
@@ -9837,6 +9865,7 @@
     "patientStatus": "Hospitalized",
     "notes": "Family of 5 (3 kids)",
     "prefecturePatientNumber": "Saitama#28",
+    "prefectureSourceURL": "#REF!",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331351000.html?utm_int=news-new_contents_list-items_005"
   },
   {
@@ -9945,7 +9974,9 @@
     "detectedPrefecture": "Gunma",
     "patientStatus": "Hospitalized",
     "notes": "Wife of Gunma#4",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#5",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00018.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331581000.html?utm_int=word_contents_list-items_028&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -9956,9 +9987,11 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
-    "patientStatus": "Hospitalized",
-    "notes": "Doctor Serious condition",
+    "patientStatus": "Deceased",
+    "notes": "(Possibly died 3/22) Serious condition, Doctor at 医療法人真医会 ",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#4",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00017.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331581000.html?utm_int=word_contents_list-items_028&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -10004,6 +10037,7 @@
     "notes": "Green Arc Itami Day care user",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#57",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331821000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -10011,10 +10045,12 @@
     "dateAnnounced": "2020-03-14",
     "ageBracket": 80,
     "gender": "M",
+    "residence": "Hyogo",
     "detectedPrefecture": "Hyogo",
-    "patientStatus": "Hospitalized",
-    "notes": "Critical",
+    "patientStatus": "Deceased",
+    "notes": "Died on 3/25",
     "prefecturePatientNumber": "Hyogo#64",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html"
   },
   {
@@ -10028,6 +10064,7 @@
     "notes": "No symptoms, Works at Green Ars Itami Day Care",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#60",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html"
   },
   {
@@ -10041,6 +10078,7 @@
     "notes": "No symptoms, Works at Green Ars Itami Day Care",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#58",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html"
   },
   {
@@ -10054,6 +10092,7 @@
     "notes": "No symptoms, Works at Green Ars Itami Day Care",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#59",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html"
   },
   {
@@ -10067,6 +10106,7 @@
     "notes": "No symptoms, Works at Green Ars Itami Day Care",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#61",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html"
   },
   {
@@ -10080,6 +10120,7 @@
     "notes": "No symptoms, Works at Green Ars Itami Day Care",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#62",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html"
   },
   {
@@ -10093,6 +10134,7 @@
     "notes": "Visited Green Ars Itami Day Care",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#63",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html"
   },
   {
@@ -10105,6 +10147,7 @@
     "detectedPrefecture": "Hyogo",
     "notes": "Traveled to Philippines",
     "prefecturePatientNumber": "Hyogo#67",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331821000.html"
   },
   {
@@ -10117,6 +10160,7 @@
     "detectedPrefecture": "Hyogo",
     "notes": "Traveled to Vietnam",
     "prefecturePatientNumber": "Hyogo#66",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331821000.html"
   },
   {
@@ -10129,6 +10173,7 @@
     "detectedPrefecture": "Hyogo",
     "knownCluster": "Kobe Kindergarden ",
     "prefecturePatientNumber": "Hyogo#68",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331821000.html"
   },
   {
@@ -10434,6 +10479,7 @@
     "patientStatus": "Deceased",
     "notes": "Critical=> died 3/15",
     "prefecturePatientNumber": "Hokkaido #143",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315_0314sapporo.pdf",
     "sourceURL": "https://this.kiji.is/611869439185536097?c=39550187727945729"
   },
   {
@@ -10445,6 +10491,7 @@
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido #144",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315_0314sapporo.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331951000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -10470,10 +10517,11 @@
     "residence": "Sorachi",
     "detectedCityTown": "Sorachi",
     "detectedPrefecture": "Hokkaido",
-    "patientStatus": "Hospitalized",
-    "notes": "Critical condition",
+    "patientStatus": "Deceased",
+    "notes": "Died on 3/15, was critical condition (Deduced because in Hokkaido data as \"健康観察終了\")",
     "prefecturePatientNumber": "Hokkaido #145",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332511000.html?utm_int=news-new_contents_list-items_032"
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315re.pdf",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332511000.html?utm_int=news-new_contents_list-items_032 "
   },
   {
     "patientId": 807,
@@ -10486,6 +10534,7 @@
     "patientStatus": "Unspecified",
     "notes": "Mild condition",
     "prefecturePatientNumber": "Hokkaido #146",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315re.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332511000.html?utm_int=news-new_contents_list-items_032"
   },
   {
@@ -10498,6 +10547,7 @@
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Unspecified",
     "prefecturePatientNumber": "Hokkaido #147",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315re.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332511000.html?utm_int=news-new_contents_list-items_032"
   },
   {
@@ -10510,6 +10560,7 @@
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Unspecified",
     "prefecturePatientNumber": "Hokkaido #148",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315re.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332511000.html?utm_int=news-new_contents_list-items_032"
   },
   {
@@ -10694,9 +10745,11 @@
     "residence": "Takarazuka",
     "detectedCityTown": "Takarazuka",
     "detectedPrefecture": "Hyogo",
+    "patientStatus": "Unspecified",
     "notes": "Visited Green Ars Itami Day Care",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#72",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332781000.html?utm_int=news-new_contents_list-items_012"
   },
   {
@@ -10710,6 +10763,7 @@
     "notes": "Visited Green Ars Itami Day Care",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#73",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332781000.html?utm_int=news-new_contents_list-items_012"
   },
   {
@@ -10720,11 +10774,12 @@
     "residence": "Itami",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
-    "patientStatus": "Deceased",
+    "patientStatus": "Hospitalized",
     "notes": "Visited Green Ars Itami Day Care",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#74",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344381000.html?utm_int=news-new_contents_list-items_009 https://www3.nhk.or.jp/news/html/20200315/k10012332781000.html?utm_int=news-new_contents_list-items_012"
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344381000.html?utm_int=news-new_contents_list-items_009 "
   },
   {
     "patientId": 825,
@@ -10737,6 +10792,7 @@
     "notes": "No symptoms",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#75",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332781000.html?utm_int=news-new_contents_list-items_012"
   },
   {
@@ -10747,22 +10803,26 @@
     "residence": "Itami",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
-    "notes": "Lives with Hyogo#75, No Symptoms",
+    "patientStatus": "Deceased",
+    "notes": "Died 3/22, Lives with Hyogo#75, No Symptoms",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#76",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332781000.html?utm_int=news-new_contents_list-items_012"
   },
   {
     "patientId": 827,
     "dateAnnounced": "2020-03-15",
-    "ageBracket": 90,
+    "ageBracket": 80,
     "gender": "M",
     "residence": "Takarazuka",
     "detectedCityTown": "Takarazuka",
     "detectedPrefecture": "Hyogo",
-    "notes": "No Symptoms, Contact with Hyogo#27 Hyogo#64 Hyogo#78 Hyogo#70 Hyogo#71",
+    "patientStatus": "Deceased",
+    "notes": "Died 3/27,  No Symptoms",
     "knownCluster": "Takarazuka No 1 Hospital",
     "prefecturePatientNumber": "Hyogo#77",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332781000.html?utm_int=news-new_contents_list-items_012"
   },
   {
@@ -10773,9 +10833,11 @@
     "residence": "Takarazuka",
     "detectedCityTown": "Takarazuka",
     "detectedPrefecture": "Hyogo",
+    "patientStatus": "Hospitalized",
     "notes": "No Symptoms, Contact with Hyogo#27 Hyogo#64 Hyogo#77 Hyogo#70 Hyogo#71",
     "knownCluster": "Takarazuka No 1 Hospital",
     "prefecturePatientNumber": "Hyogo#78",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332781000.html?utm_int=news-new_contents_list-items_012"
   },
   {
@@ -10926,6 +10988,7 @@
     "detectedCityTown": "Okhotsk",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido #149",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0316_3.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012333851000.html?utm_int=news-new_contents_list-items_003"
   },
   {
@@ -10974,7 +11037,11 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
-    "prefecturePatientNumber": "Gunma #6",
+    "patientStatus": "Hospitalized",
+    "notes": "Employee at 医療法人真医会",
+    "knownCluster": "医療法人真医会",
+    "prefecturePatientNumber": "Gunma#6",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00019.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334101000.html?utm_int=news-new_contents_list-items_007"
   },
   {
@@ -10986,6 +11053,7 @@
     "detectedCityTown": "Kobe",
     "detectedPrefecture": "Hyogo",
     "prefecturePatientNumber": "Hyogo#79",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334121000.html?utm_int=news-new_contents_list-items_005"
   },
   {
@@ -11080,6 +11148,8 @@
     "detectedCityTown": "Kasai",
     "detectedPrefecture": "Hyogo",
     "notes": "Nurse working in 北播磨総合医療センター",
+    "prefecturePatientNumber": "Hyogo#80",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334401000.html"
   },
   {
@@ -11092,15 +11162,20 @@
     "detectedPrefecture": "Hyogo",
     "notes": "Doctor working in Takazaruka",
     "knownCluster": "Takarazuka No 1 Hospital",
+    "prefecturePatientNumber": "Hyogo#82",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334401000.html"
   },
   {
     "patientId": 895,
     "dateAnnounced": "2020-03-16",
-    "ageBracket": -1,
+    "ageBracket": 70,
     "gender": "M",
     "detectedPrefecture": "Hyogo",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334401000.html"
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hyogo#81",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
+    "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html"
   },
   {
     "patientId": 896,
@@ -11185,9 +11260,11 @@
     "residence": "Ota",
     "detectedCityTown": "Ota",
     "detectedPrefecture": "Gunma",
-    "patientStatus": "Unspecified",
+    "patientStatus": "Hospitalized",
     "notes": "father of previous patient (#425)",
-    "prefecturePatientNumber": "Gunma #7",
+    "knownCluster": "医療法人真医会",
+    "prefecturePatientNumber": "Gunma#7",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00020.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11198,9 +11275,11 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
-    "patientStatus": "Unspecified",
+    "patientStatus": "Hospitalized",
     "notes": "Hospital worker",
-    "prefecturePatientNumber": "Gunma #8",
+    "knownCluster": "医療法人真医会",
+    "prefecturePatientNumber": "Gunma#8",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/contents/100146522.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11211,9 +11290,11 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
-    "patientStatus": "Unspecified",
+    "patientStatus": "Hospitalized",
     "notes": "Hospital worker",
-    "prefecturePatientNumber": "Gunma #9",
+    "knownCluster": "医療法人真医会",
+    "prefecturePatientNumber": "Gunma#9",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/contents/100146522.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11224,9 +11305,11 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
-    "patientStatus": "Unspecified",
+    "patientStatus": "Hospitalized",
     "notes": "patient hospitalized in the hospital #903 and #904 work for",
-    "prefecturePatientNumber": "Gunma #10",
+    "knownCluster": "医療法人真医会",
+    "prefecturePatientNumber": "Gunma#10",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00023.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11270,10 +11353,13 @@
     "dateAnnounced": "2020-03-17",
     "ageBracket": 40,
     "gender": "M",
-    "residence": "Hyogo, Kobe",
+    "residence": "Kobe",
     "detectedCityTown": "Kobe",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hyogo#84",
+    "cityPrefectureNumber": "Kobe#23",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336211000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11281,10 +11367,14 @@
     "dateAnnounced": "2020-03-17",
     "ageBracket": 50,
     "gender": "F",
-    "residence": "Hyogo, Nishimiya",
-    "detectedCityTown": "Nishimiya",
+    "residence": "Nishinomiya",
+    "detectedCityTown": "Kobe",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
+    "notes": "Live in Hishinomiya, Detected in Kobe",
+    "prefecturePatientNumber": "Hyogo#85",
+    "cityPrefectureNumber": "Kobe#24",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336211000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11331,10 +11421,13 @@
     "dateAnnounced": "2020-03-17",
     "ageBracket": 80,
     "gender": "F",
-    "residence": "Hyogo, Kobe",
+    "residence": "Kobe",
     "detectedCityTown": "Kobe",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hyogo#83",
+    "cityPrefectureNumber": "Kobe#22",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336211000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11542,13 +11635,16 @@
   {
     "patientId": 935,
     "dateAnnounced": "2020-03-17",
-    "ageBracket": 50,
+    "ageBracket": 70,
     "gender": "F",
-    "residence": "Tokyo",
-    "detectedCityTown": "Tokyo",
+    "residence": "Itami",
+    "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
+    "patientStatus": "Hospitalized",
     "notes": "Day care user",
-    "knownCluster": "Green Earth Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
+    "prefecturePatientNumber": "Hyogo#86",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336391000.html?utm_int=word_contents_list-items_018&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11762,7 +11858,8 @@
     "detectedCityTown": "Kushiro",
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
-    "prefecturePatientNumber": "Hokkaido #15３",
+    "prefecturePatientNumber": "Hokkaido #153",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0318-2.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200318/k10012338251000.html?utm_int=news-new_contents_list-items_044"
   },
   {
@@ -11775,6 +11872,7 @@
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Hokkaido #154",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0318sapporo.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200318/k10012338251000.html?utm_int=news-new_contents_list-items_044"
   },
   {
@@ -11894,6 +11992,7 @@
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Deceased",
+    "notes": "Died 3/16, Test positive after death",
     "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo #87",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
@@ -11920,6 +12019,7 @@
     "residence": "Takarazuka",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
+    "knownCluster": "(Indirect) Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo #89",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200318/k10012338541000.html?utm_int=news-new_contents_list-items_011"
@@ -12092,6 +12192,7 @@
     "detectedPrefecture": "Hyogo",
     "knownCluster": "仁恵病院",
     "prefecturePatientNumber": "Hyogo #92",
+    "cityPrefectureNumber": "Himeji#12",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012339241000.html?utm_int=word_contents_list-items_015&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
@@ -12194,6 +12295,7 @@
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido #156",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0319sapporo.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340001000.html?utm_int=news_contents_news-main_003"
   },
   {
@@ -12204,6 +12306,7 @@
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido #155",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0319sapporo.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340001000.html?utm_int=news_contents_news-main_003"
   },
   {
@@ -12294,6 +12397,7 @@
     "residence": "Asahikawa",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido #157",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0319asahikawa.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340411000.html?utm_int=news-new_contents_list-items_058"
   },
   {
@@ -12368,6 +12472,10 @@
     "residence": "Itami",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
+    "patientStatus": "Hospitalized",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
+    "prefecturePatientNumber": "Hyogo#93",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340771000.html?utm_int=news-new_contents_list-items_006"
   },
   {
@@ -12503,6 +12611,7 @@
     "patientStatus": "Hospitalized",
     "notes": "Company employee",
     "prefecturePatientNumber": "Hokkaido #158",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0320sapporo.pdf",
     "sourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0320sapporo.pdf"
   },
   {
@@ -12794,9 +12903,11 @@
     "dateAnnounced": "2020-03-20",
     "ageBracket": 80,
     "gender": "M",
+    "residence": "Itami",
+    "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "グリーンアルス伊丹",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#96",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342181000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12806,9 +12917,11 @@
     "dateAnnounced": "2020-03-20",
     "ageBracket": 80,
     "gender": "F",
+    "residence": "Itami",
+    "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "グリーンアルス伊丹",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#97",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342181000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12818,9 +12931,11 @@
     "dateAnnounced": "2020-03-20",
     "ageBracket": 70,
     "gender": "M",
+    "residence": "Itami",
+    "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "グリーンアルス伊丹",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#98",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342181000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12831,9 +12946,10 @@
     "ageBracket": 80,
     "gender": "F",
     "residence": "Takarazuka, Hyogo",
+    "detectedCityTown": "Takarazuka",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "グリーンアルス伊丹",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#99",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342181000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12844,9 +12960,10 @@
     "ageBracket": 70,
     "gender": "M",
     "residence": "Takarazuka, Hyogo",
+    "detectedCityTown": "Takarazuka",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "グリーンアルス伊丹",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#100",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342181000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12859,8 +12976,11 @@
     "residence": "Ota",
     "detectedCityTown": "Ota",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
     "notes": "Employee",
-    "prefecturePatientNumber": "Gunma #11",
+    "knownCluster": "医療法人真医会",
+    "prefecturePatientNumber": "Gunma#11",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00024.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342081000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -13275,6 +13395,8 @@
     "residence": "Kushiro",
     "detectedCityTown": "Kushiro",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#159",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken03212sokuhou.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343191000.html?utm_int=news-new_contents_list-items_002"
   },
   {
@@ -13354,7 +13476,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Wife of Green Ars user",
-    "knownCluster": "Green Ars Itami ",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#104",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343251000.html"
@@ -13369,7 +13491,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Lives with Green Ars user",
-    "knownCluster": "Green Ars Itami ",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#105",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343251000.html"
@@ -13384,7 +13506,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Green Ars user",
-    "knownCluster": "Green Ars Itami ",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#106",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343251000.html"
@@ -13399,7 +13521,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Green Ars user",
-    "knownCluster": "Green Ars Itami ",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#107",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343251000.html"
@@ -13830,6 +13952,8 @@
     "residence": "Sapporo",
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#160",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0322sapporo.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012343931000.html?utm_int=news-new_contents_list-items_018"
   },
   {
@@ -13853,6 +13977,8 @@
     "residence": "Otaru",
     "detectedCityTown": "Otaru",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#162",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0322otarushi.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344051000.html?utm_int=news-new_contents_list-items_009"
   },
   {
@@ -13863,6 +13989,8 @@
     "residence": "Otaru",
     "detectedCityTown": "Otaru",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#161",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0322otarushi.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344051000.html?utm_int=news-new_contents_list-items_009"
   },
   {
@@ -14271,7 +14399,7 @@
     "detectedCityTown": "Takarazuka",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#110",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html"
   },
@@ -14284,7 +14412,7 @@
     "detectedCityTown": "Amagasaki",
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#111",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html"
   },
@@ -14297,7 +14425,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Lives with Hyogo#87",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#109",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html"
@@ -14727,7 +14855,7 @@
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "notes": "Lives with Hyogo#93",
-    "knownCluster": "Green Ars Itami ",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#112",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012346091000.html"
@@ -14741,7 +14869,7 @@
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "notes": "Contact with Hyogo#62",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#113",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012346091000.html"
@@ -14874,7 +15002,9 @@
     "residence": "Maebashi",
     "detectedCityTown": "Maebashi",
     "detectedPrefecture": "Gunma",
-    "notes": "Doctor",
+    "patientStatus": "Hospitalized",
+    "notes": "Doctor at 公立館林厚生病院",
+    "knownCluster": "公立館林厚生病院",
     "prefecturePatientNumber": "Gunma#12",
     "prefectureSourceURL": "https://www.pref.gunma.jp/contents/100148662.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347541000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -15051,6 +15181,8 @@
     "residence": "Takasaki",
     "detectedCityTown": "Takasaki",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
+    "notes": "Visited Phillippines",
     "prefecturePatientNumber": "Gunma#13",
     "prefectureSourceURL": "https://www.city.takasaki.gunma.jp/docs/2020032400102/",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347541000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -15294,7 +15426,7 @@
     "residence": "Itami",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#114",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012348131000.html?utm_int=word_contents_list-items_025&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -15307,7 +15439,7 @@
     "residence": "Itami",
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#115",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html"
   },
@@ -15318,7 +15450,7 @@
     "gender": "F",
     "residence": "Itami area",
     "detectedPrefecture": "Hyogo",
-    "knownCluster": "Green Ars Itami",
+    "knownCluster": "Green Ars Itami Day Care グリーンアルス伊丹",
     "prefecturePatientNumber": "Hyogo#116",
     "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo101.html"
   },
@@ -15657,6 +15789,9 @@
     "residence": "Tatebayashi",
     "detectedCityTown": "Tatebayashi",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
+    "notes": "Nurse at 公立館林厚生病院",
+    "knownCluster": "公立館林厚生病院",
     "prefecturePatientNumber": "Gunma#14",
     "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00027.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012348921000.html?utm_int=news-social_contents_list-items_001"
@@ -16724,6 +16859,8 @@
     "detectedCityTown": "Narita airport",
     "detectedPrefecture": "Port Quarantine",
     "notes": "returning from studying in Switzerland",
+    "prefecturePatientNumber": "Port",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10445.html",
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10445.html"
   },
   {
@@ -16734,7 +16871,9 @@
     "residence": "Canada",
     "detectedCityTown": "Haneda airport",
     "detectedPrefecture": "Port Quarantine",
-    "notes": "en-route to Canada from Thailand"
+    "notes": "en-route to Canada from Thailand",
+    "prefecturePatientNumber": "Port",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10445.html"
   },
   {
     "patientId": 1369,
@@ -16744,7 +16883,9 @@
     "residence": "Tokyo",
     "detectedCityTown": "Narita airport",
     "detectedPrefecture": "Port Quarantine",
-    "notes": "return from Ethiopia"
+    "notes": "return from Ethiopia",
+    "prefecturePatientNumber": "Port",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10445.html"
   },
   {
     "patientId": 1370,
@@ -16754,7 +16895,9 @@
     "residence": "Tokyo",
     "detectedCityTown": "Narita airport",
     "detectedPrefecture": "Port Quarantine",
-    "notes": "return from Ethiopia"
+    "notes": "return from Ethiopia",
+    "prefecturePatientNumber": "Port",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10445.html"
   },
   {
     "patientId": 1371,
@@ -16763,7 +16906,9 @@
     "gender": "F",
     "detectedCityTown": "Haneda airport",
     "detectedPrefecture": "Port Quarantine",
-    "notes": "return from 1 year in Europe"
+    "notes": "return from 1 year in Europe",
+    "prefecturePatientNumber": "Port",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10445.html"
   },
   {
     "patientId": 1372,
@@ -17770,7 +17915,10 @@
     "residence": "Sapporo",
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "patientStatus": "Hospitalized",
     "notes": "Self-employed",
+    "prefecturePatientNumber": "Hokkaido#169",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0327siryou.pdf",
     "sourceURL": "https://this.kiji.is/616157151032067169"
   },
   {
@@ -17855,31 +18003,38 @@
   {
     "patientId": 1474,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#260",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/content/10906000/000614702.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_001"
   },
   {
     "patientId": 1475,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#261",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/content/10906000/000614702.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_002"
   },
   {
     "patientId": 1476,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#262",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/content/10906000/000614702.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_003"
   },
   {
     "patientId": 1477,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#263",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_004"
@@ -17887,7 +18042,8 @@
   {
     "patientId": 1478,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#264",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_005"
@@ -17895,7 +18051,8 @@
   {
     "patientId": 1479,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#265",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_006"
@@ -17903,7 +18060,8 @@
   {
     "patientId": 1480,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#266",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_007"
@@ -17911,7 +18069,8 @@
   {
     "patientId": 1481,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#267",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_008"
@@ -17919,7 +18078,8 @@
   {
     "patientId": 1482,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#268",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_009"
@@ -17927,7 +18087,8 @@
   {
     "patientId": 1483,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#269",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_010"
@@ -17935,7 +18096,8 @@
   {
     "patientId": 1484,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#270",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_011"
@@ -17943,7 +18105,8 @@
   {
     "patientId": 1485,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#271",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_012"
@@ -17951,7 +18114,8 @@
   {
     "patientId": 1486,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#272",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_013"
@@ -17959,7 +18123,8 @@
   {
     "patientId": 1487,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#273",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_014"
@@ -17967,7 +18132,8 @@
   {
     "patientId": 1488,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#274",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_015"
@@ -17975,7 +18141,8 @@
   {
     "patientId": 1489,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#275",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_016"
@@ -17983,7 +18150,8 @@
   {
     "patientId": 1490,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#276",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_017"
@@ -17991,7 +18159,8 @@
   {
     "patientId": 1491,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#277",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_018"
@@ -17999,7 +18168,8 @@
   {
     "patientId": 1492,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#278",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_019"
@@ -18007,7 +18177,8 @@
   {
     "patientId": 1493,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#279",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_020"
@@ -18015,7 +18186,8 @@
   {
     "patientId": 1494,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#280",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_021"
@@ -18023,7 +18195,8 @@
   {
     "patientId": 1495,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#281",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_022"
@@ -18031,7 +18204,8 @@
   {
     "patientId": 1496,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#282",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_023"
@@ -18039,7 +18213,8 @@
   {
     "patientId": 1497,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#283",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_024"
@@ -18047,7 +18222,8 @@
   {
     "patientId": 1498,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#284",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_025"
@@ -18055,7 +18231,8 @@
   {
     "patientId": 1499,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#285",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_026"
@@ -18063,7 +18240,8 @@
   {
     "patientId": 1500,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#286",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_027"
@@ -18071,7 +18249,8 @@
   {
     "patientId": 1501,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#287",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_028"
@@ -18079,7 +18258,8 @@
   {
     "patientId": 1502,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#288",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_029"
@@ -18087,7 +18267,8 @@
   {
     "patientId": 1503,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#289",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_030"
@@ -18095,7 +18276,8 @@
   {
     "patientId": 1504,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#290",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_031"
@@ -18103,7 +18285,8 @@
   {
     "patientId": 1505,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#291",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_032"
@@ -18111,7 +18294,8 @@
   {
     "patientId": 1506,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#292",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_033"
@@ -18119,7 +18303,8 @@
   {
     "patientId": 1507,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#293",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_034"
@@ -18127,7 +18312,8 @@
   {
     "patientId": 1508,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#294",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_035"
@@ -18135,7 +18321,8 @@
   {
     "patientId": 1509,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#295",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_036"
@@ -18143,7 +18330,8 @@
   {
     "patientId": 1510,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#296",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_037"
@@ -18151,25 +18339,31 @@
   {
     "patientId": 1511,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 90,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#297",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/content/10906000/000614702.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_038"
   },
   {
     "patientId": 1512,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 90,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#298",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/content/10906000/000614702.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_039"
   },
   {
     "patientId": 1513,
     "dateAnnounced": "2020-03-27",
-    "ageBracket": -1,
+    "ageBracket": 90,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#299",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/content/10906000/000614702.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=news_contents_news-main_040"
   },
   {
@@ -18936,5 +19130,177 @@
     "cityPrefectureNumber": "KochiCity#8",
     "prefectureSourceURL": "https://www.pref.kochi.lg.jp/soshiki/130401/files/2020022900049/file_20203275185522_1.pdf",
     "sourceURL": "https://www.pref.kochi.lg.jp/soshiki/130401/files/2020022900049/file_20203275185522_1.pdf"
+  },
+  {
+    "patientId": 1580,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Tokyo",
+    "detectedCityTown": "Himeji",
+    "detectedPrefecture": "Hyogo",
+    "notes": "Lives in Tokyo, detected in Himeji",
+    "cityPrefectureNumber": "Himeji#17",
+    "sourceURL": "https://www.city.himeji.lg.jp/emergencyinfo/cmsfiles/emergency/179/200327hp.pdf"
+  },
+  {
+    "patientId": 1581,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Okinawa",
+    "detectedPrefecture": "Okinawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355261000.html?utm_int=news-new_contents_list-items_021"
+  },
+  {
+    "patientId": 1582,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Okinawa",
+    "detectedPrefecture": "Okinawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355261000.html?utm_int=news-new_contents_list-items_021"
+  },
+  {
+    "patientId": 1583,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Katori",
+    "detectedCityTown": "Katori",
+    "detectedPrefecture": "Chiba",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355371000.html?utm_int=news-new_contents_list-items_009"
+  },
+  {
+    "patientId": 1584,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Ishikawa",
+    "detectedPrefecture": "Ishikawa",
+    "sourceURL": "https://this.kiji.is/616513630534239329?c=39550187727945729"
+  },
+  {
+    "patientId": 1585,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Sagamihara",
+    "detectedCityTown": "Sagamihara",
+    "detectedPrefecture": "Kanagawa",
+    "patientStatus": "Hospitalized",
+    "notes": "Returned from England",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355421000.html?utm_int=news-new_contents_list-items_004"
+  },
+  {
+    "patientId": 1586,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Tochigi",
+    "detectedCityTown": "Tatebayashi",
+    "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
+    "notes": "Lives in Tochigi, detected in Gunma. Nurse at 公立館林厚生病院",
+    "knownCluster": "公立館林厚生病院",
+    "prefecturePatientNumber": "Gunma#15",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355451000.html?utm_int=news-new_contents_list-items_006"
+  },
+  {
+    "patientId": 1587,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Okazaki",
+    "detectedCityTown": "Okazaki",
+    "detectedPrefecture": "Aichi",
+    "notes": "Returned from Europe cruise",
+    "sourceURL": "https://this.kiji.is/616503841411253345?c=39550187727945729"
+  },
+  {
+    "patientId": 1588,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "notes": "National Cancer Center nurse",
+    "sourceURL": "https://this.kiji.is/616516778471310433?c=39550187727945729"
+  },
+  {
+    "patientId": 1589,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "notes": "National Cancer Center nurse",
+    "sourceURL": "https://this.kiji.is/616516778471310433?c=39550187727945729"
+  },
+  {
+    "patientId": 1590,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Naha",
+    "detectedCityTown": "Naha",
+    "detectedPrefecture": "Okinawa",
+    "notes": "Studied in NY",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355261000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
+  },
+  {
+    "patientId": 1591,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Naha",
+    "detectedCityTown": "Naha",
+    "detectedPrefecture": "Okinawa"
+  },
+  {
+    "patientId": 1592,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 80,
+    "gender": "F",
+    "residence": "Niigata city",
+    "detectedCityTown": "Niigata city",
+    "detectedPrefecture": "Niigata",
+    "notes": "Lives in elerly care house",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355471000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
+  },
+  {
+    "patientId": 1593,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Sapporo",
+    "detectedCityTown": "Sapporo",
+    "detectedPrefecture": "Hokkaido",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hokkaido#170",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0328siryou.pdf",
+    "sourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm"
+  },
+  {
+    "patientId": 1594,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Otaru",
+    "detectedCityTown": "Otaru",
+    "detectedPrefecture": "Hokkaido",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hokkaido#171",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaikenotaru0328siryou.pdf",
+    "sourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm"
+  },
+  {
+    "patientId": 1596,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Kutchan",
+    "detectedCityTown": "Kutchan",
+    "detectedPrefecture": "Hokkaido",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hokkaido#168",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0326siryou2.pdf",
+    "sourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm"
   }
 ]
