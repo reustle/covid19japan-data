@@ -9,8 +9,8 @@ const postProcessData = (rawData) => {
 
   // Check validity of the row.
   const isValidRow = row => {
-    if (!row.patientId || isNaN(parseInt(row.patientId))) { return false }
     if (!row.detectedPrefecture) { return false }
+    if (!row.dateAnnounced) { return false }
     return true
   }
 
@@ -26,7 +26,7 @@ const postProcessData = (rawData) => {
     }
 
     let transformedRow = {
-      'patientId': parseInt(row.patientnumber),
+      'patientId': normalizeNumber(row.patientnumber),
       'dateAnnounced': row.dateannounced,
       'ageBracket': normalizeNumber(row.agebracket),
       'gender': unspecifiedToBlank(row.gender),
@@ -71,6 +71,9 @@ const postProcessData = (rawData) => {
       }
       return v
     })
+
+    // Add a field to indicate whether we count as patient or not.
+    transformedRow.confirmedPatient = (transformedRow.patientId > 0)
 
     return transformedRow
   }

@@ -37,7 +37,8 @@ Example Patient Data:
 
 | Fields | Values | Description |
 | ------ | ------ | ----------- |
-| patientId | Numeric | Unique identifier for patients |
+| patientId | Numeric | Unique identifier for patients (if this value is -1, this means it may be a duplicate row (see: ``confirmedPatient``) |
+| confirmedPatient | boolean | Patient is a confirmed patient. If false, this could be a duplicate patient which we cannot identify. If this is false, do not count this patient in confirmed cases count. But it exists so that we can also tally deaths of existing patients. |
 | dateAnnounced | YYYY-MM-DD | Date patient was announced to have tested positive |
 | ageBracket | Numeric | Age bracket (40 mean 40-49). -1 for unspecified |
 | gender | M/F/Unspecified | |
@@ -102,3 +103,24 @@ List is sorted by summary.count.
 | critical | Numeric | Total number of patients in critical condition (respirators) |
 | cityCounts | Object | Keys are individual cites and their total infected counts |
 
+Daily summary data:
+```
+  {
+      "confirmed": 16,
+      "recoveredCumulative": 372,
+      "deceasedCumulative": 53,
+      "criticalCumulative": 56,
+      "testedCumulative": 27005,
+      "date": "2020-03-28",
+      "confirmedCumulative": 1525
+    }
+```
+
+| Field | Values | Description |
+| ----- | ------ | ----------- |
+| date | String | Date |
+| confirmed | Numeric | Number of confirmed cases on that day |
+| confirmedCumulative | Numeric | Total number of confirmed cases accumulated up to this day (including today) |
+| recoveredCumulative | Numeric | Total number of recovered patients accumulated up to this day (including today) |
+| criticalCumulative | Numeric | Total number of critical patients accumulated up to this day (including today) |
+| deceasedCumulative | Numeric | Total number of deaths accumulated up to this day (including today) |

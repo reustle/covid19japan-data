@@ -52,7 +52,9 @@ const generateDailySummary = (patients, manualDailyData) => {
       }
     }
 
-    dailySummary[dateAnnounced].confirmed += 1
+    if (patient.confirmedPatient) {
+      dailySummary[dateAnnounced].confirmed += 1
+    }
   }
 
   // merge manually sourced data
@@ -123,24 +125,28 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
         patients: [],
         confirmedByCity: {}
       }
-    
     }
-    prefectureSummary[prefectureName].confirmed += 1
-    if (patient.cruisePassengerDisembarked == 1) {
-      prefectureSummary[prefectureName].cruisePassenger += 1
+
+    if (patient.confirmedPatient) {
+      prefectureSummary[prefectureName].confirmed += 1
+      if (cityName) {
+        if (prefectureSummary[prefectureName].confirmedByCity[cityName]) {
+          prefectureSummary[prefectureName].confirmedByCity[cityName] += 1
+        } else {
+          prefectureSummary[prefectureName].confirmedByCity[cityName] = 1        
+        }
+      }
+
+      if (patient.cruisePassengerDisembarked == 1) {
+        prefectureSummary[prefectureName].cruisePassenger += 1
+      }
+      if (patient.cruiseQuarantineOfficer == 1) {
+        prefectureSummary[prefectureName].cruiseWorker += 1
+      }
     }
-    if (patient.cruiseQuarantineOfficer == 1) {
-      prefectureSummary[prefectureName].cruiseWorker += 1
-    }
+
     if (patient.patientStatus == 'Deceased') {
       prefectureSummary[prefectureName].deaths += 1
-    }
-    if (cityName) {
-      if (prefectureSummary[prefectureName].confirmedByCity[cityName]) {
-        prefectureSummary[prefectureName].confirmedByCity[cityName] += 1
-      } else {
-        prefectureSummary[prefectureName].confirmedByCity[cityName] = 1        
-      }
     }
 
     prefectureSummary[prefectureName].patients.push(patient)
