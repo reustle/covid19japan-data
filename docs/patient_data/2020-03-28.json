@@ -5733,6 +5733,7 @@
     "residence": "Gunma",
     "detectedCityTown": "Oota",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
     "notes": "Critical, preschool teacher",
     "mhlwPatientNumber": "391",
     "prefecturePatientNumber": "Gunma#1",
@@ -9208,6 +9209,7 @@
     "residence": "Ota",
     "detectedCityTown": "Ota",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Gunma#2",
     "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00014.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200312/k10012327971000.html?utm_int=word_contents_list-items_054&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -9220,7 +9222,9 @@
     "residence": "Ota",
     "detectedCityTown": "Ota",
     "detectedPrefecture": "Gunma",
-    "notes": "Nurse",
+    "patientStatus": "Hospitalized",
+    "notes": "Nurse at 医療法人真医会",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#3",
     "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00015.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200312/k10012327971000.html?utm_int=word_contents_list-items_054&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -9970,7 +9974,9 @@
     "detectedPrefecture": "Gunma",
     "patientStatus": "Hospitalized",
     "notes": "Wife of Gunma#4",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#5",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00018.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331581000.html?utm_int=word_contents_list-items_028&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -9981,9 +9987,11 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
-    "patientStatus": "Hospitalized",
-    "notes": "Doctor Serious condition",
+    "patientStatus": "Deceased",
+    "notes": "(Possibly died 3/22) Serious condition, Doctor at 医療法人真医会 ",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#4",
+    "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00017.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331581000.html?utm_int=word_contents_list-items_028&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -11029,6 +11037,9 @@
     "residence": "Oizumi",
     "detectedCityTown": "Oizumi",
     "detectedPrefecture": "Gunma",
+    "patientStatus": "Hospitalized",
+    "notes": "Employee at 医療法人真医会",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#6",
     "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00019.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334101000.html?utm_int=news-new_contents_list-items_007"
@@ -11251,6 +11262,7 @@
     "detectedPrefecture": "Gunma",
     "patientStatus": "Hospitalized",
     "notes": "father of previous patient (#425)",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#7",
     "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00020.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -11265,6 +11277,7 @@
     "detectedPrefecture": "Gunma",
     "patientStatus": "Hospitalized",
     "notes": "Hospital worker",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#8",
     "prefectureSourceURL": "https://www.pref.gunma.jp/contents/100146522.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -11279,6 +11292,7 @@
     "detectedPrefecture": "Gunma",
     "patientStatus": "Hospitalized",
     "notes": "Hospital worker",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#9",
     "prefectureSourceURL": "https://www.pref.gunma.jp/contents/100146522.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -11293,6 +11307,7 @@
     "detectedPrefecture": "Gunma",
     "patientStatus": "Hospitalized",
     "notes": "patient hospitalized in the hospital #903 and #904 work for",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#10",
     "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00023.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336051000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -12963,6 +12978,7 @@
     "detectedPrefecture": "Gunma",
     "patientStatus": "Hospitalized",
     "notes": "Employee",
+    "knownCluster": "医療法人真医会",
     "prefecturePatientNumber": "Gunma#11",
     "prefectureSourceURL": "https://www.pref.gunma.jp/07/z87g_00024.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342081000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
@@ -15166,6 +15182,7 @@
     "detectedCityTown": "Takasaki",
     "detectedPrefecture": "Gunma",
     "patientStatus": "Hospitalized",
+    "notes": "Visited Phillippines",
     "prefecturePatientNumber": "Gunma#13",
     "prefectureSourceURL": "https://www.city.takasaki.gunma.jp/docs/2020032400102/",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200324/k10012347541000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
