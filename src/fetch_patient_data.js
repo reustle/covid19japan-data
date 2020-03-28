@@ -1,5 +1,4 @@
 const drive = require('drive-db')
-const fs = require('fs')
 const _ = require('lodash')
 
 const SHEET = '1jfB4muWkzKTR0daklmf8D5F0Uf_IYAgcx_-Ij9McClQ'
@@ -80,12 +79,10 @@ const postProcessData = (rawData) => {
 }
 
 
-async function fetchPatientData(destinationFilename) {
+async function fetchPatientData() {
   return drive({sheet: SHEET, tab: SHEET_PATIENT_DATA_TAB})
     .then(db => {
-      let processedData = postProcessData(db)
-      fs.writeFileSync(destinationFilename, JSON.stringify(processedData, null, '  '))
-      return processedData
+      return postProcessData(db)
     })
 }
 
