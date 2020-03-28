@@ -15675,6 +15675,7 @@
     "gender": "M",
     "residence": "Naha, Okinawa",
     "detectedPrefecture": "Okinawa",
+    "patientStatus": "Hospitalized",
     "notes": "Foreigner who travelled to Belgium and is working in a hotel",
     "prefecturePatientNumber": "Okinawa#4",
     "prefectureSourceURL": "https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/documents/20200323_covid19_5.pdf",
@@ -20638,6 +20639,7 @@
     "ageBracket": 20,
     "gender": "F",
     "residence": "Okinawa",
+    "detectedCityTown": "Naha",
     "detectedPrefecture": "Okinawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355261000.html?utm_int=news-new_contents_list-items_021",
     "confirmedPatient": true
@@ -20648,6 +20650,7 @@
     "ageBracket": 30,
     "gender": "F",
     "residence": "Okinawa",
+    "detectedCityTown": "Naha",
     "detectedPrefecture": "Okinawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355261000.html?utm_int=news-new_contents_list-items_021",
     "confirmedPatient": true
@@ -20729,28 +20732,6 @@
     "detectedPrefecture": "Tokyo",
     "notes": "National Cancer Center nurse",
     "sourceURL": "https://this.kiji.is/616516778471310433?c=39550187727945729",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": 1590,
-    "dateAnnounced": "2020-03-28",
-    "ageBracket": 20,
-    "gender": "F",
-    "residence": "Naha",
-    "detectedCityTown": "Naha",
-    "detectedPrefecture": "Okinawa",
-    "notes": "Studied in NY",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355261000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": 1591,
-    "dateAnnounced": "2020-03-28",
-    "ageBracket": 30,
-    "gender": "F",
-    "residence": "Naha",
-    "detectedCityTown": "Naha",
-    "detectedPrefecture": "Okinawa",
     "confirmedPatient": true
   },
   {
@@ -21042,6 +21023,7 @@
     "residence": "Himeji",
     "detectedCityTown": "Himeji",
     "detectedPrefecture": "Hyogo",
+    "notes": "Came to Tokyo for work",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355511000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -21732,15 +21714,20 @@
     "patientId": 1678,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 1",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": 1679,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 2",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
@@ -21748,7 +21735,9 @@
     "patientId": 1680,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 3",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
@@ -21756,7 +21745,9 @@
     "patientId": 1681,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 4",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
@@ -21764,7 +21755,9 @@
     "patientId": 1682,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 5",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
@@ -21772,7 +21765,9 @@
     "patientId": 1683,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 6",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
@@ -21780,7 +21775,9 @@
     "patientId": 1684,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 7",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
@@ -21788,7 +21785,9 @@
     "patientId": 1685,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 8",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
@@ -21796,7 +21795,9 @@
     "patientId": 1686,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 9",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
@@ -21804,7 +21805,9 @@
     "patientId": 1687,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 10",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
@@ -21812,7 +21815,9 @@
     "patientId": 1688,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 11",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
@@ -21820,368 +21825,460 @@
     "patientId": 1689,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 12",
     "knownCluster": "handicap charity facility\n",
     "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1690,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 13",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1691,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 14",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1692,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 15",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1693,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 16",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1694,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 17",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1695,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 18",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1696,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 19",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1697,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 20",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1698,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 21",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1699,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 22",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1700,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 23",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1701,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 24",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1702,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 25",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1703,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 26",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1704,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 27",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1705,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 28",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1706,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 29",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1707,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 30",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1708,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 31",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1709,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 32",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1710,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 33",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1711,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 34",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1712,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 35",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1713,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 36",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1714,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 37",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1715,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 38",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1716,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 39",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1717,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 40",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1718,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 41",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1719,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 42",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1720,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 43",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1721,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 44",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1722,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 45",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1723,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 46",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1724,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 47",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1725,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 48",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1726,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 49",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1727,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 50",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1728,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 51",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1729,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 52",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1730,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 53",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1731,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 54",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1732,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 55",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1733,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 56",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 1734,
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
+    "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
+    "notes": "handicap charity facility 57",
     "knownCluster": "handicap charity facility\n",
-    "confirmedPatient": false
+    "confirmedPatient": true
   }
 ]
