@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 300,
+      "confirmed": 302,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 5,
@@ -92,11 +92,11 @@
         41,
         47,
         40,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
-      "recovered": 28,
+      "newlyConfirmed": 2,
+      "recovered": 45,
       "name_ja": "東京都",
       "name": "Tokyo"
     },
@@ -352,7 +352,7 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 161,
+      "confirmed": 162,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 19,
@@ -361,7 +361,7 @@
         "Owari": 11,
         "Gamagori, Mikawa": 4,
         "Mikawa": 1,
-        "Okazaki": 3,
+        "Okazaki": 4,
         "Ichinomiya": 3,
         "Toyota": 1,
         "Handa": 1,
@@ -457,10 +457,10 @@
         5,
         3,
         3,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 36,
       "name_ja": "愛知県",
       "name": "Aichi"
@@ -1732,7 +1732,7 @@
       "confirmed": 14,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
-      "deaths": 0,
+      "deaths": 5,
       "confirmedByCity": {},
       "dailyConfirmedCount": [
         0,
@@ -1819,7 +1819,7 @@
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "recovered": 11,
+      "recovered": 35,
       "name_ja": "不明",
       "name": "Unspecified"
     },
@@ -5097,13 +5097,13 @@
       "confirmedCumulative": 1500
     },
     {
-      "confirmed": 7,
+      "confirmed": 10,
       "recoveredCumulative": 372,
-      "deceasedCumulative": 48,
+      "deceasedCumulative": 53,
       "criticalCumulative": 56,
       "testedCumulative": 27005,
       "date": "2020-03-28",
-      "confirmedCumulative": 1507
+      "confirmedCumulative": 1510
     }
   ],
   "updated": "Mar 28 2020, 15:43 JST"
