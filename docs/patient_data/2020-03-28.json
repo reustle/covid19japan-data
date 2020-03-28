@@ -950,6 +950,7 @@
     "patientStatus": "Hospitalized",
     "mhlwPatientNumber": "63",
     "prefecturePatientNumber": "Hokkaido#3",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#2/18",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200219/k10012291671000.html"
   },
   {
@@ -1049,6 +1050,7 @@
     "detectedPrefecture": "Hokkaido",
     "mhlwPatientNumber": "72",
     "prefecturePatientNumber": "Hokkaido#5",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#2/20",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200220/k10012293901000.html"
   },
   {
@@ -1126,6 +1128,7 @@
     "patientStatus": "Discharged",
     "mhlwPatientNumber": "80",
     "prefecturePatientNumber": "Hokkaido#6",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#2/21",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200221/k10012295301000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -1139,6 +1142,7 @@
     "patientStatus": "Discharged",
     "mhlwPatientNumber": "81",
     "prefecturePatientNumber": "Hokkaido#7",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#no7",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200221/k10012295301000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -1153,6 +1157,7 @@
     "notes": "Quarantine officer working at New Chitose Airport",
     "mhlwPatientNumber": "82",
     "prefecturePatientNumber": "Hokkaido#8",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#no8",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200221/k10012295301000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -1409,9 +1414,10 @@
     "detectedCityTown": "Asahikawa",
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
-    "notes": "Restaurant owner",
+    "notes": "Discharged, but reinfected on 3/28. Also known as Hokkaido#172",
     "mhlwPatientNumber": "100",
     "prefecturePatientNumber": "Hokkaido#11",
+    "cityPrefectureNumber": "Hokkaido#172",
     "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1271917",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200222/k10012297291000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
@@ -9740,6 +9746,7 @@
     "detectedPrefecture": "Hokkaido",
     "notes": "Contact with 3/11 50F",
     "prefecturePatientNumber": "Hokkaido#141",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya138-142.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331461000.html"
   },
   {
@@ -9750,6 +9757,7 @@
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido#139",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya138-142.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331461000.html"
   },
   {
@@ -9760,6 +9768,7 @@
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido#138",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya138-142.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331461000.html"
   },
   {
@@ -9771,6 +9780,7 @@
     "detectedPrefecture": "Hokkaido",
     "notes": "Family of 3/11 80M",
     "prefecturePatientNumber": "Hokkaido#142",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya138-142.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331461000.html"
   },
   {
@@ -9782,6 +9792,7 @@
     "detectedPrefecture": "Hokkaido",
     "notes": "Contact with 3/11 50F",
     "prefecturePatientNumber": "Hokkaido#140",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaienkannjya138-142.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331461000.html"
   },
   {
@@ -10459,6 +10470,7 @@
     "patientStatus": "Deceased",
     "notes": "Critical=> died 3/15",
     "prefecturePatientNumber": "Hokkaido #143",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315_0314sapporo.pdf",
     "sourceURL": "https://this.kiji.is/611869439185536097?c=39550187727945729"
   },
   {
@@ -10470,6 +10482,7 @@
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido #144",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315_0314sapporo.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331951000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9"
   },
   {
@@ -10512,6 +10525,7 @@
     "patientStatus": "Unspecified",
     "notes": "Mild condition",
     "prefecturePatientNumber": "Hokkaido #146",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315re.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332511000.html?utm_int=news-new_contents_list-items_032"
   },
   {
@@ -10537,6 +10551,7 @@
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Unspecified",
     "prefecturePatientNumber": "Hokkaido #148",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0315re.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200315/k10012332511000.html?utm_int=news-new_contents_list-items_032"
   },
   {
@@ -10964,6 +10979,7 @@
     "detectedCityTown": "Okhotsk",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido #149",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0316_3.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012333851000.html?utm_int=news-new_contents_list-items_003"
   },
   {
@@ -11821,7 +11837,8 @@
     "detectedCityTown": "Kushiro",
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
-    "prefecturePatientNumber": "Hokkaido #15３",
+    "prefecturePatientNumber": "Hokkaido #153",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0318-2.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200318/k10012338251000.html?utm_int=news-new_contents_list-items_044"
   },
   {
@@ -11834,6 +11851,7 @@
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Hokkaido #154",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0318sapporo.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200318/k10012338251000.html?utm_int=news-new_contents_list-items_044"
   },
   {
@@ -12256,6 +12274,7 @@
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido #156",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0319sapporo.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340001000.html?utm_int=news_contents_news-main_003"
   },
   {
@@ -12266,6 +12285,7 @@
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido #155",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0319sapporo.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340001000.html?utm_int=news_contents_news-main_003"
   },
   {
@@ -12356,6 +12376,7 @@
     "residence": "Asahikawa",
     "detectedPrefecture": "Hokkaido",
     "prefecturePatientNumber": "Hokkaido #157",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0319asahikawa.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340411000.html?utm_int=news-new_contents_list-items_058"
   },
   {
@@ -12569,6 +12590,7 @@
     "patientStatus": "Hospitalized",
     "notes": "Company employee",
     "prefecturePatientNumber": "Hokkaido #158",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0320sapporo.pdf",
     "sourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0320sapporo.pdf"
   },
   {
@@ -13349,6 +13371,8 @@
     "residence": "Kushiro",
     "detectedCityTown": "Kushiro",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#159",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken03212sokuhou.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343191000.html?utm_int=news-new_contents_list-items_002"
   },
   {
@@ -13904,6 +13928,8 @@
     "residence": "Sapporo",
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#160",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0322sapporo.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012343931000.html?utm_int=news-new_contents_list-items_018"
   },
   {
@@ -13927,6 +13953,8 @@
     "residence": "Otaru",
     "detectedCityTown": "Otaru",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#162",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0322otarushi.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344051000.html?utm_int=news-new_contents_list-items_009"
   },
   {
@@ -13937,6 +13965,8 @@
     "residence": "Otaru",
     "detectedCityTown": "Otaru",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#161",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0322otarushi.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344051000.html?utm_int=news-new_contents_list-items_009"
   },
   {
@@ -19207,7 +19237,8 @@
     "detectedCityTown": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
-    "prefecturePatientNumber": "Hokkaido#170"
+    "prefecturePatientNumber": "Hokkaido#170",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0328siryou.pdf"
   },
   {
     "patientId": 1594,
@@ -19218,20 +19249,8 @@
     "detectedCityTown": "Otaru",
     "detectedPrefecture": "Hokkaido",
     "patientStatus": "Hospitalized",
-    "prefecturePatientNumber": "Hokkaido#171"
-  },
-  {
-    "patientId": 1595,
-    "dateAnnounced": "2020-03-28",
-    "ageBracket": 70,
-    "gender": "M",
-    "residence": "Asahikawa",
-    "detectedCityTown": "Asahikawa",
-    "detectedPrefecture": "Hokkaido",
-    "patientStatus": "Hospitalized",
-    "notes": "SAME PERSON as Hokkaido#11",
-    "prefecturePatientNumber": "Hokkaido#172",
-    "cityPrefectureNumber": "Asahikawa#11"
+    "prefecturePatientNumber": "Hokkaido#171",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaikenotaru0328siryou.pdf"
   },
   {
     "patientId": 1596,
@@ -19240,6 +19259,9 @@
     "gender": "F",
     "residence": "Kutchan",
     "detectedCityTown": "Kutchan",
-    "detectedPrefecture": "Hokkaido"
+    "detectedPrefecture": "Hokkaido",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hokkaido#168",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0326siryou2.pdf"
   }
 ]
