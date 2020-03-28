@@ -17,7 +17,7 @@ Data is an array of patient data objects.
 ```
 
 Example Patient Data:
-```
+``` json
   {
     "patientId": 64,
     "dateAnnounced": "2020-02-18",
@@ -59,7 +59,7 @@ Example Patient Data:
 ### docs/patient_data/summary.json
 
 Individal Prefecture data:
-```
+``` json
 [
     {
       "name": "Aichi",
