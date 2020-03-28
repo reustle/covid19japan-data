@@ -6354,6 +6354,7 @@
     "detectedPrefecture": "Hyogo",
     "patientStatus": "Hospitalized",
     "notes": "Nurse",
+    "knownCluster": "仁恵病院",
     "mhlwPatientNumber": "414",
     "prefecturePatientNumber": "Hyogo#11",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200308/k10012319841000.html?utm_int=news-new_contents_list-items_015"
@@ -9612,6 +9613,9 @@
     "residence": "Himeji",
     "detectedCityTown": "HImeji",
     "detectedPrefecture": "Hyogo",
+    "patientStatus": "Deceased",
+    "notes": "Died 3/26, Father of nurse Hyogo#11",
+    "knownCluster": "(Indirect) 仁恵病院",
     "prefecturePatientNumber": "Hyogo#15",
     "sourceURL": "https://www.city.himeji.lg.jp/emergencyinfo/cmsfiles/emergency/179/200309.pdf"
   },
@@ -19002,5 +19006,17 @@
     "cityPrefectureNumber": "KochiCity#8",
     "prefectureSourceURL": "https://www.pref.kochi.lg.jp/soshiki/130401/files/2020022900049/file_20203275185522_1.pdf",
     "sourceURL": "https://www.pref.kochi.lg.jp/soshiki/130401/files/2020022900049/file_20203275185522_1.pdf"
+  },
+  {
+    "patientId": 1580,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Tokyo",
+    "detectedCityTown": "Himeji",
+    "detectedPrefecture": "Hyogo",
+    "notes": "Lives in Tokyo, detected in Himeji",
+    "cityPrefectureNumber": "Himeji#17",
+    "sourceURL": "https://www.city.himeji.lg.jp/emergencyinfo/cmsfiles/emergency/179/200327hp.pdf"
   }
 ]
