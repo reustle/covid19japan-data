@@ -19121,6 +19121,7 @@
     "detectedCityTown": "Itami",
     "detectedPrefecture": "Hyogo",
     "prefecturePatientNumber": "Hyogo#120",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012352291000.html?utm_int=word_contents_list-items_015&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -19250,6 +19251,9 @@
     "detectedCityTown": "Kobe",
     "detectedPrefecture": "Hyogo",
     "notes": "Nurse",
+    "prefecturePatientNumber": "Hyogo#121",
+    "cityPrefectureNumber": "Kobe#25",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353421000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -19939,6 +19943,7 @@
     "detectedCityTown": "Tsukubamirai",
     "detectedPrefecture": "Ibaraki",
     "notes": "Critical condition",
+    "knownCluster": "ＪＡとりで総合医療センター",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354001000.html?utm_int=word_contents_list-items_039&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -19951,6 +19956,9 @@
     "detectedCityTown": "Kobe",
     "detectedPrefecture": "Hyogo",
     "notes": "Studies in UK",
+    "prefecturePatientNumber": "Hyogo#122",
+    "cityPrefectureNumber": "Kobe#26",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354291000.html?utm_int=word_contents_list-items_013&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -20630,6 +20638,7 @@
     "detectedCityTown": "Himeji",
     "detectedPrefecture": "Hyogo",
     "notes": "Lives in Tokyo, detected in Himeji",
+    "prefecturePatientNumber": "Hyogo#123",
     "cityPrefectureNumber": "Himeji#17",
     "sourceURL": "https://www.city.himeji.lg.jp/emergencyinfo/cmsfiles/emergency/179/200327hp.pdf",
     "confirmedPatient": true
@@ -21004,19 +21013,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-22",
-    "ageBracket": 70,
-    "gender": "M",
-    "residence": "Himeji",
-    "detectedCityTown": "Himeji",
-    "detectedPrefecture": "Hyogo",
-    "patientStatus": "Deceased",
-    "notes": "Died on 3/28",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355511000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": false
-  },
-  {
     "patientId": 1605,
     "dateAnnounced": "2020-03-28",
     "ageBracket": 40,
@@ -21025,6 +21021,7 @@
     "detectedCityTown": "Himeji",
     "detectedPrefecture": "Hyogo",
     "notes": "Came to Tokyo for work",
+    "prefecturePatientNumber": "Hyogo#124",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355511000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -22409,6 +22406,40 @@
     "detectedPrefecture": "Hiroshima",
     "prefecturePatientNumber": "Hiroshima#4",
     "sourceURL": "https://headlines.yahoo.co.jp/hl?a=20200326-00010004-chugoku-l34",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1747,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 50,
+    "gender": "M",
+    "detectedCityTown": "Itami",
+    "detectedPrefecture": "Hyogo",
+    "notes": "Contact with Osaka(3/26 40/M)",
+    "prefecturePatientNumber": "Hyogo#125",
+    "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1748,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 30,
+    "gender": "M",
+    "detectedCityTown": "Takarazuka",
+    "detectedPrefecture": "Hyogo",
+    "notes": "On a cruise in Holland",
+    "prefecturePatientNumber": "Hyogo#126",
+    "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1749,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 70,
+    "gender": "M",
+    "detectedPrefecture": "Ibaraki",
+    "notes": "Second Patient at hospital",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355341000.html?utm_int=word_contents_list-items_037&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   }
 ]
