@@ -14292,7 +14292,9 @@
     "detectedCityTown": "Shizuoka",
     "detectedPrefecture": "Shizuoka",
     "notes": "Traveled to Egypt",
+    "prefecturePatientNumber": "Shizuoka#3",
     "cityPrefectureNumber": "ShizuokaCity#2",
+    "prefectureSourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
     "sourceURL": "https://www.city.shizuoka.lg.jp/000847470.pdf",
     "confirmedPatient": true
   },
@@ -22569,6 +22571,7 @@
     "detectedCityTown": "Kawaguchi",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#77",
+    "cityPrefectureNumber": "Kawaguchi#12",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355701000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -23084,6 +23087,41 @@
     "patientId": 1793,
     "dateAnnounced": "2020-03-29",
     "ageBracket": 50,
+    "gender": "F",
+    "residence": "Atsugi",
+    "detectedCityTown": "Atsugi",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "Works in Tokyo, traveled to EU",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356351000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1794,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Brazil",
+    "detectedCityTown": "Atsugi",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "Travled back from Brazil through Germany",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356351000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1795,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Kamakura",
+    "detectedCityTown": "Kamakura",
+    "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356351000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1796,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 50,
     "gender": "M",
     "residence": "Horoshima city",
     "detectedCityTown": "Horoshima city",
@@ -23092,7 +23130,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1794,
+    "patientId": 1797,
     "dateAnnounced": "2020-03-29",
     "ageBracket": 40,
     "gender": "F",
@@ -23103,7 +23141,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1795,
+    "patientId": 1798,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23112,7 +23150,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1796,
+    "patientId": 1799,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23120,7 +23158,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1797,
+    "patientId": 1800,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23128,7 +23166,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1798,
+    "patientId": 1801,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23136,7 +23174,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1799,
+    "patientId": 1802,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23144,7 +23182,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1800,
+    "patientId": 1803,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23152,7 +23190,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1801,
+    "patientId": 1804,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23160,7 +23198,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1802,
+    "patientId": 1805,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23168,7 +23206,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1803,
+    "patientId": 1806,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23176,7 +23214,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1804,
+    "patientId": 1807,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23184,7 +23222,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1805,
+    "patientId": 1808,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23192,7 +23230,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1806,
+    "patientId": 1809,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23200,7 +23238,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1807,
+    "patientId": 1810,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23208,7 +23246,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1808,
+    "patientId": 1811,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23216,7 +23254,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1809,
+    "patientId": 1812,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23224,7 +23262,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1810,
+    "patientId": 1813,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23232,7 +23270,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1811,
+    "patientId": 1814,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23240,7 +23278,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1812,
+    "patientId": 1815,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23248,7 +23286,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1813,
+    "patientId": 1816,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23256,7 +23294,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1814,
+    "patientId": 1817,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23264,7 +23302,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1815,
+    "patientId": 1818,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23272,7 +23310,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1816,
+    "patientId": 1819,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23280,7 +23318,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1817,
+    "patientId": 1820,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23288,7 +23326,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1818,
+    "patientId": 1821,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23296,7 +23334,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1819,
+    "patientId": 1822,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23304,7 +23342,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1820,
+    "patientId": 1823,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23312,7 +23350,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1821,
+    "patientId": 1824,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23320,7 +23358,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1822,
+    "patientId": 1825,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23328,7 +23366,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1823,
+    "patientId": 1826,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23336,7 +23374,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1824,
+    "patientId": 1827,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23344,7 +23382,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1825,
+    "patientId": 1828,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23352,7 +23390,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1826,
+    "patientId": 1829,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23360,7 +23398,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1827,
+    "patientId": 1830,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23368,7 +23406,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1828,
+    "patientId": 1831,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23376,7 +23414,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1829,
+    "patientId": 1832,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23384,7 +23422,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1830,
+    "patientId": 1833,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23392,7 +23430,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1831,
+    "patientId": 1834,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23400,7 +23438,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1832,
+    "patientId": 1835,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23408,7 +23446,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1833,
+    "patientId": 1836,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23416,7 +23454,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1834,
+    "patientId": 1837,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23424,7 +23462,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1835,
+    "patientId": 1838,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23432,7 +23470,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1836,
+    "patientId": 1839,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23440,7 +23478,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1837,
+    "patientId": 1840,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23448,7 +23486,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1838,
+    "patientId": 1841,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23456,7 +23494,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1839,
+    "patientId": 1842,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23464,7 +23502,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1840,
+    "patientId": 1843,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23472,7 +23510,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1841,
+    "patientId": 1844,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23480,7 +23518,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1842,
+    "patientId": 1845,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23488,7 +23526,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1843,
+    "patientId": 1846,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23496,7 +23534,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1844,
+    "patientId": 1847,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23504,7 +23542,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1845,
+    "patientId": 1848,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23512,7 +23550,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1846,
+    "patientId": 1849,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23520,7 +23558,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1847,
+    "patientId": 1850,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23528,7 +23566,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1848,
+    "patientId": 1851,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23536,7 +23574,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1849,
+    "patientId": 1852,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23544,7 +23582,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1850,
+    "patientId": 1853,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23552,7 +23590,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1851,
+    "patientId": 1854,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23560,7 +23598,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1852,
+    "patientId": 1855,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23568,7 +23606,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1853,
+    "patientId": 1856,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23576,7 +23614,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1854,
+    "patientId": 1857,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23584,7 +23622,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1855,
+    "patientId": 1858,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23592,7 +23630,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1856,
+    "patientId": 1859,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23600,7 +23638,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1857,
+    "patientId": 1860,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23608,7 +23646,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1858,
+    "patientId": 1861,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23616,7 +23654,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1859,
+    "patientId": 1862,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23624,7 +23662,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1860,
+    "patientId": 1863,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23632,7 +23670,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1861,
+    "patientId": 1864,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23640,7 +23678,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1862,
+    "patientId": 1865,
     "dateAnnounced": "2020-03-29",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
@@ -23648,7 +23686,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1863,
+    "patientId": 1866,
     "dateAnnounced": "2020-03-29",
     "ageBracket": 20,
     "gender": "F",
@@ -23660,7 +23698,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1864,
+    "patientId": 1867,
     "dateAnnounced": "2020-03-29",
     "ageBracket": 60,
     "gender": "M",
@@ -23672,7 +23710,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1865,
+    "patientId": 1868,
     "dateAnnounced": "2020-03-29",
     "ageBracket": 60,
     "gender": "M",
@@ -23684,7 +23722,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1866,
+    "patientId": 1869,
     "dateAnnounced": "2020-03-29",
     "ageBracket": 60,
     "gender": "F",
@@ -23696,7 +23734,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1867,
+    "patientId": 1870,
     "dateAnnounced": "2020-03-29",
     "ageBracket": 70,
     "gender": "M",
@@ -23705,6 +23743,19 @@
     "detectedPrefecture": "Hyogo",
     "notes": "Traveled to England",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356401000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1871,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": -1,
+    "gender": "M",
+    "residence": "Hamamatsu",
+    "detectedCityTown": "Hamamatsu",
+    "detectedPrefecture": "Shizuoka",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Shizuoka#4",
+    "sourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
     "confirmedPatient": true
   }
 ]
