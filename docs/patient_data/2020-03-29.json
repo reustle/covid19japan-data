@@ -6105,7 +6105,8 @@
     "patientStatus": "Discharged",
     "notes": "Business owner, Discharged 3/11",
     "mhlwPatientNumber": "371",
-    "prefectureSourceURL": "https://www.city.hiroshima.lg.jp/site/korona/139489.html",
+    "prefecturePatientNumber": "Hiroshima#1",
+    "prefectureSourceURL": "https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200307/k10012318741000.html?utm_int=news_contents_news-main_001",
     "confirmedPatient": true
   },
@@ -13359,7 +13360,12 @@
     "dateAnnounced": "2020-03-19",
     "ageBracket": 30,
     "gender": "M",
+    "residence": "Osaka, Osaka",
+    "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
+    "knownCluster": "(Indirect) Osaka Live House Arc",
+    "prefecturePatientNumber": "Osaka#118",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37802_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340671000.html?utm_int=news-new_contents_list-items_015",
     "confirmedPatient": true
   },
@@ -13368,7 +13374,12 @@
     "dateAnnounced": "2020-03-19",
     "ageBracket": 20,
     "gender": "M",
+    "residence": "Suita",
+    "detectedCityTown": "Suita",
     "detectedPrefecture": "Osaka",
+    "notes": "Traveled to England",
+    "prefecturePatientNumber": "Osaka#119",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37802_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340671000.html?utm_int=news-new_contents_list-items_015",
     "confirmedPatient": true
   },
@@ -13580,6 +13591,9 @@
     "residence": "Onomichi",
     "detectedCityTown": "Onomichi",
     "detectedPrefecture": "Hiroshima",
+    "patientStatus": "Unspecified",
+    "prefecturePatientNumber": "Hiroshima#2",
+    "prefectureSourceURL": "https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012341821000.html?utm_int=word_contents_list-items_014&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -13976,6 +13990,8 @@
     "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
     "notes": "Critical",
+    "prefecturePatientNumber": "Osaka#121",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37808_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342431000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -13987,6 +14003,8 @@
     "residence": "Osaka city",
     "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka#120",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37808_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342431000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -13998,6 +14016,8 @@
     "residence": "Suita",
     "detectedCityTown": "Suita",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka#123",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37808_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342431000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -14009,6 +14029,8 @@
     "residence": "Suita",
     "detectedCityTown": "Suita",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka#122",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37808_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342431000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -14292,7 +14314,9 @@
     "detectedCityTown": "Shizuoka",
     "detectedPrefecture": "Shizuoka",
     "notes": "Traveled to Egypt",
+    "prefecturePatientNumber": "Shizuoka#3",
     "cityPrefectureNumber": "ShizuokaCity#2",
+    "prefectureSourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
     "sourceURL": "https://www.city.shizuoka.lg.jp/000847470.pdf",
     "confirmedPatient": true
   },
@@ -14848,7 +14872,10 @@
     "residence": "Onomichi",
     "detectedCityTown": "Onomichi",
     "detectedPrefecture": "Hiroshima",
+    "patientStatus": "Hospitalized",
     "notes": "coworker of an infected employee\n",
+    "prefecturePatientNumber": "Hiroshima#3",
+    "prefectureSourceURL": "https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012343611000.html",
     "confirmedPatient": true
   },
@@ -15017,7 +15044,7 @@
     "detectedCityTown": "Yamato-Koriyama",
     "detectedPrefecture": "Nara",
     "notes": "returned from Mexico",
-    "prefecturePatientNumber": " Nara #9",
+    "prefecturePatientNumber": "Nara #9",
     "prefectureSourceURL": "http://www.pref.nara.jp/item/225304.htm#moduleid17426",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200322/k10012344011000.html?utm_int=news-new_contents_list-items_002",
     "confirmedPatient": true
@@ -18086,9 +18113,9 @@
     "dateAnnounced": "2020-03-25",
     "ageBracket": 30,
     "gender": "M",
-    "residence": "America",
+    "residence": "USA",
     "detectedPrefecture": "Osaka",
-    "notes": "Medical staff, lives in USA",
+    "notes": "No symptoms, Medical staff, lives in USA",
     "prefecturePatientNumber": "Osaka #149",
     "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37858_4.pdf",
     "confirmedPatient": true
@@ -20666,17 +20693,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1583,
-    "dateAnnounced": "2020-03-28",
-    "ageBracket": 40,
-    "gender": "F",
-    "residence": "Katori",
-    "detectedCityTown": "Katori",
-    "detectedPrefecture": "Chiba",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355371000.html?utm_int=news-new_contents_list-items_009",
-    "confirmedPatient": true
-  },
-  {
     "patientId": 1584,
     "dateAnnounced": "2020-03-28",
     "ageBracket": 20,
@@ -20729,18 +20745,20 @@
   {
     "patientId": 1588,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "National Cancer Center nurse",
+    "prefecturePatientNumber": "Tokyo#361",
     "sourceURL": "https://this.kiji.is/616516778471310433?c=39550187727945729",
     "confirmedPatient": true
   },
   {
     "patientId": 1589,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "National Cancer Center nurse",
+    "prefecturePatientNumber": "Tokyo#362",
     "sourceURL": "https://this.kiji.is/616516778471310433?c=39550187727945729",
     "confirmedPatient": true
   },
@@ -21043,549 +21061,670 @@
   {
     "patientId": 1606,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#300",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1607,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#301",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1608,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#302",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1609,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#303",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1610,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#304",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1611,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#305",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1612,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#306",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1613,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#307",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1614,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#308",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1615,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#309",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1616,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#310",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1617,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#311",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1618,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#312",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1619,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#313",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1620,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#314",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1621,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#315",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1622,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#316",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1623,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#317",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1624,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#318",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1625,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#319",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1626,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#320",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1627,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#321",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1628,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#322",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1629,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#323",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1630,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#324",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1631,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#325",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1632,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#326",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1633,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#327",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1634,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#328",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1635,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#329",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1636,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#330",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1637,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#331",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1638,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#332",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1639,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#333",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1640,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#334",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1641,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#335",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1642,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#336",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1643,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#337",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1644,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#338",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1645,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#339",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1646,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#340",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1647,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#341",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1648,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#342",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1649,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#343",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1650,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#344",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1651,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#345",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1652,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#346",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1653,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#347",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1654,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#348",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1655,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#349",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1656,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 10,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#350",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1657,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#351",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1658,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#352",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1659,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#353",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1660,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#354",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1661,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#355",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1662,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#356",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1663,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#357",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1664,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#358",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1665,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#359",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
   {
     "patientId": 1666,
     "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 63 (-2 reported earlier) on 3/28",
+    "prefecturePatientNumber": "Tokyo#360",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355481000.html?utm_int=all_side_ranking-social_001",
     "confirmedPatient": true
   },
@@ -21610,6 +21749,7 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Critical condition, back from US",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355611000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
   {
@@ -21620,6 +21760,7 @@
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355611000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": true
   },
   {
@@ -21631,6 +21772,7 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Taxi driver",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355611000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
     "confirmedPatient": true
   },
   {
@@ -21642,6 +21784,7 @@
     "detectedCityTown": "Urayasu",
     "detectedPrefecture": "Chiba",
     "notes": "Works in Tokyo, traveled to EU",
+    "prefecturePatientNumber": "Chiba#69",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355621000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -21654,6 +21797,8 @@
     "detectedCityTown": "Sammu",
     "detectedPrefecture": "Chiba",
     "notes": "Glass craftsman",
+    "prefecturePatientNumber": "Chiba#67",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355621000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
   {
@@ -21665,6 +21810,8 @@
     "detectedCityTown": "Sakura",
     "detectedPrefecture": "Chiba",
     "notes": "Works in Tokyo",
+    "prefecturePatientNumber": "Chiba#68",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355621000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": true
   },
   {
@@ -21675,6 +21822,8 @@
     "residence": "Chiba city",
     "detectedCityTown": "Chiba city",
     "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#70",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355621000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
     "confirmedPatient": true
   },
   {
@@ -21685,6 +21834,8 @@
     "residence": "Katori",
     "detectedCityTown": "Katori",
     "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#66",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355621000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
     "confirmedPatient": true
   },
   {
@@ -21706,6 +21857,7 @@
     "residence": "Otaru",
     "detectedCityTown": "Otaru",
     "detectedPrefecture": "Hokkaido",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355351000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
   {
@@ -21716,6 +21868,7 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 1",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#71",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -21727,6 +21880,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 2",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#72",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
   {
@@ -21737,6 +21892,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 3",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#73",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": true
   },
   {
@@ -21747,6 +21904,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 4",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#74",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
     "confirmedPatient": true
   },
   {
@@ -21757,6 +21916,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 5",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#75",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
     "confirmedPatient": true
   },
   {
@@ -21767,6 +21928,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 6",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#76",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B14",
     "confirmedPatient": true
   },
   {
@@ -21777,6 +21940,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 7",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#77",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B15",
     "confirmedPatient": true
   },
   {
@@ -21787,6 +21952,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 8",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#78",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B16",
     "confirmedPatient": true
   },
   {
@@ -21797,6 +21964,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 9",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#79",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B17",
     "confirmedPatient": true
   },
   {
@@ -21807,6 +21976,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 10",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#80",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B18",
     "confirmedPatient": true
   },
   {
@@ -21817,6 +21988,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 11",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#81",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B19",
     "confirmedPatient": true
   },
   {
@@ -21827,6 +22000,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 12",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#82",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B20",
     "confirmedPatient": true
   },
   {
@@ -21837,6 +22012,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 13",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#83",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B21",
     "confirmedPatient": true
   },
   {
@@ -21847,6 +22024,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 14",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#84",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B22",
     "confirmedPatient": true
   },
   {
@@ -21857,6 +22036,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 15",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#85",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B23",
     "confirmedPatient": true
   },
   {
@@ -21867,6 +22048,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 16",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#86",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B24",
     "confirmedPatient": true
   },
   {
@@ -21877,6 +22060,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 17",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#87",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B25",
     "confirmedPatient": true
   },
   {
@@ -21887,6 +22072,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 18",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#88",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B26",
     "confirmedPatient": true
   },
   {
@@ -21897,6 +22084,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 19",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#89",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B27",
     "confirmedPatient": true
   },
   {
@@ -21907,6 +22096,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 20",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#90",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B28",
     "confirmedPatient": true
   },
   {
@@ -21917,6 +22108,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 21",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#91",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B29",
     "confirmedPatient": true
   },
   {
@@ -21927,6 +22120,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 22",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#92",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B30",
     "confirmedPatient": true
   },
   {
@@ -21937,6 +22132,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 23",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#93",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B31",
     "confirmedPatient": true
   },
   {
@@ -21947,6 +22144,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 24",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#94",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B32",
     "confirmedPatient": true
   },
   {
@@ -21957,6 +22156,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 25",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#95",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B33",
     "confirmedPatient": true
   },
   {
@@ -21967,6 +22168,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 26",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#96",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B34",
     "confirmedPatient": true
   },
   {
@@ -21977,6 +22180,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 27",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#97",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B35",
     "confirmedPatient": true
   },
   {
@@ -21987,6 +22192,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 28",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#98",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B36",
     "confirmedPatient": true
   },
   {
@@ -21997,6 +22204,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 29",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#99",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B37",
     "confirmedPatient": true
   },
   {
@@ -22007,6 +22216,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 30",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#100",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B38",
     "confirmedPatient": true
   },
   {
@@ -22017,6 +22228,8 @@
     "detectedPrefecture": "Chiba",
     "notes": "handicap charity facility 31",
     "knownCluster": "handicap charity facility\n",
+    "prefecturePatientNumber": "Chiba#101",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B39",
     "confirmedPatient": true
   },
   {
@@ -22025,8 +22238,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 32",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B40",
     "confirmedPatient": true
   },
   {
@@ -22035,8 +22249,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 33",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B41",
     "confirmedPatient": true
   },
   {
@@ -22045,8 +22260,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 34",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B42",
     "confirmedPatient": true
   },
   {
@@ -22055,8 +22271,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 35",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B43",
     "confirmedPatient": true
   },
   {
@@ -22065,8 +22282,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 36",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B44",
     "confirmedPatient": true
   },
   {
@@ -22075,8 +22293,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 37",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B45",
     "confirmedPatient": true
   },
   {
@@ -22085,8 +22304,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 38",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B46",
     "confirmedPatient": true
   },
   {
@@ -22095,8 +22315,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 39",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B47",
     "confirmedPatient": true
   },
   {
@@ -22105,8 +22326,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 40",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B48",
     "confirmedPatient": true
   },
   {
@@ -22115,8 +22337,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 41",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B49",
     "confirmedPatient": true
   },
   {
@@ -22125,8 +22348,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 42",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B50",
     "confirmedPatient": true
   },
   {
@@ -22135,8 +22359,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 43",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B51",
     "confirmedPatient": true
   },
   {
@@ -22145,8 +22370,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 44",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B52",
     "confirmedPatient": true
   },
   {
@@ -22155,8 +22381,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 45",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B53",
     "confirmedPatient": true
   },
   {
@@ -22165,8 +22392,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 46",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B54",
     "confirmedPatient": true
   },
   {
@@ -22175,8 +22403,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 47",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B55",
     "confirmedPatient": true
   },
   {
@@ -22185,8 +22414,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 48",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B56",
     "confirmedPatient": true
   },
   {
@@ -22195,8 +22425,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 49",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B57",
     "confirmedPatient": true
   },
   {
@@ -22205,8 +22436,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 50",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B58",
     "confirmedPatient": true
   },
   {
@@ -22215,8 +22447,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 51",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B59",
     "confirmedPatient": true
   },
   {
@@ -22225,8 +22458,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 52",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B60",
     "confirmedPatient": true
   },
   {
@@ -22235,8 +22469,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 53",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B61",
     "confirmedPatient": true
   },
   {
@@ -22245,8 +22480,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 54",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B62",
     "confirmedPatient": true
   },
   {
@@ -22255,8 +22491,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 55",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B63",
     "confirmedPatient": true
   },
   {
@@ -22265,8 +22502,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 56",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B64",
     "confirmedPatient": true
   },
   {
@@ -22275,8 +22513,9 @@
     "ageBracket": -1,
     "detectedCityTown": "Tonosho",
     "detectedPrefecture": "Chiba",
-    "notes": "handicap charity facility 57",
+    "notes": "Asymptomatic",
     "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355661000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B65",
     "confirmedPatient": true
   },
   {
@@ -22314,6 +22553,7 @@
     "detectedCityTown": "Kasukabe",
     "detectedPrefecture": "Saitama",
     "notes": "Self employed",
+    "prefecturePatientNumber": "Saitama#78",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355701000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -22325,6 +22565,7 @@
     "residence": "Tokigawacho",
     "detectedCityTown": "Tokigawacho",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#79",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355701000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -22332,9 +22573,11 @@
     "patientId": 1739,
     "dateAnnounced": "2020-03-28",
     "ageBracket": 10,
+    "gender": "M",
     "residence": "Tokigawacho",
     "detectedCityTown": "Tokigawacho",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#80",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355701000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -22347,6 +22590,7 @@
     "detectedCityTown": "Yashio",
     "detectedPrefecture": "Saitama",
     "notes": "Self employed, back from France",
+    "prefecturePatientNumber": "Saitama#81",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355701000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -22359,6 +22603,7 @@
     "detectedCityTown": "Sayama",
     "detectedPrefecture": "Saitama",
     "notes": "Company CEO",
+    "prefecturePatientNumber": "Saitama#82",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355701000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -22370,6 +22615,8 @@
     "residence": "Kawaguchi",
     "detectedCityTown": "Kawaguchi",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#77",
+    "cityPrefectureNumber": "Kawaguchi#12",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355701000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -22405,7 +22652,9 @@
     "residence": "Hiroshima",
     "detectedCityTown": "Hiroshima",
     "detectedPrefecture": "Hiroshima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Hiroshima#4",
+    "cityPrefectureNumber": "HiroshimaCity#2",
     "sourceURL": "https://headlines.yahoo.co.jp/hl?a=20200326-00010004-chugoku-l34",
     "confirmedPatient": true
   },
@@ -22478,6 +22727,7 @@
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355721000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
   {
@@ -22488,6 +22738,7 @@
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355721000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": true
   },
   {
@@ -22498,6 +22749,7 @@
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355721000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
     "confirmedPatient": true
   },
   {
@@ -22508,6 +22760,7 @@
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355721000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
     "confirmedPatient": true
   },
   {
@@ -22552,6 +22805,7 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355681000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
   {
@@ -22562,6 +22816,7 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355681000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": true
   },
   {
@@ -22572,6 +22827,7 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355681000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
     "confirmedPatient": true
   },
   {
@@ -22583,6 +22839,7 @@
     "detectedCityTown": "Kitakyushu",
     "detectedPrefecture": "Fukuoka",
     "notes": "Self employed",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355681000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
     "confirmedPatient": true
   },
   {
@@ -22594,6 +22851,7 @@
     "detectedCityTown": "Chikugo",
     "detectedPrefecture": "Fukuoka",
     "notes": "student",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355681000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B14",
     "confirmedPatient": true
   },
   {
@@ -22601,6 +22859,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22609,6 +22868,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22617,6 +22877,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22625,6 +22886,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22633,6 +22895,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22641,6 +22904,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22649,6 +22913,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22657,6 +22922,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22665,6 +22931,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22673,6 +22940,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22681,6 +22949,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22689,6 +22958,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22697,6 +22967,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22705,6 +22976,7 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
     "confirmedPatient": true
   },
@@ -22713,7 +22985,1459 @@
     "dateAnnounced": "2020-03-28",
     "ageBracket": -1,
     "detectedPrefecture": "Osaka",
+    "notes": "Osaka 15 on 3/28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355771000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1779,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Tokyo",
+    "detectedPrefecture": "Aomori",
+    "notes": "Lives in Tokyo, detected in Aomori",
+    "prefecturePatientNumber": "Aomori#7",
+    "sourceURL": "http://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1780,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Tomioka",
+    "detectedPrefecture": "Gunma",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012355881000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1781,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Tomioka",
+    "detectedPrefecture": "Gunma",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012355881000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1782,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Tamamura",
+    "detectedPrefecture": "Gunma",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012355881000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1783,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 20,
+    "gender": "F",
+    "detectedPrefecture": "Kyoto",
+    "notes": "Returned from overseas",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012355871000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1784,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 40,
+    "gender": "F",
+    "detectedPrefecture": "Kyoto",
+    "notes": "Nurse with infected male patient from Osaka 3/27",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012355871000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1785,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 70,
+    "gender": "F",
+    "detectedPrefecture": "Kyoto",
+    "notes": "Mother with infected male patient from Osaka 3/27",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012355871000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1786,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Okayama, Okayama",
+    "detectedCityTown": "Kita Ward, Okayama",
+    "detectedPrefecture": "Okayama",
+    "notes": "(Need to add details)",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012355861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1787,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 40,
+    "gender": "F",
+    "detectedPrefecture": "Ibaraki",
+    "notes": "No symptoms",
+    "knownCluster": "JAとりで総合医療センター",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355841000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1788,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 40,
+    "gender": "M",
+    "detectedPrefecture": "Ibaraki",
+    "knownCluster": "JAとりで総合医療センター",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355841000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1789,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 80,
+    "gender": "M",
+    "detectedPrefecture": "Ibaraki",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355841000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1790,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Kani",
+    "detectedCityTown": "Kani",
+    "detectedPrefecture": "Gifu",
+    "knownCluster": "Kani sports gym",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355851000.html?",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1791,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Kani",
+    "detectedCityTown": "Kani",
+    "detectedPrefecture": "Gifu",
+    "knownCluster": "Kani sports gym",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355851000.html?",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1792,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Chigasaki",
+    "detectedCityTown": "Chigasaki",
+    "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356351000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1793,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Atsugi",
+    "detectedCityTown": "Atsugi",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "Works in Tokyo, traveled to EU",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356351000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1794,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Brazil",
+    "detectedCityTown": "Atsugi",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "Travled back from Brazil through Germany",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356351000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1795,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Kamakura",
+    "detectedCityTown": "Kamakura",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "Self employed",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356351000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1796,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Hiroshima",
+    "detectedCityTown": "Hiroshima",
+    "detectedPrefecture": "Hiroshima",
+    "patientStatus": "Hospitalized",
+    "cityPrefectureNumber": "HiroshimaCity#4",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356361000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1797,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Hiroshima",
+    "detectedCityTown": "Hiroshima",
+    "detectedPrefecture": "Hiroshima",
+    "notes": "Tested because of contact with Hiroshima#4, No symptoms",
+    "cityPrefectureNumber": "HiroshimaCity#3",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356361000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1798,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "notes": "68 people on 3/29",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1799,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1800,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1801,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1802,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1803,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B14",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1804,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B15",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1805,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B16",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1806,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B17",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1807,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B18",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1808,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B19",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1809,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B20",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1810,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B21",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1811,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B22",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1812,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B23",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1813,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B24",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1814,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B25",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1815,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B26",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1816,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B27",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1817,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B28",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1818,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B29",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1819,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B30",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1820,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B31",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1821,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B32",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1822,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B33",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1823,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B34",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1824,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B35",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1825,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B36",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1826,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B37",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1827,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B38",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1828,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B39",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1829,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B40",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1830,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B41",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1831,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B42",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1832,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B43",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1833,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B44",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1834,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B45",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1835,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B46",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1836,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B47",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1837,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B48",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1838,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B49",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1839,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B50",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1840,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B51",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1841,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B52",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1842,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B53",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1843,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B54",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1844,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B55",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1845,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B56",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1846,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B57",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1847,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B58",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1848,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B59",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1849,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B60",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1850,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B61",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1851,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B62",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1852,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B63",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1853,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B64",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1854,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B65",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1855,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B66",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1856,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B67",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1857,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B68",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1858,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B69",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1859,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B70",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1860,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B71",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1861,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B72",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1862,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B73",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1863,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B74",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1864,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B75",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1865,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B76",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1866,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Kobe",
+    "detectedCityTown": "Kobe",
+    "detectedPrefecture": "Hyogo",
+    "notes": "Had contact with existing athelet confirmed case",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356401000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1867,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Kobe",
+    "detectedCityTown": "Kobe",
+    "detectedPrefecture": "Hyogo",
+    "notes": "Works in Osaka, have confirmed colleagues",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356401000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1868,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Kobe",
+    "detectedCityTown": "Kobe",
+    "detectedPrefecture": "Hyogo",
+    "notes": "Visited EU",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356401000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1869,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Kobe",
+    "detectedCityTown": "Kobe",
+    "detectedPrefecture": "Hyogo",
+    "notes": "Visited EU",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356401000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1870,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Kobe",
+    "detectedCityTown": "Kobe",
+    "detectedPrefecture": "Hyogo",
+    "notes": "Traveled to England",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356401000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1871,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": -1,
+    "gender": "M",
+    "residence": "Hamamatsu",
+    "detectedCityTown": "Hamamatsu",
+    "detectedPrefecture": "Shizuoka",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Shizuoka#4",
+    "sourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1872,
+    "dateAnnounced": "2020-03-21",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Sakai",
+    "detectedCityTown": "Sakai",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka#124",
+    "sourceURL": "http://www.pref.osaka.lg.jp/hodo/index.php?site=fumin&pageId=37809",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1873,
+    "dateAnnounced": "2020-03-21",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Kishiwada",
+    "detectedCityTown": "Kishiwada",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka#125",
+    "sourceURL": "http://www.pref.osaka.lg.jp/hodo/index.php?site=fumin&pageId=37809",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1874,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Kashihara",
+    "detectedCityTown": "Kashihara",
+    "detectedPrefecture": "Nara",
+    "patientStatus": "Hospitalized",
+    "notes": "Works in Osaka, Contact with Chiba#45",
+    "prefecturePatientNumber": "Nara#10",
+    "sourceURL": "http://www.pref.nara.jp/item/225717.htm#itemid225717",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1875,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Kashihara",
+    "detectedCityTown": "Kashihara",
+    "detectedPrefecture": "Nara",
+    "patientStatus": "Hospitalized",
+    "notes": "Contact with Osaka#167",
+    "prefecturePatientNumber": "Nara#11",
+    "sourceURL": "http://www.pref.nara.jp/item/225717.htm#itemid225717",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1876,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Ogaki",
+    "detectedCityTown": "Ogaki",
+    "detectedPrefecture": "Gifu",
+    "notes": "Self employed, traveled to Okinawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356441000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1877,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Yachimata",
+    "detectedCityTown": "Yachimata",
+    "detectedPrefecture": "Chiba",
+    "notes": "Kindergarden staff",
+    "prefecturePatientNumber": "Chiba#105",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356481000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1878,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Ichikawa",
+    "detectedCityTown": "Ichikawa",
+    "detectedPrefecture": "Chiba",
+    "notes": "Flight attendant",
+    "prefecturePatientNumber": "Chiba#103",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356481000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1879,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Narashino",
+    "detectedCityTown": "Narashino",
+    "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#102",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356481000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1880,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Sakura",
+    "detectedCityTown": "Sakura",
+    "detectedPrefecture": "Chiba",
+    "notes": "Part timer",
+    "prefecturePatientNumber": "Chiba#104",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356481000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1881,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Sammu",
+    "detectedCityTown": "Sammu",
+    "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#106",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356481000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1882,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 70,
+    "gender": "F",
+    "residence": "Himeji",
+    "detectedCityTown": "Himeji",
+    "detectedPrefecture": "Hyogo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356451000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1883,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Kochi city",
+    "detectedCityTown": "Kochi city",
+    "detectedPrefecture": "Kochi",
+    "notes": "Daughter of previously confirmed patient",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356501000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1884,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Yokohama",
+    "detectedCityTown": "Yokohama",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "Civil servant ",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356531000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1885,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Yokohama",
+    "detectedCityTown": "Yokohama",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "Works in Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356531000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1886,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Yokohama",
+    "detectedCityTown": "Yokohama",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "Works in Tokyo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356531000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1887,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Sapporo",
+    "detectedCityTown": "Sapporo",
+    "detectedPrefecture": "Hokkaido",
+    "notes": "Traveled to EU",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356521000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1888,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Sapporo",
+    "detectedCityTown": "Sapporo",
+    "detectedPrefecture": "Hokkaido",
+    "notes": "Wife of previous patient",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356521000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1889,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Sapporo",
+    "detectedCityTown": "Sapporo",
+    "detectedPrefecture": "Hokkaido",
+    "notes": "Traveled to EU",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356521000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1890,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Kanagawa",
+    "detectedCityTown": "Kushiro",
+    "detectedPrefecture": "Hokkaido",
+    "notes": "Traveled back from US",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356521000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1891,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Kawaguchi",
+    "detectedCityTown": "Kawaguchi",
+    "detectedPrefecture": "Saitama",
+    "notes": "Student, traveled back from US",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356511000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1892,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Kawaguchi",
+    "detectedCityTown": "Kawaguchi",
+    "detectedPrefecture": "Saitama",
+    "notes": "Colleague of Kanagawa confirms",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356511000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1893,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Tokyo",
+    "detectedCityTown": "Kawaguchi",
+    "detectedPrefecture": "Saitama",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356511000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1894,
+    "dateAnnounced": "2020-03-27",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Chiba city",
+    "detectedCityTown": "Chiba city",
+    "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#65",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1895,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Iida",
+    "detectedCityTown": "Iida",
+    "detectedPrefecture": "Nagano",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356551000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1896,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Matsumoto",
+    "detectedCityTown": "Matsumoto",
+    "detectedPrefecture": "Nagano",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356551000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1897,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Amagasaki",
+    "detectedCityTown": "Amagasaki",
+    "detectedPrefecture": "Hyogo",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356551000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1898,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "residence": "Kyoto city",
+    "detectedCityTown": "Kyoto city",
+    "detectedPrefecture": "Kyoto",
+    "notes": "Kyoto Sangyo University",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356581000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1899,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "residence": "Kyoto city",
+    "detectedCityTown": "Kyoto city",
+    "detectedPrefecture": "Kyoto",
+    "notes": "Kyoto Sangyo University",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356581000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1900,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "residence": "Kyoto city",
+    "detectedCityTown": "Kyoto city",
+    "detectedPrefecture": "Kyoto",
+    "notes": "Kyoto Sangyo University",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356581000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1901,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "residence": "Kyoto city",
+    "detectedCityTown": "Kyoto city",
+    "detectedPrefecture": "Kyoto",
+    "notes": "Kyoto Sangyo University",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356581000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1902,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1903,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1904,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1905,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1906,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1907,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B14",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1908,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B15",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1909,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B16",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1910,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B17",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1911,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B18",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1912,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B19",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1913,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B20",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1914,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B21",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1915,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B22",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1916,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B23",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1917,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B24",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1918,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B25",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1919,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B26",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1920,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B27",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1921,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B28",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1922,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B29",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1923,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B30",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1924,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B31",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1925,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B32",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1926,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B33",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1927,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B34",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1928,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B35",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1929,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": -1,
+    "detectedPrefecture": "Chiba",
+    "knownCluster": "handicap charity facility\n",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356591000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B36",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1930,
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Tokyo",
+    "detectedPrefecture": "Tochigi",
+    "notes": "Works in Tochigi",
+    "prefecturePatientNumber": "Tochigi#12",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356641000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   }
 ]
