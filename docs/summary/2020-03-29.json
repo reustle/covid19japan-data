@@ -582,13 +582,13 @@
       "name": "Hyogo"
     },
     {
-      "confirmed": 125,
+      "confirmed": 130,
       "cruisePassenger": 2,
       "cruiseWorker": 0,
       "deaths": 1,
       "confirmedByCity": {
         "Chiba": 1,
-        "Ichikawa": 15,
+        "Ichikawa": 16,
         "Kashiwa": 2,
         "Matsudo": 9,
         "Isumishi": 1,
@@ -600,11 +600,13 @@
         "Kisarazu": 3,
         "Narita": 1,
         "Nagareyama": 1,
-        "Sammu": 1,
+        "Sammu": 2,
         "Katori": 2,
-        "Sakura": 1,
+        "Sakura": 2,
         "Chiba city": 1,
-        "Tonosho": 57
+        "Tonosho": 57,
+        "Yachimata": 1,
+        "Narashino": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -688,10 +690,10 @@
         5,
         7,
         62,
-        0
+        5
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 5,
       "recovered": 18,
       "name_ja": "千葉県",
       "name": "Chiba"
@@ -1450,7 +1452,7 @@
       "name": "Fukuoka"
     },
     {
-      "confirmed": 19,
+      "confirmed": 20,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 0,
@@ -1460,7 +1462,8 @@
         "Kakamigahara": 1,
         "Kani": 9,
         "Kagamigahara": 1,
-        "Kawabe": 1
+        "Kawabe": 1,
+        "Ogaki": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -1544,10 +1547,10 @@
         3,
         2,
         2,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 1,
       "name_ja": "岐阜県",
       "name": "Gifu"
@@ -2354,14 +2357,15 @@
       "name": "Kumamoto"
     },
     {
-      "confirmed": 10,
+      "confirmed": 11,
       "cruisePassenger": 2,
       "cruiseWorker": 0,
       "deaths": 0,
       "confirmedByCity": {
         "Nara": 6,
         "Yamatokoriyama": 1,
-        "Yamato-Koriyama": 1
+        "Yamato-Koriyama": 1,
+        "Kashihara": 2
       },
       "dailyConfirmedCount": [
         0,
@@ -2444,7 +2448,7 @@
         0,
         0,
         0,
-        1,
+        2,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
@@ -2854,9 +2858,8 @@
       "cruiseWorker": 0,
       "deaths": 0,
       "confirmedByCity": {
-        "Hiroshima": 2,
-        "Onomichi": 2,
-        "Horoshima city": 2
+        "Hiroshima": 4,
+        "Onomichi": 2
       },
       "dailyConfirmedCount": [
         0,
@@ -5062,22 +5065,22 @@
       "confirmedCumulative": 1517
     },
     {
-      "confirmed": 196,
+      "confirmed": 197,
       "recoveredCumulative": 404,
       "deceasedCumulative": 53,
       "criticalCumulative": 56,
       "testedCumulative": 28464,
       "date": "2020-03-28",
-      "confirmedCumulative": 1713
+      "confirmedCumulative": 1714
     },
     {
-      "confirmed": 79,
+      "confirmed": 85,
       "recoveredCumulative": 404,
       "deceasedCumulative": 53,
       "criticalCumulative": 56,
       "testedCumulative": 28464,
       "date": "2020-03-29",
-      "confirmedCumulative": 1792
+      "confirmedCumulative": 1799
     }
   ],
   "updated": "Mar 29 2020, 15:53 JST"
