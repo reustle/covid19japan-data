@@ -13359,7 +13359,12 @@
     "dateAnnounced": "2020-03-19",
     "ageBracket": 30,
     "gender": "M",
+    "residence": "Osaka, Osaka",
+    "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
+    "knownCluster": "(Indirect) Osaka Live House Arc",
+    "prefecturePatientNumber": "Osaka#118",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37802_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340671000.html?utm_int=news-new_contents_list-items_015",
     "confirmedPatient": true
   },
@@ -13368,7 +13373,12 @@
     "dateAnnounced": "2020-03-19",
     "ageBracket": 20,
     "gender": "M",
+    "residence": "Suita",
+    "detectedCityTown": "Suita",
     "detectedPrefecture": "Osaka",
+    "notes": "Traveled to England",
+    "prefecturePatientNumber": "Osaka#119",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37802_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200319/k10012340671000.html?utm_int=news-new_contents_list-items_015",
     "confirmedPatient": true
   },
@@ -13976,6 +13986,8 @@
     "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
     "notes": "Critical",
+    "prefecturePatientNumber": "Osaka#121",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37808_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342431000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -13987,6 +13999,8 @@
     "residence": "Osaka city",
     "detectedCityTown": "Osaka city",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka#120",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37808_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342431000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -13998,6 +14012,8 @@
     "residence": "Suita",
     "detectedCityTown": "Suita",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka#123",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37808_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342431000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -14009,6 +14025,8 @@
     "residence": "Suita",
     "detectedCityTown": "Suita",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka#122",
+    "prefectureSourceURL": "http://www.pref.osaka.lg.jp/hodo/attach/hodo-37808_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342431000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -23756,6 +23774,37 @@
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Shizuoka#4",
     "sourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1872,
+    "dateAnnounced": "2020-03-21",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Sakai",
+    "detectedCityTown": "Sakai",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka#124",
+    "sourceURL": "http://www.pref.osaka.lg.jp/hodo/index.php?site=fumin&pageId=37809",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1873,
+    "dateAnnounced": "2020-03-21",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Kishiwada",
+    "detectedCityTown": "Kishiwada",
+    "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka#125",
+    "sourceURL": "http://www.pref.osaka.lg.jp/hodo/index.php?site=fumin&pageId=37809",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1874,
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": -1,
+    "detectedPrefecture": "Nara",
     "confirmedPatient": true
   }
 ]
