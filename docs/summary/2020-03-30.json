@@ -1,12 +1,12 @@
 {
   "prefectures": [
     {
-      "confirmed": 431,
+      "confirmed": 444,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 5,
       "confirmedByCity": {
-        "Tokyo": 49,
+        "Tokyo": 62,
         "Suginami": 1,
         "Adachi": 3,
         "Nerima": 1
@@ -94,10 +94,10 @@
         40,
         63,
         69,
-        0
+        13
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 13,
       "recovered": 45,
       "name_ja": "東京都",
       "name": "Tokyo"
@@ -5132,14 +5132,14 @@
       "confirmedCumulative": 1882
     },
     {
-      "confirmed": 9,
+      "confirmed": 22,
       "recoveredCumulative": 424,
       "deceasedCumulative": 52,
       "criticalCumulative": 59,
       "testedCumulative": 28760,
       "date": "2020-03-30",
-      "confirmedCumulative": 1891
+      "confirmedCumulative": 1904
     }
   ],
-  "updated": "Mar 30 2020, 17:36 JST"
+  "updated": "Mar 30 2020, 18:38 JST"
 }
