@@ -941,18 +941,19 @@
       "name": "Saitama"
     },
     {
-      "confirmed": 51,
+      "confirmed": 56,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 0,
       "confirmedByCity": {
         "Kyoto": 12,
-        "Kyoto city": 27,
+        "Kyoto city": 29,
         "Yamashiro": 1,
         "Chutan": 5,
         "Otokuni": 1,
         "Nagaokakyo": 1,
-        "Kyotanabe ": 1
+        "Kyotanabe ": 1,
+        "Ide": 3
       },
       "dailyConfirmedCount": [
         0,
@@ -1037,10 +1038,10 @@
         3,
         5,
         7,
-        4
+        9
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 4,
+      "newlyConfirmed": 9,
       "recovered": 13,
       "name_ja": "京都府",
       "name": "Kyoto"
@@ -1360,7 +1361,7 @@
       "name": "Oita"
     },
     {
-      "confirmed": 26,
+      "confirmed": 28,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 0,
@@ -1369,7 +1370,7 @@
         "Fukuoka": 4,
         "Munakata": 3,
         "Kitakyushu": 2,
-        "Fukuoka city": 10,
+        "Fukuoka city": 12,
         "Izuka": 2,
         "Kasuya": 1,
         "Chikugo": 1
@@ -1457,10 +1458,10 @@
         4,
         6,
         4,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "recovered": 2,
       "name_ja": "福岡県",
       "name": "Fukuoka"
@@ -5233,14 +5234,14 @@
       "confirmedCumulative": 1882
     },
     {
-      "confirmed": 46,
+      "confirmed": 53,
       "recoveredCumulative": 424,
       "deceasedCumulative": 54,
       "criticalCumulative": 59,
       "testedCumulative": 28966,
       "date": "2020-03-30",
-      "confirmedCumulative": 1928
+      "confirmedCumulative": 1935
     }
   ],
-  "updated": "Mar 30 2020, 18:38 JST"
+  "updated": "Mar 30 2020, 23:23 JST"
 }
