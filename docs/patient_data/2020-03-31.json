@@ -23293,6 +23293,7 @@
     "patientId": 1807,
     "dateAnnounced": "2020-03-29",
     "ageBracket": 40,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#374",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B20",
@@ -23301,7 +23302,7 @@
   {
     "patientId": 1808,
     "dateAnnounced": "2020-03-29",
-    "ageBracket": -1,
+    "ageBracket": 30,
     "detectedPrefecture": "Tokyo",
     "prefecturePatientNumber": "Tokyo#375",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B21",
@@ -26649,6 +26650,28 @@
     "detectedPrefecture": "Tokyo",
     "notes": "3/31 #78",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360221000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B86",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2141,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Ogaki",
+    "detectedCityTown": "Ogaki",
+    "detectedPrefecture": "Gifu",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360301000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2142,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Ogaki",
+    "detectedCityTown": "Ogaki",
+    "detectedPrefecture": "Gifu",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360301000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   }
 ]
