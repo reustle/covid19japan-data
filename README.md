@@ -2,7 +2,8 @@
 
 [data.covid19japan.com](https://data.covid19japan.com)
 
-This repository contains the JSON export of the [Live Japan Patient Database (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/1jfB4muWkzKTR0daklmf8D5F0Uf_IYAgcx_-Ij9McClQ/edit#gid=0) that supports [covid19japan.com](https://covid19japan.com).
+This repository contains the JSON export of the [Live Japan Patient Database (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/e/2PACX-1vRri4r42DHwMHePjJfYN-qEWhGvKeOQullBtEzfle15i-xAsm9ZgV8oMxQNhPRO1CId39BPnn1IO5YO/pubhtml) that supports [covid19japan.com](https://covid19japan.com). You can find more details about contributing to the sheet [in this document](https://docs.google.com/document/d/1JbQn10KvmYYUHCPa7LObsUCG1m_tVY-S4BrchzRMzBI/edit).
+
 
 ## Data Formats
 
@@ -125,12 +126,12 @@ Daily summary data:
 | criticalCumulative | Numeric | Total number of critical patients accumulated up to this day (including today) |
 | deceasedCumulative | Numeric | Total number of deaths accumulated up to this day (including today) |
 
+
 ## Contributing Data
 
 If you would like to update any missing or incorrect data on the graphs, please leave a comment on this spreadsheet, and/or request edit access.
 
 https://docs.google.com/spreadsheets/d/e/2PACX-1vRri4r42DHwMHePjJfYN-qEWhGvKeOQullBtEzfle15i-xAsm9ZgV8oMxQNhPRO1CId39BPnn1IO5YO/pubhtml
-
 
 
 ## Data Sources
