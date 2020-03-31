@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 444,
+      "confirmed": 445,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 6,
@@ -231,7 +231,7 @@
       "name": "Osaka"
     },
     {
-      "confirmed": 175,
+      "confirmed": 177,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 7,
@@ -242,7 +242,7 @@
         "Chitose, Ishikari": 2,
         "Iburi": 3,
         "Nemuro": 1,
-        "Asahikawa": 9,
+        "Asahikawa": 10,
         "Ebetsu": 1,
         "Hakodate": 3,
         "Shiriuchi, Oshima": 1,
@@ -362,12 +362,12 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 168,
+      "confirmed": 173,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 18,
       "confirmedByCity": {
-        "Nagoya": 112,
+        "Nagoya": 116,
         "Owari": 11,
         "Gamagori, Mikawa": 4,
         "Mikawa": 1,
@@ -379,7 +379,7 @@
         "Taketoyo": 1,
         "Kasugai": 4,
         "Konan": 1,
-        "Chita": 2,
+        "Chita": 3,
         "Toyokawa": 1,
         "Inazawa": 1,
         "Inuyama": 3,
@@ -480,7 +480,7 @@
       "name": "Aichi"
     },
     {
-      "confirmed": 165,
+      "confirmed": 166,
       "cruisePassenger": 2,
       "cruiseWorker": 0,
       "deaths": 1,
@@ -500,6 +500,7 @@
         "Nagareyama": 1,
         "Sammu": 2,
         "Chiba city": 2,
+        "unspecified": 1,
         "Sakura": 2,
         "Katori": 1,
         "Tonosho": 57,
@@ -599,7 +600,7 @@
       "name": "Chiba"
     },
     {
-      "confirmed": 138,
+      "confirmed": 137,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 11,
@@ -703,22 +704,22 @@
         3,
         7,
         1,
-        4
+        3
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 4,
+      "newlyConfirmed": 3,
       "recovered": 18,
       "name_ja": "兵庫県",
       "name": "Hyogo"
     },
     {
-      "confirmed": 126,
+      "confirmed": 128,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 6,
       "confirmedByCity": {
-        "Sagamihara": 23,
-        "Yokohama": 28,
+        "Sagamihara": 24,
+        "Yokohama": 29,
         "Atsugi": 7,
         "Kamakura": 6,
         "Kamamura": 1,
@@ -823,7 +824,7 @@
       "name": "Kanagawa"
     },
     {
-      "confirmed": 82,
+      "confirmed": 83,
       "cruisePassenger": 1,
       "cruiseWorker": 0,
       "deaths": 2,
@@ -846,6 +847,7 @@
         "Sayama": 2,
         "Kasukabe": 9,
         "Hasuda": 1,
+        "Unspecified": 1,
         "Tokorozawa": 2,
         "Sakado": 1,
         "Kawaguchi ": 1,
@@ -5225,22 +5227,22 @@
       "confirmedCumulative": 695
     },
     {
-      "confirmed": 36,
+      "confirmed": 37,
       "recoveredCumulative": 118,
       "deceasedCumulative": 19,
       "criticalCumulative": 32,
       "testedCumulative": 11231,
       "date": "2020-03-13",
-      "confirmedCumulative": 731
+      "confirmedCumulative": 732
     },
     {
-      "confirmed": 60,
+      "confirmed": 61,
       "recoveredCumulative": 122,
       "deceasedCumulative": 22,
       "criticalCumulative": 35,
       "testedCumulative": 12060,
       "date": "2020-03-14",
-      "confirmedCumulative": 791
+      "confirmedCumulative": 793
     },
     {
       "confirmed": 31,
@@ -5249,16 +5251,16 @@
       "criticalCumulative": 36,
       "testedCumulative": 13026,
       "date": "2020-03-15",
-      "confirmedCumulative": 822
+      "confirmedCumulative": 824
     },
     {
-      "confirmed": 16,
+      "confirmed": 17,
       "recoveredCumulative": 139,
       "deceasedCumulative": 27,
       "criticalCumulative": 41,
       "testedCumulative": 13068,
       "date": "2020-03-16",
-      "confirmedCumulative": 838
+      "confirmedCumulative": 841
     },
     {
       "confirmed": 47,
@@ -5267,7 +5269,7 @@
       "criticalCumulative": 46,
       "testedCumulative": 15655,
       "date": "2020-03-17",
-      "confirmedCumulative": 885
+      "confirmedCumulative": 888
     },
     {
       "confirmed": 36,
@@ -5276,7 +5278,7 @@
       "criticalCumulative": 46,
       "testedCumulative": 14525,
       "date": "2020-03-18",
-      "confirmedCumulative": 921
+      "confirmedCumulative": 924
     },
     {
       "confirmed": 41,
@@ -5285,16 +5287,16 @@
       "criticalCumulative": 46,
       "testedCumulative": 15354,
       "date": "2020-03-19",
-      "confirmedCumulative": 962
+      "confirmedCumulative": 965
     },
     {
-      "confirmed": 54,
+      "confirmed": 55,
       "recoveredCumulative": 193,
       "deceasedCumulative": 35,
       "criticalCumulative": 50,
       "testedCumulative": 18844,
       "date": "2020-03-20",
-      "confirmedCumulative": 1016
+      "confirmedCumulative": 1020
     },
     {
       "confirmed": 36,
@@ -5303,16 +5305,16 @@
       "criticalCumulative": 55,
       "testedCumulative": 18963,
       "date": "2020-03-21",
-      "confirmedCumulative": 1052
+      "confirmedCumulative": 1056
     },
     {
-      "confirmed": 44,
+      "confirmed": 45,
       "recoveredCumulative": 235,
       "deceasedCumulative": 40,
       "criticalCumulative": 57,
       "testedCumulative": 20228,
       "date": "2020-03-22",
-      "confirmedCumulative": 1096
+      "confirmedCumulative": 1101
     },
     {
       "confirmed": 40,
@@ -5321,7 +5323,7 @@
       "criticalCumulative": 54,
       "testedCumulative": 20340,
       "date": "2020-03-23",
-      "confirmedCumulative": 1136
+      "confirmedCumulative": 1141
     },
     {
       "confirmed": 72,
@@ -5330,52 +5332,52 @@
       "criticalCumulative": 55,
       "testedCumulative": 24430,
       "date": "2020-03-24",
-      "confirmedCumulative": 1208
+      "confirmedCumulative": 1213
     },
     {
-      "confirmed": 96,
+      "confirmed": 97,
       "recoveredCumulative": 272,
       "deceasedCumulative": 44,
       "criticalCumulative": 57,
       "testedCumulative": 23521,
       "date": "2020-03-25",
-      "confirmedCumulative": 1304
+      "confirmedCumulative": 1310
     },
     {
-      "confirmed": 98,
+      "confirmed": 99,
       "recoveredCumulative": 320,
       "deceasedCumulative": 46,
       "criticalCumulative": 56,
       "testedCumulative": 25171,
       "date": "2020-03-26",
-      "confirmedCumulative": 1402
+      "confirmedCumulative": 1409
     },
     {
-      "confirmed": 116,
+      "confirmed": 117,
       "recoveredCumulative": 372,
       "deceasedCumulative": 47,
       "criticalCumulative": 56,
       "testedCumulative": 27005,
       "date": "2020-03-27",
-      "confirmedCumulative": 1518
+      "confirmedCumulative": 1526
     },
     {
-      "confirmed": 194,
+      "confirmed": 196,
       "recoveredCumulative": 404,
       "deceasedCumulative": 52,
       "criticalCumulative": 56,
       "testedCumulative": 28464,
       "date": "2020-03-28",
-      "confirmedCumulative": 1712
+      "confirmedCumulative": 1722
     },
     {
-      "confirmed": 170,
+      "confirmed": 172,
       "recoveredCumulative": 424,
       "deceasedCumulative": 52,
       "criticalCumulative": 59,
       "testedCumulative": 28760,
       "date": "2020-03-29",
-      "confirmedCumulative": 1882
+      "confirmedCumulative": 1894
     },
     {
       "confirmed": 59,
@@ -5384,16 +5386,16 @@
       "criticalCumulative": 59,
       "testedCumulative": 28966,
       "date": "2020-03-30",
-      "confirmedCumulative": 1941
+      "confirmedCumulative": 1953
     },
     {
-      "confirmed": 33,
+      "confirmed": 32,
       "recoveredCumulative": 424,
       "deceasedCumulative": 55,
       "criticalCumulative": 59,
       "testedCumulative": 28966,
       "date": "2020-03-31",
-      "confirmedCumulative": 1974
+      "confirmedCumulative": 1985
     }
   ],
   "updated": "Mar 31 2020, 16:14 JST"
