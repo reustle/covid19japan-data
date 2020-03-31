@@ -26934,7 +26934,10 @@
     "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
     "gender": "F",
+    "residence": "Nanto",
+    "detectedCityTown": "Nanto",
     "detectedPrefecture": "Toyama",
+    "notes": "Nurse",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360351000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -26943,6 +26946,8 @@
     "dateAnnounced": "2020-03-31",
     "ageBracket": 70,
     "gender": "M",
+    "residence": "Fukushima ciy",
+    "detectedCityTown": "Fukushima ciy",
     "detectedPrefecture": "Fukushima",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360561000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -26952,6 +26957,8 @@
     "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
     "gender": "F",
+    "residence": "Sendai",
+    "detectedCityTown": "Fukushima ciy",
     "detectedPrefecture": "Fukushima",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360561000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -27074,6 +27081,20 @@
     "detectedPrefecture": "Aomori",
     "notes": "Niigata student's friend, studied in NY",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360431000.html?utm_int=word_contents_list-items_025&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2163,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Otsu",
+    "detectedCityTown": "Ostu",
+    "detectedPrefecture": "Shiga",
+    "notes": "University Student",
+    "knownCluster": "Kyoto Sangyo Uni",
+    "cityPrefectureNumber": "Shiga#7",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360511000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   }
 ]
