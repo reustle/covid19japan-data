@@ -99,7 +99,7 @@ const generateDailySummary = (patients, manualDailyData) => {
 
     dailySum.confirmedAvg7d = Math.floor(_.sum(sevenDayBuffer) / 7)
     confirmedCumulativeAvg7d += dailySum.confirmedAvg7d
-    dailySum.confirmedCumAvg7d = confirmedCumulativeAvg7d
+    dailySum.confirmedCumulativeAvg7d = confirmedCumulativeAvg7d
   }
   
   // For dates we don't have any manually entered data, pass those forward.
