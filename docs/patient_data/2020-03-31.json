@@ -25131,7 +25131,8 @@
   {
     "patientId": 1997,
     "dateAnnounced": "2020-03-30",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Toyama",
     "notes": "Kyoto Sangyo Uni student",
     "prefecturePatientNumber": "Toyama#1",
@@ -25437,29 +25438,18 @@
   },
   {
     "patientId": 2027,
-    "dateAnnounced": "2020-03-30",
-    "ageBracket": 20,
-    "gender": "F",
-    "residence": "Toyama",
-    "detectedPrefecture": "Toyama",
-    "knownCluster": "Kyoto Sangyo Uni.",
-    "prefecturePatientNumber": "Toyama#1",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200330/k10012358441000.html?utm_int=word_contents_list-items_045&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": 2028,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 70,
     "gender": "M",
     "residence": "Ichinomiya",
     "detectedPrefecture": "Aichi",
     "notes": "husband of #1932",
+    "prefectureSourceURL": "#REF!",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012358731000.html?utm_int=word_contents_list-items_042&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
-    "patientId": 2029,
+    "patientId": 2028,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 60,
     "gender": "M",
@@ -25471,7 +25461,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2030,
+    "patientId": 2029,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 50,
     "gender": "F",
@@ -25482,9 +25472,9 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2031,
+    "patientId": 2030,
     "dateAnnounced": "2020-03-31",
-    "ageBracket": 30,
+    "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Hyogo",
     "notes": "酒井高徳 pro soccor player",
@@ -25492,7 +25482,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2032,
+    "patientId": 2031,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
     "gender": "F",
@@ -25502,7 +25492,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2033,
+    "patientId": 2032,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 50,
     "gender": "F",
@@ -25512,7 +25502,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2034,
+    "patientId": 2033,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 30,
     "gender": "M",
@@ -25523,7 +25513,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2035,
+    "patientId": 2034,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 60,
     "gender": "M",
@@ -25534,7 +25524,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2036,
+    "patientId": 2035,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 70,
     "gender": "F",
@@ -25543,7 +25533,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2037,
+    "patientId": 2036,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
     "gender": "M",
@@ -25555,7 +25545,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2038,
+    "patientId": 2037,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
     "gender": "M",
@@ -25567,7 +25557,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2039,
+    "patientId": 2038,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
     "gender": "F",
@@ -25579,7 +25569,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2040,
+    "patientId": 2039,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
     "gender": "M",
@@ -25587,6 +25577,16 @@
     "detectedPrefecture": "Tokushima",
     "notes": "University student",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012358911000.html?utm_int=word_contents_list-items_031&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2040,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": -1,
+    "residence": "Matsuyama",
+    "detectedPrefecture": "Ehime",
+    "patientStatus": "Hospitalized",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012359441000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
@@ -25632,16 +25632,6 @@
   {
     "patientId": 2045,
     "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
-    "residence": "Matsuyama",
-    "detectedPrefecture": "Ehime",
-    "patientStatus": "Hospitalized",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012359441000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": 2046,
-    "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
     "gender": "F",
     "residence": "Kanagawa",
@@ -25652,7 +25642,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2047,
+    "patientId": 2046,
     "dateAnnounced": "2020-03-31",
     "ageBracket": -1,
     "residence": "Tonosho",
@@ -25663,7 +25653,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2048,
+    "patientId": 2047,
     "dateAnnounced": "2020-03-31",
     "ageBracket": -1,
     "residence": "Tonosho",
@@ -25674,7 +25664,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2049,
+    "patientId": 2048,
     "dateAnnounced": "2020-03-31",
     "ageBracket": -1,
     "residence": "Tonosho",
@@ -25685,7 +25675,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2050,
+    "patientId": 2049,
     "dateAnnounced": "2020-03-31",
     "ageBracket": -1,
     "residence": "Tonosho",
@@ -25696,7 +25686,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2051,
+    "patientId": 2050,
     "dateAnnounced": "2020-03-31",
     "ageBracket": -1,
     "residence": "Tonosho",
@@ -25707,7 +25697,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2052,
+    "patientId": 2051,
     "dateAnnounced": "2020-03-31",
     "ageBracket": -1,
     "residence": "Tonosho",
@@ -25718,7 +25708,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2053,
+    "patientId": 2052,
     "dateAnnounced": "2020-03-31",
     "ageBracket": -1,
     "residence": "Tonosho",
@@ -25729,7 +25719,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2054,
+    "patientId": 2053,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
     "gender": "M",
@@ -25739,7 +25729,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2055,
+    "patientId": 2054,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 30,
     "gender": "F",
@@ -25749,7 +25739,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2056,
+    "patientId": 2055,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 40,
     "gender": "M",
@@ -25759,7 +25749,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2057,
+    "patientId": 2056,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 60,
     "gender": "M",
@@ -25769,7 +25759,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2058,
+    "patientId": 2057,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 60,
     "gender": "F",
@@ -25779,18 +25769,19 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2059,
+    "patientId": 2058,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 40,
     "gender": "M",
     "residence": "Sukumo",
     "detectedCityTown": "Sukumo",
     "detectedPrefecture": "Kochi",
+    "notes": "Police officer",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012359891000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
-    "patientId": 2060,
+    "patientId": 2059,
     "dateAnnounced": "2020-03-31",
     "ageBracket": -1,
     "residence": "America",
