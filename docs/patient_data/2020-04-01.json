@@ -14253,7 +14253,9 @@
     "detectedCityTown": "Haneda airport",
     "detectedPrefecture": "Port Quarantine",
     "patientStatus": "Hospitalized",
-    "notes": "Japanese",
+    "notes": "Critical, Traveled to Italy, Lombardy, Japanese",
+    "prefecturePatientNumber": "Port#8",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10352.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342501000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -14266,7 +14268,9 @@
     "detectedCityTown": "Haneda airport",
     "detectedPrefecture": "Port Quarantine",
     "patientStatus": "Hospitalized",
-    "notes": "Japanese",
+    "notes": "No Symptoms, Traveled to Spain, Japanese",
+    "prefecturePatientNumber": "Port#11",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10352.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342501000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -14279,7 +14283,9 @@
     "detectedCityTown": "Kansai airport",
     "detectedPrefecture": "Port Quarantine",
     "patientStatus": "Hospitalized",
-    "notes": "Foreign",
+    "notes": "No Symptoms, Traveled from Italy, Foreign",
+    "prefecturePatientNumber": "Port#9",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10352.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342501000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -14292,7 +14298,9 @@
     "detectedCityTown": "Kansai airport",
     "detectedPrefecture": "Port Quarantine",
     "patientStatus": "Hospitalized",
-    "notes": "Wakayama resident, detected at Kansai airport, returning from Switzerland, not counted as Wakayama",
+    "notes": "No Symptoms, Wakayama resident, detected at Kansai airport, returning from Switzerland, not counted as Wakayama",
+    "prefecturePatientNumber": "Port#10",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10352.html",
     "detectedAtPort": false,
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342501000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -26819,6 +26827,7 @@
     "residence": "Fukushima ciy",
     "detectedCityTown": "Fukushima ciy",
     "detectedPrefecture": "Fukushima",
+    "prefecturePatientNumber": "Fukushima#3",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360561000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -26830,6 +26839,7 @@
     "residence": "Sendai",
     "detectedCityTown": "Fukushima ciy",
     "detectedPrefecture": "Fukushima",
+    "prefecturePatientNumber": "Fukushima#4",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360561000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -29181,6 +29191,44 @@
     "ageBracket": -1,
     "detectedPrefecture": "Nara",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012362331000.html?utm_int=news-social_contents_list-items_001",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2367,
+    "dateAnnounced": "2020-03-21",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Tokyo",
+    "detectedCityTown": "Haneda Airport",
+    "detectedPrefecture": "Port Quarantine",
+    "patientStatus": "Hospitalized",
+    "notes": "Traveled to London",
+    "prefecturePatientNumber": "Port#17",
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10360.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2368,
+    "dateAnnounced": "2020-03-17",
+    "ageBracket": -1,
+    "residence": "Italy",
+    "detectedCityTown": "Narita Airport",
+    "detectedPrefecture": "Port Quarantine",
+    "patientStatus": "Hospitalized",
+    "notes": "Traveled from Italy",
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10313.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2369,
+    "dateAnnounced": "2020-03-17",
+    "ageBracket": -1,
+    "residence": "Italy",
+    "detectedCityTown": "Narita Airport",
+    "detectedPrefecture": "Port Quarantine",
+    "patientStatus": "Hospitalized",
+    "notes": "Traveled from Italy",
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10313.html",
     "confirmedPatient": true
   }
 ]
