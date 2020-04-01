@@ -26926,8 +26926,12 @@
     "patientId": 2162,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
+    "gender": "M",
+    "residence": "Goshogawara",
     "detectedPrefecture": "Aomori",
+    "patientStatus": "Hospitalized",
     "notes": "Niigata student's friend, studied in NY",
+    "prefecturePatientNumber": "Aomori#8",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360431000.html?utm_int=word_contents_list-items_025&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -27524,6 +27528,8 @@
     "residence": "Nagareyama",
     "detectedCityTown": "Nagareyama",
     "detectedPrefecture": "Chiba",
+    "notes": "Office worker",
+    "prefecturePatientNumber": "Chiba#110",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360731000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -27535,7 +27541,8 @@
     "residence": "Matsudo",
     "detectedCityTown": "Matsudo",
     "detectedPrefecture": "Chiba",
-    "notes": "Uni student",
+    "notes": "Uni student, Visited Germany, Czech, Swiss,and France from Mar. 2 to Mar. 16. ",
+    "prefecturePatientNumber": "Chiba#112",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360731000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -27547,6 +27554,7 @@
     "residence": "Matsudo",
     "detectedCityTown": "Matsudo",
     "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#111",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360731000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -27559,6 +27567,7 @@
     "detectedCityTown": "Mobara",
     "detectedPrefecture": "Chiba",
     "notes": "Uni student",
+    "prefecturePatientNumber": "Chiba#114",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360731000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -28300,6 +28309,20 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360891000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B15",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-03-16",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Aichi",
+    "detectedCityTown": "Nagoya",
+    "detectedPrefecture": "Aichi",
+    "patientStatus": "Deceased",
+    "notes": "Died on 3/16",
+    "cityPrefectureNumber": "NagoyaDeath#14",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334341000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   },
   {
