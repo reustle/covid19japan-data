@@ -1719,7 +1719,7 @@
       "name": "Ibaraki"
     },
     {
-      "confirmed": 20,
+      "confirmed": 21,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 0,
@@ -1727,7 +1727,8 @@
         "Fukui": 8,
         "Echizen": 2,
         "Sabae": 1,
-        "Fukui city": 1
+        "Fukui city": 1,
+        "Awara": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -1814,10 +1815,10 @@
         1,
         2,
         5,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 0,
       "name_ja": "福井県",
       "name": "Fukui"
@@ -1930,13 +1931,14 @@
       "name": "Gunma"
     },
     {
-      "confirmed": 18,
+      "confirmed": 19,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 1,
       "confirmedByCity": {
         "Yuasa": 11,
-        "Wakayama": 6
+        "Wakayama": 6,
+        "Wakatama": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -2023,10 +2025,10 @@
         0,
         1,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 13,
       "name_ja": "和歌山県",
       "name": "Wakayama"
@@ -5714,15 +5716,15 @@
       "confirmedCumulativeAvg7d": 1682
     },
     {
-      "confirmed": 1,
+      "confirmed": 3,
       "recoveredCumulative": 424,
       "deceasedCumulative": 65,
       "criticalCumulative": 59,
       "testedCumulative": 32497,
       "date": "2020-04-01",
-      "confirmedCumulative": 2181,
-      "confirmedAvg3d": 99,
-      "confirmedCumulativeAvg3d": 2086,
+      "confirmedCumulative": 2183,
+      "confirmedAvg3d": 100,
+      "confirmedCumulativeAvg3d": 2087,
       "confirmedAvg7d": 125,
       "confirmedCumulativeAvg7d": 1807
     }
