@@ -8551,6 +8551,19 @@
     "confirmedPatient": true
   },
   {
+    "patientId": 592,
+    "dateAnnounced": "2020-03-11",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Okhotsk (Seaside)",
+    "detectedCityTown": "Okhotsk (Seaside)",
+    "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#117",
+    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1278421",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200311/k10012325601000.html?utm_int=news-social_contents_list-items_003",
+    "confirmedPatient": true
+  },
+  {
     "patientId": 593,
     "dateAnnounced": "2020-03-11",
     "ageBracket": 60,
@@ -8613,19 +8626,6 @@
     "prefecturePatientNumber": "Hokkaido#115",
     "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1278421",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200311/k10012325401000.html?utm_int=news-social_contents_list-items_001",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": 592,
-    "dateAnnounced": "2020-03-11",
-    "ageBracket": 60,
-    "gender": "M",
-    "residence": "Okhotsk (Seaside)",
-    "detectedCityTown": "Okhotsk (Seaside)",
-    "detectedPrefecture": "Hokkaido",
-    "prefecturePatientNumber": "Hokkaido#117",
-    "prefectureSourceURL": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1278421",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200311/k10012325601000.html?utm_int=news-social_contents_list-items_003",
     "confirmedPatient": true
   },
   {
@@ -10700,6 +10700,17 @@
     "confirmedPatient": true
   },
   {
+    "patientId": 755,
+    "dateAnnounced": "2020-03-14",
+    "ageBracket": 70,
+    "gender": "F",
+    "detectedCityTown": "Koriyama",
+    "detectedPrefecture": "Fukushima",
+    "notes": "Back from Egypt, symptom from 3/1",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331561000.html?utm_int=word_contents_list-items_022&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
     "patientId": 756,
     "dateAnnounced": "2020-03-14",
     "ageBracket": 70,
@@ -10755,17 +10766,6 @@
     "prefecturePatientNumber": "Chiba #32",
     "prefectureSourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200314.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331611000.html?utm_int=word_contents_list-items_025&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": 755,
-    "dateAnnounced": "2020-03-14",
-    "ageBracket": 70,
-    "gender": "F",
-    "detectedCityTown": "Koriyama",
-    "detectedPrefecture": "Fukushima",
-    "notes": "Back from Egypt, symptom from 3/1",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331561000.html?utm_int=word_contents_list-items_022&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
@@ -12192,6 +12192,48 @@
     "confirmedPatient": true
   },
   {
+    "patientId": 909,
+    "dateAnnounced": "2020-03-17",
+    "ageBracket": 70,
+    "gender": "F",
+    "residence": "Yokohama",
+    "detectedCityTown": "Yokohama",
+    "detectedPrefecture": "Kanagawa",
+    "patientStatus": "Unspecified",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336081000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 910,
+    "dateAnnounced": "2020-03-17",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Saitama, Saitama",
+    "detectedCityTown": "Saitama",
+    "detectedPrefecture": "Saitama",
+    "patientStatus": "Hospitalized",
+    "notes": "father of #666, Company employee",
+    "prefecturePatientNumber": "Saitama#33",
+    "cityPrefectureNumber": "SaitamaCity#5",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336121000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 911,
+    "dateAnnounced": "2020-03-17",
+    "ageBracket": 80,
+    "gender": "F",
+    "residence": "Kobe",
+    "detectedCityTown": "Kobe",
+    "detectedPrefecture": "Hyogo",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Hyogo#83",
+    "cityPrefectureNumber": "Kobe#22",
+    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336211000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
     "patientId": 912,
     "dateAnnounced": "2020-03-17",
     "ageBracket": 40,
@@ -12235,48 +12277,6 @@
     "knownCluster": "Day Service Center",
     "cityPrefectureNumber": "Nagoya#100",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336351000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": 909,
-    "dateAnnounced": "2020-03-17",
-    "ageBracket": 70,
-    "gender": "F",
-    "residence": "Yokohama",
-    "detectedCityTown": "Yokohama",
-    "detectedPrefecture": "Kanagawa",
-    "patientStatus": "Unspecified",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336081000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": 910,
-    "dateAnnounced": "2020-03-17",
-    "ageBracket": 60,
-    "gender": "M",
-    "residence": "Saitama, Saitama",
-    "detectedCityTown": "Saitama",
-    "detectedPrefecture": "Saitama",
-    "patientStatus": "Hospitalized",
-    "notes": "father of #666, Company employee",
-    "prefecturePatientNumber": "Saitama#33",
-    "cityPrefectureNumber": "SaitamaCity#5",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336121000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": 911,
-    "dateAnnounced": "2020-03-17",
-    "ageBracket": 80,
-    "gender": "F",
-    "residence": "Kobe",
-    "detectedCityTown": "Kobe",
-    "detectedPrefecture": "Hyogo",
-    "patientStatus": "Hospitalized",
-    "prefecturePatientNumber": "Hyogo#83",
-    "cityPrefectureNumber": "Kobe#22",
-    "prefectureSourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo53-100.html",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336211000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
@@ -13872,18 +13872,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1080,
-    "dateAnnounced": "2020-03-18",
-    "ageBracket": -1,
-    "residence": "Kyoto city",
-    "detectedCityTown": "Kyoto city",
-    "detectedPrefecture": "Kyoto",
-    "prefecturePatientNumber": "Kyoto #21",
-    "prefectureSourceURL": "#REF!",
-    "sourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F",
-    "confirmedPatient": true
-  },
-  {
     "patientId": 1041,
     "dateAnnounced": "2020-03-20",
     "ageBracket": 80,
@@ -14310,21 +14298,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1081,
-    "dateAnnounced": "2020-03-12",
-    "ageBracket": 60,
-    "gender": "F",
-    "residence": "Shizuoka",
-    "detectedCityTown": "Shizuoka",
-    "detectedPrefecture": "Shizuoka",
-    "notes": "Traveled to Egypt",
-    "prefecturePatientNumber": "Shizuoka#3",
-    "cityPrefectureNumber": "ShizuokaCity#2",
-    "prefectureSourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
-    "sourceURL": "https://www.city.shizuoka.lg.jp/000847470.pdf",
-    "confirmedPatient": true
-  },
-  {
     "patientId": 1074,
     "dateAnnounced": "2020-03-20",
     "ageBracket": 20,
@@ -14409,6 +14382,18 @@
     "confirmedPatient": true
   },
   {
+    "patientId": 1080,
+    "dateAnnounced": "2020-03-18",
+    "ageBracket": -1,
+    "residence": "Kyoto city",
+    "detectedCityTown": "Kyoto city",
+    "detectedPrefecture": "Kyoto",
+    "prefecturePatientNumber": "Kyoto #21",
+    "prefectureSourceURL": "#REF!",
+    "sourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F",
+    "confirmedPatient": true
+  },
+  {
     "patientId": 1081,
     "dateAnnounced": "2020-03-21",
     "ageBracket": 30,
@@ -14420,6 +14405,21 @@
     "prefecturePatientNumber": "Niigata#26",
     "prefectureSourceURL": "https://www.pref.niigata.lg.jp/sec/kenko/corona0321.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343101000.html?utm_int=news-new_contents_list-items_001",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1081,
+    "dateAnnounced": "2020-03-12",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Shizuoka",
+    "detectedCityTown": "Shizuoka",
+    "detectedPrefecture": "Shizuoka",
+    "notes": "Traveled to Egypt",
+    "prefecturePatientNumber": "Shizuoka#3",
+    "cityPrefectureNumber": "ShizuokaCity#2",
+    "prefectureSourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
+    "sourceURL": "https://www.city.shizuoka.lg.jp/000847470.pdf",
     "confirmedPatient": true
   },
   {
@@ -17972,21 +17972,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 1377,
-    "dateAnnounced": "2020-03-26",
-    "ageBracket": 30,
-    "gender": "F",
-    "residence": "Funabashi",
-    "detectedCityTown": "Funabashi",
-    "detectedPrefecture": "Chiba",
-    "patientStatus": "Hospitalized",
-    "notes": "Returned from UK, Works in UK",
-    "prefecturePatientNumber": "Chiba#55",
-    "cityPrefectureNumber": "Funabashi#3",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351511000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": true
-  },
-  {
     "patientId": 1352,
     "dateAnnounced": "2020-03-25",
     "ageBracket": 40,
@@ -18310,6 +18295,21 @@
     "prefecturePatientNumber": "Okinawa#6",
     "prefectureSourceURL": "https://www.pref.okinawa.jp/site/chijiko/kohokoryu/koho/2020_new_korona_virs.html",
     "sourceURL": "https://www.nikkei.com/article/DGXMZO57251170W0A320C2ACYZ00/",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 1377,
+    "dateAnnounced": "2020-03-26",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Funabashi",
+    "detectedCityTown": "Funabashi",
+    "detectedPrefecture": "Chiba",
+    "patientStatus": "Hospitalized",
+    "notes": "Returned from UK, Works in UK",
+    "prefecturePatientNumber": "Chiba#55",
+    "cityPrefectureNumber": "Funabashi#3",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351511000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
@@ -20829,124 +20829,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-16",
-    "ageBracket": 80,
-    "gender": "M",
-    "residence": "Aichi",
-    "detectedCityTown": "Nagoya",
-    "detectedPrefecture": "Aichi",
-    "patientStatus": "Deceased",
-    "notes": "Died on 3/16",
-    "cityPrefectureNumber": "NagoyaDeath#13",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334341000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-13",
-    "ageBracket": -1,
-    "gender": "M",
-    "residence": "Aichi",
-    "detectedCityTown": "Nagoya",
-    "detectedPrefecture": "Aichi",
-    "patientStatus": "Deceased",
-    "notes": "2nd who died on 3/13 in Nagoya. No age revealed except it was an old person. Likely not a previous patient",
-    "cityPrefectureNumber": "NagoyaDeath#10",
-    "sourceURL": "https://www.mhlw.go.jp/content/10906000/000608334.doc",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-14",
-    "ageBracket": 80,
-    "gender": "F",
-    "residence": "Aichi",
-    "detectedCityTown": "Nagoya",
-    "detectedPrefecture": "Aichi",
-    "patientStatus": "Deceased",
-    "notes": "Died 3/14",
-    "cityPrefectureNumber": "NagoyaDeath#11",
-    "sourceURL": "https://www.mhlw.go.jp/content/10906000/000608447.pdf",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-20",
-    "ageBracket": -1,
-    "gender": "M",
-    "residence": "Aichi",
-    "detectedCityTown": "Nagoya",
-    "detectedPrefecture": "Aichi",
-    "patientStatus": "Deceased",
-    "notes": "Died on 3/20",
-    "cityPrefectureNumber": "NagoyaDeath#15",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342061000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-22",
-    "ageBracket": -1,
-    "residence": "Saitama",
-    "detectedCityTown": "Unspecified",
-    "detectedPrefecture": "Saitama",
-    "patientStatus": "Deceased",
-    "notes": "Died on 3/22 details unknown",
-    "sourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2019/0322-02.html",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-25",
-    "ageBracket": -1,
-    "gender": "M",
-    "residence": "Hokkaido",
-    "detectedPrefecture": "Hokkaido",
-    "patientStatus": "Deceased",
-    "notes": "Not a new patient. Hard to figure this one out.",
-    "cityPrefectureNumber": "HokkaidoDeath#7",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200325/k10012349351000.html?utm_int=news-social_contents_list-items_001",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-26",
-    "ageBracket": 70,
-    "gender": "M",
-    "residence": "Aichi",
-    "detectedCityTown": "Chita",
-    "detectedPrefecture": "Aichi",
-    "patientStatus": "Deceased",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012352271000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-27",
-    "ageBracket": 90,
-    "gender": "F",
-    "residence": "Kanagawa",
-    "detectedCityTown": "Yokohama",
-    "detectedPrefecture": "Kanagawa",
-    "patientStatus": "Deceased",
-    "notes": "Confirmed on 3/20, died 3/27",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353841000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-28",
-    "ageBracket": -1,
-    "residence": "Chiba",
-    "detectedCityTown": "unspecified",
-    "detectedPrefecture": "Chiba",
-    "patientStatus": "Deceased",
-    "notes": "Confirmed 3/28, died 3/27",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355371000.html?utm_int=news-new_contents_list-items_013",
-    "confirmedPatient": false
-  },
-  {
     "patientId": 1597,
     "dateAnnounced": "2020-03-25",
     "ageBracket": 20,
@@ -21054,21 +20936,6 @@
     "prefecturePatientNumber": "Hyogo#124",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355511000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-28",
-    "ageBracket": 70,
-    "gender": "M",
-    "residence": "Asahikawa",
-    "detectedCityTown": "Asahikawa",
-    "detectedPrefecture": "Hokkaido",
-    "patientStatus": "Hospitalized",
-    "notes": "Reoccurance in Hokkaido#11",
-    "prefecturePatientNumber": "Hokkaido#172",
-    "cityPrefectureNumber": "Asahikawa#11",
-    "sourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/kisyakaiken0328asahikawa.pdf",
-    "confirmedPatient": false
   },
   {
     "patientId": 1606,
@@ -25125,19 +24992,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-29",
-    "ageBracket": 80,
-    "gender": "M",
-    "residence": "Sagamihara",
-    "detectedCityTown": "Sagamihara",
-    "detectedPrefecture": "Kanagawa",
-    "patientStatus": "Deceased",
-    "notes": "Confirmed on 3/20, died 3/29",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200330/k10012357341000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": false
-  },
-  {
     "patientId": 1970,
     "dateAnnounced": "2020-03-30",
     "ageBracket": 20,
@@ -25147,17 +25001,6 @@
     "detectedPrefecture": "Kanagawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200330/k10012357341000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-29",
-    "ageBracket": 70,
-    "gender": "M",
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "notes": "Commedian, confirmed infected on 3/25. There are only 2 70/M on that day in Tokyo",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200330/k10012357011000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": false
   },
   {
     "patientId": 1971,
@@ -27071,28 +26914,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-29",
-    "ageBracket": -1,
-    "residence": "Himeji",
-    "detectedCityTown": "Himeji",
-    "detectedPrefecture": "Hyogo",
-    "patientStatus": "Deceased",
-    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10556.html",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-29",
-    "ageBracket": -1,
-    "residence": "Himeji",
-    "detectedCityTown": "Himeji",
-    "detectedPrefecture": "Hyogo",
-    "patientStatus": "Deceased",
-    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10556.html",
-    "confirmedPatient": false
-  },
-  {
     "patientId": 2161,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 20,
@@ -27383,74 +27204,6 @@
     "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "notes": "永寿総合病院 patient",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360891000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "notes": "永寿総合病院 patient",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360891000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "notes": "永寿総合病院 patient",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360891000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "notes": "永寿総合病院 patient",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360891000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "notes": "永寿総合病院 patient",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360891000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360891000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B14",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360891000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B15",
-    "confirmedPatient": false
   },
   {
     "patientId": 2184,
