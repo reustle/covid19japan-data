@@ -4337,9 +4337,12 @@
     "ageBracket": 40,
     "gender": "M",
     "residence": "Mie",
+    "detectedCityTown": "Chubu International",
     "detectedPrefecture": "Port Quarantine",
     "patientStatus": "Hospitalized",
     "notes": "Returning from Vietnam, detected at the airport, transported to Nagoya",
+    "prefecturePatientNumber": "Port",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_09966.html",
     "detectedAtPort": false,
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200304/k10012313921000.html?utm_int=news-new_contents_list-items_015",
     "confirmedPatient": true
@@ -10108,6 +10111,9 @@
     "detectedCityTown": "Haneda",
     "detectedPrefecture": "Port Quarantine",
     "notes": "Came back from Italy",
+    "prefecturePatientNumber": "Port",
+    "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10190.html",
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10190.html",
     "confirmedPatient": true
   },
   {
@@ -25696,7 +25702,10 @@
     "dateAnnounced": "2020-03-31",
     "ageBracket": 70,
     "gender": "F",
+    "residence": "Kumamoto",
+    "detectedCityTown": "Kumamoto",
     "detectedPrefecture": "Kumamoto",
+    "prefecturePatientNumber": "Kumamoto#12",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012358781000.html?utm_int=word_contents_list-items_041&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -25938,7 +25947,7 @@
     "detectedCityTown": "Sukumo",
     "detectedPrefecture": "Kochi",
     "notes": "Police officer",
-    "prefecturePatientNumber": "Kochi#16",
+    "prefecturePatientNumber": "Kochi#17",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012359891000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -26851,7 +26860,8 @@
     "residence": "Kochi",
     "detectedCityTown": "Kochi",
     "detectedPrefecture": "Kochi",
-    "prefecturePatientNumber": "Kochi#17",
+    "prefecturePatientNumber": "Kochi#16",
+    "cityPrefectureNumber": "Kochi#10",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360571000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -27527,6 +27537,8 @@
     "detectedCityTown": "Oita city",
     "detectedPrefecture": "Oita",
     "notes": "Restaurant owner",
+    "prefecturePatientNumber": "Oita#29",
+    "cityPrefectureNumber": "Oita#24",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360931000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -29229,6 +29241,45 @@
     "patientStatus": "Hospitalized",
     "notes": "Traveled from Italy",
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10313.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2370,
+    "dateAnnounced": "2020-03-14",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Tokyo",
+    "detectedCityTown": "Haneda Airport",
+    "detectedPrefecture": "Port Quarantine",
+    "patientStatus": "Hospitalized",
+    "notes": "No Symptoms",
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10205.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2371,
+    "dateAnnounced": "2020-03-14",
+    "ageBracket": 10,
+    "gender": "M",
+    "residence": "Italy",
+    "detectedCityTown": "Haneda Airport",
+    "detectedPrefecture": "Port Quarantine",
+    "patientStatus": "Hospitalized",
+    "notes": "No Symptoms",
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10205.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2372,
+    "dateAnnounced": "2020-03-12",
+    "ageBracket": 20,
+    "gender": "M",
+    "detectedCityTown": "Narita Airport",
+    "detectedPrefecture": "Port Quarantine",
+    "patientStatus": "Hospitalized",
+    "notes": "No Symptoms",
+    "prefecturePatientNumber": "Port ",
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10200.html",
     "confirmedPatient": true
   }
 ]
