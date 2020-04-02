@@ -30211,7 +30211,7 @@
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
     "notes": "Junior High School student",
-    "knownCluster": "Show Pub",
+    "knownCluster": "apartment",
     "prefecturePatientNumber": "Osaka #249",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30225,7 +30225,6 @@
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
     "notes": "Junior High School student",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #250",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30239,7 +30238,6 @@
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
     "notes": "Elementary School student",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #251",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30253,7 +30251,6 @@
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
     "notes": "Elementary School student",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #252",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30266,7 +30263,6 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #253",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30279,7 +30275,6 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #254",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30292,7 +30287,6 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #255",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30305,7 +30299,6 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #256",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30318,7 +30311,6 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #257",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30331,7 +30323,6 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #258",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30344,7 +30335,6 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #259",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30357,7 +30347,6 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #260",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30370,7 +30359,6 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #261",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30383,7 +30371,6 @@
     "residence": "Osaka",
     "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
-    "knownCluster": "Show Pub",
     "prefecturePatientNumber": "Osaka #262",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
@@ -30391,7 +30378,10 @@
   {
     "patientId": 2453,
     "dateAnnounced": "2020-04-01",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Osaka",
+    "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
     "prefecturePatientNumber": "Osaka #263",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
@@ -30400,24 +30390,36 @@
   {
     "patientId": 2454,
     "dateAnnounced": "2020-04-01",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Osaka",
+    "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #264",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
   },
   {
     "patientId": 2455,
     "dateAnnounced": "2020-04-01",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Osaka",
+    "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #265",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
   },
   {
     "patientId": 2456,
     "dateAnnounced": "2020-04-01",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Osaka",
+    "detectedCityTown": "Osaka",
     "detectedPrefecture": "Osaka",
+    "prefecturePatientNumber": "Osaka #266",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363071000.html",
     "confirmedPatient": true
   },
