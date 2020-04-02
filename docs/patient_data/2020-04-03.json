@@ -24618,6 +24618,7 @@
     "detectedCityTown": "Ichinomiya",
     "detectedPrefecture": "Aichi",
     "notes": "Relative of Kani cluster patient",
+    "prefecturePatientNumber": "Aichi#165",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356651000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
@@ -24630,6 +24631,7 @@
     "detectedCityTown": "Seto",
     "detectedPrefecture": "Aichi",
     "notes": "Husband also infected",
+    "prefecturePatientNumber": "Aichi#166",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200329/k10012356651000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": true
   },
@@ -30778,6 +30780,7 @@
     "detectedPrefecture": "Aichi",
     "notes": "Policeman",
     "prefecturePatientNumber": "Aichi#179",
+    "cityPrefectureNumber": " ",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363011000.html",
     "confirmedPatient": true
   },
@@ -33057,7 +33060,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 2653,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 40,
     "gender": "M",
@@ -33066,10 +33069,10 @@
     "detectedPrefecture": "Aichi",
     "cityPrefectureNumber": "Toyota#2",
     "sourceURL": "https://www.mhlw.go.jp/content/10906000/000617679.pdf",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 2654,
     "dateAnnounced": "2020-03-31",
     "ageBracket": 60,
     "gender": "M",
@@ -33078,6 +33081,91 @@
     "detectedPrefecture": "Aichi",
     "cityPrefectureNumber": "Toyota#3",
     "sourceURL": "https://www.mhlw.go.jp/content/10906000/000617679.pdf",
-    "confirmedPatient": false
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2655,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Nagoya",
+    "detectedCityTown": "Nagoya",
+    "detectedPrefecture": "Aichi",
+    "cityPrefectureNumber": "Nagoya#120",
+    "sourceURL": "http://www.city.nagoya.jp/kenkofukushi/cmsfiles/contents/0000126/126920/R20331kisyahappyou2.pdf",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2656,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Nagoya",
+    "detectedCityTown": "Nagoya",
+    "detectedPrefecture": "Aichi",
+    "cityPrefectureNumber": "Nagoya#121",
+    "sourceURL": "http://www.city.nagoya.jp/kenkofukushi/cmsfiles/contents/0000126/126920/R20331kisyahappyou2.pdf",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2657,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Nagoya",
+    "detectedCityTown": "Nagoya",
+    "detectedPrefecture": "Aichi",
+    "cityPrefectureNumber": "Nagoya#122",
+    "sourceURL": "http://www.city.nagoya.jp/kenkofukushi/cmsfiles/contents/0000126/126920/R20331kisyahappyou2.pdf",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2658,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Kita-Nagoya",
+    "detectedCityTown": "Kita-Nagoya",
+    "detectedPrefecture": "Aichi",
+    "prefecturePatientNumber": "Aichi#175",
+    "cityPrefectureNumber": " ",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200331.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2659,
+    "dateAnnounced": "2020-03-30",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Ichinomiya",
+    "detectedCityTown": "Ichinomiya",
+    "detectedPrefecture": "Aichi",
+    "prefecturePatientNumber": "Aichi#168",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200330.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2660,
+    "dateAnnounced": "2020-03-30",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Kita-Nagoya",
+    "detectedCityTown": "Kita-Nagoya",
+    "detectedPrefecture": "Aichi",
+    "prefecturePatientNumber": "Aichi#169",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200330.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2661,
+    "dateAnnounced": "2020-03-30",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Kita-Nagoya",
+    "detectedCityTown": "Kita-Nagoya",
+    "detectedPrefecture": "Aichi",
+    "prefecturePatientNumber": "Aichi#170",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200330.html",
+    "confirmedPatient": true
   }
 ]
