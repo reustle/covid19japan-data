@@ -25694,6 +25694,7 @@
     "detectedPrefecture": "Aichi",
     "patientStatus": "Hospitalized",
     "notes": "couple",
+    "cityPrefectureNumber": "Nagoya#118",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012358731000.html?utm_int=word_contents_list-items_042&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -25706,6 +25707,7 @@
     "detectedCityTown": "Kita-Nagoya",
     "detectedPrefecture": "Aichi",
     "patientStatus": "Hospitalized",
+    "cityPrefectureNumber": "Nagoya#119",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012358731000.html?utm_int=word_contents_list-items_042&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -33053,5 +33055,29 @@
     "prefecturePatientNumber": "Akita#6",
     "sourceURL": "https://www.pref.akita.lg.jp/uploads/public/archive_0000047957_00/R02.03.31%E3%80%80%E5%A0%B1%E9%81%93%E7%99%BA%E8%A1%A8%E8%B3%87%E6%96%99%EF%BC%886%E4%BE%8B%E7%9B%AE%EF%BC%89_.pdf",
     "confirmedPatient": true
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Toyota",
+    "detectedCityTown": "Toyota",
+    "detectedPrefecture": "Aichi",
+    "cityPrefectureNumber": "Toyota#2",
+    "sourceURL": "https://www.mhlw.go.jp/content/10906000/000617679.pdf",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Toyota",
+    "detectedCityTown": "Toyota",
+    "detectedPrefecture": "Aichi",
+    "cityPrefectureNumber": "Toyota#3",
+    "sourceURL": "https://www.mhlw.go.jp/content/10906000/000617679.pdf",
+    "confirmedPatient": false
   }
 ]
