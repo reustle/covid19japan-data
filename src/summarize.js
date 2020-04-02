@@ -215,7 +215,7 @@ const generateDailyStatsForPrefecture = (patients, firstDay) => {
   let daily = []
   while (day <= lastDay) {
     let dayString = day.format('YYYY-MM-DD')
-    let reports = _.filter(patients, o => { return o.dateAnnounced == dayString })
+    let reports = _.filter(patients, o => { return o.dateAnnounced == dayString && o.confirmedPatient})
     daily.push(reports.length)
     day = day.add(1, 'days')
   }
