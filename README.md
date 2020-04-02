@@ -161,7 +161,7 @@ data that we use to cross check and verify.
 
 |Prefecture/City    |Source    |
 |--------|----------|
-|Aichi    |[新型コロナウイルス感染症患者の発生について](https://www.pref.aichi.jp//soshiki/kenkotaisaku/novel-coronavirus.html)|
+|Aichi    | [新型コロナウイルス感染症患者の発生について](https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html) [Daily Aggregate](https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html) |
 |Aichi - Nagoya   |[新型コロナウイルス感染症患者の発生について](http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html) [Weekly Summary](http://www.city.nagoya.jp/kenkofukushi/page/0000101900.html)|
 |Akita    |[新型コロナウイルス感染症について](https://www.pref.akita.lg.jp/pages/archive/47957)|
 |Aomori    |[新型コロナウイルス感染症についての情報](http://www.pref.aomori.lg.jp/koho/coronavirus_index.html)|
