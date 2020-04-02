@@ -25656,6 +25656,7 @@
     "dateAnnounced": "2020-03-30",
     "ageBracket": 20,
     "gender": "F",
+    "residence": "Itami",
     "detectedPrefecture": "Hyogo",
     "notes": "Office worker",
     "prefecturePatientNumber": "Hyogo#135",
@@ -25667,9 +25668,10 @@
     "dateAnnounced": "2020-03-30",
     "ageBracket": 50,
     "gender": "F",
+    "residence": "Itami",
     "detectedPrefecture": "Hyogo",
     "notes": "Office worker",
-    "prefecturePatientNumber": "Hyogo#136",
+    "prefecturePatientNumber": "Hyogo#134",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012358741000.html?utm_int=word_contents_list-items_043&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -25678,11 +25680,11 @@
     "dateAnnounced": "2020-03-31",
     "ageBracket": 30,
     "gender": "M",
-    "residence": "Nishimiya",
+    "residence": "Nishinomiya",
     "detectedPrefecture": "Hyogo",
     "notes": "Doctor in 関西労災病院",
     "prefecturePatientNumber": "Hyogo#137",
-    "cityPrefectureNumber": "Nishimiya#9",
+    "cityPrefectureNumber": "Nishinomiya#9",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012358741000.html?utm_int=word_contents_list-items_043&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -28591,6 +28593,7 @@
     "detectedCityTown": "Kobe",
     "detectedPrefecture": "Hyogo",
     "notes": "Doctor",
+    "prefecturePatientNumber": "Hyogo#162",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012362101000.html?utm_int=word_contents_list-items_015&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -30540,7 +30543,7 @@
     "gender": "M",
     "residence": "Akashi",
     "detectedPrefecture": "Hyogo",
-    "prefecturePatientNumber": "Hyogo#1544",
+    "prefecturePatientNumber": "Hyogo#154",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
     "confirmedPatient": true
   },
@@ -30593,7 +30596,7 @@
   {
     "patientId": 2500,
     "dateAnnounced": "2020-04-01",
-    "ageBracket": -1,
+    "ageBracket": 60,
     "gender": "M",
     "residence": "Takarazuka",
     "detectedPrefecture": "Hyogo",
@@ -30605,11 +30608,11 @@
   {
     "patientId": 2501,
     "dateAnnounced": "2020-04-01",
-    "ageBracket": 60,
+    "ageBracket": 50,
     "gender": "F",
     "residence": "Takarazuka",
     "detectedPrefecture": "Hyogo",
-    "prefecturePatientNumber": "Hyogo#159",
+    "prefecturePatientNumber": "Hyogo#160",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
     "confirmedPatient": true
   },
@@ -30623,6 +30626,15 @@
     "notes": "Businessman",
     "prefecturePatientNumber": "Hyogo#161",
     "sourceURL": "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2503,
+    "dateAnnounced": "2020-04-02",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Yokohama",
+    "detectedPrefecture": "Kanagawa",
     "confirmedPatient": true
   }
 ]

@@ -730,7 +730,7 @@
       "name": "Hyogo"
     },
     {
-      "confirmed": 149,
+      "confirmed": 150,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 6,
@@ -835,10 +835,10 @@
         3,
         14,
         9,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 27,
       "name_ja": "神奈川県",
       "name": "Kanagawa"
@@ -5785,7 +5785,20 @@
       "confirmedCumulativeAvg3d": 2171,
       "confirmedAvg7d": 157,
       "confirmedCumulativeAvg7d": 1847
+    },
+    {
+      "confirmed": 1,
+      "recoveredCumulative": 472,
+      "deceasedCumulative": 62,
+      "criticalCumulative": 60,
+      "testedCumulative": 34508,
+      "date": "2020-04-02",
+      "confirmedCumulative": 2416,
+      "confirmedAvg3d": 149,
+      "confirmedCumulativeAvg3d": 2320,
+      "confirmedAvg7d": 144,
+      "confirmedCumulativeAvg7d": 1991
     }
   ],
-  "updated": "April 1 2020, 22:50 JST"
+  "updated": "April 2 2020, 11:21 JST"
 }
