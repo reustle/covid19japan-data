@@ -169,7 +169,7 @@ data that we use to cross check and verify.
 |Ehime    | [ 感染者の発生状況等について](https://www.pref.ehime.jp/h25500/kansen/covid19.html)|
 |Fukui    |[新型コロナウイルス感染症について](https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona.html)|
 |Fukuoka    | [福岡県内での発生状況](https://www.pref.fukuoka.lg.jp/contents/bukan.html) |
-|Fukushima    |[福島県内の新型コロナウイルス発生状況](https://www.pref.fukushima.lg.jp/sec/21045c/fukushima-hasseijyoukyou.html)|
+|Fukushima    |[福島県内の新型コロナウイルス発生状況](https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html)|
 |Gifu    | [新型コロナウイルス感染症の患者の発生について](https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.html)|
 |Gunma    |[新型コロナウイルス感染症について](https://www.pref.gunma.jp/07/z87g_00016.html)|
 |Hiroshima    | [患者の発生について](https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html)|
