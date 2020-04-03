@@ -33218,9 +33218,33 @@
   {
     "patientId": 2665,
     "dateAnnounced": "2020-04-02",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "unspecified",
     "detectedPrefecture": "Ishikawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012365411000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2666,
+    "dateAnnounced": "2020-04-02",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Gifu",
+    "detectedPrefecture": "Gifu",
+    "notes": "Working in a restaurant",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012365461000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2667,
+    "dateAnnounced": "2020-04-02",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Gifu",
+    "detectedPrefecture": "Gifu",
+    "notes": "Working in a restaurant",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012365461000.html",
     "confirmedPatient": true
   }
 ]
