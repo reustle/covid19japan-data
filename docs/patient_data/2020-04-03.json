@@ -33464,17 +33464,18 @@
     "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 2692,
     "dateAnnounced": "2020-04-02",
     "ageBracket": 20,
     "gender": "F",
     "residence": "Wakayama",
     "detectedCityTown": "Wakayama",
     "detectedPrefecture": "Wakayama",
-    "confirmedPatient": false
+    "sourceURL": "https://www3.nhk.or.jp/lnews/wakayama/20200402/2040005117.html",
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 2693,
     "dateAnnounced": "2020-04-02",
     "ageBracket": 60,
     "gender": "M",
@@ -33482,6 +33483,58 @@
     "detectedCityTown": "Wakayama",
     "detectedPrefecture": "Wakayama",
     "notes": "self-employed",
-    "confirmedPatient": false
+    "sourceURL": "https://www3.nhk.or.jp/lnews/wakayama/20200402/2040005117.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2694,
+    "dateAnnounced": "2020-04-03",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Wakayama",
+    "detectedCityTown": "Wakayama",
+    "detectedPrefecture": "Wakayama",
+    "notes": "daughter of #2693",
+    "sourceURL": "https://www3.nhk.or.jp/lnews/wakayama/20200403/2040005127.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2695,
+    "dateAnnounced": "2020-04-02",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Toyama",
+    "detectedCityTown": "Toyama",
+    "detectedPrefecture": "Toyama",
+    "notes": "caretaker",
+    "prefecturePatientNumber": "Toyama#6",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200402/k10012364071000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2696,
+    "dateAnnounced": "2020-04-02",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Toyama",
+    "detectedCityTown": "Toyama",
+    "detectedPrefecture": "Toyama",
+    "notes": "office worker",
+    "prefecturePatientNumber": "Toyama#7",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200402/k10012364071000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2697,
+    "dateAnnounced": "2020-04-02",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Toyama",
+    "detectedCityTown": "Toyama",
+    "detectedPrefecture": "Toyama",
+    "notes": "works at employment service center",
+    "prefecturePatientNumber": "Toyama#8",
+    "sourceURL": "https://www3.nhk.or.jp/lnews/toyama/20200402/3060004137.html",
+    "confirmedPatient": true
   }
 ]
