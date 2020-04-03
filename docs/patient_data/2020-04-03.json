@@ -34863,7 +34863,7 @@
     "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 2824,
     "dateAnnounced": "2020-04-01",
     "ageBracket": 30,
     "gender": "F",
@@ -34873,10 +34873,10 @@
     "notes": "works at city hall",
     "prefecturePatientNumber": "Nagasaki#5",
     "sourceURL": "http://www.ktn.co.jp/news/20200401012/",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 2825,
     "dateAnnounced": "2020-04-02",
     "ageBracket": 20,
     "gender": "M",
@@ -34885,10 +34885,10 @@
     "detectedPrefecture": "Nagasaki",
     "prefecturePatientNumber": "Nagasaki#6",
     "sourceURL": "https://www.saga-s.co.jp/articles/-/508126",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 2826,
     "dateAnnounced": "2020-04-02",
     "ageBracket": 40,
     "gender": "M",
@@ -34897,10 +34897,10 @@
     "detectedPrefecture": "Nagasaki",
     "prefecturePatientNumber": "Nagasaki#7",
     "sourceURL": "https://www.saga-s.co.jp/articles/-/508127",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 2827,
     "dateAnnounced": "2020-04-02",
     "ageBracket": -1,
     "residence": "Unspecified",
@@ -34908,6 +34908,30 @@
     "detectedPrefecture": "Nagasaki",
     "prefecturePatientNumber": "Nagasaki#8",
     "sourceURL": "https://www.saga-s.co.jp/articles/-/508128",
-    "confirmedPatient": false
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2828,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Higashi Ward, Fukuoka, Fukuoka",
+    "detectedCityTown": "Fukuoka City",
+    "detectedPrefecture": "Fukuoka",
+    "prefecturePatientNumber": "Fukuoka#33",
+    "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0331",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2829,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Saraku, Fukuoka, Fukuoka",
+    "detectedCityTown": "Fukuoka City",
+    "detectedPrefecture": "Fukuoka",
+    "prefecturePatientNumber": "Fukuoka#34",
+    "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0331",
+    "confirmedPatient": true
   }
 ]
