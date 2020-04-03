@@ -35672,8 +35672,13 @@
   {
     "patientId": 2911,
     "dateAnnounced": "2020-04-03",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "TODO",
+    "detectedCityTown": "TODO",
     "detectedPrefecture": "Fukushima",
+    "prefecturePatientNumber": "Fukushima#9",
+    "sourceURL": "https://www.pref.fukushima.lg.jp/sec/21045c/fukushima-hasseijyoukyou.html",
     "confirmedPatient": true
   },
   {
@@ -37262,7 +37267,11 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 20,
     "gender": "M",
+    "residence": "Chubu",
+    "detectedCityTown": "Chubu",
     "detectedPrefecture": "Okinawa",
+    "notes": "Contact with Family outside of Okinawa who tested positive",
+    "prefecturePatientNumber": "Okinawa#10",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012366811000.html",
     "confirmedPatient": true
   },
@@ -37271,7 +37280,11 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 30,
     "gender": "M",
+    "residence": "Tokyo",
+    "detectedCityTown": "Naha",
     "detectedPrefecture": "Okinawa",
+    "notes": "Lives in Tokyo",
+    "prefecturePatientNumber": "Okinawa#11",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012366811000.html",
     "confirmedPatient": true
   },
