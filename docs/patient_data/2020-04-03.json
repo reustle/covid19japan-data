@@ -6355,6 +6355,7 @@
     "notes": "Cruise passenger",
     "knownCluster": "Cruise Disembarked Passenger",
     "mhlwPatientNumber": "385",
+    "prefecturePatientNumber": "Fukushima#1",
     "prefectureSourceURL": "https://www.pref.fukushima.lg.jp/uploaded/attachment/373954.pdf",
     "cruisePassengerDisembarked": true,
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200307/k10012319381000.html?utm_int=news-new_contents_list-items_002",
@@ -10762,6 +10763,8 @@
     "detectedCityTown": "Koriyama",
     "detectedPrefecture": "Fukushima",
     "notes": "Back from Egypt, symptom from 3/1",
+    "prefecturePatientNumber": "Fukushima#2",
+    "prefectureSourceURL": "https://www.pref.fukushima.lg.jp/uploaded/attachment/375483.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200314/k10012331561000.html?utm_int=word_contents_list-items_022&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -32554,6 +32557,7 @@
     "gender": "F",
     "residence": "Minamisoma",
     "detectedPrefecture": "Fukushima",
+    "prefecturePatientNumber": "Fukushima#7",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200402/k10012365221000.html",
     "confirmedPatient": true
   },
@@ -32564,6 +32568,7 @@
     "gender": "F",
     "residence": "Sukagawa",
     "detectedPrefecture": "Fukushima",
+    "prefecturePatientNumber": "Fukushima#8",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200402/k10012365221000.html",
     "confirmedPatient": true
   },
@@ -33297,8 +33302,12 @@
   {
     "patientId": 2669,
     "dateAnnounced": "2020-04-03",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Niihama",
     "detectedPrefecture": "Ehime",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Ehime#8",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012366191000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
@@ -34456,6 +34465,84 @@
     "notes": "American stayed in their house",
     "prefecturePatientNumber": "Ehime#7-2",
     "sourceURL": "https://www.pref.ehime.jp/h25500/kansen/documents/0402press.pdf",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2802,
+    "dateAnnounced": "2020-04-01",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Yashio",
+    "detectedPrefecture": "Saitama",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2803,
+    "dateAnnounced": "2020-04-01",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Kawaguchi",
+    "detectedPrefecture": "Saitama",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2804,
+    "dateAnnounced": "2020-04-01",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Fujimino",
+    "detectedPrefecture": "Saitama",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2805,
+    "dateAnnounced": "2020-03-31",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Wakou",
+    "detectedPrefecture": "Saitama",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2806,
+    "dateAnnounced": "2020-04-01",
+    "ageBracket": 70,
+    "gender": "F",
+    "residence": "Fukushima",
+    "detectedCityTown": "Fukushima",
+    "detectedPrefecture": "Fukushima",
+    "prefecturePatientNumber": "Fukushima#5",
+    "sourceURL": "https://www.pref.fukushima.lg.jp/uploaded/attachment/379442.pdf",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2807,
+    "dateAnnounced": "2020-04-01",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Soso",
+    "detectedCityTown": "Soso",
+    "detectedPrefecture": "Fukushima",
+    "prefecturePatientNumber": "Fukushima#6",
+    "sourceURL": "https://www.pref.fukushima.lg.jp/uploaded/attachment/379443.pdf",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2808,
+    "dateAnnounced": "2020-04-02",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Kawaguchi",
+    "detectedPrefecture": "Saitama",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2809,
+    "dateAnnounced": "2020-04-02",
+    "ageBracket": 70,
+    "gender": "F",
+    "residence": "Kawaguchi",
+    "detectedPrefecture": "Saitama",
     "confirmedPatient": true
   }
 ]
