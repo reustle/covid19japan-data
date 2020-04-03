@@ -34943,6 +34943,7 @@
     "detectedCityTown": "Osaki ",
     "detectedPrefecture": "Miyagi",
     "notes": "Doctor",
+    "prefecturePatientNumber": "Miyagi#10",
     "sourceURL": "https://www.pref.miyagi.jp/site/covid-19/02.html",
     "confirmedPatient": true
   },
@@ -34954,6 +34955,7 @@
     "residence": "Sendai",
     "detectedCityTown": "Sendai",
     "detectedPrefecture": "Miyagi",
+    "prefecturePatientNumber": "Miyagi#11",
     "sourceURL": "https://www.pref.miyagi.jp/site/covid-19/02.html",
     "confirmedPatient": true
   },
@@ -34965,7 +34967,30 @@
     "residence": "Sendai",
     "detectedCityTown": "Sendai",
     "detectedPrefecture": "Miyagi",
+    "prefecturePatientNumber": "Miyagi#12",
     "sourceURL": "https://www.pref.miyagi.jp/site/covid-19/02.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2833,
+    "dateAnnounced": "2020-04-01",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Iga city",
+    "detectedPrefecture": "Mie",
+    "prefecturePatientNumber": "Mie#12",
+    "sourceURL": "https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000071_00028.htm",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 2834,
+    "dateAnnounced": "2020-04-02",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Kuwana",
+    "detectedPrefecture": "Mie",
+    "prefecturePatientNumber": "Mie#13",
+    "sourceURL": "https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000071_00031.htm",
     "confirmedPatient": true
   }
 ]
