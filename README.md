@@ -4,6 +4,9 @@
 
 This repository contains the JSON export of the [Live Japan Patient Database (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/e/2PACX-1vRri4r42DHwMHePjJfYN-qEWhGvKeOQullBtEzfle15i-xAsm9ZgV8oMxQNhPRO1CId39BPnn1IO5YO/pubhtml) that supports [covid19japan.com](https://covid19japan.com). You can find more details about contributing to the sheet [in this document](https://docs.google.com/document/d/1JbQn10KvmYYUHCPa7LObsUCG1m_tVY-S4BrchzRMzBI/edit).
 
+ * [Data Formats](#data-formats)
+ * [Data Sources](#data-sources)
+
 
 ## Data Formats
 
@@ -159,10 +162,10 @@ data that we use to cross check and verify.
 
 **Prefecture-specific Data**
 
-|Prefecture/City    | Patients Source    | Dashboard |
-|--------|----------|----------|
-|Aichi    | [新型コロナウイルス感染症患者の発生について](https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html) [Daily Aggregate](https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html) ||
-|Aichi - Nagoya   |[新型コロナウイルス感染症患者の発生について](http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html) [Weekly Summary](http://www.city.nagoya.jp/kenkofukushi/page/0000101900.html)||
+|Prefecture/City    | Patients Source    | Dashboard | Notes |
+|--------|----------|----------|------|
+|Aichi    | [新型コロナウイルス感染症患者の発生について](https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html)  | [Daily Aggregate](https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html)|
+|Aichi - Nagoya   |[新型コロナウイルス感染症患者の発生について](http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html)|  [Weekly Summary](http://www.city.nagoya.jp/kenkofukushi/page/0000101900.html)|
 |Akita    |[新型コロナウイルス感染症について](https://www.pref.akita.lg.jp/pages/archive/47957)||
 |Aomori    |[新型コロナウイルス感染症についての情報](http://www.pref.aomori.lg.jp/koho/coronavirus_index.html)||
 |Chiba    |[患者の発生について｜新型コロナウイルス感染症](https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html)||
@@ -186,21 +189,21 @@ data that we use to cross check and verify.
 |Kanagawa - Funabashi   |[市内で新型コロナウイルス感染症患者](https://www.city.funabashi.lg.jp/kenkou/kansenshou/001/index.html)||
 |Kagoshima    |[新型コロナウイルス感染症に関する情報](https://www.pref.kagoshima.jp/ae06/kenko-fukushi/kenko-iryo/kansen/kansensho/coronavirus.html)||
 |Kochi    | [高知県における新型コロナウイルス感染症患者の発生状況について](https://www.pref.kochi.lg.jp/soshiki/130401/2020022900049.html) [PCR](https://www.pref.kochi.lg.jp/soshiki/130120/2020030400166.html)||
-|Kumamoto    | [新型コロナウイルス感染症](https://www.pref.kumamoto.jp/kiji_30386.html) |
+|Kumamoto    | [新型コロナウイルス感染症](https://www.pref.kumamoto.jp/kiji_30386.html) || Does not number their patients |
 |Kumamoto - Kumamoto City   | [新型コロナウイルス感染症について](http://www.city.kumamoto.jp/hpkiji/pub/detail.aspx?c_id=5&id=26562) ||
 |Kyoto    |[新型コロナウイルス感染症の患者の発生について](https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F)|
 |Mie    |[新型コロナウイルス感染症に関連した肺炎患者の発生について](https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066.htm)||
 |Miyagi    | [県内における発生状況等について](https://www.pref.miyagi.jp/soshiki/hohusom/covid-19.html)||
 |Miyazaki    |[新型コロナウイルス感染症患者](https://www.pref.miyazaki.lg.jp/kenko/hoken/kansensho/index.html)||
 |Nagano    | [新型コロナウイルス感染症に係る検査状況について](https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/bukan-haien.html#kennsajoukyou)||
-|Nara    |[新型コロナウイルス感染症の患者の発生について](http://www.pref.nara.jp/module/1356.htm#moduleid1356) (Note, inconsistent recording of asymptomatic vs symptomatic)||
+|Nara    |[新型コロナウイルス感染症の患者の発生について](http://www.pref.nara.jp/module/1356.htm#moduleid1356) || Inconsistent recording of asymptomatic vs symptomatic |
 |Nagasaki    | [長崎県内の発生状況](https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/#hassei)||
 |Niigata    | [県内における感染者の発生について](https://www.pref.niigata.lg.jp/sec/kikitaisaku/shingata-corona.html#hasseijoukyou)||
 |Oita    |[新型コロナウイルスに関するお知らせ](http://www.pref.oita.jp/site/bosaianzen/shingatacorona.html)||
 |Oita - Oita City | [大分市における新たな新型コロナウイルス感染症患者の発生について](https://www.city.oita.oita.jp/kenko/iryo/kansensho/index.html) ||
 |Okayama    |[新型コロナウイルス感染症について](https://www.pref.okayama.jp/page/645925.html)||
-|Okinawa    |  ([Patients](https://www.pref.okinawa.lg.jp/site/hoken/chiikihoken/kekkaku/press/20200214_covid19_pr1.html))|[患者の発生について](https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/2019-ncov.html)|
-|Osaka    | [新型コロナウイルス感染症について](http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html)||
+|Okinawa    | [Patients](https://www.pref.okinawa.lg.jp/site/hoken/chiikihoken/kekkaku/press/20200214_covid19_pr1.html)|[患者の発生について](https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/2019-ncov.html)| Up to date |
+|Osaka    | [新型コロナウイルス感染症について](http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html)|| Usually few days behind |
 |Saga    | [佐賀県の新型コロナウイルス感染症の状況（事実と異なる情報や噂にご注意ください](https://www.pref.saga.lg.jp/kiji00373220/index.html) ||
 |Saitama    |[記者発表資料](https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html) |[Dashboard](https://saitama.stopcovid19.jp/)|
 |Shiga    | [新型コロナウイルス感染症患者の発生状況](https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/310735.html)||
