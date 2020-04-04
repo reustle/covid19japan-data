@@ -151,7 +151,10 @@ The Ministry of Health, Labour and Welfare (MHLW) produces several sources of
 data that we use to cross check and verify.
 
  * [MHLW COVID19 Information Page (新型コロナウイルス感染症について)](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html)
- * MHLW COVID19 Daily Press Releases: [3/2020](https://www.mhlw.go.jp/stf/houdou/houdou_list_202003.html) [2/2020](https://www.mhlw.go.jp/stf/houdou/houdou_list_202002.html). The most important document is the Patient Detail Updates (新型コロナウイルスに関連した患者の発生について) that list patient information linking to prefectural government reports.
+ * [MHLW COVID19 Daily Press Releases](https://www.mhlw.go.jp/stf/houdou/index.html): The most important document is the Patient Detail Updates (新型コロナウイルスに関連した患者の発生について) that list patient information linking to prefectural government reports.
+   * [4/2020](https://www.mhlw.go.jp/stf/houdou/houdou_list_202004.html) 
+   * [3/2020](https://www.mhlw.go.jp/stf/houdou/houdou_list_202003.html) 
+   * [2/2020](https://www.mhlw.go.jp/stf/houdou/houdou_list_202002.html). 
  * [MHLW COVID19 Daily Summaries](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00086.html) including aggregate counts and per-prefecture information.
 
  NHK News is the most comprehensive and standardized reporting of infection cases per prefecture as well as a daily sum up every evening.
