@@ -28853,6 +28853,7 @@
     "residence": "Bibai",
     "detectedCityTown": "Bibai",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#178",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012362811000.html?utm_int=word_contents_list-items_047&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -28864,6 +28865,7 @@
     "residence": "Kamikawa",
     "detectedCityTown": "Kamikawa",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#180",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012362811000.html?utm_int=word_contents_list-items_047&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
@@ -28875,7 +28877,8 @@
     "residence": "Nakafurano",
     "detectedCityTown": "Nakafurano",
     "detectedPrefecture": "Hokkaido",
-    "notes": "Confirmed on 2/28, Re-infected on 4/1",
+    "notes": "Same person as Hokkaido#59 Re-infected on 4/1",
+    "prefecturePatientNumber": "Hokkaido#179",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012362811000.html?utm_int=word_contents_list-items_047&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": false
   },
@@ -28887,6 +28890,7 @@
     "residence": "Okhotsk",
     "detectedCityTown": "Okhotsk",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#181",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012362811000.html?utm_int=word_contents_list-items_047&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
     "confirmedPatient": true
   },
@@ -28896,6 +28900,7 @@
     "gender": "M",
     "residence": "Kanagawa",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#182",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012362811000.html?utm_int=word_contents_list-items_047&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B13",
     "confirmedPatient": true
   },
@@ -32312,24 +32317,33 @@
   {
     "patientId": 2623,
     "dateAnnounced": "2020-04-02",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#183",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200402/k10012364781000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": 2624,
     "dateAnnounced": "2020-04-02",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Kushiro",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#184",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200402/k10012364781000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": 2625,
     "dateAnnounced": "2020-04-02",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Kushiro",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#185",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200402/k10012364781000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -35422,24 +35436,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": 2872,
-    "dateAnnounced": "2020-04-03",
-    "ageBracket": 20,
-    "gender": "M",
-    "detectedPrefecture": "Chiba",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367451000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": 2873,
-    "dateAnnounced": "2020-04-03",
-    "ageBracket": 60,
-    "gender": "M",
-    "detectedPrefecture": "Chiba",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367451000.html",
-    "confirmedPatient": true
-  },
-  {
     "patientId": 2874,
     "dateAnnounced": "2020-04-03",
     "ageBracket": 40,
@@ -36128,7 +36124,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 40,
     "gender": "M",
+    "residence": "Ishikari",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#186",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367091000.html",
     "confirmedPatient": true
   },
@@ -36137,7 +36135,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 50,
     "gender": "M",
+    "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#189",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367091000.html",
     "confirmedPatient": true
   },
@@ -36145,7 +36145,9 @@
     "patientId": 2939,
     "dateAnnounced": "2020-04-03",
     "ageBracket": -1,
+    "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#188",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367091000.html",
     "confirmedPatient": true
   },
@@ -36154,7 +36156,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 40,
     "gender": "M",
+    "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#190",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367091000.html",
     "confirmedPatient": true
   },
@@ -36163,29 +36167,37 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 90,
     "gender": "M",
+    "residence": "Kushiro",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#187",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367091000.html",
     "confirmedPatient": true
   },
   {
     "patientId": 2942,
-    "dateAnnounced": "2020-04-03",
-    "ageBracket": -1,
+    "dateAnnounced": "2020-03-30",
+    "ageBracket": 30,
+    "gender": "F",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#177",
     "confirmedPatient": true
   },
   {
-    "patientId": 2943,
+    "patientId": 2872,
     "dateAnnounced": "2020-04-03",
-    "ageBracket": -1,
-    "detectedPrefecture": "Hokkaido",
+    "ageBracket": 20,
+    "gender": "M",
+    "detectedPrefecture": "Chiba",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367451000.html",
     "confirmedPatient": true
   },
   {
-    "patientId": 2944,
+    "patientId": 2873,
     "dateAnnounced": "2020-04-03",
-    "ageBracket": -1,
-    "detectedPrefecture": "Hokkaido",
+    "ageBracket": 60,
+    "gender": "M",
+    "detectedPrefecture": "Chiba",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367451000.html",
     "confirmedPatient": true
   },
   {
