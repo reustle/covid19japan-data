@@ -33450,13 +33450,14 @@
   },
   {
     "patientId": 2709,
-    "dateAnnounced": "2020-04-02",
+    "dateAnnounced": "2020-03-29",
     "ageBracket": 20,
     "gender": "M",
     "detectedCityTown": "Narita airport",
     "detectedPrefecture": "Port Quarantine",
     "notes": "France",
     "prefecturePatientNumber": "Port#61",
+    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10673.html",
     "confirmedPatient": true
   },
@@ -39179,6 +39180,58 @@
     "residence": "Shinjo",
     "detectedPrefecture": "Yamagata",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368411000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3154,
+    "dateAnnounced": "2020-04-01",
+    "ageBracket": -1,
+    "gender": "M",
+    "detectedCityTown": "Haneda Airport",
+    "detectedPrefecture": "Port Quarantine",
+    "notes": "Arrival from Europe",
+    "prefecturePatientNumber": "Port#62",
+    "detectedAtPort": false,
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10689.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3155,
+    "dateAnnounced": "2020-04-01",
+    "ageBracket": 30,
+    "gender": "M",
+    "detectedCityTown": "Haneda Airport",
+    "detectedPrefecture": "Port Quarantine",
+    "notes": "Arrival from Europe",
+    "prefecturePatientNumber": "Port#63",
+    "detectedAtPort": false,
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10689.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3156,
+    "dateAnnounced": "2020-04-01",
+    "ageBracket": 30,
+    "gender": "F",
+    "detectedCityTown": "Haneda Airport",
+    "detectedPrefecture": "Port Quarantine",
+    "notes": "Arrival from Europe",
+    "prefecturePatientNumber": "Port#64",
+    "detectedAtPort": false,
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10689.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3157,
+    "dateAnnounced": "2020-04-01",
+    "ageBracket": 20,
+    "gender": "F",
+    "detectedCityTown": "Haneda Airport",
+    "detectedPrefecture": "Port Quarantine",
+    "notes": "Arrival from Europe",
+    "prefecturePatientNumber": "Port#65",
+    "detectedAtPort": false,
+    "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10689.html",
     "confirmedPatient": true
   }
 ]
