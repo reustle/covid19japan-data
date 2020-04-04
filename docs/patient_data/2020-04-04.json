@@ -36006,7 +36006,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 10,
     "gender": "M",
+    "residence": "Ichikawa",
     "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#136",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367451000.html",
     "confirmedPatient": true
   },
@@ -36015,7 +36017,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 40,
     "gender": "M",
+    "residence": "Urayasu",
     "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#137",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367451000.html",
     "confirmedPatient": true
   },
@@ -36024,7 +36028,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 50,
     "gender": "M",
+    "residence": "Matsudo",
     "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#138",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367451000.html",
     "confirmedPatient": true
   },
@@ -36033,7 +36039,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 30,
     "gender": "M",
+    "residence": "Matsudo",
     "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#139",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367451000.html",
     "confirmedPatient": true
   },
@@ -36042,7 +36050,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 20,
     "gender": "M",
+    "residence": "Inba",
     "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#140",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367451000.html",
     "confirmedPatient": true
   },
@@ -36051,7 +36061,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 20,
     "gender": "M",
+    "residence": "Inba",
     "detectedPrefecture": "Chiba",
+    "prefecturePatientNumber": "Chiba#141",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367451000.html",
     "confirmedPatient": true
   },
@@ -36090,6 +36102,7 @@
     "gender": "F",
     "detectedCityTown": "Chiba City",
     "detectedPrefecture": "Chiba",
+    "cityPrefectureNumber": "Chiba city#5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367461000.html",
     "confirmedPatient": true
   },
@@ -36100,6 +36113,7 @@
     "gender": "F",
     "detectedCityTown": "Chiba City",
     "detectedPrefecture": "Chiba",
+    "cityPrefectureNumber": "Chiba city#6",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367461000.html",
     "confirmedPatient": true
   },
@@ -36110,6 +36124,7 @@
     "gender": "F",
     "detectedCityTown": "Chiba City",
     "detectedPrefecture": "Chiba",
+    "cityPrefectureNumber": "Chiba city#7",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367461000.html",
     "confirmedPatient": true
   },
@@ -36136,17 +36151,23 @@
   {
     "patientId": 2882,
     "dateAnnounced": "2020-04-03",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Chōsei",
     "detectedPrefecture": "Chiba",
-    "notes": "Needs verification ",
+    "prefecturePatientNumber": "Chiba#142",
+    "sourceURL": "https://www.mhlw.go.jp/content/10906000/000618939.pdf",
     "confirmedPatient": true
   },
   {
     "patientId": 2883,
     "dateAnnounced": "2020-04-03",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Minamiboso",
     "detectedPrefecture": "Chiba",
-    "notes": "Needs verification ",
+    "prefecturePatientNumber": "Chiba#143",
+    "sourceURL": "https://www.mhlw.go.jp/content/10906000/000618939.pdf",
     "confirmedPatient": true
   },
   {
@@ -39008,7 +39029,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
   {
@@ -39016,6 +39039,146 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-03",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-03",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-03",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-03",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-03",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-03",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-03",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-03",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-03",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "18 Deaths in Tokyo until 4/3",
+    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": 3149,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Shinjo",
+    "detectedPrefecture": "Yamagata",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368411000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3150,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Shinjo",
+    "detectedPrefecture": "Yamagata",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368411000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3151,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Shinjo",
+    "detectedPrefecture": "Yamagata",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368411000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3152,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 10,
+    "residence": "Shinjo",
+    "detectedPrefecture": "Yamagata",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368411000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3153,
+    "dateAnnounced": "2020-04-04",
+    "residence": "Shinjo",
+    "detectedPrefecture": "Yamagata",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368411000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
   }
 ]
