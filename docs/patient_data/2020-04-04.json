@@ -35971,8 +35971,10 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 20,
     "gender": "M",
+    "residence": "Inazawa",
     "detectedPrefecture": "Aichi",
     "notes": "Police",
+    "prefecturePatientNumber": "Aichi#191",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367711000.html",
     "confirmedPatient": true
   },
@@ -35981,8 +35983,10 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 20,
     "gender": "M",
+    "residence": "Higashiura, Chita",
     "detectedPrefecture": "Aichi",
     "notes": "Police",
+    "prefecturePatientNumber": "Aichi#193",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367711000.html",
     "confirmedPatient": true
   },
@@ -35991,8 +35995,10 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 30,
     "gender": "M",
+    "residence": "Tokoname",
     "detectedPrefecture": "Aichi",
     "notes": "Police",
+    "prefecturePatientNumber": "Aichi#194",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367711000.html",
     "confirmedPatient": true
   },
@@ -36001,8 +36007,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 40,
     "gender": "M",
+    "residence": "Seto",
     "detectedPrefecture": "Aichi",
-    "notes": "Police",
+    "prefecturePatientNumber": "Aichi#192",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367711000.html",
     "confirmedPatient": true
   },
@@ -38955,6 +38962,19 @@
     "confirmedPatient": true
   },
   {
+    "patientId": 3141,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Tokai",
+    "detectedPrefecture": "Aichi",
+    "patientStatus": "Hospitalized",
+    "notes": "No Symptoms, Police",
+    "prefecturePatientNumber": "Aichi#195",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200403.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": 3142,
     "dateAnnounced": "2020-04-04",
     "ageBracket": 50,
@@ -41112,43 +41132,111 @@
     "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 3357,
     "dateAnnounced": "2020-04-04",
     "ageBracket": 40,
     "gender": "M",
     "residence": "Sagamihara",
     "detectedPrefecture": "Kanagawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368761000.html",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 3358,
     "dateAnnounced": "2020-04-04",
     "ageBracket": 30,
     "gender": "M",
     "residence": "Sagamihara",
     "detectedPrefecture": "Kanagawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368761000.html",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 3359,
     "dateAnnounced": "2020-04-04",
     "ageBracket": 20,
     "gender": "F",
     "residence": "Sagamihara",
     "detectedPrefecture": "Kanagawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368761000.html",
-    "confirmedPatient": false
+    "confirmedPatient": true
   },
   {
-    "patientId": -1,
+    "patientId": 3360,
     "dateAnnounced": "2020-04-04",
     "ageBracket": 50,
     "gender": "M",
     "residence": "Sagamihara",
     "detectedPrefecture": "Kanagawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368761000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3361,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Sendai",
+    "detectedPrefecture": "Miyagi",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368781000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3362,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Sendai",
+    "detectedPrefecture": "Miyagi",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368781000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "永寿総合病院 patient",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "永寿総合病院 patient",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "永寿総合病院 patient",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   }
 ]
