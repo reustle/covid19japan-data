@@ -20056,7 +20056,7 @@
     "detectedCityTown": "Tsukubamirai",
     "detectedPrefecture": "Ibaraki",
     "notes": "Critical condition",
-    "knownCluster": "ＪＡとりで総合医療センター",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "prefecturePatientNumber": "Ibaraki#12",
     "prefectureSourceURL": "https://www.pref.ibaraki.jp/1saigai/2019-ncov/documents/032712.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012354001000.html?utm_int=word_contents_list-items_039&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
@@ -23081,7 +23081,7 @@
     "detectedCityTown": "Tsukuba Mirai",
     "detectedPrefecture": "Ibaraki",
     "notes": "No symptoms",
-    "knownCluster": "JAとりで総合医療センター",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "prefecturePatientNumber": "Ibaraki#14",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355841000.html",
     "confirmedPatient": true
@@ -23094,7 +23094,7 @@
     "residence": "Tsukuba",
     "detectedCityTown": "Tsukuba",
     "detectedPrefecture": "Ibaraki",
-    "knownCluster": "JAとりで総合医療センター",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "prefecturePatientNumber": "Ibaraki#16",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355841000.html",
     "confirmedPatient": true
@@ -25698,7 +25698,7 @@
     "residence": "Toride",
     "detectedCityTown": "Toride",
     "detectedPrefecture": "Ibaraki",
-    "knownCluster": "JA Toride Medical Center ",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "prefecturePatientNumber": "Ibaraki#19",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200330/k10012358701000.html?utm_int=word_contents_list-items_045&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -25711,7 +25711,7 @@
     "residence": "Moriya",
     "detectedCityTown": "Moriya",
     "detectedPrefecture": "Ibaraki",
-    "knownCluster": "JA Toride Medical Center ",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "prefecturePatientNumber": "Ibaraki#20",
     "prefectureSourceURL": "#REF!",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200330/k10012358701000.html?utm_int=word_contents_list-items_045&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
@@ -27846,42 +27846,52 @@
     "gender": "M",
     "residence": "Tokyo",
     "detectedPrefecture": "Ibaraki",
+    "prefecturePatientNumber": "Ibaraki#21",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360961000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": 2225,
     "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "M",
     "residence": "Tsukuba",
     "detectedCityTown": "Tsukuba",
     "detectedPrefecture": "Ibaraki",
+    "patientStatus": "Hospitalized",
     "notes": "Tsukuba care center",
-    "knownCluster": "Tsukuba care center",
+    "knownCluster": "Tsukuba adult day care center (アレーテル・つくば)",
+    "prefecturePatientNumber": "Ibaraki#22",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360961000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
   {
     "patientId": 2226,
     "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
-    "residence": "Tsukuba",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Sakuragawa",
     "detectedCityTown": "Tsukuba",
     "detectedPrefecture": "Ibaraki",
+    "patientStatus": "Hospitalized",
     "notes": "Tsukuba care center",
-    "knownCluster": "Tsukuba care center",
+    "knownCluster": "Tsukuba adult day care center (アレーテル・つくば)",
+    "prefecturePatientNumber": "Ibaraki#23",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360961000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": true
   },
   {
     "patientId": 2227,
     "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "residence": "Tsukuba",
     "detectedCityTown": "Tsukuba",
     "detectedPrefecture": "Ibaraki",
-    "notes": "Tsukuba care center",
-    "knownCluster": "Tsukuba care center",
+    "patientStatus": "Hospitalized",
+    "notes": "Foreigner",
+    "knownCluster": "Tsukuba adult day care center (アレーテル・つくば)",
+    "prefecturePatientNumber": "Ibaraki#24",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360961000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
     "confirmedPatient": true
   },
@@ -30037,8 +30047,10 @@
   {
     "patientId": 2403,
     "dateAnnounced": "2020-04-01",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
     "detectedPrefecture": "Ibaraki",
+    "prefecturePatientNumber": "Ibaraki#43",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30047,6 +30059,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "Tsukuba adult day care center (アレーテル・つくば)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30055,6 +30068,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "Tsukuba adult day care center (アレーテル・つくば)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30063,6 +30077,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "Tsukuba adult day care center (アレーテル・つくば)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30071,6 +30086,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "Tsukuba adult day care center (アレーテル・つくば)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30079,6 +30095,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "Tsukuba adult day care center (アレーテル・つくば)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30087,6 +30104,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30095,6 +30113,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30103,6 +30122,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30111,6 +30131,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30119,6 +30140,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
@@ -30127,6 +30149,7 @@
     "dateAnnounced": "2020-04-01",
     "ageBracket": -1,
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "JA Toride Medical Center (ＪＡとりで総合医療センター)",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012363191000.html?utm_int=news-new_contents_list-items_005",
     "confirmedPatient": true
   },
