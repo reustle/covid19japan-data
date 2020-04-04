@@ -348,8 +348,8 @@
         3,
         14,
         28,
-        14,
-        31,
+        26,
+        19,
         16
       ],
       "dailyConfirmedStartDate": "2020-01-08",
@@ -1339,7 +1339,7 @@
       "name": "Port Quarantine"
     },
     {
-      "confirmed": 54,
+      "confirmed": 59,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 2,
@@ -1352,7 +1352,8 @@
         "Tsukubamirai": 1,
         "Tsukuba Mirai": 2,
         "Toride": 1,
-        "Moriya": 1
+        "Moriya": 1,
+        "Koga": 2
       },
       "dailyConfirmedCount": [
         0,
@@ -1442,10 +1443,10 @@
         19,
         1,
         10,
-        0
+        5
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 5,
       "recovered": 2,
       "name_ja": "茨城県",
       "name": "Ibaraki"
@@ -5916,20 +5917,20 @@
       "confirmedCumulativeAvg7d": 1875
     },
     {
-      "confirmed": 260,
+      "confirmed": 272,
       "recoveredCumulative": 505,
       "deceasedCumulative": 62,
       "criticalCumulative": 62,
       "testedCumulative": 34510,
       "date": "2020-04-02",
-      "confirmedCumulative": 2783,
-      "confirmedAvg3d": 266,
-      "confirmedCumulativeAvg3d": 2490,
-      "confirmedAvg7d": 195,
-      "confirmedCumulativeAvg7d": 2070
+      "confirmedCumulative": 2795,
+      "confirmedAvg3d": 270,
+      "confirmedCumulativeAvg3d": 2494,
+      "confirmedAvg7d": 197,
+      "confirmedCumulativeAvg7d": 2072
     },
     {
-      "confirmed": 339,
+      "confirmed": 327,
       "recoveredCumulative": 514,
       "deceasedCumulative": 64,
       "criticalCumulative": 64,
@@ -5937,23 +5938,23 @@
       "date": "2020-04-03",
       "confirmedCumulative": 3122,
       "confirmedAvg3d": 297,
-      "confirmedCumulativeAvg3d": 2787,
+      "confirmedCumulativeAvg3d": 2791,
       "confirmedAvg7d": 227,
-      "confirmedCumulativeAvg7d": 2297
+      "confirmedCumulativeAvg7d": 2299
     },
     {
-      "confirmed": 252,
+      "confirmed": 257,
       "recoveredCumulative": 514,
       "deceasedCumulative": 81,
       "criticalCumulative": 64,
       "testedCumulative": 39446,
       "date": "2020-04-04",
-      "confirmedCumulative": 3374,
-      "confirmedAvg3d": 283,
-      "confirmedCumulativeAvg3d": 3070,
-      "confirmedAvg7d": 235,
-      "confirmedCumulativeAvg7d": 2532
+      "confirmedCumulative": 3379,
+      "confirmedAvg3d": 285,
+      "confirmedCumulativeAvg3d": 3076,
+      "confirmedAvg7d": 236,
+      "confirmedCumulativeAvg7d": 2535
     }
   ],
-  "updated": "April 4 2020, 22:19 JST"
+  "updated": "April 4 2020, 23:05 JST"
 }
