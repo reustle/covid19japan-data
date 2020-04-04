@@ -42153,7 +42153,7 @@
     "residence": "Tokyo",
     "detectedCityTown": "Miyakicho",
     "detectedPrefecture": "Saga",
-    "prefecturePatientNumber": "Saga#6",
+    "notes": "Saga#6",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368831000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -42165,7 +42165,7 @@
     "residence": "Oita city",
     "detectedCityTown": "Oita city",
     "detectedPrefecture": "Oita",
-    "prefecturePatientNumber": "Oita#32",
+    "notes": "Oita#32",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368841000.html?utm_int=word_contents_list-items_004&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -42220,6 +42220,67 @@
     "detectedPrefecture": "Ibaraki",
     "notes": "Works in Tokyo",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368891000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3417,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 40,
+    "gender": "M",
+    "detectedPrefecture": "Yamanashi",
+    "notes": "Yamanashi#12",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368921000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3418,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Yokohama",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "Researcher",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3419,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Yokohama",
+    "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3420,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Yokohama",
+    "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3421,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Yokohama",
+    "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": 3422,
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Yokohama",
+    "detectedPrefecture": "Kanagawa",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368861000.html",
     "confirmedPatient": true
   }
 ]
