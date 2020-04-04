@@ -347,8 +347,8 @@
         9,
         3,
         14,
-        19,
-        23,
+        28,
+        14,
         31,
         16
       ],
@@ -1783,13 +1783,13 @@
       "name": "Niigata"
     },
     {
-      "confirmed": 31,
+      "confirmed": 32,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 0,
       "confirmedByCity": {
         "Oita": 12,
-        "Oita city": 12,
+        "Oita city": 13,
         "Usuki": 1,
         "Beppu": 2
       },
@@ -1881,10 +1881,10 @@
         0,
         1,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 1,
       "name_ja": "大分県",
       "name": "Oita"
@@ -4661,7 +4661,7 @@
       "name": "Yamaguchi"
     },
     {
-      "confirmed": 4,
+      "confirmed": 5,
       "cruisePassenger": 0,
       "cruiseWorker": 0,
       "deaths": 0,
@@ -4669,7 +4669,8 @@
         "Saga": 1,
         "Imari": 1,
         "Takeo": 1,
-        "Saga city": 1
+        "Saga city": 1,
+        "Miyakicho": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -4759,10 +4760,10 @@
         1,
         0,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 0,
       "name_ja": "佐賀県",
       "name": "Saga"
@@ -5902,20 +5903,20 @@
       "confirmedCumulativeAvg7d": 1702
     },
     {
-      "confirmed": 284,
+      "confirmed": 293,
       "recoveredCumulative": 472,
       "deceasedCumulative": 62,
       "criticalCumulative": 60,
       "testedCumulative": 34508,
       "date": "2020-04-01",
-      "confirmedCumulative": 2514,
-      "confirmedAvg3d": 205,
-      "confirmedCumulativeAvg3d": 2221,
-      "confirmedAvg7d": 171,
-      "confirmedCumulativeAvg7d": 1873
+      "confirmedCumulative": 2523,
+      "confirmedAvg3d": 208,
+      "confirmedCumulativeAvg3d": 2224,
+      "confirmedAvg7d": 173,
+      "confirmedCumulativeAvg7d": 1875
     },
     {
-      "confirmed": 269,
+      "confirmed": 260,
       "recoveredCumulative": 505,
       "deceasedCumulative": 62,
       "criticalCumulative": 62,
@@ -5923,9 +5924,9 @@
       "date": "2020-04-02",
       "confirmedCumulative": 2783,
       "confirmedAvg3d": 266,
-      "confirmedCumulativeAvg3d": 2487,
+      "confirmedCumulativeAvg3d": 2490,
       "confirmedAvg7d": 195,
-      "confirmedCumulativeAvg7d": 2068
+      "confirmedCumulativeAvg7d": 2070
     },
     {
       "confirmed": 339,
@@ -5936,22 +5937,22 @@
       "date": "2020-04-03",
       "confirmedCumulative": 3122,
       "confirmedAvg3d": 297,
-      "confirmedCumulativeAvg3d": 2784,
+      "confirmedCumulativeAvg3d": 2787,
       "confirmedAvg7d": 227,
-      "confirmedCumulativeAvg7d": 2295
+      "confirmedCumulativeAvg7d": 2297
     },
     {
-      "confirmed": 250,
+      "confirmed": 252,
       "recoveredCumulative": 514,
       "deceasedCumulative": 81,
       "criticalCumulative": 64,
       "testedCumulative": 39446,
       "date": "2020-04-04",
-      "confirmedCumulative": 3372,
-      "confirmedAvg3d": 286,
+      "confirmedCumulative": 3374,
+      "confirmedAvg3d": 283,
       "confirmedCumulativeAvg3d": 3070,
       "confirmedAvg7d": 235,
-      "confirmedCumulativeAvg7d": 2530
+      "confirmedCumulativeAvg7d": 2532
     }
   ],
   "updated": "April 4 2020, 22:19 JST"
