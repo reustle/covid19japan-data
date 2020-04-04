@@ -19921,6 +19921,7 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "prefecturePatientNumber": "Kanagawa#098",
+    "cityPrefectureNumber": "Yokohama#17",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353841000.html?utm_int=word_contents_list-items_019&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -19933,6 +19934,7 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "prefecturePatientNumber": "Kanagawa#099",
+    "cityPrefectureNumber": "Yokohama#18",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353841000.html?utm_int=word_contents_list-items_019&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -19945,6 +19947,7 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "prefecturePatientNumber": "Kanagawa#100",
+    "cityPrefectureNumber": "Yokohama#19",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353841000.html?utm_int=word_contents_list-items_019&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -19957,6 +19960,7 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "prefecturePatientNumber": "Kanagawa#101",
+    "cityPrefectureNumber": "Yokohama#20",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200327/k10012353841000.html?utm_int=word_contents_list-items_019&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -20880,6 +20884,8 @@
     "detectedCityTown": "Niigata city",
     "detectedPrefecture": "Niigata",
     "notes": "Lives in elerly care house",
+    "prefecturePatientNumber": "Niigata#31",
+    "cityPrefectureNumber": "NiigataCity#27",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355471000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -21713,6 +21719,7 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Student",
+    "cityPrefectureNumber": "Yokohama#21",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355611000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -21725,6 +21732,7 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Critical condition, back from US",
+    "cityPrefectureNumber": "Yokohama#22",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355611000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
@@ -21736,6 +21744,8 @@
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "c",
+    "cityPrefectureNumber": "Yokohama#23",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355611000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": true
   },
@@ -21748,6 +21758,7 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Taxi driver",
+    "cityPrefectureNumber": "Yokohama#24",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355611000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
     "confirmedPatient": true
   },
@@ -27053,20 +27064,24 @@
   {
     "patientId": 2157,
     "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "cityPrefectureNumber": "Yokohama#28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360531000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": 2158,
     "dateAnnounced": "2020-03-31",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "cityPrefectureNumber": "Yokohama#29",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360531000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -27814,7 +27829,7 @@
     "detectedPrefecture": "Oita",
     "notes": "Restaurant owner",
     "prefecturePatientNumber": "Oita#29",
-    "cityPrefectureNumber": "Oita#24",
+    "cityPrefectureNumber": "OitaCity#24",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360931000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -28813,6 +28828,8 @@
     "detectedCityTown": "Niigata city",
     "detectedPrefecture": "Niigata",
     "notes": "Traveled to Brazil",
+    "prefecturePatientNumber": "Niigata#32",
+    "cityPrefectureNumber": "NiigataCity#28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012362151000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -33009,8 +33026,9 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 40,
     "gender": "M",
-    "residence": "Oita",
+    "residence": "Oita city",
     "detectedPrefecture": "Oita",
+    "prefecturePatientNumber": "Oita#30",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200402/k10012365211000.html",
     "confirmedPatient": true
   },
@@ -34032,7 +34050,7 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 20,
     "gender": "F",
-    "residence": "Niigata city",
+    "residence": "Tsubame",
     "detectedPrefecture": "Niigata",
     "prefecturePatientNumber": "Niigata#33",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012366361000.html?utm_int=word_contents_list-items_025&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
@@ -34041,10 +34059,13 @@
   {
     "patientId": 2702,
     "dateAnnounced": "2020-04-03",
-    "ageBracket": 60,
+    "ageBracket": 20,
     "gender": "F",
     "residence": "Niigata city",
     "detectedPrefecture": "Niigata",
+    "notes": "Student. Traveled to Czech",
+    "prefecturePatientNumber": "Niigata#34",
+    "cityPrefectureNumber": "NiigataCity#29",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012366361000.html?utm_int=word_contents_list-items_025&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -37778,8 +37799,12 @@
   {
     "patientId": 3056,
     "dateAnnounced": "2020-04-03",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Niigata city",
     "detectedPrefecture": "Niigata",
+    "prefecturePatientNumber": "Niigata#35",
+    "cityPrefectureNumber": "NiigataCity#30",
     "confirmedPatient": true
   },
   {
@@ -37787,7 +37812,9 @@
     "dateAnnounced": "2020-04-03",
     "ageBracket": 40,
     "gender": "M",
+    "residence": "Oita city",
     "detectedPrefecture": "Oita",
+    "prefecturePatientNumber": "Oita#31",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367531000.html",
     "confirmedPatient": true
   },
