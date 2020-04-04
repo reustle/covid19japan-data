@@ -188,8 +188,11 @@ data that we use to cross check and verify.
 |Ishikawa    | [新型コロナウイルス感染症の県内の患者発生状況](https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html) || Updates daily (HTML) |
 |Iwate    |[新型コロナウイルス感染症関連情報](https://www.pref.iwate.jp/kurashikankyou/iryou/covid19/index.html)||
 |Kagawa    | [新型コロナウイルスに関連した患者の発生について](https://www.pref.kagawa.lg.jp/content/dir1/dir1_6/dir1_6_1/wvwfb0200317171212.shtml)||
-|Kanagawa    | [新型コロナウイルスに感染した患者の発生状況](https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html) ||
+|Kanagawa    | [新型コロナウイルスに感染した患者の発生状況](https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html) | [Dashboard](https://www.pref.kanagawa.jp/osirase/1369/?fbclid=IwAR2-8RAnRsixEpUFpaE-qLflTrAA-DbPaLa9r9SzOobgtGriI-ufROesEKA)| Slow to update |
 |Kanagawa - Funabashi   |[市内で新型コロナウイルス感染症患者](https://www.city.funabashi.lg.jp/kenkou/kansenshou/001/index.html)||
+|Kanagawa - Sagamihara | [](https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html) || Frequently updated |
+| Kanagawa - Yokohama| [横浜市内の新型コロナウイルスに感染した患者の発生状況](https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html) || Updated daily|
+|Kanagawa - Yokosuka   |[横須賀市内の新型コロナウイルス感染症患者の発生状況](https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html)|| Updated more frequently than Kanagawa |
 |Kagoshima    |[新型コロナウイルス感染症に関する情報](https://www.pref.kagoshima.jp/ae06/kenko-fukushi/kenko-iryo/kansen/kansensho/coronavirus.html)||
 |Kochi    | [高知県における新型コロナウイルス感染症患者の発生状況について](https://www.pref.kochi.lg.jp/soshiki/130401/2020022900049.html) [PCR](https://www.pref.kochi.lg.jp/soshiki/130120/2020030400166.html)|| Updated daily |
 |Kumamoto    | [新型コロナウイルス感染症](https://www.pref.kumamoto.jp/kiji_30386.html) || Does not number their patients |
