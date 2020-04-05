@@ -29580,6 +29580,7 @@
     "gender": "M",
     "residence": "Wakou",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#106",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
     "confirmedPatient": true
   },
@@ -32868,6 +32869,7 @@
     "gender": "M",
     "residence": "Yashio",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#107",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
     "confirmedPatient": true
   },
@@ -32878,6 +32880,7 @@
     "gender": "M",
     "residence": "Kawaguchi",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#104",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
     "confirmedPatient": true
   },
@@ -32888,6 +32891,7 @@
     "gender": "M",
     "residence": "Fujimino",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#105",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
     "confirmedPatient": true
   },
@@ -35669,6 +35673,7 @@
     "gender": "F",
     "residence": "Kawaguchi",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#120",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
     "confirmedPatient": true
   },
@@ -35679,6 +35684,7 @@
     "gender": "F",
     "residence": "Kawaguchi",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#121",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
     "confirmedPatient": true
   },
@@ -36120,6 +36126,19 @@
     "detectedCityTown": "Yamashiro",
     "detectedPrefecture": "Kyoto",
     "prefecturePatientNumber": "Kyoto#77",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "3096",
+    "dateAnnounced": "2020-04-02",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Kawagoe",
+    "detectedCityTown": "Kawagoe",
+    "detectedPrefecture": "Saitama",
+    "notes": "Works in Hotel",
+    "prefecturePatientNumber": "Saitama#122",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012366611000.html",
     "confirmedPatient": true
   },
   {
@@ -39481,18 +39500,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": "3096",
-    "dateAnnounced": "2020-04-03",
-    "ageBracket": 50,
-    "gender": "M",
-    "residence": "Kawagoe",
-    "detectedCityTown": "Kawagoe",
-    "detectedPrefecture": "Saitama",
-    "notes": "Works in Hotel",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012366611000.html",
-    "confirmedPatient": true
-  },
-  {
     "patientId": "3097",
     "dateAnnounced": "2020-04-03",
     "ageBracket": 20,
@@ -42502,6 +42509,7 @@
     "gender": "M",
     "residence": "Kasubake",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#150",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368821000.html",
     "confirmedPatient": true
   },
@@ -42512,6 +42520,7 @@
     "gender": "M",
     "residence": "Sakado",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#151",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368821000.html",
     "confirmedPatient": true
   },
@@ -42522,6 +42531,7 @@
     "gender": "M",
     "residence": "Fujimino",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#152",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368821000.html",
     "confirmedPatient": true
   },
@@ -42532,6 +42542,7 @@
     "gender": "M",
     "residence": "Miyoshi",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#149",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368821000.html",
     "confirmedPatient": true
   },
@@ -46870,7 +46881,7 @@
     "dateAnnounced": "2020-04-05",
     "ageBracket": 50,
     "gender": "M",
-    "detectedCityTown": "Tokorozawa",
+    "residence": "Tokorozawa",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#182",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/0405-01.html",
@@ -46881,7 +46892,7 @@
     "dateAnnounced": "2020-04-05",
     "ageBracket": 50,
     "gender": "M",
-    "detectedCityTown": "Soka",
+    "residence": "Soka",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#183",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/0405-01.html",
@@ -46892,7 +46903,7 @@
     "dateAnnounced": "2020-04-05",
     "ageBracket": 50,
     "gender": "M",
-    "detectedCityTown": "Soka",
+    "residence": "Soka",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#184",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/0405-01.html",
@@ -46903,7 +46914,7 @@
     "dateAnnounced": "2020-04-05",
     "ageBracket": 30,
     "gender": "F",
-    "detectedCityTown": "Sakado",
+    "residence": "Sakado",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#185",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/0405-01.html",
@@ -46914,7 +46925,7 @@
     "dateAnnounced": "2020-04-05",
     "ageBracket": 20,
     "gender": "M",
-    "detectedCityTown": "Outside Saitama",
+    "residence": "Outside Saitama",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#186",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/0405-01.html",
