@@ -1,5 +1,6 @@
 const fs = require('fs')
 const moment = require('moment')
+const _ = require('lodash')
 
 const FetchPatientData = require('./src/fetch_patient_data.js')
 const Summarize = require('./src/summarize.js')
@@ -43,11 +44,9 @@ const fetchAndSummarize = async (dateString) => {
   const daily = await FetchSheet.fetchRows('Sum By Day')
   const prefectures = await FetchSheet.fetchRows('Prefecture Data')
 
-  
-
   // Merge multiple patient lists.
   const overallPatientList =  FetchPatientData.fetchPatientData('Patient Data')
-  const tokyoPatientList =  FetchPatientData.fetchPatientData('Tokyo Patients (Test)')
+  const tokyoPatientList =  FetchPatientData.fetchPatientData('Tokyo Patients')
   const osakaPatientList =  FetchPatientData.fetchPatientData('Osaka Patients')
 
   Promise.all([overallPatientList, tokyoPatientList, osakaPatientList])
@@ -67,6 +66,14 @@ const fetchAndSummarize = async (dateString) => {
         })     
     })
 }
+
+const writePerPrefecturePatients = (prefectureName, allPatients, dateString) => {
+    const lowercasePrefecture = _.camelCase(prefectureName)
+    const tokyoPatientsFilename = `./docs/patients/${lowercasePrefecture}_${dateString}.json`
+    const tokyoPatients = _.filter(patients, v => { return v.detectedPrefecture == prefectureName})
+    fs.writeFileSync(tokyoPatientsFilename, JSON.stringify(tokyoPatients, null, '  '))
+}
+
 
 // Add 540 = UTC+9 for JST.
 const dateString = moment().utcOffset(540).format('YYYY-MM-DD')
