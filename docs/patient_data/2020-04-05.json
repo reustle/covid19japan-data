@@ -42278,7 +42278,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Yamanashi",
-    "notes": "Yamanashi#12",
+    "prefecturePatientNumber": "Yamanashi#12",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368921000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -43012,7 +43012,7 @@
     "gender": "M",
     "residence": "Okayama city",
     "detectedPrefecture": "Okayama",
-    "notes": "Okayama#10",
+    "prefecturePatientNumber": "Okayama#10",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012368991000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -43023,7 +43023,7 @@
     "gender": "F",
     "residence": "Iki",
     "detectedPrefecture": "Nagasaki",
-    "notes": "Nagasaki#11",
+    "prefecturePatientNumber": "Nagasaki#11",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012368981000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -43034,8 +43034,18 @@
     "gender": "F",
     "residence": "Miyazaki city",
     "detectedPrefecture": "Miyazaki",
-    "notes": "Miyazaki#8",
+    "prefecturePatientNumber": "Miyazaki#8",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369001000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-05",
+    "ageBracket": 80,
+    "gender": "F",
+    "detectedPrefecture": "Fukui",
+    "patientStatus": "Deceased",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369241000.html?utm_int=news-new_contents_list-items_003",
+    "confirmedPatient": false
   }
 ]
