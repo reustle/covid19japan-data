@@ -1,6 +1,8 @@
 const _ = require('lodash')
 const FetchSheet = require('./fetch_sheet.js')
 
+const numberPattern = /[0-9]+$/
+
 // Post processes the data to normalize field names etc.
 const postProcessData = (rawData) => {
 
@@ -17,16 +19,33 @@ const postProcessData = (rawData) => {
       return parseInt(n)
     }
 
-    const unspecifiedToBlank = v => {
-      if (v == 'Unspecified') return ''
-      return v
+    // Converts the number into a string, if possible.
+    const normalizeId = n => {
+      // Check if it has any number in it
+      if (n == '') { return -1 }
+      // Check if it has any number in it.
+      if (numberPattern.test(n)) {
+        return n
+      }
+      return -1
+    }
+
+    // Converts Gender
+    const normalizeGender = v => {
+      if (v == 'm' || v == 'M') {
+        return 'M'
+      }
+      if (v == 'f' || v == 'F') {
+        return 'F'
+      }
+      return ''
     }
 
     let transformedRow = {
-      'patientId': normalizeNumber(row.patientNumber),
+      'patientId': normalizeId(row.patientNumber),
       'dateAnnounced': row.dateAnnounced,
       'ageBracket': normalizeNumber(row.ageBracket),
-      'gender': unspecifiedToBlank(row.gender),
+      'gender': normalizeGender(row.gender),
       'residence': row.residenceCityPrefecture,
       'detectedCityTown': row.detectedCity,
       'detectedPrefecture': row.detectedPrefecture,
@@ -71,7 +90,7 @@ const postProcessData = (rawData) => {
     })
 
     // Add a field to indicate whether we count as patient or not.
-    transformedRow.confirmedPatient = (transformedRow.patientId > 0)
+    transformedRow.confirmedPatient = (transformedRow.patientId != -1)
 
     return transformedRow
   }
