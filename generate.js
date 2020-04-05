@@ -2,9 +2,8 @@ const fs = require('fs')
 const moment = require('moment')
 
 const FetchPatientData = require('./src/fetch_patient_data.js')
-const FetchDailySummary = require('./src/fetch_daily_summary.js')
-const FetchPrefectureSummary = require('./src/fetch_prefecture_summary.js')
 const Summarize = require('./src/summarize.js')
+const FetchSheet = require('./src/fetch_sheet.js')
 
 const generateLastUpdated = async (patients) => {
   // Check if patient list changed size, if it did, then update lastUpdated
@@ -40,10 +39,10 @@ const generateLastUpdated = async (patients) => {
 
 
 const fetchAndSummarize = async (dateString) => {
-  const daily = await FetchDailySummary.fetchDailySummary()
-  const prefectures = await FetchPrefectureSummary.fetchPrefectureSummary()
+  const daily = await FetchSheet.fetchRows('Sum By Day')
+  const prefectures = await FetchSheet.fetchRows('Prefecture Data')
   const patients = await FetchPatientData.fetchPatientData()
-
+  
   // Work out lastUpdated.
   const lastUpdated = await generateLastUpdated(patients)
   console.log(`Last updated timestamp: ${lastUpdated}`)
