@@ -1,8 +1,5 @@
-const drive = require('drive-db')
 const _ = require('lodash')
-
-const SHEET = '1jfB4muWkzKTR0daklmf8D5F0Uf_IYAgcx_-Ij9McClQ'
-const SHEET_PATIENT_DATA_TAB = 1
+const FetchSheet = require('./fetch_sheet.js')
 
 // Post processes the data to normalize field names etc.
 const postProcessData = (rawData) => {
@@ -26,32 +23,33 @@ const postProcessData = (rawData) => {
     }
 
     let transformedRow = {
-      'patientId': normalizeNumber(row.patientnumber),
-      'dateAnnounced': row.dateannounced,
-      'ageBracket': normalizeNumber(row.agebracket),
+      'patientId': normalizeNumber(row.patientNumber),
+      'dateAnnounced': row.dateAnnounced,
+      'ageBracket': normalizeNumber(row.ageBracket),
       'gender': unspecifiedToBlank(row.gender),
-      'residence': row.residencecityprefecture,
-      'detectedCityTown': row.detectedcity,
-      'detectedPrefecture': row.detectedprefecture,
+      'residence': row.residenceCityPrefecture,
+      'detectedCityTown': row.detectedCity,
+      'detectedPrefecture': row.detectedPrefecture,
       'patientStatus': row.status,
       'notes': row.notes,
-      'knownCluster': row.knowncluster,
+      'knownCluster': row.knownCluster,
       'relatedPatients': row.relatedPatients,
-      'mhlwPatientNumber': row.mhlworigpatientnumber,
-      'prefecturePatientNumber': row.prefecturepatientnumber,
-      'cityPrefectureNumber': row.citypatientnumber,
-      'prefectureSourceURL': row.prefectureurlauto,
-      'charterFlightPassenger': row.charterflightpassenger,
-      'cruisePassengerDisembarked': row.cruisepassengerdisembarked,
-      'cruisePassengerInfectedOnboard': row.cruisepassengerinfectedonboard,
-      'cruiseQuarantineOfficer': row.cruisequarantineofficer,
-      'detectedAtPort': row.detectedatport,
-      'sourceURL': row.sources,
+      'mhlwPatientNumber': row.mhlwOrigPatientNumber,
+      'prefecturePatientNumber': row.prefecturePatientNumber,
+      'cityPrefectureNumber': row.cityPatientNumber,
+      'prefectureSourceURL': row.prefectureUrlAuto,
+      'charterFlightPassenger': row.charterFlightPassenger,
+      'cruisePassengerDisembarked': row.cruisePassengerDisembarked,
+      'cruisePassengerInfectedOnboard': row.cruisePassengerInfectedOnboard,
+      'cruiseQuarantineOfficer': row.cruiseQuarantineOfficer,
+      'detectedAtPort': row.detectedAtPort,
+      'deceasedDate': row.deceased,
+      'sourceURL': row.sourceS,
     }
 
     // filter empty cells.
     transformedRow = _.pickBy(transformedRow, (v, k) => {
-      if (v == '') {
+      if (v == '' || v == false || typeof v === 'undefined') {
         return false
       }
       return true
@@ -77,16 +75,16 @@ const postProcessData = (rawData) => {
 
     return transformedRow
   }
-  
+
   const rows = _.filter(_.map(rawData, transformRow), isValidRow)
   return rows
 }
 
 
 async function fetchPatientData() {
-  return drive({sheet: SHEET, tab: SHEET_PATIENT_DATA_TAB})
-    .then(db => {
-      return postProcessData(db)
+  return FetchSheet.fetchRows('Patient Data')
+    .then(data => {
+      return postProcessData(data)
     })
 }
 

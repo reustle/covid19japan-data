@@ -190,7 +190,7 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
     if (prefectureSummary[row.prefecture]) {
       prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered)
       prefectureSummary[row.prefecture].deaths = safeParseInt(row.deaths)
-      prefectureSummary[row.prefecture].name_ja = row.prefectureja
+      prefectureSummary[row.prefecture].name_ja = row.prefectureJa
     }
   }
 
