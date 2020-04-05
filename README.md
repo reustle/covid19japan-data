@@ -63,7 +63,25 @@ Example Patient Data:
 
 ### docs/patient_data/summary.json
 
-Individal Prefecture data:
+Top level objects: 
+
+```json
+ {
+   "prefectures": [ ... ],
+   "daily": [ ... ],
+   "lastUpdated": "2020-04-05T10:32:24+09:00"
+ }
+```
+| Field | Values | Description |
+| ----- | ------ | ----------- |
+| prefectures | List of Dict |  Each item is a prefectural summary |
+| daily | List of Dict | Each dict represents the summary of the single day |
+| lastUpdated| ISO timestamp | Time stamp (in JST) of when the data was updated. |
+
+Prefecture Summary:
+
+List of 
+
 ``` json
 [
     {
@@ -107,7 +125,8 @@ List is sorted by summary.count.
 | critical | Numeric | Total number of patients in critical condition (respirators) |
 | cityCounts | Object | Keys are individual cites and their total infected counts |
 
-Daily summary data:
+Day by day summary:
+
 ```
   {
       "confirmed": 16,
