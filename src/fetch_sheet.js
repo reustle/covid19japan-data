@@ -58,6 +58,10 @@ const fetchRows = async (sheetName) => {
       }
       return []
     })
+    .catch(err => {
+      console.error(err)
+      return []
+    })
 }
 
 exports.fetchTabs = fetchTabs;
