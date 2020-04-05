@@ -1,9 +1,11 @@
 const fs = require('fs')
 const moment = require('moment')
+const _ = require('lodash')
 
 const FetchPatientData = require('./src/fetch_patient_data.js')
 const Summarize = require('./src/summarize.js')
 const FetchSheet = require('./src/fetch_sheet.js')
+const MergePatients = require('./src/merge_patients.js')
 
 const generateLastUpdated = async (patients) => {
   // Check if patient list changed size, if it did, then update lastUpdated
@@ -41,21 +43,37 @@ const generateLastUpdated = async (patients) => {
 const fetchAndSummarize = async (dateString) => {
   const daily = await FetchSheet.fetchRows('Sum By Day')
   const prefectures = await FetchSheet.fetchRows('Prefecture Data')
-  const patients = await FetchPatientData.fetchPatientData()
-  
-  // Work out lastUpdated.
-  const lastUpdated = await generateLastUpdated(patients)
-  console.log(`Last updated timestamp: ${lastUpdated}`)
 
-  // Write patient data
-  const patientOutputFilename = `./docs/patient_data/${dateString}.json`
-  fs.writeFileSync(patientOutputFilename, JSON.stringify(patients, null, '  '))
+  // Merge multiple patient lists.
+  const overallPatientList =  FetchPatientData.fetchPatientData('Patient Data')
+  const tokyoPatientList =  FetchPatientData.fetchPatientData('Tokyo Patients')
+  const osakaPatientList =  FetchPatientData.fetchPatientData('Osaka Patients')
 
-  // Generate and write summary to JSON.
-  const summary = Summarize.summarize(patients, daily, prefectures, lastUpdated)
-  const summaryOutputFilename = `./docs/summary/${dateString}.json`
-  fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
+  Promise.all([overallPatientList, tokyoPatientList, osakaPatientList])
+    .then(patientLists => {
+      let patients = MergePatients.mergePatients(patientLists)
+
+      generateLastUpdated(patients)
+        .then(lastUpdated => {
+          // Write patient data
+          const patientOutputFilename = `./docs/patient_data/${dateString}.json`
+          fs.writeFileSync(patientOutputFilename, JSON.stringify(patients, null, '  '))
+
+          // Generate and write summary to JSON.
+          const summary = Summarize.summarize(patients, daily, prefectures, lastUpdated)
+          const summaryOutputFilename = `./docs/summary/${dateString}.json`
+          fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
+        })     
+    })
 }
+
+const writePerPrefecturePatients = (prefectureName, allPatients, dateString) => {
+    const lowercasePrefecture = _.camelCase(prefectureName)
+    const tokyoPatientsFilename = `./docs/patients/${lowercasePrefecture}_${dateString}.json`
+    const tokyoPatients = _.filter(patients, v => { return v.detectedPrefecture == prefectureName})
+    fs.writeFileSync(tokyoPatientsFilename, JSON.stringify(tokyoPatients, null, '  '))
+}
+
 
 // Add 540 = UTC+9 for JST.
 const dateString = moment().utcOffset(540).format('YYYY-MM-DD')

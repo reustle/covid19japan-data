@@ -24,4 +24,28 @@ const verifyDailySummary = (dailySummary) => {
   return dailySummary
 }
 
+const verifyPatients = (patients) => {
+  // Ensure there are no duplicate patient Ids.
+  let patientIds = {}
+  let duplicates = []
+  for (let patient of patients) {
+    if (patient.patientId == -1) {
+      continue
+    }
+    if (patientIds[patient.patientId]) {
+      duplicates.push(patient.patientId)
+    }
+    patientIds[patient.patientId] = 1
+  }
+
+  if (duplicates.length > 0) {
+    throw `ValidationError: Duplicated patientIds detected ${duplicates}`
+  }
+
+
+
+  return patients
+}
+
 exports.verifyDailySummary = verifyDailySummary
+exports.verifyPatients = verifyPatients
