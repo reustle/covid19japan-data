@@ -46,8 +46,8 @@ const fetchAndSummarize = async (dateString) => {
 
   // Merge multiple patient lists.
   const overallPatientList =  FetchPatientData.fetchPatientData('Patient Data')
-  const tokyoPatientList =  FetchPatientData.fetchPatientData('Tokyo Patients')
-  const osakaPatientList =  FetchPatientData.fetchPatientData('Osaka Patients')
+  const tokyoPatientList =  FetchPatientData.fetchPatientData('Tokyo')
+  const osakaPatientList =  FetchPatientData.fetchPatientData('Osaka')
 
   Promise.all([overallPatientList, tokyoPatientList, osakaPatientList])
     .then(patientLists => {
