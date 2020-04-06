@@ -42207,6 +42207,8 @@
     "detectedCityTown": "Gifu city",
     "detectedPrefecture": "Gifu",
     "notes": "Gifu University Hospital Doctor",
+    "prefecturePatientNumber": "Gifu#47",
+    "cityPrefectureNumber": "GifuCity#13",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368791000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -42219,6 +42221,8 @@
     "detectedCityTown": "Gifu city",
     "detectedPrefecture": "Gifu",
     "notes": "Gifu University Hospital Doctor",
+    "prefecturePatientNumber": "Gifu#46",
+    "cityPrefectureNumber": "GifuCity#12",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368791000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
@@ -42230,7 +42234,7 @@
     "residence": "Gifu city",
     "detectedCityTown": "Gifu city",
     "detectedPrefecture": "Gifu",
-    "notes": "Gifu University Hospital Doctor",
+    "prefecturePatientNumber": "Gifu#44",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368791000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": true
   },
@@ -42798,6 +42802,8 @@
     "gender": "F",
     "residence": "Tajimi",
     "detectedPrefecture": "Gifu",
+    "notes": "Under 1 year old",
+    "prefecturePatientNumber": "Gifu#43",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368791000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -42808,6 +42814,7 @@
     "gender": "M",
     "residence": "Ogaki",
     "detectedPrefecture": "Gifu",
+    "prefecturePatientNumber": "Gifu#41",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368791000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -42818,6 +42825,7 @@
     "gender": "F",
     "residence": "Ogaki",
     "detectedPrefecture": "Gifu",
+    "prefecturePatientNumber": "Gifu#42",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368791000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -42828,6 +42836,8 @@
     "gender": "M",
     "residence": "Gifu city",
     "detectedPrefecture": "Gifu",
+    "prefecturePatientNumber": "Gifu#45",
+    "cityPrefectureNumber": "GifuCity#11",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368791000.html?utm_int=word_contents_list-items_008&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -46377,32 +46387,46 @@
   {
     "patientId": "3875",
     "dateAnnounced": "2020-04-05",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Kakamigahara",
     "detectedPrefecture": "Gifu",
+    "prefecturePatientNumber": "Gifu#48",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "3876",
     "dateAnnounced": "2020-04-05",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Mizuho",
     "detectedPrefecture": "Gifu",
+    "prefecturePatientNumber": "Gifu#49",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "3877",
     "dateAnnounced": "2020-04-05",
-    "ageBracket": -1,
+    "gender": "F",
+    "residence": "Ogaki",
     "detectedPrefecture": "Gifu",
+    "notes": "Elementary school student",
+    "relatedPatients": "Gifu#41 Gifu#42",
+    "prefecturePatientNumber": "Gifu#50",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "3878",
     "dateAnnounced": "2020-04-05",
-    "ageBracket": -1,
+    "gender": "F",
+    "residence": "Gifu city",
     "detectedPrefecture": "Gifu",
+    "notes": "Under 1 year old",
+    "prefecturePatientNumber": "Gifu#51",
+    "cityPrefectureNumber": "GifuCity#14",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
@@ -46410,7 +46434,12 @@
     "patientId": "3879",
     "dateAnnounced": "2020-04-05",
     "ageBracket": -1,
+    "gender": "F",
+    "residence": "Gifu city",
     "detectedPrefecture": "Gifu",
+    "notes": "No details yet, cluster at a workplace https://www.city.gifu.lg.jp/secure/44927/kansen15~21_s.pdf",
+    "prefecturePatientNumber": "Gifu#52",
+    "cityPrefectureNumber": "GifuCity#15",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
@@ -46418,7 +46447,12 @@
     "patientId": "3880",
     "dateAnnounced": "2020-04-05",
     "ageBracket": -1,
+    "gender": "F",
+    "residence": "Gifu city",
     "detectedPrefecture": "Gifu",
+    "notes": "No details yet, cluster at a workplace",
+    "prefecturePatientNumber": "Gifu#53",
+    "cityPrefectureNumber": "GifuCity#16",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
@@ -46426,7 +46460,12 @@
     "patientId": "3881",
     "dateAnnounced": "2020-04-05",
     "ageBracket": -1,
+    "gender": "F",
+    "residence": "Gifu city",
     "detectedPrefecture": "Gifu",
+    "notes": "No details yet, cluster at a workplace",
+    "prefecturePatientNumber": "Gifu#54",
+    "cityPrefectureNumber": "GifuCity#17",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
@@ -46434,7 +46473,12 @@
     "patientId": "3882",
     "dateAnnounced": "2020-04-05",
     "ageBracket": -1,
+    "gender": "F",
+    "residence": "Gifu city",
     "detectedPrefecture": "Gifu",
+    "notes": "No details yet, cluster at a workplace",
+    "prefecturePatientNumber": "Gifu#55",
+    "cityPrefectureNumber": "GifuCity#18",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
@@ -46442,7 +46486,12 @@
     "patientId": "3883",
     "dateAnnounced": "2020-04-05",
     "ageBracket": -1,
+    "gender": "F",
+    "residence": "Gifu city",
     "detectedPrefecture": "Gifu",
+    "notes": "No details yet, cluster at a workplace",
+    "prefecturePatientNumber": "Gifu#56",
+    "cityPrefectureNumber": "GifuCity#19",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
@@ -46450,7 +46499,12 @@
     "patientId": "3884",
     "dateAnnounced": "2020-04-05",
     "ageBracket": -1,
+    "gender": "F",
+    "residence": "Gifu city",
     "detectedPrefecture": "Gifu",
+    "notes": "No details yet, cluster at a workplace",
+    "prefecturePatientNumber": "Gifu#57",
+    "cityPrefectureNumber": "GifuCity#20",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
@@ -46458,7 +46512,12 @@
     "patientId": "3885",
     "dateAnnounced": "2020-04-05",
     "ageBracket": -1,
+    "gender": "M",
+    "residence": "Gifu city",
     "detectedPrefecture": "Gifu",
+    "notes": "No details yet, cluster at a workplace",
+    "prefecturePatientNumber": "Gifu#58",
+    "cityPrefectureNumber": "GifuCity#21",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369881000.html",
     "confirmedPatient": true
   },
@@ -47371,6 +47430,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47381,6 +47441,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47391,6 +47452,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47401,6 +47463,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47411,6 +47474,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47421,6 +47485,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47431,6 +47496,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47441,6 +47507,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47451,6 +47518,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47461,6 +47529,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47471,6 +47540,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "18 Deaths in Tokyo until 4/3",
+    "deceasedDate": "4/3",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
@@ -47482,7 +47552,7 @@
     "patientStatus": "Deceased",
     "notes": "永寿総合病院 patient",
     "deceasedDate": "4/4",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html",
     "confirmedPatient": false
   },
   {
@@ -47493,7 +47563,7 @@
     "patientStatus": "Deceased",
     "notes": "永寿総合病院 patient",
     "deceasedDate": "4/4",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html",
     "confirmedPatient": false
   },
   {
@@ -47504,7 +47574,7 @@
     "patientStatus": "Deceased",
     "notes": "永寿総合病院 patient",
     "deceasedDate": "4/4",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368771000.html",
     "confirmedPatient": false
   },
   {
@@ -47533,6 +47603,7 @@
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
+    "deceasedDate": "4/5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369791000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   },
@@ -47542,6 +47613,7 @@
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
+    "deceasedDate": "4/5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369791000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   },
@@ -47551,6 +47623,7 @@
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
+    "deceasedDate": "4/5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369791000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   },
@@ -47560,6 +47633,7 @@
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
+    "deceasedDate": "4/5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369791000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   },
@@ -47569,6 +47643,7 @@
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
+    "deceasedDate": "4/5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369791000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   },
@@ -47578,6 +47653,7 @@
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
+    "deceasedDate": "4/5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369791000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   },
@@ -47587,6 +47663,7 @@
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
+    "deceasedDate": "4/5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369791000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   },
