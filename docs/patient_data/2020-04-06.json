@@ -6644,6 +6644,7 @@
     "residence": "Iwaki",
     "detectedCityTown": "Iwaki",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "notes": "Cruise passenger",
     "knownCluster": "Cruise Disembarked Passenger",
     "mhlwPatientNumber": "385",
@@ -11336,6 +11337,7 @@
     "gender": "F",
     "detectedCityTown": "Koriyama",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "notes": "Back from Egypt, symptom from 3/1",
     "prefecturePatientNumber": "Fukushima#2",
     "prefectureSourceURL": "https://www.pref.fukushima.lg.jp/uploaded/attachment/375483.pdf",
@@ -27559,6 +27561,7 @@
     "residence": "Fukushima ciy",
     "detectedCityTown": "Fukushima ciy",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#3",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360561000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -27571,6 +27574,7 @@
     "residence": "Sendai",
     "detectedCityTown": "Fukushima ciy",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#4",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360561000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -32186,6 +32190,7 @@
     "residence": "Fukushima",
     "detectedCityTown": "Fukushima",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#5",
     "sourceURL": "https://www.pref.fukushima.lg.jp/uploaded/attachment/379442.pdf",
     "confirmedPatient": true
@@ -32198,6 +32203,7 @@
     "residence": "Soso",
     "detectedCityTown": "Soso",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#6",
     "sourceURL": "https://www.pref.fukushima.lg.jp/uploaded/attachment/379443.pdf",
     "confirmedPatient": true
@@ -33962,6 +33968,7 @@
     "gender": "F",
     "residence": "Minamisoma",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#7",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200402/k10012365221000.html",
     "confirmedPatient": true
@@ -33973,6 +33980,7 @@
     "gender": "F",
     "residence": "Sukagawa",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#8",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200402/k10012365221000.html",
     "confirmedPatient": true
@@ -37322,6 +37330,7 @@
     "gender": "F",
     "residence": "Soso",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#9",
     "sourceURL": "https://www.pref.fukushima.lg.jp/sec/21045c/fukushima-hasseijyoukyou.html",
     "confirmedPatient": true
@@ -40762,6 +40771,7 @@
     "residence": "Hiroshima",
     "detectedPrefecture": "Hiroshima",
     "notes": "Living in Tokyo, gender undisclosed",
+    "prefecturePatientNumber": "Hiroshima#14",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368631000.html",
     "confirmedPatient": true
   },
@@ -41110,6 +41120,7 @@
     "gender": "M",
     "residence": "Yabuki",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#10",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368671000.html",
     "confirmedPatient": true
@@ -41121,6 +41132,7 @@
     "gender": "F",
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#191",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368661000.html",
     "confirmedPatient": true
   },
@@ -41131,6 +41143,7 @@
     "gender": "M",
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#192",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368661000.html",
     "confirmedPatient": true
   },
@@ -41141,6 +41154,8 @@
     "gender": "M",
     "residence": "Kushiro",
     "detectedPrefecture": "Hokkaido",
+    "relatedPatients": "Hokkaido#184",
+    "prefecturePatientNumber": "Hokkaido#193",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368661000.html",
     "confirmedPatient": true
   },
@@ -41872,6 +41887,8 @@
     "gender": "M",
     "residence": "Koriyama",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
+    "relatedPatients": "Fukushima#2",
     "prefecturePatientNumber": "Fukushima#14",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368961000.html",
     "confirmedPatient": true
@@ -42502,6 +42519,7 @@
     "gender": "M",
     "residence": "Soso",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#12",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368671000.html",
     "confirmedPatient": true
@@ -42513,17 +42531,8 @@
     "gender": "M",
     "residence": "Kennan",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#13",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368671000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "3869",
-    "dateAnnounced": "2020-04-04",
-    "ageBracket": 20,
-    "gender": "M",
-    "residence": "Soso",
-    "detectedPrefecture": "Fukushima",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368671000.html",
     "confirmedPatient": true
   },
@@ -42738,8 +42747,22 @@
     "gender": "F",
     "residence": "Soso",
     "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Fukushima#11",
     "sourceURL": "https://www.pref.fukushima.lg.jp/uploaded/attachment/379852.pdf",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4011",
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Fukuyama",
+    "detectedPrefecture": "Hiroshima",
+    "patientStatus": "Hospitalized",
+    "relatedPatients": "Hiroshima#1 Hiroshima#2",
+    "prefecturePatientNumber": "Hiroshima#15",
+    "sourceURL": "https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html",
     "confirmedPatient": true
   },
   {
@@ -45224,6 +45247,19 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "3869",
+    "dateAnnounced": "2020-04-05",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Kenchu",
+    "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
+    "relatedPatients": "Fukushima#8",
+    "prefecturePatientNumber": "Fukushima#15",
+    "sourceURL": "https://www.pref.fukushima.lg.jp/uploaded/attachment/379877.pdf",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "3870",
     "dateAnnounced": "2020-04-05",
     "ageBracket": 60,
@@ -45900,6 +45936,19 @@
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#186",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/0405-01.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4010",
+    "dateAnnounced": "2020-04-05",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Kenchu",
+    "detectedPrefecture": "Fukushima",
+    "patientStatus": "Hospitalized",
+    "relatedPatients": "Fukushima#8",
+    "prefecturePatientNumber": "Fukushima#16",
+    "sourceURL": "https://www.pref.fukushima.lg.jp/uploaded/attachment/379877.pdf",
     "confirmedPatient": true
   },
   {
@@ -47709,6 +47758,7 @@
     "dateAnnounced": "2020-04-06",
     "gender": "F",
     "residence": "Kamisu",
+    "detectedCityTown": "Kamisu",
     "detectedPrefecture": "Ibaraki",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371281000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -47716,49 +47766,79 @@
   {
     "patientId": "4004",
     "dateAnnounced": "2020-04-06",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Kamisu",
+    "detectedCityTown": "Kamisu",
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "ハミングハウス",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371281000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4005",
     "dateAnnounced": "2020-04-06",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Kamisu",
+    "detectedCityTown": "Kamisu",
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "ハミングハウス",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371281000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4006",
     "dateAnnounced": "2020-04-06",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Tsukuba",
+    "detectedCityTown": "Tsukuba",
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "アレーテル・つくば",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371281000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4007",
     "dateAnnounced": "2020-04-06",
-    "ageBracket": -1,
+    "ageBracket": 90,
+    "gender": "F",
+    "residence": "Tsukuba",
+    "detectedCityTown": "Tsukuba",
     "detectedPrefecture": "Ibaraki",
+    "knownCluster": "アレーテル・つくば",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371281000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4008",
     "dateAnnounced": "2020-04-06",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Hitachiota",
+    "detectedCityTown": "Hitachiota",
     "detectedPrefecture": "Ibaraki",
+    "notes": "Hitachiota ward office staff",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371281000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4009",
     "dateAnnounced": "2020-04-06",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Ami",
+    "detectedCityTown": "Ami",
     "detectedPrefecture": "Ibaraki",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371281000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4012",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": -1,
+    "detectedPrefecture": "Nagano",
     "confirmedPatient": true
   },
   {
@@ -48745,6 +48825,16 @@
     "notes": "Died on 4/4, Hyogo death #12",
     "deceasedDate": "4/4",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371191000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-05",
+    "ageBracket": 30,
+    "gender": "F",
+    "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#194",
+    "sourceURL": "http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm#4/4",
     "confirmedPatient": false
   },
   {
