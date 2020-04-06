@@ -13015,6 +13015,7 @@
     "residence": "Fukuoka",
     "detectedCityTown": "Fukuoka",
     "detectedPrefecture": "Fukuoka",
+    "patientStatus": "Discharged",
     "notes": "Foreigner student studies in Kyushu University",
     "cityPrefectureNumber": "FukuokaCity#3",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336461000.html?utm_int=word_contents_list-items_012&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
@@ -16736,7 +16737,8 @@
     "residence": "Kitakyushu",
     "detectedCityTown": "Kitakyushu",
     "detectedPrefecture": "Fukuoka",
-    "notes": "Ward office staff",
+    "patientStatus": "Discharged",
+    "notes": "Ward office staff. Discharged.",
     "prefecturePatientNumber": "Fukuoka#6",
     "prefectureSourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid-19-portal.html#A1-3-2",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200323/k10012346081000.html?utm_int=word_contents_list-items_041&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
@@ -23555,6 +23557,8 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "patientStatus": "Discharged",
+    "notes": "Discharged ",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200328/k10012355681000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
     "confirmedPatient": true
   },
@@ -43644,6 +43648,18 @@
     "detectedPrefecture": "Aichi",
     "prefecturePatientNumber": "Aichi#213",
     "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200404.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "3962",
+    "dateAnnounced": "2020-04-04",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Nagaizumi",
+    "detectedPrefecture": "Shizuoka",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Shizuoka#17",
+    "sourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
     "confirmedPatient": true
   },
   {
