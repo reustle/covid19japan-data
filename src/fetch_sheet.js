@@ -18,7 +18,7 @@ const sheetRowsURL = (sheetId, sheetName) => {
   return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodedSheetName}?key=${SHEET_API_KEY}`
 }
 
-const fetchTabs = async () => {
+const fetchTabs = () => {
   return fetch(sheetURL(SHEET_ID))
     .then(response => response.json())
     .then(json => {
@@ -45,7 +45,7 @@ const headerFields = (json) => {
   return _.filter(_.map(json.values[0], normalizeName), _.isString)
 }
 
-const fetchRows = async (sheetName) => {
+const fetchRows = (sheetName) => {
   return fetch(sheetRowsURL(SHEET_ID, sheetName))
     .then(response => response.json())
     .then(json => {

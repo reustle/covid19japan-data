@@ -57,6 +57,11 @@ const fetchAndSummarize = async (dateString) => {
   Promise.all(patientListFetches)
     .then(patientLists => {
       let patients = MergePatients.mergePatients(patientLists)
+      console.log(`Total patients fetched: ${patients.length}`)
+      if (patients.length < 1000) {
+        // Something went wrong with fetching. Aborting.
+        throw new Error(`FetchError: Got a lot less patients than we expected.`)
+      }
 
       generateLastUpdated(patients)
         .then(lastUpdated => {
@@ -70,6 +75,9 @@ const fetchAndSummarize = async (dateString) => {
           fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
         })     
     })
+    .catch(error => {
+      console.log(error)
+    })
 }
 
 const writePerPrefecturePatients = (prefectureName, allPatients, dateString) => {
@@ -80,6 +88,10 @@ const writePerPrefecturePatients = (prefectureName, allPatients, dateString) => 
 }
 
 
-// Add 540 = UTC+9 for JST.
-const dateString = moment().utcOffset(540).format('YYYY-MM-DD')
-fetchAndSummarize(dateString)
+try {
+  // Add 540 = UTC+9 for JST.
+  const dateString = moment().utcOffset(540).format('YYYY-MM-DD')
+  fetchAndSummarize(dateString)
+} catch (e) {
+  console.error(e)
+}
