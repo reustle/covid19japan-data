@@ -48914,6 +48914,7 @@
     "gender": "F",
     "residence": "Nagoya",
     "detectedPrefecture": "Aichi",
+    "cityPrefectureNumber": "Nagoya#147",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371221000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -48924,6 +48925,7 @@
     "gender": "M",
     "residence": "Nagoya",
     "detectedPrefecture": "Aichi",
+    "cityPrefectureNumber": "Nagoya#148",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371221000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -49536,6 +49538,100 @@
     "gender": "M",
     "detectedPrefecture": "Kyoto",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012371451000.html?utm_int=news-new_contents_list-items_001",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "AC230",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Seto",
+    "detectedPrefecture": "Aichi",
+    "relatedPatients": "Aichi#179 Aichi#182",
+    "prefecturePatientNumber": "Aichi#230",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200406.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "AC231",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Nagakute",
+    "detectedPrefecture": "Aichi",
+    "relatedPatients": "Aichi#213",
+    "prefecturePatientNumber": "Aichi#231",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200406.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "AC232",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Toyoake",
+    "detectedPrefecture": "Aichi",
+    "prefecturePatientNumber": "Aichi#232",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200406.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "AC233",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Toyoake",
+    "detectedPrefecture": "Aichi",
+    "prefecturePatientNumber": "Aichi#233",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200406.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "AC234",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 10,
+    "gender": "F",
+    "residence": "Kita-Nagoya",
+    "detectedPrefecture": "Aichi",
+    "relatedPatients": "Aichi#208",
+    "prefecturePatientNumber": "Aichi#234",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200406.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "AC235",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Higashiura, Chita",
+    "detectedPrefecture": "Aichi",
+    "relatedPatients": "Aichi#193",
+    "prefecturePatientNumber": "Aichi#235",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200406.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "AC236",
+    "dateAnnounced": "2020-04-06",
+    "gender": "M",
+    "residence": "Higashiura, Chita",
+    "detectedPrefecture": "Aichi",
+    "relatedPatients": "Aichi#193 Aichi#235",
+    "prefecturePatientNumber": "Aichi#236",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200406.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "AC237",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 80,
+    "gender": "M",
+    "residence": "Hekinan",
+    "detectedPrefecture": "Aichi",
+    "notes": "No symptoms",
+    "relatedPatients": "Aichi#224",
+    "prefecturePatientNumber": "Aichi#237",
+    "sourceURL": "https://www.pref.aichi.jp/site/covid19-aichi/pressrelease-ncov200406.html",
     "confirmedPatient": true
   },
   {
@@ -50375,7 +50471,6 @@
     "detectedPrefecture": "Aichi",
     "patientStatus": "Deceased",
     "notes": "2nd who died on 3/13 in Nagoya. No age revealed except it was an old person. Likely not a previous patient",
-    "cityPrefectureNumber": "NagoyaDeath#10",
     "deceasedDate": "3/13",
     "sourceURL": "https://www.mhlw.go.jp/content/10906000/000608334.doc",
     "confirmedPatient": false
@@ -50390,7 +50485,6 @@
     "detectedPrefecture": "Aichi",
     "patientStatus": "Deceased",
     "notes": "Died 3/14",
-    "cityPrefectureNumber": "NagoyaDeath#11",
     "deceasedDate": "3/14",
     "sourceURL": "https://www.mhlw.go.jp/content/10906000/000608447.pdf",
     "confirmedPatient": false
@@ -50405,7 +50499,6 @@
     "detectedPrefecture": "Aichi",
     "patientStatus": "Deceased",
     "notes": "Died on 3/16",
-    "cityPrefectureNumber": "NagoyaDeath#13",
     "deceasedDate": "3/16",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334341000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
@@ -50420,7 +50513,6 @@
     "detectedPrefecture": "Aichi",
     "patientStatus": "Deceased",
     "notes": "Died on 3/16",
-    "cityPrefectureNumber": "NagoyaDeath#14",
     "deceasedDate": "3/16",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200316/k10012334341000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
@@ -50435,7 +50527,6 @@
     "detectedPrefecture": "Aichi",
     "patientStatus": "Deceased",
     "notes": "Died on 3/20",
-    "cityPrefectureNumber": "NagoyaDeath#15",
     "deceasedDate": "3/20",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342061000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
@@ -50939,6 +51030,8 @@
     "patientId": -1,
     "dateAnnounced": "2020-04-05",
     "ageBracket": -1,
+    "gender": "M",
+    "residence": "Nagoya",
     "detectedPrefecture": "Aichi",
     "patientStatus": "Deceased",
     "deceasedDate": "4/5",
