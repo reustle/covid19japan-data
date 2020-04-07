@@ -27,7 +27,7 @@ const generateLastUpdated = async (patients) => {
       const existingSummary = JSON.parse(existingSummaryData)
       if (existingSummary && existingSummary.updated && typeof existingSummary.updated === 'string') {
         lastUpdated = existingSummary.updated
-        console.log(`Pulling lastUpdated from summary/latest.json: ${lastUpdated}`)
+        //console.log(`Pulling lastUpdated from summary/latest.json: ${lastUpdated}`)
       }
     }
   }
@@ -50,18 +50,14 @@ const fetchAndSummarize = async (dateString) => {
     FetchPatientData.fetchPatientData('Tokyo'),
     FetchPatientData.fetchPatientData('Osaka'),
     FetchPatientData.fetchPatientData('Kanagawa'),
-    FetchPatientData.fetchPatientData('Chiba'),
-    FetchPatientData.fetchPatientData('Aichi')
+    FetchPatientData.fetchPatientData('Aichi'),
+    //FetchPatientData.fetchPatientData('Chiba'),
   ]
 
   Promise.all(patientListFetches)
     .then(patientLists => {
       let patients = MergePatients.mergePatients(patientLists)
       console.log(`Total patients fetched: ${patients.length}`)
-      if (patients.length < 1000) {
-        // Something went wrong with fetching. Aborting.
-        throw new Error(`FetchError: Got a lot less patients than we expected.`)
-      }
 
       generateLastUpdated(patients)
         .then(lastUpdated => {
@@ -73,6 +69,7 @@ const fetchAndSummarize = async (dateString) => {
           const summary = Summarize.summarize(patients, daily, prefectures, lastUpdated)
           const summaryOutputFilename = `./docs/summary/${dateString}.json`
           fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
+          console.log('Success.')
         })     
     })
     .catch(error => {

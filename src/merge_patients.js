@@ -5,6 +5,8 @@ const mergePatients = (patientLists) => {
   //const sortOrder = ['patientId', 'dateAnnounced']
   const sortOrder = ['dateAnnounced', 'patientId']
 
+  Verify.verifyPatientLists(patientLists)
+  
   for (let patients of patientLists) {
     Verify.verifyPatients(patients)
   }

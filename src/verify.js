@@ -54,7 +54,17 @@ const verifyPatients = (patients) => {
   return patients
 }
 
+const verifyPatientLists = (patientLists) => {
+  for (let patientList of patientLists) {
+    if (patientList.length < 1) {
+      throw new Error('PatientListError: Unexpected empty patient list')
+    }
+  }
+  return patientLists
+}
+
 
 exports.verifyDailySummary = verifyDailySummary
 exports.verifyPrefectures = verifyPrefectures
 exports.verifyPatients = verifyPatients
+exports.verifyPatientLists = verifyPatientLists
