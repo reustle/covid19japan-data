@@ -30,13 +30,15 @@ jobs:
 
       - name: Git Status
         run: git status
-        
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v4
+
+      - name: Commit files
+        run: |
+          git config --local user.email alastair@liquidx.net
+          git config --local user.name "Automated Action"
+          git add docs/*/*.json
+          git commit -m "Automated Data Update"
+
+      - name: Push changes
+        uses: ad-m/github-push-action
         with:
-          author_name: Automated Action
-          author_email: alastair@liquidx.net
-          message: "Automated: Data Update"
-          add: "docs/*/*.json"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
