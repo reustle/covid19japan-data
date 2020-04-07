@@ -275,7 +275,7 @@ data from the spreadsheet, runs a set of post processing on it and checks in the
 JSON file in to the docs/ directory.
 
 If it detects some data inconsistencies, it will abort and not check in any data. The data
-verification checks are in ``src/verify.js`
+verification checks are in `src/verify.js`
 
 
 
