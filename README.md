@@ -6,6 +6,7 @@ This repository contains the JSON export of the [Live Japan Patient Database (Go
 
  * [Data Formats](#data-formats)
  * [Data Sources](#data-sources)
+ * [Development](#development)
 
 
 ## Data Formats
@@ -243,5 +244,38 @@ data that we use to cross check and verify.
 |Yamanashi    |[新型コロナウイルス感染症の県内における発生状況](https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html)||
 
 **We need your help!** Please submit any information sources via the "Issues" tab above. Thank you! ありがとう！
+
+
+# Development
+
+To build the data ingestion and publishing tool:
+
+```
+npm install
+```
+
+To run the data generation:
+
+```
+node generate.js
+```
+
+This will output the data into docs/ 
+
+To make the data ready for publishing (which really just changes the symlink latest.json):
+
+```
+node publish.js
+```
+
+# Publish Cycle
+
+Every 15 minutes a Github Workflow runs `.github/workflows/update.yml` to fetch the latest
+data from the spreadsheet, runs a set of post processing on it and checks in the generated
+JSON file in to the docs/ directory.
+
+If it detects some data inconsistencies, it will abort and not check in any data. The data
+verification checks are in ``src/verify.js`
+
 
 
