@@ -23,7 +23,7 @@ Data is an array of patient data objects.
 Example Patient Data:
 ``` json
   {
-    "patientId": 64,
+    "patientId": "64",
     "dateAnnounced": "2020-02-18",
     "ageBracket": 80,
     "gender": "M",
@@ -41,7 +41,7 @@ Example Patient Data:
 
 | Fields | Values | Description |
 | ------ | ------ | ----------- |
-| patientId | Numeric | Unique identifier for patients (if this value is -1, this means it may be a duplicate row (see: ``confirmedPatient``) |
+| patientId | String | Unique identifier for patients (if this value is -1, this means it may be a duplicate row (see: ``confirmedPatient``) [Updated: This changed from a number to a string (4/6)] Example Values: 123 or TOK123 or -1 |
 | confirmedPatient | boolean | Patient is a confirmed patient. If false, this could be a duplicate patient which we cannot identify. If this is false, do not count this patient in confirmed cases count. But it exists so that we can also tally deaths of existing patients. |
 | dateAnnounced | YYYY-MM-DD | Date patient was announced to have tested positive |
 | ageBracket | Numeric | Age bracket (40 mean 40-49). -1 for unspecified |
@@ -56,10 +56,6 @@ Example Patient Data:
 | sourceURL | URL | Any news or press release where this data was sourced from |
 | notes | String | Other text |
 | knownCluster | String | Known cluster this patient is from (can be multiple, separated by commas) |
-| cruiseQuarantineOfficer | boolean | Identified as a cruise quarantine officer (counted separately by some departments) |
-| cruisePassengerDisembarked | boolean | Patient was a cruise passenger, disembarked after testing negative |
-| charterFlightPassenger | boolean | Returned from the Wuhan Charter Flight |
-
 
 ### docs/patient_data/summary.json
 
@@ -89,7 +85,6 @@ List of
       "summary": {
         "count": 155,
         "cruisePassenger": 0,
-        "cruiseWorker": 0,
         "deaths": 12,
         "progression": [],
         "cityCounts": {
@@ -119,7 +114,6 @@ List is sorted by summary.count.
 | ----- | ------ | ----------- |
 | count | Numeric | Total infected count |
 | cruisePassenger | Numeric | Total number of cruise passengers |
-| cruiseWorker | Numeric | Total number of quarantine officers on cruise ship |
 | deaths | Numeric | Total number of deaths |
 | recovered | Numeric | Total number of recovered patients |
 | critical | Numeric | Total number of patients in critical condition (respirators) |
