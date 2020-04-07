@@ -52311,6 +52311,26 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "4198",
+    "dateAnnounced": "2020-04-07",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Tochigi city",
+    "detectedPrefecture": "Tochigi",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373771000.html?utm_int=word_contents_list-items_022&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4199",
+    "dateAnnounced": "2020-04-07",
+    "ageBracket": 10,
+    "gender": "M",
+    "detectedPrefecture": "Toyama",
+    "notes": "Toyama#13",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373741000.html?utm_int=word_contents_list-items_023&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "AC239",
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
@@ -53721,6 +53741,18 @@
     "notes": "Died on 4/5, Aichi death #21",
     "deceasedDate": "4/5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371221000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-07",
+    "ageBracket": 90,
+    "gender": "F",
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "Died on 4/7",
+    "deceasedDate": "4/7",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373861000.html?utm_int=word_contents_list-items_014&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   }
 ]
