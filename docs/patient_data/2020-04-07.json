@@ -4663,7 +4663,6 @@
     "notes": "Returning from Vietnam, detected at the airport, transported to Nagoya",
     "prefecturePatientNumber": "Port",
     "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_09966.html",
-    "detectedAtPort": false,
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200304/k10012313921000.html?utm_int=news-new_contents_list-items_015",
     "confirmedPatient": true
   },
@@ -14841,7 +14840,6 @@
     "notes": "No Symptoms, Wakayama resident, detected at Kansai airport, returning from Switzerland, not counted as Wakayama",
     "prefecturePatientNumber": "Port#10",
     "prefectureSourceURL": "https://www.mhlw.go.jp/stf/newpage_10352.html",
-    "detectedAtPort": false,
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200320/k10012342501000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -15153,7 +15151,8 @@
     "detectedCityTown": "Naha",
     "detectedPrefecture": "Port Quarantine",
     "notes": "Traveled to Spain, not counted in prefectural total (imported case)",
-    "detectedAtPort": false,
+    "prefecturePatientNumber": "PortOkinawa",
+    "prefectureSourceURL": "https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/press/documents/20200323_covid19_4.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200321/k10012343151000.html?utm_int=news-new_contents_list-items_004",
     "confirmedPatient": true
   },
@@ -25056,7 +25055,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "France",
     "prefecturePatientNumber": "Port#61",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10673.html",
     "confirmedPatient": true
   },
@@ -26472,7 +26470,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Spain",
     "prefecturePatientNumber": "Port#32",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26485,7 +26482,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Germany",
     "prefecturePatientNumber": "Port#33",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26498,7 +26494,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Germany",
     "prefecturePatientNumber": "Port#34",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26511,7 +26506,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "EU",
     "prefecturePatientNumber": "Port#35",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26524,7 +26518,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Spain",
     "prefecturePatientNumber": "Port#36",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26537,7 +26530,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Ireland",
     "prefecturePatientNumber": "Port#37",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26550,7 +26542,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Germany",
     "prefecturePatientNumber": "Port#38",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26563,7 +26554,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "EU",
     "prefecturePatientNumber": "Port#39",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26576,7 +26566,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Ireland",
     "prefecturePatientNumber": "Port#40",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26589,7 +26578,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Ireland",
     "prefecturePatientNumber": "Port#41",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26602,7 +26590,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "South America",
     "prefecturePatientNumber": "Port#42",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26615,7 +26602,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Italy",
     "prefecturePatientNumber": "Port#43",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26628,7 +26614,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "EU",
     "prefecturePatientNumber": "Port#44",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26641,7 +26626,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "France",
     "prefecturePatientNumber": "Port#45",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26654,7 +26638,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "EU",
     "prefecturePatientNumber": "Port#46",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26667,7 +26650,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "EU",
     "prefecturePatientNumber": "Port#47",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26680,7 +26662,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "South America",
     "prefecturePatientNumber": "Port#48",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26693,7 +26674,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "France",
     "prefecturePatientNumber": "Port#49",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26706,7 +26686,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "France",
     "prefecturePatientNumber": "Port#50",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -26719,7 +26698,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "France",
     "prefecturePatientNumber": "Port#51",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10606.html",
     "confirmedPatient": true
   },
@@ -28628,7 +28606,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Arrival from Germany",
     "prefecturePatientNumber": "Port#57",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10655.html",
     "confirmedPatient": true
   },
@@ -28641,7 +28618,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Arrival from Europe",
     "prefecturePatientNumber": "Port#58",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10655.html",
     "confirmedPatient": true
   },
@@ -31982,7 +31958,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Arrival from Europe",
     "prefecturePatientNumber": "Port#62",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10689.html",
     "confirmedPatient": true
   },
@@ -31995,7 +31970,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Arrival from Europe",
     "prefecturePatientNumber": "Port#63",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10689.html",
     "confirmedPatient": true
   },
@@ -32008,7 +31982,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Arrival from Europe",
     "prefecturePatientNumber": "Port#64",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10689.html",
     "confirmedPatient": true
   },
@@ -32021,7 +31994,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Arrival from Europe",
     "prefecturePatientNumber": "Port#65",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10689.html",
     "confirmedPatient": true
   },
@@ -32034,7 +32006,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Arrival from Europe",
     "prefecturePatientNumber": "Port#59",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10655.html",
     "confirmedPatient": true
   },
@@ -32047,7 +32018,6 @@
     "detectedPrefecture": "Port Quarantine",
     "notes": "Arrival from Europe",
     "prefecturePatientNumber": "Port#60",
-    "detectedAtPort": false,
     "sourceURL": "https://www.mhlw.go.jp/stf/newpage_10655.html",
     "confirmedPatient": true
   },
