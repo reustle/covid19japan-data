@@ -240,7 +240,7 @@ data that we use to cross check and verify.
 |Wakayama    |[新型コロナウイルス感染症に関連する情報について](https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html)||
 |Yamagata    |[新型コロナウイルス感染症に関連するポータルサイト](http://www.pref.yamagata.jp/ou/bosai/020072/kochibou/coronavirus/coronavirus.html)||
 |Yamaguchi    |[新型コロナウイルス感染症の山口県内での発生について](https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/koronahassei.html)||
-|Yamanashi    |[新型コロナウイルス感染症に関する総合情報](https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html)||
+|Yamanashi    |[新型コロナウイルス感染症の県内における発生状況](https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html)||
 
 **We need your help!** Please submit any information sources via the "Issues" tab above. Thank you! ありがとう！
 
