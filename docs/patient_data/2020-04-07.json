@@ -50854,16 +50854,6 @@
   {
     "patientId": -1,
     "dateAnnounced": "2020-04-05",
-    "ageBracket": -1,
-    "detectedPrefecture": "Aichi",
-    "patientStatus": "Deceased",
-    "deceasedDate": "4/5",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369701000.html",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-04-05",
     "ageBracket": 30,
     "gender": "F",
     "residence": "Kutchan",
@@ -50947,6 +50937,16 @@
   },
   {
     "patientId": -1,
+    "dateAnnounced": "2020-04-05",
+    "ageBracket": -1,
+    "detectedPrefecture": "Aichi",
+    "patientStatus": "Deceased",
+    "deceasedDate": "4/5",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369701000.html",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
     "dateAnnounced": "2020-04-06",
     "ageBracket": -1,
     "residence": "Saitama",
@@ -50954,19 +50954,6 @@
     "patientStatus": "Deceased",
     "notes": "No information disclosed per family's wish",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370181000.html",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-04-06",
-    "ageBracket": 60,
-    "gender": "M",
-    "residence": "Nagoya",
-    "detectedPrefecture": "Aichi",
-    "patientStatus": "Deceased",
-    "notes": "Died on 4/5, Aichi death #21",
-    "deceasedDate": "4/5",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371221000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   },
   {
@@ -50980,6 +50967,19 @@
     "notes": "Died on 4/4, Hyogo death #12",
     "deceasedDate": "4/4",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371191000.html?utm_int=word_contents_list-items_006&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Nagoya",
+    "detectedPrefecture": "Aichi",
+    "patientStatus": "Deceased",
+    "notes": "Died on 4/5, Aichi death #21",
+    "deceasedDate": "4/5",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012371221000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   }
 ]
