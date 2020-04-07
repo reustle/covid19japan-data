@@ -45,11 +45,14 @@ const fetchAndSummarize = async (dateString) => {
   const prefectures = await FetchSheet.fetchRows('Prefecture Data')
 
   // Merge multiple patient lists.
-  const overallPatientList =  FetchPatientData.fetchPatientData('Patient Data')
-  const tokyoPatientList =  FetchPatientData.fetchPatientData('Tokyo')
-  const osakaPatientList =  FetchPatientData.fetchPatientData('Osaka')
+  const patientListFetches = [
+    FetchPatientData.fetchPatientData('Patient Data'),
+    FetchPatientData.fetchPatientData('Tokyo'),
+    FetchPatientData.fetchPatientData('Osaka'),
+    FetchPatientData.fetchPatientData('Kanagawa')
+  ]
 
-  Promise.all([overallPatientList, tokyoPatientList, osakaPatientList])
+  Promise.all(patientListFetches)
     .then(patientLists => {
       let patients = MergePatients.mergePatients(patientLists)
 
