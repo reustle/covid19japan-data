@@ -27,6 +27,9 @@ jobs:
 
       - name: Publish Latest Data
         run: node publish.js
+
+      - name: Git Status
+        run: git status
         
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
