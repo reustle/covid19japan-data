@@ -46243,6 +46243,9 @@
     "gender": "F",
     "detectedCityTown": "Asao",
     "detectedPrefecture": "Kumamoto",
+    "notes": "Prefecture report has typo that says this is #20, but it's #19",
+    "prefecturePatientNumber": "Kumamoto#19",
+    "prefectureSourceURL": "https://www.pref.kumamoto.jp/common/UploadFileOutput.ashx?c_id=3&id=30386&sub_id=83&flid=230570",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369831000.html",
     "confirmedPatient": true
   },
@@ -50887,7 +50890,8 @@
     "ageBracket": 70,
     "gender": "F",
     "detectedPrefecture": "Kumamoto",
-    "notes": "mother of #3832. 2 news announced its the 20th in Kumamoto",
+    "notes": "mother of Kumamoto#19. 2 news announced its the 20th in Kumamoto",
+    "relatedPatients": "Kumamoto#19",
     "prefecturePatientNumber": "Kumamoto#20",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372051000.html?utm_int=word_contents_list-items_017&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -50900,7 +50904,6 @@
     "residence": "Joetsu",
     "detectedCityTown": "Joetsu",
     "detectedPrefecture": "Niigata",
-    "prefecturePatientNumber": "Niigata#36",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372081000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -50988,9 +50991,20 @@
     "gender": "M",
     "residence": "Okayama, Minami-ku",
     "detectedPrefecture": "Okayama",
-    "notes": "Fatherof #3492",
+    "notes": "Father of Okayama#10",
+    "relatedPatients": "Okayama#10",
     "prefecturePatientNumber": "Okayama#12",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372121000.html?utm_int=word_contents_list-items_014&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4111",
+    "dateAnnounced": "2020-04-07",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Nara",
+    "detectedPrefecture": "Nara",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372241000.html",
     "confirmedPatient": true
   },
   {
