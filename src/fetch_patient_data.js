@@ -59,8 +59,6 @@ const postProcessData = (rawData) => {
       'prefectureSourceURL': row.prefectureUrlAuto,
       'charterFlightPassenger': row.charterFlightPassenger,
       'cruisePassengerDisembarked': row.cruisePassengerDisembarked,
-      'cruisePassengerInfectedOnboard': row.cruisePassengerInfectedOnboard,
-      'cruiseQuarantineOfficer': row.cruiseQuarantineOfficer,
       'detectedAtPort': row.detectedAtPort,
       'deceasedDate': row.deceased,
       'sourceURL': row.sourceS,
@@ -78,9 +76,6 @@ const postProcessData = (rawData) => {
     let booleanFields = [ 
       'charterFlightPassenger', 
       'cruisePassengerDisembarked', 
-      'cruisePassengerInfectedOnboard',
-      'cruiseQuarantineOfficer',
-      'detectedAtPort'
     ]
     transformedRow = _.mapValues(transformedRow, (v, k) => {
       if (booleanFields.indexOf(k) != -1) {
