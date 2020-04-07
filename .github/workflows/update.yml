@@ -1,4 +1,4 @@
-name: Fetch and Summarize Data
+name: Fetch and Summarize Data (Master)
 on: 
   push:
     branches:
@@ -13,6 +13,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+          ref: master
 
       - name: Set up Node.js
         uses: actions/setup-node@v1
@@ -36,7 +37,7 @@ jobs:
         with:
           author_name: Automated Action
           author_email: alastair@liquidx.net
-          message: "Update Summary Data"
+          message: "(Automated) Data Update"
           add: "docs/*/*.json"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
