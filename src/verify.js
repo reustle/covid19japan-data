@@ -8,7 +8,7 @@ const _ = require('lodash')
 const verifyDailySummary = (dailySummary) => {
   // Ensure there's some data.
   if (dailySummary.length < 10) {
-    throw `ValidationError: Expecting more than 10 days of data.`
+    throw new Error(`DailySummaryError: Expecting more than 10 days of data.`)
   }
 
   // Ensure none of the fields are zero.
@@ -16,12 +16,21 @@ const verifyDailySummary = (dailySummary) => {
   for (let key in _.keys(latestDay)) {
     if (key.endsWith('Cumulative')) {
       if (latestDay[key] < 1) {
-        throw `ValidationError: ${key} for the latest day is 0.`
+        throw new Error(`DailySummaryError: ${key} for the latest day is 0.`)
       }
     }
   }
 
   return dailySummary
+}
+
+const verifyPrefectures = (prefectures) => {
+  for (let prefecture of prefectures) {
+    if (prefecture.confirmed < prefecture.recovered) {
+      throw new Error(`PrefectureError: ${prefecture.name} has more recovered than confirmed`)
+    }
+  }
+  
 }
 
 const verifyPatients = (patients) => {
@@ -39,13 +48,13 @@ const verifyPatients = (patients) => {
   }
 
   if (duplicates.length > 0) {
-    throw `ValidationError: Duplicated patientIds detected ${duplicates}`
+    throw new Error(`PatientError: Duplicated patientIds detected ${duplicates}`)
   }
-
-
 
   return patients
 }
 
+
 exports.verifyDailySummary = verifyDailySummary
+exports.verifyPrefectures = verifyPrefectures
 exports.verifyPatients = verifyPatients
