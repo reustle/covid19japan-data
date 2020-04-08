@@ -52454,36 +52454,48 @@
   {
     "patientId": "4201",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Kashima, Ibaraki",
     "detectedPrefecture": "Ibaraki",
     "notes": "Ibaraki #72",
+    "prefecturePatientNumber": "Ibaraki#72",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373671000.html?utm_int=word_contents_list-items_027&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4202",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Chiba",
     "detectedPrefecture": "Ibaraki",
     "notes": "Ibaraki #73",
+    "prefecturePatientNumber": "Ibaraki#73",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373671000.html?utm_int=word_contents_list-items_027&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4203",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Koga",
     "detectedPrefecture": "Ibaraki",
     "notes": "Ibaraki #74",
+    "prefecturePatientNumber": "Ibaraki#74",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373671000.html?utm_int=word_contents_list-items_027&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4204",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Koga",
     "detectedPrefecture": "Ibaraki",
     "notes": "Ibaraki #75",
+    "prefecturePatientNumber": "Ibaraki#75",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373671000.html?utm_int=word_contents_list-items_027&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52643,6 +52655,7 @@
     "gender": "F",
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#195",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373611000.html?utm_int=word_contents_list-items_042&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52653,6 +52666,8 @@
     "gender": "F",
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "relatedPatients": "Hokkaido#197",
+    "prefecturePatientNumber": "Hokkaido#198",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373611000.html?utm_int=word_contents_list-items_042&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B10",
     "confirmedPatient": true
   },
@@ -52663,6 +52678,8 @@
     "gender": "M",
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "relatedPatients": "Hokkaido#198",
+    "prefecturePatientNumber": "Hokkaido#197",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373611000.html?utm_int=word_contents_list-items_042&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B11",
     "confirmedPatient": true
   },
@@ -52673,6 +52690,7 @@
     "gender": "F",
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "prefecturePatientNumber": "Hokkaido#196",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373611000.html?utm_int=word_contents_list-items_042&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B12",
     "confirmedPatient": true
   },
@@ -52908,6 +52926,7 @@
     "residence": "Tokyo",
     "detectedCityTown": "Tatebayashi",
     "detectedPrefecture": "Gunma",
+    "prefecturePatientNumber": "Gunma#28",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373991000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52918,6 +52937,7 @@
     "residence": "Tokyo",
     "detectedCityTown": "Tatebayashi",
     "detectedPrefecture": "Gunma",
+    "prefecturePatientNumber": "Gunma#29",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373991000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52929,6 +52949,7 @@
     "residence": "Tamamura",
     "detectedCityTown": "Tamamura",
     "detectedPrefecture": "Gunma",
+    "prefecturePatientNumber": "Gunma#27",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373991000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
