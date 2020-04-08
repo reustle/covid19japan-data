@@ -52045,6 +52045,7 @@
     "detectedCityTown": "Ohno",
     "detectedPrefecture": "Fukui",
     "notes": "Office worker",
+    "prefecturePatientNumber": "Fukui#60",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012371861000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52057,6 +52058,7 @@
     "detectedCityTown": "Ohno",
     "detectedPrefecture": "Fukui",
     "notes": "Office worker",
+    "prefecturePatientNumber": "Fukui#61",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012371861000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52068,6 +52070,7 @@
     "residence": "Fukui",
     "detectedCityTown": "Fukui",
     "detectedPrefecture": "Fukui",
+    "prefecturePatientNumber": "Fukui#62",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012371861000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52080,6 +52083,7 @@
     "detectedCityTown": "Fukui",
     "detectedPrefecture": "Fukui",
     "notes": "Office worker",
+    "prefecturePatientNumber": "Fukui#63",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012371861000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52092,6 +52096,7 @@
     "detectedCityTown": "Fukui",
     "detectedPrefecture": "Fukui",
     "notes": "Office worker",
+    "prefecturePatientNumber": "Fukui#64",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012371861000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52104,6 +52109,7 @@
     "detectedCityTown": "Echizen",
     "detectedPrefecture": "Fukui",
     "notes": "Office worker",
+    "prefecturePatientNumber": "Fukui#65",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012371861000.html?utm_int=word_contents_list-items_011&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -55975,27 +55981,33 @@
   {
     "patientId": "4316",
     "dateAnnounced": "2020-04-08",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "notes": "Doctor",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375051000.html?utm_int=news-social_contents_list-items_001",
     "confirmedPatient": true
   },
   {
     "patientId": "4317",
     "dateAnnounced": "2020-04-08",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "notes": "Works in fire station",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375051000.html?utm_int=news-social_contents_list-items_001",
     "confirmedPatient": true
   },
   {
     "patientId": "4318",
     "dateAnnounced": "2020-04-08",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
+    "notes": "Visited Tokyo on March",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375051000.html?utm_int=news-social_contents_list-items_001",
     "confirmedPatient": true
   },
@@ -56003,6 +56015,7 @@
     "patientId": "4319",
     "dateAnnounced": "2020-04-08",
     "ageBracket": -1,
+    "gender": "F",
     "residence": "Sapporo",
     "detectedPrefecture": "Hokkaido",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375051000.html?utm_int=news-social_contents_list-items_001",
@@ -56015,6 +56028,16 @@
     "gender": "F",
     "detectedPrefecture": "Kumamoto",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012374961000.html?utm_int=news-social_contents_list-items_005",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4321",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Niigata city",
+    "detectedPrefecture": "Niigata",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375071000.html?utm_int=word_contents_list-items_020&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
