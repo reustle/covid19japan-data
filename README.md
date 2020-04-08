@@ -241,6 +241,7 @@ data that we use to cross check and verify.
 |Toyama    |[新型コロナウイルス感染症の県内の患者等発生状況](http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html)||
 |Wakayama    |[新型コロナウイルス感染症に関連する情報について](https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html)||
 |Yamagata    |[新型コロナウイルス感染症に関連するポータルサイト](http://www.pref.yamagata.jp/ou/bosai/020072/kochibou/coronavirus/coronavirus.html)||
+| Yamagata - Yonezawa | [新型コロナウイルス感染症に係る市からのお知らせ](http://www.city.yonezawa.yamagata.jp/item/8355.html#itemid8355) |||
 |Yamaguchi    |[新型コロナウイルス感染症の山口県内での発生について](https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/koronahassei.html)||
 |Yamanashi    |[新型コロナウイルス感染症の県内における発生状況](https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html)||
 
