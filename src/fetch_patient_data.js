@@ -66,7 +66,7 @@ const postProcessData = (rawData) => {
 
     // filter empty cells.
     transformedRow = _.pickBy(transformedRow, (v, k) => {
-      if (v == '' || v == false || typeof v === 'undefined') {
+      if (v === '' || v === false || typeof v === 'undefined') {
         return false
       }
       return true
