@@ -13065,7 +13065,7 @@
     "detectedCityTown": "Kyoto city",
     "detectedPrefecture": "Kyoto",
     "notes": "works in Kyoto Ukyo Ward Office",
-    "prefecturePatientNumber": "Kyoto #19",
+    "prefecturePatientNumber": "Kyoto#19",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200317/k10012336601000.html?utm_int=word_contents_list-items_050&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -13077,7 +13077,7 @@
     "residence": "Kyoto city",
     "detectedCityTown": "Kyoto city",
     "detectedPrefecture": "Kyoto",
-    "prefecturePatientNumber": "Kyoto #18",
+    "prefecturePatientNumber": "Kyoto#18",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200318/k10012337171000.html?utm_int=news-new_contents_list-items_007",
     "confirmedPatient": true
   },
@@ -13345,7 +13345,7 @@
     "residence": "Otokuni",
     "detectedCityTown": "Otokuni",
     "detectedPrefecture": "Kyoto",
-    "prefecturePatientNumber": "Kyoto #20",
+    "prefecturePatientNumber": "Kyoto#20",
     "prefectureSourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F",
     "sourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F",
     "confirmedPatient": true
@@ -13358,7 +13358,7 @@
     "detectedCityTown": "Kyoto city",
     "detectedPrefecture": "Kyoto",
     "relatedPatients": "Kyoto #8",
-    "prefecturePatientNumber": "Kyoto #21",
+    "prefecturePatientNumber": "Kyoto#21",
     "prefectureSourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F",
     "sourceURL": "https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F",
     "confirmedPatient": true
@@ -14145,7 +14145,7 @@
     "residence": "Hiratsuka",
     "detectedPrefecture": "Kanagawa",
     "notes": "Returned from Spain, France https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
-    "prefecturePatientNumber": "Kanagawa #63",
+    "prefecturePatientNumber": "Kanagawa#63",
     "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/lnews/yokohama/20200319/1050009454.html",
     "confirmedPatient": true
@@ -14158,7 +14158,7 @@
     "detectedCityTown": "Kamakura",
     "detectedPrefecture": "Kanagawa",
     "notes": "Returned from Egypt",
-    "prefecturePatientNumber": "Kanagawa #64",
+    "prefecturePatientNumber": "Kanagawa#64",
     "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/lnews/yokohama/20200319/1050009454.html",
     "confirmedPatient": true
@@ -14170,7 +14170,7 @@
     "gender": "F",
     "detectedCityTown": "Atsugi",
     "detectedPrefecture": "Kanagawa",
-    "prefecturePatientNumber": "Kanagawa #65",
+    "prefecturePatientNumber": "Kanagawa#65",
     "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/lnews/yokohama/20200319/1050009454.html",
     "confirmedPatient": true
@@ -14182,7 +14182,7 @@
     "gender": "M",
     "detectedCityTown": "Atsugi",
     "detectedPrefecture": "Kanagawa",
-    "prefecturePatientNumber": "Kanagawa #66",
+    "prefecturePatientNumber": "Kanagawa#66",
     "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/lnews/yokohama/20200319/1050009454.html",
     "confirmedPatient": true
@@ -25084,18 +25084,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": "1957",
-    "dateAnnounced": "2020-03-29",
-    "ageBracket": 60,
-    "gender": "M",
-    "residence": "Kyoto",
-    "detectedCityTown": "Kyoto",
-    "detectedPrefecture": "Kyoto",
-    "notes": "?? Not in Kyoto's records, but in NHK report",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200330/k10012356821000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": true
-  },
-  {
     "patientId": "1958",
     "dateAnnounced": "2020-03-29",
     "ageBracket": 50,
@@ -31959,6 +31947,7 @@
     "gender": "F",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#175",
     "cityPrefectureNumber": "Yokohama#31",
     "sourceURL": "https://www3.nhk.or.jp/shutoken-news/20200402/1000046624.html",
     "confirmedPatient": true
@@ -31971,6 +31960,7 @@
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Traveled to America",
+    "prefecturePatientNumber": "Kanagawa#176",
     "cityPrefectureNumber": "Yokohama#32",
     "sourceURL": "https://www3.nhk.or.jp/shutoken-news/20200402/1000046624.html",
     "confirmedPatient": true
@@ -31982,6 +31972,7 @@
     "gender": "F",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#177",
     "cityPrefectureNumber": "Yokohama#33",
     "sourceURL": "https://www3.nhk.or.jp/shutoken-news/20200402/1000046624.html",
     "confirmedPatient": true
@@ -31993,6 +31984,7 @@
     "gender": "F",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#178",
     "cityPrefectureNumber": "Yokohama#34",
     "sourceURL": "https://www3.nhk.or.jp/shutoken-news/20200402/1000046624.html",
     "confirmedPatient": true
@@ -32006,6 +31998,7 @@
     "detectedPrefecture": "Kanagawa",
     "notes": "contact with Yokohama #19",
     "relatedPatients": "Yokohama#19",
+    "prefecturePatientNumber": "Kanagawa#179",
     "cityPrefectureNumber": "Yokohama#35",
     "sourceURL": "https://www3.nhk.or.jp/shutoken-news/20200402/1000046624.html",
     "confirmedPatient": true
@@ -32017,6 +32010,7 @@
     "gender": "M",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#180",
     "cityPrefectureNumber": "Yokohama#36",
     "sourceURL": "https://www3.nhk.or.jp/shutoken-news/20200402/1000046624.html",
     "confirmedPatient": true
@@ -32028,6 +32022,7 @@
     "gender": "M",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#181",
     "cityPrefectureNumber": "Yokohama#37",
     "sourceURL": "https://www3.nhk.or.jp/shutoken-news/20200402/1000046624.html",
     "confirmedPatient": true
@@ -32039,6 +32034,7 @@
     "gender": "M",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#182",
     "cityPrefectureNumber": "Yokohama#38",
     "sourceURL": "https://www3.nhk.or.jp/shutoken-news/20200402/1000046624.html",
     "confirmedPatient": true
@@ -32050,6 +32046,7 @@
     "gender": "M",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#183",
     "cityPrefectureNumber": "Yokohama#39",
     "sourceURL": "https://www3.nhk.or.jp/shutoken-news/20200402/1000046624.html",
     "confirmedPatient": true
@@ -35304,10 +35301,11 @@
     "patientId": "3127",
     "dateAnnounced": "2020-04-02",
     "gender": "M",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
-    "prefecturePatientNumber": "Kanagawa#180",
+    "prefecturePatientNumber": "Kanagawa#213",
     "cityPrefectureNumber": "Yokohama#45",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35316,10 +35314,11 @@
     "patientId": "3128",
     "dateAnnounced": "2020-04-02",
     "gender": "F",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
-    "prefecturePatientNumber": "Kanagawa#179",
+    "prefecturePatientNumber": "Kanagawa#212",
     "cityPrefectureNumber": "Yokohama#44",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35329,10 +35328,11 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 30,
     "gender": "M",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
-    "prefecturePatientNumber": "Kanagawa#178",
+    "prefecturePatientNumber": "Kanagawa#211",
     "cityPrefectureNumber": "Yokohama#43",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35342,10 +35342,11 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 60,
     "gender": "F",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
-    "prefecturePatientNumber": "Kanagawa#177",
+    "prefecturePatientNumber": "Kanagawa#210",
     "cityPrefectureNumber": "Yokohama#42",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35355,10 +35356,11 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 20,
     "gender": "F",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
-    "prefecturePatientNumber": "Kanagawa#182",
+    "prefecturePatientNumber": "Kanagawa#215",
     "cityPrefectureNumber": "Yokohama#47",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35368,11 +35370,12 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 40,
     "gender": "F",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
     "relatedPatients": "Yokohama#17",
-    "prefecturePatientNumber": "Kanagawa#176",
+    "prefecturePatientNumber": "Kanagawa#209",
     "cityPrefectureNumber": "Yokohama#41",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35382,9 +35385,11 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 30,
     "gender": "M",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
+    "prefecturePatientNumber": "Kanagawa#219",
     "cityPrefectureNumber": "Yokohama#51",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35394,10 +35399,11 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 40,
     "gender": "M",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
-    "prefecturePatientNumber": "Kanagawa#181",
+    "prefecturePatientNumber": "Kanagawa#214",
     "cityPrefectureNumber": "Yokohama#46",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35407,11 +35413,12 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 40,
     "gender": "F",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Nurse",
     "relatedPatients": "Yokohama#25",
-    "prefecturePatientNumber": "Kanagawa#182",
+    "prefecturePatientNumber": "Kanagawa#216",
     "cityPrefectureNumber": "Yokohama#48",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35421,9 +35428,11 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 50,
     "gender": "F",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
+    "prefecturePatientNumber": "Kanagawa#218",
     "cityPrefectureNumber": "Yokohama#50",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35433,10 +35442,11 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 50,
     "gender": "M",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
-    "prefecturePatientNumber": "Kanagawa#175",
+    "prefecturePatientNumber": "Kanagawa#208",
     "cityPrefectureNumber": "Yokohama#40",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -35446,9 +35456,11 @@
     "dateAnnounced": "2020-04-02",
     "ageBracket": 80,
     "gender": "M",
+    "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Announced on 4/3, detected on 4/2",
+    "prefecturePatientNumber": "Kanagawa#217",
     "cityPrefectureNumber": "Yokohama#49",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012367811000.html?utm_int=word_contents_list-items_059&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -38517,6 +38529,7 @@
     "detectedCityTown": "Sagamihara",
     "detectedPrefecture": "Kanagawa",
     "notes": "Nurse",
+    "prefecturePatientNumber": "Kanagawa#206",
     "cityPrefectureNumber": "Sagamihara#34",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012366921000.html",
     "confirmedPatient": true
@@ -38529,6 +38542,7 @@
     "residence": "Yokosuka",
     "detectedCityTown": "Yokosuka",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#207",
     "cityPrefectureNumber": "Yokosuka#10",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012366921000.html",
     "confirmedPatient": true
@@ -39594,6 +39608,7 @@
     "residence": "Fujisawa",
     "detectedCityTown": "Fujisawa",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#205",
     "cityPrefectureNumber": "Fujisawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012366381000.html?utm_int=word_contents_list-items_022&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -41353,6 +41368,7 @@
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
     "notes": "Freelancer",
+    "prefecturePatientNumber": "Kanagawa#225",
     "cityPrefectureNumber": "Kawasaki#48",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368441000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -41366,6 +41382,7 @@
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
     "notes": "Restaurant employee",
+    "prefecturePatientNumber": "Kanagawa#226",
     "cityPrefectureNumber": "Kawasaki#49",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368441000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -41379,6 +41396,7 @@
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
     "notes": "Company employee",
+    "prefecturePatientNumber": "Kanagawa#227",
     "cityPrefectureNumber": "Kawasaki#50",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368441000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -41392,6 +41410,7 @@
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
     "notes": "Company employee",
+    "prefecturePatientNumber": "Kanagawa#228",
     "cityPrefectureNumber": "Kawasaki#51",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368441000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -41405,6 +41424,7 @@
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
     "notes": "Company employee",
+    "prefecturePatientNumber": "Kanagawa#229",
     "cityPrefectureNumber": "Kawasaki#52",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368441000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -41418,6 +41438,7 @@
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
     "notes": "Restaurant employee; contact with Kawasaki#52",
+    "prefecturePatientNumber": "Kanagawa#230",
     "cityPrefectureNumber": "Kawasaki#53",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368441000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -41431,17 +41452,8 @@
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
     "notes": "Company employee",
+    "prefecturePatientNumber": "Kanagawa#231",
     "cityPrefectureNumber": "Kawasaki#54",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368441000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "3170",
-    "dateAnnounced": "2020-04-04",
-    "ageBracket": 30,
-    "gender": "M",
-    "detectedCityTown": "Kawasaki",
-    "detectedPrefecture": "Kanagawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368441000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -42290,6 +42302,7 @@
     "residence": "Sagamihara",
     "detectedPrefecture": "Kanagawa",
     "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Kanagawa#234",
     "cityPrefectureNumber": "Sagamihara#36",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368761000.html",
     "confirmedPatient": true
@@ -42302,6 +42315,7 @@
     "residence": "Sagamihara",
     "detectedPrefecture": "Kanagawa",
     "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Kanagawa#233",
     "cityPrefectureNumber": "Sagamihara#35",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368761000.html",
     "confirmedPatient": true
@@ -42315,6 +42329,7 @@
     "detectedPrefecture": "Kanagawa",
     "patientStatus": "Hospitalized",
     "notes": "Wife of Sagamihara patient 20M on 4/2",
+    "prefecturePatientNumber": "Kanagawa#235",
     "cityPrefectureNumber": "Sagamihara#37",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368761000.html",
     "confirmedPatient": true
@@ -42327,7 +42342,7 @@
     "residence": "Sagamihara",
     "detectedPrefecture": "Kanagawa",
     "patientStatus": "Hospitalized",
-    "notes": "Government officer",
+    "notes": "Government officer. Cannot verify this one.",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368761000.html",
     "confirmedPatient": true
   },
@@ -42685,6 +42700,7 @@
     "gender": "M",
     "residence": "Yokosuka",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#236",
     "cityPrefectureNumber": "Yokosuka#11",
     "sourceURL": "https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html",
     "confirmedPatient": true
@@ -42696,6 +42712,7 @@
     "gender": "M",
     "residence": "Yokosuka",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#237",
     "cityPrefectureNumber": "Yokosuka#12",
     "sourceURL": "https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html",
     "confirmedPatient": true
@@ -42707,6 +42724,7 @@
     "gender": "F",
     "residence": "Yokosuka",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#238",
     "cityPrefectureNumber": "Yokosuka#13",
     "sourceURL": "https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html",
     "confirmedPatient": true
@@ -42718,6 +42736,7 @@
     "gender": "F",
     "residence": "Yokosuka",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#239",
     "cityPrefectureNumber": "Yokosuka#14",
     "sourceURL": "https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html",
     "confirmedPatient": true
@@ -42818,6 +42837,8 @@
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Researcher",
+    "prefecturePatientNumber": "Kanagawa#222",
+    "cityPrefectureNumber": "Yokohama#54",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368861000.html",
     "confirmedPatient": true
   },
@@ -42828,6 +42849,8 @@
     "gender": "M",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#223",
+    "cityPrefectureNumber": "Yokohama#55",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368861000.html",
     "confirmedPatient": true
   },
@@ -42838,6 +42861,8 @@
     "gender": "M",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#220",
+    "cityPrefectureNumber": "Yokohama#52",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368861000.html",
     "confirmedPatient": true
   },
@@ -42848,6 +42873,8 @@
     "gender": "F",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#221",
+    "cityPrefectureNumber": "Yokohama#53",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368861000.html",
     "confirmedPatient": true
   },
@@ -42858,6 +42885,8 @@
     "gender": "M",
     "residence": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#224",
+    "cityPrefectureNumber": "Yokohama#56",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368861000.html",
     "confirmedPatient": true
   },
@@ -43253,6 +43282,7 @@
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
     "notes": "Company employee",
+    "prefecturePatientNumber": "Kanagawa#232",
     "cityPrefectureNumber": "Kawasaki#55",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368441000.html",
     "confirmedPatient": true
@@ -45580,6 +45610,8 @@
     "detectedCityTown": "Fujisawa",
     "detectedPrefecture": "Kanagawa",
     "notes": "Was hanging around Tokyo ",
+    "prefecturePatientNumber": "Kanagawa#249",
+    "cityPrefectureNumber": "Fujisawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369321000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -45672,6 +45704,7 @@
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#250",
     "cityPrefectureNumber": "Kawasaki#56",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369411000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -45684,6 +45717,7 @@
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#251",
     "cityPrefectureNumber": "Kawasaki#57",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369411000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -45696,6 +45730,7 @@
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#252",
     "cityPrefectureNumber": "Kawasaki#58",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369411000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -45708,6 +45743,7 @@
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#253",
     "cityPrefectureNumber": "Kawasaki#59",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369411000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -45720,6 +45756,7 @@
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#254",
     "cityPrefectureNumber": "Kawasaki#60",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369411000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -46529,6 +46566,8 @@
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#258",
+    "cityPrefectureNumber": "Yokohama#60",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46540,6 +46579,8 @@
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#263",
+    "cityPrefectureNumber": "Yokohama#65",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46552,6 +46593,8 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Company employee",
+    "prefecturePatientNumber": "Kanagawa#255",
+    "cityPrefectureNumber": "Yokohama#57",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46564,6 +46607,8 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Company employee",
+    "prefecturePatientNumber": "Kanagawa#266",
+    "cityPrefectureNumber": "Yokohama#68",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46576,6 +46621,9 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Company employee",
+    "relatedPatients": "Yokohama#38",
+    "prefecturePatientNumber": "Kanagawa#260",
+    "cityPrefectureNumber": "Yokohama#62",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46588,6 +46636,8 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Company employee",
+    "prefecturePatientNumber": "Kanagawa#257",
+    "cityPrefectureNumber": "Yokohama#59",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46599,6 +46649,8 @@
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#262",
+    "cityPrefectureNumber": "Yokohama#64",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46611,6 +46663,8 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Student",
+    "prefecturePatientNumber": "Kanagawa#256",
+    "cityPrefectureNumber": "Yokohama#58",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46623,6 +46677,9 @@
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
     "notes": "Unemployed",
+    "relatedPatients": "Yokohama#42",
+    "prefecturePatientNumber": "Kanagawa#259",
+    "cityPrefectureNumber": "Yokohama#61",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46634,6 +46691,8 @@
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#261",
+    "cityPrefectureNumber": "Yokohama#63",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46645,6 +46704,8 @@
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#264",
+    "cityPrefectureNumber": "Yokohama#66",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46656,6 +46717,9 @@
     "residence": "Yokohama",
     "detectedCityTown": "Yokohama",
     "detectedPrefecture": "Kanagawa",
+    "relatedPatients": "Yokohama#55",
+    "prefecturePatientNumber": "Kanagawa#265",
+    "cityPrefectureNumber": "Yokohama#67",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369781000.html",
     "confirmedPatient": true
   },
@@ -46663,8 +46727,11 @@
     "patientId": "3749",
     "dateAnnounced": "2020-04-05",
     "gender": "F",
+    "residence": "Atsugi",
     "detectedCityTown": "Atsugi",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#240",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369661000.html",
     "confirmedPatient": true
   },
@@ -46673,8 +46740,11 @@
     "dateAnnounced": "2020-04-05",
     "ageBracket": 10,
     "gender": "M",
+    "residence": "Atsugi",
     "detectedCityTown": "Atsugi",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#241",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369661000.html",
     "confirmedPatient": true
   },
@@ -46683,8 +46753,11 @@
     "dateAnnounced": "2020-04-05",
     "ageBracket": 20,
     "gender": "F",
+    "residence": "Atsugi",
     "detectedCityTown": "Atsugi",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#242",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369661000.html",
     "confirmedPatient": true
   },
@@ -46693,8 +46766,11 @@
     "dateAnnounced": "2020-04-05",
     "ageBracket": 30,
     "gender": "M",
+    "residence": "Atsugi",
     "detectedCityTown": "Atsugi",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#243",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369661000.html",
     "confirmedPatient": true
   },
@@ -46703,8 +46779,11 @@
     "dateAnnounced": "2020-04-05",
     "ageBracket": 50,
     "gender": "M",
+    "residence": "Atsugi",
     "detectedCityTown": "Atsugi",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#244",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369661000.html",
     "confirmedPatient": true
   },
@@ -46715,6 +46794,8 @@
     "gender": "F",
     "detectedPrefecture": "Kanagawa",
     "notes": "Company employee",
+    "prefecturePatientNumber": "Kanagawa#245",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369661000.html",
     "confirmedPatient": true
   },
@@ -46724,6 +46805,8 @@
     "ageBracket": 60,
     "gender": "M",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#246",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369661000.html",
     "confirmedPatient": true
   },
@@ -46733,6 +46816,8 @@
     "ageBracket": 60,
     "gender": "M",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#247",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369661000.html",
     "confirmedPatient": true
   },
@@ -46742,6 +46827,8 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#248",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200405/k10012369661000.html",
     "confirmedPatient": true
   },
@@ -49374,6 +49461,8 @@
     "gender": "M",
     "residence": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#267",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/documents/58277/200406_kawasaki.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370641000.html?utm_int=news-new_contents_list-items_001",
     "confirmedPatient": true
   },
@@ -49384,6 +49473,8 @@
     "gender": "M",
     "residence": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#268",
+    "prefectureSourceURL": "https://www.pref.kanagawa.jp/documents/58277/200406_kawasaki.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370641000.html?utm_int=news-new_contents_list-items_001",
     "confirmedPatient": true
   },
@@ -50798,6 +50889,57 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "KNG318",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Yokosuka",
+    "detectedPrefecture": "Kanagawa",
+    "relatedPatients": "Yokosuka#9",
+    "prefecturePatientNumber": "Kanagawa#269",
+    "cityPrefectureNumber": "Yokosuka#15",
+    "sourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "KNG319",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Yokosuka",
+    "detectedPrefecture": "Kanagawa",
+    "notes": "US Military personnel",
+    "relatedPatients": "Yokosuka#12 Yokosuka#11",
+    "prefecturePatientNumber": "Kanagawa#270",
+    "cityPrefectureNumber": "Yokosuka#16",
+    "sourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "KNG320",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Yokosuka",
+    "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#271",
+    "cityPrefectureNumber": "Yokosuka#17",
+    "sourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "KNG321",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Yokosuka",
+    "detectedPrefecture": "Kanagawa",
+    "prefecturePatientNumber": "Kanagawa#272",
+    "cityPrefectureNumber": "Yokosuka#18",
+    "sourceURL": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "OSK409",
     "dateAnnounced": "2020-04-06",
     "ageBracket": 30,
@@ -52090,6 +52232,9 @@
     "residence": "Kyoto City",
     "detectedCityTown": "Kyoto City",
     "detectedPrefecture": "Kyoto",
+    "relatedPatients": "KyotoCity#72",
+    "prefecturePatientNumber": "Kyoto#142",
+    "cityPrefectureNumber": "KyotoCity#89",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372921000.html?utm_int=word_contents_list-items_013&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52100,7 +52245,9 @@
     "residence": "Kyoto City",
     "detectedCityTown": "Kyoto City",
     "detectedPrefecture": "Kyoto",
+    "relatedPatients": "KyotoCity#72",
     "prefecturePatientNumber": "Kyoto#141",
+    "cityPrefectureNumber": "KyotoCity#88",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372921000.html?utm_int=word_contents_list-items_013&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52112,7 +52259,9 @@
     "residence": "Kyoto City",
     "detectedCityTown": "Kyoto City",
     "detectedPrefecture": "Kyoto",
+    "relatedPatients": "KyotoCity#72",
     "prefecturePatientNumber": "Kyoto#140",
+    "cityPrefectureNumber": "KyotoCity#87",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372921000.html?utm_int=word_contents_list-items_013&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52126,6 +52275,7 @@
     "detectedPrefecture": "Kyoto",
     "notes": "Nurse at 京都鞍馬口医療センター",
     "prefecturePatientNumber": "Kyoto#139",
+    "cityPrefectureNumber": "KyotoCity#86",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372921000.html?utm_int=word_contents_list-items_013&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52137,6 +52287,8 @@
     "residence": "Kyoto City",
     "detectedCityTown": "Kyoto City",
     "detectedPrefecture": "Kyoto",
+    "prefecturePatientNumber": "Kyoto#144",
+    "cityPrefectureNumber": "KyotoCity#91",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372921000.html?utm_int=word_contents_list-items_013&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52149,6 +52301,7 @@
     "detectedCityTown": "Kyoto City",
     "detectedPrefecture": "Kyoto",
     "prefecturePatientNumber": "Kyoto#138",
+    "cityPrefectureNumber": "KyotoCity#85",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372921000.html?utm_int=word_contents_list-items_013&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -52195,38 +52348,51 @@
     "gender": "F",
     "residence": "outside Saitama",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#203",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372991000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4155",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Higashimatsuyama",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#204",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372991000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4156",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Higashimatsuyama",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saimata#205",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372991000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4157",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Saitama",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#206",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372991000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "4158",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Soka",
     "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#207",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372991000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -53500,34 +53666,36 @@
     "detectedCityTown": "Kyoto City",
     "detectedPrefecture": "Kyoto",
     "notes": "Serious condition",
-    "prefecturePatientNumber": "Kyoto#137",
+    "prefecturePatientNumber": "Kyoto#145",
+    "cityPrefectureNumber": "KyotoCity#92",
     "sourceURL": "https://www3.nhk.or.jp/lnews/kyoto/20200408/2010006336.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4295",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Kyoto City",
+    "detectedCityTown": "Kyoto City",
     "detectedPrefecture": "Kyoto",
-    "notes": "10 of 12",
+    "relatedPatients": "Kyoto#117",
+    "prefecturePatientNumber": "Kyoto#143",
+    "cityPrefectureNumber": "KyotoCity#90",
     "sourceURL": "https://www3.nhk.or.jp/lnews/kyoto/20200408/2010006336.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4296",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Kyoto City",
+    "detectedCityTown": "Kyoto City",
     "detectedPrefecture": "Kyoto",
-    "notes": "11 of 12",
-    "sourceURL": "https://www3.nhk.or.jp/lnews/kyoto/20200408/2010006336.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4297",
-    "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
-    "detectedPrefecture": "Kyoto",
-    "notes": "12 of 12",
+    "notes": "Contact with Shiga patient",
+    "prefecturePatientNumber": "Kyoto#137",
+    "cityPrefectureNumber": "KyotoCity#84",
     "sourceURL": "https://www3.nhk.or.jp/lnews/kyoto/20200408/2010006336.html",
     "confirmedPatient": true
   },
@@ -53993,6 +54161,7 @@
     "gender": "M",
     "residence": "Yokosuka",
     "detectedPrefecture": "Kanagawa",
+    "cityPrefectureNumber": "Yokosuka#19",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373391000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -54003,6 +54172,7 @@
     "gender": "F",
     "residence": "Yokosuka",
     "detectedPrefecture": "Kanagawa",
+    "cityPrefectureNumber": "Yokosuka#20",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373391000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
