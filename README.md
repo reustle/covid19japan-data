@@ -182,8 +182,9 @@ data that we use to cross check and verify.
 |Prefecture/City    | Patients Source    | Dashboard | Notes |
 |--------|----------|----------|------|
 |Aichi    | [新型コロナウイルス感染症患者の発生について](https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html)  | [Daily Aggregate](https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html)|
-|Aichi - Nagoya   |[新型コロナウイルス感染症患者の発生について](http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html)|  [Weekly Summary](http://www.city.nagoya.jp/kenkofukushi/page/0000101900.html)| Patients here are not listed on Aichi |
-| Aichi - Toyota | [発生状況](https://www.city.toyota.aichi.jp/kurashi/kenkou/eisei/1036258.html) | | Patients here are not listed on Aichi |
+|Aichi - Nagoya   |[新型コロナウイルス感染症患者の発生について](http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html)|  [Weekly Summary](http://www.city.nagoya.jp/kenkofukushi/page/0000101900.html)| Patients here are not listed on Aichi Prefecture Site |
+| Aichi - Toyota | [発生状況](https://www.city.toyota.aichi.jp/kurashi/kenkou/eisei/1036258.html) | | Patients here are not listed on Aichi Prefecture Site |
+| Aichi - Toyohashi | [患者の概要](https://www.city.toyohashi.lg.jp/41805.htm) | | Patients listed here are not listed in Aichi Prefecture Site |
 |Akita    |[新型コロナウイルス感染症について](https://www.pref.akita.lg.jp/pages/archive/47957)||
 |Aomori    |[新型コロナウイルス感染症についての情報](http://www.pref.aomori.lg.jp/koho/coronavirus_index.html)||
 |Chiba    |[患者の発生について｜新型コロナウイルス感染症](https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html)| Data is two days behind |
