@@ -1262,7 +1262,7 @@
       "name": "Kyoto"
     },
     {
-      "confirmed": 82,
+      "confirmed": 94,
       "cruisePassenger": 0,
       "deaths": 0,
       "confirmedByCity": {
@@ -1271,12 +1271,13 @@
         "Yokohama": 1,
         "Chubu International": 1,
         "Narita Airport": 3,
-        "Haneda": 1,
+        "Haneda": 10,
         "Haneda Airport": 11,
         "Haneda airport": 22,
-        "Kansai airport": 6,
+        "Kansai airport": 7,
         "Naha": 1,
-        "Narita airport": 19
+        "Narita airport": 19,
+        "Unspecified": 2
       },
       "dailyConfirmedCount": [
         0,
@@ -1370,10 +1371,10 @@
         5,
         4,
         0,
-        0
+        12
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 12,
       "recovered": 1,
       "name_ja": "空港検疫",
       "name": "Port Quarantine"
@@ -6162,18 +6163,18 @@
       "confirmedCumulativeAvg7d": 3457
     },
     {
-      "confirmed": 394,
+      "confirmed": 406,
       "recoveredCumulative": 622,
       "deceasedCumulative": 93,
       "criticalCumulative": 80,
-      "testedCumulative": 55311,
+      "testedCumulative": 61498,
       "date": "2020-04-08",
-      "confirmedCumulative": 4861,
-      "confirmedAvg3d": 333,
-      "confirmedCumulativeAvg3d": 4453,
-      "confirmedAvg7d": 334,
-      "confirmedCumulativeAvg7d": 3791
+      "confirmedCumulative": 4873,
+      "confirmedAvg3d": 337,
+      "confirmedCumulativeAvg3d": 4457,
+      "confirmedAvg7d": 335,
+      "confirmedCumulativeAvg7d": 3792
     }
   ],
-  "updated": "2020-04-08T22:37:20+09:00"
+  "updated": "2020-04-08T22:46:46+09:00"
 }
