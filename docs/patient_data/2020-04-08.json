@@ -53300,6 +53300,8 @@
     "gender": "M",
     "residence": "Toyobashi",
     "detectedPrefecture": "Aichi",
+    "prefecturePatientNumber": "Aichi#241",
+    "cityPrefectureNumber": "Toyohashi#3",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373641000.html?utm_int=word_contents_list-items_028&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -53311,6 +53313,8 @@
     "residence": "Toyobashi",
     "detectedPrefecture": "Aichi",
     "notes": "Works in Tokyo and went back",
+    "prefecturePatientNumber": "Aichi#240",
+    "cityPrefectureNumber": "Toyohashi#2",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373641000.html?utm_int=word_contents_list-items_028&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -53418,6 +53422,28 @@
     "detectedPrefecture": "Aichi",
     "cityPrefectureNumber": "Nagoya#157",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012374061000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "AC258",
+    "dateAnnounced": "2020-04-07",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Nagoya",
+    "detectedPrefecture": "Aichi",
+    "cityPrefectureNumber": "Nagoya#158",
+    "sourceURL": "http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "AC259",
+    "dateAnnounced": "2020-04-07",
+    "ageBracket": 80,
+    "gender": "F",
+    "residence": "Nagoya",
+    "detectedPrefecture": "Aichi",
+    "cityPrefectureNumber": "Nagoya#159",
+    "sourceURL": "http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html",
     "confirmedPatient": true
   },
   {
@@ -54817,6 +54843,62 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "4275",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukui",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012374631000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4276",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukui",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012374631000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4277",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukui",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012374631000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4278",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukui",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012374631000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4279",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukui",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012374631000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4280",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukui",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012374631000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4281",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukui",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012374631000.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": -1,
     "dateAnnounced": "2020-03-13",
     "ageBracket": -1,
@@ -55440,14 +55522,6 @@
     "notes": "Died on 4/7",
     "deceasedDate": "4/7",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373861000.html?utm_int=word_contents_list-items_014&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-04-08",
-    "ageBracket": -1,
-    "detectedPrefecture": "Fukui",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012374631000.html",
     "confirmedPatient": false
   }
 ]
