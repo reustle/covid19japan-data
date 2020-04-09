@@ -30350,7 +30350,9 @@
     "residence": "Wakayama",
     "detectedCityTown": "Wakatama",
     "detectedPrefecture": "Wakayama",
-    "prefecturePatientNumber": "Wakayama#19",
+    "patientStatus": "Discharged",
+    "notes": "Discharged 4/8",
+    "prefecturePatientNumber": "Wakayama#15",
     "prefectureSourceURL": "https://www.pref.wakayama.lg.jp/prefg/000200/covid19_d/fil/20200401press.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012361871000.html?utm_int=news-social_contents_list-items_002",
     "confirmedPatient": true
@@ -30760,6 +30762,7 @@
     "detectedPrefecture": "Nara",
     "notes": "Works in Osaka, Traveled to New Caledonia",
     "prefecturePatientNumber": "Nara#15",
+    "cityPrefectureNumber": "NaraCity#3",
     "prefectureSourceURL": "http://www.pref.nara.jp/secure/225913/0401houdounaarashi.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200401/k10012362331000.html?utm_int=news-social_contents_list-items_001",
     "confirmedPatient": true
@@ -48034,7 +48037,9 @@
     "dateAnnounced": "2020-04-05",
     "ageBracket": 70,
     "gender": "M",
+    "residence": "Chuwa",
     "detectedPrefecture": "Nara",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Nara#25",
     "sourceURL": "http://www.pref.nara.jp/module/1356.htm#moduleid1356",
     "confirmedPatient": true
@@ -51270,7 +51275,9 @@
     "dateAnnounced": "2020-04-06",
     "ageBracket": 40,
     "gender": "M",
+    "residence": "Koriyama",
     "detectedPrefecture": "Nara",
+    "relatedPatients": "Osaka#231",
     "prefecturePatientNumber": "Nara#26",
     "sourceURL": "http://www.pref.nara.jp/module/1356.htm#moduleid1356",
     "confirmedPatient": true
@@ -52611,7 +52618,10 @@
     "gender": "M",
     "residence": "Nara",
     "detectedPrefecture": "Nara",
+    "notes": "Works with NaraCity#3",
+    "relatedPatients": "NaraCity#3",
     "prefecturePatientNumber": "Nara#27",
+    "cityPrefectureNumber": "NaraCity#6",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372241000.html",
     "confirmedPatient": true
   },
@@ -53307,8 +53317,9 @@
     "gender": "M",
     "residence": "Nara",
     "detectedPrefecture": "Nara",
-    "notes": "Jail Staff",
+    "notes": "Works in Osaka Jail, works with identified patient from the same jail",
     "prefecturePatientNumber": "Nara#28",
+    "cityPrefectureNumber": "NaraCity#5",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373301000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -53319,7 +53330,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Hospitalized",
     "notes": "Student, visited Saitama",
-    "prefecturePatientNumber": "Wakayama#21",
+    "prefecturePatientNumber": "Wakayama#22",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373281000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -53331,7 +53342,7 @@
     "detectedPrefecture": "Wakayama",
     "patientStatus": "Hospitalized",
     "notes": "Teacher",
-    "prefecturePatientNumber": "Wakayama#22",
+    "prefecturePatientNumber": "Wakayama#04.07.B",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012373281000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -54463,6 +54474,7 @@
     "detectedPrefecture": "Shizuoka",
     "notes": "No data available yet",
     "prefecturePatientNumber": "Shizuoka#22",
+    "cityPrefectureNumber": "ShizuokaCity#11",
     "sourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
     "confirmedPatient": true
   },
@@ -56617,6 +56629,7 @@
     "residence": "Numazu",
     "detectedPrefecture": "Shizuoka",
     "notes": "Just moved from Tokyo to Shizuoka",
+    "prefecturePatientNumber": "Shizuoka#24",
     "sourceURL": "https://www.at-s.com/news/article/health/shizuoka/755004.html",
     "confirmedPatient": true
   },
@@ -56626,6 +56639,7 @@
     "ageBracket": -1,
     "residence": "Shimizu",
     "detectedPrefecture": "Shizuoka",
+    "prefecturePatientNumber": "Shizuoka#25",
     "sourceURL": "https://www.at-s.com/news/article/health/shizuoka/755004.html",
     "confirmedPatient": true
   },
@@ -56637,6 +56651,8 @@
     "residence": "Kamo",
     "detectedPrefecture": "Shizuoka",
     "notes": "Elderly couple",
+    "relatedPatients": "Husband of Shizuoka#27",
+    "prefecturePatientNumber": "Shizuoka#26",
     "sourceURL": "https://www.at-s.com/news/article/health/shizuoka/755004.html",
     "confirmedPatient": true
   },
@@ -56648,6 +56664,8 @@
     "residence": "Kamo",
     "detectedPrefecture": "Shizuoka",
     "notes": "Elderly couple",
+    "relatedPatients": "Wife of Shizuoka#26",
+    "prefecturePatientNumber": "Shizuoka#27",
     "sourceURL": "https://www.at-s.com/news/article/health/shizuoka/755004.html",
     "confirmedPatient": true
   },
@@ -57266,6 +57284,8 @@
     "detectedCityTown": "Hamamatsu",
     "detectedPrefecture": "Shizuoka",
     "notes": "Visited Kyoto",
+    "prefecturePatientNumber": "Shizuoka#23",
+    "cityPrefectureNumber": "Hanamatsu#4",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012376281000.html?utm_int=word_contents_list-items_024&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -58551,6 +58571,7 @@
     "detectedPrefecture": "Yamanashi",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Yamanashi#23",
+    "sourceURL": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html",
     "confirmedPatient": true
   },
   {
@@ -58562,6 +58583,7 @@
     "detectedPrefecture": "Yamanashi",
     "relatedPatients": "Yamanashi#20",
     "prefecturePatientNumber": "Yamanashi#24",
+    "sourceURL": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html",
     "confirmedPatient": true
   },
   {
@@ -58573,6 +58595,7 @@
     "detectedPrefecture": "Yamanashi",
     "relatedPatients": "Yamanashi#20",
     "prefecturePatientNumber": "Yamanashi#25",
+    "sourceURL": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html",
     "confirmedPatient": true
   },
   {
@@ -58636,6 +58659,110 @@
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Yamagata#22",
     "sourceURL": "http://www.pref.yamagata.jp/ou/bosai/020072/kochibou/coronavirus/coronavirus.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4517",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Kashiba",
+    "detectedPrefecture": "Nara",
+    "notes": "Student, Contact with 大阪市内の飲食店",
+    "prefecturePatientNumber": "Nara#29",
+    "sourceURL": "http://www.pref.nara.jp/module/1356.htm#moduleid1356",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4518",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Koriyama",
+    "detectedPrefecture": "Nara",
+    "prefecturePatientNumber": "Nara#30",
+    "sourceURL": "http://www.pref.nara.jp/module/1356.htm#moduleid1356",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4519",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": -1,
+    "detectedPrefecture": "Shizuoka",
+    "prefecturePatientNumber": "Shizuoka#28",
+    "sourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4520",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Hanamatsu",
+    "detectedPrefecture": "Shizuoka",
+    "relatedPatients": "Family of Shizuoka#23",
+    "prefecturePatientNumber": "Shizuoka#29",
+    "cityPrefectureNumber": "Hanamatsu#5",
+    "sourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4521",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Hanamatsu",
+    "detectedPrefecture": "Shizuoka",
+    "relatedPatients": "Family of Shizuoka#23",
+    "prefecturePatientNumber": "Shizuoka#30",
+    "cityPrefectureNumber": "Hanamatsu#6",
+    "sourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4522",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 0,
+    "gender": "F",
+    "residence": "Hanamatsu",
+    "detectedPrefecture": "Shizuoka",
+    "relatedPatients": "Family of Shizuoka#23",
+    "prefecturePatientNumber": "Shizuoka#31",
+    "cityPrefectureNumber": "Hanamatsu#7",
+    "sourceURL": "https://www.pref.shizuoka.jp/kinkyu/covid-19.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4523",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 30,
+    "gender": "M",
+    "detectedPrefecture": "Wakayama",
+    "relatedPatients": "Family of #4176",
+    "prefecturePatientNumber": "Wakayama#22.3",
+    "sourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4524",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 50,
+    "gender": "M",
+    "detectedPrefecture": "Wakayama",
+    "relatedPatients": "Works with #4176",
+    "prefecturePatientNumber": "Wakayama#22.2",
+    "sourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4525",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 10,
+    "gender": "M",
+    "detectedPrefecture": "Wakayama",
+    "relatedPatients": "Works with #4176",
+    "prefecturePatientNumber": "Wakayama#22.1",
+    "sourceURL": "https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html",
     "confirmedPatient": true
   },
   {
