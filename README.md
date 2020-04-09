@@ -200,7 +200,7 @@ data that we use to cross check and verify.
 |Hyogo    | [新型コロナウイルスに感染した患者の発生状況](https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html) [PCR](https://web.pref.hyogo.lg.jp/kf16/singatakoronakensa.html) ||
 |Hyogo - Himeji | [新型コロナウイルス感染症患者の発生について](https://www.city.himeji.lg.jp/emergencyinfo/0000000179.html)||
 |Hyogo - Nishinomiya 西宮市 | [新型コロナウイルス感染症患者の市内発生状況](https://www.nishi.or.jp/kurashi/anshin/infomation/k_00022020111.html) ||
-|Ibaraki    | [新型コロナウイルス感染症患者の県内の発生状況について](https://www.pref.ibaraki.jp/hokenfukushi/yobo/kiki/yobo/kansen/idwr/press/20200318-corona.html) || Only updates website weekly. |
+|Ibaraki    | [新型コロナウイルス感染症患者の県内の発生状況について](https://www.pref.ibaraki.jp/1saigai/2019-ncov/hassei.html) ||  |
 |Ishikawa    | [新型コロナウイルス感染症の県内の患者発生状況](https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html) || Updates daily (HTML) |
 |Iwate    |[新型コロナウイルス感染症関連情報](https://www.pref.iwate.jp/kurashikankyou/iryou/covid19/index.html)||
 |Kagawa    | [新型コロナウイルスに関連した患者の発生について](https://www.pref.kagawa.lg.jp/content/dir1/dir1_6/dir1_6_1/wvwfb0200317171212.shtml)||
