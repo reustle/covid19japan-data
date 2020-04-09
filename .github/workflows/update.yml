@@ -23,7 +23,7 @@ jobs:
         run: npm install
         
       - name: Download and Generate JSON data
-        run: node generate.js > docs/output.txt
+        run: node generate.js 2>&1 | tee docs/output.txt
 
       - name: Publish Latest Data
         run: node publish.js
