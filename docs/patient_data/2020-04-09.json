@@ -45822,7 +45822,7 @@
     "gender": "F",
     "residence": "Tokyo",
     "detectedPrefecture": "Tokyo",
-    "notes": "Tokyo 4/4 118, Please check the prefecture patient no. on TGM website. This patient seems to be Tokyo#890.",
+    "notes": "Tokyo 4/4 117, Please check the prefecture patient no. on TGM website. This patient seems to be Tokyo#890.",
     "prefecturePatientNumber": "Tokyo#891",
     "prefectureSourceURL": "https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/007/603/2020040502.pdf",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200404/k10012368431000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
@@ -62071,6 +62071,51 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "4575",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Amagasaki",
+    "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#249",
+    "sourceURL": "http://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4576",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Amagasaki",
+    "detectedPrefecture": "Hyogo",
+    "notes": "Medical personnel",
+    "prefecturePatientNumber": "Hyogo#250",
+    "sourceURL": "http://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4577",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Amagasaki",
+    "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#251",
+    "sourceURL": "http://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4578",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 70,
+    "gender": "M",
+    "residence": "Himeji",
+    "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#252",
+    "sourceURL": "http://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "TOK1342",
     "dateAnnounced": "2020-04-09",
     "ageBracket": -1,
@@ -63691,6 +63736,15 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "TOK1522",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "notes": "4/9 #181",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377701000.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": -1,
     "dateAnnounced": "2020-03-13",
     "ageBracket": -1,
@@ -64088,6 +64142,7 @@
     "detectedCityTown": "vacant",
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 4/4 42",
+    "prefecturePatientNumber": "Tokyo#815",
     "sourceURL": "https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/007/603/20200408.pdf",
     "confirmedPatient": false
   },
