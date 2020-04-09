@@ -1,6 +1,6 @@
 # Data repository for covid19japan.com
 
-[data.covid19japan.com](https://data.covid19japan.com)
+[covid19japan.com/](https://covid19japan.com/)
 
 This repository contains the JSON export of the [Live Japan Patient Database (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/e/2PACX-1vRri4r42DHwMHePjJfYN-qEWhGvKeOQullBtEzfle15i-xAsm9ZgV8oMxQNhPRO1CId39BPnn1IO5YO/pubhtml) that supports [covid19japan.com](https://covid19japan.com). You can find more details about contributing to the sheet [in this document](https://docs.google.com/document/d/1JbQn10KvmYYUHCPa7LObsUCG1m_tVY-S4BrchzRMzBI/edit).
 
@@ -51,7 +51,7 @@ Example Patient Data:
 | detectedCityTown | City/Town or Blank | City/Town patient was detected in |
 | detectedPrefecture | Prefecture Name, or "Unspecified" or "Port of Entry" | Prefecture patient was detected in. |
 | patientStatus | Unspecified, Hospitalized, Deceased, Discharged, Recovered | Condition of patient (Discharged and Recovered are similar) |
-| mhlwPatientNumber | Numeric | Identifier given by MHLW, obseleted by Prefecture number |
+| mhlwPatientNumber | Numeric | Identifier given by MHLW, obsoleted by Prefecture number |
 | prefecturePatientNumber | String | Usually Prefecture#Number |
 | prefectureSourceURL | URL | Source data from prefectural government |
 | sourceURL | URL | Any news or press release where this data was sourced from |
@@ -262,7 +262,7 @@ To run the data generation:
 node generate.js
 ```
 
-This will output the data into docs/ 
+This will output the data into `docs/` 
 
 To make the data ready for publishing (which really just changes the symlink latest.json):
 
@@ -274,7 +274,7 @@ node publish.js
 
 Every 15 minutes a Github Workflow runs `.github/workflows/update.yml` to fetch the latest
 data from the spreadsheet, runs a set of post processing on it and checks in the generated
-JSON file in to the docs/ directory.
+JSON file in to the `docs/` directory.
 
 If it detects some data inconsistencies, it will abort and not check in any data. The data
 verification checks are in `src/verify.js`
