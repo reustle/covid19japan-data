@@ -1,14 +1,15 @@
 {
   "prefectures": [
     {
-      "confirmed": 1520,
+      "confirmed": 1519,
       "cruisePassenger": 0,
       "deaths": 31,
       "confirmedByCity": {
         "Tokyo": 62,
         "Suginami": 1,
         "Adachi": 3,
-        "Nerima": 1
+        "Nerima": 1,
+        "vacant": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -98,7 +99,7 @@
         66,
         97,
         89,
-        116,
+        115,
         143,
         83,
         80,
@@ -6167,13 +6168,13 @@
       "confirmedCumulativeAvg7d": 2303
     },
     {
-      "confirmed": 364,
+      "confirmed": 363,
       "recoveredCumulative": 575,
       "deceasedCumulative": 80,
       "criticalCumulative": 69,
       "testedCumulative": 42882,
       "date": "2020-04-04",
-      "confirmedCumulative": 3496,
+      "confirmedCumulative": 3495,
       "confirmedAvg3d": 324,
       "confirmedCumulativeAvg3d": 3120,
       "confirmedAvg7d": 252,
@@ -6186,7 +6187,7 @@
       "criticalCumulative": 70,
       "testedCumulative": 44639,
       "date": "2020-04-05",
-      "confirmedCumulative": 3860,
+      "confirmedCumulative": 3859,
       "confirmedAvg3d": 352,
       "confirmedCumulativeAvg3d": 3472,
       "confirmedAvg7d": 280,
@@ -6199,9 +6200,9 @@
       "criticalCumulative": 79,
       "testedCumulative": 46172,
       "date": "2020-04-06",
-      "confirmedCumulative": 4101,
-      "confirmedAvg3d": 323,
-      "confirmedCumulativeAvg3d": 3795,
+      "confirmedCumulative": 4100,
+      "confirmedAvg3d": 322,
+      "confirmedCumulativeAvg3d": 3794,
       "confirmedAvg7d": 302,
       "confirmedCumulativeAvg7d": 3137
     },
@@ -6212,9 +6213,9 @@
       "criticalCumulative": 80,
       "testedCumulative": 55311,
       "date": "2020-04-07",
-      "confirmedCumulative": 4463,
+      "confirmedCumulative": 4462,
       "confirmedAvg3d": 322,
-      "confirmedCumulativeAvg3d": 4117,
+      "confirmedCumulativeAvg3d": 4116,
       "confirmedAvg7d": 319,
       "confirmedCumulativeAvg7d": 3456
     },
@@ -6225,9 +6226,9 @@
       "criticalCumulative": 99,
       "testedCumulative": 61498,
       "date": "2020-04-08",
-      "confirmedCumulative": 4952,
+      "confirmedCumulative": 4951,
       "confirmedAvg3d": 364,
-      "confirmedCumulativeAvg3d": 4481,
+      "confirmedCumulativeAvg3d": 4480,
       "confirmedAvg7d": 347,
       "confirmedCumulativeAvg7d": 3803
     },
@@ -6238,12 +6239,12 @@
       "criticalCumulative": 99,
       "testedCumulative": 61498,
       "date": "2020-04-09",
-      "confirmedCumulative": 5171,
+      "confirmedCumulative": 5170,
       "confirmedAvg3d": 356,
-      "confirmedCumulativeAvg3d": 4837,
+      "confirmedCumulativeAvg3d": 4836,
       "confirmedAvg7d": 338,
       "confirmedCumulativeAvg7d": 4141
     }
   ],
-  "updated": "2020-04-09T19:31:54+09:00"
+  "updated": "2020-04-09T20:16:35+09:00"
 }
