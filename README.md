@@ -192,7 +192,7 @@ data that we use to cross check and verify.
 |Fukui    |[新型コロナウイルス感染症について](https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona.html)||
 |Fukuoka    | [福岡県内での発生状況](https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html)| [Dashboard](https://fukuoka.stopcovid19.jp/)|
 |Fukushima    |[福島県内の新型コロナウイルス発生状況](https://www.pref.fukushima.lg.jp/sec/21045c/fukushima-hasseijyoukyou.html)||
-|Gifu    | [新型コロナウイルス感染症の患者の発生について](https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.html)|
+|Gifu    | [新型コロナウイルス感染症の患者の発生について](https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona_kansendoko.html)|
 |Gunma    |[新型コロナウイルス感染症について](https://www.pref.gunma.jp/07/z87g_00016.html)||
 |Hiroshima    | [患者の発生について](https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html)||
 |Hokkaido    |[新型コロナウイルス感染症の道内の発生状況](http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm)||
