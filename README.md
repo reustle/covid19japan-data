@@ -222,7 +222,7 @@ data that we use to cross check and verify.
 |Nara    |[新型コロナウイルス感染症の患者の発生について](http://www.pref.nara.jp/module/1356.htm#moduleid1356) || Inconsistent recording of asymptomatic vs symptomatic. Numbering system changed after patient #7 |
 |Nagasaki    | [長崎県内の発生状況](https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/#hassei)| Updated frequently |
 |Niigata    | [県内における感染者の発生について](https://www.pref.niigata.lg.jp/sec/kikitaisaku/shingata-corona.html#hasseijoukyou)||
-|Oita    |[新型コロナウイルスに関するお知らせ](http://www.pref.oita.jp/site/bosaianzen/shingatacorona.html)||
+|Oita    |[大分県内における患者発生について](http://www.pref.oita.jp/site/covid19-oita/covid19-pcr.html)||
 |Oita - Oita City | [大分市における新たな新型コロナウイルス感染症患者の発生について](https://www.city.oita.oita.jp/kenko/iryo/kansensho/index.html) ||
 |Okayama    |[新型コロナウイルス感染症について](https://www.pref.okayama.jp/page/645925.html)||
 |Okinawa    | [Patients](https://www.pref.okinawa.lg.jp/site/hoken/chiikihoken/kekkaku/press/20200214_covid19_pr1.html)|[患者の発生について](https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/2019-ncov.html)| Up to date |
