@@ -54400,38 +54400,53 @@
   {
     "patientId": "4290",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Kanazawa",
+    "detectedCityTown": "Kanazawa",
     "detectedPrefecture": "Ishikawa",
-    "notes": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "52",
-    "sourceURL": "https://www3.nhk.or.jp/lnews/kanazawa/20200407/3020004485.html",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4291",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Kanazawa",
+    "detectedCityTown": "Kanazawa",
     "detectedPrefecture": "Ishikawa",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "53",
-    "sourceURL": "https://www3.nhk.or.jp/lnews/kanazawa/20200407/3020004485.html",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4292",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Nonoichi",
+    "detectedCityTown": "Nonoichi",
     "detectedPrefecture": "Ishikawa",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "54",
-    "sourceURL": "https://www3.nhk.or.jp/lnews/kanazawa/20200407/3020004485.html",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4293",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Kanazawa",
+    "detectedCityTown": "Kanazawa",
     "detectedPrefecture": "Ishikawa",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "55",
-    "sourceURL": "https://www3.nhk.or.jp/lnews/kanazawa/20200407/3020004485.html",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
@@ -57637,32 +57652,41 @@
   {
     "patientId": "4432",
     "dateAnnounced": "2020-04-08",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Kanazawa",
+    "detectedCityTown": "Kanazawa",
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
-    "notes": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "prefecturePatientNumber": "56",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4433",
     "dateAnnounced": "2020-04-08",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Kanazawa",
+    "detectedCityTown": "Kanazawa",
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "57",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4434",
     "dateAnnounced": "2020-04-08",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "F",
+    "residence": "Kanazawa",
+    "detectedCityTown": "Kanazawa",
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
+    "relatedPatients": "Ishikawa #39",
     "prefecturePatientNumber": "58",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
@@ -57671,11 +57695,11 @@
     "ageBracket": 40,
     "gender": "M",
     "residence": "Hakusan",
-    "detectedCityTown": "Kanazawa",
+    "detectedCityTown": "Hakusan",
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "59",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
@@ -57688,7 +57712,7 @@
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "60",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
@@ -57701,7 +57725,7 @@
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "61",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
@@ -57714,7 +57738,7 @@
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "62",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
@@ -57727,7 +57751,7 @@
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "63",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
@@ -57740,7 +57764,7 @@
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "64",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
@@ -57753,7 +57777,7 @@
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "65",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
@@ -57766,7 +57790,7 @@
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "66",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200408/k10012375701000.html?utm_int=word_contents_list-items_084&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
   {
