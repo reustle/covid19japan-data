@@ -62373,7 +62373,7 @@
   {
     "patientId": "4494",
     "dateAnnounced": "2020-04-09",
-    "ageBracket": -1,
+    "ageBracket": 40,
     "detectedPrefecture": "Kochi",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377301000.html",
     "confirmedPatient": true
@@ -64605,6 +64605,17 @@
     "detectedPrefecture": "Ehime",
     "prefecturePatientNumber": "Ehime#26",
     "sourceURL": "https://www.pref.ehime.jp/h25500/kansen/covid19.html#kansensha",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4787",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 70,
+    "gender": "F",
+    "residence": "Kobe",
+    "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#287",
+    "sourceURL": "http://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
     "confirmedPatient": true
   },
   {
