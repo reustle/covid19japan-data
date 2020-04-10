@@ -64244,7 +64244,8 @@
   {
     "patientId": "4739",
     "dateAnnounced": "2020-04-09",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "residence": "Yachiyo",
     "detectedPrefecture": "Chiba",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
@@ -64253,7 +64254,8 @@
   {
     "patientId": "4740",
     "dateAnnounced": "2020-04-09",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "residence": "Yachiyo",
     "detectedPrefecture": "Chiba",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
@@ -64262,7 +64264,8 @@
   {
     "patientId": "4741",
     "dateAnnounced": "2020-04-09",
-    "ageBracket": -1,
+    "ageBracket": 90,
+    "gender": "M",
     "residence": "Sakura",
     "detectedPrefecture": "Chiba",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
@@ -64271,7 +64274,8 @@
   {
     "patientId": "4742",
     "dateAnnounced": "2020-04-09",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "residence": "Sakura",
     "detectedPrefecture": "Chiba",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
@@ -64279,24 +64283,6 @@
   },
   {
     "patientId": "4743",
-    "dateAnnounced": "2020-04-09",
-    "ageBracket": -1,
-    "residence": "Narashino",
-    "detectedPrefecture": "Chiba",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4744",
-    "dateAnnounced": "2020-04-09",
-    "ageBracket": -1,
-    "residence": "Narashino",
-    "detectedPrefecture": "Chiba",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4745",
     "dateAnnounced": "2020-04-09",
     "ageBracket": 40,
     "gender": "F",
@@ -64306,12 +64292,33 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "4744",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Sosa",
+    "detectedPrefecture": "Chiba",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2020/documents/ncov265-284.pdf",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4745",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Katori",
+    "detectedPrefecture": "Chiba",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2020/documents/ncov265-284.pdf",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "4746",
     "dateAnnounced": "2020-04-09",
-    "ageBracket": -1,
-    "residence": "Narashino",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Choshi",
     "detectedPrefecture": "Chiba",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2020/documents/ncov265-284.pdf",
     "confirmedPatient": true
   },
   {
@@ -64321,7 +64328,7 @@
     "residence": "Toshocho",
     "detectedPrefecture": "Chiba",
     "knownCluster": "北総育成園",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2020/documents/ncov265-284.pdf",
     "confirmedPatient": true
   },
   {
@@ -64331,7 +64338,7 @@
     "residence": "Toshocho",
     "detectedPrefecture": "Chiba",
     "knownCluster": "北総育成園",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2020/documents/ncov265-284.pdf",
     "confirmedPatient": true
   },
   {
@@ -64341,7 +64348,7 @@
     "residence": "Toshocho",
     "detectedPrefecture": "Chiba",
     "knownCluster": "北総育成園",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2020/documents/ncov265-284.pdf",
     "confirmedPatient": true
   },
   {
@@ -64351,7 +64358,7 @@
     "residence": "Toshocho",
     "detectedPrefecture": "Chiba",
     "knownCluster": "北総育成園",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2020/documents/ncov265-284.pdf",
     "confirmedPatient": true
   },
   {
@@ -64361,7 +64368,7 @@
     "residence": "Toshocho",
     "detectedPrefecture": "Chiba",
     "knownCluster": "北総育成園",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200409/k10012377971000.html",
+    "sourceURL": "https://www.pref.chiba.lg.jp/shippei/press/2020/documents/ncov265-284.pdf",
     "confirmedPatient": true
   },
   {
@@ -64483,7 +64490,8 @@
   {
     "patientId": "4762",
     "dateAnnounced": "2020-04-09",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "F",
     "residence": "Nara",
     "detectedCityTown": "Nara",
     "detectedPrefecture": "Nara",
@@ -64495,11 +64503,11 @@
   {
     "patientId": "4763",
     "dateAnnounced": "2020-04-09",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "residence": "Nara",
     "detectedCityTown": "Nara",
     "detectedPrefecture": "Nara",
-    "notes": "No symptoms (no information)",
     "prefecturePatientNumber": "Nara#32",
     "sourceURL": "http://www.pref.nara.jp/module/1356.htm#moduleid1356",
     "confirmedPatient": true
