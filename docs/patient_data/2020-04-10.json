@@ -16840,9 +16840,11 @@
     "gender": "M",
     "residence": "Tokyo",
     "detectedPrefecture": "Tokyo",
-    "notes": "(Discharged or Died) ",
+    "patientStatus": "Deceased",
+    "notes": "Died 3/30",
     "prefecturePatientNumber": "Tokyo#148",
     "prefectureSourceURL": "https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/1007514.html",
+    "deceasedDate": "3/30",
     "sourceURL": "https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/1007514.html",
     "confirmedPatient": true
   },
@@ -19917,10 +19919,12 @@
     "ageBracket": 70,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
     "notes": "(Discharged or Died) ",
     "knownCluster": "永寿総合病院",
     "prefecturePatientNumber": "Tokyo#213",
     "prefectureSourceURL": "https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/007/532/20200326.pdf",
+    "deceasedDate": "3/30",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200326/k10012351461000.html?utm_int=word_contents_list-items_002&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -44643,6 +44647,7 @@
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 4/4 2",
     "prefecturePatientNumber": "Tokyo#775",
+    "prefectureSourceURL": "https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/007/603/20200408.pdf",
     "sourceURL": "https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/007/603/20200408.pdf",
     "confirmedPatient": true
   },
@@ -44655,6 +44660,7 @@
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 4/4 3",
     "prefecturePatientNumber": "Tokyo#776",
+    "prefectureSourceURL": "https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/007/603/20200408.pdf",
     "sourceURL": "https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/007/603/20200408.pdf",
     "confirmedPatient": true
   },
@@ -44667,6 +44673,7 @@
     "detectedPrefecture": "Tokyo",
     "notes": "Tokyo 4/4 4",
     "prefecturePatientNumber": "Tokyo#777",
+    "prefectureSourceURL": "https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/007/603/20200408.pdf",
     "sourceURL": "https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/007/603/20200408.pdf",
     "confirmedPatient": true
   },
@@ -52271,11 +52278,22 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "TOK1034",
+    "dateAnnounced": "2020-04-06",
+    "ageBracket": 30,
+    "gender": "M",
+    "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1034",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "TOK1035",
     "dateAnnounced": "2020-04-06",
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1035",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52285,6 +52303,7 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1036",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52294,6 +52313,7 @@
     "ageBracket": 70,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1037",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52303,6 +52323,7 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1038",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52312,6 +52333,7 @@
     "ageBracket": 20,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1039",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52321,6 +52343,7 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1040",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52330,6 +52353,7 @@
     "ageBracket": 30,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1041",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52339,6 +52363,7 @@
     "ageBracket": 70,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1042",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52348,6 +52373,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1043",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52357,6 +52383,7 @@
     "ageBracket": 30,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1044",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52366,6 +52393,7 @@
     "ageBracket": 60,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1045",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52375,6 +52403,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1046",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52384,6 +52413,7 @@
     "ageBracket": 20,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1047",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52393,6 +52423,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1048",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52402,6 +52433,7 @@
     "ageBracket": 60,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1049",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52411,6 +52443,7 @@
     "ageBracket": 20,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1050",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52420,6 +52453,7 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1051",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52429,6 +52463,7 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1052",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52438,6 +52473,7 @@
     "ageBracket": 40,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1053",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52447,6 +52483,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1054",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52456,6 +52493,7 @@
     "ageBracket": 70,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1055",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52465,6 +52503,7 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1056",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52474,6 +52513,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1057",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52483,6 +52523,7 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1058",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52492,6 +52533,7 @@
     "ageBracket": 60,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1059",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52501,6 +52543,7 @@
     "ageBracket": 20,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1060",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52510,6 +52553,7 @@
     "ageBracket": 60,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1061",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52519,6 +52563,7 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1062",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52528,6 +52573,7 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1063",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52537,6 +52583,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1064",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52546,6 +52593,7 @@
     "ageBracket": 60,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1065",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52555,6 +52603,7 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1066",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52564,6 +52613,7 @@
     "ageBracket": 30,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1067",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52573,6 +52623,7 @@
     "ageBracket": 20,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1068",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52582,6 +52633,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1069",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52591,6 +52643,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1070",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52600,6 +52653,7 @@
     "ageBracket": 60,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1071",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52609,6 +52663,7 @@
     "ageBracket": 30,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1072",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52618,6 +52673,7 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1073",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52627,6 +52683,7 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1074",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52636,6 +52693,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1075",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52645,6 +52703,7 @@
     "ageBracket": 60,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1076",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52654,6 +52713,7 @@
     "ageBracket": 70,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1077",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52663,6 +52723,7 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1078",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52672,6 +52733,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1079",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52681,6 +52743,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1080",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52690,6 +52753,7 @@
     "ageBracket": 70,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1081",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52699,6 +52763,7 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1082",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52708,6 +52773,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1083",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52717,6 +52783,7 @@
     "ageBracket": 60,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1084",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52726,6 +52793,7 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1085",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52735,6 +52803,7 @@
     "ageBracket": 30,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1086",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52744,6 +52813,7 @@
     "ageBracket": 20,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1087",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52753,6 +52823,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1088",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52762,6 +52833,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1089",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52771,6 +52843,7 @@
     "ageBracket": 60,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1090",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52780,6 +52853,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1091",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52789,6 +52863,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1092",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52798,6 +52873,7 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1093",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52807,6 +52883,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1094",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52816,6 +52893,7 @@
     "ageBracket": 30,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1095",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52825,6 +52903,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1096",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52834,6 +52913,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1097",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52843,6 +52923,7 @@
     "ageBracket": 20,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1098",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52852,6 +52933,7 @@
     "ageBracket": 20,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1099",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52861,6 +52943,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1100",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52870,6 +52953,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1101",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52879,6 +52963,7 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1102",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52888,6 +52973,7 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1103",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52897,6 +52983,7 @@
     "ageBracket": 40,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1104",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52906,6 +52993,7 @@
     "ageBracket": 70,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1105",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52915,6 +53003,7 @@
     "ageBracket": 60,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1106",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52924,6 +53013,7 @@
     "ageBracket": 40,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1107",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52933,6 +53023,7 @@
     "ageBracket": 40,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1108",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52942,6 +53033,7 @@
     "ageBracket": 30,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1109",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52951,6 +53043,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1110",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52960,6 +53053,7 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1111",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52969,6 +53063,7 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1112",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52978,6 +53073,7 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1113",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52987,6 +53083,7 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1114",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -52996,6 +53093,7 @@
     "ageBracket": 60,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1115",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -53005,15 +53103,7 @@
     "ageBracket": 60,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "TOK1117",
-    "dateAnnounced": "2020-04-06",
-    "ageBracket": 50,
-    "gender": "M",
-    "detectedPrefecture": "Tokyo",
+    "prefecturePatientNumber": "Tokyo#1116",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
     "confirmedPatient": true
   },
@@ -56375,12 +56465,24 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "TOK1117",
+    "dateAnnounced": "2020-04-07",
+    "ageBracket": 50,
+    "gender": "M",
+    "detectedPrefecture": "Tokyo",
+    "notes": "4/7 #1",
+    "prefecturePatientNumber": "Tokyo#1117",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200406/k10012370601000.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "TOK1118",
     "dateAnnounced": "2020-04-07",
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #1",
+    "notes": "4/7 #2",
+    "prefecturePatientNumber": "Tokyo#1118",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56390,7 +56492,8 @@
     "ageBracket": 70,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #2",
+    "notes": "4/7 #3",
+    "prefecturePatientNumber": "Tokyo#1119",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56400,7 +56503,8 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #3",
+    "notes": "4/7 #4",
+    "prefecturePatientNumber": "Tokyo#1120",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56410,7 +56514,8 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #4",
+    "notes": "4/7 #5",
+    "prefecturePatientNumber": "Tokyo#1121",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56420,7 +56525,8 @@
     "ageBracket": 80,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #5",
+    "notes": "4/7 #6",
+    "prefecturePatientNumber": "Tokyo#1122",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56430,7 +56536,8 @@
     "ageBracket": 60,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #6",
+    "notes": "4/7 #7",
+    "prefecturePatientNumber": "Tokyo#1123",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56440,7 +56547,8 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #7",
+    "notes": "4/7 #8",
+    "prefecturePatientNumber": "Tokyo#1124",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56450,7 +56558,8 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #8",
+    "notes": "4/7 #9",
+    "prefecturePatientNumber": "Tokyo#1125",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56460,7 +56569,8 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #9",
+    "notes": "4/7 #10",
+    "prefecturePatientNumber": "Tokyo#1126",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56470,7 +56580,8 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #10",
+    "notes": "4/7 #11",
+    "prefecturePatientNumber": "Tokyo#1127",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56480,7 +56591,8 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #11",
+    "notes": "4/7 #12",
+    "prefecturePatientNumber": "Tokyo#1128",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56490,7 +56602,8 @@
     "ageBracket": 50,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #12",
+    "notes": "4/7 #13",
+    "prefecturePatientNumber": "Tokyo#1129",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56500,7 +56613,8 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #13",
+    "notes": "4/7 #14",
+    "prefecturePatientNumber": "Tokyo#1130",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56510,7 +56624,8 @@
     "ageBracket": 60,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #14",
+    "notes": "4/7 #15",
+    "prefecturePatientNumber": "Tokyo#1131",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56520,7 +56635,8 @@
     "ageBracket": 70,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #15",
+    "notes": "4/7 #16",
+    "prefecturePatientNumber": "Tokyo#1132",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56530,7 +56646,8 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #16",
+    "notes": "4/7 #17",
+    "prefecturePatientNumber": "Tokyo#1133",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56540,7 +56657,8 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #17",
+    "notes": "4/7 #18",
+    "prefecturePatientNumber": "Tokyo#1134",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56550,7 +56668,8 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #18",
+    "notes": "4/7 #19",
+    "prefecturePatientNumber": "Tokyo#1135",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56560,7 +56679,8 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #19",
+    "notes": "4/7 #20",
+    "prefecturePatientNumber": "Tokyo#1136",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56570,7 +56690,8 @@
     "ageBracket": 0,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #20",
+    "notes": "4/7 #21",
+    "prefecturePatientNumber": "Tokyo#1137",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56580,7 +56701,8 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #21",
+    "notes": "4/7 #22",
+    "prefecturePatientNumber": "Tokyo#1138",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56590,7 +56712,8 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #22",
+    "notes": "4/7 #23",
+    "prefecturePatientNumber": "Tokyo#1139",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56600,7 +56723,8 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #23",
+    "notes": "4/7 #24",
+    "prefecturePatientNumber": "Tokyo#1140",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56610,7 +56734,8 @@
     "ageBracket": 50,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #24",
+    "notes": "4/7 #25",
+    "prefecturePatientNumber": "Tokyo#1141",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56620,7 +56745,8 @@
     "ageBracket": 60,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #25",
+    "notes": "4/7 #26",
+    "prefecturePatientNumber": "Tokyo#1142",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56630,7 +56756,8 @@
     "ageBracket": 70,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #26",
+    "notes": "4/7 #27",
+    "prefecturePatientNumber": "Tokyo#1143",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56640,7 +56767,8 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #27",
+    "notes": "4/7 #28",
+    "prefecturePatientNumber": "Tokyo#1144",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56650,7 +56778,8 @@
     "ageBracket": 30,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #28",
+    "notes": "4/7 #29",
+    "prefecturePatientNumber": "Tokyo#1145",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56660,7 +56789,8 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #29",
+    "notes": "4/7 #30",
+    "prefecturePatientNumber": "Tokyo#1146",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56670,7 +56800,8 @@
     "ageBracket": 40,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #30",
+    "notes": "4/7 #31",
+    "prefecturePatientNumber": "Tokyo#1147",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56680,7 +56811,8 @@
     "ageBracket": 20,
     "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #31",
+    "notes": "4/7 #32",
+    "prefecturePatientNumber": "Tokyo#1148",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56690,7 +56822,8 @@
     "ageBracket": 10,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #32",
+    "notes": "4/7 #33",
+    "prefecturePatientNumber": "Tokyo#1149",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56700,214 +56833,261 @@
     "ageBracket": 40,
     "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #33",
+    "notes": "4/7 #34",
+    "prefecturePatientNumber": "Tokyo#1150",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1151",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #34",
+    "notes": "4/7 #35",
+    "prefecturePatientNumber": "Tokyo#1151",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1152",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #35",
+    "notes": "4/7 #36",
+    "prefecturePatientNumber": "Tokyo#1152",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1153",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #36",
+    "notes": "4/7 #37",
+    "prefecturePatientNumber": "Tokyo#1153",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1154",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #37",
+    "notes": "4/7 #38",
+    "prefecturePatientNumber": "Tokyo#1154",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1155",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #38",
+    "notes": "4/7 #39",
+    "prefecturePatientNumber": "Tokyo#1155",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1156",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #39",
+    "notes": "4/7 #40",
+    "prefecturePatientNumber": "Tokyo#1156",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1157",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #40",
+    "notes": "4/7 #41",
+    "prefecturePatientNumber": "Tokyo#1157",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1158",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #41",
+    "notes": "4/7 #42",
+    "prefecturePatientNumber": "Tokyo#1158",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1159",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #42",
+    "notes": "4/7 #43",
+    "prefecturePatientNumber": "Tokyo#1159",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1160",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #43",
+    "notes": "4/7 #44",
+    "prefecturePatientNumber": "Tokyo#1160",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1161",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #44",
+    "notes": "4/7 #45",
+    "prefecturePatientNumber": "Tokyo#1161",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1162",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #45",
+    "notes": "4/7 #46",
+    "prefecturePatientNumber": "Tokyo#1162",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1163",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 5,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #46",
+    "notes": "4/7 #47",
+    "prefecturePatientNumber": "Tokyo#1163",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1164",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #47",
+    "notes": "4/7 #48",
+    "prefecturePatientNumber": "Tokyo#1164",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1165",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #48",
+    "notes": "4/7 #49",
+    "prefecturePatientNumber": "Tokyo#1165",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1166",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #49",
+    "notes": "4/7 #50",
+    "prefecturePatientNumber": "Tokyo#1166",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1167",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #50",
+    "notes": "4/7 #51",
+    "prefecturePatientNumber": "Tokyo#1167",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1168",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #51",
+    "notes": "4/7 #52",
+    "prefecturePatientNumber": "Tokyo#1168",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1169",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #52",
+    "notes": "4/7 #53",
+    "prefecturePatientNumber": "Tokyo#1169",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1170",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #53",
+    "notes": "4/7 #54",
+    "prefecturePatientNumber": "Tokyo#1170",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1171",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #54",
+    "notes": "4/7 #55",
+    "prefecturePatientNumber": "Tokyo#1171",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1172",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #55",
+    "notes": "4/7 #56",
+    "prefecturePatientNumber": "Tokyo#1172",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "TOK1173",
     "dateAnnounced": "2020-04-07",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #56",
+    "notes": "4/7 #57",
+    "prefecturePatientNumber": "Tokyo#1173",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56916,7 +57096,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #57",
+    "notes": "4/7 #58",
+    "prefecturePatientNumber": "Tokyo#1174",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56925,7 +57106,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #58",
+    "notes": "4/7 #59",
+    "prefecturePatientNumber": "Tokyo#1175",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56934,7 +57116,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #59",
+    "notes": "4/7 #60",
+    "prefecturePatientNumber": "Tokyo#1176",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56943,7 +57126,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #60",
+    "notes": "4/7 #61",
+    "prefecturePatientNumber": "Tokyo#1177",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56952,7 +57136,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #61",
+    "notes": "4/7 #62",
+    "prefecturePatientNumber": "Tokyo#1178",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56961,7 +57146,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #62",
+    "notes": "4/7 #63",
+    "prefecturePatientNumber": "Tokyo#1179",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56970,7 +57156,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #63",
+    "notes": "4/7 #64",
+    "prefecturePatientNumber": "Tokyo#1180",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56979,7 +57166,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #64",
+    "notes": "4/7 #65",
+    "prefecturePatientNumber": "Tokyo#1181",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56988,7 +57176,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #65",
+    "notes": "4/7 #66",
+    "prefecturePatientNumber": "Tokyo#1182",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -56997,7 +57186,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #66",
+    "notes": "4/7 #67",
+    "prefecturePatientNumber": "Tokyo#1183",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57006,7 +57196,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #67",
+    "notes": "4/7 #68",
+    "prefecturePatientNumber": "Tokyo#1184",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57015,7 +57206,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #68",
+    "notes": "4/7 #69",
+    "prefecturePatientNumber": "Tokyo#1185",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57024,7 +57216,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #69",
+    "notes": "4/7 #70",
+    "prefecturePatientNumber": "Tokyo#1186",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57033,7 +57226,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #70",
+    "notes": "4/7 #71",
+    "prefecturePatientNumber": "Tokyo#1187",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57042,7 +57236,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #71",
+    "notes": "4/7 #72",
+    "prefecturePatientNumber": "Tokyo#1188",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57051,7 +57246,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #72",
+    "notes": "4/7 #73",
+    "prefecturePatientNumber": "Tokyo#1189",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57060,7 +57256,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #73",
+    "notes": "4/7 #74",
+    "prefecturePatientNumber": "Tokyo#1190",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57069,7 +57266,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #74",
+    "notes": "4/7 #75",
+    "prefecturePatientNumber": "Tokyo#1191",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57078,7 +57276,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #75",
+    "notes": "4/7 #76",
+    "prefecturePatientNumber": "Tokyo#1192",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57087,7 +57286,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #76",
+    "notes": "4/7 #77",
+    "prefecturePatientNumber": "Tokyo#1193",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57096,7 +57296,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #77",
+    "notes": "4/7 #78",
+    "prefecturePatientNumber": "Tokyo#1194",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57105,7 +57306,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #78",
+    "notes": "4/7 #79",
+    "prefecturePatientNumber": "Tokyo#1195",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57114,7 +57316,8 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #79",
+    "notes": "4/7 #80",
+    "prefecturePatientNumber": "Tokyo#1196",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -57123,7 +57326,7 @@
     "dateAnnounced": "2020-04-07",
     "ageBracket": -1,
     "detectedPrefecture": "Tokyo",
-    "notes": "4/7 #80",
+    "prefecturePatientNumber": "Tokyo#1197",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372721000.html",
     "confirmedPatient": true
   },
@@ -68275,80 +68478,110 @@
   {
     "patientId": "4810",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Kato",
     "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#305",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380111000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4811",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Itami",
     "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#306",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380111000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4812",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Itami",
     "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#307",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380111000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4813",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Itami",
     "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#308",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380111000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4814",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "M",
+    "residence": "Itami",
     "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#309",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380111000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4815",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 10,
+    "gender": "F",
+    "residence": "Takarazuka",
     "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#310",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380111000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4816",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Takarazuka",
     "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#311",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380111000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4817",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "gender": "F",
+    "residence": "Ashiya",
     "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#312",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380111000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4818",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Ashiya",
     "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#313",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380111000.html",
     "confirmedPatient": true
   },
   {
     "patientId": "4819",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Kobe",
     "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#314",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380111000.html",
     "confirmedPatient": true
   },
@@ -69706,6 +69939,48 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "4975",
+    "dateAnnounced": "2020-04-10",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Himeji",
+    "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#315",
+    "sourceURL": "http://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4976",
+    "dateAnnounced": "2020-04-10",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Himeji",
+    "detectedPrefecture": "Hyogo",
+    "prefecturePatientNumber": "Hyogo#316",
+    "sourceURL": "http://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4977",
+    "dateAnnounced": "2020-04-10",
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Akita",
+    "detectedPrefecture": "Akita",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012381151000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4978",
+    "dateAnnounced": "2020-04-10",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Akita",
+    "detectedPrefecture": "Akita",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012381151000.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "KNG413",
     "dateAnnounced": "2020-04-10",
     "ageBracket": 20,
@@ -69973,15 +70248,6 @@
     "residence": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380461000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "TOK1552",
-    "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "notes": "4/10 #0",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380251000.html",
     "confirmedPatient": true
   },
   {
@@ -71677,6 +71943,15 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "TOK1741",
+    "dateAnnounced": "2020-04-10",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "notes": "4/10 #189",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380251000.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": -1,
     "dateAnnounced": "2020-03-13",
     "ageBracket": -1,
@@ -71756,20 +72031,6 @@
     "patientStatus": "Deceased",
     "notes": "Died on 3/22 details unknown",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2019/0322-02.html",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-03-23",
-    "ageBracket": 70,
-    "gender": "M",
-    "residence": "Tokyo",
-    "detectedCityTown": "Tokyo",
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "notes": "Confirmed 3/23, Died 3/30",
-    "deceasedDate": "3/30",
-    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
   {
@@ -71911,7 +72172,7 @@
     "gender": "M",
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
-    "notes": "Commedian, confirmed infected on 3/25. There are only 2 70/M on that day in Tokyo",
+    "notes": "Comedian, confirmed infected on 3/25. There are only 2 70/M on that day in Tokyo",
     "deceasedDate": "3/29",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200330/k10012357011000.html?utm_int=word_contents_list-items_003&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
