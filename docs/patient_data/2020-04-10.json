@@ -18682,10 +18682,13 @@
     "gender": "M",
     "residence": "Tokyo",
     "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "Died 3/27. Crossed checked via Tokyo Metro data on discharged/deaths",
     "knownCluster": "Tokyo 3/25 Cluster",
     "relatedPatients": "Tokyo#174-#184",
     "prefecturePatientNumber": "Tokyo#179",
     "prefectureSourceURL": "https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/007/520/2020032501.pdf",
+    "deceasedDate": "3/27",
     "sourceURL": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/03/25/28_01.html",
     "confirmedPatient": true
   },
@@ -69846,6 +69849,15 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "TOK1552",
+    "dateAnnounced": "2020-04-10",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "notes": "4/10 #0",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380251000.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "TOK1553",
     "dateAnnounced": "2020-04-10",
     "ageBracket": -1,
@@ -71538,15 +71550,6 @@
     "confirmedPatient": true
   },
   {
-    "patientId": "TOK1741",
-    "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "notes": "4/10 #189",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380251000.html",
-    "confirmedPatient": true
-  },
-  {
     "patientId": -1,
     "dateAnnounced": "2020-03-13",
     "ageBracket": -1,
@@ -71668,6 +71671,17 @@
     "notes": "Confirmed 3/26, Died 3/30",
     "deceasedDate": "3/30",
     "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
+    "confirmedPatient": false
+  },
+  {
+    "patientId": -1,
+    "dateAnnounced": "2020-03-26",
+    "ageBracket": -1,
+    "detectedPrefecture": "Tokyo",
+    "patientStatus": "Deceased",
+    "notes": "Existing patient that died, but no details given.",
+    "deceasedDate": "3/27",
+    "sourceURL": "https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/1007546.html",
     "confirmedPatient": false
   },
   {
@@ -71835,6 +71849,7 @@
     "detectedPrefecture": "Tokyo",
     "patientStatus": "Deceased",
     "notes": "永寿総合病院 patient",
+    "knownCluster": "永寿総合病院",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200331/k10012360891000.html?utm_int=word_contents_list-items_005&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": false
   },
@@ -71921,28 +71936,6 @@
     "detectedPrefecture": "Fukuoka",
     "patientStatus": "Deceased",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200403/k10012367231000.html",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-04-03",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "notes": "18 Deaths in Tokyo until 4/3",
-    "deceasedDate": "4/3",
-    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
-    "confirmedPatient": false
-  },
-  {
-    "patientId": -1,
-    "dateAnnounced": "2020-04-03",
-    "ageBracket": -1,
-    "detectedPrefecture": "Tokyo",
-    "patientStatus": "Deceased",
-    "notes": "18 Deaths in Tokyo until 4/3",
-    "deceasedDate": "4/3",
-    "sourceURL": "https://stopcovid19.metro.tokyo.lg.jp/en",
     "confirmedPatient": false
   },
   {
