@@ -194,6 +194,7 @@ data that we use to cross check and verify.
 |Fukushima    |[福島県内の新型コロナウイルス発生状況](https://www.pref.fukushima.lg.jp/sec/21045c/fukushima-hasseijyoukyou.html)||
 |Gifu    | [新型コロナウイルス感染症の患者の発生について](https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona_kansendoko.html)|
 |Gunma    |[新型コロナウイルス感染症について](https://www.pref.gunma.jp/07/z87g_00016.html)||
+| Gunma - Takasaki | [新型コロナウイルス感染症患者の発生について](https://www.city.takasaki.gunma.jp/docs/2020032400102/) |||
 |Hiroshima    | [患者の発生について](https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html)||
 |Hokkaido    |[新型コロナウイルス感染症の道内の発生状況](http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm)||
 |Hokkaido - Sapporo  |[新型コロナウイルス感染症の道内の発生状況](https://www.city.sapporo.jp/hokenjo/f1kansen/2019n-covhassei.html)||
