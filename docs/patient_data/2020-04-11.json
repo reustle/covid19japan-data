@@ -53863,6 +53863,7 @@
     "ageBracket": 70,
     "gender": "M",
     "residence": "Higashimatsuyama",
+    "detectedCityTown": "Higashimatsuyama",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#204",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372991000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
@@ -53874,8 +53875,9 @@
     "ageBracket": 60,
     "gender": "M",
     "residence": "Higashimatsuyama",
+    "detectedCityTown": "Higashimatsuyama",
     "detectedPrefecture": "Saitama",
-    "prefecturePatientNumber": "Saimata#205",
+    "prefecturePatientNumber": "Saitama#205",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200407/k10012372991000.html?utm_int=word_contents_list-items_007&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -53918,6 +53920,7 @@
     "ageBracket": 40,
     "gender": "M",
     "residence": "Yachiyo",
+    "detectedCityTown": "Yachiyo",
     "detectedPrefecture": "Chiba",
     "notes": "Office worker",
     "prefecturePatientNumber": "Chiba#218",
@@ -53930,6 +53933,7 @@
     "ageBracket": 80,
     "gender": "M",
     "residence": "Matsudo",
+    "detectedCityTown": "Matsudo",
     "detectedPrefecture": "Chiba",
     "notes": "Unemployee",
     "prefecturePatientNumber": "Chiba#219",
@@ -53942,6 +53946,7 @@
     "ageBracket": 50,
     "gender": "M",
     "residence": "Matsudo",
+    "detectedCityTown": "Matsudo",
     "detectedPrefecture": "Chiba",
     "notes": "Civil servant",
     "prefecturePatientNumber": "Chiba#220",
@@ -53954,6 +53959,7 @@
     "ageBracket": 50,
     "gender": "M",
     "residence": "Mobara",
+    "detectedCityTown": "Mobara",
     "detectedPrefecture": "Chiba",
     "notes": "Office worker",
     "prefecturePatientNumber": "Chiba#221",
@@ -53966,6 +53972,7 @@
     "ageBracket": 30,
     "gender": "F",
     "residence": "Asahi",
+    "detectedCityTown": "Asahi",
     "detectedPrefecture": "Chiba",
     "notes": "Part time",
     "prefecturePatientNumber": "Chiba#222",
@@ -60353,6 +60360,30 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "4970",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 10,
+    "gender": "M",
+    "residence": "Saitama city",
+    "detectedCityTown": "Saitama city",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#264",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4971",
+    "dateAnnounced": "2020-04-08",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Saitama city",
+    "detectedCityTown": "Saitama city",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#265",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "4993",
     "dateAnnounced": "2020-04-08",
     "ageBracket": 30,
@@ -66028,6 +66059,42 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "4967",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Saitama city",
+    "detectedCityTown": "Saitama city",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#261",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4968",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Saitama city",
+    "detectedCityTown": "Saitama city",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#262",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4969",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Saitama city",
+    "detectedCityTown": "Saitama city",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#263",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "4989",
     "dateAnnounced": "2020-04-09",
     "ageBracket": 60,
@@ -71592,46 +71659,6 @@
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Gunma#42",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380831000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4967",
-    "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
-    "detectedPrefecture": "Saitama",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4968",
-    "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
-    "detectedPrefecture": "Saitama",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4969",
-    "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
-    "detectedPrefecture": "Saitama",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4970",
-    "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
-    "detectedPrefecture": "Saitama",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4971",
-    "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
-    "detectedPrefecture": "Saitama",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
     "confirmedPatient": true
   },
   {
