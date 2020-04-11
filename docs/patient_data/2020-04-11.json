@@ -23418,6 +23418,18 @@
     "confirmedPatient": true
   },
   {
+    "patientId": "4972",
+    "dateAnnounced": "2020-03-28",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Saitama city",
+    "detectedCityTown": "Saitama city",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#220",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
+    "confirmedPatient": true
+  },
+  {
     "patientId": "OSK175",
     "dateAnnounced": "2020-03-28",
     "ageBracket": 40,
@@ -25434,6 +25446,30 @@
     "knownCluster": "Kyoto Sangyo Univeristy Graduation",
     "prefecturePatientNumber": "Kyoto#45",
     "prefectureSourceURL": "https://www.pref.kyoto.jp/kentai/corona/documents/20200329-45.pdf",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4973",
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Kawaguchi",
+    "detectedCityTown": "Kawaguchi",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#83",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "4974",
+    "dateAnnounced": "2020-03-29",
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Kawaguchi",
+    "detectedCityTown": "Kawaguchi",
+    "detectedPrefecture": "Saitama",
+    "prefecturePatientNumber": "Saitama#85",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
     "confirmedPatient": true
   },
   {
@@ -32432,17 +32468,6 @@
     "residence": "Yashio",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#107",
-    "sourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "2803",
-    "dateAnnounced": "2020-04-01",
-    "ageBracket": 50,
-    "gender": "M",
-    "residence": "Kawaguchi",
-    "detectedPrefecture": "Saitama",
-    "prefecturePatientNumber": "Saitama#104",
     "sourceURL": "https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html",
     "confirmedPatient": true
   },
@@ -55323,7 +55348,7 @@
     "detectedCityTown": "Kanazawa",
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
-    "prefecturePatientNumber": "52",
+    "prefecturePatientNumber": "Ishikawa#52",
     "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
@@ -55336,7 +55361,7 @@
     "detectedCityTown": "Kanazawa",
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
-    "prefecturePatientNumber": "53",
+    "prefecturePatientNumber": "Ishikawa#53",
     "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
@@ -55349,7 +55374,7 @@
     "detectedCityTown": "Nonoichi",
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
-    "prefecturePatientNumber": "54",
+    "prefecturePatientNumber": "Ishikawa#54",
     "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
@@ -55362,7 +55387,7 @@
     "detectedCityTown": "Kanazawa",
     "detectedPrefecture": "Ishikawa",
     "patientStatus": "Hospitalized",
-    "prefecturePatientNumber": "55",
+    "prefecturePatientNumber": "Ishikawa#55",
     "sourceURL": "https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html",
     "confirmedPatient": true
   },
@@ -71538,6 +71563,7 @@
     "residence": "Tottori",
     "detectedPrefecture": "Tottori",
     "notes": "First case in the prefecture",
+    "prefecturePatientNumber": "Totori#1",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380771000.html",
     "confirmedPatient": true
   },
@@ -71659,30 +71685,6 @@
     "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Gunma#42",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380831000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4972",
-    "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
-    "detectedPrefecture": "Saitama",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4973",
-    "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
-    "detectedPrefecture": "Saitama",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4974",
-    "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
-    "detectedPrefecture": "Saitama",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380961000.html",
     "confirmedPatient": true
   },
   {
