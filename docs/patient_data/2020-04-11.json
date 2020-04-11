@@ -64204,7 +64204,9 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "notes": "Nurse at hospital",
     "knownCluster": "福岡記念病院",
+    "prefecturePatientNumber": "Fukuoka#250",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0385",
     "confirmedPatient": true
   },
@@ -64217,6 +64219,8 @@
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
     "knownCluster": "楽陽園",
+    "relatedPatients": "Fukuoka#49",
+    "prefecturePatientNumber": "Fukuoka#245",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0386",
     "confirmedPatient": true
   },
@@ -64229,6 +64233,8 @@
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
     "knownCluster": "楽陽園",
+    "relatedPatients": "Fukuoka#49",
+    "prefecturePatientNumber": "Fukuoka#246",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0387",
     "confirmedPatient": true
   },
@@ -64241,6 +64247,8 @@
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
     "knownCluster": "楽陽園",
+    "relatedPatients": "Fukuoka#49",
+    "prefecturePatientNumber": "Fukuoka#247",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0388",
     "confirmedPatient": true
   },
@@ -64252,6 +64260,8 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Fukuoka#243",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0389",
     "confirmedPatient": true
   },
@@ -64335,6 +64345,7 @@
     "residence": "Yukuhashi",
     "detectedCityTown": "Yukuhashi",
     "detectedPrefecture": "Fukuoka",
+    "prefecturePatientNumber": "Fukuoka#234",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0396",
     "confirmedPatient": true
   },
@@ -64346,6 +64357,7 @@
     "residence": "Yukuhasi",
     "detectedCityTown": "Yukuhasi",
     "detectedPrefecture": "Fukuoka",
+    "prefecturePatientNumber": "Fukuoka#235",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0397",
     "confirmedPatient": true
   },
@@ -64406,6 +64418,9 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "patientStatus": "Hospitalized",
+    "relatedPatients": "Fukuoka#150",
+    "prefecturePatientNumber": "Fukuoka#237",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0402",
     "confirmedPatient": true
   },
@@ -64417,6 +64432,7 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "prefecturePatientNumber": "Fukuoka#239",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0403",
     "confirmedPatient": true
   },
@@ -64428,6 +64444,7 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "prefecturePatientNumber": "Fukuoka#240",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0404",
     "confirmedPatient": true
   },
@@ -64439,6 +64456,7 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "prefecturePatientNumber": "Fukuoka#241",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0405",
     "confirmedPatient": true
   },
@@ -64450,6 +64468,8 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Fukuoka#242",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0406",
     "confirmedPatient": true
   },
@@ -64461,6 +64481,8 @@
     "residence": "Fukuoka city",
     "detectedCityTown": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
+    "relatedPatients": "Fukuoka158",
+    "prefecturePatientNumber": "Fukuoka#244",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0407",
     "confirmedPatient": true
   },
@@ -64472,18 +64494,9 @@
     "residence": "Kasuya-gun",
     "detectedCityTown": "Kasuya-gun",
     "detectedPrefecture": "Fukuoka",
+    "relatedPatients": "Fukuoka#49",
+    "prefecturePatientNumber": "Fukuoka#245",
     "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0408",
-    "confirmedPatient": true
-  },
-  {
-    "patientId": "4668",
-    "dateAnnounced": "2020-04-09",
-    "ageBracket": 40,
-    "gender": "M",
-    "residence": "Fukuoka city",
-    "detectedCityTown": "Fukuoka city",
-    "detectedPrefecture": "Fukuoka",
-    "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0409",
     "confirmedPatient": true
   },
   {
@@ -65793,6 +65806,17 @@
     "residence": "Kashihara",
     "detectedPrefecture": "Nara",
     "sourceURL": "http://www.pref.nara.jp/55062.htm",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5028",
+    "dateAnnounced": "2020-04-09",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Fukuoka city",
+    "detectedPrefecture": "Fukuoka",
+    "prefecturePatientNumber": "Fukuoka#248",
+    "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0409",
     "confirmedPatient": true
   },
   {
@@ -70483,7 +70507,9 @@
   {
     "patientId": "4915",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "gender": "F",
+    "residence": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
     "prefecturePatientNumber": "Fukuoka#253",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380821000.html",
@@ -70492,7 +70518,9 @@
   {
     "patientId": "4916",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Kasuga",
     "detectedPrefecture": "Fukuoka",
     "prefecturePatientNumber": "Fukuoka#254",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380821000.html",
@@ -70501,7 +70529,9 @@
   {
     "patientId": "4917",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "F",
+    "residence": "Fukuoka city",
     "detectedPrefecture": "Fukuoka",
     "prefecturePatientNumber": "Fukuoka#255",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380821000.html",
@@ -70510,7 +70540,9 @@
   {
     "patientId": "4918",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "M",
+    "residence": "Kasuya-gun",
     "detectedPrefecture": "Fukuoka",
     "prefecturePatientNumber": "Fukuoka#256",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200410/k10012380821000.html",
@@ -71499,6 +71531,30 @@
     "detectedPrefecture": "Saitama",
     "notes": "Saitama #9 ~ #53",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200411/k10012381351000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5029",
+    "dateAnnounced": "2020-04-10",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Kurume",
+    "detectedPrefecture": "Fukuoka",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Fukuoka#251",
+    "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0409",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5030",
+    "dateAnnounced": "2020-04-10",
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Kita-kyushu",
+    "detectedPrefecture": "Fukuoka",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Fukuoka#252",
+    "sourceURL": "https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html#0409",
     "confirmedPatient": true
   },
   {
