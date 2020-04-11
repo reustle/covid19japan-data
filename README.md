@@ -218,7 +218,7 @@ data that we use to cross check and verify.
 |Mie    |[新型コロナウイルス感染症に関連した肺炎患者の発生について](https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066.htm)||
 |Miyagi    | [県内における発生状況等について](https://www.pref.miyagi.jp/site/covid-19/02.html)|| Updated daily |
 |Miyazaki    |[新型コロナウイルス感染症患者](https://www.pref.miyazaki.lg.jp/kenko/hoken/kansensho/covid19/hassei.html)||
-|Nagano    | [新型コロナウイルス感染症に係る検査状況について](https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona.html)| [Dashboard](https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/bukan-haien-doko.html) | Very little data, check MHLW |
+|Nagano    | [新型コロナウイルス感染症に係る検査状況について](https://www.pref.nagano.lg.jp/koho/koho/pressreleases/2004happyoshiryo.html)| [Dashboard](https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/bukan-haien-doko.html) | Very little data, check MHLW |
 |Nara    |[新型コロナウイルス感染症の患者の発生について](http://www.pref.nara.jp/module/1356.htm#moduleid1356) || Inconsistent recording of asymptomatic vs symptomatic. Numbering system changed after patient #7 |
 |Nagasaki    | [長崎県内の発生状況](https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/#hassei)| Updated frequently |
 |Niigata    | [県内における感染者の発生について](https://www.pref.niigata.lg.jp/sec/kikitaisaku/shingata-corona.html#hasseijoukyou)||
