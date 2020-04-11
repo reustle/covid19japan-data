@@ -79,11 +79,10 @@ const fetchAndSummarize = async (dateString) => {
 
 const writePerPrefecturePatients = (prefectureName, allPatients, dateString) => {
     const lowercasePrefecture = _.camelCase(prefectureName)
-    const tokyoPatientsFilename = `./docs/patients/${lowercasePrefecture}_${dateString}.json`
-    const tokyoPatients = _.filter(patients, v => { return v.detectedPrefecture == prefectureName})
-    fs.writeFileSync(tokyoPatientsFilename, JSON.stringify(tokyoPatients, null, '  '))
+    const prefecturePatientsFilename = `./docs/patients/${lowercasePrefecture}_${dateString}.json`
+    const prefecturePatients = _.filter(patients, v => { return v.detectedPrefecture == prefectureName})
+    fs.writeFileSync(prefecturePatientsFilename, JSON.stringify(prefecturePatients, null, '  '))
 }
-
 
 try {
   // Add 540 = UTC+9 for JST.

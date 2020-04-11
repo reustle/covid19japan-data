@@ -33,30 +33,38 @@ const fetchTabs = () => {
     })
 }
 
-const normalizeName = (headerName) => {
+const defaultNormalizeName = (headerName) => {
   return _.camelCase(headerName)
 }
 
-const headerFields = (json) => {
+const headerFields = (json, normalizeHeaderName) => {
   if (!json || !json.values || json.values.length < 1) {
     return null
   }
-
-  return _.filter(_.map(json.values[0], normalizeName), _.isString)
+  if (!normalizeHeaderName) {
+    normalizeHeaderName = defaultNormalizeName
+  }
+  return _.filter(_.map(json.values[0], normalizeHeaderName), _.isString)
 }
 
-const fetchRows = (sheetName) => {
+const rowsToObjects = (json, normalizeHeaderName) => {
+  // First row is the key.
+  let fields = headerFields(json, normalizeHeaderName)
+  if (fields) {
+    return _.map(_.slice(json.values, 1), (v) => { 
+      return _.omitBy(_.zipObject(fields, v), _.isUndefined)
+    })
+  }
+  return []
+}
+
+/// @param sheetName String, name of the tab to fetch.
+/// @param headerNormalizer Function, takes a header name and normalize it into a key. Default _.camelCase.
+const fetchRows = (sheetName, headerNormalizer) => {
   return fetch(sheetRowsURL(SHEET_ID, sheetName))
     .then(response => response.json())
     .then(json => {
-      // Transform row data into a dictionary.
-      let fields = headerFields(json)
-      if (fields) {
-        return _.map(_.slice(json.values, 1), (v) => { 
-          return _.omitBy(_.zipObject(fields, v), _.isUndefined)
-        })
-      }
-      return []
+       return rowsToObjects(json, headerNormalizer)
     })
     .catch(err => {
       console.error(err)
