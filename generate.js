@@ -65,10 +65,15 @@ const fetchAndSummarize = async (dateString) => {
           const patientOutputFilename = `./docs/patient_data/${dateString}.json`
           fs.writeFileSync(patientOutputFilename, JSON.stringify(patients, null, '  '))
 
-          // Generate and write summary to JSON.
+          // Write daily and prefectural summary.
           const summary = Summarize.summarize(patients, daily, prefectures, lastUpdated)
           const summaryOutputFilename = `./docs/summary/${dateString}.json`
           fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
+
+          // Write minified version of daily/prefectural summary
+          const summaryMinifiedOutputFilename = `./docs/summary-min/${dateString}.json`
+          fs.writeFileSync(summaryMinifiedOutputFilename, JSON.stringify(summary))
+
           console.log('Success.')
         })     
     })

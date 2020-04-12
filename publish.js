@@ -9,12 +9,11 @@ const publish = () => {
   // Add 540 = UTC+9 for JST.
   const dateString = moment().utcOffset(540).format('YYYY-MM-DD')
   
-  for (let dir of ['patient_data', 'summary']) {
+  for (let dir of ['patient_data', 'summary', 'summary-min']) {
     let files = fs.readdirSync(path.join('.', 'docs', dir))
     let sorted = _.reverse(_.sortBy(_.filter(files, v => { return v.startsWith('2020')})))
     if (sorted.length > 0) {
       let latest = sorted[0]
-      let latestDestPath = path.join('.', 'docs', dir, latest)
       let latestPath = path.join('.', 'docs', dir, 'latest.json')
 
       fs.unlink(latestPath, err => {
