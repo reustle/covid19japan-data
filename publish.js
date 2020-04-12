@@ -9,7 +9,7 @@ const publish = () => {
   // Add 540 = UTC+9 for JST.
   const dateString = moment().utcOffset(540).format('YYYY-MM-DD')
   
-  for (let dir of ['patient_data', 'summary', 'summary-min']) {
+  for (let dir of ['patient_data', 'summary', 'summary_min']) {
     let files = fs.readdirSync(path.join('.', 'docs', dir))
     let sorted = _.reverse(_.sortBy(_.filter(files, v => { return v.startsWith('2020')})))
     if (sorted.length > 0) {
