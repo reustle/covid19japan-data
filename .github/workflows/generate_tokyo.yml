@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Download and Generate JSON data
+      - name: Generate tokyo/counts.json 
         run: node generate_tokyo.js
 
       - name: Git Status
@@ -32,8 +32,8 @@ jobs:
         run: |
           git config --local user.email alastair@liquidx.net
           git config --local user.name "Automated Action"
-          git add docs/*/*.json docs/*.txt
-          git commit -m "Automated Data Update: Tokyo" || exit 0
+          git add docs/tokyo/counts.json
+          git commit -m "Automated Data Update: Tokyo"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
