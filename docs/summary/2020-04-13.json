@@ -679,7 +679,7 @@
       "name": "Saitama"
     },
     {
-      "confirmed": 375,
+      "confirmed": 379,
       "cruisePassenger": 0,
       "deaths": 12,
       "confirmedByCity": {
@@ -697,7 +697,8 @@
         "Kakogawa": 1,
         "Kasai": 1,
         "Akashi": 1,
-        "Inami": 1
+        "Inami": 1,
+        "Hyogo": 4
       },
       "dailyConfirmedCount": [
         0,
@@ -796,10 +797,10 @@
         29,
         42,
         17,
-        0
+        4
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 4,
       "recovered": 59,
       "name_ja": "兵庫県",
       "name": "Hyogo"
@@ -6761,7 +6762,20 @@
       "confirmedCumulativeAvg3d": 6841,
       "confirmedAvg7d": 508,
       "confirmedCumulativeAvg7d": 5653
+    },
+    {
+      "confirmed": 4,
+      "recoveredCumulative": 784,
+      "deceasedCumulative": 123,
+      "criticalCumulative": 129,
+      "testedCumulative": 77381,
+      "date": "2020-04-13",
+      "confirmedCumulative": 7441,
+      "confirmedAvg3d": 409,
+      "confirmedCumulativeAvg3d": 7250,
+      "confirmedAvg7d": 475,
+      "confirmedCumulativeAvg7d": 6128
     }
   ],
-  "updated": "2020-04-13T11:31:50+09:00"
+  "updated": "2020-04-13T12:31:47+09:00"
 }
