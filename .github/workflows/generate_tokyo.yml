@@ -33,7 +33,7 @@ jobs:
           git config --local user.email alastair@liquidx.net
           git config --local user.name "Automated Action"
           git add docs/tokyo/counts.json
-          git commit -m "Automated Data Update: Tokyo"
+          git commit -m "Automated Data Update: Tokyo" || exit 0
 
       - name: Push changes
         uses: ad-m/github-push-action@master
