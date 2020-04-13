@@ -189,6 +189,7 @@ data that we use to cross check and verify.
 |Akita    |[新型コロナウイルス感染症について](https://www.pref.akita.lg.jp/pages/archive/47957)||
 |Aomori    |[新型コロナウイルス感染症について](http://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html)||
 |Chiba    |[患者の発生について｜新型コロナウイルス感染症](https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html)| Data is two days behind |
+|Chiba - Funabashi   |[市内で新型コロナウイルス感染症患者](https://www.city.funabashi.lg.jp/kenkou/kansenshou/001/index.html)||
 |Ehime    | [ 感染者の発生状況等について](https://www.pref.ehime.jp/h25500/kansen/covid19.html)||
 |Fukui    |[新型コロナウイルス感染症について](https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona.html)||
 |Fukuoka    | [福岡県内での発生状況](https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html)| [Dashboard](https://fukuoka.stopcovid19.jp/)|
@@ -207,7 +208,6 @@ data that we use to cross check and verify.
 |Iwate    |[新型コロナウイルス感染症関連情報](https://www.pref.iwate.jp/kurashikankyou/iryou/covid19/index.html)||
 |Kagawa    | [新型コロナウイルスに関連した患者の発生について](https://www.pref.kagawa.lg.jp/content/dir1/dir1_6/dir1_6_1/index.shtml)||
 |Kanagawa    | [新型コロナウイルスに感染した患者の発生状況](https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html) | [Dashboard](https://www.pref.kanagawa.jp/osirase/1369/?fbclid=IwAR2-8RAnRsixEpUFpaE-qLflTrAA-DbPaLa9r9SzOobgtGriI-ufROesEKA)| Slow to update |
-|Kanagawa - Funabashi   |[市内で新型コロナウイルス感染症患者](https://www.city.funabashi.lg.jp/kenkou/kansenshou/001/index.html)||
 |Kanagawa - Kawasaki | [川崎市内の新型コロナウイルスに感染した患者の発生状況](http://www.city.kawasaki.jp/350/page/0000115886.html) |||
 |Kanagawa - Sagamihara | [発生状況等](https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html) || Frequently updated |
 | Kanagawa - Yokohama| [横浜市内の新型コロナウイルスに感染した患者の発生状況](https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html) || Updated daily|
