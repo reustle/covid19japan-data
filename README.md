@@ -241,6 +241,8 @@ data that we use to cross check and verify.
 |Tokyo    | [東京都新型コロナウイルス感染症対策本部報](https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html)| [Dashboard](https://stopcovid19.metro.tokyo.lg.jp/en)|
 |Tottori    |[新型コロナウイルス感染症(COVID-19)特設サイト](https://www.pref.tottori.lg.jp/corona-virus/)||
 |Toyama    |[新型コロナウイルス感染症の県内の患者等発生状況](http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html)||
+| Toyama - Toyama City | [本市での感染者の発生状況について
+](https://www.city.toyama.toyama.jp/fukushihokenbu/hokensho/hokenyoboka/shingatakorona_3.html) |||
 |Wakayama    |[新型コロナウイルス感染症に関連する情報について](https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html)||
 |Yamagata    |[新型コロナウイルス感染症に関連するポータルサイト](http://www.pref.yamagata.jp/ou/bosai/020072/kochibou/coronavirus/coronavirus.html)||
 | Yamagata - Yonezawa | [新型コロナウイルス感染症に係る市からのお知らせ](http://www.city.yonezawa.yamagata.jp/item/8355.html#itemid8355) |||
