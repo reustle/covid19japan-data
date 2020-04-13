@@ -26911,10 +26911,13 @@
     "dateAnnounced": "2020-03-30",
     "ageBracket": 20,
     "gender": "F",
+    "residence": "Toyama City",
+    "detectedCityTown": "Toyama City",
     "detectedPrefecture": "Toyama",
     "patientStatus": "Hospitalized",
     "notes": "Kyoto Sangyo Uni student",
     "prefecturePatientNumber": "Toyama#1",
+    "cityPrefectureNumber": "ToyamaCity#1",
     "prefectureSourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200330/k10012358441000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -67312,6 +67315,9 @@
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "patientStatus": "Hospitalized",
+    "notes": "Nurse at 富山市民病院",
+    "knownCluster": "富山市民病院",
+    "relatedPatients": "Toyama#14",
     "prefecturePatientNumber": "Toyama#18",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -67324,6 +67330,9 @@
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "patientStatus": "Hospitalized",
+    "notes": "Patient at 富山市民病院",
+    "knownCluster": "富山市民病院",
+    "relatedPatients": "Toyama#14",
     "prefecturePatientNumber": "Toyama#19",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -67336,6 +67345,7 @@
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "patientStatus": "Hospitalized",
+    "notes": "Cosmetic Staff",
     "prefecturePatientNumber": "Toyama#20",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -67348,6 +67358,7 @@
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "patientStatus": "Hospitalized",
+    "notes": "Employee",
     "prefecturePatientNumber": "Toyama#21",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -73942,6 +73953,7 @@
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "patientStatus": "Hospitalized",
+    "relatedPatients": "Toyama#15",
     "prefecturePatientNumber": "Toyama#22",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -74304,6 +74316,7 @@
     "gender": "F",
     "residence": "Asahi",
     "detectedPrefecture": "Toyama",
+    "relatedPatients": "Toyama#15",
     "prefecturePatientNumber": "Toyama#23",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -79081,6 +79094,7 @@
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "patientStatus": "Hospitalized",
+    "knownCluster": "富山市民病院",
     "prefecturePatientNumber": "Toyama#25",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200411/k10012382291000.html?utm_int=word_contents_list-items_015&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
@@ -81760,6 +81774,7 @@
     "gender": "F",
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
+    "knownCluster": "富山市民病院",
     "prefecturePatientNumber": "Toyama#26",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -81771,6 +81786,7 @@
     "gender": "M",
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
+    "knownCluster": "富山市民病院",
     "prefecturePatientNumber": "Toyama#27",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -81782,6 +81798,7 @@
     "gender": "F",
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
+    "knownCluster": "富山市民病院",
     "prefecturePatientNumber": "Toyama#28",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -81793,6 +81810,7 @@
     "gender": "M",
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
+    "knownCluster": "富山市民病院",
     "prefecturePatientNumber": "Toyama#29",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -81804,6 +81822,7 @@
     "gender": "M",
     "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
+    "knownCluster": "富山市民病院",
     "prefecturePatientNumber": "Toyama#30",
     "sourceURL": "http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html",
     "confirmedPatient": true
@@ -87091,100 +87110,120 @@
   {
     "patientId": "5645",
     "dateAnnounced": "2020-04-12",
-    "ageBracket": -1,
+    "ageBracket": 30,
+    "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "notes": "Toyama citizen hospital",
     "knownCluster": "富山市民病院",
+    "prefecturePatientNumber": "Toyama#31",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200412/k10012382931000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "5647",
     "dateAnnounced": "2020-04-12",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "notes": "Toyama citizen hospital",
     "knownCluster": "富山市民病院",
+    "prefecturePatientNumber": "Toyama#32",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200412/k10012382931000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "5649",
     "dateAnnounced": "2020-04-12",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "notes": "Toyama citizen hospital",
     "knownCluster": "富山市民病院",
+    "prefecturePatientNumber": "Toyama#33",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200412/k10012382931000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "5651",
     "dateAnnounced": "2020-04-12",
-    "ageBracket": -1,
+    "ageBracket": 90,
+    "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "notes": "Toyama citizen hospital",
     "knownCluster": "富山市民病院",
+    "prefecturePatientNumber": "Toyama#34",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200412/k10012382931000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "5653",
     "dateAnnounced": "2020-04-12",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "notes": "Toyama citizen hospital",
     "knownCluster": "富山市民病院",
+    "prefecturePatientNumber": "Toyama#35",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200412/k10012382931000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "5655",
     "dateAnnounced": "2020-04-12",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "notes": "Toyama citizen hospital",
     "knownCluster": "富山市民病院",
+    "prefecturePatientNumber": "Toyama#36",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200412/k10012382931000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "5657",
     "dateAnnounced": "2020-04-12",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "notes": "Toyama citizen hospital",
     "knownCluster": "富山市民病院",
+    "prefecturePatientNumber": "Toyama#37",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200412/k10012382931000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "5659",
     "dateAnnounced": "2020-04-12",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "notes": "Toyama citizen hospital",
     "knownCluster": "富山市民病院",
+    "prefecturePatientNumber": "Toyama#38",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200412/k10012382931000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "5661",
     "dateAnnounced": "2020-04-12",
-    "ageBracket": -1,
+    "ageBracket": 60,
+    "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "notes": "Toyama citizen hospital",
     "knownCluster": "富山市民病院",
+    "prefecturePatientNumber": "Toyama#39",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200412/k10012382931000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
   {
     "patientId": "5663",
     "dateAnnounced": "2020-04-12",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "residence": "Toyama City",
     "detectedPrefecture": "Toyama",
     "notes": "Toyama citizen hospital",
     "knownCluster": "富山市民病院",
+    "prefecturePatientNumber": "Toyama#40",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200412/k10012382931000.html?utm_int=word_contents_list-items_016&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -91117,13 +91156,93 @@
     "confirmedPatient": true
   },
   {
-    "patientId": "5858",
+    "patientId": "5848",
     "dateAnnounced": "2020-04-13",
     "ageBracket": 60,
     "gender": "M",
     "residence": "Minamiizu",
     "detectedPrefecture": "Shizuoka",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200413/k10012384961000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5849",
+    "dateAnnounced": "2020-04-13",
+    "ageBracket": 50,
+    "residence": "Toyama City",
+    "detectedPrefecture": "Toyama",
+    "prefecturePatientNumber": "Toyama#41",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5850",
+    "dateAnnounced": "2020-04-13",
+    "ageBracket": 70,
+    "residence": "Toyama City",
+    "detectedPrefecture": "Toyama",
+    "notes": "Patient at 富山市民病院 ",
+    "relatedPatients": "Toyama#19",
+    "prefecturePatientNumber": "Toyama#42",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5851",
+    "dateAnnounced": "2020-04-13",
+    "ageBracket": 40,
+    "residence": "Toyama City",
+    "detectedPrefecture": "Toyama",
+    "notes": "Doctor at 富山市民病院",
+    "prefecturePatientNumber": "Toyama#43",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5852",
+    "dateAnnounced": "2020-04-13",
+    "ageBracket": 30,
+    "residence": "Toyama City",
+    "detectedPrefecture": "Toyama",
+    "notes": "Doctor at 富山市民病院",
+    "prefecturePatientNumber": "Toyama#44",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5853",
+    "dateAnnounced": "2020-04-13",
+    "ageBracket": -1,
+    "detectedPrefecture": "Toyama",
+    "prefecturePatientNumber": "Toyama#45",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5854",
+    "dateAnnounced": "2020-04-13",
+    "ageBracket": -1,
+    "detectedPrefecture": "Toyama",
+    "prefecturePatientNumber": "Toyama#46",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5855",
+    "dateAnnounced": "2020-04-13",
+    "ageBracket": -1,
+    "detectedPrefecture": "Toyama",
+    "prefecturePatientNumber": "Toyama#47",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5856",
+    "dateAnnounced": "2020-04-13",
+    "ageBracket": -1,
+    "detectedPrefecture": "Toyama",
+    "prefecturePatientNumber": "Toyama#48",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "5857",
+    "dateAnnounced": "2020-04-13",
+    "ageBracket": -1,
+    "detectedPrefecture": "Toyama",
+    "prefecturePatientNumber": "Toyama#49",
     "confirmedPatient": true
   },
   {
