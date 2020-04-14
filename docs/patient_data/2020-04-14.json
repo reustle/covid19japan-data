@@ -93002,7 +93002,7 @@
     "dateAnnounced": "2020-04-13",
     "ageBracket": 60,
     "gender": "M",
-    "residence": "Matsumoto",
+    "residence": "Ina",
     "detectedPrefecture": "Nagano",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200413/k10012384691000.html",
     "confirmedPatient": true
@@ -93012,7 +93012,8 @@
     "dateAnnounced": "2020-04-13",
     "ageBracket": 60,
     "gender": "F",
-    "residence": "Matsumoto",
+    "residence": "Ina",
+    "detectedCityTown": "Ina",
     "detectedPrefecture": "Nagano",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200413/k10012384691000.html",
     "confirmedPatient": true
@@ -93022,7 +93023,8 @@
     "dateAnnounced": "2020-04-13",
     "ageBracket": 20,
     "gender": "F",
-    "residence": "Matsumoto",
+    "residence": "Tokyo",
+    "detectedCityTown": "Ina",
     "detectedPrefecture": "Nagano",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200413/k10012384691000.html",
     "confirmedPatient": true
@@ -93034,6 +93036,7 @@
     "gender": "F",
     "residence": "Matsumoto",
     "detectedPrefecture": "Nagano",
+    "relatedPatients": "Nagano#29",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200413/k10012384691000.html",
     "confirmedPatient": true
   },
@@ -93042,7 +93045,7 @@
     "dateAnnounced": "2020-04-13",
     "ageBracket": 20,
     "gender": "F",
-    "residence": "Nagano",
+    "residence": "NaganoCity",
     "detectedPrefecture": "Nagano",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200413/k10012384691000.html",
     "confirmedPatient": true
@@ -93052,7 +93055,7 @@
     "dateAnnounced": "2020-04-13",
     "ageBracket": 30,
     "gender": "M",
-    "residence": "Nagano",
+    "residence": "NaganoCity",
     "detectedPrefecture": "Nagano",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200413/k10012384691000.html",
     "confirmedPatient": true
@@ -93060,9 +93063,10 @@
   {
     "patientId": "5843",
     "dateAnnounced": "2020-04-13",
-    "ageBracket": 50,
+    "ageBracket": 0,
     "gender": "F",
-    "residence": "Matsumoto",
+    "residence": "Ina",
+    "detectedCityTown": "Ina",
     "detectedPrefecture": "Nagano",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200413/k10012384691000.html",
     "confirmedPatient": true
