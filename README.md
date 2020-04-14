@@ -8,7 +8,6 @@ This repository contains the JSON export of the [Live Japan Patient Database (Go
  * [Data Sources](#data-sources)
  * [Development](#development)
 
-
 ## Data Formats
 
 ### docs/patient_data/latest.json
@@ -284,5 +283,16 @@ JSON file in to the `docs/` directory.
 If it detects some data inconsistencies, it will abort and not check in any data. The data
 verification checks are in `src/verify.js`
 
+# Contributors
 
+The data aggregated here is assembled by contributors to [covid19japan.com](https://covid19japan.com/).
 
+# Data License and Attribution
+
+This data is licensed for non-commercial public use under the [Creative Commons By Attribution Non-Commercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/).
+
+If you use this data, you must attribute as "Data from ["covid19japan.com"](https://covid19japan.com/)." This data is based on reports from national and prefectural government reports in Japan.
+
+# Code License
+
+All code is licensed under the MIT License.
