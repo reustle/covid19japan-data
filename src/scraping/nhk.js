@@ -84,7 +84,15 @@ const extractDailySummary = (url) => {
       let prefectureMatches = contents.matchAll(prefecturePattern)
       if (prefectureMatches) {
         for (const prefectureMatch of prefectureMatches) {
-          values.prefectureCounts[prefectureMatch[1]] = parseInt(normalizeFixedWidthNumbers(prefectureMatch[2]))
+          // Sometimes prefectures are comma separated.
+          const multiPrefectures = prefectureMatch[1].split('、')
+          if (multiPrefectures.length == 1) {
+            values.prefectureCounts[prefectureMatch[1]] = parseInt(normalizeFixedWidthNumbers(prefectureMatch[2]))
+          } else {
+            for (let multiPrefecture of multiPrefectures) {
+              values.prefectureCounts[multiPrefecture.trim()] = parseInt(normalizeFixedWidthNumbers(prefectureMatch[2]))
+            }
+          }
         }
       }
 
@@ -101,14 +109,14 @@ const extractDailySummary = (url) => {
       }
 
       //const criticalPatients = new RegExp('厚生労働省によりますと、重症者は.*')
-      console.log(values)
+      //console.log(values)
       return values
     })
 }
 
 const outputPrefectureCountTable = (values, prefectures) => {
   let prefectureCountsInEnglish = _.mapKeys(values.prefectureCounts, (v, k) => { return PREFECTURES[k] })
-  console.log(prefectureCountsInEnglish)
+  //console.log(prefectureCountsInEnglish)
   for (let prefectureName of _.sortBy(_.values(prefectures))) {
     let count = prefectureCountsInEnglish[prefectureName]
     if (!count) {
