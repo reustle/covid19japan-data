@@ -67919,9 +67919,7 @@
   {
     "patientId": "5484",
     "dateAnnounced": "2020-04-09",
-    "ageBracket": 40,
-    "gender": "M",
-    "residence": "Kawaguchi",
+    "ageBracket": -1,
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#339",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/0411-01.html",
@@ -67933,7 +67931,7 @@
     "dateAnnounced": "2020-04-09",
     "ageBracket": 20,
     "gender": "F",
-    "residence": "Fujimino",
+    "residence": "Toda",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#341",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -75060,9 +75058,9 @@
   {
     "patientId": "5485",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": 20,
-    "gender": "F",
-    "residence": "Toda",
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Kawaguchi",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#340",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/0411-01.html",
@@ -75072,7 +75070,7 @@
   {
     "patientId": "5521",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 80,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#376",
@@ -75081,7 +75079,7 @@
   {
     "patientId": "5522",
     "dateAnnounced": "2020-04-10",
-    "ageBracket": -1,
+    "ageBracket": 20,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#377",
@@ -82569,9 +82567,9 @@
   {
     "patientId": "5487",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 70,
+    "ageBracket": 20,
     "gender": "F",
-    "residence": "Misato",
+    "residence": "Fujimino",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#342",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82581,8 +82579,9 @@
   {
     "patientId": "5488",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 40,
-    "gender": "M",
+    "ageBracket": 70,
+    "gender": "F",
+    "residence": "Misato",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#343",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82593,7 +82592,8 @@
     "patientId": "5489",
     "dateAnnounced": "2020-04-11",
     "ageBracket": 40,
-    "gender": "F",
+    "gender": "M",
+    "residence": "Yoshikawa",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#344",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82603,8 +82603,9 @@
   {
     "patientId": "5490",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 60,
+    "ageBracket": 40,
     "gender": "F",
+    "residence": "Ina",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#345",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82615,7 +82616,8 @@
     "patientId": "5491",
     "dateAnnounced": "2020-04-11",
     "ageBracket": 60,
-    "gender": "M",
+    "gender": "F",
+    "residence": "Tokorozawa",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#346",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82625,8 +82627,9 @@
   {
     "patientId": "5492",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 70,
-    "gender": "F",
+    "ageBracket": 60,
+    "gender": "M",
+    "residence": "Tokorozawa",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#347",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82636,8 +82639,9 @@
   {
     "patientId": "5493",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 50,
-    "gender": "M",
+    "ageBracket": 70,
+    "gender": "F",
+    "residence": "Saitama",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#348",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82649,6 +82653,7 @@
     "dateAnnounced": "2020-04-11",
     "ageBracket": 50,
     "gender": "M",
+    "residence": "Iruma",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#349",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82660,6 +82665,7 @@
     "dateAnnounced": "2020-04-11",
     "ageBracket": 50,
     "gender": "M",
+    "residence": "Iruma",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#350",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82669,8 +82675,9 @@
   {
     "patientId": "5496",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 60,
-    "gender": "F",
+    "ageBracket": 50,
+    "gender": "M",
+    "residence": "Tokorozawa",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#351",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82680,8 +82687,9 @@
   {
     "patientId": "5497",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 20,
+    "ageBracket": 60,
     "gender": "F",
+    "residence": "Sayama",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#352",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82691,8 +82699,9 @@
   {
     "patientId": "5498",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 0,
+    "ageBracket": 20,
     "gender": "F",
+    "residence": "Sayama",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#353",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82702,8 +82711,9 @@
   {
     "patientId": "5499",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 20,
-    "gender": "M",
+    "ageBracket": 0,
+    "gender": "F",
+    "residence": "Sayama",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#354",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82713,8 +82723,9 @@
   {
     "patientId": "5500",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 10,
-    "gender": "F",
+    "ageBracket": 20,
+    "gender": "M",
+    "residence": "Kuki",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#355",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82724,8 +82735,9 @@
   {
     "patientId": "5501",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 40,
+    "ageBracket": 10,
     "gender": "F",
+    "residence": "Kuki",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#356",
     "prefectureSourceURL": "https://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200411-0101.pdf",
@@ -82735,7 +82747,9 @@
   {
     "patientId": "5502",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Kumagaya",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#357",
     "prefectureSourceURL": "http://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200412-0202.pdf",
@@ -82745,7 +82759,9 @@
   {
     "patientId": "5503",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 70,
+    "gender": "F",
+    "residence": "Fujimino",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#358",
     "prefectureSourceURL": "http://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200412-0202.pdf",
@@ -82755,7 +82771,9 @@
   {
     "patientId": "5504",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 80,
+    "gender": "M",
+    "residence": "Asaka",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#359",
     "prefectureSourceURL": "http://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200412-0202.pdf",
@@ -82765,7 +82783,9 @@
   {
     "patientId": "5505",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 20,
+    "gender": "F",
+    "residence": "Fujimi",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#360",
     "prefectureSourceURL": "http://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200412-0202.pdf",
@@ -82775,7 +82795,9 @@
   {
     "patientId": "5506",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "F",
+    "residence": "Fujimi",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#361",
     "prefectureSourceURL": "http://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200412-0202.pdf",
@@ -82785,7 +82807,9 @@
   {
     "patientId": "5507",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Fujimino",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#362",
     "prefectureSourceURL": "http://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200412-0202.pdf",
@@ -82795,7 +82819,9 @@
   {
     "patientId": "5508",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
+    "residence": "Konosu",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#363",
     "prefectureSourceURL": "http://www.pref.saitama.lg.jp/a0001/news/page/2020/documents/200412-0202.pdf",
@@ -82805,7 +82831,7 @@
   {
     "patientId": "5509",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 70,
+    "ageBracket": 50,
     "gender": "M",
     "residence": "Koshigaya",
     "detectedPrefecture": "Saitama",
@@ -82829,7 +82855,7 @@
   {
     "patientId": "5511",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": 50,
+    "ageBracket": 70,
     "gender": "M",
     "residence": "Kawaguchi",
     "detectedPrefecture": "Saitama",
@@ -82841,7 +82867,7 @@
   {
     "patientId": "5512",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 50,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#367",
@@ -82851,7 +82877,7 @@
   {
     "patientId": "5513",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 60,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#368",
@@ -82861,7 +82887,7 @@
   {
     "patientId": "5514",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 80,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#369",
@@ -82871,7 +82897,7 @@
   {
     "patientId": "5515",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 60,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#370",
@@ -82881,7 +82907,7 @@
   {
     "patientId": "5516",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 50,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#371",
@@ -82891,7 +82917,7 @@
   {
     "patientId": "5517",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 70,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#372",
@@ -82901,7 +82927,7 @@
   {
     "patientId": "5518",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 50,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#373",
@@ -82911,7 +82937,7 @@
   {
     "patientId": "5519",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 60,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#374",
@@ -82921,7 +82947,7 @@
   {
     "patientId": "5520",
     "dateAnnounced": "2020-04-11",
-    "ageBracket": -1,
+    "ageBracket": 40,
     "residence": "Saitama City",
     "detectedPrefecture": "Saitama",
     "prefecturePatientNumber": "Saitama#375",
@@ -96511,6 +96537,102 @@
     "ageBracket": -1,
     "detectedPrefecture": "Okinawa",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386711000.html?utm_int=word_contents_list-items_001&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6053",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6054",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6055",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6056",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6057",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6058",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6059",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6060",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6061",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6062",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6063",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
+    "confirmedPatient": true
+  },
+  {
+    "patientId": "6064",
+    "dateAnnounced": "2020-04-14",
+    "ageBracket": -1,
+    "detectedPrefecture": "Fukuoka",
+    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386861000.html",
     "confirmedPatient": true
   },
   {
