@@ -7,7 +7,7 @@ const fetch = require('node-fetch')
 const _ = require('lodash')
 
 const SHEET_API_KEY = 'AIzaSyADbri4duIMaXSaqtFMyAJW0qCDCgFdlF0'
-const SHEET_ID = '1jfB4muWkzKTR0daklmf8D5F0Uf_IYAgcx_-Ij9McClQ'
+const SHEET_ID = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
 
 const sheetURL = (sheetId) => {
   return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}?key=${SHEET_API_KEY}`
