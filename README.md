@@ -215,17 +215,17 @@ data that we use to cross check and verify.
 |Kanagawa - Yokosuka   |[横須賀市内の新型コロナウイルス感染症患者の発生状況](https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html)|| Updated more frequently than Kanagawa |
 |Kagoshima    |[新型コロナウイルス感染症に関する情報](https://www.pref.kagoshima.jp/ae06/kenko-fukushi/kenko-iryo/kansen/kansensho/coronavirus.html)||
 |Kochi    | [高知県における新型コロナウイルス感染症患者の発生状況について](https://www.pref.kochi.lg.jp/soshiki/130401/2020022900049.html) [PCR](https://www.pref.kochi.lg.jp/soshiki/130120/2020030400166.html)|| Updated daily |
-|Kumamoto    | [新型コロナウイルス感染症](https://www.pref.kumamoto.jp/kiji_30386.html) | [Summary](https://www.pref.kumamoto.jp/kiji_32300.html) | Patients numbers in the Summary |
+|Kumamoto    | [新型コロナウイルス感染症](https://www.pref.kumamoto.jp/kiji_32300.html) |  | Patients numbers in the Summary |
 |Kumamoto - Kumamoto City   | [新型コロナウイルス感染症について](http://www.city.kumamoto.jp/hpkiji/pub/detail.aspx?c_id=5&id=26562) ||
 |Kyoto    |[新型コロナウイルス感染症の患者の発生について](https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F)|
 |Mie    |[新型コロナウイルス感染症に関連した肺炎患者の発生について](https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066.htm)||
 |Miyagi    | [県内における発生状況等について](https://www.pref.miyagi.jp/site/covid-19/02.html)|| Updated daily |
 ｜Miyagi - Sendai | [仙台市内の感染者の発生状況](https://www.city.sendai.jp/kikikanri/kinkyu/200131corona2.html) ||
 |Miyazaki    |[新型コロナウイルス感染症患者](https://www.pref.miyazaki.lg.jp/kenko/hoken/kansensho/covid19/hassei.html)||
-|Nagano    | [新型コロナウイルス感染症に係る検査状況について](https://www.pref.nagano.lg.jp/koho/koho/pressreleases/2004happyoshiryo.html)| [Dashboard](https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/bukan-haien-doko.html) | Very little data, check MHLW |
+|Nagano    | [新型コロナウイルス感染症に係る検査状況について](https://www.pref.nagano.lg.jp/koho/koho/pressreleases/2004happyoshiryo.html)|  | Very little data, check MHLW |
 |Nagano - Nagano City | [新型コロナウイルス感染症患者の発生について](https://www.city.nagano.nagano.jp/site/covid19-joho/449132.html) ||
 |Nara    |[新型コロナウイルス感染症の患者の発生について](http://www.pref.nara.jp/module/1356.htm#moduleid1356) || Inconsistent recording of asymptomatic vs symptomatic. Numbering system changed after patient #7 |
-|Nagasaki    | [長崎県内の発生状況](https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/#hassei)| Updated frequently |
+|Nagasaki    | [長崎県内の発生状況](https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/#hassei)|| Updated frequently |
 |Niigata    | [県内における感染者の発生について](https://www.pref.niigata.lg.jp/sec/kikitaisaku/hasseijokyo-covid19-niigataken.html)||
 | Niigata - Niigata City | [報道資料、会議資料](https://www.city.niigata.lg.jp/iryo/kenko/yobou_kansen/kansen/coronavirus.html) ||
 |Oita    |[大分県内における患者発生について](http://www.pref.oita.jp/site/covid19-oita/covid19-pcr.html)||
@@ -251,6 +251,15 @@ data that we use to cross check and verify.
 | Yamagata - Yonezawa | [新型コロナウイルス感染症に係る市からのお知らせ](http://www.city.yonezawa.yamagata.jp/item/8355.html#itemid8355) |||
 |Yamaguchi    |[新型コロナウイルス感染症の山口県内での発生について](https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/koronahassei.html)||
 |Yamanashi    |[新型コロナウイルス感染症の県内における発生状況](https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html)||
+
+**Machine Readable Data Sources**
+
+| Prefecture/City | Dashboard | Patient Data | PCR | Other |
+|-----------------|-----------|--------------|-----|-------|
+| Fukuoka | [fukuoka.stopcovid19.jp](https://fukuoka.stopcovid19.jp/) |
+| Kanagawa | [Dashboard](https://www.pref.kanagawa.jp/osirase/1369/?fbclid=IwAR2-8RAnRsixEpUFpaE-qLflTrAA-DbPaLa9r9SzOobgtGriI-ufROesEKA) || 
+| Saitama | [saitama.stopcovid19.jp](https://saitama.stopcovid19.jp/) |
+| Tokyo | [stopcovid19.metro.tokyo.lg.jp](https://stopcovid19.metro.tokyo.lg.jp/en/) |
 
 **We need your help!** Please submit any information sources via the "Issues" tab above. Thank you! ありがとう！
 
