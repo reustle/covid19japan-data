@@ -6,8 +6,11 @@ const FetchTokyoCases = require('./src/fetch_tokyo_counts.js')
 const generateTokyoCounts = () => {
   FetchTokyoCases.fetchTokyoCounts()
     .then(tokyoCases => {
-      const filename = `./docs/tokyo/counts.json`
-      fs.writeFileSync(filename, JSON.stringify(tokyoCases, null, '  '))
+      console.log(`Read ${tokyoCases.length} Tokyo wards/cities.`)
+      if (tokyoCases.length > 0) {
+        const filename = `./docs/tokyo/counts.json`
+        fs.writeFileSync(filename, JSON.stringify(tokyoCases, null, '  '))
+      }
     })
 }
 
