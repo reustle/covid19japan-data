@@ -119,7 +119,7 @@
       "name": "Tokyo"
     },
     {
-      "confirmed": 967,
+      "confirmed": 1019,
       "cruisePassenger": 0,
       "deaths": 8,
       "confirmedByCity": {
@@ -256,10 +256,10 @@
         24,
         59,
         74,
-        0
+        52
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 52,
       "recovered": 155,
       "name_ja": "大阪府",
       "name": "Osaka"
@@ -1515,17 +1515,18 @@
       "name": "Port Quarantine"
     },
     {
-      "confirmed": 140,
+      "confirmed": 146,
       "cruisePassenger": 0,
       "deaths": 4,
       "confirmedByCity": {
-        "Kanazawa": 36,
+        "Kanazawa": 37,
         "Ishikawa": 1,
         "Nonoichi": 2,
         "Kawakita": 1,
         "Hakusan": 2,
         "Kahoku": 2,
-        "Komatsu": 1
+        "Komatsu": 1,
+        "Shirayama": 2
       },
       "dailyConfirmedCount": [
         0,
@@ -1627,10 +1628,10 @@
         8,
         10,
         9,
-        0
+        6
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 6,
       "recovered": 5,
       "name_ja": "石川県",
       "name": "Ishikawa"
@@ -6963,18 +6964,18 @@
       "confirmedCumulativeAvg7d": 7230
     },
     {
-      "confirmed": 182,
+      "confirmed": 240,
       "recoveredCumulative": 935,
       "deceasedCumulative": 178,
       "criticalCumulative": 193,
       "testedCumulative": 100703,
       "date": "2020-04-16",
-      "confirmedCumulative": 8905,
-      "confirmedAvg3d": 393,
-      "confirmedCumulativeAvg3d": 8585,
-      "confirmedAvg7d": 474,
-      "confirmedCumulativeAvg7d": 7704
+      "confirmedCumulative": 8963,
+      "confirmedAvg3d": 412,
+      "confirmedCumulativeAvg3d": 8604,
+      "confirmedAvg7d": 482,
+      "confirmedCumulativeAvg7d": 7712
     }
   ],
-  "updated": "2020-04-16T23:16:37+09:00"
+  "updated": "2020-04-16T23:31:41+09:00"
 }
