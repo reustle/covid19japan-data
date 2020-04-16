@@ -8,8 +8,7 @@ const main = () => {
   let patientsStart = 2167
   fetchPatients(sources.tokyo.patients.url, fetch).then(patients => {
     for (let patient of patients) {
-      let k = _.keys(patient)[0]
-      let patientNumber = patient[k]
+      let patientNumber = patient.patientId
       if (patientNumber >= patientsStart) {
         console.log(`${patient.dateAnnounced}\t${patient.age}\t${patient.gender}\t${patientNumber}`)
       }

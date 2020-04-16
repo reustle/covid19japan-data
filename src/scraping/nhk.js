@@ -1,9 +1,8 @@
 const fetch = require('node-fetch')
 const cheerio = require('cheerio')
 const _ = require('lodash')
-const process = require('process')
 
-const PREFECTURES = _.fromPairs(_.map([
+const prefectureLookup = _.fromPairs(_.map([
 "愛知県	Aichi",
 "秋田県	Akita",
 "青森県	Aomori",
@@ -53,9 +52,6 @@ const PREFECTURES = _.fromPairs(_.map([
 "山梨県	Yamanashi",
 ], v => { return v.split('\t') }))
 
-const japanesePrefectureToEnglish = v => {
-  return PREFECTURES[v]
-}
 
 const normalizeFixedWidthNumbers = v => {
    return v.replace(/０/g, '0')
@@ -114,28 +110,21 @@ const extractDailySummary = (url) => {
     })
 }
 
-const outputPrefectureCountTable = (values, prefectures) => {
-  let prefectureCountsInEnglish = _.mapKeys(values.prefectureCounts, (v, k) => { return PREFECTURES[k] })
+const sortedPrefectureCounts = (values) => {
+  let prefectureCountsInEnglish = _.mapKeys(values.prefectureCounts, (v, k) => { return prefectureLookup[k] })
   //console.log(prefectureCountsInEnglish)
-  for (let prefectureName of _.sortBy(_.values(prefectures))) {
+  let counts = []
+  for (let prefectureName of _.sortBy(_.values(prefectureLookup))) {
     let count = prefectureCountsInEnglish[prefectureName]
     if (!count) {
       count = 0
     }
-    console.log(count)
+    counts.push(count)
   }
+  console.log(prefectureLookup)
+  return counts
 }
 
-const main = () => {
-  let url = 'https://www3.nhk.or.jp/news/html/20200411/k10012381781000.html?utm_int=detail_contents_news-related_002'
-  if (process.argv[2]) {
-    url = process.argv[2]
-    console.log(url)
-  }
-   extractDailySummary(url)
-    .then(values => {
-      outputPrefectureCountTable(values, PREFECTURES)
-    })
-}
-
-main()
+exports.extractDailySummary = extractDailySummary
+exports.sortedPrefectureCounts = sortedPrefectureCounts
+exports.prefectureLookup = prefectureLookup

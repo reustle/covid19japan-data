@@ -1,0 +1,56 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;  
+}
+
+#sources {
+  width: 200px;
+  flex-basis: 15%;
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+  height: 100vh;
+}
+
+
+
+#results {
+  flex-grow: 2;
+  padding: 20px;
+  height: 100vh;
+
+
+  table#patients-table, table#nhk-table {
+    td {
+      font-size: 12px;
+      padding: 4px;
+    }
+  }
+
+  input#nhk-url {
+    padding: 5px;
+    width: 90%;
+  }
+
+
+  .hide { display: none; }
+
+  .hide-patientId { .patientId { display: none; } }
+  .hide-dateAnnounced { .dateAnnounced { display: none; } }
+  .hide-dateAdded { .dateAdded { display: none; } }
+  .hide-age { .age { display: none; } }
+  .hide-gender { .gender { display: none; } }
+}
+
+#patients-results { display: none; }
+.patients-results #patients-results { display: block; }
+#nhk-results { display: none; }
+.nhk-results #nhk-results { display: block; }
+

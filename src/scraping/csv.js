@@ -42,7 +42,9 @@ const translateCsv = (rows) => {
   return _.map(rows, row => {
     let translated = {}
     for (let key of _.keys(row)) {
-      if (key == '公表_年月日') {
+      if (key == 'No') {
+        translated['patientId'] = row[key]
+      } else if (key == '公表_年月日') {
         translated['dateAnnounced'] = row[key]
       } else if (key == '患者_年代') {
         translated['age'] = translateAge(row['患者_年代'])

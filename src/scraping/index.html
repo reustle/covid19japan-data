@@ -2,11 +2,48 @@
   <head></head>
   <body>
     <div id="page">
-      <div><input type="text" id="url" name="url"></div>
-      <div><a href="#" id="pull-tokyo">Pull Tokyo</a></div>
+      <div id="sources">
+        <ul>
+          <li><a href="#" id="fukui-patients">fukui.patients</a></li>
+          <li><a href="#" id="kanagawa-patients">kanagawa.patients</a></li>
+          <li><a href="#" id="tokyo-patients">tokyo.patients</a></li>
+        </ul>
+        <ul>
+          <li><a href="#"" id="nhk-daily">nhk</a></li>
+        </ul>
+      </div>
+      <div id="results" class="">
+        <div id="nhk-results">
+          <input type="text" id="nhk-url" name="url" value="">
+          <table id="nhk-table">
+          </table>
+        </div>
 
-      <textarea name="" id="output" cols="30" rows="10"></textarea>
-  
+        <div id="patients-results">
+          <table id="patients-table">
+            <thead id="patients-head">
+              <tr>
+                <td>patientId <a href="#" class="column-toggle" data-name="patientId">+/-</a></td>
+                <td>Announced <a href="#" class="column-toggle" data-name="dateAnnounced">+/-</a></td>
+                <td>Added <a href="#" class="column-toggle" data-name="dateAdded">+/-</a></td>
+                <td>Age <a href="#" class="column-toggle" data-name="age">+/-</a></td>
+                <td>Gender <a href="#" class="column-toggle" data-name="gender">+/-</a></td>
+              </tr>
+              <tr>
+                <td><input type="text" value="" class="column-filter" name="patientId"></td>
+                <td><input type="text" value="" class="column-filter" name="dateAnnounced"></td>
+                <td><input type="text" value="" class="column-filter" name="dateAdded"></td>
+                <td><input type="text" value="" class="column-filter" name="age"></td>
+                <td><input type="text" value="" class="column-filter" name="gender"></td>
+              </tr>            
+            </thead>
+            <tbody id="patients-body"></tbody>
+          </table>
+        </div>
+
+        <textarea name="" id="output-debug" cols="80" rows="40"></textarea>
+
+      </div>
     </div>
   </body>
 </html>
