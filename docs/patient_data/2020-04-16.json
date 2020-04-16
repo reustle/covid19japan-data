@@ -99054,7 +99054,6 @@
     "residence": "Kamakura",
     "detectedCityTown": "Kamakura",
     "detectedPrefecture": "Kanagawa",
-    "notes": "https://www.pref.kanagawa.jp/documents/58277/0414_prefkanagawa.pdf",
     "prefecturePatientNumber": "Kanagawa#562",
     "sourceURL": "https://www.pref.kanagawa.jp/documents/58277/0414_prefkanagawa.pdf",
     "confirmedPatient": true
@@ -99211,20 +99210,29 @@
   {
     "patientId": "KNG610",
     "dateAnnounced": "2020-04-14",
-    "ageBracket": -1,
+    "ageBracket": 40,
+    "gender": "M",
     "residence": "Kawasaki",
     "detectedCityTown": "Kawasaki",
     "detectedPrefecture": "Kanagawa",
+    "patientStatus": "Hospitalized",
     "prefecturePatientNumber": "Kanagawa#576",
+    "cityPrefectureNumber": "Kawasaki#129",
     "sourceURL": "https://www.pref.kanagawa.jp/documents/58277/0414_kawasaki.pdf",
     "confirmedPatient": true
   },
   {
     "patientId": "KNG611",
     "dateAnnounced": "2020-04-14",
-    "ageBracket": -1,
+    "ageBracket": 50,
+    "gender": "F",
+    "residence": "Sagamihara",
+    "detectedCityTown": "Sagamihara",
     "detectedPrefecture": "Kanagawa",
-    "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386881000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
+    "patientStatus": "Hospitalized",
+    "prefecturePatientNumber": "Kanagawa#577",
+    "cityPrefectureNumber": "Sagamihara#55",
+    "sourceURL": "https://www.pref.kanagawa.jp/documents/58277/0414_sagamihara.pdf",
     "confirmedPatient": true
   },
   {
@@ -99232,6 +99240,7 @@
     "dateAnnounced": "2020-04-14",
     "ageBracket": -1,
     "detectedPrefecture": "Kanagawa",
+    "cityPrefectureNumber": "Fujisawa#30",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386881000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
@@ -99240,6 +99249,7 @@
     "dateAnnounced": "2020-04-14",
     "ageBracket": -1,
     "detectedPrefecture": "Kanagawa",
+    "cityPrefectureNumber": "Fujisawa#31",
     "sourceURL": "https://www3.nhk.or.jp/news/html/20200414/k10012386881000.html?utm_int=word_contents_list-items_009&word_result=%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9",
     "confirmedPatient": true
   },
