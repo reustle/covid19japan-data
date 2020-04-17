@@ -232,7 +232,7 @@ data that we use to cross check and verify.
 |Oita - Oita City | [大分市における新たな新型コロナウイルス感染症患者の発生について](https://www.city.oita.oita.jp/kenko/iryo/kansensho/index.html) ||
 |Okayama    |[新型コロナウイルス感染症について](https://www.pref.okayama.jp/page/645925.html)||
 |Okinawa    | [Patients](https://www.pref.okinawa.lg.jp/site/hoken/chiikihoken/kekkaku/press/20200214_covid19_pr1.html)|[患者の発生について](https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/2019-ncov.html)| Up to date |
-|Osaka    | [新型コロナウイルス感染症について](http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html)|| Usually few days behind. Use MHLW for most up-to-date reports. |
+|Osaka    | [新型コロナウイルス感染症について](http://www.pref.osaka.lg.jp/hodo/index.php?HST_TITLE1=%83R%83%8D%83i&SEARCH_NUM=10&searchFlg=%8C%9F%81@%8D%F5&site=fumin)|| Usually few days behind. Use MHLW for most up-to-date reports. |
 |Saga    | [佐賀県の新型コロナウイルス感染症の状況](https://www.pref.saga.lg.jp/kiji00373220/index.html) ||
 |Saitama    |[記者発表資料](https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html) |[Dashboard](https://saitama.stopcovid19.jp/)|
 |Shiga    | [新型コロナウイルス感染症患者の発生状況](https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/310735.html)||
