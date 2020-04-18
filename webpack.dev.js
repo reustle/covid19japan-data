@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    index: ["./src/scraping/index.js", "./src/scraping/index.scss"],
+    datasources: ["./src/datasources/index.js", "./src/datasources/index.scss"],
   },
   output: {
     path: path.resolve(__dirname, "docs"),
@@ -19,9 +19,9 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "scraping/index.html",
-      template: "src/scraping/index.html",
-      chunks: ["index"],
+      filename: "datasources/index.html",
+      template: "src/datasources/index.html",
+      chunks: ["datasources"],
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
