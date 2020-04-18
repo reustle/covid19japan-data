@@ -1,6 +1,14 @@
 // List of third-party machine readable data sources by prefectures. 
 
 const sources = {
+  aichi: {
+    patients: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/code4nagoya/covid19/development/data/data.json'
+    },
+    source: 'https://github.com/code4nagoya/covid19',
+    dashboard: 'https://stopcovid19.code4.nagoya/'
+  },
   akita: {
     patients: {
       format: 'json',
