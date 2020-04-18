@@ -269,12 +269,12 @@
       "name": "Osaka"
     },
     {
-      "confirmed": 737,
+      "confirmed": 746,
       "cruisePassenger": 0,
       "deaths": 15,
       "confirmedByCity": {
         "Sagamihara": 48,
-        "Yokohama": 224,
+        "Yokohama": 223,
         "Atsugi": 24,
         "Kanagawa": 2,
         "Kamakura": 23,
@@ -381,7 +381,7 @@
         27,
         6,
         18,
-        65,
+        64,
         28,
         56,
         76,
@@ -391,10 +391,10 @@
         40,
         55,
         27,
-        34
+        44
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 34,
+      "newlyConfirmed": 44,
       "recovered": 54,
       "name_ja": "神奈川県",
       "name": "Kanagawa"
@@ -1422,18 +1422,20 @@
       "name": "Kyoto"
     },
     {
-      "confirmed": 160,
+      "confirmed": 173,
       "cruisePassenger": 0,
       "deaths": 4,
       "confirmedByCity": {
-        "Kanazawa": 44,
+        "Kanazawa": 51,
         "Ishikawa": 1,
         "Nonoichi": 3,
-        "Kawakita": 1,
+        "Kawakita": 2,
         "Hakusan": 3,
         "Kahoku": 2,
-        "Komatsu": 1,
-        "Shirayama": 2
+        "Komatsu": 4,
+        "Shirayama": 2,
+        "Kaga": 1,
+        "Uchinada": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -1537,10 +1539,10 @@
         9,
         6,
         14,
-        0
+        13
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 13,
       "recovered": 5,
       "name_ja": "石川県",
       "name": "Ishikawa"
@@ -6980,15 +6982,15 @@
       "confirmedCumulativeAvg7d": 3464
     },
     {
-      "confirmed": 524,
+      "confirmed": 523,
       "recoveredCumulative": 632,
       "deceasedCumulative": 94,
       "criticalCumulative": 99,
       "testedCumulative": 61498,
       "date": "2020-04-08",
-      "confirmedCumulative": 4994,
-      "confirmedAvg3d": 375,
-      "confirmedCumulativeAvg3d": 4499,
+      "confirmedCumulative": 4993,
+      "confirmedAvg3d": 374,
+      "confirmedCumulativeAvg3d": 4498,
       "confirmedAvg7d": 351,
       "confirmedCumulativeAvg7d": 3815
     },
@@ -6999,9 +7001,9 @@
       "criticalCumulative": 109,
       "testedCumulative": 64387,
       "date": "2020-04-09",
-      "confirmedCumulative": 5583,
+      "confirmedCumulative": 5582,
       "confirmedAvg3d": 493,
-      "confirmedCumulativeAvg3d": 4992,
+      "confirmedCumulativeAvg3d": 4991,
       "confirmedAvg7d": 395,
       "confirmedCumulativeAvg7d": 4210
     },
@@ -7012,9 +7014,9 @@
       "criticalCumulative": 117,
       "testedCumulative": 68771,
       "date": "2020-04-10",
-      "confirmedCumulative": 6206,
+      "confirmedCumulative": 6205,
       "confirmedAvg3d": 578,
-      "confirmedCumulativeAvg3d": 5570,
+      "confirmedCumulativeAvg3d": 5569,
       "confirmedAvg7d": 437,
       "confirmedCumulativeAvg7d": 4647
     },
@@ -7025,9 +7027,9 @@
       "criticalCumulative": 122,
       "testedCumulative": 74891,
       "date": "2020-04-11",
-      "confirmedCumulative": 6906,
+      "confirmedCumulative": 6905,
       "confirmedAvg3d": 637,
-      "confirmedCumulativeAvg3d": 6207,
+      "confirmedCumulativeAvg3d": 6206,
       "confirmedAvg7d": 484,
       "confirmedCumulativeAvg7d": 5131
     },
@@ -7038,9 +7040,9 @@
       "criticalCumulative": 129,
       "testedCumulative": 77381,
       "date": "2020-04-12",
-      "confirmedCumulative": 7420,
+      "confirmedCumulative": 7419,
       "confirmedAvg3d": 612,
-      "confirmedCumulativeAvg3d": 6819,
+      "confirmedCumulativeAvg3d": 6818,
       "confirmedAvg7d": 507,
       "confirmedCumulativeAvg7d": 5638
     },
@@ -7051,9 +7053,9 @@
       "criticalCumulative": 135,
       "testedCumulative": 78702,
       "date": "2020-04-13",
-      "confirmedCumulative": 7699,
+      "confirmedCumulative": 7698,
       "confirmedAvg3d": 497,
-      "confirmedCumulativeAvg3d": 7316,
+      "confirmedCumulativeAvg3d": 7315,
       "confirmedAvg7d": 513,
       "confirmedCumulativeAvg7d": 6151
     },
@@ -7064,9 +7066,9 @@
       "criticalCumulative": 152,
       "testedCumulative": 89551,
       "date": "2020-04-14",
-      "confirmedCumulative": 8196,
+      "confirmedCumulative": 8195,
       "confirmedAvg3d": 430,
-      "confirmedCumulativeAvg3d": 7746,
+      "confirmedCumulativeAvg3d": 7745,
       "confirmedAvg7d": 532,
       "confirmedCumulativeAvg7d": 6683
     },
@@ -7077,9 +7079,9 @@
       "criticalCumulative": 168,
       "testedCumulative": 94236,
       "date": "2020-04-15",
-      "confirmedCumulative": 8755,
+      "confirmedCumulative": 8754,
       "confirmedAvg3d": 445,
-      "confirmedCumulativeAvg3d": 8191,
+      "confirmedCumulativeAvg3d": 8190,
       "confirmedAvg7d": 537,
       "confirmedCumulativeAvg7d": 7220
     },
@@ -7090,9 +7092,9 @@
       "criticalCumulative": 193,
       "testedCumulative": 100703,
       "date": "2020-04-16",
-      "confirmedCumulative": 9307,
+      "confirmedCumulative": 9306,
       "confirmedAvg3d": 536,
-      "confirmedCumulativeAvg3d": 8727,
+      "confirmedCumulativeAvg3d": 8726,
       "confirmedAvg7d": 532,
       "confirmedCumulativeAvg7d": 7752
     },
@@ -7103,25 +7105,25 @@
       "criticalCumulative": 207,
       "testedCumulative": 106372,
       "date": "2020-04-17",
-      "confirmedCumulative": 9826,
+      "confirmedCumulative": 9825,
       "confirmedAvg3d": 543,
-      "confirmedCumulativeAvg3d": 9270,
+      "confirmedCumulativeAvg3d": 9269,
       "confirmedAvg7d": 517,
       "confirmedCumulativeAvg7d": 8269
     },
     {
-      "confirmed": 397,
+      "confirmed": 420,
       "recoveredCumulative": 1069,
       "deceasedCumulative": 222,
       "criticalCumulative": 221,
       "testedCumulative": 111325,
       "date": "2020-04-18",
-      "confirmedCumulative": 10223,
-      "confirmedAvg3d": 489,
-      "confirmedCumulativeAvg3d": 9759,
-      "confirmedAvg7d": 473,
-      "confirmedCumulativeAvg7d": 8742
+      "confirmedCumulative": 10245,
+      "confirmedAvg3d": 497,
+      "confirmedCumulativeAvg3d": 9766,
+      "confirmedAvg7d": 477,
+      "confirmedCumulativeAvg7d": 8746
     }
   ],
-  "updated": "2020-04-19T01:02:26+09:00"
+  "updated": "2020-04-19T01:16:46+09:00"
 }
