@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const proxy = require('./functions/proxy.js')
 
-let port = process.env.PORT || 3999
+let port = process.env.PORT || 3998
 
 app.get('/proxy', (req, res) => {
   proxy.fetch(req, res)

@@ -14,13 +14,15 @@ exports.fetch = (request, response) => {
       response.set('Access-Control-Allow-Origin', '*')
       const contentType = proxyResponse.headers.get('Content-Type')
       if (contentType) {
-        response.set('Content-Type', contentType)
+        response.set('Content-Type', contentType.split(' ')[0])
       }
-
-      return proxyResponse.text()
+      // if (url.endsWith('csv') || url.endswith('json')) {
+      //   response.set('Content-Type', 'text/plain')
+      // }
+      return proxyResponse.arrayBuffer()
     })
-    .then(text => {
-      response.send(text)
+    .then(arrayBuffer => {
+      response.send(new Buffer(new Uint8Array(arrayBuffer)))
       return
     })
     .catch(err => {

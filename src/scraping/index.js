@@ -1,12 +1,15 @@
 
 const _ = require('lodash')
 const { fetchCsv, fetchPatients } = require('./csv.js')
+const { fetchCovidJson, fetchCovidJsonPatients } = require('./covidjson.js')
 const { extractDailySummary, sortedPrefectureCounts, prefectureLookup } = require('./nhk.js')
 const { sources } = require('./sources.js')
 
 const cell = (contents, className) => {
   let cell = document.createElement('td')
-  cell.innerHTML = contents
+  if (contents) {
+    cell.innerHTML = contents
+  }
   cell.classList.add(className)
   return cell
 }
@@ -21,6 +24,7 @@ const patientRow = (patient, patientIdPrefix) => {
   row.appendChild(cell(patient.dateAnnounced, 'dateAdded'))
   row.appendChild(cell(patient.age, 'age'))
   row.appendChild(cell(patient.gender, 'gender'))
+  row.appendChild(cell(patient.residence, 'residence'))
   return row
 }
 
@@ -58,13 +62,13 @@ const filterRows = (e) => {
 }
 
 const updatePatientsTable = (patients, patientIdPrefix) => {
+  document.querySelector('#output-debug').value = JSON.stringify(patients, false, '  ')
   document.querySelector('#results').className = 'patients-results'
   let table = document.querySelector('table#patients-table tbody#patients-body')
   table.innerHTML = ''
   for (let patient of patients) {
     table.appendChild(patientRow(patient, patientIdPrefix))
   }
-  document.querySelector('#output-debug').value = JSON.stringify(patients, false, '  ')
 }
 
 const updateNHKTable = (values, url) => {
@@ -83,24 +87,57 @@ const updateNHKTable = (values, url) => {
   }
 
   document.querySelector('#output-debug').value = JSON.stringify(values, false, '  ')
+}
 
+const updateSidebar = () => {
+  const ul = document.querySelector('#sources ul#prefectures')
+  for (let prefectureName of _.keys(sources)) {
+    const prefectureInfo = sources[prefectureName]
+    let format = ''
+    if (prefectureInfo.patients) {
+      format = prefectureInfo.patients.format
+    }
+
+    const li = document.createElement('li')
+    const patientLink = document.createElement('a')
+    patientLink.href = '#'
+    patientLink.innerHTML = `${prefectureName}.${format}`
+    patientLink.setAttribute('data-prefecture', prefectureName)
+
+    if (prefectureInfo.patients) {
+      if (prefectureInfo.patients.format == 'csv') {
+        patientLink.addEventListener('click', e => {
+          let prefectureName = e.target.getAttribute('data-prefecture')
+          let prefectureInfo = sources[prefectureName]
+          if (prefectureInfo && prefectureInfo.patients) {
+            fetchPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch).then(patients => {
+              updatePatientsTable(patients, '#')
+            })
+          }
+        })
+      } else if (prefectureInfo.patients.format == 'json') {
+        patientLink.addEventListener('click', e => {
+          let prefectureName = e.target.getAttribute('data-prefecture')
+          let prefectureInfo = sources[prefectureName]
+          if (prefectureInfo && prefectureInfo.patients) {
+            fetchCovidJsonPatients(prefectureInfo.patients.url, prefectureInfo.patients.key).then(patients => {
+              updatePatientsTable(patients, '#')
+            })
+          }
+        })
+      }
+    }
+
+    li.appendChild(patientLink)
+    ul.appendChild(li)
+  }
 }
 
 const main = () => {
-  document.querySelector('#tokyo-patients').addEventListener('click', e => {
-    fetchPatients(sources.tokyo.patients.url, fetch).then(patients => {
-      updatePatientsTable(patients, 'Tokyo#')
-    })
-  })
-
-  document.querySelector('#fukui-patients').addEventListener('click', e => {
-    fetchPatients(sources.fukui.patients.url, fetch).then(patients => {
-      updatePatientsTable(patients, 'Fukui#')
-    })
-  })
+  updateSidebar()
 
   document.querySelector('#nhk-daily').addEventListener('click', e => {
-    let url = 'https://www3.nhk.or.jp/news/html/20200415/k10012387851000.html'
+    let url = 'https://www3.nhk.or.jp/news/html/20200417/k10012392361000.html'
     extractDailySummary(url).then(values => {
       updateNHKTable(values, url)
     })

@@ -3,10 +3,7 @@
   <body>
     <div id="page">
       <div id="sources">
-        <ul>
-          <li><a href="#" id="fukui-patients">fukui.patients</a></li>
-          <li><a href="#" id="kanagawa-patients">kanagawa.patients</a></li>
-          <li><a href="#" id="tokyo-patients">tokyo.patients</a></li>
+        <ul id="prefectures">
         </ul>
         <ul>
           <li><a href="#"" id="nhk-daily">nhk</a></li>
@@ -28,6 +25,7 @@
                 <td>Added <a href="#" class="column-toggle" data-name="dateAdded">+/-</a></td>
                 <td>Age <a href="#" class="column-toggle" data-name="age">+/-</a></td>
                 <td>Gender <a href="#" class="column-toggle" data-name="gender">+/-</a></td>
+                <td>Residence <a href="#" class="column-toggle" data-name="residence">+/-</a></td>
               </tr>
               <tr>
                 <td><input type="text" value="" class="column-filter" name="patientId"></td>
@@ -35,6 +33,7 @@
                 <td><input type="text" value="" class="column-filter" name="dateAdded"></td>
                 <td><input type="text" value="" class="column-filter" name="age"></td>
                 <td><input type="text" value="" class="column-filter" name="gender"></td>
+                <td><input type="text" value="" class="column-filter" name="residence"></td>
               </tr>            
             </thead>
             <tbody id="patients-body"></tbody>

@@ -7,7 +7,9 @@
     "generate": "node generate.js",
     "build": "npx webpack --config webpack.dev.js",
     "watch": "npx webpack --watch --config webpack.dev.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "firebase deploy --only hosting:covid19japan-data",
+    "deploy-functions": "cd proxy && firebase deploy --only functions"
   },
   "dependencies": {
     "@babel/core": "^7.9.0",

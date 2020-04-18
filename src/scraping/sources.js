@@ -3,6 +3,7 @@ const sources = {
     patients: {
       format: 'json',
       url: 'https://raw.githubusercontent.com/asaba-zauberer/covid19-akita/development/data/data.json',
+      key: 'patients.data'
     },
     source: 'https://github.com/asaba-zauberer/covid19-akita/tree/development/data',
     dashboard: 'https://covid19-akita.netlify.app/en'
@@ -10,6 +11,7 @@ const sources = {
   aomori: {
     patients: {
       format: 'csv',
+      encoding: 'SJIS',
       url: 'https://opendata.pref.aomori.lg.jp/dataset/1531/resource/11178/20200411_%E9%99%BD%E6%80%A7%E6%82%A3%E8%80%85%E9%96%A2%E4%BF%82.csv',
     },
     tests: {
@@ -80,6 +82,7 @@ const sources = {
   hokkaido: {
     patients: {
       format: 'csv',
+      encoding: 'SJIS',
       url: 'https://www.harp.lg.jp/opendata/dataset/1369/resource/2828/patients.csv'
     },
     source: [ 'https://www.harp.lg.jp/opendata/dataset/1369.html' ],
@@ -186,20 +189,85 @@ const sources = {
     source: 'https://github.com/code4nara/covid19',
     dashboard: 'https://stopcovid19.code4nara.org/'
   },
+  niigata: {
+    patients: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/CodeForNiigata/covid19/development/data/data.json',
+    },
+    source: 'https://github.com/CodeForNiigata/covid19',
+    dashboard: 'https://niigata.stopcovid19.jp/'
+  },
+  oita: {
+    patients: {
+      format: 'csv',
+      url: 'https://data.bodik.jp/dataset/f632f467-716c-46aa-8838-0d535f98b291/resource/3714d264-70f3-4518-a57a-8391e0851d7d/download/440001oitacovid19patients.csv'
+    },
+    tests: {
+      format: 'csv',
+      url: 'https://data.bodik.jp/dataset/f632f467-716c-46aa-8838-0d535f98b291/resource/96440e66-3061-43d6-adf3-ef1f24211d3a/download/440001oitacovid19datasummary.csv'
+    },
+    source: 'https://data.bodik.jp/dataset/_covid19',
+    dashboard: 'https://oita.stopcovid19.jp/en'
+  },
+  okayama: {
+    patients: {
+      format: 'csv',
+      encoding: 'sjis',
+      url: 'http://www.okayama-opendata.jp/ckan/dataset/e6b3c1d2-2f1f-4735-b36e-e45d36d94761/resource/c6503ebc-b2e9-414c-aae7-7374f4801e21/download/kansenshajouhou.csv',
+    },
+    tests: {
+      format: 'csv',
+      encoding: 'sjis',
+      url: 'http://www.okayama-opendata.jp/ckan/dataset/e6b3c1d2-2f1f-4735-b36e-e45d36d94761/resource/60ecd874-0f71-4d9f-9a8a-936fad9c99bc/download/pcr.csv'
+    },
+    source: 'http://www.okayama-opendata.jp/opendata/ga120PreAction.action?keyTitle=d9c4776db7f09fff161953a2aaf03b80a9abad48&datasetId=e6b3c1d2-2f1f-4735-b36e-e45d36d94761',
+    dashboard: 'https://okayama.stopcovid19.jp/'
+  },
+  okinawa: {
+    patients: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/Code-for-OKINAWA/covid19/development/data/data.json'
+    },
+    source: 'https://github.com/Code-for-OKINAWA/covid19/tree/development/data',
+    dashboard: 'https://okinawa.stopcovid19.jp/'
+  },
   osaka: {
     patients: {
       format: 'json', 
-      url: 'https://raw.githubusercontent.com/codeforosaka/covid19/development/data/data.json'
+      url: 'https://raw.githubusercontent.com/codeforosaka/covid19/development/data/data.json',
+      key: 'patients.data'
+
     },
     source: 'https://github.com/codeforosaka/covid19',
     dashboard: 'https://covid19-osaka.info/'
   },
-  shiga: {
+  saga: {
     patients: {
-
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/codeforsaga/covid19/development/data/data.json'
     },
+    source: 'https://github.com/codeforsaga/covid19/tree/development/data',
+    dashboard: 'https://stopcovid19.code4saga.org/en'
+  },
+  saitama: {
+    patients: {
+      format: 'json',
+      url: 'https://github.com/codefortoda/covid19-saitama/blob/development/data/data.json'
+    },
+    source: 'https://opendata.pref.saitama.lg.jp/data/dataset/covid19-jokyo',
+    dashboard: 'https://saitama.stopcovid19.jp/'
+  },
+  shiga: {
     source: 'https://github.com/shiga-pref-org/covid19',
     dashboard: 'https://stopcovid19.pref.shiga.jp/',
+  },
+  shimane: {
+    patients: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/TaigaMikami/shimane-covid19/shimane/data/data.json'
+    },
+    source: 'https://github.com/TaigaMikami/shimane-covid19/',
+    dashboard: 'https://shimane-covid19.netlify.app/en'
   },
   shizuoka: {
     hanamatsu: {
@@ -210,13 +278,52 @@ const sources = {
       dashboard: 'https://stopcovid19-hamamatsu.netlify.app/en'
     },
   },
+  tochigi: {
+    patients: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/covid19-tochigi/covid19/development/data/data.json'
+    },
+    sheet: 'https://docs.google.com/spreadsheets/d/1aCIRyol3UncEtstWhT_Yw3I8mCbvpGQU5_HUKB_0JFA/edit#gid=0',
+    source: 'https://github.com/covid19-tochigi/covid19',
+    dashboard: 'https://covid19-tochigi.netlify.app/'
+  },
+  tokushima: {
+
+  },
+  tottori: {
+    dashboard: 'https://tottori-covid19.netlify.app/en'
+  },
+  toyama: {},
   tokyo: {
     patients: { 
       format: 'csv',
       url: 'https://stopcovid19.metro.tokyo.lg.jp/data/130001_tokyo_covid19_patients.csv'
     },
-    info: []
+    dashboard: ''
   },
+  yamagata: {
+    patients: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/yamaserif/covid19/development/data/data.json',
+    },
+    source: 'https://github.com/yamaserif/covid19',
+    dashboard: 'https://stopcovid19-yamagata.netlify.app/'
+  },
+  yamaguchi: {
+    patients: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/nishidayoshikatsu/covid19-yamaguchi/development/data/data.json'
+    },
+    source: 'https://github.com/nishidayoshikatsu/covid19-yamaguchi/'
+  },
+  yamanashi: {
+    patients: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/covid19-yamanashi/covid19/development/data/data.json'
+    },
+    source: 'https://github.com/covid19-yamanashi/covid19',
+    dashboard: 'https://stopcovid19.yamanashi.dev/'
+  }
 }
 
 exports.sources = sources

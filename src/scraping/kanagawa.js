@@ -1,6 +1,5 @@
 const fetch = require('node-fetch')
 const Papa = require('papaparse')
-const encoding = require('encoding-japanese');
 
 const PATIENTS_CSV = 'http://www.pref.kanagawa.jp/osirase/1369/data/csv/patient.csv'
 

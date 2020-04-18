@@ -6,7 +6,7 @@ const { fetchPatients } = require('./index.js')
 
 const main = () => {
   let patientsStart = 2167
-  fetchPatients(sources.tokyo.patients.url, fetch).then(patients => {
+  fetchPatients(sources.tokyo.patients.url, 'utf8', fetch).then(patients => {
     for (let patient of patients) {
       let patientNumber = patient.patientId
       if (patientNumber >= patientsStart) {
