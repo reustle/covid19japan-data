@@ -1,3 +1,6 @@
+// Simple Express server for local testing of the proxy method.
+// Not needed for deployment.
+
 const express = require('express')
 const app = express()
 const proxy = require('./functions/proxy.js')
