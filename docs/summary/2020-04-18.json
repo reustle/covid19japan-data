@@ -2789,15 +2789,18 @@
       "name": "Shiga"
     },
     {
-      "confirmed": 62,
+      "confirmed": 64,
       "cruisePassenger": 0,
       "deaths": 0,
       "confirmedByCity": {
         "Kochi": 10,
         "Aki": 2,
-        "Kochi city": 10,
+        "Kochi city": 21,
         "Chuo Higashi": 1,
-        "Sukumo": 1
+        "Sukumo": 1,
+        "Hata": 8,
+        "Chuonishi": 2,
+        "Kochi City": 2
       },
       "dailyConfirmedCount": [
         0,
@@ -2900,11 +2903,11 @@
         0,
         2,
         0,
-        0,
-        0
+        1,
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 16,
       "name_ja": "高知県",
       "name": "Kochi"
@@ -7078,31 +7081,31 @@
       "confirmedCumulativeAvg7d": 7769
     },
     {
-      "confirmed": 473,
+      "confirmed": 474,
       "recoveredCumulative": 935,
       "deceasedCumulative": 190,
       "criticalCumulative": 193,
       "testedCumulative": 100703,
       "date": "2020-04-17",
-      "confirmedCumulative": 9801,
-      "confirmedAvg3d": 532,
-      "confirmedCumulativeAvg3d": 9266,
+      "confirmedCumulative": 9802,
+      "confirmedAvg3d": 533,
+      "confirmedCumulativeAvg3d": 9267,
       "confirmedAvg7d": 513,
       "confirmedCumulativeAvg7d": 8282
     },
     {
-      "confirmed": 181,
+      "confirmed": 182,
       "recoveredCumulative": 935,
       "deceasedCumulative": 190,
       "criticalCumulative": 193,
       "testedCumulative": 100703,
       "date": "2020-04-18",
-      "confirmedCumulative": 9982,
-      "confirmedAvg3d": 411,
-      "confirmedCumulativeAvg3d": 9677,
+      "confirmedCumulative": 9984,
+      "confirmedAvg3d": 412,
+      "confirmedCumulativeAvg3d": 9679,
       "confirmedAvg7d": 435,
       "confirmedCumulativeAvg7d": 8717
     }
   ],
-  "updated": "2020-04-18T18:02:19+09:00"
+  "updated": "2020-04-18T18:16:48+09:00"
 }
