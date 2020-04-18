@@ -1,3 +1,5 @@
+// Implementation of the proxy method
+
 const fetch = require('node-fetch')
 
 exports.fetch = (request, response) => {
@@ -13,11 +15,8 @@ exports.fetch = (request, response) => {
       response.set('Access-Control-Allow-Origin', '*')
       const contentType = proxyResponse.headers.get('Content-Type')
       if (contentType) {
-        response.set('Content-Type', contentType.split(' ')[0])
+        response.set('Content-Type', contentType)
       }
-      // if (url.endsWith('csv') || url.endswith('json')) {
-      //   response.set('Content-Type', 'text/plain')
-      // }
       return proxyResponse.arrayBuffer()
     })
     .then(arrayBuffer => {
