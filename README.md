@@ -225,7 +225,7 @@ data that we use to cross check and verify.
 |Nagano    | [新型コロナウイルス感染症に係る検査状況について](https://www.pref.nagano.lg.jp/koho/koho/pressreleases/2004happyoshiryo.html)|  | Very little data, check MHLW |
 |Nagano - Nagano City | [新型コロナウイルス感染症患者の発生について](https://www.city.nagano.nagano.jp/site/covid19-joho/449132.html) ||
 |Nara    |[新型コロナウイルス感染症の患者の発生について](http://www.pref.nara.jp/module/1356.htm#moduleid1356) || Inconsistent recording of asymptomatic vs symptomatic. Numbering system changed after patient #7 |
-|Nagasaki    | [長崎県内の発生状況](https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/#hassei)|| Updated frequently |
+|Nagasaki    | [長崎県内の発生状況](https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_houdouhaifu/)|| Updated frequently |
 |Niigata    | [県内における感染者の発生について](https://www.pref.niigata.lg.jp/sec/kikitaisaku/hasseijokyo-covid19-niigataken.html)||
 | Niigata - Niigata City | [報道資料、会議資料](https://www.city.niigata.lg.jp/iryo/kenko/yobou_kansen/kansen/coronavirus.html) ||
 |Oita    |[大分県内における患者発生について](http://www.pref.oita.jp/site/covid19-oita/covid19-pcr.html)||
