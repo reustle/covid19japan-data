@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 2798,
+      "confirmed": 2978,
       "cruisePassenger": 0,
       "deaths": 56,
       "confirmedByCity": {
@@ -112,10 +112,10 @@
         127,
         149,
         201,
-        1
+        181
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 181,
       "recovered": 59,
       "name_ja": "東京都",
       "name": "Tokyo"
@@ -874,7 +874,8 @@
         "Kogun": 1,
         "Gyohashi": 1,
         "Hachiman Nishi": 1,
-        "Kokura Kita": 1
+        "Kokura Kita": 1,
+        "M": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -987,7 +988,7 @@
       "name": "Fukuoka"
     },
     {
-      "confirmed": 374,
+      "confirmed": 383,
       "cruisePassenger": 0,
       "deaths": 24,
       "confirmedByCity": {
@@ -1114,7 +1115,7 @@
         10,
         12,
         14,
-        1,
+        10,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
@@ -7078,31 +7079,31 @@
       "confirmedCumulativeAvg7d": 7769
     },
     {
-      "confirmed": 466,
+      "confirmed": 475,
       "recoveredCumulative": 935,
       "deceasedCumulative": 190,
       "criticalCumulative": 193,
       "testedCumulative": 100703,
       "date": "2020-04-17",
-      "confirmedCumulative": 9794,
-      "confirmedAvg3d": 530,
-      "confirmedCumulativeAvg3d": 9264,
-      "confirmedAvg7d": 512,
-      "confirmedCumulativeAvg7d": 8281
+      "confirmedCumulative": 9803,
+      "confirmedAvg3d": 533,
+      "confirmedCumulativeAvg3d": 9267,
+      "confirmedAvg7d": 513,
+      "confirmedCumulativeAvg7d": 8282
     },
     {
-      "confirmed": 1,
+      "confirmed": 181,
       "recoveredCumulative": 935,
       "deceasedCumulative": 190,
       "criticalCumulative": 193,
       "testedCumulative": 100703,
       "date": "2020-04-18",
-      "confirmedCumulative": 9795,
-      "confirmedAvg3d": 349,
-      "confirmedCumulativeAvg3d": 9613,
-      "confirmedAvg7d": 408,
-      "confirmedCumulativeAvg7d": 8689
+      "confirmedCumulative": 9984,
+      "confirmedAvg3d": 412,
+      "confirmedCumulativeAvg3d": 9679,
+      "confirmedAvg7d": 435,
+      "confirmedCumulativeAvg7d": 8717
     }
   ],
-  "updated": "2020-04-18T17:02:07+09:00"
+  "updated": "2020-04-18T17:16:35+09:00"
 }
