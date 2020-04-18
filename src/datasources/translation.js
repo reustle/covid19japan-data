@@ -37,9 +37,9 @@ export const translateAge = (age) => {
 }
 
 export const translateGender = (gender) => {
-  if (gender == '男性') {
+  if (gender == '男性' || gender == '男') {
     return 'M'
-  } else if (gender == '女性') {
+  } else if (gender == '女性' || gender == '女') {
     return 'F'
   } else {
     return ''
@@ -48,9 +48,11 @@ export const translateGender = (gender) => {
 
 export const translateDate = (date) => {
   return date.replace(/T.*[Z]?$/, '')
+    .replace(' 00:00', '')
     .replace(/年/g, '-')
     .replace(/月/g, '-')
     .replace(/日/g, '')
+    .replace(/\//g, '-')
 }
 
 
@@ -77,10 +79,24 @@ export const translateRows = (rows) => {
         translated['condition'] = row[key]
       } else if (key == '詳細') {
         translated['notes'] = row[key]
-      } else if (key == '備考') {
+      } else if (key == '備考' || key == '接触状況') {
         translated['related'] = row[key]
       } else if (key == '退院') {
         translated['discharged'] = row[key]
+      } else if (key == '年代・性別') {
+        // Aichi merges these two together.
+        const ageGenderPattern = new RegExp(/^(.*[代歳満])([男女性]+)$/)
+        const match = row[key].match(ageGenderPattern)
+        if (match) {
+          translated['age'] = translateAge(match[1])
+          translated['gender'] = translateGender(match[2])
+        } else if (row[key] == '0歳男性') {
+          translated['age'] = '0'
+          translated['gender'] = 'M'
+        } else {
+          translated['age'] = translateAge(row[key])
+        }
+
       } else {
         translated[key] = row[key]
       }
