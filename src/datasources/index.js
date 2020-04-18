@@ -114,35 +114,46 @@ const updateSidebar = () => {
     }
 
     if (prefectureInfo.patients) {
-      if (prefectureInfo.patients.format == 'csv') {
-        patientLink.addEventListener('click', e => {
-          _.map(document.querySelectorAll('.patient-link'), o => { return o.classList.remove('selected') })
-          e.target.classList.add('selected')
-          let prefectureName = e.target.getAttribute('data-prefecture')
-          let prefectureInfo = sources[prefectureName]
-          if (prefectureInfo && prefectureInfo.patients) {
+      patientLink.addEventListener('click', e => {
+        _.map(document.querySelectorAll('.patient-link'), o => { return o.classList.remove('selected') })
+        e.target.classList.add('selected')
+        let prefectureName = e.target.getAttribute('data-prefecture')
+        let prefectureInfo = sources[prefectureName]
+        if (prefectureInfo && prefectureInfo.patients) {
+          if (prefectureInfo.patients.format == 'csv') {
             fetchPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch).then(patients => {
               updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
             })
-          }
-        })
-      } else if (prefectureInfo.patients.format == 'json') {
-        patientLink.addEventListener('click', e => {
-          _.map(document.querySelectorAll('.patient-link'), o => { return o.classList.remove('selected') })
-          e.target.classList.add('selected')
-
-          let prefectureName = e.target.getAttribute('data-prefecture')
-          let prefectureInfo = sources[prefectureName]
-          if (prefectureInfo && prefectureInfo.patients) {
+          }  else if (prefectureInfo.patients.format == 'json') {
             fetchCovidJsonPatients(prefectureInfo.patients.url, prefectureInfo.patients.key).then(patients => {
               updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
             })
           }
-        })
-      }
+        }
+      })
     }
 
+    const patientSourceLink = document.createElement('a')
+    patientSourceLink.href = prefectureInfo.source
+    patientSourceLink.target = '_blank'
+    patientSourceLink.innerText = 'src'
+    const patientDashboardLink = document.createElement('a')
+    patientDashboardLink.href = prefectureInfo.dashboard
+    patientDashboardLink.target = '_blank'
+    patientDashboardLink.innerText = 'dash'
+
+
+    const altInfo = document.createElement('span')
+    altInfo.classList.add('alt-info')
+    altInfo.appendChild(document.createTextNode('('))
+    altInfo.appendChild(patientSourceLink)
+    altInfo.appendChild(document.createTextNode(','))
+    altInfo.appendChild(patientDashboardLink)
+    altInfo.appendChild(document.createTextNode(')'))
+
     li.appendChild(patientLink)
+    li.appendChild(altInfo)
+
     ul.appendChild(li)
   }
 }

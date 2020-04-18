@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   margin: 0;
   padding: 0;
 }
@@ -18,6 +18,21 @@ body {
 
   background-color: rgb(236, 236, 236);
   padding: 20px;
+
+  ul {
+    padding: 3px;
+    list-style: none;
+  }
+
+  .alt-info {
+    margin-left: 10px;
+    a, a:visited, a:active { 
+      text-decoration: none;
+      color: rgb(184, 184, 184);
+    }
+
+    color: rgb(184, 184, 184);
+  }
 
   .patient-link {
     text-decoration: none;
@@ -57,7 +72,7 @@ body {
 
   table#patients-table, table#nhk-table {
     td {
-      font-size: 12px;
+      font-size: 13px;
       padding: 4px;
     }
 
