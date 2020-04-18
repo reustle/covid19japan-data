@@ -8,29 +8,61 @@ body {
 #page {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: stretch;  
 }
 
 #sources {
-  width: 200px;
-  flex-basis: 15%;
+  flex-basis: 10rem;
+  flex-grow: 1;
+
   background-color: rgb(236, 236, 236);
   padding: 20px;
-  height: 100vh;
+
+  .patient-link {
+    text-decoration: none;
+    color: rgb(66, 109, 253)
+  }
+
+  a.patient-link:visited {
+    color: rgb(66, 109, 253)
+  }
+
+  a.patient-link.missing {
+    color: rgb(142, 142, 143)
+  }
+
+  a.patient-link.selected {
+    background-color: rgb(252, 155, 44)
+  }
 }
 
+#console {
+  flex-basis: 10rem;
+  flex-grow: 1;
 
+  padding: 20px;
+
+  textarea {
+    height: 100%;
+  }
+}
 
 #results {
-  flex-grow: 2;
+  flex-basis: 0;
+  flex-grow: 999;
+
   padding: 20px;
   height: 100vh;
-
 
   table#patients-table, table#nhk-table {
     td {
       font-size: 12px;
       padding: 4px;
+    }
+
+    .column-filter {
+      width: 60px;
     }
   }
 

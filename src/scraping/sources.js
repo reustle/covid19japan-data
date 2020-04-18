@@ -33,8 +33,9 @@ const sources = {
   ehime: {
     patients: {
       format: 'json',
-      url: '',
+      url: 'https://raw.githubusercontent.com/ehime-covid19/covid19/master/data/data.json',
     },
+    source: 'https://github.com/ehime-covid19/covid19',
     dashboard: 'https://ehime-covid19.com/'
   },
 
@@ -91,6 +92,7 @@ const sources = {
   hyogo: {
     patients: {
       format: 'json',
+      key: 'data',
       url: 'https://raw.githubusercontent.com/stop-covid19-hyogo/covid19/development/data/patients.json'
     },
     source: 'https://github.com/stop-covid19-hyogo/covid19',
@@ -99,6 +101,7 @@ const sources = {
   ibaraki: {
     patients: {
       format: 'json',
+      key: 'patients.data',
       url: 'https://raw.githubusercontent.com/a01sa01to/covid19-ibaraki/development/data/data.json'
     },
     source: 'https://github.com/a01sa01to/covid19-ibaraki/tree/development/data',
@@ -108,6 +111,7 @@ const sources = {
   kagawa: {
     patients: {
       format: 'json',
+      key: 'data',
       url: 'https://raw.githubusercontent.com/codeforkagawa/covid19/development/data/patients.json'
     },
     source: 'https://github.com/codeforkagawa/covid19',
@@ -252,7 +256,7 @@ const sources = {
   saitama: {
     patients: {
       format: 'json',
-      url: 'https://github.com/codefortoda/covid19-saitama/blob/development/data/data.json'
+      url: 'https://raw.githubusercontent.com/codefortoda/covid19-saitama/development/data/data.json'
     },
     source: 'https://opendata.pref.saitama.lg.jp/data/dataset/covid19-jokyo',
     dashboard: 'https://saitama.stopcovid19.jp/'

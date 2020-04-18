@@ -19,7 +19,11 @@ const patientRow = (patient, patientIdPrefix) => {
     patientIdPrefix = ''
   }
   let row = document.createElement('tr')
-  row.appendChild(cell(patientIdPrefix + patient.patientId, 'patientId'))
+  if (patient.patientId) {
+    row.appendChild(cell(patientIdPrefix + patient.patientId, 'patientId'))
+  } else {
+    row.appendChild(cell('', 'patientId'))
+  }
   row.appendChild(cell(patient.dateAnnounced, 'dateAnnounced'))
   row.appendChild(cell(patient.dateAnnounced, 'dateAdded'))
   row.appendChild(cell(patient.age, 'age'))
@@ -103,25 +107,35 @@ const updateSidebar = () => {
     patientLink.href = '#'
     patientLink.innerHTML = `${prefectureName}.${format}`
     patientLink.setAttribute('data-prefecture', prefectureName)
+    patientLink.classList.add('patient-link')
+
+    if (format == '') {
+      patientLink.classList.add('missing')
+    }
 
     if (prefectureInfo.patients) {
       if (prefectureInfo.patients.format == 'csv') {
         patientLink.addEventListener('click', e => {
+          _.map(document.querySelectorAll('.patient-link'), o => { return o.classList.remove('selected') })
+          e.target.classList.add('selected')
           let prefectureName = e.target.getAttribute('data-prefecture')
           let prefectureInfo = sources[prefectureName]
           if (prefectureInfo && prefectureInfo.patients) {
             fetchPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch).then(patients => {
-              updatePatientsTable(patients, '#')
+              updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
             })
           }
         })
       } else if (prefectureInfo.patients.format == 'json') {
         patientLink.addEventListener('click', e => {
+          _.map(document.querySelectorAll('.patient-link'), o => { return o.classList.remove('selected') })
+          e.target.classList.add('selected')
+
           let prefectureName = e.target.getAttribute('data-prefecture')
           let prefectureInfo = sources[prefectureName]
           if (prefectureInfo && prefectureInfo.patients) {
             fetchCovidJsonPatients(prefectureInfo.patients.url, prefectureInfo.patients.key).then(patients => {
-              updatePatientsTable(patients, '#')
+              updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
             })
           }
         })
@@ -149,7 +163,6 @@ const main = () => {
       updateNHKTable(values, url)
     })
   })
-
 
   for (let button of document.querySelectorAll('.column-toggle')) {
     button.addEventListener('click', toggleColumn)

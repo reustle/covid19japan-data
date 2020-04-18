@@ -9,7 +9,6 @@ exports.fetch = (request, response) => {
 
   fetch(url)
     .then(proxyResponse => {
-      console.log(proxyResponse)
       response.status(proxyResponse.status)
       response.set('Access-Control-Allow-Origin', '*')
       const contentType = proxyResponse.headers.get('Content-Type')
