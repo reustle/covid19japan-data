@@ -209,6 +209,7 @@ data that we use to cross check and verify.
 |Iwate    |[新型コロナウイルス感染症関連情報](https://www.pref.iwate.jp/kurashikankyou/iryou/covid19/index.html)||
 |Kagawa    | [新型コロナウイルスに関連した患者の発生について](https://www.pref.kagawa.lg.jp/content/dir1/dir1_6/dir1_6_1/index.shtml)||
 |Kanagawa    | [新型コロナウイルスに感染した患者の発生状況](https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html) | [Dashboard](https://www.pref.kanagawa.jp/osirase/1369/?fbclid=IwAR2-8RAnRsixEpUFpaE-qLflTrAA-DbPaLa9r9SzOobgtGriI-ufROesEKA)| Slow to update |
+| Kanagawa - Fujisawa | [藤沢市内の新型コロナウイルスに感染した患者の発生状況](https://www.city.fujisawa.kanagawa.jp/hokenyobo/kansensho/korona.html) ||
 |Kanagawa - Kawasaki | [川崎市内の新型コロナウイルスに感染した患者の発生状況](http://www.city.kawasaki.jp/350/page/0000115886.html) |||
 |Kanagawa - Sagamihara | [発生状況等](https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html) || Frequently updated |
 | Kanagawa - Yokohama| [横浜市内の新型コロナウイルスに感染した患者の発生状況](https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html) || Updated daily|
