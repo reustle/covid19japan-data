@@ -1,3 +1,6 @@
+// Fetches data.json directly from some repositories that follow the 
+// Tokyo Metro stopcovid19 site implementation.
+
 const _ = require('lodash')
 const { translateRows } = require('./translation.js')
 

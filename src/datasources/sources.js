@@ -1,3 +1,5 @@
+// List of third-party machine readable data sources by prefectures. 
+
 const sources = {
   akita: {
     patients: {

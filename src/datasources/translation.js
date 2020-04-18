@@ -1,4 +1,5 @@
-
+// Data/Language translation methods to convert from Japanese to English.
+// But also normalizes the data so it is common across the different data sources.
 
 const normalizeFixedWidthNumbers = v => {
   return v.replace(/０/g, '0')
