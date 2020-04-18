@@ -1,3 +1,5 @@
+// Command line test for fetching Tokyo data.
+
 const _ = require('lodash')
 const process = require('process')
 const fetch = require('node-fetch')
