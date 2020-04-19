@@ -155,6 +155,13 @@ const sources = {
     source: 'https://github.com/codeforkumamoto/covid19',
     dashboard: 'https://kumamoto.stopcovid19.jp/',
   },
+  kumamoto_official: {
+    patients: {
+      format: 'csv',
+      url: 'https://www.pref.kumamoto.jp/common/UploadFileOutput.ashx?c_id=3&id=22038&sub_id=7&flid=231833'
+    },
+    source: 'https://www.pref.kumamoto.jp/kiji_22038.html'
+  },
   kyoto: {
     patients: {
       format: 'json',
