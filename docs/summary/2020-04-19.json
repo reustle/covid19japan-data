@@ -271,7 +271,7 @@
       "name": "Osaka"
     },
     {
-      "confirmed": 776,
+      "confirmed": 777,
       "cruisePassenger": 0,
       "deaths": 15,
       "confirmedByCity": {
@@ -285,7 +285,7 @@
         "Odawara": 6,
         "Fujisawa": 43,
         "Kawasaki": 166,
-        "Yokosuka": 30,
+        "Yokosuka": 31,
         "Chigasaki": 14,
         "Chigesaki": 7,
         "Kawasaki, Tama": 1,
@@ -362,7 +362,7 @@
         6,
         0,
         3,
-        1,
+        2,
         6,
         2,
         4,
@@ -408,15 +408,15 @@
       "deaths": 11,
       "confirmedByCity": {
         "Chiba": 3,
-        "Ichikawa": 34,
+        "Ichikawa": 37,
         "Kashiwa": 16,
-        "Matsudo": 53,
+        "Matsudo": 63,
         "Isumishi": 1,
         "Yotsukaido": 1,
         "Funabashi": 51,
         "Sosa": 3,
-        "Inzai": 5,
-        "Urayasu": 5,
+        "Inzai": 11,
+        "Urayasu": 9,
         "Kisarazu": 4,
         "Narita": 2,
         "Nagareyama": 2,
@@ -431,15 +431,19 @@
         "Inba": 2,
         "Chiba City": 19,
         "Shiroi": 7,
-        "Yachiyo": 2,
+        "Yachiyo": 3,
         "Noda": 2,
-        "Asahi": 4,
+        "Asahi": 5,
         "Togane": 1,
         "Choshi": 1,
         "Toshocho": 5,
         "Kamagaya": 1,
         "Shisuimachi": 2,
         "Shirai": 1,
+        "Tokyo": 3,
+        "Ichinomiya": 1,
+        "Abiko": 2,
+        "Saitama": 1,
         "Tomisato": 1,
         "Yokoshibahikari": 2,
         "Ichihara": 4,
@@ -4700,13 +4704,14 @@
       "name": "Yamaguchi"
     },
     {
-      "confirmed": 25,
+      "confirmed": 26,
       "cruisePassenger": 0,
       "deaths": 0,
       "confirmedByCity": {
         "Marukame": 1,
         "Takamatsu": 7,
-        "Sanuki": 1
+        "Sanuki": 1,
+        "Sakaide": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -4811,10 +4816,10 @@
         2,
         2,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 1,
       "name_ja": "香川県",
       "name": "Kagawa"
@@ -6773,15 +6778,15 @@
       "confirmedCumulativeAvg7d": 757
     },
     {
-      "confirmed": 35,
+      "confirmed": 36,
       "recoveredCumulative": 144,
       "deceasedCumulative": 29,
       "criticalCumulative": 46,
       "testedCumulative": 14525,
       "date": "2020-03-18",
-      "confirmedCumulative": 928,
-      "confirmedAvg3d": 33,
-      "confirmedCumulativeAvg3d": 871,
+      "confirmedCumulative": 929,
+      "confirmedAvg3d": 34,
+      "confirmedCumulativeAvg3d": 872,
       "confirmedAvg7d": 41,
       "confirmedCumulativeAvg7d": 798
     },
@@ -6792,11 +6797,11 @@
       "criticalCumulative": 46,
       "testedCumulative": 15354,
       "date": "2020-03-19",
-      "confirmedCumulative": 968,
-      "confirmedAvg3d": 41,
-      "confirmedCumulativeAvg3d": 912,
-      "confirmedAvg7d": 38,
-      "confirmedCumulativeAvg7d": 836
+      "confirmedCumulative": 969,
+      "confirmedAvg3d": 42,
+      "confirmedCumulativeAvg3d": 914,
+      "confirmedAvg7d": 39,
+      "confirmedCumulativeAvg7d": 837
     },
     {
       "confirmed": 54,
@@ -6805,11 +6810,11 @@
       "criticalCumulative": 50,
       "testedCumulative": 18844,
       "date": "2020-03-20",
-      "confirmedCumulative": 1022,
+      "confirmedCumulative": 1023,
       "confirmedAvg3d": 43,
-      "confirmedCumulativeAvg3d": 955,
+      "confirmedCumulativeAvg3d": 957,
       "confirmedAvg7d": 41,
-      "confirmedCumulativeAvg7d": 877
+      "confirmedCumulativeAvg7d": 878
     },
     {
       "confirmed": 37,
@@ -6818,11 +6823,11 @@
       "criticalCumulative": 55,
       "testedCumulative": 18963,
       "date": "2020-03-21",
-      "confirmedCumulative": 1059,
+      "confirmedCumulative": 1060,
       "confirmedAvg3d": 43,
-      "confirmedCumulativeAvg3d": 998,
+      "confirmedCumulativeAvg3d": 1000,
       "confirmedAvg7d": 37,
-      "confirmedCumulativeAvg7d": 914
+      "confirmedCumulativeAvg7d": 915
     },
     {
       "confirmed": 44,
@@ -6831,11 +6836,11 @@
       "criticalCumulative": 57,
       "testedCumulative": 20228,
       "date": "2020-03-22",
-      "confirmedCumulative": 1103,
+      "confirmedCumulative": 1104,
       "confirmedAvg3d": 45,
-      "confirmedCumulativeAvg3d": 1043,
+      "confirmedCumulativeAvg3d": 1045,
       "confirmedAvg7d": 39,
-      "confirmedCumulativeAvg7d": 953
+      "confirmedCumulativeAvg7d": 954
     },
     {
       "confirmed": 40,
@@ -6844,11 +6849,11 @@
       "criticalCumulative": 54,
       "testedCumulative": 20340,
       "date": "2020-03-23",
-      "confirmedCumulative": 1143,
+      "confirmedCumulative": 1144,
       "confirmedAvg3d": 40,
-      "confirmedCumulativeAvg3d": 1083,
-      "confirmedAvg7d": 42,
-      "confirmedCumulativeAvg7d": 995
+      "confirmedCumulativeAvg3d": 1085,
+      "confirmedAvg7d": 43,
+      "confirmedCumulativeAvg7d": 997
     },
     {
       "confirmed": 72,
@@ -6857,11 +6862,11 @@
       "criticalCumulative": 55,
       "testedCumulative": 24430,
       "date": "2020-03-24",
-      "confirmedCumulative": 1215,
+      "confirmedCumulative": 1216,
       "confirmedAvg3d": 52,
-      "confirmedCumulativeAvg3d": 1135,
+      "confirmedCumulativeAvg3d": 1137,
       "confirmedAvg7d": 46,
-      "confirmedCumulativeAvg7d": 1041
+      "confirmedCumulativeAvg7d": 1043
     },
     {
       "confirmed": 97,
@@ -6870,11 +6875,11 @@
       "criticalCumulative": 57,
       "testedCumulative": 23521,
       "date": "2020-03-25",
-      "confirmedCumulative": 1312,
+      "confirmedCumulative": 1313,
       "confirmedAvg3d": 69,
-      "confirmedCumulativeAvg3d": 1204,
+      "confirmedCumulativeAvg3d": 1206,
       "confirmedAvg7d": 54,
-      "confirmedCumulativeAvg7d": 1095
+      "confirmedCumulativeAvg7d": 1097
     },
     {
       "confirmed": 103,
@@ -6883,11 +6888,11 @@
       "criticalCumulative": 56,
       "testedCumulative": 25171,
       "date": "2020-03-26",
-      "confirmedCumulative": 1415,
+      "confirmedCumulative": 1416,
       "confirmedAvg3d": 90,
-      "confirmedCumulativeAvg3d": 1294,
+      "confirmedCumulativeAvg3d": 1296,
       "confirmedAvg7d": 63,
-      "confirmedCumulativeAvg7d": 1158
+      "confirmedCumulativeAvg7d": 1160
     },
     {
       "confirmed": 114,
@@ -6896,11 +6901,11 @@
       "criticalCumulative": 56,
       "testedCumulative": 27005,
       "date": "2020-03-27",
-      "confirmedCumulative": 1529,
+      "confirmedCumulative": 1530,
       "confirmedAvg3d": 104,
-      "confirmedCumulativeAvg3d": 1398,
+      "confirmedCumulativeAvg3d": 1400,
       "confirmedAvg7d": 72,
-      "confirmedCumulativeAvg7d": 1230
+      "confirmedCumulativeAvg7d": 1232
     },
     {
       "confirmed": 198,
@@ -6909,11 +6914,11 @@
       "criticalCumulative": 56,
       "testedCumulative": 28464,
       "date": "2020-03-28",
-      "confirmedCumulative": 1727,
+      "confirmedCumulative": 1728,
       "confirmedAvg3d": 138,
-      "confirmedCumulativeAvg3d": 1536,
+      "confirmedCumulativeAvg3d": 1538,
       "confirmedAvg7d": 95,
-      "confirmedCumulativeAvg7d": 1325
+      "confirmedCumulativeAvg7d": 1327
     },
     {
       "confirmed": 176,
@@ -6922,11 +6927,11 @@
       "criticalCumulative": 59,
       "testedCumulative": 28760,
       "date": "2020-03-29",
-      "confirmedCumulative": 1903,
+      "confirmedCumulative": 1904,
       "confirmedAvg3d": 162,
-      "confirmedCumulativeAvg3d": 1698,
+      "confirmedCumulativeAvg3d": 1700,
       "confirmedAvg7d": 114,
-      "confirmedCumulativeAvg7d": 1439
+      "confirmedCumulativeAvg7d": 1441
     },
     {
       "confirmed": 94,
@@ -6935,11 +6940,11 @@
       "criticalCumulative": 59,
       "testedCumulative": 28966,
       "date": "2020-03-30",
-      "confirmedCumulative": 1997,
+      "confirmedCumulative": 1998,
       "confirmedAvg3d": 156,
-      "confirmedCumulativeAvg3d": 1854,
+      "confirmedCumulativeAvg3d": 1856,
       "confirmedAvg7d": 122,
-      "confirmedCumulativeAvg7d": 1561
+      "confirmedCumulativeAvg7d": 1563
     },
     {
       "confirmed": 255,
@@ -6948,11 +6953,11 @@
       "criticalCumulative": 59,
       "testedCumulative": 32497,
       "date": "2020-03-31",
-      "confirmedCumulative": 2252,
+      "confirmedCumulative": 2253,
       "confirmedAvg3d": 175,
-      "confirmedCumulativeAvg3d": 2029,
+      "confirmedCumulativeAvg3d": 2031,
       "confirmedAvg7d": 148,
-      "confirmedCumulativeAvg7d": 1709
+      "confirmedCumulativeAvg7d": 1711
     },
     {
       "confirmed": 279,
@@ -6961,11 +6966,11 @@
       "criticalCumulative": 60,
       "testedCumulative": 34508,
       "date": "2020-04-01",
-      "confirmedCumulative": 2531,
+      "confirmedCumulative": 2532,
       "confirmedAvg3d": 209,
-      "confirmedCumulativeAvg3d": 2238,
+      "confirmedCumulativeAvg3d": 2240,
       "confirmedAvg7d": 174,
-      "confirmedCumulativeAvg7d": 1883
+      "confirmedCumulativeAvg7d": 1885
     },
     {
       "confirmed": 282,
@@ -6974,11 +6979,11 @@
       "criticalCumulative": 62,
       "testedCumulative": 34510,
       "date": "2020-04-02",
-      "confirmedCumulative": 2813,
+      "confirmedCumulative": 2814,
       "confirmedAvg3d": 272,
-      "confirmedCumulativeAvg3d": 2510,
+      "confirmedCumulativeAvg3d": 2512,
       "confirmedAvg7d": 199,
-      "confirmedCumulativeAvg7d": 2082
+      "confirmedCumulativeAvg7d": 2084
     },
     {
       "confirmed": 333,
@@ -6987,11 +6992,11 @@
       "criticalCumulative": 64,
       "testedCumulative": 39446,
       "date": "2020-04-03",
-      "confirmedCumulative": 3146,
+      "confirmedCumulative": 3147,
       "confirmedAvg3d": 298,
-      "confirmedCumulativeAvg3d": 2808,
+      "confirmedCumulativeAvg3d": 2810,
       "confirmedAvg7d": 231,
-      "confirmedCumulativeAvg7d": 2313
+      "confirmedCumulativeAvg7d": 2315
     },
     {
       "confirmed": 370,
@@ -7000,11 +7005,11 @@
       "criticalCumulative": 69,
       "testedCumulative": 42882,
       "date": "2020-04-04",
-      "confirmedCumulative": 3516,
+      "confirmedCumulative": 3517,
       "confirmedAvg3d": 328,
-      "confirmedCumulativeAvg3d": 3136,
+      "confirmedCumulativeAvg3d": 3138,
       "confirmedAvg7d": 255,
-      "confirmedCumulativeAvg7d": 2568
+      "confirmedCumulativeAvg7d": 2570
     },
     {
       "confirmed": 353,
@@ -7013,11 +7018,11 @@
       "criticalCumulative": 70,
       "testedCumulative": 44639,
       "date": "2020-04-05",
-      "confirmedCumulative": 3869,
+      "confirmedCumulative": 3870,
       "confirmedAvg3d": 352,
-      "confirmedCumulativeAvg3d": 3488,
+      "confirmedCumulativeAvg3d": 3490,
       "confirmedAvg7d": 280,
-      "confirmedCumulativeAvg7d": 2848
+      "confirmedCumulativeAvg7d": 2850
     },
     {
       "confirmed": 233,
@@ -7026,11 +7031,11 @@
       "criticalCumulative": 79,
       "testedCumulative": 46172,
       "date": "2020-04-06",
-      "confirmedCumulative": 4102,
+      "confirmedCumulative": 4103,
       "confirmedAvg3d": 318,
-      "confirmedCumulativeAvg3d": 3806,
+      "confirmedCumulativeAvg3d": 3808,
       "confirmedAvg7d": 300,
-      "confirmedCumulativeAvg7d": 3148
+      "confirmedCumulativeAvg7d": 3150
     },
     {
       "confirmed": 368,
@@ -7039,11 +7044,11 @@
       "criticalCumulative": 80,
       "testedCumulative": 55311,
       "date": "2020-04-07",
-      "confirmedCumulative": 4470,
+      "confirmedCumulative": 4471,
       "confirmedAvg3d": 318,
-      "confirmedCumulativeAvg3d": 4124,
+      "confirmedCumulativeAvg3d": 4126,
       "confirmedAvg7d": 316,
-      "confirmedCumulativeAvg7d": 3464
+      "confirmedCumulativeAvg7d": 3466
     },
     {
       "confirmed": 523,
@@ -7052,11 +7057,11 @@
       "criticalCumulative": 99,
       "testedCumulative": 61498,
       "date": "2020-04-08",
-      "confirmedCumulative": 4993,
+      "confirmedCumulative": 4994,
       "confirmedAvg3d": 374,
-      "confirmedCumulativeAvg3d": 4498,
+      "confirmedCumulativeAvg3d": 4500,
       "confirmedAvg7d": 351,
-      "confirmedCumulativeAvg7d": 3815
+      "confirmedCumulativeAvg7d": 3817
     },
     {
       "confirmed": 589,
@@ -7065,11 +7070,11 @@
       "criticalCumulative": 109,
       "testedCumulative": 64387,
       "date": "2020-04-09",
-      "confirmedCumulative": 5582,
+      "confirmedCumulative": 5583,
       "confirmedAvg3d": 493,
-      "confirmedCumulativeAvg3d": 4991,
+      "confirmedCumulativeAvg3d": 4993,
       "confirmedAvg7d": 395,
-      "confirmedCumulativeAvg7d": 4210
+      "confirmedCumulativeAvg7d": 4212
     },
     {
       "confirmed": 624,
@@ -7078,11 +7083,11 @@
       "criticalCumulative": 117,
       "testedCumulative": 68771,
       "date": "2020-04-10",
-      "confirmedCumulative": 6206,
+      "confirmedCumulative": 6207,
       "confirmedAvg3d": 578,
-      "confirmedCumulativeAvg3d": 5569,
+      "confirmedCumulativeAvg3d": 5571,
       "confirmedAvg7d": 437,
-      "confirmedCumulativeAvg7d": 4647
+      "confirmedCumulativeAvg7d": 4649
     },
     {
       "confirmed": 700,
@@ -7091,11 +7096,11 @@
       "criticalCumulative": 122,
       "testedCumulative": 74891,
       "date": "2020-04-11",
-      "confirmedCumulative": 6906,
+      "confirmedCumulative": 6907,
       "confirmedAvg3d": 637,
-      "confirmedCumulativeAvg3d": 6206,
+      "confirmedCumulativeAvg3d": 6208,
       "confirmedAvg7d": 484,
-      "confirmedCumulativeAvg7d": 5131
+      "confirmedCumulativeAvg7d": 5133
     },
     {
       "confirmed": 514,
@@ -7104,11 +7109,11 @@
       "criticalCumulative": 129,
       "testedCumulative": 77381,
       "date": "2020-04-12",
-      "confirmedCumulative": 7420,
+      "confirmedCumulative": 7421,
       "confirmedAvg3d": 612,
-      "confirmedCumulativeAvg3d": 6818,
+      "confirmedCumulativeAvg3d": 6820,
       "confirmedAvg7d": 507,
-      "confirmedCumulativeAvg7d": 5638
+      "confirmedCumulativeAvg7d": 5640
     },
     {
       "confirmed": 279,
@@ -7117,11 +7122,11 @@
       "criticalCumulative": 135,
       "testedCumulative": 78702,
       "date": "2020-04-13",
-      "confirmedCumulative": 7699,
+      "confirmedCumulative": 7700,
       "confirmedAvg3d": 497,
-      "confirmedCumulativeAvg3d": 7315,
+      "confirmedCumulativeAvg3d": 7317,
       "confirmedAvg7d": 513,
-      "confirmedCumulativeAvg7d": 6151
+      "confirmedCumulativeAvg7d": 6153
     },
     {
       "confirmed": 498,
@@ -7130,11 +7135,11 @@
       "criticalCumulative": 152,
       "testedCumulative": 89551,
       "date": "2020-04-14",
-      "confirmedCumulative": 8197,
+      "confirmedCumulative": 8198,
       "confirmedAvg3d": 430,
-      "confirmedCumulativeAvg3d": 7745,
+      "confirmedCumulativeAvg3d": 7747,
       "confirmedAvg7d": 532,
-      "confirmedCumulativeAvg7d": 6683
+      "confirmedCumulativeAvg7d": 6685
     },
     {
       "confirmed": 566,
@@ -7143,11 +7148,11 @@
       "criticalCumulative": 168,
       "testedCumulative": 94236,
       "date": "2020-04-15",
-      "confirmedCumulative": 8763,
+      "confirmedCumulative": 8764,
       "confirmedAvg3d": 447,
-      "confirmedCumulativeAvg3d": 8192,
+      "confirmedCumulativeAvg3d": 8194,
       "confirmedAvg7d": 538,
-      "confirmedCumulativeAvg7d": 7221
+      "confirmedCumulativeAvg7d": 7223
     },
     {
       "confirmed": 561,
@@ -7156,11 +7161,11 @@
       "criticalCumulative": 193,
       "testedCumulative": 100703,
       "date": "2020-04-16",
-      "confirmedCumulative": 9324,
+      "confirmedCumulative": 9325,
       "confirmedAvg3d": 541,
-      "confirmedCumulativeAvg3d": 8733,
+      "confirmedCumulativeAvg3d": 8735,
       "confirmedAvg7d": 534,
-      "confirmedCumulativeAvg7d": 7755
+      "confirmedCumulativeAvg7d": 7757
     },
     {
       "confirmed": 554,
@@ -7169,11 +7174,11 @@
       "criticalCumulative": 207,
       "testedCumulative": 106372,
       "date": "2020-04-17",
-      "confirmedCumulative": 9878,
+      "confirmedCumulative": 9879,
       "confirmedAvg3d": 560,
-      "confirmedCumulativeAvg3d": 9293,
+      "confirmedCumulativeAvg3d": 9295,
       "confirmedAvg7d": 524,
-      "confirmedCumulativeAvg7d": 8279
+      "confirmedCumulativeAvg7d": 8281
     },
     {
       "confirmed": 563,
@@ -7182,25 +7187,25 @@
       "criticalCumulative": 211,
       "testedCumulative": 111325,
       "date": "2020-04-18",
-      "confirmedCumulative": 10441,
+      "confirmedCumulative": 10442,
       "confirmedAvg3d": 559,
-      "confirmedCumulativeAvg3d": 9852,
+      "confirmedCumulativeAvg3d": 9854,
       "confirmedAvg7d": 505,
-      "confirmedCumulativeAvg7d": 8784
+      "confirmedCumulativeAvg7d": 8786
     },
     {
-      "confirmed": 354,
+      "confirmed": 355,
       "recoveredCumulative": 1159,
       "deceasedCumulative": 236,
       "criticalCumulative": 217,
       "testedCumulative": 112816,
       "date": "2020-04-19",
-      "confirmedCumulative": 10795,
+      "confirmedCumulative": 10797,
       "confirmedAvg3d": 490,
-      "confirmedCumulativeAvg3d": 10342,
+      "confirmedCumulativeAvg3d": 10344,
       "confirmedAvg7d": 482,
-      "confirmedCumulativeAvg7d": 9266
+      "confirmedCumulativeAvg7d": 9268
     }
   ],
-  "updated": "2020-04-19T23:02:24+09:00"
+  "updated": "2020-04-19T23:32:04+09:00"
 }
