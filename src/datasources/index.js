@@ -2,6 +2,7 @@
 const _ = require('lodash')
 const { fetchCsv, fetchPatients } = require('./csv.js')
 const { fetchCovidJson, fetchCovidJsonPatients } = require('./covidjson.js')
+const { fetchFukushimaPatients } = require('./fukushima.js')
 const { extractDailySummary, sortedPrefectureCounts, prefectureLookup } = require('./nhk.js')
 const { sources } = require('./sources.js')
 
@@ -121,13 +122,20 @@ const updateSidebar = () => {
         let prefectureInfo = sources[prefectureName]
         if (prefectureInfo && prefectureInfo.patients) {
           if (prefectureInfo.patients.format == 'csv') {
-            fetchPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch).then(patients => {
-              updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
-            })
+            fetchPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
+              .then(patients => {
+                updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
+              })
           }  else if (prefectureInfo.patients.format == 'json') {
-            fetchCovidJsonPatients(prefectureInfo.patients.url, prefectureInfo.patients.key).then(patients => {
-              updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
-            })
+            fetchCovidJsonPatients(prefectureInfo.patients.url, prefectureInfo.patients.key)
+              .then(patients => {
+                updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
+              })
+          } else if (prefectureName == 'fukushima') {
+            fetchFukushimaPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
+              .then(patients => {
+                updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
+              })
           }
         }
       })

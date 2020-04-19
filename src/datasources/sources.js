@@ -72,6 +72,15 @@ const sources = {
     source: 'https://ckan.open-governmentdata.org/dataset/401000_pref_fukuoka_covid19_patients',
     dashboard: 'https://fukuoka.stopcovid19.jp/',
   },
+  fukushima: {
+    patients: {
+      format: 'csvdir',
+      encoding: 'sjis',
+      url: 'http://www.pref.fukushima.lg.jp/w4/covid19/patients/'
+    },
+    source: 'http://www.pref.fukushima.lg.jp/w4/covid19/patients/',
+    dashboard: 'https://fukushima-covid19.firebaseapp.com/'
+  },
   gifu: {
     patients: {
       format: 'sheets',
