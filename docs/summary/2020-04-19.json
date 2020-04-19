@@ -2465,14 +2465,15 @@
       "name": "Fukui"
     },
     {
-      "confirmed": 91,
+      "confirmed": 92,
       "cruisePassenger": 0,
       "deaths": 0,
       "confirmedByCity": {
         "Toyama City": 38,
         "Nanto": 1,
         "Takaoka": 1,
-        "Toyama city": 43
+        "Toyama city": 43,
+        "Imizu": 1
       },
       "dailyConfirmedCount": [
         0,
@@ -2577,10 +2578,10 @@
         10,
         14,
         12,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 2,
       "name_ja": "富山県",
       "name": "Toyama"
@@ -2708,11 +2709,11 @@
       "name": "Miyagi"
     },
     {
-      "confirmed": 68,
+      "confirmed": 70,
       "cruisePassenger": 0,
       "deaths": 0,
       "confirmedByCity": {
-        "Otsu": 3,
+        "Otsu": 5,
         "Higashiomi": 2,
         "Yasu": 1,
         "Ostu": 1,
@@ -2821,7 +2822,7 @@
         1,
         5,
         11,
-        0,
+        2,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
@@ -7167,31 +7168,31 @@
       "confirmedCumulativeAvg7d": 8282
     },
     {
-      "confirmed": 539,
+      "confirmed": 541,
       "recoveredCumulative": 1069,
       "deceasedCumulative": 222,
       "criticalCumulative": 221,
       "testedCumulative": 111325,
       "date": "2020-04-18",
-      "confirmedCumulative": 10419,
-      "confirmedAvg3d": 549,
-      "confirmedCumulativeAvg3d": 9849,
-      "confirmedAvg7d": 501,
-      "confirmedCumulativeAvg7d": 8783
+      "confirmedCumulative": 10421,
+      "confirmedAvg3d": 550,
+      "confirmedCumulativeAvg3d": 9850,
+      "confirmedAvg7d": 502,
+      "confirmedCumulativeAvg7d": 8784
     },
     {
-      "confirmed": 8,
+      "confirmed": 9,
       "recoveredCumulative": 1069,
       "deceasedCumulative": 222,
       "criticalCumulative": 221,
       "testedCumulative": 111325,
       "date": "2020-04-19",
-      "confirmedCumulative": 10427,
-      "confirmedAvg3d": 365,
-      "confirmedCumulativeAvg3d": 10214,
-      "confirmedAvg7d": 429,
-      "confirmedCumulativeAvg7d": 9212
+      "confirmedCumulative": 10430,
+      "confirmedAvg3d": 366,
+      "confirmedCumulativeAvg3d": 10216,
+      "confirmedAvg7d": 430,
+      "confirmedCumulativeAvg7d": 9214
     }
   ],
-  "updated": "2020-04-19T17:47:16+09:00"
+  "updated": "2020-04-19T18:02:22+09:00"
 }
