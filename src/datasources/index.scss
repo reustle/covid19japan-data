@@ -1,0 +1,103 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;  
+}
+
+#sources {
+  flex-basis: 10rem;
+  flex-grow: 1;
+
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+
+  ul {
+    padding: 3px;
+    list-style: none;
+  }
+
+  .alt-info {
+    margin-left: 10px;
+    a, a:visited, a:active { 
+      text-decoration: none;
+      color: rgb(184, 184, 184);
+    }
+
+    color: rgb(184, 184, 184);
+  }
+
+  .patient-link {
+    text-decoration: none;
+    color: rgb(66, 109, 253)
+  }
+
+  a.patient-link:visited {
+    color: rgb(66, 109, 253)
+  }
+
+  a.patient-link.missing {
+    color: rgb(142, 142, 143)
+  }
+
+  a.patient-link.selected {
+    background-color: rgb(252, 155, 44)
+  }
+}
+
+#console {
+  flex-basis: 10rem;
+  flex-grow: 1;
+
+  padding: 20px;
+
+  textarea {
+    height: 100%;
+  }
+}
+
+#results {
+  flex-basis: 0;
+  flex-grow: 999;
+
+  padding: 20px;
+  height: 100vh;
+
+  table#patients-table, table#nhk-table {
+    td {
+      font-size: 13px;
+      padding: 4px;
+    }
+
+    .column-filter {
+      width: 60px;
+    }
+  }
+
+  input#nhk-url {
+    padding: 5px;
+    width: 90%;
+  }
+
+
+  .hide { display: none; }
+
+  .hide-patientId { .patientId { display: none; } }
+  .hide-dateAnnounced { .dateAnnounced { display: none; } }
+  .hide-dateAdded { .dateAdded { display: none; } }
+  .hide-age { .age { display: none; } }
+  .hide-gender { .gender { display: none; } }
+}
+
+#patients-results { display: none; }
+.patients-results #patients-results { display: block; }
+#nhk-results { display: none; }
+.nhk-results #nhk-results { display: block; }
+
