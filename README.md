@@ -2,10 +2,25 @@
 
 [covid19japan.com/](https://covid19japan.com/)
 
-This repository contains the JSON export of the [Live Japan Patient Database (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/e/2PACX-1vRj0RcpTglCmtDVP1RRx21ZwteYU2Y_8JExoeIVbMG1onsmHHah3DwI2HwunY8FOU3eqme82th_hYWF/pubhtml) that supports [covid19japan.com](https://covid19japan.com). You can find more details about contributing to the sheet [in this document](https://docs.google.com/document/d/1JbQn10KvmYYUHCPa7LObsUCG1m_tVY-S4BrchzRMzBI/edit).
+This repository publishes the data export of the [COVID19 Japan Patient Database (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/e/2PACX-1vRj0RcpTglCmtDVP1RRx21ZwteYU2Y_8JExoeIVbMG1onsmHHah3DwI2HwunY8FOU3eqme82th_hYWF/pubhtml) that is used by [covid19japan.com](https://covid19japan.com). You can find more details about contributing to the sheet [in this document](https://docs.google.com/document/d/1JbQn10KvmYYUHCPa7LObsUCG1m_tVY-S4BrchzRMzBI/edit).
+
+You can programmatically fetch the data from the data repository (data.covid19japan.com) using the following URLs:
+
+ * `https://data.covid19japan.com/patient_data/latest.json` : Full merged list of patient data for all of Japan.
+ * `https://data.covid19japan.com/summary/latest.json` : Daily summary and Per-prefecture summary.
+ * `https://data.covid19japan.com/tokyo/counts.json`: Tokyo per-ward/city summary.
+
+See below in [Data Formats](#data-formats) for details on each of these files.
+
+This data is sourced manually through many different different sources and aggregated in a [Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRj0RcpTglCmtDVP1RRx21ZwteYU2Y_8JExoeIVbMG1onsmHHah3DwI2HwunY8FOU3eqme82th_hYWF/pubhtml). Sources include Ministry of Health Labour and Workforce (MHLW), Prefectural governments, City governments and Japanese news sources. Our spreadsheet aggregates data into a consistent format and reconciles [discrepencies](#data-differences).
+
+Data exported on `data.covid19japan.com` is updated every 15 minutes. If you have a question about the data formats, please file an issue on this repository.
+
+Contents:
 
  * [Data Formats](#data-formats)
  * [Data Sources](#data-sources)
+ * [Data Discrepancies](#data-discrepancies)
  * [Development](#development)
 
 ## Data Formats
@@ -57,7 +72,7 @@ Example Patient Data:
 | notes | String | Other text |
 | knownCluster | String | Known cluster this patient is from (can be multiple, separated by commas) |
 
-### docs/patient_data/summary.json
+### docs/summary/latest.json
 
 Top level objects: 
 
@@ -141,6 +156,23 @@ Day by day summary:
 | recoveredCumulative | Numeric | Total number of recovered patients accumulated up to this day (including today) |
 | criticalCumulative | Numeric | Total number of critical patients accumulated up to this day (including today) |
 | deceasedCumulative | Numeric | Total number of deaths accumulated up to this day (including today) |
+
+### docs/tokyo/counts.json
+
+```
+[
+  {
+    "name": "Chiyoda",
+    "name_ja": "千代田",
+    "values": [
+      {
+        "date": "2020-03-31",
+        "count": 3
+      },
+      ...
+]      
+```      
+
 
 
 ## Contributing Data
@@ -266,6 +298,16 @@ data that we use to cross check and verify.
 | Tokyo | [stopcovid19.metro.tokyo.lg.jp](https://stopcovid19.metro.tokyo.lg.jp/en/) |
 
 **We need your help!** Please submit any information sources via the "Issues" tab above. Thank you! ありがとう！
+
+# Data Discrepencies
+
+Our data can sometimes disagree with MHLW or prefectural governments because of different policies we are using to input the data. Here are our known discrepencies and why:
+
+* National death counts. We are counting more deaths than MHLW. Our death counts are aligned with NHK's reporting. We are unclear why MHLW is reporting less deaths.
+* Recovery counts. This number is only available in aggregate on a national level from MHLW. Some prefectures report this per patient, some report it in aggregate but there is not consistency in this number. 
+* Asymptomatic vs Symptomatic. There are differences between prefectures, some prefectures do not count Asymptomatic confirmed cases. NHK does count all confirmed cases, asymptomatic and symptomatic. We follow that same principle and count all that we can find.
+* Okinawa: We count three more cases in Okinawa than the official count because we include 3 US Military Servicemen which are not officially in the Okinawa prefectural government count.
+
 
 
 # Development
