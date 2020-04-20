@@ -1019,11 +1019,11 @@
       "name": "Hyogo"
     },
     {
-      "confirmed": 430,
+      "confirmed": 446,
       "cruisePassenger": 0,
       "deaths": 17,
       "confirmedByCity": {
-        "Sapporo": 158,
+        "Sapporo": 166,
         "Nanae, Oshima": 1,
         "Nakafurano": 2,
         "Chitose, Ishikari": 2,
@@ -1171,10 +1171,10 @@
         32,
         38,
         27,
-        0
+        16
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 16,
       "recovered": 171,
       "name_ja": "北海道",
       "name": "Hokkaido"
@@ -2360,7 +2360,7 @@
       "name": "Okinawa"
     },
     {
-      "confirmed": 112,
+      "confirmed": 113,
       "cruisePassenger": 0,
       "deaths": 4,
       "confirmedByCity": {
@@ -2479,10 +2479,10 @@
         1,
         2,
         6,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 8,
       "name_ja": "福井県",
       "name": "Fukui"
@@ -7254,7 +7254,20 @@
       "confirmedCumulativeAvg3d": 10344,
       "confirmedAvg7d": 482,
       "confirmedCumulativeAvg7d": 9268
+    },
+    {
+      "confirmed": 17,
+      "recoveredCumulative": 1159,
+      "deceasedCumulative": 236,
+      "criticalCumulative": 217,
+      "testedCumulative": 112816,
+      "date": "2020-04-20",
+      "confirmedCumulative": 10814,
+      "confirmedAvg3d": 311,
+      "confirmedCumulativeAvg3d": 10655,
+      "confirmedAvg7d": 444,
+      "confirmedCumulativeAvg7d": 9712
     }
   ],
-  "updated": "2020-04-20T14:31:51+09:00"
+  "updated": "2020-04-20T16:32:18+09:00"
 }
