@@ -10,7 +10,7 @@ You can programmatically fetch the data from the data repository (data.covid19ja
 
 See below in [Data Formats](#data-formats) for details on each of these files.
 
-This data is sourced manually through many different different sources and aggregated in a [Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRj0RcpTglCmtDVP1RRx21ZwteYU2Y_8JExoeIVbMG1onsmHHah3DwI2HwunY8FOU3eqme82th_hYWF/pubhtml). Sources include Ministry of Health Labour and Workforce (MHLW), Prefectural governments, City governments and Japanese news sources. Our spreadsheet aggregates data into a consistent format and reconciles [discrepencies](#data-differences).
+This data is sourced manually through many different different sources and aggregated in a [Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRj0RcpTglCmtDVP1RRx21ZwteYU2Y_8JExoeIVbMG1onsmHHah3DwI2HwunY8FOU3eqme82th_hYWF/pubhtml). Sources include Ministry of Health Labour and Workforce (MHLW), Prefectural governments, City governments and Japanese news sources. Our spreadsheet aggregates data into a consistent format and reconciles [discrepancies](#data-discrepancies).
 
 Data exported on `data.covid19japan.com` is updated every 15 minutes. If you have a question about the data formats, please file an issue on this repository.
 
