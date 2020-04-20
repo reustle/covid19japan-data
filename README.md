@@ -20,6 +20,8 @@ Contents:
  * [Data Sources](#data-sources)
  * [Data Discrepancies](#data-discrepancies)
  * [Development](#development)
+ * [Help Wanted](#help-wanted)
+ * [Licensing](#data-license-and-attribution)
 
 ## Data Formats
 
@@ -173,13 +175,6 @@ Day by day summary:
 
 
 
-## Contributing Data
-
-If you would like to update any missing or incorrect data on the graphs, please leave a comment on this spreadsheet, and/or request edit access.
-
-https://docs.google.com/spreadsheets/d/e/2PACX-1vRri4r42DHwMHePjJfYN-qEWhGvKeOQullBtEzfle15i-xAsm9ZgV8oMxQNhPRO1CId39BPnn1IO5YO/pubhtml
-
-
 ## Data Sources
 
 Data sources we're using. 
@@ -295,7 +290,6 @@ data that we use to cross check and verify.
 | Saitama | [saitama.stopcovid19.jp](https://saitama.stopcovid19.jp/) |
 | Tokyo | [stopcovid19.metro.tokyo.lg.jp](https://stopcovid19.metro.tokyo.lg.jp/en/) |
 
-**We need your help!** Please submit any information sources via the "Issues" tab above. Thank you! ありがとう！
 
 # Data Discrepencies
 
@@ -306,7 +300,12 @@ Our data can sometimes disagree with MHLW or prefectural governments because of 
 * Asymptomatic vs Symptomatic. There are differences between prefectures, some prefectures do not count Asymptomatic confirmed cases. NHK does count all confirmed cases, asymptomatic and symptomatic. We follow that same principle and count all that we can find.
 * Okinawa: We count three more cases in Okinawa than the official count because we include 3 US Military Servicemen which are not officially in the Okinawa prefectural government count.
 
+# Help wanted
 
+* If you would like to suggest improvements to the data formats, please file an issue on this repo.
+* If you want to report a mistake in our data, please use this [feedback form](https://docs.google.com/forms/d/e/1FAIpQLSfswnfdNJeaUoAX2CDhnyQTE7bg5rzFzHIvhxsJQqVqICiwsw/viewform)
+
+**We need your help!** Please submit any information sources via the "Issues" tab above. Thank you! ありがとう！
 
 # Development
 
