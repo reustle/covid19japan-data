@@ -1,7 +1,5 @@
 # Data repository for covid19japan.com
 
-[covid19japan.com/](https://covid19japan.com/)
-
 This repository publishes the data export of the [COVID19 Japan Patient Database (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/e/2PACX-1vRj0RcpTglCmtDVP1RRx21ZwteYU2Y_8JExoeIVbMG1onsmHHah3DwI2HwunY8FOU3eqme82th_hYWF/pubhtml) that is used by [covid19japan.com](https://covid19japan.com). You can find more details about contributing to the sheet [in this document](https://docs.google.com/document/d/1JbQn10KvmYYUHCPa7LObsUCG1m_tVY-S4BrchzRMzBI/edit).
 
 You can programmatically fetch the data from the data repository (data.covid19japan.com) using the following URLs:
