@@ -1331,7 +1331,7 @@
       "name": "Aichi"
     },
     {
-      "confirmed": 259,
+      "confirmed": 260,
       "cruisePassenger": 0,
       "deaths": 3,
       "confirmedByCity": {
@@ -1454,10 +1454,10 @@
         7,
         9,
         8,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "recovered": 70,
       "name_ja": "京都府",
       "name": "Kyoto"
@@ -5770,7 +5770,8 @@
       "confirmedByCity": {
         "Wadomari town": 1,
         "Kirishima": 1,
-        "Aira": 2
+        "Aira": 2,
+        "Kagoshima City": 2
       },
       "dailyConfirmedCount": [
         0,
@@ -7323,18 +7324,18 @@
       "confirmedCumulativeAvg7d": 9765
     },
     {
-      "confirmed": 267,
+      "confirmed": 268,
       "recoveredCumulative": 1239,
       "deceasedCumulative": 263,
       "criticalCumulative": 231,
       "testedCumulative": 116725,
       "date": "2020-04-21",
-      "confirmedCumulative": 11419,
+      "confirmedCumulative": 11420,
       "confirmedAvg3d": 323,
       "confirmedCumulativeAvg3d": 11100,
       "confirmedAvg7d": 460,
       "confirmedCumulativeAvg7d": 10225
     }
   ],
-  "updated": "2020-04-21T22:02:14+09:00"
+  "updated": "2020-04-21T22:08:27+09:00"
 }
