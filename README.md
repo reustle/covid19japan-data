@@ -245,7 +245,7 @@ data that we use to cross check and verify.
 |Kumamoto    | [新型コロナウイルス感染症](https://www.pref.kumamoto.jp/kiji_32300.html) |  | Patients numbers in the Summary |
 |Kumamoto - Kumamoto City   | [新型コロナウイルス感染症について](http://www.city.kumamoto.jp/hpkiji/pub/detail.aspx?c_id=5&id=26562) ||
 |Kyoto    |[新型コロナウイルス感染症の患者の発生について](https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F)|
-| Kyoto - Kyoto City | [Homepage](https://www.city.kyoto.lg.jp/) ||
+| Kyoto - Kyoto City | [Homepage](https://www.city.kyoto.lg.jp/) [Patients](https://www.city.kyoto.lg.jp/hokenfukushi/page/0000266641.html) ||
 | Kyoto - Muko | [市内の新型コロナウイルス感染状況について](https://www.city.muko.kyoto.jp/kurashi/kinkyu/1585565517890.html) ||
 |Mie    |[新型コロナウイルス感染症に関連した肺炎患者の発生について](https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066.htm)||
 |Miyagi    | [県内における発生状況等について](https://www.pref.miyagi.jp/site/covid-19/02.html)|| Updated daily |
