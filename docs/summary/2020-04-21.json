@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 3187,
+      "confirmed": 3310,
       "cruisePassenger": 0,
       "deaths": 77,
       "confirmedByCity": {
@@ -115,10 +115,10 @@
         181,
         107,
         102,
-        0
+        123
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 123,
       "recovered": 59,
       "name_ja": "東京都",
       "name": "Tokyo"
@@ -576,14 +576,14 @@
       "confirmedByCity": {
         "Gyoda": 1,
         "Ageo": 1,
-        "Saitama": 9,
+        "Saitama": 7,
         "Iruma": 14,
         "Kawagoe": 18,
         "Toda": 12,
-        "Koshigaya": 25,
+        "Koshigaya": 24,
         "Saitama city": 47,
         "Kawaguchi": 54,
-        "Soka": 11,
+        "Soka": 14,
         "Niiza": 7,
         "Fukaya": 6,
         "Shiki": 9,
@@ -1463,7 +1463,7 @@
       "name": "Kyoto"
     },
     {
-      "confirmed": 180,
+      "confirmed": 192,
       "cruisePassenger": 0,
       "deaths": 4,
       "confirmedByCity": {
@@ -1584,10 +1584,10 @@
         13,
         5,
         2,
-        0
+        12
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 12,
       "recovered": 5,
       "name_ja": "石川県",
       "name": "Ishikawa"
@@ -7321,18 +7321,18 @@
       "confirmedCumulativeAvg7d": 9762
     },
     {
-      "confirmed": 33,
+      "confirmed": 168,
       "recoveredCumulative": 1239,
       "deceasedCumulative": 263,
       "criticalCumulative": 231,
       "testedCumulative": 116725,
       "date": "2020-04-21",
-      "confirmedCumulative": 11171,
-      "confirmedAvg3d": 240,
-      "confirmedCumulativeAvg3d": 11009,
-      "confirmedAvg7d": 424,
-      "confirmedCumulativeAvg7d": 10186
+      "confirmedCumulative": 11306,
+      "confirmedAvg3d": 285,
+      "confirmedCumulativeAvg3d": 11054,
+      "confirmedAvg7d": 444,
+      "confirmedCumulativeAvg7d": 10206
     }
   ],
-  "updated": "2020-04-21T17:02:29+09:00"
+  "updated": "2020-04-21T17:32:05+09:00"
 }
