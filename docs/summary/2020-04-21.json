@@ -580,7 +580,7 @@
         "Iruma": 14,
         "Kawagoe": 18,
         "Toda": 12,
-        "Koshigaya": 24,
+        "Koshigaya": 25,
         "Saitama city": 47,
         "Kawaguchi": 54,
         "Soka": 11,
@@ -625,7 +625,8 @@
         "Kamio": 2,
         "Kasu": 1,
         "Miyashiro": 2,
-        "Hitaka": 1
+        "Hitaka": 1,
+        "unspecified": 2
       },
       "dailyConfirmedCount": [
         0,
@@ -3392,7 +3393,7 @@
       "name": "Nara"
     },
     {
-      "confirmed": 56,
+      "confirmed": 58,
       "cruisePassenger": 0,
       "deaths": 0,
       "confirmedByCity": {
@@ -3514,10 +3515,10 @@
         3,
         0,
         0,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "recovered": 29,
       "name_ja": "新潟県",
       "name": "Niigata"
@@ -7319,18 +7320,18 @@
       "confirmedCumulativeAvg7d": 9762
     },
     {
-      "confirmed": 31,
+      "confirmed": 33,
       "recoveredCumulative": 1239,
       "deceasedCumulative": 263,
       "criticalCumulative": 231,
       "testedCumulative": 116725,
       "date": "2020-04-21",
-      "confirmedCumulative": 11169,
+      "confirmedCumulative": 11171,
       "confirmedAvg3d": 240,
       "confirmedCumulativeAvg3d": 11009,
       "confirmedAvg7d": 424,
       "confirmedCumulativeAvg7d": 10186
     }
   ],
-  "updated": "2020-04-21T16:16:51+09:00"
+  "updated": "2020-04-21T17:02:29+09:00"
 }
