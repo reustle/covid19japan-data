@@ -21,8 +21,6 @@ const postProcessData = (rawData) => {
 
     // Converts the number into a string, if possible.
     const normalizeId = n => {
-      // Check if it has any number in it
-      if (n == '') { return -1 }
       // Check if it has any number in it.
       if (numberPattern.test(n)) {
         return n
