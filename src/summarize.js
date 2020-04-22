@@ -48,6 +48,7 @@ const generateDailySummary = (patients, manualDailyData) => {
     if (!dailySummary[dateAnnounced]) {
       dailySummary[dateAnnounced] = {
         confirmed: 0,
+        deceased: 0,
         recoveredCumulative: 0,
         deceasedCumulative: 0,
         criticalCumulative: 0,
@@ -58,6 +59,9 @@ const generateDailySummary = (patients, manualDailyData) => {
     if (patient.confirmedPatient) {
       dailySummary[dateAnnounced].confirmed += 1
     }
+    if (patient.status == 'Deceased') {
+      dailySummary[dateAnnounced].deceased += 1
+    }
   }
 
   // merge manually sourced data
@@ -66,7 +70,7 @@ const generateDailySummary = (patients, manualDailyData) => {
   for (let row of manualDailyData) {
     if (dailySummary[row.date]) {
       dailySummary[row.date].recoveredCumulative = safeParseInt(row.recovered)
-      dailySummary[row.date].deceasedCumulative = safeParseInt(row.deceased)
+      //dailySummary[row.date].deceasedCumulative = safeParseInt(row.deceased)
       dailySummary[row.date].criticalCumulative = safeParseInt(row.critical)
       dailySummary[row.date].testedCumulative = safeParseInt(row.tested)
     }
@@ -77,9 +81,12 @@ const generateDailySummary = (patients, manualDailyData) => {
   
   // Calculate the confirmedCumulative by iterating through all the days in order
   let confirmedCumulative = 0
+  let deceasedCumulative = 0
   for (let dailySum of orderedDailySummary) {
     confirmedCumulative += dailySum.confirmed
     dailySum.confirmedCumulative = confirmedCumulative
+    deceasedCumulative += dailySum.deceased
+    dailySum.deceasedCumulative = deceasedCumulative
   }
 
   // Calculate a rolling 3/7 day average for confirmed.
@@ -176,19 +183,30 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
   for (let prefectureName of _.keys(prefectureSummary)) {
     let prefecture = prefectureSummary[prefectureName]
     const firstDay = moment('2020-01-08')
-    const dailyConfirmed = generateDailyStatsForPrefecture(prefecture.patients, firstDay)
-    if (dailyConfirmed && dailyConfirmed.length) {
-      prefecture.dailyConfirmedCount = dailyConfirmed
+    const daily = generateDailyStatsForPrefecture(prefecture.patients, firstDay)
+    if (daily.confirmed && daily.confirmed.length) {
+      prefecture.dailyConfirmedCount = daily.confirmed
       prefecture.dailyConfirmedStartDate = firstDay.format('YYYY-MM-DD')
-      prefecture.newlyConfirmed = dailyConfirmed[dailyConfirmed.length - 1]
+      prefecture.newlyConfirmed = daily.confirmed[daily.confirmed.length - 1]
+      if (daily.confirmed.length > 2) {
+        prefecture.yesterdayConfirmed = daily.confirmed[daily.confirmed.length - 2]
+      }
+    }
+    if (daily.deaths && daily.deaths.length) {
+      prefecture.dailyDeathCount = daily.deaths
+      prefecture.dailyDeathsStartDate = firstDay.format('YYYY-MM-DD')
+      prefecture.newlyDeceased = daily.deaths[daily.deaths.length - 1]
+      if (daily.deaths.length > 2) {
+        prefecture.yesterdayDeceased = daily.deaths[daily.deaths.length - 2]
+      }
     }
   }
+
 
   // Import manual data.
   for (let row of manualPrefectureData) {
     if (prefectureSummary[row.prefecture]) {
       prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered)
-      prefectureSummary[row.prefecture].deaths = safeParseInt(row.deaths)
       prefectureSummary[row.prefecture].name_ja = row.prefectureJa
     }
   }
@@ -211,14 +229,17 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
 const generateDailyStatsForPrefecture = (patients, firstDay) => {
   const lastDay = moment().utcOffset(540)
   let day = moment(firstDay)
-  let daily = []
+  let dailyConfirmed= []
+  let dailyDeaths = []
   while (day <= lastDay) {
     let dayString = day.format('YYYY-MM-DD')
-    let reports = _.filter(patients, o => { return o.dateAnnounced == dayString && o.confirmedPatient})
-    daily.push(reports.length)
+    let confirmed = _.filter(patients, o => { return o.dateAnnounced == dayString && o.confirmedPatient})
+    dailyConfirmed.push(confirmed.length)
+    let deaths = _.filter(patients, o => { return o.deceasedDate == dayString && o.patientStatus == 'Deceased'})
+    dailyDeaths.push(deaths.length)
     day = day.add(1, 'days')
   }
-  return daily
+  return {confirmed: dailyConfirmed, deaths: dailyDeaths}
 }
 
 exports.summarize = summarize;

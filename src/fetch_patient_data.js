@@ -2,6 +2,7 @@ const _ = require('lodash')
 const FetchSheet = require('./fetch_sheet.js')
 
 const numberPattern = /[0-9]+$/
+const shortDatePattern = /([0-9]+)\/([0-9]+)/
 
 // Post processes the data to normalize field names etc.
 const postProcessData = (rawData) => {
@@ -39,6 +40,19 @@ const postProcessData = (rawData) => {
       return ''
     }
 
+    // Parse short date
+    const parseShortDate = v => {
+      if (v) {
+        let shortDateMatch = v.match(shortDatePattern)
+        if (shortDateMatch) {
+          let month = shortDateMatch[1].padStart(2, '0')
+          let day = shortDateMatch[2].padStart(2, '0')
+          return `2020-${month}-${day}`
+        }
+      }
+      return v
+    }
+
     let transformedRow = {
       'patientId': normalizeId(row.patientNumber),
       'dateAnnounced': row.dateAnnounced,
@@ -58,7 +72,7 @@ const postProcessData = (rawData) => {
       'charterFlightPassenger': row.charterFlightPassenger,
       'cruisePassengerDisembarked': row.cruisePassengerDisembarked,
       'detectedAtPort': row.detectedAtPort,
-      'deceasedDate': row.deceased,
+      'deceasedDate': parseShortDate(row.deceased),
       'sourceURL': row.sourceS,
     }
 
@@ -84,6 +98,13 @@ const postProcessData = (rawData) => {
 
     // Add a field to indicate whether we count as patient or not.
     transformedRow.confirmedPatient = (transformedRow.patientId != -1)
+
+    // If the patient is deceased, but we don't know the date they died, use the dateAnnounced for now.
+    if (transformedRow.patientStatus == 'Deceased') {
+      if (typeof transformedRow.deceasedDate === 'undefined' || !transformedRow.deceasedDate) {
+        transformedRow.deceasedDate = transformedRow.dateAnnounced
+      }
+    }
 
     return transformedRow
   }
