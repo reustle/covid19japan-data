@@ -748,7 +748,7 @@
       "name": "Saitama"
     },
     {
-      "confirmed": 543,
+      "confirmed": 553,
       "cruisePassenger": 0,
       "deaths": 20,
       "confirmedByCity": {
@@ -874,10 +874,10 @@
         11,
         11,
         19,
-        0
+        10
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 10,
       "recovered": 65,
       "name_ja": "兵庫県",
       "name": "Hyogo"
@@ -1040,7 +1040,7 @@
       "cruisePassenger": 0,
       "deaths": 22,
       "confirmedByCity": {
-        "Sapporo": 176,
+        "Sapporo": 183,
         "Nanae, Oshima": 1,
         "Nakafurano": 2,
         "Chitose, Ishikari": 2,
@@ -7388,7 +7388,20 @@
       "confirmedCumulativeAvg3d": 11132,
       "confirmedAvg7d": 473,
       "confirmedCumulativeAvg7d": 10238
+    },
+    {
+      "confirmed": 10,
+      "recoveredCumulative": 1356,
+      "deceasedCumulative": 281,
+      "criticalCumulative": 232,
+      "testedCumulative": 124550,
+      "date": "2020-04-22",
+      "confirmedCumulative": 11522,
+      "confirmedAvg3d": 236,
+      "confirmedCumulativeAvg3d": 11368,
+      "confirmedAvg7d": 394,
+      "confirmedCumulativeAvg7d": 10632
     }
   ],
-  "updated": "2020-04-22T01:26:47+09:00"
+  "updated": "2020-04-22T15:02:32+09:00"
 }
