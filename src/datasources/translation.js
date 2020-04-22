@@ -1,6 +1,11 @@
 // Data/Language translation methods to convert from Japanese to English.
 // But also normalizes the data so it is common across the different data sources.
 
+const citynames = require('./citynames.csv')
+const _ = require('lodash')
+
+const placeNameJaToEn = _.fromPairs(_.map(citynames, o => { return [o.ja, o.en] }))
+
 const normalizeFixedWidthNumbers = v => {
   return v.replace(/０/g, '0')
    .replace(/１/g, '1')
@@ -29,6 +34,8 @@ export const translateAge = (age) => {
     return '0'
   } else if (age == '未就学児') {
     return '0'
+  } else if (age == '就学児') {
+    return '0'
   } else if (age == '不明') {
     return ''
   } else {
@@ -55,6 +62,16 @@ export const translateDate = (date) => {
     .replace(/\//g, '-')
 }
 
+export const translatePlaceName = (place) => {
+  if (place == '調査中') {
+    return ''
+  }
+  let englishName = placeNameJaToEn[place]
+  if (!englishName) {
+    return place
+  }
+  return englishName
+}
 
 
 export const translateRows = (rows) => {
@@ -70,7 +87,7 @@ export const translateRows = (rows) => {
       } else if (key == '患者_性別' || key == '性別'  || key == '患者＿性別') {
         translated['gender'] = translateGender(row[key])
       } else if (key == '居住地' || key == '患者_居住地' || key == '住居地' || key == '患者＿居住地')  {
-        translated['residence'] = row[key]
+        translated['residence'] = translatePlaceName(row[key])
       } else if (key == '発症_年月日') {
         translated['dateSymptomatic'] = row[key]
       } else if (key == '患者_職業') {
