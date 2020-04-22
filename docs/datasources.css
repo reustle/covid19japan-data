@@ -35,14 +35,14 @@ body {
     background-color: #fc9b2c; }
 
 #console {
-  flex-basis: 10rem;
+  flex-basis: 6rem;
   flex-grow: 1;
   padding: 20px; }
   #console textarea {
     height: 100%; }
 
 #results {
-  flex-basis: 0;
+  flex-basis: 8rem;
   flex-grow: 999;
   padding: 20px;
   height: 100vh; }
