@@ -10,7 +10,7 @@ You can programmatically fetch the data from the data repository (data.covid19ja
 
 See below in [Data Formats](#data-formats) for details on each of these files.
 
-This data is sourced manually through many different sources and aggregated in a [Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRj0RcpTglCmtDVP1RRx21ZwteYU2Y_8JExoeIVbMG1onsmHHah3DwI2HwunY8FOU3eqme82th_hYWF/pubhtml). Sources include Ministry of Health Labour and Workforce (MHLW), Prefectural governments, City governments and Japanese news sources. Our spreadsheet aggregates data into a consistent format and reconciles [discrepancies](#data-discrepancies).
+This data is sourced manually through many different sources and aggregated in a [Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRj0RcpTglCmtDVP1RRx21ZwteYU2Y_8JExoeIVbMG1onsmHHah3DwI2HwunY8FOU3eqme82th_hYWF/pubhtml). Sources include the Ministry of Health Labour and Workforce (MHLW), Prefectural governments, City governments and Japanese news sources. Our spreadsheet aggregates data into a consistent format and reconciles [discrepancies](#data-discrepancies).
 
 Data exported on `data.covid19japan.com` is updated every 15 minutes. If you have a question about the data formats, please file an issue on this repository.
 
@@ -249,7 +249,7 @@ data that we use to cross check and verify.
 | Kyoto - Muko | [市内の新型コロナウイルス感染状況について](https://www.city.muko.kyoto.jp/kurashi/kinkyu/1585565517890.html) ||
 |Mie    |[新型コロナウイルス感染症に関連した肺炎患者の発生について](https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066.htm)||
 |Miyagi    | [県内における発生状況等について](https://www.pref.miyagi.jp/site/covid-19/02.html)|| Updated daily |
-｜Miyagi - Sendai | [仙台市内の感染者の発生状況](https://www.city.sendai.jp/kikikanri/kinkyu/200131corona2.html) ||
+|Miyagi - Sendai | [仙台市内の感染者の発生状況](https://www.city.sendai.jp/kikikanri/kinkyu/200131corona2.html) ||
 |Miyazaki    |[新型コロナウイルス感染症患者](https://www.pref.miyazaki.lg.jp/kenko/hoken/kansensho/covid19/hassei.html)||
 |Nagano    | [新型コロナウイルス感染症に係る検査状況について](https://www.pref.nagano.lg.jp/koho/koho/pressreleases/2004happyoshiryo.html)|  | Very little data, check MHLW |
 |Nagano - Nagano City | [新型コロナウイルス感染症患者の発生について](https://www.city.nagano.nagano.jp/site/covid19-joho/449132.html) ||
@@ -291,9 +291,9 @@ data that we use to cross check and verify.
 | Tokyo | [stopcovid19.metro.tokyo.lg.jp](https://stopcovid19.metro.tokyo.lg.jp/en/) |
 
 
-# Data Discrepencies
+# Data Discrepancies
 
-Our data can sometimes disagree with MHLW or prefectural governments because of different policies we are using to input the data. Here are our known discrepencies and why:
+Our data can sometimes disagree with MHLW or prefectural governments because of different policies we are using to input the data. Here are our known discrepancies and why:
 
 * National death counts. We are counting more deaths than MHLW. Our death counts are aligned with NHK's reporting. We are unclear why MHLW is reporting less deaths.
 * Recovery counts. This number is only available in aggregate on a national level from MHLW. Some prefectures report this per patient, some report it in aggregate but there is not consistency in this number. 
