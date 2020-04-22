@@ -59,7 +59,7 @@ const generateDailySummary = (patients, manualDailyData) => {
     if (patient.confirmedPatient) {
       dailySummary[dateAnnounced].confirmed += 1
     }
-    if (patient.status == 'Deceased') {
+    if (patient.patientStatus == 'Deceased') {
       dailySummary[dateAnnounced].deceased += 1
     }
   }
