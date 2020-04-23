@@ -4579,7 +4579,7 @@
     {
       "confirmed": 119,
       "cruisePassenger": 0,
-      "deaths": 4,
+      "deaths": 5,
       "confirmedByCity": {
         "Fukui": 16,
         "Echizen": 7,
@@ -4811,10 +4811,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeathsStartDate": "2020-01-08",
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "recovered": 26,
       "name_ja": "福井県",
@@ -12965,7 +12965,21 @@
       "confirmedCumulativeAvg3d": 11525,
       "confirmedAvg7d": 454,
       "confirmedCumulativeAvg7d": 10699
+    },
+    {
+      "confirmed": 0,
+      "deceased": 1,
+      "recoveredCumulative": 1424,
+      "deceasedCumulative": 279,
+      "criticalCumulative": 241,
+      "testedCumulative": 130587,
+      "date": "2020-04-23",
+      "confirmedCumulative": 11952,
+      "confirmedAvg3d": 263,
+      "confirmedCumulativeAvg3d": 11788,
+      "confirmedAvg7d": 374,
+      "confirmedCumulativeAvg7d": 11073
     }
   ],
-  "updated": "2020-04-23T10:31:56+09:00"
+  "updated": "2020-04-23T12:31:58+09:00"
 }
