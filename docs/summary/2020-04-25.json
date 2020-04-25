@@ -768,7 +768,7 @@
     {
       "confirmed": 789,
       "cruisePassenger": 2,
-      "deaths": 21,
+      "deaths": 22,
       "confirmedByCity": {
         "Chiba": 4,
         "Ichikawa": 44,
@@ -1038,10 +1038,10 @@
         0,
         2,
         3,
-        0
+        1
       ],
       "dailyDeathsStartDate": "2020-01-08",
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 3,
       "recovered": 95,
       "name_ja": "千葉県",
@@ -13203,9 +13203,9 @@
     },
     {
       "confirmed": 170,
-      "deceased": 3,
+      "deceased": 4,
       "recoveredCumulative": 1656,
-      "deceasedCumulative": 317,
+      "deceasedCumulative": 318,
       "criticalCumulative": 287,
       "testedCumulative": 147454,
       "date": "2020-04-25",
@@ -13216,5 +13216,5 @@
       "confirmedCumulativeAvg7d": 11896
     }
   ],
-  "updated": "2020-04-25T18:17:07+09:00"
+  "updated": "2020-04-25T22:32:11+09:00"
 }
