@@ -300,6 +300,12 @@ const sources = {
     dashboard: 'https://shimane-covid19.netlify.app/en'
   },
   shizuoka: {
+    patients: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/hiroyuki-ichikawa/covid19/development/data/data.json'
+    },
+    source: 'https://github.com/hiroyuki-ichikawa/covid19',
+    dashboard: 'https://stopcovid19.code4numazu.org/en',
     hanamatsu: {
       patients: {
         url: 'https://opendata.pref.shizuoka.jp/dataset/8113/resource/44704/221309_hamamatsu_covid19_patients.csv'
