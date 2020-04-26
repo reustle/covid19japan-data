@@ -267,11 +267,11 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
   })
 
   // Incorporate cruise ship patients.
-  // if (cruiseCounts) {
-  //   let cruiseSummaries = generateCruiseShipPrefectureSummary(cruiseCounts)    
-  //   prefectureSummary['Nagasaki Cruise Ship'] = cruiseSummaries.nagasakiCruise
-  //   prefectureSummary['Diamond Princess Cruise Ship'] = cruiseSummaries.diamondPrincess
-  // }
+  if (cruiseCounts) {
+    let cruiseSummaries = generateCruiseShipPrefectureSummary(cruiseCounts)    
+    prefectureSummary['Nagasaki Cruise Ship'] = cruiseSummaries.nagasakiCruise
+    prefectureSummary['Diamond Princess Cruise Ship'] = cruiseSummaries.diamondPrincess
+  }
 
   const prefecturesEn = allPrefectures()
 
@@ -308,41 +308,50 @@ const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
   nagasakiCruise.name = 'Nagasaki Cruise Ship'
   nagasakiCruise.name_ja = '長崎のクルーズ船'
 
-
   let diamondPrincessConfirmedCounts = [0]
   let diamondPrincessDeceasedCounts = [0]
   let nagasakiConfirmedCounts = [0]
   let nagasakiDeceasedCounts = [0]
+  let diamondPrincessLastConfirmed = 0
+  let diamondPrincessLastDeceased = 0
+  let nagasakiLastConfirmed = 0
+  let nagasakiLastDeceased = 0
+
 
   // Generate per-day increment data.
   const firstDay = moment('2020-02-04')
   const lastDay = moment().utcOffset(540)
   let day = moment(firstDay)
   let cruiseCountsByDay = _.fromPairs(_.map(cruiseCounts, o => { return [o.date, o] }))
+
   while (day <= lastDay) {
     let dateString = day.format('YYYY-MM-DD')
     let row = cruiseCountsByDay[dateString]
     if (row) {
       if (row.dpConfirmed) {
-        let diff = safeParseInt(row.dpConfirmed) - _.last(diamondPrincessConfirmedCounts)
+        let diff = safeParseInt(row.dpConfirmed) - diamondPrincessLastConfirmed
+        diamondPrincessLastConfirmed = safeParseInt(row.dpConfirmed)
         diamondPrincessConfirmedCounts.push(diff)
       } else {
         diamondPrincessConfirmedCounts.push(0)
       }
       if (row.dpDeceased) {
-        let diff = safeParseInt(row.dpDeceased) - _.last(diamondPrincessDeceasedCounts)
+        let diff = safeParseInt(row.dpDeceased) - diamondPrincessLastDeceased
+        diamondPrincessLastDeceased = safeParseInt(row.dpDeceased)
         diamondPrincessDeceasedCounts.push(diff)
       } else {
         diamondPrincessDeceasedCounts.push(0)
       }    
       if (row.nagasakiConfirmed) {
-        let diff = safeParseInt(row.nagasakiConfirmed) - _.last(nagasakiConfirmedCounts)
+        let diff = safeParseInt(row.nagasakiConfirmed) - nagasakiLastConfirmed
+        nagasakiLastConfirmed = safeParseInt(row.nagasakiConfirmed)
         nagasakiConfirmedCounts.push(diff)
       } else {
         nagasakiConfirmedCounts.push(0)
       }
       if (row.nagasakiDeceased) {
-        let diff = safeParseInt(row.nagasakiDeceased) - _.last(nagasakiDeceasedCounts)
+        let diff = safeParseInt(row.nagasakiDeceased) - nagasakiLastDeceased
+        nagasakiLastDeceased = safeParseInt(row.nagasakiDeceased)
         nagasakiDeceasedCounts.push(diff)
       } else {
         nagasakiDeceasedCounts.push(0)
@@ -365,6 +374,27 @@ const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
   nagasakiCruise.dailyConfirmedStartDate = firstDay.format('YYYY-MM-DD')
   nagasakiCruise.dailyDeceasedCount = nagasakiDeceasedCounts
   nagasakiCruise.dailyDeceasedStartDate = firstDay.format('YYYY-MM-DD')
+
+  diamondPrincess.newlyConfirmed = diamondPrincessConfirmedCounts[diamondPrincessConfirmedCounts.length - 1]
+  if (diamondPrincessConfirmedCounts.length > 2) {
+    diamondPrincess.yesterdayConfirmed = diamondPrincessConfirmedCounts[diamondPrincessConfirmedCounts.length - 2]
+  }
+
+  diamondPrincess.newlyDeceased = diamondPrincessDeceasedCounts[diamondPrincessDeceasedCounts.length - 1]
+  if (diamondPrincessDeceasedCounts.length > 2) {
+    diamondPrincess.newlyDeceased = diamondPrincessDeceasedCounts[diamondPrincessDeceasedCounts.length - 2]
+  }
+
+  nagasakiCruise.newlyConfirmed = nagasakiConfirmedCounts[nagasakiConfirmedCounts.length - 1]
+  if (nagasakiConfirmedCounts.length > 2) {
+    nagasakiCruise.yesterdayConfirmed = nagasakiConfirmedCounts[nagasakiConfirmedCounts.length - 2]
+  }
+
+  nagasakiCruise.newlyDeceased = nagasakiDeceasedCounts[nagasakiDeceasedCounts.length - 1]
+  if (nagasakiDeceasedCounts.length > 2) {
+    nagasakiCruise.newlyDeceased = nagasakiDeceasedCounts[nagasakiDeceasedCounts.length - 2]
+  }
+
 
   // Take the last row of data and use that as the total for the prefecture.
   const latestRow = _.last(cruiseCounts)
