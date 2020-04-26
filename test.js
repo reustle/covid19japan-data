@@ -1,5 +1,7 @@
 const fs = require('fs')
 const _ = require('lodash')
+const Papa = require('papaparse')
+
 
 const prefectureLookup = _.fromPairs(_.map([
   "愛知県	Aichi",
@@ -57,4 +59,13 @@ const prefectureLookup = _.fromPairs(_.map([
 // console.log(_.sortBy(_.map(osakaPatients, o => { return [o.dateAnnounced, o.deceasedDate] })))
 // console.log(`Count: ${osakaPatients.length}`)
 
-_.forEach(_.sortBy(_.toPairs(prefectureLookup), v => v[1]), o => { console.log(`${o[1]},${o[0]}`)})
+_.forEach(_.sortBy(_.toPairs(prefectureLookup), v => v[1]), o => { console.log(`${o[1]},"${o[0]}"`)})
+
+
+const allPrefectures = () => {
+  let prefecturesCsv = fs.readFileSync('./src/datasources/prefectures.csv', 'utf8')
+  let prefecturesList = Papa.parse(prefecturesCsv, {header: true})
+  return _.map(prefecturesList.data, o => o.prefecture_en)
+}
+
+console.log(allPrefectures())
