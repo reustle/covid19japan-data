@@ -2,11 +2,17 @@
 const _ = require('lodash')
 const moment = require('moment')
 const Papa = require('papaparse')
+const fs = require('fs')
 
 const verify = require('./verify.js')
 
 const CRUISE_PASSENGER_DISEMBARKED = /^Cruise Disembarked Passenger/
-const PREFECTURES_EN = _.map(Papa.parse('./datasources/prefectures.csv', {header: true}), o => o.prefecture_en)
+
+const allPrefectures = () => {
+  let prefecturesCsv = fs.readFileSync('./src/datasources/prefectures.csv', 'utf8')
+  let prefecturesList = Papa.parse(prefecturesCsv, {header: true})
+  return _.map(prefecturesList.data, o => o.prefecture_en)
+}
 
 // Merge all the data from the spreadsheet with auto-calculation
 //
@@ -261,9 +267,11 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
     prefectureSummary['Diamond Princess Cruise Ship'] = cruiseSummaries.diamondPrincess
   }
 
+  const prefecturesEn = allPrefectures()
+
   // Mark pseudo-prefectures as such (e.g. Unspecified, Port of Entry, Diamond Princess, Nagasaki Cruise Ship)
   prefectureSummary = _.mapValues(prefectureSummary, (v, k) => {
-    if (PREFECTURES_EN.indexOf(k) == -1) {
+    if (prefecturesEn.indexOf(k) == -1) {
       v.pseudoPrefecture = true
     }
     return v
