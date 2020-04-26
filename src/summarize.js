@@ -19,7 +19,7 @@ const PREFECTURES_EN = _.map(Papa.parse('./datasources/prefectures.csv', {header
 const summarize = (patientData, manualDailyData, manualPrefectureData, cruiseCounts, lastUpdated) => {
   const patients = _.orderBy(patientData, ['dateAnnounced'], ['asc'])
   let prefectureSummary = generatePrefectureSummary(patients, manualPrefectureData, cruiseCounts)
-  let dailySummary = generateDailySummary(patients, manualDailyData)
+  let dailySummary = generateDailySummary(patients, manualDailyData, cruiseCounts)
 
   return {
     prefectures: prefectureSummary,
@@ -39,7 +39,7 @@ const safeParseInt = v => {
 }
 
 // Generates the daily summary
-const generateDailySummary = (patients, manualDailyData) => {
+const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
   let dailySummary = {}
   for (let patient of patients) {
     let dateAnnounced = patient.dateAnnounced
@@ -50,10 +50,16 @@ const generateDailySummary = (patients, manualDailyData) => {
       dailySummary[dateAnnounced] = {
         confirmed: 0,
         deceased: 0,
+        confirmedCumulative: 0,
         recoveredCumulative: 0,
         deceasedCumulative: 0,
         criticalCumulative: 0,
-        testedCumulative: 0
+        testedCumulative: 0,
+        cruiseConfirmedCumulative: 0,
+        cruiseDeceasedCumulative: 0,
+        cruiseRecoveredCumulative: 0,
+        cruiseTestedCumulative: 0,
+        cruiseCriticalCumulative: 0,
       }
     }
 
@@ -66,14 +72,24 @@ const generateDailySummary = (patients, manualDailyData) => {
   }
 
   // merge manually sourced data
-  // TODO: deceased, critical should be pulled out of our patient
+  // TODO: critical should be pulled out of our patient
   //       data. But those numbers are incomplete.
   for (let row of manualDailyData) {
     if (dailySummary[row.date]) {
       dailySummary[row.date].recoveredCumulative = safeParseInt(row.recovered)
-      //dailySummary[row.date].deceasedCumulative = safeParseInt(row.deceased)
       dailySummary[row.date].criticalCumulative = safeParseInt(row.critical)
       dailySummary[row.date].testedCumulative = safeParseInt(row.tested)
+    }
+  }
+
+  // merge cruise ship data
+  for (let row of cruiseCounts) {
+    if (dailySummary[row.date]) {
+      dailySummary[row.date].cruiseConfirmedCumulative = safeParseInt(row.dpConfirmed) + safeParseInt(row.nagasakiConfirmed)
+      dailySummary[row.date].cruiseCriticalCumulative = safeParseInt(row.dpCritical) + safeParseInt(row.nagasakiCritical)
+      dailySummary[row.date].cruiseTestedCumulative = safeParseInt(row.dpTested) + safeParseInt(row.nagasakiTested)
+      dailySummary[row.date].cruiseDeceasedCumulative = safeParseInt(row.dpDeceased) + safeParseInt(row.nagasakiDeceased)
+      dailySummary[row.date].cruiseRecoveredCumulative = safeParseInt(row.dpRecovered) + safeParseInt(row.nagasakiRecovered)
     }
   }
 
@@ -113,21 +129,25 @@ const generateDailySummary = (patients, manualDailyData) => {
     dailySum.confirmedCumulativeAvg7d = confirmedCumulativeAvg7d
   }
   
+  const cumulativeKeys = [
+    'recoveredCumulative',
+    'deceasedCumulative',
+    'criticalCumulative',
+    'testedCumulative',
+    'cruiseConfirmedCumulative',
+    'cruiseDeceasedCumulative',
+    'cruiseCriticalCumulative',
+    'cruiseTestedCumulative',
+    'cruiseRecoveredCumulative'
+  ]
   // For dates we don't have any manually entered data, pass those forward.
   for (let i = 1; i < orderedDailySummary.length; i++) {
     let thisDay = orderedDailySummary[i]
     let previousDay = orderedDailySummary[i-1]
-    if (thisDay.recoveredCumulative == 0) {
-      thisDay.recoveredCumulative = previousDay.recoveredCumulative
-    }
-    if (thisDay.deceasedCumulative == 0) {
-      thisDay.deceasedCumulative = previousDay.deceasedCumulative
-    }
-    if (thisDay.criticalCumulative == 0) {
-      thisDay.criticalCumulative = previousDay.criticalCumulative
-    }
-    if (thisDay.testedCumulative == 0) {
-      thisDay.testedCumulative = previousDay.testedCumulative
+    for (let key of cumulativeKeys) {
+      if (thisDay[key] == 0) {
+        thisDay[key] = previousDay[key]
+      }
     }
   }
 
