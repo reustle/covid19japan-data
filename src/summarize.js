@@ -157,7 +157,7 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
     }
   }
 
-  // For backwards compatibility, include deaths field.
+  // For backwards compatibility, include deaths field. (Remove after 5/1)
   for (let i = 1; i < orderedDailySummary.length; i++) {
     let thisDay = orderedDailySummary[i]
     thisDay.deaths = thisDay.deceased
@@ -282,6 +282,13 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
     }
     return v
   })
+
+  // Backwards-compatiblilty deaths -> deceased (remove after 5/1)
+  prefectureSummary = _.mapValues(prefectureSummary, (v, k) => {
+    v.deaths = v.deceased
+    return v
+  })
+
 
   return _.map(
     _.reverse(
