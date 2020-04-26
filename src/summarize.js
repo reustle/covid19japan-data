@@ -303,7 +303,7 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
 const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
   let diamondPrincess = _.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
   diamondPrincess.name = 'Diamond Princess Cruise Ship'
-  diamondPrincess.name_ja = 'クルーズ船'
+  diamondPrincess.name_ja = 'ダイヤモンド・プリンセス'
   let nagasakiCruise = _.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
   nagasakiCruise.name = 'Nagasaki Cruise Ship'
   nagasakiCruise.name_ja = '長崎のクルーズ船'
