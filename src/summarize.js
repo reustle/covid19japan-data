@@ -267,11 +267,11 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
   })
 
   // Incorporate cruise ship patients.
-  if (cruiseCounts) {
-    let cruiseSummaries = generateCruiseShipPrefectureSummary(cruiseCounts)    
-    prefectureSummary['Nagasaki Cruise Ship'] = cruiseSummaries.nagasakiCruise
-    prefectureSummary['Diamond Princess Cruise Ship'] = cruiseSummaries.diamondPrincess
-  }
+  // if (cruiseCounts) {
+  //   let cruiseSummaries = generateCruiseShipPrefectureSummary(cruiseCounts)    
+  //   prefectureSummary['Nagasaki Cruise Ship'] = cruiseSummaries.nagasakiCruise
+  //   prefectureSummary['Diamond Princess Cruise Ship'] = cruiseSummaries.diamondPrincess
+  // }
 
   const prefecturesEn = allPrefectures()
 
