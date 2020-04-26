@@ -44,6 +44,21 @@ const safeParseInt = v => {
   return result
 }
 
+const DAILY_SUMMARY_TEMPLATE = {
+  confirmed: 0,
+  deceased: 0,
+  confirmedCumulative: 0,
+  recoveredCumulative: 0,
+  deceasedCumulative: 0,
+  criticalCumulative: 0,
+  testedCumulative: 0,
+  cruiseConfirmedCumulative: 0,
+  cruiseDeceasedCumulative: 0,
+  cruiseRecoveredCumulative: 0,
+  cruiseTestedCumulative: 0,
+  cruiseCriticalCumulative: 0,
+}
+
 // Generates the daily summary
 const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
   let dailySummary = {}
@@ -52,28 +67,21 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
     if (!patient.dateAnnounced) {
       continue
     }
-    if (!dailySummary[dateAnnounced]) {
-      dailySummary[dateAnnounced] = {
-        confirmed: 0,
-        deceased: 0,
-        confirmedCumulative: 0,
-        recoveredCumulative: 0,
-        deceasedCumulative: 0,
-        criticalCumulative: 0,
-        testedCumulative: 0,
-        cruiseConfirmedCumulative: 0,
-        cruiseDeceasedCumulative: 0,
-        cruiseRecoveredCumulative: 0,
-        cruiseTestedCumulative: 0,
-        cruiseCriticalCumulative: 0,
-      }
-    }
-
+   
     if (patient.confirmedPatient) {
+      if (!dailySummary[dateAnnounced]) {
+        dailySummary[dateAnnounced] = _.assign({}, DAILY_SUMMARY_TEMPLATE)
+      } 
       dailySummary[dateAnnounced].confirmed += 1
     }
     if (patient.patientStatus == 'Deceased') {
-      dailySummary[dateAnnounced].deceased += 1
+      let dateDeceased = patient.deceasedDate
+      if (dateDeceased) {
+        if (!dailySummary[dateDeceased]) {
+          dailySummary[dateDeceased] = _.assign({}, DAILY_SUMMARY_TEMPLATE)
+        } 
+        dailySummary[dateDeceased].deceased += 1
+      }
     }
   }
 
