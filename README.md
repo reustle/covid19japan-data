@@ -89,73 +89,107 @@ Top level objects:
 | daily | List of Dict | Each dict represents the summary of the single day |
 | lastUpdated| ISO timestamp | Time stamp (in JST) of when the data was updated. |
 
-Prefecture Summary:
+#### Prefecture Summary:
 
-List of 
+List of per-prefecture summaries. This list includes both actual prefectures and pseudo-prefectures
+such as "Unspecified", "Port of Entry", "Diamond Princess Cruise Ship" and "Nagasaki Cruise Ship". 
+
+Those pseudo-prefectures will have the flag "pseudoPrefecture" set to true if you need to filter them out.
 
 ``` json
 [
-    {
-      "name": "Aichi",
-      "summary": {
-        "count": 155,
-        "cruisePassenger": 0,
-        "deaths": 12,
-        "progression": [],
-        "cityCounts": {
-          "Nagoya": 108,
-          "Owari": 11,
-          "Gamagori, Mikawa": 4,
-          "Mikawa": 1,
-          "Okazaki": 3,
-          "Ichinomiya": 3,
-          "Toyota": 1,
-          "Handa": 1,
-          "Kiyosu": 1,
-          "Taketoyo": 1,
-          "Kasugai": 1,
-          "Konan": 1,
-          "Chita": 2,
-          "Toyokawa": 1
-        }
-      }
+   {
+      "confirmed": 3840,
+      "deceased": 89,
+      "recovered": 59,
+      "confirmedByCity": {
+        "Tokyo": 62,
+        "Suginami": 1,
+        "Adachi": 3,
+        "Nerima": 1
+      },
+      "dailyConfirmedCount": [ ... 123, 132, 134, 161, 103],
+      "dailyConfirmedStartDate": "2020-01-08",
+      "newlyConfirmed": 0,
+      "yesterdayConfirmed": 103,
+      "dailyDeathCount": [0, 0, ... ],
+      "dailyDeathsStartDate": "2020-01-08",
+      "newlyDeceased": 0,
+      "yesterdayDeceased": 0,
+      "name_ja": "東京都",
+      "name": "Tokyo"
     },
 ]    
 ```
 
-List is sorted by summary.count.
+List is sorted by `confirmed`
 
 | Field | Values | Description |
 | ----- | ------ | ----------- |
-| count | Numeric | Total infected count |
-| cruisePassenger | Numeric | Total number of cruise passengers |
-| deaths | Numeric | Total number of deaths |
+| name | String | English name of prefecture |
+| name_ja | String | Japanese name of prefecture |
+| pseudoPrefecture | boolean | True if this is not a real prefecture but a grouping of patients (e.g. Diamond Princess Cruise Ship) |
+| confirmed | Numeric | Total infected count |
+| deceased | Numeric | Total number of deaths |
 | recovered | Numeric | Total number of recovered patients |
-| critical | Numeric | Total number of patients in critical condition (respirators) |
-| cityCounts | Object | Keys are individual cites and their total infected counts |
+| confirmedByCity | Object | Keys are individual cites and their total infected counts |
+| dailyConfirmedCount | Array of Int | Daily confirmed for each day from dailyConfirmedStartDate |
+| dailyConfirmedStartDate | String | YYYY-MM-DD string that represents the day the dailyConfirmedCount's first entry was recorded on |
+| newlyConfirmed | Numeric | Number of confirmed cases for today |
+| yesterdayConfirmed | Numeric | Number of confirmed cases for yesterday |
+| dailyDeathCount | Array of Int | Daily deaths for each day from dailyConfirmedStartDate |
+| dailyDeathStartDate | String | YYYY-MM-DD string that represents the day the dailyDeathCount's first entry was recorded on |
+| newlyDeceased | Numeric | Number of deaths for today |
+| yesterdayDeceased | Numeric | Number of deaths cases for yesterday |
+
+
 
 Day by day summary:
 
 ```
-  {
-      "confirmed": 16,
-      "recoveredCumulative": 372,
-      "deceasedCumulative": 53,
-      "criticalCumulative": 56,
-      "testedCumulative": 27005,
-      "date": "2020-03-28",
-      "confirmedCumulative": 1525
-    }
+   {
+      "confirmed": 367,
+      "deceased": 16,
+      "confirmedCumulative": 12769,
+      "recoveredCumulative": 1530,
+      "deceasedCumulative": 315,
+      "criticalCumulative": 263,
+      "testedCumulative": 141600,
+      "cruiseConfirmedCumulative": 803,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 645,
+      "cruiseTestedCumulative": 4559,
+      "cruiseCriticalCumulative": 5,
+      "date": "2020-04-24",
+      "confirmedAvg3d": 402,
+      "confirmedCumulativeAvg3d": 12352,
+      "confirmedAvg7d": 411,
+      "confirmedCumulativeAvg7d": 11560,
+      "deaths": 16
+    },
 ```
 
 | Field | Values | Description |
 | ----- | ------ | ----------- |
 | date | String | Date |
 | confirmed | Numeric | Number of confirmed cases on that day |
-| confirmedCumulative | Numeric | Total number of confirmed cases accumulated up to this day (including today) |
-| recoveredCumulative | Numeric | Total number of recovered patients accumulated up to this day (including today) |
-| criticalCumulative | Numeric | Total number of critical patients accumulated up to this day (including today) |
-| deceasedCumulative | Numeric | Total number of deaths accumulated up to this day (including today) |
+| deceased | Numeric | Number of deaths on that day (replaces deprecated field: deaths) |
+| confirmedCumulative | Numeric | Total number of confirmed cases accumulated up and including this day (excluding Cruise Ships - see cruiseConfirmedCumulative)) |
+| recoveredCumulative | Numeric | Total number of recovered patients accumulated up and including this day (excluding Cruise Ships - see cruiseRecoveredCumulative) |
+| criticalCumulative | Numeric | Total number of critical patients accumulated up and including this day (excluding Cruise Ships - see cruiseDeceasedCumulative) |
+| deceasedCumulative | Numeric | Total number of deaths accumulated up and including this day (excluding Cruise Ships - see cruiseDeceasedCumulative) |
+| testedCumulative | Numeric | Total number of tested accumulated up and including this day (excluding Cruise Ships - see cruiseTestedCumulative) |
+| cruiseConfirmedCumulative | Numeric | Total number of confirmed cases onboard the Diamond Princess and Nagasaki Cruise Ships accumulated up and including this day. (Does not include disembarked passengers who later tested positive) |
+| cruiseDeceasedCumulative | Numeric | Total number of recovered patients onboard the Diamond Princess and Nagasaki Cruise Ships accumulated up and including this day. (Does not include disembarked passengers who later tested positive) |
+| cruiseCriticalCumulative | Numeric | Total number of critical patients onboard the Diamond Princess and Nagasaki Cruise Ships accumulated up and including this day. (Does not include disembarked passengers who later tested positive) |
+| cruiseRecoveredCumulative | Numeric | Total number of recoveries onboard the Diamond Princess and Nagasaki Cruise Ships accumulated up and including this day. (Does not include disembarked passengers who later tested positive) |
+| cruiseTestedCumulative | Numeric | Total number of tests onboard the Diamond Princess and Nagasaki Cruise Ships accumulated up and including this day. (Does not include disembarked passengers who later tested positive) |
+| confirmedAvg3d | Numeric | Rolling 3-day average of confirmed |
+| confirmedCumlativeAvg3d | Numeric | Rolling 3-day average of confirmedCumulative |
+| confirmedAvg7d | Numeric | Rolling 7-day average of confirmed |
+| confirmedCumlativeAvg7d | Numeric | Rolling 7-day average of confirmedCumulative |
+
+All the counts, except for the `cruise*Cumulative` fields do not include any cruise ship workers and passengers. 
 
 ### docs/tokyo/counts.json
 

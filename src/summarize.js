@@ -157,6 +157,12 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
     }
   }
 
+  // For backwards compatibility, include deaths field.
+  for (let i = 1; i < orderedDailySummary.length; i++) {
+    let thisDay = orderedDailySummary[i]
+    thisDay.deaths = thisDay.deceased
+  }
+
   orderedDailySummary = verify.verifyDailySummary(orderedDailySummary)
   return orderedDailySummary
 }
@@ -170,9 +176,9 @@ const PREFECTURE_SUMMARY_TEMPLATE = {
   dailyConfirmedStartDate: null,
   newlyConfirmed: 0,
   yesterdayConfirmed: 0,
-  dailyDeathCount: [],
-  dailyDeathsStartDate: null,
-  deaths: 0,
+  dailyDeceasedCount: [],
+  dailyDeceasedStartDate: null,
+  deceased: 0,
   cruisePassenger: 0,
   recovered: 0,
   critical: 0,
@@ -218,7 +224,7 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
     }
 
     if (patient.patientStatus == 'Deceased') {
-      prefectureSummary[prefectureName].deaths += 1
+      prefectureSummary[prefectureName].deceased += 1
     }
 
     prefectureSummary[prefectureName].patients.push(patient)
@@ -237,8 +243,8 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
       }
     }
     if (daily.deaths && daily.deaths.length) {
-      prefecture.dailyDeathCount = daily.deaths
-      prefecture.dailyDeathsStartDate = firstDay.format('YYYY-MM-DD')
+      prefecture.dailyDeceasedCount = daily.deaths
+      prefecture.dailyDeceasedStartDate = firstDay.format('YYYY-MM-DD')
       prefecture.newlyDeceased = daily.deaths[daily.deaths.length - 1]
       if (daily.deaths.length > 2) {
         prefecture.yesterdayDeceased = daily.deaths[daily.deaths.length - 2]
@@ -297,14 +303,14 @@ const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
 
 
   let diamondPrincessConfirmedCounts = [0]
-  let diamondPrincessDeathCounts = [0]
+  let diamondPrincessDeceasedCounts = [0]
   let nagasakiConfirmedCounts = [0]
-  let nagasakiDeathCounts = [0]
+  let nagasakiDeceasedCounts = [0]
 
   // Generate per-day increment data.
   const firstDay = moment('2020-02-04')
   const lastDay = moment().utcOffset(540)
-  let day = firstDay
+  let day = moment(firstDay)
   let cruiseCountsByDay = _.fromPairs(_.map(cruiseCounts, o => { return [o.date, o] }))
   while (day <= lastDay) {
     let dateString = day.format('YYYY-MM-DD')
@@ -317,10 +323,10 @@ const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
         diamondPrincessConfirmedCounts.push(0)
       }
       if (row.dpDeceased) {
-        let diff = safeParseInt(row.dpDeceased) - _.last(diamondPrincessDeathCounts)
-        diamondPrincessDeathCounts.push(diff)
+        let diff = safeParseInt(row.dpDeceased) - _.last(diamondPrincessDeceasedCounts)
+        diamondPrincessDeceasedCounts.push(diff)
       } else {
-        diamondPrincessDeathCounts.push(0)
+        diamondPrincessDeceasedCounts.push(0)
       }    
       if (row.nagasakiConfirmed) {
         let diff = safeParseInt(row.nagasakiConfirmed) - _.last(nagasakiConfirmedCounts)
@@ -329,29 +335,29 @@ const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
         nagasakiConfirmedCounts.push(0)
       }
       if (row.nagasakiDeceased) {
-        let diff = safeParseInt(row.nagasakiDeceased) - _.last(nagasakiDeathCounts)
-        nagasakiDeathCounts.push(diff)
+        let diff = safeParseInt(row.nagasakiDeceased) - _.last(nagasakiDeceasedCounts)
+        nagasakiDeceasedCounts.push(diff)
       } else {
-        nagasakiDeathCounts.push(0)
+        nagasakiDeceasedCounts.push(0)
       }
     } else {
       // no data.
       diamondPrincessConfirmedCounts.push(0)
-      diamondPrincessDeathCounts.push(0)
+      diamondPrincessDeceasedCounts.push(0)
       nagasakiConfirmedCounts.push(0)
-      nagasakiDeathCounts.push(0)
+      nagasakiDeceasedCounts.push(0)
     }
     day = day.add(1, 'day')
   }
 
   diamondPrincess.dailyConfirmedCount = diamondPrincessConfirmedCounts
   diamondPrincess.dailyConfirmedStartDate = firstDay.format('YYYY-MM-DD')
-  diamondPrincess.dailyDeathCount = diamondPrincessDeathCounts
-  diamondPrincess.dailyDeathStartDate = firstDay.format('YYYY-MM-DD')
+  diamondPrincess.dailyDeceasedCount = diamondPrincessDeceasedCounts
+  diamondPrincess.dailyDeceasedStartDate = firstDay.format('YYYY-MM-DD')
   nagasakiCruise.dailyConfirmedCount = nagasakiConfirmedCounts
   nagasakiCruise.dailyConfirmedStartDate = firstDay.format('YYYY-MM-DD')
-  nagasakiCruise.dailyDeathCount = nagasakiDeathCounts
-  nagasakiCruise.dailyDeathStartDate = firstDay.format('YYYY-MM-DD')
+  nagasakiCruise.dailyDeceasedCount = nagasakiDeceasedCounts
+  nagasakiCruise.dailyDeceasedStartDate = firstDay.format('YYYY-MM-DD')
 
   // Take the last row of data and use that as the total for the prefecture.
   const latestRow = _.last(cruiseCounts)
