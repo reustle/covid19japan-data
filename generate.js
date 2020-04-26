@@ -43,6 +43,7 @@ const generateLastUpdated = async (patients) => {
 const fetchAndSummarize = async (dateString) => {
   const daily = await FetchSheet.fetchRows('Sum By Day')
   const prefectures = await FetchSheet.fetchRows('Prefecture Data')
+  const cruiseCounts = await FetchSheet.fetchRows('Cruise Sum By Day')
 
   // Merge multiple patient lists.
   const patientListFetches = [
@@ -66,7 +67,7 @@ const fetchAndSummarize = async (dateString) => {
           fs.writeFileSync(patientOutputFilename, JSON.stringify(patients, null, '  '))
 
           // Write daily and prefectural summary.
-          const summary = Summarize.summarize(patients, daily, prefectures, lastUpdated)
+          const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, lastUpdated)
           const summaryOutputFilename = `./docs/summary/${dateString}.json`
           fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
 

@@ -1,11 +1,12 @@
 // Summarizes data for site.
 const _ = require('lodash')
 const moment = require('moment')
+const Papa = require('papaparse')
 
 const verify = require('./verify.js')
 
-
 const CRUISE_PASSENGER_DISEMBARKED = /^Cruise Disembarked Passenger/
+const PREFECTURES_EN = _.map(Papa.parse('./datasources/prefectures.csv', {header: true}), o => o.prefecture_en)
 
 // Merge all the data from the spreadsheet with auto-calculation
 //
@@ -15,9 +16,9 @@ const CRUISE_PASSENGER_DISEMBARKED = /^Cruise Disembarked Passenger/
 // lastUpdated: String representing when the data was last updated.
 //
 // @returns A dictionary with the prefecture and daily summaries.
-const summarize = (patientData, manualDailyData, manualPrefectureData, lastUpdated) => {
+const summarize = (patientData, manualDailyData, manualPrefectureData, cruiseCounts, lastUpdated) => {
   const patients = _.orderBy(patientData, ['dateAnnounced'], ['asc'])
-  let prefectureSummary = generatePrefectureSummary(patients, manualPrefectureData)
+  let prefectureSummary = generatePrefectureSummary(patients, manualPrefectureData, cruiseCounts)
   let dailySummary = generateDailySummary(patients, manualDailyData)
 
   return {
@@ -135,27 +136,44 @@ const generateDailySummary = (patients, manualDailyData) => {
 }
 
 
+
+
+const PREFECTURE_SUMMARY_TEMPLATE = {
+  confirmed: 0,
+  dailyConfirmedCount: [],
+  dailyConfirmedStartDate: null,
+  newlyConfirmed: 0,
+  yesterdayConfirmed: 0,
+  dailyDeathCount: [],
+  dailyDeathsStartDate: null,
+  deaths: 0,
+  cruisePassenger: 0,
+  recovered: 0,
+  critical: 0,
+  tested: 0,
+
+  // These need to be separately reset ...
+  patients: [],
+  confirmedByCity: {},
+}
+
 // Generate the per-prefecture summary, ordered by number of confirmed cases.
 //
 // patients: Patients data from Patient Data spreadsheet.
 // manualPrefectureData: List of rows from the prefecture spreadsheet.
 //
 // @returns prefectureSummary as a dictionary.
-const generatePrefectureSummary = (patients, manualPrefectureData) => {
+const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts) => {
   let prefectureSummary = {}
 
   for (let patient of patients) {
     let prefectureName = patient.detectedPrefecture
     let cityName = patient.detectedCityTown
 
-    if (!prefectureSummary[prefectureName]) {
-      prefectureSummary[prefectureName] = {
-        confirmed: 0,
-        cruisePassenger: 0,
-        deaths: 0,
-        patients: [],
-        confirmedByCity: {}
-      }
+    if (typeof prefectureSummary[prefectureName] === 'undefined') {
+      prefectureSummary[prefectureName] = _.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
+      prefectureSummary[prefectureName].patients = []
+      prefectureSummary[prefectureName].confirmedByCity = {}
     }
 
     if (patient.confirmedPatient) {
@@ -202,7 +220,6 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
     }
   }
 
-
   // Import manual data.
   for (let row of manualPrefectureData) {
     if (prefectureSummary[row.prefecture]) {
@@ -212,8 +229,23 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
   }
 
   // Strip out patients list
-  prefectureSummary = _.mapValues(prefectureSummary, (v, k) => { 
-    delete v['patients']
+  prefectureSummary = _.mapValues(prefectureSummary, (v) => { 
+    let stripped = _.omit(v, 'patients')
+    return stripped 
+  })
+
+  // Incorporate cruise ship patients.
+  if (cruiseCounts) {
+    let cruiseSummaries = generateCruiseShipPrefectureSummary(cruiseCounts)    
+    prefectureSummary['Nagasaki Cruise Ship'] = cruiseSummaries.nagasakiCruise
+    prefectureSummary['Diamond Princess Cruise Ship'] = cruiseSummaries.diamondPrincess
+  }
+
+  // Mark pseudo-prefectures as such (e.g. Unspecified, Port of Entry, Diamond Princess, Nagasaki Cruise Ship)
+  prefectureSummary = _.mapValues(prefectureSummary, (v, k) => {
+    if (PREFECTURES_EN.indexOf(k) == -1) {
+      v.pseudoPrefecture = true
+    }
     return v
   })
 
@@ -224,6 +256,89 @@ const generatePrefectureSummary = (patients, manualPrefectureData) => {
         [ a => a[1].confirmed ])),
     (v) => { let o = v[1]; o.name = v[0]; return o }
   )
+}
+
+// Generates pseudo prefecture summaries for cruise passengers.
+const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
+  let diamondPrincess = _.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
+  diamondPrincess.name = 'Diamond Princess Cruise Ship'
+  diamondPrincess.name_ja = 'クルーズ船'
+  let nagasakiCruise = _.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
+  nagasakiCruise.name = 'Nagasaki Cruise Ship'
+  nagasakiCruise.name_ja = '長崎のクルーズ船'
+
+
+  let diamondPrincessConfirmedCounts = [0]
+  let diamondPrincessDeathCounts = [0]
+  let nagasakiConfirmedCounts = [0]
+  let nagasakiDeathCounts = [0]
+
+  // Generate per-day increment data.
+  const firstDay = moment('2020-02-04')
+  const lastDay = moment().utcOffset(540)
+  let day = firstDay
+  let cruiseCountsByDay = _.fromPairs(_.map(cruiseCounts, o => { return [o.date, o] }))
+  while (day <= lastDay) {
+    let dateString = day.format('YYYY-MM-DD')
+    let row = cruiseCountsByDay[dateString]
+    if (row) {
+      if (row.dpConfirmed) {
+        let diff = safeParseInt(row.dpConfirmed) - _.last(diamondPrincessConfirmedCounts)
+        diamondPrincessConfirmedCounts.push(diff)
+      } else {
+        diamondPrincessConfirmedCounts.push(0)
+      }
+      if (row.dpDeceased) {
+        let diff = safeParseInt(row.dpDeceased) - _.last(diamondPrincessDeathCounts)
+        diamondPrincessDeathCounts.push(diff)
+      } else {
+        diamondPrincessDeathCounts.push(0)
+      }    
+      if (row.nagasakiConfirmed) {
+        let diff = safeParseInt(row.nagasakiConfirmed) - _.last(nagasakiConfirmedCounts)
+        nagasakiConfirmedCounts.push(diff)
+      } else {
+        nagasakiConfirmedCounts.push(0)
+      }
+      if (row.nagasakiDeceased) {
+        let diff = safeParseInt(row.nagasakiDeceased) - _.last(nagasakiDeathCounts)
+        nagasakiDeathCounts.push(diff)
+      } else {
+        nagasakiDeathCounts.push(0)
+      }
+    } else {
+      // no data.
+      diamondPrincessConfirmedCounts.push(0)
+      diamondPrincessDeathCounts.push(0)
+      nagasakiConfirmedCounts.push(0)
+      nagasakiDeathCounts.push(0)
+    }
+    day = day.add(1, 'day')
+  }
+
+  diamondPrincess.dailyConfirmedCount = diamondPrincessConfirmedCounts
+  diamondPrincess.dailyConfirmedStartDate = firstDay.format('YYYY-MM-DD')
+  diamondPrincess.dailyDeathCount = diamondPrincessDeathCounts
+  diamondPrincess.dailyDeathStartDate = firstDay.format('YYYY-MM-DD')
+  nagasakiCruise.dailyConfirmedCount = nagasakiConfirmedCounts
+  nagasakiCruise.dailyConfirmedStartDate = firstDay.format('YYYY-MM-DD')
+  nagasakiCruise.dailyDeathCount = nagasakiDeathCounts
+  nagasakiCruise.dailyDeathStartDate = firstDay.format('YYYY-MM-DD')
+
+  // Take the last row of data and use that as the total for the prefecture.
+  const latestRow = _.last(cruiseCounts)
+  diamondPrincess.confirmed = safeParseInt(latestRow.dpConfirmed)
+  diamondPrincess.recovered = safeParseInt(latestRow.dpRecovered)
+  diamondPrincess.deceased = safeParseInt(latestRow.dpDeceased)
+  diamondPrincess.critical = safeParseInt(latestRow.dpCritical)
+  diamondPrincess.tested = safeParseInt(latestRow.dpTested)
+  nagasakiCruise.confirmed = safeParseInt(latestRow.nagasakiConfirmed)
+  nagasakiCruise.recovered = safeParseInt(latestRow.nagasakiRecovered)
+  nagasakiCruise.deceased = safeParseInt(latestRow.nagasakiDeceased)
+  nagasakiCruise.critical = safeParseInt(latestRow.nagasakiCritical)
+  nagasakiCruise.tested = safeParseInt(latestRow.nagasakiTested)
+
+  return {diamondPrincess: diamondPrincess, nagasakiCruise: nagasakiCruise}
 }
 
 const generateDailyStatsForPrefecture = (patients, firstDay) => {
