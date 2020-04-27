@@ -2,5 +2,4 @@ Error: PatientError: Duplicated patientIds detected 8567
     at Object.verifyPatients (/home/runner/work/covid19japan-data/covid19japan-data/src/verify.js:51:11)
     at Object.mergePatients (/home/runner/work/covid19japan-data/covid19japan-data/src/merge_patients.js:11:12)
     at /home/runner/work/covid19japan-data/covid19japan-data/generate.js:60:36
-    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
