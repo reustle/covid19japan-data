@@ -243,7 +243,7 @@ data that we use to cross check and verify.
 |Aichi - Nagoya   |[新型コロナウイルス感染症患者の発生について](http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html)|  [Weekly Summary](http://www.city.nagoya.jp/kenkofukushi/page/0000101900.html)| Patients here are not listed on Aichi Prefecture Site |
 | Aichi - Toyota | [発生状況](https://www.city.toyota.aichi.jp/kurashi/kenkou/eisei/1036258.html) | | Patients here are not listed on Aichi Prefecture Site |
 | Aichi - Toyohashi | [患者の概要](https://www.city.toyohashi.lg.jp/41805.htm) | | Patients listed here are not listed in Aichi Prefecture Site |
-| Aichi - Okasaki | [新型コロナウイルス感染症患者の発生について](https://www.city.okazaki.lg.jp/1550/1562/1615/p025575.html) | Patients listed here are not on Aichi Prefecture site |
+| Aichi - Okasaki | [新型コロナウイルス感染症患者の発生について](https://www.city.okazaki.lg.jp/1550/1562/1615/p025980.html) || Patients listed here are not on Aichi Prefecture site |
 |Akita    |[新型コロナウイルス感染症について](https://www.pref.akita.lg.jp/pages/archive/47957)||
 |Aomori    |[新型コロナウイルス感染症について](http://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html)||
 |Chiba    |[患者の発生について｜新型コロナウイルス感染症](https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html)| Data is two days behind |
@@ -260,7 +260,7 @@ data that we use to cross check and verify.
 |Hiroshima    | [患者の発生について](https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html)||
 |Hokkaido    |[新型コロナウイルス感染症の道内の発生状況](http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm)||
 |Hokkaido - Sapporo  |[新型コロナウイルス感染症の道内の発生状況](https://www.city.sapporo.jp/hokenjo/f1kansen/2019n-covhassei.html)||
-|Hyogo    | [新型コロナウイルスに感染した患者の発生状況](https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html) [PCR](https://web.pref.hyogo.lg.jp/kf16/singatakoronakensa.html) ||
+|Hyogo    | [新型コロナウイルスに感染した患者の発生状況](https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html) [PCR](https://web.pref.hyogo.lg.jp/kf16/singatakoronakensa.html) [Press Releases](https://web.pref.hyogo.lg.jp/kk03/singatakoronataiou.html)||
 |Hyogo - Himeji | [新型コロナウイルス感染症患者の発生について](https://www.city.himeji.lg.jp/emergencyinfo/0000000179.html)||
 |Hyogo - Nishinomiya 西宮市 | [新型コロナウイルス感染症患者の市内発生状況](https://www.nishi.or.jp/kurashi/anshin/infomation/k_00022020111.html) ||
 |Ibaraki    | [新型コロナウイルス感染症患者の県内の発生状況について](https://www.pref.ibaraki.jp/1saigai/2019-ncov/hassei.html) ||  |
