@@ -298,6 +298,7 @@ data that we use to cross check and verify.
 |Osaka    | [新型コロナウイルス感染症について](http://www.pref.osaka.lg.jp/hodo/index.php?HST_TITLE1=%83R%83%8D%83i&SEARCH_NUM=10&searchFlg=%8C%9F%81@%8D%F5&site=fumin)|| Usually few days behind. Use MHLW for most up-to-date reports. |
 |Saga    | [佐賀県の新型コロナウイルス感染症の状況](https://www.pref.saga.lg.jp/kiji00373220/index.html) ||
 |Saitama    |[記者発表資料](https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html) |[Dashboard](https://saitama.stopcovid19.jp/)|
+| Saitama - Saitama City | [本市の発生状況について](https://www.city.saitama.jp/002/001/008/006/013/001/p070442.html) ||
 |Shiga    | [新型コロナウイルス感染症患者の発生状況](https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/310735.html)||
 |Shimane    |[新型コロナウイルス感染症に関する情報](https://www.pref.shimane.lg.jp/bousai_info/bousai/kikikanri/shingata_taisaku/new_coronavirus_portal.html)||
 |Shizuoka    |[新型コロナウイルス感染症(COVID-19)関連情報](https://www.pref.shizuoka.jp/kinkyu/covid-19.html)||
