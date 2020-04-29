@@ -299,6 +299,8 @@ data that we use to cross check and verify.
 |Saga    | [佐賀県の新型コロナウイルス感染症の状況](https://www.pref.saga.lg.jp/kiji00373220/index.html) ||
 |Saitama    |[記者発表資料](https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html) |[Dashboard](https://saitama.stopcovid19.jp/)|
 | Saitama - Saitama City | [本市の発生状況について](https://www.city.saitama.jp/002/001/008/006/013/001/p070442.html) ||
+| Saitama - Koshigaya | [新型コロナウイルス感染症の越谷市内の発生状況](https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/hokenjo/kansensho/koshigaya_contents0310.html) || 
+| Saitama - Kawaguchi | [新型コロナウイルス感染症について](https://www.city.kawaguchi.lg.jp/covid19/30535.html) | [Dashboard](https://www.kawaguchi-stopcovid19.jp/) |
 |Shiga    | [新型コロナウイルス感染症患者の発生状況](https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/310735.html)||
 |Shimane    |[新型コロナウイルス感染症に関する情報](https://www.pref.shimane.lg.jp/bousai_info/bousai/kikikanri/shingata_taisaku/new_coronavirus_portal.html)||
 |Shizuoka    |[新型コロナウイルス感染症(COVID-19)関連情報](https://www.pref.shizuoka.jp/kinkyu/covid-19.html)||
