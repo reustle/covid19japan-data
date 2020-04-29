@@ -3229,7 +3229,7 @@
       "name": "Ishikawa"
     },
     {
-      "confirmed": 186,
+      "confirmed": 188,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3343,10 +3343,10 @@
         3,
         1,
         7,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 7,
       "dailyDeceasedCount": [
         0,
@@ -3461,10 +3461,10 @@
         3,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 7,
+      "deceased": 8,
       "cruisePassenger": 0,
       "recovered": 16,
       "critical": 0,
@@ -3476,10 +3476,10 @@
         "Toyama city": 45,
         "Imizu": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "name_ja": "富山県",
-      "deaths": 7,
+      "deaths": 8,
       "name": "Toyama"
     },
     {
@@ -3747,7 +3747,7 @@
       "name": "Ibaraki"
     },
     {
-      "confirmed": 153,
+      "confirmed": 154,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3860,12 +3860,12 @@
         3,
         1,
         0,
-        4,
+        5,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 4,
+      "yesterdayConfirmed": 5,
       "dailyDeceasedCount": [
         0,
         0,
@@ -3984,14 +3984,14 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 2,
       "cruisePassenger": 0,
-      "recovered": 20,
+      "recovered": 30,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
         "Hiroshima": 4,
         "Onomichi": 2,
         "Itashima": 1,
-        "Miyoshi": 8,
+        "Miyoshi": 9,
         "Higashi Hiroshima": 1,
         "Fukuyama": 6,
         "Hiroshima city": 54,
@@ -7063,7 +7063,7 @@
       "name": "Fukushima"
     },
     {
-      "confirmed": 67,
+      "confirmed": 68,
       "dailyConfirmedCount": [
         0,
         0,
@@ -7177,10 +7177,10 @@
         0,
         0,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -8615,7 +8615,7 @@
       "name": "Tochigi"
     },
     {
-      "confirmed": 52,
+      "confirmed": 53,
       "dailyConfirmedCount": [
         0,
         0,
@@ -8728,12 +8728,12 @@
         1,
         0,
         0,
-        0,
+        1,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
         0,
@@ -8857,7 +8857,7 @@
       "tested": 0,
       "confirmedByCity": {
         "Yamanashi": 1,
-        "Kofu": 6,
+        "Kofu": 7,
         "Ichikawamisato": 1,
         "Minami Alps": 1
       },
@@ -12408,7 +12408,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 0,
       "cruisePassenger": 0,
-      "recovered": 66,
+      "recovered": 56,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {},
@@ -14719,9 +14719,9 @@
       "deaths": 13
     },
     {
-      "confirmed": 274,
+      "confirmed": 276,
       "deceased": 10,
-      "confirmedCumulative": 13741,
+      "confirmedCumulative": 13743,
       "recoveredCumulative": 2181,
       "deceasedCumulative": 387,
       "criticalCumulative": 305,
@@ -14732,18 +14732,18 @@
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 5,
       "date": "2020-04-28",
-      "confirmedAvg3d": 214,
-      "confirmedCumulativeAvg3d": 13472,
+      "confirmedAvg3d": 215,
+      "confirmedCumulativeAvg3d": 13473,
       "confirmedAvg7d": 311,
       "confirmedCumulativeAvg7d": 12928,
       "deaths": 10
     },
     {
-      "confirmed": 192,
-      "deceased": 1,
-      "confirmedCumulative": 13933,
+      "confirmed": 195,
+      "deceased": 2,
+      "confirmedCumulative": 13938,
       "recoveredCumulative": 2368,
-      "deceasedCumulative": 388,
+      "deceasedCumulative": 389,
       "criticalCumulative": 306,
       "testedCumulative": 164255,
       "cruiseConfirmedCumulative": 860,
@@ -14752,12 +14752,12 @@
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 5,
       "date": "2020-04-29",
-      "confirmedAvg3d": 210,
-      "confirmedCumulativeAvg3d": 13682,
-      "confirmedAvg7d": 280,
-      "confirmedCumulativeAvg7d": 13208,
-      "deaths": 1
+      "confirmedAvg3d": 212,
+      "confirmedCumulativeAvg3d": 13685,
+      "confirmedAvg7d": 281,
+      "confirmedCumulativeAvg7d": 13209,
+      "deaths": 2
     }
   ],
-  "updated": "2020-04-29T20:32:18+09:00"
+  "updated": "2020-04-29T20:47:11+09:00"
 }
