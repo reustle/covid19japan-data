@@ -297,7 +297,7 @@ data that we use to cross check and verify.
 |Okinawa    | [Patients](https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/covid19_hasseijoukyou.html)|[患者の発生について](https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/2019-ncov.html)| Up to date |
 |Osaka    | [新型コロナウイルス感染症について](http://www.pref.osaka.lg.jp/hodo/index.php?HST_TITLE1=%83R%83%8D%83i&SEARCH_NUM=10&searchFlg=%8C%9F%81@%8D%F5&site=fumin)|| Usually few days behind. Use MHLW for most up-to-date reports. |
 |Saga    | [佐賀県の新型コロナウイルス感染症の状況](https://www.pref.saga.lg.jp/kiji00373220/index.html) ||
-|Saitama    |[記者発表資料](https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html) |[Dashboard](https://saitama.stopcovid19.jp/)|
+|Saitama    |[記者発表資料](https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html) [新型コロナウイルスに関連した患者の死亡について](https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/4gatsu/index.html)|[Dashboard](https://saitama.stopcovid19.jp/)|
 | Saitama - Saitama City | [本市の発生状況について](https://www.city.saitama.jp/002/001/008/006/013/001/p070442.html) ||
 | Saitama - Koshigaya | [新型コロナウイルス感染症の越谷市内の発生状況](https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/hokenjo/kansensho/koshigaya_contents0310.html) || 
 | Saitama - Kawaguchi | [新型コロナウイルス感染症について](https://www.city.kawaguchi.lg.jp/covid19/30535.html) | [Dashboard](https://www.kawaguchi-stopcovid19.jp/) |
