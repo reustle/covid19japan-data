@@ -6026,7 +6026,7 @@
       "name": "Miyagi"
     },
     {
-      "confirmed": 81,
+      "confirmed": 83,
       "dailyConfirmedCount": [
         0,
         0,
@@ -6140,10 +6140,10 @@
         0,
         2,
         2,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 2,
       "dailyDeceasedCount": [
         0,
@@ -6275,9 +6275,9 @@
         "Ikaruga": 1,
         "Kashiba": 2,
         "Nara City": 3,
-        "Nara city": 1,
+        "Nara city": 2,
         "Yamatokoriyama": 2,
-        "Sakurai": 1
+        "Sakurai": 2
       },
       "newlyDeceased": 0,
       "yesterdayDeceased": 0,
@@ -6549,7 +6549,7 @@
       "name": "Niigata"
     },
     {
-      "confirmed": 73,
+      "confirmed": 74,
       "dailyConfirmedCount": [
         0,
         0,
@@ -6663,10 +6663,10 @@
         1,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -6792,7 +6792,7 @@
       "confirmedByCity": {
         "Kochi": 10,
         "Aki": 2,
-        "Kochi city": 30,
+        "Kochi city": 31,
         "Chuo Higashi": 1,
         "Sukumo": 1,
         "Hata": 11,
@@ -6806,7 +6806,7 @@
       "name": "Kochi"
     },
     {
-      "confirmed": 70,
+      "confirmed": 72,
       "dailyConfirmedCount": [
         0,
         0,
@@ -6920,10 +6920,10 @@
         1,
         0,
         1,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -7052,7 +7052,7 @@
         "Fukushima ciy": 2,
         "Fukushima": 1,
         "Soso": 1,
-        "Fukushima city": 6,
+        "Fukushima city": 8,
         "Minamisōma": 1,
         "Motomiya": 3
       },
@@ -7323,7 +7323,7 @@
       "name": "Yamagata"
     },
     {
-      "confirmed": 67,
+      "confirmed": 68,
       "dailyConfirmedCount": [
         0,
         0,
@@ -7437,10 +7437,10 @@
         1,
         1,
         3,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
@@ -7575,7 +7575,8 @@
         "Kakegawa": 2,
         "Fuji": 1,
         "Shimoda": 1,
-        "Omaezaki": 2
+        "Omaezaki": 2,
+        "Atami": 1
       },
       "newlyDeceased": 0,
       "yesterdayDeceased": 0,
@@ -8100,7 +8101,7 @@
       "name": "Oita"
     },
     {
-      "confirmed": 59,
+      "confirmed": 60,
       "dailyConfirmedCount": [
         0,
         0,
@@ -8213,12 +8214,12 @@
         5,
         1,
         1,
-        0,
+        1,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
         0,
@@ -8331,11 +8332,11 @@
         0,
         0,
         0,
-        0,
+        1,
         0
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 1,
+      "deceased": 2,
       "cruisePassenger": 0,
       "recovered": 27,
       "critical": 0,
@@ -8346,17 +8347,17 @@
         "Wakatama": 1,
         "Tanabe": 2,
         "Iwade": 1,
-        "Hashimoto": 7,
+        "Hashimoto": 8,
         "Wakayama city": 2
       },
       "newlyDeceased": 0,
-      "yesterdayDeceased": 0,
+      "yesterdayDeceased": 1,
       "name_ja": "和歌山県",
-      "deaths": 1,
+      "deaths": 2,
       "name": "Wakayama"
     },
     {
-      "confirmed": 54,
+      "confirmed": 55,
       "dailyConfirmedCount": [
         0,
         0,
@@ -8469,12 +8470,12 @@
         0,
         2,
         0,
-        0,
+        1,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
         0,
@@ -8597,7 +8598,7 @@
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
-        "Utsunomiya": 11,
+        "Utsunomiya": 12,
         "Oyama": 3,
         "Ashikaga": 1,
         "Kanuma": 3,
@@ -14719,11 +14720,11 @@
       "deaths": 13
     },
     {
-      "confirmed": 276,
-      "deceased": 10,
-      "confirmedCumulative": 13743,
+      "confirmed": 278,
+      "deceased": 11,
+      "confirmedCumulative": 13745,
       "recoveredCumulative": 2181,
-      "deceasedCumulative": 387,
+      "deceasedCumulative": 388,
       "criticalCumulative": 305,
       "testedCumulative": 160546,
       "cruiseConfirmedCumulative": 860,
@@ -14732,18 +14733,18 @@
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 5,
       "date": "2020-04-28",
-      "confirmedAvg3d": 215,
-      "confirmedCumulativeAvg3d": 13473,
+      "confirmedAvg3d": 216,
+      "confirmedCumulativeAvg3d": 13474,
       "confirmedAvg7d": 311,
       "confirmedCumulativeAvg7d": 12928,
-      "deaths": 10
+      "deaths": 11
     },
     {
-      "confirmed": 195,
+      "confirmed": 201,
       "deceased": 2,
-      "confirmedCumulative": 13938,
+      "confirmedCumulative": 13946,
       "recoveredCumulative": 2368,
-      "deceasedCumulative": 389,
+      "deceasedCumulative": 390,
       "criticalCumulative": 306,
       "testedCumulative": 164255,
       "cruiseConfirmedCumulative": 860,
@@ -14752,12 +14753,12 @@
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 5,
       "date": "2020-04-29",
-      "confirmedAvg3d": 212,
-      "confirmedCumulativeAvg3d": 13685,
-      "confirmedAvg7d": 281,
-      "confirmedCumulativeAvg7d": 13209,
+      "confirmedAvg3d": 214,
+      "confirmedCumulativeAvg3d": 13688,
+      "confirmedAvg7d": 282,
+      "confirmedCumulativeAvg7d": 13210,
       "deaths": 2
     }
   ],
-  "updated": "2020-04-29T20:47:11+09:00"
+  "updated": "2020-04-29T21:02:39+09:00"
 }
