@@ -5032,7 +5032,7 @@
       "name": "Gunma"
     },
     {
-      "confirmed": 144,
+      "confirmed": 145,
       "dailyConfirmedCount": [
         0,
         0,
@@ -5147,10 +5147,10 @@
         0,
         4,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -5265,11 +5265,11 @@
         0,
         0,
         0,
-        0,
+        1,
         0
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 4,
+      "deceased": 5,
       "cruisePassenger": 0,
       "recovered": 24,
       "critical": 0,
@@ -5287,9 +5287,9 @@
         "Okinawa": 1
       },
       "newlyDeceased": 0,
-      "yesterdayDeceased": 0,
+      "yesterdayDeceased": 1,
       "name_ja": "沖縄県",
-      "deaths": 4,
+      "deaths": 5,
       "name": "Okinawa"
     },
     {
@@ -14840,10 +14840,10 @@
     },
     {
       "confirmed": 214,
-      "deceased": 13,
+      "deceased": 14,
       "confirmedCumulative": 13964,
       "recoveredCumulative": 2368,
-      "deceasedCumulative": 424,
+      "deceasedCumulative": 425,
       "criticalCumulative": 306,
       "testedCumulative": 164255,
       "cruiseConfirmedCumulative": 860,
@@ -14856,8 +14856,28 @@
       "confirmedCumulativeAvg3d": 13696,
       "confirmedAvg7d": 285,
       "confirmedCumulativeAvg7d": 13214,
-      "deaths": 13
+      "deaths": 14
+    },
+    {
+      "confirmed": 1,
+      "deceased": 0,
+      "confirmedCumulative": 13965,
+      "recoveredCumulative": 2368,
+      "deceasedCumulative": 425,
+      "criticalCumulative": 306,
+      "testedCumulative": 164255,
+      "cruiseConfirmedCumulative": 860,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 651,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 5,
+      "date": "2020-04-30",
+      "confirmedAvg3d": 165,
+      "confirmedCumulativeAvg3d": 13861,
+      "confirmedAvg7d": 223,
+      "confirmedCumulativeAvg7d": 13437,
+      "deaths": 0
     }
   ],
-  "updated": "2020-04-30T11:02:46+09:00"
+  "updated": "2020-04-30T12:16:57+09:00"
 }
