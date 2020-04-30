@@ -55,6 +55,7 @@ const DAILY_SUMMARY_TEMPLATE = {
   criticalCumulative: 0,
   tested: 0,
   testedCumulative: 0,
+  active: 0,
   activeCumulative: 0,
   cruiseConfirmedCumulative: 0,
   cruiseDeceasedCumulative: 0,
