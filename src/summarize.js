@@ -46,12 +46,16 @@ const safeParseInt = v => {
 
 const DAILY_SUMMARY_TEMPLATE = {
   confirmed: 0,
-  deceased: 0,
   confirmedCumulative: 0,
-  recoveredCumulative: 0,
+  deceased: 0,
   deceasedCumulative: 0,
+  recovered: 0,
+  recoveredCumulative: 0,
+  critical: 0,
   criticalCumulative: 0,
+  tested: 0,
   testedCumulative: 0,
+  activeCumulative: 0,
   cruiseConfirmedCumulative: 0,
   cruiseDeceasedCumulative: 0,
   cruiseRecoveredCumulative: 0,
@@ -110,14 +114,19 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
   let orderedDailySummary = 
       _.map(_.sortBy(_.toPairs(dailySummary), a => a[0]), (v) => { let o = v[1]; o.date = v[0]; return o })
   
-  // Calculate the confirmedCumulative by iterating through all the days in order
+  // Calculate the cumulative and incremental numbers by iterating through all the days in order
   let confirmedCumulative = 0
   let deceasedCumulative = 0
+
   for (let dailySum of orderedDailySummary) {
+    // confirmed.
     confirmedCumulative += dailySum.confirmed
     dailySum.confirmedCumulative = confirmedCumulative
+    // deceased
     deceasedCumulative += dailySum.deceased
     dailySum.deceasedCumulative = deceasedCumulative
+    // active
+    dailySum.activeCumulative = dailySum.confirmedCumulative - dailySum.deceasedCumulative - dailySum.recoveredCumulative
   }
 
   // Calculate a rolling 3/7 day average for confirmed.
@@ -163,6 +172,27 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
         thisDay[key] = previousDay[key]
       }
     }
+  }
+
+  // Calculate daily incrementals that we're missing by using the cumulative numbers.
+  let yesterdayTestedCumulative = 0
+  let yesterdayRecoveredCumulative = 0
+  let yesterdayCriticalCumulative = 0
+  let yesterdayActiveCumulative = 0
+  for (let dailySum of orderedDailySummary) {
+    // tested
+    dailySum.tested = dailySum.testedCumulative - yesterdayTestedCumulative
+    yesterdayTestedCumulative = dailySum.testedCumulative
+    // recovered
+    dailySum.recovered = dailySum.recoveredCumulative - yesterdayRecoveredCumulative
+    yesterdayRecoveredCumulative = dailySum.recoveredCumulative
+    // critical
+    dailySum.critical = dailySum.criticalCumulative - yesterdayCriticalCumulative
+    yesterdayCriticalCumulative = dailySum.criticalCumulative
+    // active
+    dailySum.active = dailySum.activeCumulative - yesterdayActiveCumulative
+    yesterdayActiveCumulative = dailySum.activeCumulative
+
   }
 
   // For backwards compatibility, include deaths field. (Remove after 5/1)
