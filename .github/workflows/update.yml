@@ -25,6 +25,9 @@ jobs:
       - name: Download and Generate JSON data
         run: node generate.js 2>&1 | tee docs/output.txt
 
+      - name: Generate charts
+        run: node generate_charts.js
+
       - name: Publish Latest Data
         run: node publish.js
 
@@ -35,7 +38,7 @@ jobs:
         run: |
           git config --local user.email alastair@liquidx.net
           git config --local user.name "Automated Action"
-          git add docs/*/*.json docs/*.txt
+          git add docs/*/*.json docs/*.txt docs/charts/*.svg
           git commit -m "Automated Data Update" || exit 0
 
       - name: Push changes
