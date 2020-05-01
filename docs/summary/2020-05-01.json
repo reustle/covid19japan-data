@@ -1046,11 +1046,11 @@
         3,
         0,
         0,
-        2,
+        4,
         0
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 32,
+      "deceased": 34,
       "cruisePassenger": 1,
       "recovered": 255,
       "critical": 0,
@@ -1111,9 +1111,9 @@
         "Hidaka": 1
       },
       "newlyDeceased": 0,
-      "yesterdayDeceased": 2,
+      "yesterdayDeceased": 4,
       "name_ja": "埼玉県",
-      "deaths": 32,
+      "deaths": 34,
       "name": "Saitama"
     },
     {
@@ -1650,10 +1650,10 @@
         1,
         0,
         0,
-        0
+        8
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 28,
+      "deceased": 36,
       "cruisePassenger": 0,
       "recovered": 238,
       "critical": 0,
@@ -1703,10 +1703,10 @@
         "Soya": 1,
         "Hakotate": 2
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 8,
       "yesterdayDeceased": 0,
       "name_ja": "北海道",
-      "deaths": 28,
+      "deaths": 36,
       "name": "Hokkaido"
     },
     {
@@ -15421,16 +15421,16 @@
     {
       "confirmed": 141,
       "confirmedCumulative": 14105,
-      "deceased": 12,
-      "deceasedCumulative": 437,
+      "deceased": 14,
+      "deceasedCumulative": 439,
       "recovered": 92,
       "recoveredCumulative": 2460,
       "critical": 2,
       "criticalCumulative": 308,
       "tested": 1354,
       "testedCumulative": 165609,
-      "active": 37,
-      "activeCumulative": 11208,
+      "active": 35,
+      "activeCumulative": 11206,
       "cruiseConfirmedCumulative": 860,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
@@ -15441,8 +15441,33 @@
       "confirmedCumulativeAvg3d": 13907,
       "confirmedAvg7d": 243,
       "confirmedCumulativeAvg7d": 13457,
-      "deaths": 12
+      "deaths": 14
+    },
+    {
+      "confirmed": 0,
+      "confirmedCumulative": 14105,
+      "deceased": 8,
+      "deceasedCumulative": 447,
+      "recovered": 0,
+      "recoveredCumulative": 2460,
+      "critical": 0,
+      "criticalCumulative": 308,
+      "tested": 0,
+      "testedCumulative": 165609,
+      "active": 2452,
+      "activeCumulative": 13658,
+      "cruiseConfirmedCumulative": 860,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 651,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 5,
+      "date": "2020-05-01",
+      "confirmedAvg3d": 118,
+      "confirmedCumulativeAvg3d": 14025,
+      "confirmedAvg7d": 189,
+      "confirmedCumulativeAvg7d": 13646,
+      "deaths": 8
     }
   ],
-  "updated": "2020-05-01T17:02:54+09:00"
+  "updated": "2020-05-01T17:16:56+09:00"
 }
