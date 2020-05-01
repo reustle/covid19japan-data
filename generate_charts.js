@@ -23,7 +23,7 @@ const drawPrefectureBarCharts = (prefectureSummaries, duration) => {
   }
 
   for (let prefecture of prefectureSummaries) {
-    let name = prefecture.name.toLowerCase().replace(' ', '_')
+    let name = prefecture.name.toLowerCase().replace(/[\s]+/g, '_')
     const values = _.map(prefecture.dailyConfirmedCount, o => { return {value: o}})
     let prefectureMax = _.max(prefecture.dailyConfirmedCount)
     if (prefectureMax < maxY / 4 )  {
