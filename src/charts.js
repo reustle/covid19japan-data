@@ -1,14 +1,6 @@
 const D3Node = require('d3-node')
 const _ = require('lodash')
 
-const DEFAULT_OPTIONS = {
-  width: 400,
-  height: 80,
-  x: {
-    min: 0,
-  }
-}
-
 const rollingAverage = (values, size, key) => {
   let buffer = []
   let averagedValues = []
