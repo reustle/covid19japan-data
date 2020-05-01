@@ -6,14 +6,6 @@ const summaryFile = fs.readFileSync(`./docs/summary/latest.json`)
 const summary = JSON.parse(summaryFile)
 const dailySummaries = summary.daily
 
-// generate summary for confirmed 
-const historyLength = 60
-const deceasedValues = charts.rollingAverage(
-  _.slice(_.map(summary.daily, o => { return { date: o.date, value:o.deceased } }), summary.daily.length - historyLength),
-  7, 
-  'value')
-//const svg = charts.svgSparklineWithData(deceasedValues, 400, 80)
-
 const drawLineChart = (values, name) => {
   const svg = charts.svgSparklineWithData(values, 400, 80)
   fs.writeFileSync(`./docs/charts/${name}.svg`, svg)
@@ -41,18 +33,27 @@ const drawPrefectureBarCharts = (prefectureSummaries, duration) => {
   }
 }
 
-const drawCumulativeLineCharts = (dailySummaries, duration) => {
-  let confirmedValues = _.slice(_.map(dailySummaries, o => { return { date: o.date, value:o.confirmedAvg7d } }), dailySummaries.length - duration)
-  console.log(confirmedValues)
-  drawLineChart(confirmedValues, 'confirmedDailyAvg')
+const drawDailyLineCharts = (dailySummaries, duration) => {
+  const avgDuration = 7
 
-  let dailyCharts = ['deceased', 'recovered', 'critical']
+  let dailyCharts = ['deceased', 'recovered', 'critical', 'tested', 'confirmed']
   for (let chartValue of dailyCharts) {
-    let values = _.map(dailySummaries, o => { return { date: o.date, value:o[chartValue] } })
-    values = _.slice(charts.rollingAverage(values, 7), values.length - duration)
-    drawLineChart(values, `${chartValue}DailyAvg`)
+    const values = _.map(dailySummaries, o => { return { date: o.date, value:o[chartValue] } })
+    const avgValues = _.slice(charts.rollingAverage(values, avgDuration, 'value'), values.length - duration)
+    drawLineChart(values, `${chartValue}Daily`)
+    drawLineChart(avgValues, `${chartValue}DailyAvg`)
+    if (chartValue == 'confirmed') {
+      console.log(avgValues)
+    }
+  }
+
+  for (let chartValue of dailyCharts) {
+    const values = _.map(dailySummaries, o => { return { date: o.date, value:o[`${chartValue}Cumulative`] } })
+    const avgValues = _.slice(charts.rollingAverage(values, avgDuration, 'value'), values.length - duration)
+    drawLineChart(values, `${chartValue}Cumulative`)
+    drawLineChart(avgValues, `${chartValue}CumulativeAvg`)
   }
 }
 
 drawPrefectureBarCharts(summary.prefectures, 30)
-drawCumulativeLineCharts(summary.daily, 60)
+drawDailyLineCharts(summary.daily, 60)
