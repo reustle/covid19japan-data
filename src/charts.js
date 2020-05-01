@@ -75,7 +75,7 @@ const svgSparklineWithData = (values, width, height) => {
   return d3n.svgString()
 }
 
-const svgBarChartWithData = (values, width, height, maxY) => {
+const svgBarChartWithData = (values, width, height, maxY, fillColor) => {
   const d3n = new D3Node()      // initializes D3 with container element
   const d3 = d3n.d3
   const margin =  {top: 10, right: 10, bottom: 10, left: 10}
@@ -108,6 +108,7 @@ const svgBarChartWithData = (values, width, height, maxY) => {
     .attr('width', x.bandwidth() - 2)
     .attr('y', d=> y(d.value))
     .attr('height', d => y(0) - y(d.value))
+    .attr('fill', fillColor)
 
   return d3n.svgString()  
 }

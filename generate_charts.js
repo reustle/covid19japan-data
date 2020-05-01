@@ -2,17 +2,14 @@ const fs = require('fs')
 const _ = require('lodash')
 const charts = require('./src/charts.js')
 
-const summaryFile = fs.readFileSync(`./docs/summary/latest.json`)
-const summary = JSON.parse(summaryFile)
-const dailySummaries = summary.daily
 
 const drawLineChart = (values, name) => {
   const svg = charts.svgSparklineWithData(values, 400, 80)
   fs.writeFileSync(`./docs/charts/${name}.svg`, svg)
 }
 
-const drawBarChart = (values, name, maxY) => {
-  const svg = charts.svgBarChartWithData(values, 400, 80, maxY)
+const drawBarChart = (values, name, maxY, fillColor) => {
+  const svg = charts.svgBarChartWithData(values, 400, 80, maxY, fillColor)
   fs.writeFileSync(`./docs/charts/${name}.svg`, svg)
 }
 
@@ -26,10 +23,18 @@ const drawPrefectureBarCharts = (prefectureSummaries, duration) => {
   }
 
   for (let prefecture of prefectureSummaries) {
-    let name = _.camelCase(prefecture.name)
-    let values = _.slice(prefecture.dailyConfirmedCount, prefecture.dailyConfirmedCount.length - duration)
-    let avgValues = charts.rollingAverage(_.map(values, o => { return {value: o}}), 7, 'value')
-    drawBarChart(avgValues, name, maxY)
+    let name = prefecture.name.toLowerCase().replace(' ', '_')
+    const values = _.map(prefecture.dailyConfirmedCount, o => { return {value: o}})
+    let prefectureMax = _.max(prefecture.dailyConfirmedCount)
+    if (prefectureMax < maxY / 4 )  {
+      prefectureMax *= 2  // scale up lower numbers
+    } else if (prefectureMax < maxY / 2 )  {
+        prefectureMax *= 1.33  // scale up lower numbers
+    } else {
+      prefectureMax = maxY
+    }
+    const avgValues = charts.rollingAverage(values, 7, 'value')
+    drawBarChart(_.slice(values, values.length - duration), name, prefectureMax, 'rgba(128, 128, 128, 1)')
   }
 }
 
@@ -40,20 +45,19 @@ const drawDailyLineCharts = (dailySummaries, duration) => {
   for (let chartValue of dailyCharts) {
     const values = _.map(dailySummaries, o => { return { date: o.date, value:o[chartValue] } })
     const avgValues = _.slice(charts.rollingAverage(values, avgDuration, 'value'), values.length - duration)
-    drawLineChart(values, `${chartValue}Daily`)
-    drawLineChart(avgValues, `${chartValue}DailyAvg`)
-    if (chartValue == 'confirmed') {
-      console.log(avgValues)
-    }
+    drawLineChart(values, `${chartValue}_daily`)
+    drawLineChart(avgValues, `${chartValue}_daily_avg`)
   }
 
   for (let chartValue of dailyCharts) {
     const values = _.map(dailySummaries, o => { return { date: o.date, value:o[`${chartValue}Cumulative`] } })
     const avgValues = _.slice(charts.rollingAverage(values, avgDuration, 'value'), values.length - duration)
-    drawLineChart(values, `${chartValue}Cumulative`)
-    drawLineChart(avgValues, `${chartValue}CumulativeAvg`)
+    drawLineChart(values, `${chartValue}_cumulative`)
+    drawLineChart(avgValues, `${chartValue}_cumulative_avg`)
   }
 }
 
+const summaryFile = fs.readFileSync(`./docs/summary/latest.json`)
+const summary = JSON.parse(summaryFile)
 drawPrefectureBarCharts(summary.prefectures, 30)
 drawDailyLineCharts(summary.daily, 60)
