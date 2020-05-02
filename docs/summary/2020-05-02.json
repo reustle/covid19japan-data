@@ -547,7 +547,7 @@
       "name": "Osaka"
     },
     {
-      "confirmed": 1043,
+      "confirmed": 1045,
       "dailyConfirmedCount": [
         0,
         0,
@@ -661,7 +661,7 @@
         16,
         6,
         10,
-        26,
+        28,
         9,
         15,
         19
@@ -801,7 +801,7 @@
         "Kamakura": 39,
         "Kamamura": 1,
         "Hiratsuka": 23,
-        "Odawara": 9,
+        "Odawara": 10,
         "Fujisawa": 53,
         "Kawasaki": 216,
         "Yokosuka": 37,
@@ -817,7 +817,7 @@
       "name": "Kanagawa"
     },
     {
-      "confirmed": 864,
+      "confirmed": 871,
       "dailyConfirmedCount": [
         0,
         0,
@@ -934,10 +934,10 @@
         12,
         5,
         5,
-        0
+        7
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 7,
       "yesterdayConfirmed": 5,
       "dailyDeceasedCount": [
         0,
@@ -2766,7 +2766,7 @@
       "name": "Aichi"
     },
     {
-      "confirmed": 321,
+      "confirmed": 328,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2882,12 +2882,12 @@
         4,
         3,
         3,
-        2,
+        9,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 2,
+      "yesterdayConfirmed": 9,
       "dailyDeceasedCount": [
         0,
         0,
@@ -3003,24 +3003,24 @@
         0,
         1,
         0,
-        1,
+        2,
         0
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 11,
+      "deceased": 12,
       "cruisePassenger": 0,
       "recovered": 159,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
         "Kyoto": 27,
-        "Kyoto city": 70,
+        "Kyoto city": 75,
         "Yamashiro": 44,
         "Chutan": 6,
-        "Otokuni": 10,
+        "Otokuni": 11,
         "Nagaokakyo": 1,
         "Kyotanabe ": 1,
-        "Nantan": 3,
+        "Nantan": 4,
         "Kyoto City": 86,
         "Ide": 1,
         "Otsunori": 1,
@@ -3029,9 +3029,9 @@
         "Yamajiro": 2
       },
       "newlyDeceased": 0,
-      "yesterdayDeceased": 1,
+      "yesterdayDeceased": 2,
       "name_ja": "京都府",
-      "deaths": 11,
+      "deaths": 12,
       "name": "Kyoto"
     },
     {
@@ -3301,7 +3301,7 @@
       "name": "Ishikawa"
     },
     {
-      "confirmed": 201,
+      "confirmed": 203,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3418,10 +3418,10 @@
         2,
         10,
         1,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -3539,10 +3539,10 @@
         1,
         1,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 9,
+      "deceased": 10,
       "cruisePassenger": 0,
       "recovered": 37,
       "critical": 0,
@@ -3551,13 +3551,13 @@
         "Toyama City": 45,
         "Nanto": 1,
         "Takaoka": 1,
-        "Toyama city": 45,
+        "Toyama city": 47,
         "Imizu": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "name_ja": "富山県",
-      "deaths": 9,
+      "deaths": 10,
       "name": "Toyama"
     },
     {
@@ -15496,8 +15496,8 @@
       "deaths": 14
     },
     {
-      "confirmed": 216,
-      "confirmedCumulative": 13965,
+      "confirmed": 218,
+      "confirmedCumulative": 13967,
       "deceased": 14,
       "deceasedCumulative": 429,
       "recovered": 187,
@@ -15506,8 +15506,8 @@
       "criticalCumulative": 306,
       "tested": 3709,
       "testedCumulative": 164255,
-      "active": 15,
-      "activeCumulative": 11168,
+      "active": 17,
+      "activeCumulative": 11170,
       "cruiseConfirmedCumulative": 860,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
@@ -15522,7 +15522,7 @@
     },
     {
       "confirmed": 171,
-      "confirmedCumulative": 14136,
+      "confirmedCumulative": 14138,
       "deceased": 16,
       "deceasedCumulative": 445,
       "recovered": 92,
@@ -15532,7 +15532,7 @@
       "tested": 1354,
       "testedCumulative": 165609,
       "active": 63,
-      "activeCumulative": 11231,
+      "activeCumulative": 11233,
       "cruiseConfirmedCumulative": 860,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
@@ -15546,55 +15546,55 @@
       "deaths": 16
     },
     {
-      "confirmed": 260,
-      "confirmedCumulative": 14396,
-      "deceased": 17,
-      "deceasedCumulative": 462,
+      "confirmed": 267,
+      "confirmedCumulative": 14405,
+      "deceased": 18,
+      "deceasedCumulative": 463,
       "recovered": 515,
       "recoveredCumulative": 2975,
       "critical": 20,
       "criticalCumulative": 328,
       "tested": 8541,
       "testedCumulative": 174150,
-      "active": -272,
-      "activeCumulative": 10959,
+      "active": -266,
+      "activeCumulative": 10967,
       "cruiseConfirmedCumulative": 860,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 5,
       "date": "2020-05-01",
-      "confirmedAvg3d": 215,
-      "confirmedCumulativeAvg3d": 14133,
-      "confirmedAvg7d": 231,
-      "confirmedCumulativeAvg7d": 13692,
-      "deaths": 17
+      "confirmedAvg3d": 218,
+      "confirmedCumulativeAvg3d": 14136,
+      "confirmedAvg7d": 232,
+      "confirmedCumulativeAvg7d": 13693,
+      "deaths": 18
     },
     {
-      "confirmed": 246,
-      "confirmedCumulative": 14642,
-      "deceased": 9,
-      "deceasedCumulative": 471,
+      "confirmed": 255,
+      "confirmedCumulative": 14660,
+      "deceased": 10,
+      "deceasedCumulative": 473,
       "recovered": 230,
       "recoveredCumulative": 3205,
       "critical": -4,
       "criticalCumulative": 324,
       "tested": 7377,
       "testedCumulative": 181527,
-      "active": 7,
-      "activeCumulative": 10966,
+      "active": 15,
+      "activeCumulative": 10982,
       "cruiseConfirmedCumulative": 860,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 6,
       "date": "2020-05-02",
-      "confirmedAvg3d": 225,
-      "confirmedCumulativeAvg3d": 14358,
-      "confirmedAvg7d": 220,
-      "confirmedCumulativeAvg7d": 13912,
-      "deaths": 9
+      "confirmedAvg3d": 231,
+      "confirmedCumulativeAvg3d": 14367,
+      "confirmedAvg7d": 223,
+      "confirmedCumulativeAvg7d": 13916,
+      "deaths": 10
     }
   ],
-  "updated": "2020-05-02T22:03:01+09:00"
+  "updated": "2020-05-02T22:17:13+09:00"
 }
