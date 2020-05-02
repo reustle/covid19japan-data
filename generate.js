@@ -52,7 +52,9 @@ const fetchAndSummarize = async (dateString) => {
     FetchPatientData.fetchPatientData('Osaka'),
     FetchPatientData.fetchPatientData('Kanagawa'),
     FetchPatientData.fetchPatientData('Aichi'),
-    //FetchPatientData.fetchPatientData('Chiba'),
+    FetchPatientData.fetchPatientData('Chiba'),
+    FetchPatientData.fetchPatientData('Saitama'),
+    FetchPatientData.fetchPatientData('Hokkaido'),
   ]
 
   Promise.all(patientListFetches)
