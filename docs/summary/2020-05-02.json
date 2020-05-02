@@ -1925,7 +1925,7 @@
       "deaths": 13
     },
     {
-      "confirmed": 651,
+      "confirmed": 655,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2042,10 +2042,10 @@
         6,
         3,
         5,
-        0
+        4
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 4,
       "yesterdayConfirmed": 5,
       "dailyDeceasedCount": [
         0,
@@ -15567,7 +15567,32 @@
       "confirmedAvg7d": 229,
       "confirmedCumulativeAvg7d": 13689,
       "deaths": 17
+    },
+    {
+      "confirmed": 4,
+      "confirmedCumulative": 14389,
+      "deceased": 0,
+      "deceasedCumulative": 461,
+      "recovered": 0,
+      "recoveredCumulative": 2975,
+      "critical": 0,
+      "criticalCumulative": 328,
+      "tested": 0,
+      "testedCumulative": 174150,
+      "active": 2979,
+      "activeCumulative": 13928,
+      "cruiseConfirmedCumulative": 860,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 651,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 5,
+      "date": "2020-05-02",
+      "confirmedAvg3d": 141,
+      "confirmedCumulativeAvg3d": 14268,
+      "confirmedAvg7d": 184,
+      "confirmedCumulativeAvg7d": 13873,
+      "deaths": 0
     }
   ],
-  "updated": "2020-05-02T13:47:43+09:00"
+  "updated": "2020-05-02T14:47:13+09:00"
 }
