@@ -126,33 +126,8 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
     // deceased
     deceasedCumulative += dailySum.deceased
     dailySum.deceasedCumulative = deceasedCumulative
-    // active
-    dailySum.activeCumulative = dailySum.confirmedCumulative - dailySum.deceasedCumulative - dailySum.recoveredCumulative
-  }
+  }  
 
-  // Calculate a rolling 3/7 day average for confirmed.
-  let threeDayBuffer = []
-  let sevenDayBuffer = []
-  let confirmedCumulativeAvg3d = 0
-  let confirmedCumulativeAvg7d = 0
-  for (let dailySum of orderedDailySummary) {
-    threeDayBuffer.push(dailySum.confirmed)
-    sevenDayBuffer.push(dailySum.confirmed)
-    if (threeDayBuffer.length > 3) {
-      threeDayBuffer = threeDayBuffer.slice(threeDayBuffer.length - 3)
-    }
-    if (sevenDayBuffer.length > 7) {
-      sevenDayBuffer = sevenDayBuffer.slice(sevenDayBuffer.length - 7) 
-    }
-    dailySum.confirmedAvg3d = Math.floor(_.sum(threeDayBuffer) / 3)
-    confirmedCumulativeAvg3d += dailySum.confirmedAvg3d
-    dailySum.confirmedCumulativeAvg3d = confirmedCumulativeAvg3d
-
-    dailySum.confirmedAvg7d = Math.floor(_.sum(sevenDayBuffer) / 7)
-    confirmedCumulativeAvg7d += dailySum.confirmedAvg7d
-    dailySum.confirmedCumulativeAvg7d = confirmedCumulativeAvg7d
-  }
-  
   const cumulativeKeys = [
     'recoveredCumulative',
     'deceasedCumulative',
@@ -173,6 +148,11 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
         thisDay[key] = previousDay[key]
       }
     }
+  }
+
+  // Calculate active/activeCumulative (must happen after we bring forward any missing cumulative numbers)
+  for (let dailySum of orderedDailySummary) {
+    dailySum.activeCumulative = dailySum.confirmedCumulative - dailySum.deceasedCumulative - dailySum.recoveredCumulative
   }
 
   // Calculate daily incrementals that we're missing by using the cumulative numbers.
@@ -200,6 +180,29 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
   for (let i = 1; i < orderedDailySummary.length; i++) {
     let thisDay = orderedDailySummary[i]
     thisDay.deaths = thisDay.deceased
+  }
+
+  // Calculate a rolling 3/7 day average for confirmed.
+  let threeDayBuffer = []
+  let sevenDayBuffer = []
+  let confirmedCumulativeAvg3d = 0
+  let confirmedCumulativeAvg7d = 0
+  for (let dailySum of orderedDailySummary) {
+    threeDayBuffer.push(dailySum.confirmed)
+    sevenDayBuffer.push(dailySum.confirmed)
+    if (threeDayBuffer.length > 3) {
+      threeDayBuffer = threeDayBuffer.slice(threeDayBuffer.length - 3)
+    }
+    if (sevenDayBuffer.length > 7) {
+      sevenDayBuffer = sevenDayBuffer.slice(sevenDayBuffer.length - 7) 
+    }
+    dailySum.confirmedAvg3d = Math.floor(_.sum(threeDayBuffer) / 3)
+    confirmedCumulativeAvg3d += dailySum.confirmedAvg3d
+    dailySum.confirmedCumulativeAvg3d = confirmedCumulativeAvg3d
+
+    dailySum.confirmedAvg7d = Math.floor(_.sum(sevenDayBuffer) / 7)
+    confirmedCumulativeAvg7d += dailySum.confirmedAvg7d
+    dailySum.confirmedCumulativeAvg7d = confirmedCumulativeAvg7d
   }
 
   orderedDailySummary = verify.verifyDailySummary(orderedDailySummary)
