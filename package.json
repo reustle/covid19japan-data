@@ -9,11 +9,13 @@
     "watch": "npx webpack --watch --config webpack.dev.js",
     "start": "node server.js",
     "deploy": "firebase deploy --only hosting:covid19japan-data",
-    "deploy-functions": "cd proxy && firebase deploy --only functions"
+    "deploy-functions": "cd proxy && firebase deploy --only functions",
+    "generate-charts": "node generate_charts.js"
   },
   "dependencies": {
     "@babel/core": "^7.9.0",
     "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
     "d3": "^5.16.0",
     "d3-node": "^2.2.1",
     "encoding-japanese": "^1.0.30",
