@@ -19,13 +19,15 @@ const rollingAverage = (values, size, key) => {
   return averagedValues
 }
 
-const svgSparklineWithData = (values, width, height) => {
+const svgSparklineWithData = (values, width, height, padding) => {
   const d3n = new D3Node()      // initializes D3 with container element
   const d3 = d3n.d3
-  const margin =  {top: 10, right: 10, bottom: 10, left: 10}
+  if (!padding) {
+    padding = {top: 10, right: 10, bottom: 10, left: 10}
+  }
 
-  const chartWidth = width - margin.right - margin.left
-  const chartHeight = height - margin.top - margin.bottom;
+  const chartWidth = width - padding.right - padding.left
+  const chartHeight = height - padding.top - padding.bottom;
 
   var parseTime = d3.timeParse("%Y-%m-%d");
   values.forEach(d => { d.date = parseTime(d.date); d.value = +d.value })
@@ -47,9 +49,10 @@ const svgSparklineWithData = (values, width, height) => {
     .y1(function(d) { return y(d.value); })
     .curve(d3.curveMonotoneX)
 
-  var svg = d3n.createSVG(width, height)
+  var svg = d3n.createSVG()
+    .attr('viewBox', `0 0 ${width} ${height}`)    
     .append('g')
-    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+    .attr('transform', 'translate(' + padding.left + ',' + padding.top + ')')
 
   svg.append("path")
     .data([values])
@@ -88,7 +91,8 @@ const svgBarChartWithData = (values, width, height, maxY, fillColor) => {
   x.domain(d3.range(values.length)).padding(0.01);
   y.domain([0, maxY]);
 
-  var svg = d3n.createSVG(width, height)
+  var svg = d3n.createSVG()
+    .attr('viewBox', `0 0 ${width} ${height}`)    
     .append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
