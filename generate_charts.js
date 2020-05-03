@@ -36,7 +36,7 @@ const drawPrefectureBarCharts = (prefectureSummaries, duration) => {
     } else {
       prefectureMax = maxY
     }
-    drawBarChart(_.slice(values, values.length - duration), name, prefectureMax, 'rgba(128, 128, 128, 1)')
+    drawBarChart(_.slice(values, values.length - duration), name, prefectureMax, 'rgb(164,173,192)')
   }
 }
 
