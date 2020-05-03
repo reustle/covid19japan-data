@@ -12,7 +12,7 @@ const drawLineChart = (values, name) => {
 }
 
 const drawBarChart = (values, name, maxY, fillColor) => {
-  const svg = charts.svgBarChartWithData(values, 200, 40, maxY, fillColor)
+  const svg = charts.svgBarChartWithData(values, 480, 160, maxY, fillColor)
   fs.writeFileSync(`./docs/charts/${name}.svg`, svg)
 }
 
