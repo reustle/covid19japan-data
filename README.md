@@ -277,7 +277,7 @@ data that we use to cross check and verify.
 |Kagoshima    |[新型コロナウイルス感染症に関する情報](https://www.pref.kagoshima.jp/ae06/kenko-fukushi/kenko-iryo/kansen/kansensho/coronavirus.html)||
 |Kochi    | [高知県における新型コロナウイルス感染症患者の発生状況について](https://www.pref.kochi.lg.jp/soshiki/130401/2020022900049.html) [PCR](https://www.pref.kochi.lg.jp/soshiki/130120/2020030400166.html)|| Updated daily |
 |Kumamoto    | [新型コロナウイルス感染症](https://www.pref.kumamoto.jp/kiji_32300.html) |  | Patients numbers in the Summary |
-|Kumamoto - Kumamoto City   | [新型コロナウイルス感染症について](http://www.city.kumamoto.jp/hpkiji/pub/detail.aspx?c_id=5&id=26562) ||
+|Kumamoto - Kumamoto City   | [新型コロナウイルス感染症について](https://www.city.kumamoto.jp/corona/hpKiji/pub/detail.aspx?c_id=5&id=27681&class_set_id=22&class_id=3261) ||
 |Kyoto    |[新型コロナウイルス感染症の患者の発生について](https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F)|
 | Kyoto - Kyoto City | [Homepage](https://www.city.kyoto.lg.jp/) [Patients](https://www.city.kyoto.lg.jp/hokenfukushi/page/0000266641.html) ||
 | Kyoto - Muko | [市内の新型コロナウイルス感染状況について](https://www.city.muko.kyoto.jp/kurashi/kinkyu/1585565517890.html) ||
