@@ -9730,9 +9730,9 @@
       "tested": 0,
       "confirmedByCity": {
         "Kumamoto": 5,
-        "Kumamoto city": 11,
-        "Kumamoto City": 12,
-        "Asao": 4
+        "Kumamoto city": 14,
+        "Kumamoto City": 17,
+        "Asao": 5
       },
       "newlyDeceased": 0,
       "yesterdayDeceased": 1,
@@ -10281,7 +10281,7 @@
       "name": "Mie"
     },
     {
-      "confirmed": 35,
+      "confirmed": 36,
       "dailyConfirmedCount": [
         0,
         0,
@@ -10400,10 +10400,10 @@
         2,
         0,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -15826,18 +15826,18 @@
       "confirmedCumulativeAvg7d": 14175
     },
     {
-      "confirmed": 158,
-      "confirmedCumulative": 15089,
+      "confirmed": 159,
+      "confirmedCumulative": 15090,
       "deceased": 12,
       "deceasedCumulative": 529,
-      "recovered": 0,
-      "recoveredCumulative": 4550,
-      "critical": 0,
-      "criticalCumulative": 321,
-      "tested": 0,
-      "testedCumulative": 183251,
-      "active": 146,
-      "activeCumulative": 10010,
+      "recovered": 171,
+      "recoveredCumulative": 4721,
+      "critical": -13,
+      "criticalCumulative": 308,
+      "tested": 1335,
+      "testedCumulative": 184586,
+      "active": -24,
+      "activeCumulative": 9840,
       "cruiseConfirmedCumulative": 860,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
@@ -15845,8 +15845,8 @@
       "cruiseCriticalCumulative": 6,
       "date": "2020-05-04",
       "deaths": 12,
-      "confirmedAvg3d": 214,
-      "confirmedCumulativeAvg3d": 14893,
+      "confirmedAvg3d": 215,
+      "confirmedCumulativeAvg3d": 14894,
       "confirmedAvg7d": 231,
       "confirmedCumulativeAvg7d": 14406
     }
