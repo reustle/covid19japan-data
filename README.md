@@ -308,7 +308,7 @@ data that we use to cross check and verify.
 | Tochigi    | [新型コロナウイルス感染症について](http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/coronakensahasseijyoukyou.html) ||
 | Tochigi - Utsunomiya City | [宇都宮市における新型コロナウイルス感染症の発生状況](https://www.city.utsunomiya.tochigi.jp/kurashi/kenko/kansensho/etc/1023128.html)||
 |Tokushima    | [新型コロナウイルス感染症について](https://www.pref.tokushima.lg.jp/ippannokata/kenko/kansensho/5034012#25)||
-|Tokyo    | [東京都新型コロナウイルス感染症対策本部報](https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html)| [Dashboard](https://stopcovid19.metro.tokyo.lg.jp/en)|
+|Tokyo    | [東京都新型コロナウイルス感染症対策本部報](https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html),  [最新の報道発表](https://www.fukushihoken.metro.tokyo.lg.jp/hodo/index.html)| [Dashboard](https://stopcovid19.metro.tokyo.lg.jp/en) [covid19tokyo.live](https://covid19tokyo.live/)|
 |Tottori    |[新型コロナウイルス感染症(COVID-19)特設サイト](https://www.pref.tottori.lg.jp/corona-virus/)||
 |Toyama    |[新型コロナウイルス感染症の県内の患者等発生状況](http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html)||
 | Toyama - Toyama City | [本市での感染者の発生状況について](https://www.city.toyama.toyama.jp/fukushihokenbu/hokensho/hokenyoboka/shingatakorona_3.html) |||
