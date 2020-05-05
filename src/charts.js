@@ -130,14 +130,14 @@ const svgSparklineWithData = (values, width, height, options) => {
       .attr('fill', 'none')
       .attr('d', ceiling)
 
-      svg.append('text')
-        .attr('class', 'axis-ceiling-label')
-        .attr('font-family', 'sans-serif')
-        .attr('text-anchor', 'end')
-        .attr('font-size', `${labelFontSize}px`)
-        .attr('x', chartWidth - ceilingLineLength - ceilingLabelMargin)
-        .attr('y', ceilingY + (labelFontSize / 4) )
-        .text(ceilingValue)
+    svg.append('text')
+      .attr('class', 'axis-ceiling-label')
+      .attr('font-family', 'sans-serif')
+      .attr('text-anchor', 'end')
+      .attr('font-size', `${labelFontSize}px`)
+      .attr('x', chartWidth - ceilingLineLength - ceilingLabelMargin)
+      .attr('y', ceilingY + (labelFontSize / 4) )
+      .text(ceilingValue)
   }
   return d3n.svgString()
 }
