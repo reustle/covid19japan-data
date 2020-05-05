@@ -19,11 +19,25 @@ const rollingAverage = (values, size, key) => {
   return averagedValues
 }
 
-const svgSparklineWithData = (values, width, height, padding) => {
+
+// Returns an SVG of the line chart given the values.
+//
+// @param values: Array of objects in the form of {date: '', value: 0}.
+// @param width: Int Width of the resulting SVG
+// @param height: Int Height of the resulting SVG
+// @param options: {
+//  padding: {top: 0, right: 0, bottom: 0, left: 0}, 
+//  showCeilingValue: boolean, 
+//  showLastValue: boolean,
+//  displayLastValue: int
+//  }
+const svgSparklineWithData = (values, width, height, options) => {
   const d3n = new D3Node()      // initializes D3 with container element
   const d3 = d3n.d3
-  if (!padding) {
-    padding = {top: 10, right: 10, bottom: 10, left: 10}
+
+  let padding = {top: 10, right: 10, bottom: 10, left: 10}
+  if (options.padding) {
+    padding = options.padding
   }
 
   const chartWidth = width - padding.right - padding.left
@@ -32,11 +46,15 @@ const svgSparklineWithData = (values, width, height, padding) => {
   var parseTime = d3.timeParse("%Y-%m-%d");
   values.forEach(d => { d.date = parseTime(d.date); d.value = +d.value })
 
+
   var x = d3.scaleTime().range([0, chartWidth]);
   var y = d3.scaleLinear().range([chartHeight, 0])
 
   x.domain(d3.extent(values, function(d) { return d.date; }));
-  y.domain([0, d3.max(values, function(d) { return d.value; })]);
+
+  const valueMin =  d3.min([d3.min(values, function(d) { return d.value; }), 0])
+  const valueMax =  d3.max(values, function(d) { return d.value; })
+  y.domain([valueMin, valueMax]);
 
   var line = d3.line()
     .x(function(d) { return x(d.date); })
@@ -67,6 +85,60 @@ const svgSparklineWithData = (values, width, height, padding) => {
     .attr("fill", "none")
     .attr('d', line)
 
+  // Draw max and current line.
+  const labelFontSize = 10;
+  if (options.showLastValue) {
+    const axisLabelMargin = 3
+    const yFinal = values[values.length - 1].value
+
+    svg.append('circle')
+      .attr('cx', chartWidth)
+      .attr('cy', y(yFinal))
+      .attr('r', 2)
+      .attr('stroke', 'none')
+      .attr('fill', 'black')
+
+    svg.append('text')
+      .attr('class', 'axis-final-label')
+      .attr('font-family', 'sans-serif')
+      .attr('font-size', `${labelFontSize}px`)
+      .attr('x', chartWidth + axisLabelMargin)
+      .attr('y', y(yFinal) + (labelFontSize / 4) )
+      .text(options.displayLastValue ? options.displayLastValue : yFinal)
+  }
+
+  if (options.showCeilingValue) {
+    const ceilingLineLength = 5
+    const ceilingLabelMargin = 5
+
+    const roundUp = (v) => {
+      if (v < 50) { 
+        return parseInt(Math.ceil(v / 10 + 1) * 10)
+      }
+      return parseInt(Math.floor((v * 1.3)/10) * 10)
+    };
+
+    let ceilingValue = roundUp(valueMax)
+    let ceilingY = y(ceilingValue)
+    console.log(ceilingValue, ceilingY)
+    const linePoints = [[chartWidth - ceilingLineLength, ceilingY], [chartWidth, ceilingY]]
+    let ceiling = d3.line()(linePoints)
+    svg.append('path')
+      .attr('class', 'axis-ceiling')
+      .attr('stroke-width', '1')
+      .attr('stroke', 'black')
+      .attr('fill', 'none')
+      .attr('d', ceiling)
+
+      svg.append('text')
+        .attr('class', 'axis-ceiling-label')
+        .attr('font-family', 'sans-serif')
+        .attr('text-anchor', 'end')
+        .attr('font-size', `${labelFontSize}px`)
+        .attr('x', chartWidth - ceilingLineLength - ceilingLabelMargin)
+        .attr('y', ceilingY + (labelFontSize / 4) )
+        .text(ceilingValue)
+  }
   return d3n.svgString()
 }
 
