@@ -29,7 +29,7 @@ const rollingAverage = (values, size, key) => {
 //  padding: {top: 0, right: 0, bottom: 0, left: 0}, 
 //  showCeilingValue: boolean, 
 //  showLastValue: boolean,
-//  displayLastValue: int
+//  lastValueLabel: int
 //  }
 const svgSparklineWithData = (values, width, height, options) => {
   const d3n = new D3Node()      // initializes D3 with container element
@@ -104,7 +104,7 @@ const svgSparklineWithData = (values, width, height, options) => {
       .attr('font-size', `${labelFontSize}px`)
       .attr('x', chartWidth + axisLabelMargin)
       .attr('y', y(yFinal) + (labelFontSize / 4) )
-      .text(options.displayLastValue ? options.displayLastValue : yFinal)
+      .text(options.lastValueLabel ? options.lastValueLabel : yFinal)
   }
 
   if (options.showCeilingValue) {

@@ -5,12 +5,12 @@ const _ = require('lodash')
 const charts = require('./src/charts.js')
 
 
-const drawLineChart = (values, name, displayLastValue) => {
+const drawLineChart = (values, name, lastValueLabel) => {
   const options = {
     padding: {top: 30, bottom: 0, left: 0, right: 0},
-    displayLastValue: displayLastValue,  // override the last value with our custom label (needed when drawing average trend line)
     showCeilingValue: true,
-    showLastValue: false
+    showLastValue: false,
+    lastValueLabel: lastValueLabel, 
   }
   const svg = charts.svgSparklineWithData(values, 180, 60, options)
   fs.writeFileSync(`./docs/charts/${name}.svg`, svg)
