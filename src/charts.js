@@ -113,7 +113,7 @@ const svgSparklineWithData = (values, width, height, options) => {
 
     const roundUp = (v) => {
       if (v < 50) { 
-        return parseInt(Math.ceil(v / 10 + 1) * 10)
+        return parseInt(Math.ceil(v / 5 + 1) * 5)
       }
       return parseInt(Math.floor((v * 1.3)/10) * 10)
     };

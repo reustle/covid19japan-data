@@ -7,7 +7,7 @@ const charts = require('./src/charts.js')
 
 const drawLineChart = (values, name, lastValueLabel) => {
   const options = {
-    padding: {top: 30, bottom: 0, left: 0, right: 0},
+    padding: {top: 20, bottom: 0, left: 0, right: 0},
     showCeilingValue: true,
     showLastValue: false,
     lastValueLabel: lastValueLabel, 
