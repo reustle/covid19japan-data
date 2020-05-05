@@ -43,12 +43,11 @@ const svgSparklineWithData = (values, width, height, options) => {
   const chartWidth = width - padding.right - padding.left
   const chartHeight = height - padding.top - padding.bottom;
 
-  var parseTime = d3.timeParse("%Y-%m-%d");
+  let parseTime = d3.timeParse("%Y-%m-%d");
   values.forEach(d => { d.date = parseTime(d.date); d.value = +d.value })
 
-
-  var x = d3.scaleTime().range([0, chartWidth]);
-  var y = d3.scaleLinear().range([chartHeight, 0])
+  let x = d3.scaleTime().range([0, chartWidth]);
+  let y = d3.scaleLinear().range([chartHeight, 0])
 
   x.domain(d3.extent(values, function(d) { return d.date; }));
 
@@ -56,18 +55,18 @@ const svgSparklineWithData = (values, width, height, options) => {
   const valueMax =  d3.max(values, function(d) { return d.value; })
   y.domain([valueMin, valueMax]);
 
-  var line = d3.line()
+  let line = d3.line()
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.value); })
     .curve(d3.curveMonotoneX);
 
-  var area = d3.area()
+  let area = d3.area()
     .x(function(d) { return x(d.date); })
     .y0(chartHeight)
     .y1(function(d) { return y(d.value); })
     .curve(d3.curveMonotoneX)
 
-  var svg = d3n.createSVG()
+  let svg = d3n.createSVG()
     .attr('viewBox', `0 0 ${width} ${height}`)    
     .append('g')
     .attr('transform', 'translate(' + padding.left + ',' + padding.top + ')')
@@ -118,11 +117,10 @@ const svgSparklineWithData = (values, width, height, options) => {
       return parseInt(Math.floor((v * 1.3)/10) * 10)
     };
 
-    let ceilingValue = roundUp(valueMax)
-    let ceilingY = y(ceilingValue)
-    console.log(ceilingValue, ceilingY)
+    const ceilingValue = roundUp(valueMax)
+    const ceilingY = y(ceilingValue)
     const linePoints = [[chartWidth - ceilingLineLength, ceilingY], [chartWidth, ceilingY]]
-    let ceiling = d3.line()(linePoints)
+    const ceiling = d3.line()(linePoints)
     svg.append('path')
       .attr('class', 'axis-ceiling')
       .attr('stroke-width', '1')
