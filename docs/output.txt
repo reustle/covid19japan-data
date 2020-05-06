@@ -1,2 +1,12 @@
 Total patients fetched: 15739
-Success.
+(node:2836) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, open './src/datasources/prefectures.csv'
+    at Object.openSync (fs.js:458:3)
+    at Object.readFileSync (fs.js:360:35)
+    at allPrefectures (/home/runner/work/covid19japan-data/covid19japan-data/src/summarize.js:12:27)
+    at generatePrefectureSummary (/home/runner/work/covid19japan-data/covid19japan-data/src/summarize.js:318:25)
+    at Object.summarize (/home/runner/work/covid19japan-data/covid19japan-data/src/summarize.js:27:27)
+    at /home/runner/work/covid19japan-data/covid19japan-data/generate.js:72:37
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:2836) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:2836) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
