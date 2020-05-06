@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
@@ -5,12 +9,33 @@ body {
   padding: 0;
 }
 
-#page {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: stretch;  
+// #page {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: nowrap;
+//   align-items: stretch;  
+// }
+
+#statusboard {
+  display: grid;
+  grid-template-columns: [place] 90px [gov] 40px [dash] 40px [govUpdated] 40px [today] 40px [yesterday] 40px;
+  grid-template-rows: repeat(49, 25px);
+  grid-gap: 1px;
+
+  .place { grid-column: place; }
+  .gov { grid-column: gov; }
+  .dash { grid-column: dash; }
+  .govUpdated { grid-column: govUpdated; }
+  .ourCount { grid-column: place; }
+  .dash { grid-column: dash; }
+
+  .item {
+    background: #f0f0f0;
+    padding: 5px;
+  }
 }
+
+
 
 #sources {
   flex-basis: 10rem;

@@ -77,17 +77,17 @@ const extractDailySummary = (url) => {
       let contents = dom('section.module--content').text()
 
       const prefecturePattern = new RegExp('▽([^▽ ]+?)は([0-9０-９]+)人', 'igu')
-      console.log(contents)
       let prefectureMatches = contents.matchAll(prefecturePattern)
       if (prefectureMatches) {
         for (const prefectureMatch of prefectureMatches) {
-          console.log(prefectureMatch)
+          //console.log(prefectureMatch)
           // Sometimes prefectures are comma separated.
           const multiPrefectures = prefectureMatch[1].split('、')
           if (multiPrefectures.length == 1) {
             values.prefectureCounts[prefectureMatch[1]] = parseInt(normalizeFixedWidthNumbers(prefectureMatch[2]))
           } else {
             for (let multiPrefecture of multiPrefectures) {
+
               values.prefectureCounts[multiPrefecture.trim()] = parseInt(normalizeFixedWidthNumbers(prefectureMatch[2]))
             }
           }
@@ -112,8 +112,12 @@ const extractDailySummary = (url) => {
     })
 }
 
+const prefectureCountsInEnglish = (values) => {
+  return  _.mapKeys(values.prefectureCounts, (v, k) => { return prefectureLookup[k] })
+}
+
 const sortedPrefectureCounts = (values) => {
-  let prefectureCountsInEnglish = _.mapKeys(values.prefectureCounts, (v, k) => { return prefectureLookup[k] })
+  let prefectureCountsInEnglish = prefectureCountsInEnglish(values)
   //console.log(prefectureCountsInEnglish)
   let counts = []
   for (let prefectureName of _.sortBy(_.values(prefectureLookup))) {
@@ -123,10 +127,10 @@ const sortedPrefectureCounts = (values) => {
     }
     counts.push(count)
   }
-  console.log(prefectureLookup)
   return counts
 }
 
 exports.extractDailySummary = extractDailySummary
 exports.sortedPrefectureCounts = sortedPrefectureCounts
 exports.prefectureLookup = prefectureLookup
+exports.prefectureCountsInEnglish = prefectureCountsInEnglish
