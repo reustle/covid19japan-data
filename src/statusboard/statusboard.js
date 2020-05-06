@@ -173,7 +173,9 @@ const createPrefectureRow = (prefecture, prefectureSources, rowNumber) => {
   let govURL = null
   if (prefectureSources) {
     dashURL = prefectureSources.dashboard
-    govURL = prefectureSources.gov
+    if (prefectureSources.gov && prefectureSources.gov.patients) {
+      govURL = prefectureSources.gov.patients
+    }
   }
 
   d3.select('#statusboard')
