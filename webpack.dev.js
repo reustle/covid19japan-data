@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development",
   entry: {
+    patients: ["./src/statusboard/index.js", "./src/statusboard/index.scss"],
     statusboard: ["./src/statusboard/statusboard.js", "./src/statusboard/statusboard.scss"],
   },
   output: {
@@ -18,6 +19,11 @@ module.exports = {
   },
 
   plugins: [
+    new HtmlWebpackPlugin({
+      filename: "statusboard/patients.html",
+      template: "src/statusboard/index.html",
+      chunks: ["patients"],
+    }),
     new HtmlWebpackPlugin({
       filename: "statusboard/statusboard.html",
       template: "src/statusboard/statusboard.html",

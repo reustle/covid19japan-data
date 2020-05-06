@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0; }
+
+#statusboard {
+  display: grid;
+  grid-template-columns: [place] 90px [gov] 40px [dash] 40px [govUpdated] 40px [today] 40px [yesterday] 40px;
+  grid-template-rows: repeat(49, 25px);
+  grid-gap: 1px; }
+  #statusboard .place {
+    grid-column: place; }
+  #statusboard .gov {
+    grid-column: gov; }
+  #statusboard .dash {
+    grid-column: dash; }
+  #statusboard .govUpdated {
+    grid-column: govUpdated; }
+  #statusboard .ourCount {
+    grid-column: place; }
+  #statusboard .dash {
+    grid-column: dash; }
+  #statusboard .item {
+    background: #f0f0f0;
+    padding: 5px; }
+
+#sources {
+  flex-basis: 10rem;
+  flex-grow: 1;
+  background-color: #ececec;
+  padding: 20px; }
+  #sources ul {
+    padding: 3px;
+    list-style: none; }
+  #sources .alt-info {
+    margin-left: 10px;
+    color: #b8b8b8; }
+    #sources .alt-info a, #sources .alt-info a:visited, #sources .alt-info a:active {
+      text-decoration: none;
+      color: #b8b8b8; }
+  #sources .patient-link {
+    text-decoration: none;
+    color: #426dfd; }
+  #sources a.patient-link:visited {
+    color: #426dfd; }
+  #sources a.patient-link.missing {
+    color: #8e8e8f; }
+  #sources a.patient-link.selected {
+    background-color: #fc9b2c; }
+
+#console {
+  flex-basis: 6rem;
+  flex-grow: 1;
+  padding: 20px; }
+  #console textarea {
+    height: 100%; }
+
+#results {
+  flex-basis: 8rem;
+  flex-grow: 999;
+  padding: 20px;
+  height: 100vh; }
+  #results table#patients-table td, #results table#nhk-table td {
+    font-size: 13px;
+    padding: 4px; }
+  #results table#patients-table .column-filter, #results table#nhk-table .column-filter {
+    width: 60px; }
+  #results input#nhk-url {
+    padding: 5px;
+    width: 90%; }
+  #results .hide {
+    display: none; }
+  #results .hide-patientId .patientId {
+    display: none; }
+  #results .hide-dateAnnounced .dateAnnounced {
+    display: none; }
+  #results .hide-dateAdded .dateAdded {
+    display: none; }
+  #results .hide-age .age {
+    display: none; }
+  #results .hide-gender .gender {
+    display: none; }
+
+#patients-results {
+  display: none; }
+
+.patients-results #patients-results {
+  display: block; }
+
+#nhk-results {
+  display: none; }
+
+.nhk-results #nhk-results {
+  display: block; }
+

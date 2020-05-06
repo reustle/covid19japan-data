@@ -14,24 +14,30 @@
         </ul>
       </div>
       <div id="statusboard">
-        <div class="place item" style="grid-row: 1">&nbsp;</div>
-        <div class="gov item">gov</div>
-        <div class="dash item">dash</div>
-        <div class="item" style="grid-column: site;">site</div>
-        <div class="nhk item">nhk</div>
-        <div class="dataCount item">count</div>
-        <div class="item" style="grid-column: latest;">latest</div>
-        <div class="item" style="grid-column: today;">today</div>
-        <div class="item" style="grid-column: yesterday;">yesterday</div>
+        <div class="place item header" style="grid-row: 1">&nbsp;</div>
+        <div class="gov item header">gov</div>
+        <div class="dash item header">dash</div>
+        <div class="item header" style="grid-column: site;">site</div>
+        <div class="nhk item header">nhk</div>
+        <div class="dataCount item header">count</div>
+        <div class="item header" style="grid-column: latest;">latest</div>
+        <div class="item header" style="grid-column: today;">today</div>
+        <div class="item header" style="grid-column: yesterday;">yesterday</div>
+      </div>
+      <div id="patients">
+        <div class="item header" style="grid-row: 1; grid-column: patientId;">patientId</div>
+        <div class="item header" style="grid-row: 1; grid-column: dateAnnounced;">dateAnnounced</div>
+        <div class="item header" style="grid-row: 1; grid-column: age;">age</div>
+        <div class="item header" style="grid-row: 1; grid-column: gender;">gender</div>
+        <div class="item header" style="grid-row: 1; grid-column: residence;">residence</div>
+      </div>  
     </div>
-  </div>
 
-  <div id="console-panel" class="collapsed"> 
-    <div>
-      <a href="#" id="toggle-console">Toggle</a>
+    <div id="console-panel" class="collapsed"> 
+      <div>
+        <a href="#" id="toggle-console">Toggle</a>
+      </div>
+      <textarea name="console" id="console" cols="30" rows="10"></textarea>
     </div>
-    <textarea name="console" id="console" cols="30" rows="10"></textarea>
-  </div>
-
   <script type="text/javascript" src="/statusboard.js"></script></body>
 </html>
