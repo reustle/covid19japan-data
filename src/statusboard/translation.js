@@ -75,7 +75,7 @@ export const translatePlaceName = (place) => {
 
 
 export const translateRows = (rows) => {
-  return _.map(rows, row => {
+  let translatedRows = _.map(rows, row => {
     let translated = {}
     for (let key of _.keys(row)) {
       if (key == 'No' || key == 'ＮＯ') {
@@ -120,4 +120,6 @@ export const translateRows = (rows) => {
     }
     return translated
   })
+
+  return _.filter(translatedRows, o => { return o.dateAnnounced })
 }

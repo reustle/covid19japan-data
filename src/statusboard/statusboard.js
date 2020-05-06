@@ -13,29 +13,32 @@ import moment from 'moment';
 const rowByPrefecture = {}
 const responses = {}
 
-const fetchPrefectureData = (prefectureSource, prefectureName) => {
+const fetchPrefectureData = (prefectureSource, prefectureId) => {
   let prefectureInfo = prefectureSource
+  let fetcher = null
   if (prefectureInfo && prefectureInfo.patients) {
     if (prefectureInfo.patients.format == 'csv') {
-      return fetchPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
+      fetcher = fetchPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
     }  else if (prefectureInfo.patients.format == 'json') {
-      return fetchCovidJsonPatients(prefectureInfo.patients.url, prefectureInfo.patients.key)
-    } else if (prefectureName == 'fukushima') {
-      return fetchFukushimaPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
+      fetcher = fetchCovidJsonPatients(prefectureInfo.patients.url, prefectureInfo.patients.key)
+    } else if (prefectureId == 'fukushima') {
+      fetcher = fetchFukushimaPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
     }
+  }
+
+  if (fetcher) {
+    fetcher.then(patients => {
+      responses[prefectureId] = patients
+      createPrefecturePatientCountCell(prefectureId, patients)
+      createPrefecturePatientTodayCell(prefectureId, patients)
+    })
   }
 }
 
 const fetchAllPrefectureData = (prefectureSources) => {
   _.forEach(prefectureSources, (prefectureSource, prefectureId) => {
-    let fetcher = fetchPrefectureData(prefectureSource, prefectureId)
-    if (fetcher) {
-      fetcher.then(patients => {
-        responses[prefectureId] = patients
-        createPrefecturePatientCountCell(prefectureId, patients)
-        createPrefecturePatientTodayCell(prefectureId, patients)
-      })
-    }
+    fetchPrefectureData(prefectureSource, prefectureId)
+    
   })
 }
 
@@ -69,7 +72,7 @@ const createPatientItemCells = (prefectureId, patientList, patient, row) => {
   for (let d of data) {
     let value = d[1]
     if (d[0] == 'patientId') {
-      value = _.capitalize(prefectureId) + '#' + prefectureId
+      value = _.capitalize(prefectureId) + '#' + value
     }
     patientList.append('div')
         .attr('class', 'patient-item')
@@ -168,21 +171,27 @@ const createPrefectureNHKCountCell = (prefectureId, count) => {
 }
 
 
-const createPrefectureRow = (prefecture, prefectureSources, rowNumber) => {
+const createPrefectureRow = (prefecture, prefectureSource, rowNumber) => {
   let dashURL = null
   let govURL = null
-  if (prefectureSources) {
-    dashURL = prefectureSources.dashboard
-    if (prefectureSources.gov && prefectureSources.gov.patients) {
-      govURL = prefectureSources.gov.patients
+  if (prefectureSource) {
+    dashURL = prefectureSource.dashboard
+    if (prefectureSource.gov && prefectureSource.gov.patients) {
+      govURL = prefectureSource.gov.patients
     }
   }
 
   d3.select('#statusboard')
     .append('div')
-    .attr('class', 'prefecture item')
+    .attr('class', 'item')
     .style('grid-row', rowNumber)
-    .text(prefecture.prefecture_en)
+    .style('grid-column', 'place')
+    .append('a')
+      .attr('href', '#')
+      .text(prefecture.prefecture_en)
+      .on('click', (e) => { 
+        fetchPrefectureData(prefectureSource, prefecture.prefecture_en.toLowerCase())
+      })
 
   if (dashURL) {
     d3.select('#statusboard')

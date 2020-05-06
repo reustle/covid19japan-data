@@ -37,6 +37,8 @@ const sources = {
       format: 'csv',
       encoding: 'SJIS',
       url: 'https://opendata.pref.aomori.lg.jp/dataset/1531/resource/11178/20200411_%E9%99%BD%E6%80%A7%E6%82%A3%E8%80%85%E9%96%A2%E4%BF%82.csv',
+      index: 'https://opendata.pref.aomori.lg.jp/api/package_show?id=5e4612ce-1636-41d9-82a3-c5130a79ffe0',
+      todo: 'Have to use the API to show the latest URL to download.'
     },
     tests: {
       format: 'csv',
@@ -117,8 +119,10 @@ const sources = {
   },
   gifu: {
     patients: {
-      format: 'sheets',
-      url: 'https://docs.google.com/spreadsheets/d/15CHGPTLs5aqHXq38S1RbrcTtaaOWDDosfLqvey7nh8k/edit'
+      format: 'csv',
+      encoding: 'sjis',
+      url: 'https://data.gifu-opendata.pref.gifu.lg.jp/dataset/4661bf9d-6f75-43fb-9d59-f02eb84bb6e3/resource/9c35ee55-a140-4cd8-a266-a74edf60aa80/download/210005gifucovid19patients.csv',
+      index: 'https://data.gifu-opendata.pref.gifu.lg.jp/dataset/c11223-001/resource/9c35ee55-a140-4cd8-a266-a74edf60aa80'
     },
     gov: {
       patients: 'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona_kansendoko.html',
@@ -128,6 +132,10 @@ const sources = {
     dashboard: 'https://covid19-gifu.netlify.app/',
   },
   gunma: {
+    patients: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/bpr-gunma/covid19/development/data/data.json'
+    },
     gov: {
       patients: 'https://www.pref.gunma.jp/07/z87g_00016.html',
       summary: 'https://stopcovid19.pref.gunma.jp/'

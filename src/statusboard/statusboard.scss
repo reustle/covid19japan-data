@@ -31,7 +31,6 @@ body {
   grid-template-rows: repeat(49, 25px);
   grid-gap: 1px;
 
-  .place { grid-column: place; }
   .gov { grid-column: gov; }
   .nhk { grid-column: nhk; }
   .dash { grid-column: dash; }
