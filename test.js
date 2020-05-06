@@ -63,7 +63,7 @@ _.forEach(_.sortBy(_.toPairs(prefectureLookup), v => v[1]), o => { console.log(`
 
 
 const allPrefectures = () => {
-  let prefecturesCsv = fs.readFileSync('./src/datasources/prefectures.csv', 'utf8')
+  let prefecturesCsv = fs.readFileSync('./src/statusboard/prefectures.csv', 'utf8')
   let prefecturesList = Papa.parse(prefecturesCsv, {header: true})
   return _.map(prefecturesList.data, o => o.prefecture_en)
 }
