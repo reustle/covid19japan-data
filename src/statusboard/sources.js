@@ -254,7 +254,7 @@ const sources = {
         gov: { patients: 'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html' }
       },
       yokohama: {
-        gov: { patients: 'https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html' }
+        gov: { patients: 'https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html' },
         dashboard: 'https://covid19.yokohama/',
         source: 'https://github.com/covid19yokohama/covid19'
       },
