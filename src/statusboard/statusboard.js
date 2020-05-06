@@ -39,6 +39,48 @@ const fetchAllPrefectureData = (prefectureSources) => {
   })
 }
 
+const showPatients = (prefectureId) => {
+  let patients = responses[prefectureId]
+  if (!patients) {
+    console.error(`No response cached for ${prefectureId}`)
+  }
+
+  document.querySelector('#console').value = JSON.stringify(patients)
+  let patientList = d3.select('#patients')
+  d3.selectAll('.patient-item').remove()
+
+  let row = 2
+  for (let patient of patients) {
+    createPatientItemCells(prefectureId, patientList, patient, row)
+    row++
+  }
+}
+
+const createPatientItemCells = (prefectureId, patientList, patient, row) => {
+  const fields = ['patientId', 'dateAnnounced', 'age', 'gender', 'residence']
+  const dataPairs = _.map(fields, k => { 
+    let v = patient[k]
+    if (!v) return null
+    return [k, v]
+  })
+  const data = _.filter(dataPairs, _.negate(_.isNull))
+  console.log(data)
+
+  for (let d of data) {
+    let value = d[1]
+    if (d[0] == 'patientId') {
+      value = _.capitalize(prefectureId) + '#' + prefectureId
+    }
+    patientList.append('div')
+        .attr('class', 'patient-item')
+        .attr('grid-column', d[0])
+        .attr('grid-row', row)
+        .style('grid-column', d[0])
+        .style('grid-row', row)
+        .text(value)
+  }
+}
+
 const createPrefecturePatientTodayCell = (prefectureId, patients) => {
   let patientsToday = 0
   let patientsYesterday = 0
@@ -97,7 +139,12 @@ const createPrefecturePatientCountCell = (prefectureId, patients) => {
     .attr('class', 'dataCount item')
     .attr('data-prefecture-id', prefectureId)
     .style('grid-row', rowByPrefecture[prefectureId])
+    .append('a')
+    .attr('href', '#')
     .text(patientCount)
+    .on('click', e => {
+      showPatients(prefectureId)
+    })
 }
 
 const createPrefectureSiteCountCell = (prefectureId, summary) => {

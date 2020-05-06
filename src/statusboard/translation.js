@@ -80,7 +80,7 @@ export const translateRows = (rows) => {
     for (let key of _.keys(row)) {
       if (key == 'No' || key == 'ＮＯ') {
         translated['patientId'] = translatePatientId(row[key])
-      } else if (key == '公表_年月日' || key == 'リリース日' || key == '発表日' || key == '日付' || key == '公表年月日' || key == '確定日') {
+      } else if (key == '公表_年月日' || key == 'リリース日' || key == '発表日' || key == '日付' || key == '公表年月日' || key == '確定日' || key == 'date') {
         translated['dateAnnounced'] = translateDate(row[key])
       } else if (key == '患者_年代' || key == '年代' || key == '患者＿年代') {
         translated['age'] = translateAge(row[key])
