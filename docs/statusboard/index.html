@@ -3,47 +3,41 @@
   <body>
     <div id="page">
       <div id="sources">
+        <div>Actions</div>
         <ul>
-          <li><a href="#"" id="nhk-daily">nhk</a></li>
+          <li><a href="#"" class="action" id="populate-action">Populate</a></li>
+          <li><a href="#"" class="action" id="site-data-action">Site data</a></li>
+          <li><input type="text" id="nhk-url" placeholder="article url"><a href="#"" class="action" id="nhk-action">NHK</a></li>
+          <li><a href="#"" class="action" id="nhk-copy-action">Copy NHK data</a></li>
         </ul>
         <ul id="prefectures">
         </ul>
       </div>
-      <div id="results" class="">
-        <div id="nhk-results">
-          <input type="text" id="nhk-url" name="url" value="">
-          <table id="nhk-table">
-          </table>
-        </div>
-
-        <div id="patients-results">
-          <table id="patients-table">
-            <thead id="patients-head">
-              <tr>
-                <td>patientId <a href="#" class="column-toggle" data-name="patientId">+/-</a></td>
-                <td>Announced <a href="#" class="column-toggle" data-name="dateAnnounced">+/-</a></td>
-                <td>Added <a href="#" class="column-toggle" data-name="dateAdded">+/-</a></td>
-                <td>Age <a href="#" class="column-toggle" data-name="age">+/-</a></td>
-                <td>Gender <a href="#" class="column-toggle" data-name="gender">+/-</a></td>
-                <td>Residence <a href="#" class="column-toggle" data-name="residence">+/-</a></td>
-              </tr>
-              <tr>
-                <td><input type="text" value="" class="column-filter" name="patientId"></td>
-                <td><input type="text" value="" class="column-filter" name="dateAnnounced"></td>
-                <td><input type="text" value="" class="column-filter" name="dateAdded"></td>
-                <td><input type="text" value="" class="column-filter" name="age"></td>
-                <td><input type="text" value="" class="column-filter" name="gender"></td>
-                <td><input type="text" value="" class="column-filter" name="residence"></td>
-              </tr>            
-            </thead>
-            <tbody id="patients-body"></tbody>
-          </table>
-        </div>
-      </div> <!-- /results -->
-
-      <div id="console">
-        <textarea name="" id="output-debug" cols="80" rows="40"></textarea>
+      <div id="statusboard">
+        <div class="place item header" style="grid-row: 1">&nbsp;</div>
+        <div class="gov item header">gov</div>
+        <div class="dash item header">dash</div>
+        <div class="item header" style="grid-column: site;">site</div>
+        <div class="nhk item header">nhk</div>
+        <div class="dataCount item header">count</div>
+        <div class="item header" style="grid-column: latest;">latest</div>
+        <div class="item header" style="grid-column: today;">today</div>
+        <div class="item header" style="grid-column: yesterday;">yesterday</div>
       </div>
-  </div>
+      <div id="patients">
+        <div class="item header" style="grid-row: 1; grid-column: patientId;">patientId</div>
+        <div class="item header" style="grid-row: 1; grid-column: dateAnnounced;">dateAnnounced</div>
+        <div class="item header" style="grid-row: 1; grid-column: age;">age</div>
+        <div class="item header" style="grid-row: 1; grid-column: gender;">gender</div>
+        <div class="item header" style="grid-row: 1; grid-column: residence;">residence</div>
+      </div>  
+    </div>
+
+    <div id="console-panel" class="collapsed"> 
+      <div>
+        <a href="#" id="toggle-console">Toggle</a>
+      </div>
+      <textarea name="console" id="console" cols="30" rows="10"></textarea>
+    </div>
   <script type="text/javascript" src="/statusboard.js"></script></body>
 </html>
