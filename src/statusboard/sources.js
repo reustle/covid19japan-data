@@ -537,7 +537,7 @@ const sources = {
       shizuokaCity: {
         gov: {
           patients: 'https://www.city.shizuoka.lg.jp/388_000101.html'
-        }
+        },
         source: 'https://github.com/kazuomatz/covid19',
         dashboard: 'https://stopcovid19.city.shizuoka.lg.jp/'
       },
