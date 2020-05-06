@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0; }
+
+#page {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: nowrap; }
+
+#sources {
+  flex-grow: 0;
+  flex-basis: 200px;
+  padding: 1rem;
+  background: #e6e6e6; }
+
+#statusboard {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: [place] 90px [gov] 40px [dash] 40px [site] 40px [nhk] 40px [dataCount] 40px [latest] 80px [today] 40px [yesterday] 80px;
+  grid-template-rows: repeat(49, 25px);
+  grid-gap: 1px; }
+  #statusboard .place {
+    grid-column: place; }
+  #statusboard .gov {
+    grid-column: gov; }
+  #statusboard .nhk {
+    grid-column: nhk; }
+  #statusboard .dash {
+    grid-column: dash; }
+  #statusboard .dataCount {
+    grid-column: dataCount; }
+  #statusboard .today {
+    grid-column: today; }
+  #statusboard .item {
+    background: #f0f0f0;
+    padding: 5px; }
+
+#console-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  padding: 0 1rem;
+  background: #e6e6e6; }
+  #console-panel #toggle-console {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 1rem 1rem 0; }
+  #console-panel textarea#console {
+    width: 100%; }
+
+#console-panel.collapsed {
+  transform: translateY(250px); }
+
+.action.active {
+  color: red; }
+
+#nhk-url {
+  width: 100%;
+  margin: 1em 0; }
+

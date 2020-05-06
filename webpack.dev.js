@@ -19,8 +19,8 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "statusboard/index.html",
-      template: "src/statusboard/index.html",
+      filename: "statusboard/statusboard.html",
+      template: "src/statusboard/statusboard.html",
       chunks: ["statusboard"],
     }),
     new MiniCssExtractPlugin({

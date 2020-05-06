@@ -1,0 +1,37 @@
+<html>
+  <head><link href="/statusboard.css" rel="stylesheet"></head>
+  <body>
+    <div id="page">
+      <div id="sources">
+        <div>Actions</div>
+        <ul>
+          <li><a href="#"" class="action" id="populate-action">Populate</a></li>
+          <li><a href="#"" class="action" id="site-data-action">Site data</a></li>
+          <li><input type="text" id="nhk-url" placeholder="article url"><a href="#"" class="action" id="nhk-action">NHK</a></li>
+          <li><a href="#"" class="action" id="nhk-copy-action">Copy NHK data</a></li>
+        </ul>
+        <ul id="prefectures">
+        </ul>
+      </div>
+      <div id="statusboard">
+        <div class="place item" style="grid-row: 1">&nbsp;</div>
+        <div class="gov item">gov</div>
+        <div class="dash item">dash</div>
+        <div class="item" style="grid-column: site;">site</div>
+        <div class="nhk item">nhk</div>
+        <div class="dataCount item">count</div>
+        <div class="item" style="grid-column: latest;">latest</div>
+        <div class="item" style="grid-column: today;">today</div>
+        <div class="item" style="grid-column: yesterday;">yesterday</div>
+    </div>
+  </div>
+
+  <div id="console-panel" class="collapsed"> 
+    <div>
+      <a href="#" id="toggle-console">Toggle</a>
+    </div>
+    <textarea name="console" id="console" cols="30" rows="10"></textarea>
+  </div>
+
+  <script type="text/javascript" src="/statusboard.js"></script></body>
+</html>
