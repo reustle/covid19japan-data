@@ -14,6 +14,7 @@ body {
   flex-direction: row;
   justify-content: left;
   flex-wrap: nowrap;
+  margin-bottom: 50px;
 }
 
 #sources {
@@ -65,11 +66,12 @@ body {
   width: 100%;
   height: 300px;
   padding: 0 1rem;;
-  background: rgb(230, 230, 230);
+  background: rgb(32, 32, 32);
 
   #toggle-console {
     display: block;
     text-decoration: none;
+    color: rgb(200, 200, 200);
     padding: 1rem 1rem 1rem 0;
   }
 
@@ -79,7 +81,7 @@ body {
 }
 
 #console-panel.collapsed {
-  transform: translateY(250px)
+  transform: translateY(260px)
 }
 
 .action.active {
