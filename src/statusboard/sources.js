@@ -246,11 +246,15 @@ const sources = {
     },
     gov: {
       patients: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html',
+      pressRelease: 'https://www.pref.kanagawa.jp/prs/list-2020-1-1.html',
       summary: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html'
     },
     cities: {
       chigasaki: {
-        gov: { patients: 'https://www.city.chigasaki.kanagawa.jp/kenko/1022933/1038284.html' }
+        gov: { 
+          patients: 'https://www.city.chigasaki.kanagawa.jp/kenko/1022933/1038284.html',
+          pressReleases: 'https://www.city.chigasaki.kanagawa.jp/koho/1030702/1038773/index.html'
+        }
       },
       fujisawa: {
         gov: { patients: 'https://www.city.fujisawa.kanagawa.jp/hokenyobo/kansensho/korona.html' }
@@ -262,7 +266,10 @@ const sources = {
         gov: { patients: 'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html' }
       },
       yokohama: {
-        gov: { patients: 'https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html' },
+        gov: { 
+          patients: 'https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html' ,
+          summary: 'https://www.city.yokohama.lg.jp/city-info/koho-kocho/koho/topics/corona-data.html'
+        },
         dashboard: 'https://covid19.yokohama/',
         source: 'https://github.com/covid19yokohama/covid19'
       },
