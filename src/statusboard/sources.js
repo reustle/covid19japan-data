@@ -1,6 +1,6 @@
-// List of third-party machine readable data sources by prefectures. 
+import * as html from './sources_html.js'
 
-const { normalizeFixedWidthNumbers } = require('./translation.js')
+// List of third-party machine readable data sources by prefectures. 
 
 export const sources = {
   aichi: {
@@ -15,6 +15,11 @@ export const sources = {
       deceased: '死亡',
       recovered: '退院',
     },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html',
+      extract: html.aichiLatestExtract
+    },
     gov: {
       patients: 'https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html',
       patientList: 'https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html',
@@ -24,12 +29,29 @@ export const sources = {
     dashboard: 'https://stopcovid19.code4.nagoya/',
     cities: {
       nagoya: {
-        gov: { patients: 'http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html'  } 
+        gov: { patients: 'http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html'  },
+        latest: {
+          format: 'html',
+          url: 'http://www.city.nagoya.jp/kenkofukushi/page/0000126920.html',
+          extract: html.aichiNagoyaLatestExtract
+        }
       },
       toyohashi: {
-        gov: { patients: 'https://www.city.toyohashi.lg.jp/41805.htm' }
+        gov: { patients: 'https://www.city.toyohashi.lg.jp/41805.htm' },
+        latest: {
+          format: 'html',
+          url: 'https://www.city.toyohashi.lg.jp/41805.htm',
+          extract: html.aichiToyohashiLatestExtract
+        }
       },
-      okasaki: { gov: { patients: 'https://www.city.okazaki.lg.jp/1550/1562/1615/p025980.html' } }
+      okasaki: { 
+        gov: { patients: 'https://www.city.okazaki.lg.jp/1550/1562/1615/p025980.html' },
+        latest: {
+          format: 'html',
+          url: 'https://www.city.okazaki.lg.jp/1550/1562/1615/p025980.html',
+          extract: html.aichiOkazakiiLatestExtract
+        }
+      }
     }
   },
   akita: {
@@ -76,7 +98,12 @@ export const sources = {
     summary: {
       format: 'html',
       url: 'https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html',
-      get: chibaSummaryExtract
+      extract: html.chibaSummaryExtract
+    },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html',
+      extract: html.chibaLatestExtract
     },
     gov: {
       patients: 'https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html'
@@ -111,7 +138,7 @@ export const sources = {
     summary: {
       format: 'html',
       url: 'https://www.pref.fukui.lg.jp/doc/kenkou/corona/jyoukyou.html',
-      get: fukuiSummaryExtract
+      extract: html.fukuiSummaryExtract
     },
     tests: {
       format: 'csv',
@@ -135,7 +162,12 @@ export const sources = {
     summary: {
       format: 'html',
       url: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
-      get: fukuokaExtract
+      extract: html.fukuokaExtract
+    },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
+      extract: html.fukuokaLatestExtract
     },
     gov: {
       patients: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
@@ -201,6 +233,11 @@ export const sources = {
       encoding: 'SJIS',
       url: 'https://www.harp.lg.jp/opendata/dataset/1369/resource/2828/patients.csv'
     },
+    latest: {
+      format: 'html',
+      url: 'http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm',
+      extract: html.hokkaidoLatestExtract
+    },
     gov: {
       patients: 'http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm',
       summary: 'http://www.pref.hokkaido.lg.jp/ss/tkk/singatakoronahaien.htm',
@@ -226,6 +263,11 @@ export const sources = {
       patients: 'https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html',
       summary: 'https://web.pref.hyogo.lg.jp/kk03/200129.html#kensa_new',
       deaths: 'https://web.pref.hyogo.lg.jp/kk03/singatakoronataiou.html'
+    },
+    latest: {
+      format: 'url',
+      url: 'https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html',
+      extract: html.hyogoLatestExtract
     },
     cities: {
       himeji: {
@@ -293,6 +335,11 @@ export const sources = {
       pressRelease: 'https://www.pref.kanagawa.jp/prs/list-2020-1-1.html',
       summary: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html'
     },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence_07.html',
+      extract: html.kanagawaLatestExtract
+    },
     cities: {
       chigasaki: {
         gov: { 
@@ -359,12 +406,22 @@ export const sources = {
       patients: 'https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F',
       summary: 'https://www.pref.kyoto.jp/kentai/corona/pcrkensa.html'
     },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F',
+      extract: html.kyotoLatestExtract
+    },
     cities: {
       kyotoCity: {
         gov: {
           news: 'https://www.city.kyoto.lg.jp/',
           patients: 'https://www.city.kyoto.lg.jp/hokenfukushi/page/0000266641.html'
-        }
+        },
+        latest: {
+          format: 'html',
+          url: 'https://www.city.kyoto.lg.jp/hokenfukushi/page/0000266641.html',
+          extract: html.kyotoCityLatestExtract
+        },
       },
       muko: {
         gov: {
@@ -540,7 +597,13 @@ export const sources = {
     },
     gov: {
       patients: 'http://www.pref.osaka.lg.jp/hodo/index.php?HST_TITLE1=%83R%83%8D%83i&SEARCH_NUM=10&searchFlg=%8C%9F%81@%8D%F5&site=fumin',
-      patientList: 'http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html'
+      summary: 'http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html'
+    },
+    latest: {
+      format: 'html',
+      encoding: 'SJIS',
+      url: 'http://www.pref.osaka.lg.jp/hodo/index.php?HST_TITLE1=%83R%83%8D%83i&SEARCH_NUM=10&searchFlg=%8C%9F%81@%8D%F5&site=fumin',
+      extract: html.osakaLatestExtract
     },
     source: 'https://github.com/codeforosaka/covid19',
     dashboard: 'https://covid19-osaka.info/'
@@ -565,6 +628,16 @@ export const sources = {
       summary: 'https://www.pref.saitama.lg.jp/a0701/shingatacoronavirus.html',
       patients: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/5gatsu/index.html',
       patientList: 'https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html',
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.saitama.lg.jp/a0701/shingatacoronavirus.html',
+      extract: html.saitamaExtract
+    },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/5gatsu/index.html',
+      extract: html.saitamaLatestExtract
     },
     source: 'https://opendata.pref.saitama.lg.jp/data/dataset/covid19-jokyo',
     dashboard: 'https://saitama.stopcovid19.jp/'
@@ -727,55 +800,4 @@ export const sources = {
     source: 'https://github.com/covid19-yamanashi/covid19',
     dashboard: 'https://stopcovid19.yamanashi.dev/'
   }
-}
-
-
-const chibaSummaryExtract = (dom) => {
-  let result = {}
-
-  const countPattern = new RegExp('感染者数：([0-9]+)名（患者：([0-9]+)名、無症状病原体保有者：([0-9]+)名、うち([0-9]+)名死亡）', 'gi')
-  let countText = dom('#tmp_contents ul li:first-child').text()
-  if (countText) {
-    let counts = [...countText.matchAll(countPattern)]
-    if (counts) {
-      result['confirmed'] = counts[0][1]
-      result['deceased'] = counts[0][4]
-    }
-  }
-
-  const lastUpdatePattern = new RegExp('令和[0-9]+年([0-9]+)月([0-9]+)日現在', 'gi')
-  let lastUpdateText = dom('#tmp_contents h2').text()
-  console.log(lastUpdateText)
-  if (lastUpdateText) {
-    let lastUpdate = [...lastUpdateText.matchAll(lastUpdatePattern)]
-    if (lastUpdate) {
-      result['lastUpdate'] = `2020-${lastUpdate[0][1]}-${lastUpdate[0][2]}`
-    }
-  }
-
-
-  return result
-}
-
-const fukuiSummaryExtract = (dom) => {
-  let tables = dom('table')
-  let summaryTable = dom(tables[2])
-  let hospitalized = dom(tables[3])
-  let pageInfo = dom('#page-information .date').text()
-  let result = {
-    deceased:  normalizeFixedWidthNumbers(dom(summaryTable.find('td')[1]).text()),
-    recovered:  normalizeFixedWidthNumbers(dom(summaryTable.find('td')[10]).text()),
-    hospitalized: normalizeFixedWidthNumbers(dom(hospitalized.find('td')[2]).text()) + 
-                  normalizeFixedWidthNumbers(dom(hospitalized.find('td')[5]).text()),
-    lastUpdated: pageInfo
-  }
-  return result
-}
-
-const fukuokaExtract = (dom) => {
-
-}
-
-const yamaguchiExtract = (dom) => {
-
 }

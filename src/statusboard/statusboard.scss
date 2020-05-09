@@ -33,17 +33,18 @@ body {
     [govsum] 40px 
     [govdeaths] 60px 
     [dash] 40px 
+    [gov-deceased] 60px 
+    [gov-recovered] 60px 
+    [gov-confirmed] 60px 
+    [gov-latest] 300px 
     [site-confirmed] 80px
     [site-recovered] 80px
     [site-recovered-2] 80px
     [nhk] 40px 
-    [deceased] 60px 
-    [recovered] 60px 
-    [confirmed] 60px 
     [latest] 80px 
     [today] 40px 
     [yesterday] 80px;
-  grid-template-rows: repeat(49, 25px);
+  grid-template-rows: repeat(49, 40px);
   grid-gap: 1px;
 
   .header {
@@ -55,6 +56,10 @@ body {
   .dash { grid-column: dash; }
   .today { grid-column: today; }
 
+  .gov-latest {
+    overflow: hidden;
+  }
+
   .item {
     background: #f0f0f0;
     padding: 5px;
@@ -64,6 +69,13 @@ body {
   }
   .item.city a {
     color: #347f92;
+  }
+
+  .place a {
+    text-decoration: none;
+  }
+  .place a:hover {
+    color: #2bcf90;
   }
 }
 
