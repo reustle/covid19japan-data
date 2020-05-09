@@ -16,29 +16,32 @@ body {
 
 #sources {
   flex-grow: 0;
-  flex-basis: 200px;
+  min-width: 200px;
   padding: 1rem;
   background: #e6e6e6; }
 
 #statusboard {
   flex-grow: 1;
   display: grid;
-  grid-template-columns: [place] 90px [gov] 40px [dash] 40px [site] 40px [nhk] 40px [dataCount] 40px [latest] 80px [today] 40px [yesterday] 80px;
+  grid-template-columns: [place] 90px [gov] 60px [govsum] 40px [dash] 40px [site] 40px [nhk] 40px [deceased] 60px [recovered] 60px [confirmed] 60px [latest] 80px [today] 40px [yesterday] 80px;
   grid-template-rows: repeat(49, 25px);
   grid-gap: 1px; }
-  #statusboard .gov {
-    grid-column: gov; }
+  #statusboard .header {
+    font-weight: bold;
+    grid-row: 0; }
   #statusboard .nhk {
     grid-column: nhk; }
   #statusboard .dash {
     grid-column: dash; }
-  #statusboard .dataCount {
-    grid-column: dataCount; }
   #statusboard .today {
     grid-column: today; }
   #statusboard .item {
     background: #f0f0f0;
     padding: 5px; }
+  #statusboard .item a {
+    color: #0c4d5e; }
+  #statusboard .item.city a {
+    color: #347f92; }
 
 #patients {
   flex-grow: 1;
