@@ -23,7 +23,7 @@ body {
 #statusboard {
   flex-grow: 1;
   display: grid;
-  grid-template-columns: [place] 90px [gov] 60px [govsum] 40px [govdeaths] 60px [dash] 40px [gov-deceased] 60px [gov-recovered] 60px [gov-confirmed] 60px [gov-latest] 300px [site-confirmed] 80px [site-recovered] 80px [site-recovered-2] 80px [nhk] 40px [latest] 80px [today] 40px [yesterday] 80px;
+  grid-template-columns: [place] 90px [gov] 60px [gov-latest] 300px [govsum] 40px [govdeaths] 60px [dash] 40px [gov-confirmed] 60px [gov-recovered] 60px [gov-deceased] 60px [site-confirmed] 80px [site-recovered] 80px [nhk] 60px [data-confirmed] 60px [latest] 80px [today] 60px [yesterday] 60px;
   grid-template-rows: repeat(49, 40px);
   grid-gap: 1px; }
   #statusboard .header {
