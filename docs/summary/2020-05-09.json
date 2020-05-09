@@ -4312,7 +4312,7 @@
       "name": "Hiroshima"
     },
     {
-      "confirmed": 157,
+      "confirmed": 158,
       "dailyConfirmedCount": [
         0,
         0,
@@ -4435,12 +4435,12 @@
         0,
         0,
         2,
-        0,
+        1,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
         0,
@@ -4580,7 +4580,7 @@
         "Narita Airport": 3,
         "Haneda": 14,
         "Haneda Airport": 11,
-        "Haneda airport": 45,
+        "Haneda airport": 46,
         "Kansai airport": 7,
         "Naha": 1,
         "Narita airport": 53,
@@ -4879,7 +4879,7 @@
       "name": "Gifu"
     },
     {
-      "confirmed": 148,
+      "confirmed": 149,
       "dailyConfirmedCount": [
         0,
         0,
@@ -4976,12 +4976,12 @@
         0,
         0,
         0,
-        0,
+        1,
         0
       ],
       "dailyConfirmedStartDate": "2020-02-04",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
         0,
@@ -5085,7 +5085,7 @@
       "deceased": 0,
       "cruisePassenger": 0,
       "recovered": 0,
-      "critical": 2,
+      "critical": 5,
       "tested": 623,
       "patients": [],
       "confirmedByCity": {},
@@ -16369,7 +16369,7 @@
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
       "cruiseTestedCumulative": 4857,
-      "cruiseCriticalCumulative": 6,
+      "cruiseCriticalCumulative": 7,
       "date": "2020-05-05",
       "deaths": 12,
       "confirmedAvg3d": 164,
@@ -16394,7 +16394,7 @@
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
       "cruiseTestedCumulative": 4857,
-      "cruiseCriticalCumulative": 6,
+      "cruiseCriticalCumulative": 8,
       "date": "2020-05-06",
       "deaths": 10,
       "confirmedAvg3d": 132,
@@ -16419,7 +16419,7 @@
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
       "cruiseTestedCumulative": 4857,
-      "cruiseCriticalCumulative": 6,
+      "cruiseCriticalCumulative": 8,
       "date": "2020-05-07",
       "deaths": 11,
       "confirmedAvg3d": 107,
@@ -16428,8 +16428,8 @@
       "confirmedCumulativeAvg7d": 14993
     },
     {
-      "confirmed": 81,
-      "confirmedCumulative": 15515,
+      "confirmed": 82,
+      "confirmedCumulative": 15516,
       "deceased": 12,
       "deceasedCumulative": 608,
       "recovered": 701,
@@ -16438,13 +16438,13 @@
       "criticalCumulative": 287,
       "tested": 11983,
       "testedCumulative": 202013,
-      "active": -632,
-      "activeCumulative": 7116,
-      "cruiseConfirmedCumulative": 860,
+      "active": -631,
+      "activeCumulative": 7117,
+      "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
       "cruiseTestedCumulative": 4857,
-      "cruiseCriticalCumulative": 6,
+      "cruiseCriticalCumulative": 9,
       "date": "2020-05-08",
       "deaths": 12,
       "confirmedAvg3d": 92,
@@ -16454,7 +16454,7 @@
     },
     {
       "confirmed": 56,
-      "confirmedCumulative": 15571,
+      "confirmedCumulative": 15572,
       "deceased": 3,
       "deceasedCumulative": 611,
       "recovered": 256,
@@ -16464,12 +16464,12 @@
       "tested": 0,
       "testedCumulative": 202013,
       "active": -203,
-      "activeCumulative": 6913,
-      "cruiseConfirmedCumulative": 860,
+      "activeCumulative": 6914,
+      "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
       "cruiseTestedCumulative": 4857,
-      "cruiseCriticalCumulative": 6,
+      "cruiseCriticalCumulative": 9,
       "date": "2020-05-09",
       "deaths": 3,
       "confirmedAvg3d": 77,
@@ -16478,5 +16478,5 @@
       "confirmedCumulativeAvg7d": 15264
     }
   ],
-  "updated": "2020-05-09T18:02:44+09:00"
+  "updated": "2020-05-09T18:32:24+09:00"
 }
