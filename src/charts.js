@@ -117,10 +117,17 @@ const svgSparklineWithData = (values, width, height, options) => {
       return parseInt(Math.floor((v * 1.3)/10) * 10)
     };
 
+ 
     const ceilingValue = roundUp(valueMax)
     const ceilingY = y(ceilingValue)
     const linePoints = [[chartWidth - ceilingLineLength, ceilingY], [chartWidth, ceilingY]]
     const ceiling = d3.line()(linePoints)
+
+    let ceilingDisplayValue = ceilingValue
+    if (options.absValues) {
+      ceilingDisplayValue = roundUp(d3.max(options.absValues, d => d.value))
+    }
+
     svg.append('path')
       .attr('class', 'axis-ceiling')
       .attr('stroke-width', '1')
@@ -135,7 +142,7 @@ const svgSparklineWithData = (values, width, height, options) => {
       .attr('font-size', `${labelFontSize}px`)
       .attr('x', chartWidth - ceilingLineLength - ceilingLabelMargin)
       .attr('y', ceilingY + (labelFontSize / 4) )
-      .text(ceilingValue)
+      .text(ceilingDisplayValue)
   }
   return d3n.svgString()
 }

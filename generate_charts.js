@@ -5,13 +5,14 @@ const _ = require('lodash')
 const charts = require('./src/charts.js')
 
 
-const drawLineChart = (values, name, lastValueLabel) => {
+const drawLineChart = (values, name, absValues) => {
   const options = {
     padding: {top: 20, bottom: 0, left: 0, right: 0},
     showCeilingValue: true,
     showLastValue: false,
-    lastValueLabel: lastValueLabel, 
+    absValues: absValues ? absValues : values
   }
+
   const svg = charts.svgSparklineWithData(values, 180, 60, options)
   fs.writeFileSync(`./docs/charts/${name}.svg`, svg)
 }
@@ -54,8 +55,8 @@ const drawDailyLineCharts = (dailySummaries, duration) => {
     const avgValues = _.slice(charts.rollingAverage(values, avgPeriod, 'value'), values.length - duration)
     values = _.slice(values, values.length - duration)
     let lastValue = _.last(values)
-    drawLineChart(values, `${chartValue}_daily`, lastValue.value)
-    drawLineChart(avgValues, `${chartValue}_daily_avg`, lastValue.value)
+    drawLineChart(values, `${chartValue}_daily`)
+    drawLineChart(avgValues, `${chartValue}_daily_avg`, values)
   }
 
   for (let chartValue of dailyCharts) {
@@ -63,8 +64,8 @@ const drawDailyLineCharts = (dailySummaries, duration) => {
     const avgValues = _.slice(charts.rollingAverage(values, avgPeriod, 'value'), values.length - duration)
     values = _.slice(values, values.length - duration)
     let lastValue = _.last(values)
-    drawLineChart(values, `${chartValue}_cumulative`, lastValue.value)
-    drawLineChart(avgValues, `${chartValue}_cumulative_avg`, lastValue.value)
+    drawLineChart(values, `${chartValue}_cumulative`)
+    drawLineChart(avgValues, `${chartValue}_cumulative_avg`, values)
   }
 }
 
