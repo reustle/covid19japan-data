@@ -1,3 +1,4 @@
+const fetch = require('node-fetch')
 const { extractDailySummary, sortedPrefectureCounts, prefectureLookup } = require('./nhk.js')
 
 const main = () => {
@@ -6,7 +7,7 @@ const main = () => {
     url = process.argv[2]
     console.log(url)
   }
-   extractDailySummary(url)
+   extractDailySummary(url, fetch)
     .then(values => {
       let counts = sortedPrefectureCounts(values)
       console.log(counts)

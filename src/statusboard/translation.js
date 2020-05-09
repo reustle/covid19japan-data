@@ -6,7 +6,7 @@ const _ = require('lodash')
 
 const placeNameJaToEn = _.fromPairs(_.map(citynames, o => { return [o.ja, o.en] }))
 
-const normalizeFixedWidthNumbers = v => {
+export const normalizeFixedWidthNumbers = v => {
   return v.replace(/０/g, '0')
    .replace(/１/g, '1')
    .replace(/２/g, '2')

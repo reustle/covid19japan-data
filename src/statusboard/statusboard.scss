@@ -19,7 +19,7 @@ body {
 
 #sources {
   flex-grow: 0;
-  flex-basis: 200px;
+  min-width: 200px;
   padding: 1rem;
   background: rgb(230, 230, 230);
 }
@@ -28,19 +28,28 @@ body {
   flex-grow: 1;
 
   display: grid;
-  grid-template-columns: [place] 90px [gov] 40px [dash] 40px [site] 40px [nhk] 40px [dataCount] 40px [latest] 80px [today] 40px [yesterday] 80px;
+  grid-template-columns: [place] 90px [gov] 60px [govsum] 40px [dash] 40px [site] 40px [nhk] 40px [deceased] 60px [recovered] 60px [confirmed] 60px [latest] 80px [today] 40px [yesterday] 80px;
   grid-template-rows: repeat(49, 25px);
   grid-gap: 1px;
 
-  .gov { grid-column: gov; }
+  .header {
+    font-weight: bold;
+    grid-row: 0;
+  }
+
   .nhk { grid-column: nhk; }
   .dash { grid-column: dash; }
-  .dataCount { grid-column: dataCount; }
   .today { grid-column: today; }
 
   .item {
     background: #f0f0f0;
     padding: 5px;
+  }
+  .item a {
+    color: #0c4d5e;
+  }
+  .item.city a {
+    color: #347f92;
   }
 }
 

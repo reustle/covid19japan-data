@@ -1,4 +1,3 @@
-const fetch = require('node-fetch')
 const cheerio = require('cheerio')
 const _ = require('lodash')
 
@@ -66,8 +65,11 @@ const normalizeFixedWidthNumbers = v => {
     .replace(/９/g, '9')
 }
 
-const extractDailySummary = (url) => {
-  return fetch(url)
+const extractDailySummary = (url, fetchImpl) => {
+  if (!fetchImpl) {
+    fetchImpl = window.fetch
+  }
+  return fetchImpl(url)
     .then(response => response.text())
     .then(text =>  {
       let values = {

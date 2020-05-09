@@ -1,10 +1,19 @@
 // List of third-party machine readable data sources by prefectures. 
 
-const sources = {
+const { normalizeFixedWidthNumbers } = require('./translation.js')
+
+export const sources = {
   aichi: {
     patients: {
       format: 'json',
       url: 'https://raw.githubusercontent.com/code4nagoya/covid19/development/data/data.json'
+    },
+    summary: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/code4nagoya/covid19/development/data/data.json',
+      mainSummaryKey: 'main_summary_history.data',
+      deceased: '死亡',
+      recovered: '退院',
     },
     gov: {
       patients: 'https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html',
@@ -28,21 +37,28 @@ const sources = {
       url: 'https://raw.githubusercontent.com/asaba-zauberer/covid19-akita/development/data/data.json',
       key: 'patients.data'
     },
+    summary: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/asaba-zauberer/covid19-akita/development/data/data.json',
+      deceased: 'main_summary.children[0].children[2].value',
+      recovered: 'main_summary.children[0].children[1].value',
+    },
     gov: { patients: 'https://www.pref.akita.lg.jp/pages/archive/47957' },
     source: 'https://github.com/asaba-zauberer/covid19-akita/tree/development/data',
     dashboard: 'https://covid19-akita.netlify.app/en'
   },
   aomori: {
     patients: {
-      format: 'csv',
+      format: 'opendata_csv',
       encoding: 'SJIS',
-      url: 'https://opendata.pref.aomori.lg.jp/dataset/1531/resource/11178/20200411_%E9%99%BD%E6%80%A7%E6%82%A3%E8%80%85%E9%96%A2%E4%BF%82.csv',
-      index: 'https://opendata.pref.aomori.lg.jp/api/package_show?id=5e4612ce-1636-41d9-82a3-c5130a79ffe0',
-      todo: 'Have to use the API to show the latest URL to download.'
+      url: 'https://opendata.pref.aomori.lg.jp/api/package_show?id=5e4612ce-1636-41d9-82a3-c5130a79ffe0',
+      resourceName: '陽性患者関係',
     },
     tests: {
-      format: 'csv',
-      url: 'https://opendata.pref.aomori.lg.jp/dataset/1531.html'
+      format: 'opendata_csv',
+      encoding: 'SJIS',
+      url: 'https://opendata.pref.aomori.lg.jp/api/package_show?id=5e4612ce-1636-41d9-82a3-c5130a79ffe0',
+      resourceName: '検査実施状況',
     },
     gov: {
       patients: 'http://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html'
@@ -56,6 +72,11 @@ const sources = {
       format: 'json',
       url: 'https://raw.githubusercontent.com/civictechzenchiba/covid19-chiba/development/data/data.json'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html',
+      get: chibaSummaryExtract
+    },
     gov: {
       patients: 'https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html'
     },
@@ -67,8 +88,15 @@ const sources = {
       format: 'json',
       url: 'https://raw.githubusercontent.com/ehime-covid19/covid19/master/data/data.json',
     },
+    summary: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/ehime-covid19/covid19/master/data/data.json',
+      deceased: 'main_summary.children[0].children[2].value',
+      recovered: 'main_summary.children[0].children[1].value',
+    },
     gov: {
-      patients: 'https://www.pref.ehime.jp/h25500/kansen/covid19.html'
+      patients: 'https://www.pref.ehime.jp/h25500/kansen/covid19.html',
+      summary: 'https://www.pref.ehime.jp/h25500/kansen/documents/kennai_link.pdf'
     },
     source: 'https://github.com/ehime-covid19/covid19',
     dashboard: 'https://ehime-covid19.com/'
@@ -79,15 +107,20 @@ const sources = {
       format: 'csv',
       url: 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/covid-19_d/fil/covid19_patients.csv'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.fukui.lg.jp/doc/kenkou/corona/jyoukyou.html',
+      get: fukuiSummaryExtract
+    },
     tests: {
       format: 'csv',
       url: 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/covid-19_d/fil/covid19_test_count.csv'
     },
     gov: {
       patients: 'https://www.pref.fukui.lg.jp/doc/kenkou/corona/jyoukyou.html',
-      summary: 'https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona.html'
+      summary: 'https://www.pref.fukui.lg.jp/doc/kenkou/corona/jyoukyou.html'
     },
-    dashboard: 'https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona.html'
+    dashboard: 'https://www.pref.fukui.lg.jp/doc/kenkou/corona/jyoukyou.html'
   },
   fukuoka: {
     patients: {
@@ -97,6 +130,11 @@ const sources = {
     tests: {
       format: 'csv',
       url: 'https://ckan.open-governmentdata.org/dataset/ef64c68a-d89e-4b1b-a53f-d2535ebfa3a1/resource/aab43191-40d0-4a6a-9724-a9030a596009/download/400009_pref_fukuoka_covid19_exam.csv'
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
+      get: fukuokaExtract
     },
     gov: {
       patients: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
@@ -138,7 +176,8 @@ const sources = {
     },
     gov: {
       patients: 'https://www.pref.gunma.jp/07/z87g_00016.html',
-      summary: 'https://stopcovid19.pref.gunma.jp/'
+      summary: 'https://stopcovid19.pref.gunma.jp/',
+      deaths: 'https://www.pref.gunma.jp/07/z87g_00025.html'
     },
     source: 'https://github.com/bpr-gunma/covid19',
     dashboard: 'https://stopcovid19.pref.gunma.jp/'
@@ -183,7 +222,8 @@ const sources = {
       url: 'https://raw.githubusercontent.com/stop-covid19-hyogo/covid19/development/data/patients.json'
     },
     gov: {
-      patients: 'https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html'
+      patients: 'https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html',
+      summary: 'https://web.pref.hyogo.lg.jp/kk03/200129.html#kensa_new'
     },
     cities: {
       himeji: {
@@ -208,7 +248,8 @@ const sources = {
       url: 'https://raw.githubusercontent.com/a01sa01to/covid19-ibaraki/development/data/data.json'
     },
     gov: {
-      patients: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/hassei.html'
+      patients: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/hassei.html',
+      summary: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/index.html'
     },
     source: 'https://github.com/a01sa01to/covid19-ibaraki/tree/development/data',
     dashboard: 'https://ibaraki.stopcovid19.jp/'
@@ -233,7 +274,8 @@ const sources = {
       url: 'https://raw.githubusercontent.com/codeforkagawa/covid19/development/data/patients.json'
     },
     gov: {
-      patients: 'https://www.pref.kagawa.lg.jp/content/dir1/dir1_6/dir1_6_1/index.shtml'
+      patients: 'https://www.pref.kagawa.lg.jp/content/dir1/dir1_6/dir1_6_1/index.shtml',
+      summary: 'https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/sr5cfn200127213457.shtml'
     },
     source: 'https://github.com/codeforkagawa/covid19',
     dashboard: 'https://kagawa.stopcovid19.jp/en'
@@ -336,7 +378,7 @@ const sources = {
       url: 'https://raw.githubusercontent.com/FlexiblePrintedCircuits/covid19-mie/develop/data/data.json'
     },
     gov: {
-      patients: 'https://www.pref.mie.lg.jp/covid19.shtm'
+      patients: 'https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066_00002.htm'
     },
     source: 'https://github.com/FlexiblePrintedCircuits/covid19-mie',
     dashboard: 'https://mie.stopcovid19.jp/',
@@ -377,12 +419,13 @@ const sources = {
       url: 'https://raw.githubusercontent.com/kanai3id/covid19/development/data/data.json',
     },
     gov: {
-      patients: 'https://www.pref.nagano.lg.jp/koho/koho/pressreleases/2004happyoshiryo.html'
+      patients: 'https://www.pref.nagano.lg.jp/koho/koho/pressreleases/2004happyoshiryo.html',
+      summary: 'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
     },
     cities: {
       naganoCity: {
         gov: {
-          patients: 'https://www.city.nagano.nagano.jp/site/covid19-joho/449132.html'
+          patients: 'https://www.city.nagano.nagano.jp/site/covid19-joho/451795.html'
         }
       }
     },
@@ -442,7 +485,8 @@ const sources = {
       url: 'https://data.bodik.jp/dataset/f632f467-716c-46aa-8838-0d535f98b291/resource/96440e66-3061-43d6-adf3-ef1f24211d3a/download/440001oitacovid19datasummary.csv'
     },
     gov: {
-      patients: 'http://www.pref.oita.jp/site/covid19-oita/covid19-pcr.html'
+      patients: 'http://www.pref.oita.jp/site/covid19-oita/covid19-pcr.html',
+      summary: 'http://www.pref.oita.jp/site/covid19-oita/covid19-pcr.html'
     },
     cities: {
       oitaCity: {
@@ -521,7 +565,8 @@ const sources = {
   },
   shiga: {
     gov: {
-      patients: 'https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/310735.html'
+      patients: 'https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/310735.html',
+      summary: 'https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/309252.html'
     },
     source: 'https://github.com/shiga-pref-org/covid19',
     dashboard: 'https://stopcovid19.pref.shiga.jp/',
@@ -613,6 +658,12 @@ const sources = {
       format: 'csv',
       url: 'https://stopcovid19.metro.tokyo.lg.jp/data/130001_tokyo_covid19_patients.csv'
     },
+    summary: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/tokyo-metropolitan-gov/covid19/development/data/data.json',
+      deceased: 'main_summary.children[0].children[2].value',
+      recovered: 'main_summary.children[0].children[1].value',      
+    },
     gov: {
       patients: 'https://www.fukushihoken.metro.tokyo.lg.jp/hodo/index.html'
     },
@@ -649,6 +700,10 @@ const sources = {
       format: 'json',
       url: 'https://raw.githubusercontent.com/nishidayoshikatsu/covid19-yamaguchi/development/data/data.json'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html'
+    },
     gov: {
       patients: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html',
       summary: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html'
@@ -668,4 +723,53 @@ const sources = {
   }
 }
 
-exports.sources = sources
+
+const chibaSummaryExtract = (dom) => {
+  let result = {}
+
+  const countPattern = new RegExp('感染者数：([0-9]+)名（患者：([0-9]+)名、無症状病原体保有者：([0-9]+)名、うち([0-9]+)名死亡）', 'gi')
+  let countText = dom('#tmp_contents ul li:first-child').text()
+  if (countText) {
+    let counts = [...countText.matchAll(countPattern)]
+    if (counts) {
+      result['confirmed'] = counts[0][1]
+      result['deceased'] = counts[0][4]
+    }
+  }
+
+  const lastUpdatePattern = new RegExp('令和[0-9]+年([0-9]+)月([0-9]+)日現在', 'gi')
+  let lastUpdateText = dom('#tmp_contents h2').text()
+  console.log(lastUpdateText)
+  if (lastUpdateText) {
+    let lastUpdate = [...lastUpdateText.matchAll(lastUpdatePattern)]
+    if (lastUpdate) {
+      result['lastUpdate'] = `2020-${lastUpdate[0][1]}-${lastUpdate[0][2]}`
+    }
+  }
+
+
+  return result
+}
+
+const fukuiSummaryExtract = (dom) => {
+  let tables = dom('table')
+  let summaryTable = dom(tables[2])
+  let hospitalized = dom(tables[3])
+  let pageInfo = dom('#page-information .date').text()
+  let result = {
+    deceased:  normalizeFixedWidthNumbers(dom(summaryTable.find('td')[1]).text()),
+    recovered:  normalizeFixedWidthNumbers(dom(summaryTable.find('td')[10]).text()),
+    hospitalized: normalizeFixedWidthNumbers(dom(hospitalized.find('td')[2]).text()) + 
+                  normalizeFixedWidthNumbers(dom(hospitalized.find('td')[5]).text()),
+    lastUpdated: pageInfo
+  }
+  return result
+}
+
+const fukuokaExtract = (dom) => {
+
+}
+
+const yamaguchiExtract = (dom) => {
+
+}

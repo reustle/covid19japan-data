@@ -5,6 +5,8 @@ const { fetchCsv, fetchPatients } = require('./csv.js')
 const { fetchCovidJson, fetchCovidJsonPatients } = require('./covidjson.js')
 const { fetchFukushimaPatients } = require('./fukushima.js')
 const { extractDailySummary, prefectureCountsInEnglish } = require('./nhk.js')
+const { fetchOpenDataPatients } = require('./opendata.js')
+const { fetchSummaryFromHtml } = require('./html.js')
 
 import * as d3 from 'd3';
 import _ from 'lodash';
@@ -12,6 +14,47 @@ import moment from 'moment';
 
 const rowByPrefecture = {}
 const responses = {}
+
+
+const fetchPrefectureSummary = (prefectureSource, prefectureId) => {
+  if (!prefectureSource.summary) {
+    return;
+  }
+
+  if (prefectureSource.summary.format == 'json') {
+    fetchCovidJson(prefectureSource.summary.url)
+      .then(response => {
+        let mainSummary = response
+        if (prefectureSource.summary.mainSummaryKey) {
+          let summaries = _.at(response, [prefectureSource.summary.mainSummaryKey])[0]
+          mainSummary = _.last(summaries)
+        }
+
+        if (prefectureSource.summary.deceased) {
+          let number = _.at(mainSummary, [prefectureSource.summary.deceased])[0]
+          createPrefectureCell(prefectureId, 'deceased', number)
+        }
+        if (prefectureSource.summary.recovered) {
+          let number = _.at(mainSummary, [prefectureSource.summary.recovered])[0]
+          createPrefectureCell(prefectureId, 'recovered', number)
+        }
+      })
+  } else if (prefectureSource.summary.format == 'html') {
+    fetchSummaryFromHtml(prefectureSource.summary.url, prefectureSource.summary.get)
+      .then(result => {
+        console.log(result)
+        if (result) {
+          if (result.deceased) {
+            createPrefectureCell(prefectureId, 'deceased', result.deceased)
+          }
+          if (result.recovered) { 
+            createPrefectureCell(prefectureId, 'deceased', result.recovered)
+
+          }
+        }
+      })
+  }
+}
 
 const fetchPrefectureData = (prefectureSource, prefectureId) => {
   let prefectureInfo = prefectureSource
@@ -21,6 +64,12 @@ const fetchPrefectureData = (prefectureSource, prefectureId) => {
       fetcher = fetchPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
     }  else if (prefectureInfo.patients.format == 'json') {
       fetcher = fetchCovidJsonPatients(prefectureInfo.patients.url, prefectureInfo.patients.key)
+    } else if (prefectureInfo.patients.format == 'opendata_csv') {
+      fetcher = fetchOpenDataPatients(
+        prefectureInfo.patients.url, 
+        prefectureInfo.patients.resourceName, 
+        prefectureInfo.patients.encoding,
+        fetch)
     } else if (prefectureId == 'fukushima') {
       fetcher = fetchFukushimaPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
     }
@@ -28,6 +77,7 @@ const fetchPrefectureData = (prefectureSource, prefectureId) => {
 
   if (fetcher) {
     fetcher.then(patients => {
+      console.log(patients)
       responses[prefectureId] = patients
       createPrefecturePatientCountCell(prefectureId, patients)
       createPrefecturePatientTodayCell(prefectureId, patients)
@@ -139,9 +189,10 @@ const createPrefecturePatientCountCell = (prefectureId, patients) => {
   }
   d3.select('#statusboard') 
     .append('div')
-    .attr('class', 'dataCount item')
+    .attr('class', 'item')
     .attr('data-prefecture-id', prefectureId)
     .style('grid-row', rowByPrefecture[prefectureId])
+    .style('grid-column', 'confirmed')
     .append('a')
     .attr('href', '#')
     .text(patientCount)
@@ -170,27 +221,53 @@ const createPrefectureNHKCountCell = (prefectureId, count) => {
     .text(count)
 }
 
+const createPrefectureCell = (prefectureId, column, count) => {
+  d3.select('#statusboard') 
+    .append('div')
+    .attr('class', 'item')
+    .attr('data-prefecture-id', prefectureId)
+    .style('grid-row', rowByPrefecture[prefectureId])
+    .style('grid-column', column)
+    .text(count)
+}
 
-const createPrefectureRow = (prefecture, prefectureSource, rowNumber) => {
+
+const createPrefectureRow = (placeName, prefectureSource, rowNumber, withinPrefecture) => {
   let dashURL = null
-  let govURL = null
+  let govPatientsURL = null
+  let govSummaryURL = null
   if (prefectureSource) {
     dashURL = prefectureSource.dashboard
     if (prefectureSource.gov && prefectureSource.gov.patients) {
-      govURL = prefectureSource.gov.patients
+      govPatientsURL = prefectureSource.gov.patients
     }
+    if (prefectureSource.gov && prefectureSource.gov.summary) {
+      govSummaryURL = prefectureSource.gov.summary
+    }
+  }
+
+  let name = placeName
+  if (withinPrefecture) {
+    name = `&nbsp;↳&nbsp;${placeName}`
+  }
+  let htmlClass = 'item'
+  if (withinPrefecture) {
+    htmlClass = 'item city'
   }
 
   d3.select('#statusboard')
     .append('div')
-    .attr('class', 'item')
+    .attr('class', htmlClass)
     .style('grid-row', rowNumber)
     .style('grid-column', 'place')
     .append('a')
       .attr('href', '#')
-      .text(prefecture.prefecture_en)
-      .on('click', (e) => { 
-        fetchPrefectureData(prefectureSource, prefecture.prefecture_en.toLowerCase())
+      .html(name)
+      .on('click', () => { 
+        //d3_event(this).preventDefault()
+        console.log(this)
+        fetchPrefectureData(prefectureSource, placeName.toLowerCase())
+        fetchPrefectureSummary(prefectureSource, placeName.toLowerCase())
       })
 
   if (dashURL) {
@@ -200,19 +277,33 @@ const createPrefectureRow = (prefecture, prefectureSource, rowNumber) => {
       .style('grid-row', rowNumber)
       .append('a')
       .attr('href', dashURL)
+      .attr('target', '_blank')
       .text('dash')
   }
 
-  if (govURL) {
+  if (govPatientsURL) {
     d3.select('#statusboard')
       .append('div')
-      .attr('class', 'gov item')
+      .attr('class', htmlClass)
       .style('grid-row', rowNumber)
       .append('a')
-      .attr('href', govURL)
-      .text('gov')    
+      .attr('href', govPatientsURL)
+      .attr('target', '_blank')
+      .text('patients')    
+  }
+
+  if (govSummaryURL) {
+    d3.select('#statusboard')
+      .append('div')
+      .attr('class', htmlClass)
+      .style('grid-row', rowNumber)
+      .append('a')
+      .attr('href', govSummaryURL)
+      .attr('target', '_blank')
+      .text('sum')    
   }
 }
+
 
 const fetchNHKReport = (url) => {
   extractDailySummary(url).then(values => {
@@ -220,7 +311,11 @@ const fetchNHKReport = (url) => {
     responses.nhk = results
     console.log(results)
     _.forEach(results, (v, k) => {
-      createPrefectureNHKCountCell(k.toLowerCase(), v)
+      let prefectureId = k.toLowerCase()
+      if (typeof rowByPrefecture[prefectureId] === 'undefined') {
+        return
+      }
+      createPrefectureNHKCountCell(prefectureId, v)
     })
   })
 }
@@ -231,8 +326,10 @@ const fetchSiteData = () => {
     .then(json => {
       responses.site = json
       for (let prefecture of json.prefectures) {
-        console.log(prefecture)
         let prefectureId = prefecture.name.toLowerCase()
+        if (typeof rowByPrefecture[prefectureId] === 'undefined') {
+          continue
+        }
         createPrefectureSiteCountCell(prefectureId, prefecture)
       }
     })
@@ -244,7 +341,14 @@ const initStatusBoard = () => {
     let prefectureId = prefecture.prefecture_en.toLowerCase()
     let prefectureSources = sources[prefectureId]
     rowByPrefecture[prefectureId] = row
-    createPrefectureRow(prefecture, prefectureSources, row++)
+    createPrefectureRow(prefecture.prefecture_en, prefectureSources, row++)
+    if (prefectureSources && prefectureSources.cities) {
+      // Add cities
+      _.forEach(prefectureSources.cities, (citySource, cityName) => {
+        rowByPrefecture[`${prefectureId}-${cityName}`] = row
+        createPrefectureRow(cityName, citySource, row++, true)
+      })
+    }
   }
 }
 
