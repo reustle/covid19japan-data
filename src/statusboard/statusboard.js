@@ -209,7 +209,7 @@ const createPrefecturePatientCountCell = (prefectureId, patients) => {
     .attr('class', 'item')
     .attr('data-prefecture-id', prefectureId)
     .style('grid-row', rowByPrefecture[prefectureId])
-    .style('grid-column', 'confirmed')
+    .style('grid-column', 'data-confirmed')
     .append('a')
     .attr('href', '#')
     .text(patientCount)
@@ -233,16 +233,6 @@ const createPrefectureSiteCountCell = (prefectureId, summary) => {
     .attr('data-prefecture-id', prefectureId)
     .style('grid-row', rowByPrefecture[prefectureId])
     .style('grid-column', 'site-recovered')
-    .text(summary.recovered)    
-}
-
-const createPrefectureYesterdaySiteCountCell = (prefectureId, summary) => {
-  select('#statusboard') 
-    .append('div')
-    .attr('class', 'item')
-    .attr('data-prefecture-id', prefectureId)
-    .style('grid-row', rowByPrefecture[prefectureId])
-    .style('grid-column', 'site-recovered-2')
     .text(summary.recovered)    
 }
 
@@ -374,18 +364,6 @@ const fetchSiteData = () => {
         createPrefectureSiteCountCell(prefectureId, prefecture)
       }
     })
-  fetch('https://data.covid19japan.com/summary/2020-05-07.json')
-    .then(response => response.json())
-    .then(json => {
-      responses.site = json
-      for (let prefecture of json.prefectures) {
-        let prefectureId = prefecture.name.toLowerCase()
-        if (typeof rowByPrefecture[prefectureId] === 'undefined') {
-          continue
-        }
-        createPrefectureYesterdaySiteCountCell(prefectureId, prefecture)
-      }
-    })    
 }
 
 const initStatusBoard = () => {
