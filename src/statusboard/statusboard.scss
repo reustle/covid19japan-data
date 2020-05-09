@@ -28,7 +28,21 @@ body {
   flex-grow: 1;
 
   display: grid;
-  grid-template-columns: [place] 90px [gov] 60px [govsum] 40px [dash] 40px [site] 40px [nhk] 40px [deceased] 60px [recovered] 60px [confirmed] 60px [latest] 80px [today] 40px [yesterday] 80px;
+  grid-template-columns: [place] 90px 
+    [gov] 60px 
+    [govsum] 40px 
+    [govdeaths] 60px 
+    [dash] 40px 
+    [site-confirmed] 80px
+    [site-recovered] 80px
+    [site-recovered-2] 80px
+    [nhk] 40px 
+    [deceased] 60px 
+    [recovered] 60px 
+    [confirmed] 60px 
+    [latest] 80px 
+    [today] 40px 
+    [yesterday] 80px;
   grid-template-rows: repeat(49, 25px);
   grid-gap: 1px;
 

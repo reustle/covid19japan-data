@@ -17,7 +17,8 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html',
-      summary: 'https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html'
+      patientList: 'https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html',
+      summary: 'https://www.pref.aichi.jp/site/covid19-aichi/'
     },
     source: 'https://github.com/code4nagoya/covid19',
     dashboard: 'https://stopcovid19.code4.nagoya/',
@@ -223,7 +224,8 @@ export const sources = {
     },
     gov: {
       patients: 'https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html',
-      summary: 'https://web.pref.hyogo.lg.jp/kk03/200129.html#kensa_new'
+      summary: 'https://web.pref.hyogo.lg.jp/kk03/200129.html#kensa_new',
+      deaths: 'https://web.pref.hyogo.lg.jp/kk03/singatakoronataiou.html'
     },
     cities: {
       himeji: {
@@ -354,7 +356,8 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/stopcovid19-kyoto/covid19/development/data/data.json'
     },
     gov: {
-      patients: 'https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F'
+      patients: 'https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F',
+      summary: 'https://www.pref.kyoto.jp/kentai/corona/pcrkensa.html'
     },
     cities: {
       kyotoCity: {
@@ -451,7 +454,8 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/code4nara/covid19/development/data/data.json'
     },
     gov: {
-      patients: 'http://www.pref.nara.jp/module/1356.htm#moduleid1356'
+      patients: 'http://www.pref.nara.jp/module/1356.htm#moduleid1356',
+      summary: 'http://www.pref.nara.jp/module/1356.htm#moduleid1356'
     },
     source: 'https://github.com/code4nara/covid19',
     dashboard: 'https://stopcovid19.code4nara.org/'
@@ -535,7 +539,8 @@ export const sources = {
 
     },
     gov: {
-      patients: 'http://www.pref.osaka.lg.jp/hodo/index.php?HST_TITLE1=%83R%83%8D%83i&SEARCH_NUM=10&searchFlg=%8C%9F%81@%8D%F5&site=fumin'
+      patients: 'http://www.pref.osaka.lg.jp/hodo/index.php?HST_TITLE1=%83R%83%8D%83i&SEARCH_NUM=10&searchFlg=%8C%9F%81@%8D%F5&site=fumin',
+      patientList: 'http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html'
     },
     source: 'https://github.com/codeforosaka/covid19',
     dashboard: 'https://covid19-osaka.info/'
@@ -557,8 +562,9 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/codefortoda/covid19-saitama/development/data/data.json'
     },
     gov: {
-      summary: 'https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html',
+      summary: 'https://www.pref.saitama.lg.jp/a0701/shingatacoronavirus.html',
       patients: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/5gatsu/index.html',
+      patientList: 'https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html',
     },
     source: 'https://opendata.pref.saitama.lg.jp/data/dataset/covid19-jokyo',
     dashboard: 'https://saitama.stopcovid19.jp/'
@@ -577,7 +583,7 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/TaigaMikami/shimane-covid19/shimane/data/data.json'
     },
     gov: {
-      patients: 'https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/310735.html'
+      patients: 'https://www.pref.shimane.lg.jp/bousai_info/bousai/kikikanri/shingata_taisaku/new_coronavirus_portal.html'
     },
     source: 'https://github.com/TaigaMikami/shimane-covid19/',
     dashboard: 'https://shimane-covid19.netlify.app/en'
@@ -588,8 +594,8 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/hiroyuki-ichikawa/covid19/development/data/data.json'
     },
     gov: {
-      patients: 'https://www.pref.shimane.lg.jp/bousai_info/bousai/kikikanri/shingata_taisaku/new_coronavirus_portal.html',
-      summary: 'https://www.pref.shimane.lg.jp/bousai_info/bousai/kikikanri/shingata_taisaku/new_coronavirus_portal.html',
+      patients: 'https://www.pref.shizuoka.jp/kinkyu/covid-19-tyuumokujouhou.html',
+      citySummary: 'https://www.pref.shizuoka.jp/kinkyu/covid-19-bunnpujoukyou.html'
     },
     source: 'https://github.com/hiroyuki-ichikawa/covid19',
     dashboard: 'https://stopcovid19.code4numazu.org/en',

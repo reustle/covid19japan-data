@@ -207,8 +207,26 @@ const createPrefectureSiteCountCell = (prefectureId, summary) => {
     .attr('class', 'item')
     .attr('data-prefecture-id', prefectureId)
     .style('grid-row', rowByPrefecture[prefectureId])
-    .style('grid-column', 'site')
+    .style('grid-column', 'site-confirmed')
     .text(summary.confirmed)
+  d3.select('#statusboard') 
+    .append('div')
+    .attr('class', 'item')
+    .attr('data-prefecture-id', prefectureId)
+    .style('grid-row', rowByPrefecture[prefectureId])
+    .style('grid-column', 'site-recovered')
+    .text(summary.recovered)    
+}
+
+const createPrefectureYesterdaySiteCountCell = (prefectureId, summary) => {
+
+  d3.select('#statusboard') 
+    .append('div')
+    .attr('class', 'item')
+    .attr('data-prefecture-id', prefectureId)
+    .style('grid-row', rowByPrefecture[prefectureId])
+    .style('grid-column', 'site-recovered-2')
+    .text(summary.recovered)    
 }
 
 const createPrefectureNHKCountCell = (prefectureId, count) => {
@@ -233,18 +251,6 @@ const createPrefectureCell = (prefectureId, column, count) => {
 
 
 const createPrefectureRow = (placeName, prefectureSource, rowNumber, withinPrefecture) => {
-  let dashURL = null
-  let govPatientsURL = null
-  let govSummaryURL = null
-  if (prefectureSource) {
-    dashURL = prefectureSource.dashboard
-    if (prefectureSource.gov && prefectureSource.gov.patients) {
-      govPatientsURL = prefectureSource.gov.patients
-    }
-    if (prefectureSource.gov && prefectureSource.gov.summary) {
-      govSummaryURL = prefectureSource.gov.summary
-    }
-  }
 
   let name = placeName
   if (withinPrefecture) {
@@ -270,38 +276,54 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, withinPrefe
         fetchPrefectureSummary(prefectureSource, placeName.toLowerCase())
       })
 
-  if (dashURL) {
-    d3.select('#statusboard')
-      .append('div')
-      .attr('class', 'dash item')
-      .style('grid-row', rowNumber)
-      .append('a')
-      .attr('href', dashURL)
-      .attr('target', '_blank')
-      .text('dash')
-  }
 
-  if (govPatientsURL) {
-    d3.select('#statusboard')
-      .append('div')
-      .attr('class', htmlClass)
-      .style('grid-row', rowNumber)
-      .append('a')
-      .attr('href', govPatientsURL)
-      .attr('target', '_blank')
-      .text('patients')    
-  }
-
-  if (govSummaryURL) {
-    d3.select('#statusboard')
-      .append('div')
-      .attr('class', htmlClass)
-      .style('grid-row', rowNumber)
-      .append('a')
-      .attr('href', govSummaryURL)
-      .attr('target', '_blank')
-      .text('sum')    
-  }
+  if (prefectureSource) {
+    if (prefectureSource.dashboard) {
+      d3.select('#statusboard')
+        .append('div')
+        .attr('class', 'dash item')
+        .style('grid-row', rowNumber)
+        .append('a')
+        .attr('href', prefectureSource.dashboard)
+        .attr('target', '_blank')
+        .text('dash')
+    }
+    if (prefectureSource.gov) {
+      if (prefectureSource.gov.patients) {
+        d3.select('#statusboard')
+          .append('div')
+          .attr('class', htmlClass)
+          .style('grid-row', rowNumber)
+          .style('grid-column', 'gov')
+          .append('a')
+          .attr('href', prefectureSource.gov.patients)
+          .attr('target', '_blank')
+          .text('patients')    
+      }
+      if (prefectureSource.gov.summary) {
+        d3.select('#statusboard')
+          .append('div')
+          .attr('class', htmlClass)
+          .style('grid-row', rowNumber)
+          .style('grid-column', 'govsum')
+          .append('a')
+          .attr('href', prefectureSource.gov.summary)
+          .attr('target', '_blank')
+          .text('sum')    
+      }
+      if (prefectureSource.gov.deaths) {
+        d3.select('#statusboard')
+          .append('div')
+          .attr('class', htmlClass)
+          .style('grid-row', rowNumber)
+          .style('grid-column', 'govdeaths')
+          .append('a')
+          .attr('href', prefectureSource.gov.deaths)
+          .attr('target', '_blank')
+          .text('deaths')    
+      }      
+    }
+  }      
 }
 
 
@@ -333,6 +355,18 @@ const fetchSiteData = () => {
         createPrefectureSiteCountCell(prefectureId, prefecture)
       }
     })
+  fetch('https://data.covid19japan.com/summary/2020-05-07.json')
+    .then(response => response.json())
+    .then(json => {
+      responses.site = json
+      for (let prefecture of json.prefectures) {
+        let prefectureId = prefecture.name.toLowerCase()
+        if (typeof rowByPrefecture[prefectureId] === 'undefined') {
+          continue
+        }
+        createPrefectureYesterdaySiteCountCell(prefectureId, prefecture)
+      }
+    })    
 }
 
 const initStatusBoard = () => {
