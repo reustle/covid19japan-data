@@ -69,21 +69,19 @@ const patientRow = (patient, patientIdPrefix) => {
     patientIdPrefix = ''
   }
   let row = document.createElement('tr')
-  row.appendChild(cell('', 'filter'))
 
   if (patient.patientId) {
     row.appendChild(cell(patientIdPrefix + patient.patientId, 'prefectureId'))
   } else {
-    row.appendChild(cell('', 'prefectureId'))
+    row.appendChild(cell('&nbsp;', 'prefectureId'))
   }
-  row.appendChild(cell('', 'cityId'))
+  row.appendChild(cell('&nbsp;', 'cityId'))
   row.appendChild(cell(patient.dateAnnounced, 'dateAnnounced'))
   row.appendChild(cell(todayString, 'dateAdded'))
   row.appendChild(cell(patient.age, 'age'))
   row.appendChild(cell(patient.gender, 'gender'))
   row.appendChild(cell(patient.residence, 'residence'))
-  row.appendChild(cell('', 'testedCity'))
-  row.appendChild(cell('', 'testedPrefecture'))
+  row.appendChild(cell('&nbsp;', 'testedCity'))
 
   return row
 }

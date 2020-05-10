@@ -22,7 +22,7 @@ const fetchPrefectureLatest = (prefectureSource, rowId) => {
     fetchSummaryFromHtml(prefectureSource.latest.url, prefectureSource.latest.extract, prefectureSource.latest.encoding)
       .then(result => {
         if (result) {
-          console.log(result)
+          console.log(result.latest)
           if (result.latest) {
             createCell(rowId, 'gov-latest', result.latest, result.latest)
           }
@@ -107,6 +107,15 @@ const fetchAllPrefectureData = (prefectureSources) => {
     fetchPrefectureData(prefectureSource, prefectureId)
     fetchPrefectureSummary(prefectureSource, prefectureId)
     fetchPrefectureLatest(prefectureSource, prefectureId)
+    if (prefectureSource.cities) {
+      for (let cityId of _.keys(prefectureSource.cities)) {
+        let prefectureCitySource = prefectureSource.cities[cityId]
+        fetchPrefectureData(prefectureCitySource, cityId)
+        fetchPrefectureSummary(prefectureCitySource, cityId)
+        fetchPrefectureLatest(prefectureCitySource, cityId)
+    
+      }
+    }
   })
 }
 

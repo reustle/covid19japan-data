@@ -224,6 +224,16 @@ export const sources = {
       patients: 'https://www.pref.hiroshima.lg.jp/soshiki/57/covid19-cases.html',
       summary: 'https://www.pref.hiroshima.lg.jp/soshiki/57/covid19-cases.html',
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.hiroshima.lg.jp/soshiki/57/covid19-cases.html',
+      extract: html.hiroshimaSummaryExtract
+    },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.hiroshima.lg.jp/soshiki/57/covid19-cases.html',
+      extract: html.hiroshimaLatestExtract
+    },
     source: 'https://github.com/tatsuya1970/covid19',
     dashboard: 'https://covid19-hiroshima.netlify.app/en'
   },
@@ -264,6 +274,11 @@ export const sources = {
       summary: 'https://web.pref.hyogo.lg.jp/kk03/200129.html#kensa_new',
       deaths: 'https://web.pref.hyogo.lg.jp/kk03/singatakoronataiou.html'
     },
+    summary: {
+      format: 'html',
+      url: 'https://web.pref.hyogo.lg.jp/kk03/200129.html#kensa_new',
+      extract: html.hyogoSummaryExtract
+    },
     latest: {
       format: 'url',
       url: 'https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html',
@@ -294,6 +309,11 @@ export const sources = {
     gov: {
       patients: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/hassei.html',
       summary: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/index.html'
+    },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/hassei.html',
+      extract: html.ibarakiLatestExtract
     },
     source: 'https://github.com/a01sa01to/covid19-ibaraki/tree/development/data',
     dashboard: 'https://ibaraki.stopcovid19.jp/'
@@ -344,28 +364,64 @@ export const sources = {
       chigasaki: {
         gov: { 
           patients: 'https://www.city.chigasaki.kanagawa.jp/kenko/1022933/1038284.html',
-          pressReleases: 'https://www.city.chigasaki.kanagawa.jp/koho/1030702/1038773/index.html'
+          deaths: 'https://www.city.chigasaki.kanagawa.jp/koho/1030702/1038773/index.html'
+        },
+        latest: { 
+          format: 'html',
+          url: 'https://www.city.chigasaki.kanagawa.jp/kenko/1022933/1038284.html',
+          extract: html.chigasakiLatestExtract
         }
       },
       fujisawa: {
-        gov: { patients: 'https://www.city.fujisawa.kanagawa.jp/hokenyobo/kansensho/korona.html' }
+        gov: { patients: 'https://www.city.fujisawa.kanagawa.jp/hokenyobo/kansensho/korona.html' },
+        latest: { 
+          format: 'html',
+          url: 'https://www.city.fujisawa.kanagawa.jp/hokenyobo/kansensho/korona.html',
+          extract: html.fujisawaLatestExtract
+        }
       },
       kawasaki: {
-        gov: { patients: 'http://www.city.kawasaki.jp/350/page/0000115886.html' }
+        gov: { patients: 'http://www.city.kawasaki.jp/350/page/0000115886.html' },
+        latest: { 
+          format: 'html',
+          url: 'http://www.city.kawasaki.jp/350/page/0000115886.html',
+          extract: html.kawasakiLatestExtract
+        }
       },
       sagamihara: {
-        gov: { patients: 'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html' }
+        gov: { patients: 'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html' },
+        latest: { 
+          format: 'html',
+          url: 'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html',
+          extract: html.sagamiharaLatestExtract
+        }
       },
+
       yokohama: {
         gov: { 
           patients: 'https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html' ,
           summary: 'https://www.city.yokohama.lg.jp/city-info/koho-kocho/koho/topics/corona-data.html'
         },
+        latest: {
+          format: 'html',
+          url:  'https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html' ,
+          extract: html.yokohamaLatestExtract
+        },
+        summary: {
+          format: 'html',
+          url: 'https://www.city.yokohama.lg.jp/city-info/koho-kocho/koho/topics/corona-data.html',
+          extract: html.yokohamaSummaryExtract
+        },
         dashboard: 'https://covid19.yokohama/',
         source: 'https://github.com/covid19yokohama/covid19'
       },
       yokosuka: {
-        gove: { patients: 'https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html' }
+        gov: { patients: 'https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html' },
+        latest: {
+          format: 'html',
+          url:  'https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html',
+          extract: html.yokosukaLatestExtract
+        },
       },
     },
     dashboard: 'https://www.pref.kanagawa.jp/osirase/1369/'

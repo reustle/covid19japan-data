@@ -63,6 +63,23 @@ export const chibaLatestExtract = ($) => {
   }
 }
 
+export const chigasakiLatestExtract = ($) => {
+  const latestText = $('h3').first().text()
+  return {
+    latest: latestText
+  }
+}
+
+
+
+export const fujisawaLatestExtract = ($) => {
+  const latestText = $('h4').first().text()
+  return {
+    latest: latestText
+  }
+}
+
+
 export const fukuiSummaryExtract = ($) => {
   let tables = $('table')
   let summaryTable = $(tables[2])
@@ -101,11 +118,57 @@ export const fukuokaLatestExtract = ($) => {
   }
 }
 
+export const ibarakiLatestExtract = ($) => {
+  let patientNewsDate = $('.tmp_contents h4').first()
+  return {
+    latest: patientNewsDate.text()
+  }
+}
+
+export const hiroshimaSummaryExtract = ($) => {
+  const datePattern = new RegExp('([0-9]+)月([0-9]+)日現在')
+  let summaryTable = $('table')[0]
+  let summaryCells = $(summaryTable).find('td')
+  let lastUpdated = $('h3').first().text().match(datePattern)[0]
+  console.log(summaryCells)
+  return {
+    lastUpdated: lastUpdated,
+    confirmed: $(summaryCells[4]).text(),
+    recovered: $(summaryCells[6]).text(),
+    deceased: $(summaryCells[7]).text()
+  }
+
+}
+
+export const hiroshimaLatestExtract = ($) => {
+  let latestTableRow = $('table')[2]
+  let rows = $(latestTableRow).find('tr')
+  let latestRowCells = $(rows[2]).find('td')
+  let latestInfo = $(latestRowCells[1]).text() + ' ' + $(latestRowCells[0]).text() 
+  return {
+    latest: latestInfo
+  }
+}
 
 export const hokkaidoLatestExtract = ($) => {
   let patientNewsDate = $('h3').first()
   return {
     latest: patientNewsDate.text()
+  }
+}
+
+export const hyogoSummaryExtract = ($) => {
+  const table = $('.ex_table')
+  const lastUpdated = table.prev().text()
+  const rows = table.find('tr')
+  const cells = $(rows[3]).find('td')
+  console.log(cells)
+  return {
+    lastUpdated: lastUpdated,
+    tested: $(cells[0]).text(),
+    confirmed: $(cells[1]).text(),
+    deceased: $(cells[5]).text(),
+    recovered: $(cells[6]).text(),
   }
 }
 
@@ -123,6 +186,13 @@ export const kanagawaLatestExtract = ($) => {
     let date = patientNews.first().next('p').text().split('、')[0]
     latestText = date + ' ' + latestText
   }
+  return {
+    latest: latestText
+  }
+}
+
+export const kawasakiLatestExtract = ($) => {
+  const latestText = $('h2').first().text()
   return {
     latest: latestText
   }
@@ -191,6 +261,36 @@ export const saitamaLatestExtract = ($) => {
   }
 }
 
-export const yamaguchiExtract = ($) => {
+export const sagamiharaLatestExtract = ($) => {
+  const latestText = $('h2').first().text()
+  return {
+    latest: latestText
+  }
+}
 
+export const yokohamaLatestExtract = ($) => {
+  const header = $('.contents-area .wysiwyg_wp').first().text()
+  const datePattern = new RegExp('[0-9]+月[0-9]+日[0-9]+時')
+  return {
+    latest: header.match(datePattern)[0]
+  }
+}
+
+export const yokohamaSummaryExtract = ($) => {
+  const tableCells = $('table.table01 td')
+  return {
+    lastUpdated: $('h2').first().text(),
+    confirmed: $(tableCells[0]).text(),
+    deceased: $(tableCells[6]).text(),
+    recovered: $(tableCells[7]).text()
+  }
+}
+
+export const yokosukaLatestExtract = ($) => {
+  let cells = $('.datatable td')
+  let updateString = $(cells[1]).text() + ' #' +  $(cells[0]).text()
+
+  return {
+    latest:updateString
+  }
 }
