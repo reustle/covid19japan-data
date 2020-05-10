@@ -2,47 +2,50 @@
   <head></head>
   <body>
     <div id="page">
-      <div id="sources">
-        <div>Actions</div>
-        <ul>
-          <li><a href="#"" class="action" id="populate-action">Populate</a></li>
-          <li><a href="#"" class="action" id="site-data-action">Site data</a></li>
-          <li><input type="text" id="nhk-url" placeholder="article url"><a href="#"" class="action" id="nhk-action">NHK</a></li>
-          <li><a href="#"" class="action" id="nhk-copy-action">Copy NHK data</a></li>
-        </ul>
-        <ul id="prefectures">
-        </ul>
-      </div>
+      <header>
+        <h1>Statusboard</h1>
+        <a href="#"" class="action" id="populate-action">Populate</a>
+        <a href="#"" class="action" id="site-data-action">Site data</a>
+        <input type="text" id="nhk-url" placeholder="article url">
+        <a href="#"" class="action" id="nhk-action">NHK</a>
+        <a href="#"" class="action" id="nhk-copy-action">Copy NHK data</a>
+      </header>
       <div id="statusboard">
-        <div class="place item header" style="grid-row: 1">&nbsp;</div>
-        <div class="item header" style="grid-column: gov">gov</div>
-        <div class="item header" style="grid-column: gov-latest;">g:latest</div>
-        <div class="item header" style="grid-column: govsum">gov</div>
-        <div class="item header" style="grid-column: govdeaths">gov</div>
-        <div class="dash item header">dash</div>
-        <div class="item header" style="grid-column: gov-confirmed;">g:confirm</div>
-        <div class="item header" style="grid-column: gov-recovered;">g:recover</div>
-        <div class="item header" style="grid-column: gov-deceased;">g:deaths</div>
-        <div class="item header" style="grid-column: site-confirmed;">s:confirm</div>
-        <div class="item header" style="grid-column: site-recovered;">s:recover</div>
-        <div class="nhk item header">nhk:confirm</div>
-        <div class="item header" style="grid-column: data-confirmed;">d:confirm</div>
-        <div class="item header" style="grid-column: latest;">d:latest</div>
-        <div class="item header" style="grid-column: today;">d:today</div>
-        <div class="item header" style="grid-column: yesterday;">d:yesterday</div>
+        <div class="group item group-gov-links">government links</div>
+        <div class="group item group-gov-counts">gov. counts</div>
+        <div class="group item group-site-counts">covid19japan</div>
+        <div class="group item group-nhk-counts">nhk</div>
+        <div class="group item group-dash">dash</div>
+
+        <div class="place item header">&nbsp;</div>
+        <div class="item header" style="grid-column: site-confirmed;">cases</div>
+        <div class="item header" style="grid-column: site-recovered;">recovery</div>
+        <div class="item header" style="grid-column: nhk-confirmed;">cases</div>
+        <div class="item header" style="grid-column: gov-link-patients">patients</div>
+        <div class="item header" style="grid-column: gov-latest;">latest</div>
+        <div class="item header" style="grid-column: gov-link-summary">summary</div>
+        <div class="item header" style="grid-column: gov-link-deaths">deaths</div>
+        <div class="item header" style="grid-column: gov-confirmed;">cases</div>
+        <div class="item header" style="grid-column: gov-recovered;">recovery</div>
+        <div class="item header" style="grid-column: gov-deceased;">deaths</div>
+        <div class="item header" style="grid-column: dash-link">dash</div>
+        <div class="item header" style="grid-column: dash-confirmed;">cases</div>
+        <div class="item header" style="grid-column: dash-latest;">latest</div>
+        <div class="item header" style="grid-column: dash-today;">today</div>
+        <div class="item header" style="grid-column: dash-yesterday;">yesterday</div>
       </div>
-      <div id="patients">
+      <!-- <div id="patients">
         <div class="item header" style="grid-row: 1; grid-column: patientId;">patientId</div>
         <div class="item header" style="grid-row: 1; grid-column: dateAnnounced;">dateAnnounced</div>
         <div class="item header" style="grid-row: 1; grid-column: age;">age</div>
         <div class="item header" style="grid-row: 1; grid-column: gender;">gender</div>
         <div class="item header" style="grid-row: 1; grid-column: residence;">residence</div>
-      </div>  
+      </div>   -->
     </div>
 
     <div id="console-panel" class="collapsed"> 
       <div>
-        <a href="#" id="toggle-console">Toggle Console</a>
+        <a href="#" id="toggle-console" class="action">Toggle Console</a>
       </div>
       <textarea name="console" id="console" cols="30" rows="10"></textarea>
     </div>

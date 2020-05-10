@@ -2,48 +2,56 @@
   <head></head>
   <body>
     <div id="page">
-      <div id="sources">
-        <ul>
-          <li><a href="#"" id="nhk-daily">nhk</a></li>
-        </ul>
-        <ul id="prefectures">
-        </ul>
-      </div>
+      <header>
+        <h1>Patient List</h1>
+        <div id="prefecture-header"></div>
+        <a class="action" id="toggle-recent">Recent/All</a>
+        <a class="action column-toggle" data-name="prefectureId" href="#">prefectureId</a>
+        <a class="action column-toggle" data-name="dateAnnounced" href="#">Date Announced</a>
+        <a class="action column-toggle" data-name="dateAdded" href="#">Date Added</a>
+        <a class="action column-toggle" data-name="age href="#">Age</a>
+        <a class="action column-toggle" data-name="gender" href="#">Gender</a>
+        <a class="action column-toggle" data-name="residence" href="#">Residence</a>
+      </header>
+    
       <div id="results" class="">
-        <div id="nhk-results">
-          <input type="text" id="nhk-url" name="url" value="">
-          <table id="nhk-table">
-          </table>
-        </div>
-
-        <div id="patients-results">
-          <table id="patients-table">
-            <thead id="patients-head">
-              <tr>
-                <td>patientId <a href="#" class="column-toggle" data-name="patientId">+/-</a></td>
-                <td>Announced <a href="#" class="column-toggle" data-name="dateAnnounced">+/-</a></td>
-                <td>Added <a href="#" class="column-toggle" data-name="dateAdded">+/-</a></td>
-                <td>Age <a href="#" class="column-toggle" data-name="age">+/-</a></td>
-                <td>Gender <a href="#" class="column-toggle" data-name="gender">+/-</a></td>
-                <td>Residence <a href="#" class="column-toggle" data-name="residence">+/-</a></td>
-              </tr>
-              <tr>
-                <td><input type="text" value="" class="column-filter" name="patientId"></td>
-                <td><input type="text" value="" class="column-filter" name="dateAnnounced"></td>
-                <td><input type="text" value="" class="column-filter" name="dateAdded"></td>
-                <td><input type="text" value="" class="column-filter" name="age"></td>
-                <td><input type="text" value="" class="column-filter" name="gender"></td>
-                <td><input type="text" value="" class="column-filter" name="residence"></td>
-              </tr>            
-            </thead>
-            <tbody id="patients-body"></tbody>
-          </table>
-        </div>
+        <table id="patients-table">
+          <thead id="patients-head">
+            <tr>
+              <td class="filter">Filter</td>
+              <td class="prefectureId"><input type="text" value="" class="filter-field" name="prefectureId"></td>
+              <td class="cityId"></td>
+              <td class="dateAnnounced"><input type="text" value="" class="filter-field" name="dateAnnounced"></td>
+              <td class="dateAdded"><input type="text" value="" class="filter-field" name="dateAdded"></td>
+              <td class="age"><input type="text" value="" class="filter-field" name="age"></td>
+              <td class="gender"><input type="text" value="" class="filter-field" name="gender"></td>
+              <td class="residence"><input type="text" value="" class="filter-field" name="residence"></td>
+              <td class="testedCity"></td>
+              <td class="testedPrefecture"></td>
+            </tr>            
+            <tr>
+              <td></td>
+              <td class="prefectureId">prefectureId</td>
+              <td class="cityId">cityId</td>
+              <td class="dateAnnounced">Announced</td>
+              <td class="dateAdded">Added </td>
+              <td class="age">Age</td>
+              <td class="gender">Gender</td>
+              <td class="residence">Residence</td>
+              <td class="testedCity">testedCity</td>
+              <td class="testedPrefecture">testedPrefecture</td>
+            </tr>
+          </thead>
+          <tbody id="patients-body"></tbody>
+        </table>
       </div> <!-- /results -->
+  </div>
 
-      <div id="console">
-        <textarea name="" id="output-debug" cols="80" rows="40"></textarea>
-      </div>
+  <div id="console-panel" class="collapsed"> 
+    <div>
+      <a href="#" id="toggle-console" class="action">Toggle Console</a>
+    </div>
+    <textarea name="console" id="console" cols="30" rows="10"></textarea>
   </div>
   </body>
 </html>

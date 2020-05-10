@@ -1,10 +1,59 @@
 
 const _ = require('lodash')
+const moment = require('moment')
 const { fetchCsv, fetchPatients } = require('./csv.js')
 const { fetchCovidJson, fetchCovidJsonPatients } = require('./covidjson.js')
 const { fetchFukushimaPatients } = require('./fukushima.js')
-const { extractDailySummary, sortedPrefectureCounts, prefectureLookup } = require('./nhk.js')
 const { sources } = require('./sources.js')
+
+const todayString = moment().format('YYYY-MM-DD')
+const lastWeek = moment().subtract(7, 'days')
+
+let _recentOnly = true;
+let _cachedPatients = null;
+let _currentPrefectureId = ''
+
+const fetchPatientsForPrefecture = (prefectureId) => {
+  let prefectureInfo = sources[prefectureId.toLowerCase()]
+  console.log(sources)
+  if (prefectureInfo && prefectureInfo.patients) {
+    if (prefectureInfo.patients.format == 'csv') {
+      fetchPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
+        .then(patients => {
+          _cachedPatients = patients
+          updatePatientsTable(patients, _.capitalize(prefectureId) + '#')
+        })
+    }  else if (prefectureInfo.patients.format == 'json') {
+      fetchCovidJsonPatients(prefectureInfo.patients.url, prefectureInfo.patients.key)
+        .then(patients => {
+          _cachedPatients = patients
+          updatePatientsTable(patients, _.capitalize(prefectureId) + '#')
+        })
+    } else if (prefectureId == 'fukushima') {
+      fetchFukushimaPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
+        .then(patients => {
+          _cachedPatients = patients
+          updatePatientsTable(patients, _.capitalize(prefectureId) + '#')
+        })
+    }
+  }
+}
+
+// Initialize patient fetch from the URL.
+const fetchFromLocationHref = () => {
+  let hash = window.location.hash
+  if (hash) {
+    hash = hash.slice(1)  // remove hash
+  }
+
+  console.log(hash)
+
+  if (hash) {
+    document.querySelector('#prefecture-header').innerText = hash
+    _currentPrefectureId = hash
+    fetchPatientsForPrefecture(hash)
+  }
+}
 
 const cell = (contents, className) => {
   let cell = document.createElement('td')
@@ -20,16 +69,22 @@ const patientRow = (patient, patientIdPrefix) => {
     patientIdPrefix = ''
   }
   let row = document.createElement('tr')
+  row.appendChild(cell('', 'filter'))
+
   if (patient.patientId) {
-    row.appendChild(cell(patientIdPrefix + patient.patientId, 'patientId'))
+    row.appendChild(cell(patientIdPrefix + patient.patientId, 'prefectureId'))
   } else {
-    row.appendChild(cell('', 'patientId'))
+    row.appendChild(cell('', 'prefectureId'))
   }
+  row.appendChild(cell('', 'cityId'))
   row.appendChild(cell(patient.dateAnnounced, 'dateAnnounced'))
-  row.appendChild(cell(patient.dateAnnounced, 'dateAdded'))
+  row.appendChild(cell(todayString, 'dateAdded'))
   row.appendChild(cell(patient.age, 'age'))
   row.appendChild(cell(patient.gender, 'gender'))
   row.appendChild(cell(patient.residence, 'residence'))
+  row.appendChild(cell('', 'testedCity'))
+  row.appendChild(cell('', 'testedPrefecture'))
+
   return row
 }
 
@@ -67,128 +122,44 @@ const filterRows = (e) => {
 }
 
 const updatePatientsTable = (patients, patientIdPrefix) => {
-  document.querySelector('#output-debug').value = JSON.stringify(patients, false, '  ')
+  document.querySelector('#console').value = JSON.stringify(patients, false, '  ')
   document.querySelector('#results').className = 'patients-results'
   let table = document.querySelector('table#patients-table tbody#patients-body')
   table.innerHTML = ''
   for (let patient of patients) {
+    if (_recentOnly) {
+      let dateAnnounced = moment(patient.dateAnnounced)
+      if (dateAnnounced &&  dateAnnounced.isBefore(lastWeek)) {
+        continue;
+      }
+    }
     table.appendChild(patientRow(patient, patientIdPrefix))
   }
 }
 
-const updateNHKTable = (values, url) => {
-  document.querySelector('#results').className = 'nhk-results'
-  document.querySelector('#nhk-url').value = url
-
-  let table = document.querySelector('table#nhk-table')
-  table.innerHTML = ''
-  let sortedCounts = sortedPrefectureCounts(values)
-  for (let count of sortedCounts) {
-    let row = document.createElement('tr')
-    let cell = document.createElement('td')
-    cell.innerText = count
-    row.appendChild(cell)
-    table.appendChild(row)
-  }
-
-  document.querySelector('#output-debug').value = JSON.stringify(values, false, '  ')
+const initConsole = () => {
+  document.querySelector('#toggle-console').addEventListener('click', e => {
+    e.preventDefault()
+    document.querySelector('#console-panel').classList.toggle('collapsed');
+  })
 }
 
-const updateSidebar = () => {
-  const ul = document.querySelector('#sources ul#prefectures')
-  for (let prefectureName of _.keys(sources)) {
-    const prefectureInfo = sources[prefectureName]
-    let format = ''
-    if (prefectureInfo.patients) {
-      format = prefectureInfo.patients.format
-    }
 
-    const li = document.createElement('li')
-    const patientLink = document.createElement('a')
-    patientLink.href = '#'
-    patientLink.innerHTML = `${prefectureName}.${format}`
-    patientLink.setAttribute('data-prefecture', prefectureName)
-    patientLink.classList.add('patient-link')
-
-    if (format == '') {
-      patientLink.classList.add('missing')
-    }
-
-    if (prefectureInfo.patients) {
-      patientLink.addEventListener('click', e => {
-        _.map(document.querySelectorAll('.patient-link'), o => { return o.classList.remove('selected') })
-        e.target.classList.add('selected')
-        let prefectureName = e.target.getAttribute('data-prefecture')
-        let prefectureInfo = sources[prefectureName]
-        if (prefectureInfo && prefectureInfo.patients) {
-          if (prefectureInfo.patients.format == 'csv') {
-            fetchPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
-              .then(patients => {
-                updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
-              })
-          }  else if (prefectureInfo.patients.format == 'json') {
-            fetchCovidJsonPatients(prefectureInfo.patients.url, prefectureInfo.patients.key)
-              .then(patients => {
-                updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
-              })
-          } else if (prefectureName == 'fukushima') {
-            fetchFukushimaPatients(prefectureInfo.patients.url, prefectureInfo.patients.encoding, fetch)
-              .then(patients => {
-                updatePatientsTable(patients, _.capitalize(prefectureName) + '#')
-              })
-          }
-        }
-      })
-    }
-
-    const patientSourceLink = document.createElement('a')
-    patientSourceLink.href = prefectureInfo.source
-    patientSourceLink.target = '_blank'
-    patientSourceLink.innerText = 'src'
-    const patientDashboardLink = document.createElement('a')
-    patientDashboardLink.href = prefectureInfo.dashboard
-    patientDashboardLink.target = '_blank'
-    patientDashboardLink.innerText = 'dash'
-
-
-    const altInfo = document.createElement('span')
-    altInfo.classList.add('alt-info')
-    altInfo.appendChild(document.createTextNode('('))
-    altInfo.appendChild(patientSourceLink)
-    altInfo.appendChild(document.createTextNode(','))
-    altInfo.appendChild(patientDashboardLink)
-    altInfo.appendChild(document.createTextNode(')'))
-
-    li.appendChild(patientLink)
-    li.appendChild(altInfo)
-
-    ul.appendChild(li)
-  }
-}
 
 const main = () => {
-  updateSidebar()
-
-  document.querySelector('#nhk-daily').addEventListener('click', e => {
-    let url = 'https://www3.nhk.or.jp/news/html/20200417/k10012392361000.html'
-    extractDailySummary(url).then(values => {
-      updateNHKTable(values, url)
-    })
-  })
-
-  document.querySelector('#nhk-url').addEventListener('blur', e => {
-    let url = e.target.value
-    extractDailySummary(url).then(values => {
-      updateNHKTable(values, url)
-    })
-  })
-
+  initConsole()
+  fetchFromLocationHref()
   for (let button of document.querySelectorAll('.column-toggle')) {
     button.addEventListener('click', toggleColumn)
   }
   for (let button of document.querySelectorAll('.column-filter')) {
     button.addEventListener('blur', filterRows)
   }
+
+  document.querySelector('#toggle-recent').addEventListener('click', e => {
+    _recentOnly = !_recentOnly;
+    updatePatientsTable(_cachedPatients,  _.capitalize((_currentPrefectureId) + '#'))
+  })
 
 }
 

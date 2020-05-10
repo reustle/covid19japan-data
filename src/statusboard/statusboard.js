@@ -12,6 +12,7 @@ import { select, selectAll, event } from 'd3-selection'
 import _ from 'lodash';
 import moment from 'moment';
 
+const DATA_START_ROW = 3
 const rowByPrefecture = {}
 const responses = {}
 
@@ -23,7 +24,7 @@ const fetchPrefectureLatest = (prefectureSource, rowId) => {
         if (result) {
           console.log(result)
           if (result.latest) {
-            createPrefectureCell(rowId, 'gov-latest', result.latest)
+            createCell(rowId, 'gov-latest', result.latest, result.latest)
           }
         }
       })
@@ -46,11 +47,11 @@ const fetchPrefectureSummary = (prefectureSource, prefectureId) => {
 
         if (prefectureSource.summary.deceased) {
           let number = _.at(mainSummary, [prefectureSource.summary.deceased])[0]
-          createPrefectureCell(prefectureId, 'gov-deceased', number)
+          createCell(prefectureId, 'gov-deceased', number)
         }
         if (prefectureSource.summary.recovered) {
           let number = _.at(mainSummary, [prefectureSource.summary.recovered])[0]
-          createPrefectureCell(prefectureId, 'gov-recovered', number)
+          createCell(prefectureId, 'gov-recovered', number)
         }
       })
   } else if (prefectureSource.summary.format == 'html') {
@@ -59,13 +60,13 @@ const fetchPrefectureSummary = (prefectureSource, prefectureId) => {
         console.log(result)
         if (result) {
           if (result.deceased) {
-            createPrefectureCell(prefectureId, 'gov-deceased', result.deceased)
+            createCell(prefectureId, 'gov-deceased', result.deceased)
           }
           if (result.recovered) { 
-            createPrefectureCell(prefectureId, 'gov-recovered', result.recovered)
+            createCell(prefectureId, 'gov-recovered', result.recovered)
           }
           if (result.confirmed) { 
-            createPrefectureCell(prefectureId, 'gov-confirmed', result.confirmed)
+            createCell(prefectureId, 'gov-confirmed', result.confirmed)
           }
         }
       })
@@ -119,7 +120,7 @@ const showPatients = (prefectureId) => {
   let patientList = select('#patients')
   selectAll('.patient-item').remove()
 
-  let row = 2
+  let row = DATA_START_ROW
   for (let patient of patients) {
     createPatientItemCells(prefectureId, patientList, patient, row)
     row++
@@ -179,7 +180,7 @@ const createPrefecturePatientTodayCell = (prefectureId, patients) => {
     .attr('class', 'item')
     .attr('data-prefecture-id', prefectureId)
     .style('grid-row', rowByPrefecture[prefectureId])
-    .style('grid-column', 'latest')
+    .style('grid-column', 'dash-latest')
     .text(latestPatientDate)  
 
   select('#statusboard') 
@@ -187,7 +188,7 @@ const createPrefecturePatientTodayCell = (prefectureId, patients) => {
     .attr('class', 'item')
     .attr('data-prefecture-id', prefectureId)
     .style('grid-row', rowByPrefecture[prefectureId])
-    .style('grid-column', 'today')
+    .style('grid-column', 'dash-today')
     .text(patientsToday)  
 
   select('#statusboard') 
@@ -195,27 +196,28 @@ const createPrefecturePatientTodayCell = (prefectureId, patients) => {
     .attr('class', 'item')
     .attr('data-prefecture-id', prefectureId)
     .style('grid-row', rowByPrefecture[prefectureId])
-    .style('grid-column', 'yesterday')
+    .style('grid-column', 'dash-yesterday')
     .text(patientsYesterday)  
 }
 
-const createPrefecturePatientCountCell = (prefectureId, patients) => {
+const createPrefecturePatientCountCell = (placeId, patients) => {
   let patientCount = 0
   if (patients) {
     patientCount = patients.length
   }
-  select('#statusboard') 
+  select(`#statusboard`) 
     .append('div')
-    .attr('class', 'item')
-    .attr('data-prefecture-id', prefectureId)
-    .style('grid-row', rowByPrefecture[prefectureId])
-    .style('grid-column', 'data-confirmed')
+    .attr('class', _.join(['item', 'dash-confirmed', placeId], ' '))
+    .attr('data-prefecture-id', placeId)
+    .style('grid-row', rowByPrefecture[placeId])
+    .style('grid-column', 'dash-confirmed')
     .append('a')
-    .attr('href', '#')
+    .attr('href', `/statusboard/patients.html#${placeId}`)
+    .attr('target', '_blank')
     .text(patientCount)
     .on('click', e => {
       event(this).preventDefault()
-      showPatients(prefectureId)
+      showPatients(placeId)
     })
 }
 
@@ -242,18 +244,19 @@ const createPrefectureNHKCountCell = (prefectureId, count) => {
     .attr('class', 'item nhk-value')
     .attr('data-prefecture-id', prefectureId)
     .style('grid-row', rowByPrefecture[prefectureId])
-    .style('grid-column', 'nhk')
+    .style('grid-column', 'nhk-confirmed')
     .text(count)
 }
 
-const createPrefectureCell = (rowId, column, count) => {
+const createCell = (rowId, column, text, title) => {
   select('#statusboard') 
     .append('div')
-    .attr('class', 'item ' + column)
+    .attr('class', _.join(['item', column, rowId], ' '))
     .attr('data-prefecture-id', rowId)
+    .attr('title', title)
     .style('grid-row', rowByPrefecture[rowId])
     .style('grid-column', column)
-    .text(count)
+    .text(text)
 }
 
 const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureCity) => {
@@ -290,8 +293,9 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureC
     if (prefectureSource.dashboard) {
       select('#statusboard')
         .append('div')
-        .attr('class', 'dash item')
+        .attr('class', 'item')
         .style('grid-row', rowNumber)
+        .style('grid-column', 'dash-link')
         .append('a')
         .attr('href', prefectureSource.dashboard)
         .attr('target', '_blank')
@@ -303,7 +307,7 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureC
           .append('div')
           .attr('class', htmlClass)
           .style('grid-row', rowNumber)
-          .style('grid-column', 'gov')
+          .style('grid-column', 'gov-link-patients')
           .append('a')
           .attr('href', prefectureSource.gov.patients)
           .attr('target', '_blank')
@@ -314,7 +318,7 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureC
           .append('div')
           .attr('class', htmlClass)
           .style('grid-row', rowNumber)
-          .style('grid-column', 'govsum')
+          .style('grid-column', 'gov-link-summary')
           .append('a')
           .attr('href', prefectureSource.gov.summary)
           .attr('target', '_blank')
@@ -325,11 +329,11 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureC
           .append('div')
           .attr('class', htmlClass)
           .style('grid-row', rowNumber)
-          .style('grid-column', 'govdeaths')
+          .style('grid-column', 'gov-link-deaths')
           .append('a')
           .attr('href', prefectureSource.gov.deaths)
           .attr('target', '_blank')
-          .text('deaths')    
+          .text('link')    
       }      
     }
   }      
@@ -367,7 +371,7 @@ const fetchSiteData = () => {
 }
 
 const initStatusBoard = () => {
-  let row = 2
+  let row = DATA_START_ROW
   for (let prefecture of prefectures) {
     let prefectureId = prefecture.prefecture_en.toLowerCase()
     let prefectureSources = sources[prefectureId]

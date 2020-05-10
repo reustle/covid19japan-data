@@ -4,113 +4,75 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
-// #page {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: nowrap;
-//   align-items: stretch;  
-// }
-
-#statusboard {
-  display: grid;
-  grid-template-columns: [place] 90px [gov] 40px [dash] 40px [govUpdated] 40px [today] 40px [yesterday] 40px;
-  grid-template-rows: repeat(49, 25px);
-  grid-gap: 1px;
-
-  .place { grid-column: place; }
-  .gov { grid-column: gov; }
-  .dash { grid-column: dash; }
-  .govUpdated { grid-column: govUpdated; }
-  .ourCount { grid-column: place; }
-  .dash { grid-column: dash; }
-
-  .item {
-    background: #f0f0f0;
-    padding: 5px;
-  }
+#page {
 }
 
+@import "src/statusboard/console";
+@import "src/statusboard/header";
 
 
-#sources {
-  flex-basis: 10rem;
-  flex-grow: 1;
-
-  background-color: rgb(236, 236, 236);
-  padding: 20px;
-
-  ul {
-    padding: 3px;
-    list-style: none;
-  }
-
-  .alt-info {
-    margin-left: 10px;
-    a, a:visited, a:active { 
-      text-decoration: none;
-      color: rgb(184, 184, 184);
-    }
-
-    color: rgb(184, 184, 184);
-  }
-
-  .patient-link {
-    text-decoration: none;
-    color: rgb(66, 109, 253)
-  }
-
-  a.patient-link:visited {
-    color: rgb(66, 109, 253)
-  }
-
-  a.patient-link.missing {
-    color: rgb(142, 142, 143)
-  }
-
-  a.patient-link.selected {
-    background-color: rgb(252, 155, 44)
-  }
+a.action {
+  font-size: 0.8rem;
+  display: block;
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+  background-color: rgb(64, 64, 64);
+  border-radius: 0.7rem;
+  padding: 0.2rem 0.8rem;
+  margin: 0 0.5rem;
 }
 
-#console {
-  flex-basis: 6rem;
-  flex-grow: 1;
-
-  padding: 20px;
-
-  textarea {
-    height: 100%;
-  }
+a.action:hover {
+  background-color: rgb(128, 128, 128);
 }
+
+h1 {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 1rem;
+  color: rgb(250, 250, 250);
+}
+
+input[type=text] {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgb(211, 211, 211);
+  width: auto;
+}
+
 
 #results {
   flex-basis: 8rem;
   flex-grow: 999;
 
   padding: 20px;
-  height: 100vh;
 
-  table#patients-table, table#nhk-table {
+  table#patients-table {
+    thead td {
+      font-weight: bold;
+    }
+
     td {
-      font-size: 13px;
+      font-size: 14px;
       padding: 4px;
+      min-width: 100px;
     }
 
-    .column-filter {
-      width: 60px;
+    .filter-field {
+      max-width: 100px;
+    }
+
+    .filter {
+      min-width: 40px;
+      width: 40px;
     }
   }
-
-  input#nhk-url {
-    padding: 5px;
-    width: 90%;
-  }
-
 
   .hide { display: none; }
 

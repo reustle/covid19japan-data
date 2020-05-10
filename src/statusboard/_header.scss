@@ -1,0 +1,25 @@
+
+header {
+  flex-grow: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  height: 3rem;
+  padding: 0.5rem;
+  background: rgb(37, 37, 37);
+  color: rgb(250, 250, 250);
+  font-size: 0.8rem;
+
+  #nhk-url {
+    font-size: 0.8rem;
+    width: 20rem;
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.7rem;
+    border: 1px solid black;
+  }
+}
