@@ -7,57 +7,25 @@ body {
   margin: 0;
   padding: 0; }
 
-#page {
+header {
+  flex-grow: 0;
   display: flex;
   flex-direction: row;
   justify-content: left;
+  align-items: center;
   flex-wrap: nowrap;
-  margin-bottom: 50px; }
-
-#sources {
-  flex-grow: 0;
-  min-width: 200px;
-  padding: 1rem;
-  background: #e6e6e6; }
-
-#statusboard {
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: [place] 90px [gov] 60px [gov-latest] 300px [govsum] 40px [govdeaths] 60px [dash] 40px [gov-confirmed] 60px [gov-recovered] 60px [gov-deceased] 60px [site-confirmed] 80px [site-recovered] 80px [nhk] 60px [data-confirmed] 60px [latest] 80px [today] 60px [yesterday] 60px;
-  grid-template-rows: repeat(49, 40px);
-  grid-gap: 1px; }
-  #statusboard .header {
-    font-weight: bold;
-    grid-row: 0; }
-  #statusboard .nhk {
-    grid-column: nhk; }
-  #statusboard .dash {
-    grid-column: dash; }
-  #statusboard .today {
-    grid-column: today; }
-  #statusboard .gov-latest {
-    overflow: hidden; }
-  #statusboard .item {
-    background: #f0f0f0;
-    padding: 5px; }
-  #statusboard .item a {
-    color: #0c4d5e; }
-  #statusboard .item.city a {
-    color: #347f92; }
-  #statusboard .place a {
-    text-decoration: none; }
-  #statusboard .place a:hover {
-    color: #2bcf90; }
-
-#patients {
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: [patientId] 80px [dateAnnounced] 100px [age] 40px [gender] 40px [residence] 80px;
-  grid-template-rows: repeat(49, 25px);
-  grid-gap: 1px; }
-  #patients .item, #patients .patient-item {
-    background: #ffdddd;
-    padding: 5px; }
+  height: 3rem;
+  padding: 0.5rem;
+  background: #252525;
+  color: #fafafa;
+  font-size: 0.8rem; }
+  header #nhk-url {
+    font-size: 0.8rem;
+    width: 20rem;
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.7rem;
+    border: 1px solid black; }
 
 #console-panel {
   position: fixed;
@@ -68,20 +36,83 @@ body {
   padding: 0 1rem;
   background: #202020; }
   #console-panel #toggle-console {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: #c8c8c8;
-    padding: 1rem 1rem 1rem 0; }
+    margin: 0.7rem 0 0.7rem 0; }
   #console-panel textarea#console {
     width: 100%; }
 
 #console-panel.collapsed {
   transform: translateY(260px); }
 
-.action.active {
+#page {
+  margin-bottom: 60px; }
+
+#page {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: nowrap;
+  margin-bottom: 50px; }
+
+a.action {
+  font-size: 0.8rem;
+  display: block;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #404040;
+  border-radius: 0.7rem;
+  padding: 0.2rem 0.8rem;
+  margin: 0 0.5rem; }
+
+a.action:hover {
+  background-color: gray; }
+
+a.action.active {
   color: red; }
 
-#nhk-url {
-  width: 100%;
-  margin: 1em 0; }
+h1 {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 1rem;
+  color: #fafafa; }
+
+#statusboard {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: [place] 90px [site-confirmed] 80px [site-recovered] 80px [nhk-confirmed] 60px [gov-link-patients] 60px [gov-latest] 300px [gov-link-summary] 80px [gov-link-deaths] 60px [gov-confirmed] 60px [gov-recovered] 60px [gov-deceased] 60px [dash-link] 40px [dash-confirmed] 60px [dash-latest] 80px [dash-today] 60px [dash-yesterday] 60px [row-end];
+  grid-template-rows: repeat(49, 30px);
+  grid-gap: 1px; }
+  #statusboard .item {
+    background: #f0f0f0;
+    padding: 5px; }
+  #statusboard .group {
+    font-weight: bold;
+    background-color: #8a8888;
+    grid-row: 1; }
+  #statusboard .group-gov-links {
+    grid-column: gov-link-patients / gov-confirmed; }
+  #statusboard .group-gov-counts {
+    grid-column: gov-confirmed / dash-link; }
+  #statusboard .group-site-counts {
+    grid-column: site-confirmed / nhk-confirmed; }
+  #statusboard .group-nhk-counts {
+    grid-column: nhk-confirmed; }
+  #statusboard .group-dash {
+    grid-column: dash-link / row-end; }
+  #statusboard .header {
+    font-weight: bold;
+    background-color: #bdbdbd;
+    grid-row: 2; }
+  #statusboard .gov-latest {
+    overflow-y: scroll; }
+  #statusboard .item a {
+    color: #0c4d5e; }
+  #statusboard .item.city a {
+    color: #347f92; }
+  #statusboard .place a {
+    text-decoration: none; }
+  #statusboard .place a:hover {
+    color: #2bcf90; }
 

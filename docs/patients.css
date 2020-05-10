@@ -3,75 +3,93 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   margin: 0;
   padding: 0; }
 
-#statusboard {
-  display: grid;
-  grid-template-columns: [place] 90px [gov] 40px [dash] 40px [govUpdated] 40px [today] 40px [yesterday] 40px;
-  grid-template-rows: repeat(49, 25px);
-  grid-gap: 1px; }
-  #statusboard .place {
-    grid-column: place; }
-  #statusboard .gov {
-    grid-column: gov; }
-  #statusboard .dash {
-    grid-column: dash; }
-  #statusboard .govUpdated {
-    grid-column: govUpdated; }
-  #statusboard .ourCount {
-    grid-column: place; }
-  #statusboard .dash {
-    grid-column: dash; }
-  #statusboard .item {
-    background: #f0f0f0;
-    padding: 5px; }
-
-#sources {
-  flex-basis: 10rem;
-  flex-grow: 1;
-  background-color: #ececec;
-  padding: 20px; }
-  #sources ul {
-    padding: 3px;
-    list-style: none; }
-  #sources .alt-info {
-    margin-left: 10px;
-    color: #b8b8b8; }
-    #sources .alt-info a, #sources .alt-info a:visited, #sources .alt-info a:active {
-      text-decoration: none;
-      color: #b8b8b8; }
-  #sources .patient-link {
+#console-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  padding: 0 1rem;
+  background: #202020; }
+  #console-panel #toggle-console {
+    display: inline-block;
     text-decoration: none;
-    color: #426dfd; }
-  #sources a.patient-link:visited {
-    color: #426dfd; }
-  #sources a.patient-link.missing {
-    color: #8e8e8f; }
-  #sources a.patient-link.selected {
-    background-color: #fc9b2c; }
+    color: #c8c8c8;
+    margin: 0.7rem 0 0.7rem 0; }
+  #console-panel textarea#console {
+    width: 100%; }
 
-#console {
-  flex-basis: 6rem;
-  flex-grow: 1;
-  padding: 20px; }
-  #console textarea {
-    height: 100%; }
+#console-panel.collapsed {
+  transform: translateY(260px); }
+
+#page {
+  margin-bottom: 60px; }
+
+header {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 3rem;
+  padding: 0.5rem;
+  background: #252525;
+  color: #fafafa;
+  font-size: 0.8rem; }
+  header #nhk-url {
+    font-size: 0.8rem;
+    width: 20rem;
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.7rem;
+    border: 1px solid black; }
+
+a.action {
+  font-size: 0.8rem;
+  display: block;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #404040;
+  border-radius: 0.7rem;
+  padding: 0.2rem 0.8rem;
+  margin: 0 0.5rem; }
+
+a.action:hover {
+  background-color: gray; }
+
+h1 {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 1rem;
+  color: #fafafa; }
+
+input[type=text] {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.7rem;
+  border: 1px solid lightgray;
+  width: auto; }
 
 #results {
   flex-basis: 8rem;
   flex-grow: 999;
-  padding: 20px;
-  height: 100vh; }
-  #results table#patients-table td, #results table#nhk-table td {
-    font-size: 13px;
-    padding: 4px; }
-  #results table#patients-table .column-filter, #results table#nhk-table .column-filter {
-    width: 60px; }
-  #results input#nhk-url {
-    padding: 5px;
-    width: 90%; }
+  padding: 20px; }
+  #results table#patients-table thead td {
+    font-weight: bold; }
+  #results table#patients-table td {
+    font-size: 14px;
+    padding: 4px;
+    min-width: 100px; }
+  #results table#patients-table .filter-field {
+    max-width: 100px; }
+  #results table#patients-table .filter {
+    min-width: 40px;
+    width: 40px; }
   #results .hide {
     display: none; }
   #results .hide-patientId .patientId {
