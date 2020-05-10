@@ -494,7 +494,8 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/FlexiblePrintedCircuits/covid19-mie/develop/data/data.json'
     },
     gov: {
-      patients: 'https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066_00002.htm'
+      patients: 'https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066_00002.htm',
+      summary: 'https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066_00002.htm'
     },
     source: 'https://github.com/FlexiblePrintedCircuits/covid19-mie',
     dashboard: 'https://mie.stopcovid19.jp/',
@@ -549,6 +550,15 @@ export const sources = {
     dashboard: 'https://covid19-nagano.info/en'
   },
   nagasaki: {
+    patients: {
+      format: 'csv',
+      url: 'http://data.bodik.jp/dataset/09951e04-dc5d-42e9-9a49-37443be6787e/resource/de7ce61e-1849-47a1-b758-bca3f809cdf8/download/20200428prefnagasakicovidpatients.csv',
+      source: 'https://data.bodik.jp/dataset/420000_covidpatients/resource/de7ce61e-1849-47a1-b758-bca3f809cdf8'
+    },
+    summary: {
+      format: 'csv',
+      url: 'https://data.bodik.jp/dataset/420000_covidcounts/resource/438f03f1-0ee8-466d-a5d9-e874f5367507'
+    },
     gov: {
       patients: 'https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/'
     },
@@ -568,7 +578,7 @@ export const sources = {
     },
     gov: {
       patients: 'http://www.pref.nara.jp/module/1356.htm#moduleid1356',
-      summary: 'http://www.pref.nara.jp/module/1356.htm#moduleid1356'
+      summary: 'http://www.pref.nara.jp/module/1356.htm'
     },
     source: 'https://github.com/code4nara/covid19',
     dashboard: 'https://stopcovid19.code4nara.org/'
@@ -772,13 +782,15 @@ export const sources = {
   },
   tottori: {
     gov: {
-      patients: 'https://www.pref.tottori.lg.jp/corona-virus/'
+      patients: 'https://www.pref.tottori.lg.jp/corona-virus/',
+      summary: 'https://www.pref.tottori.lg.jp/item/1205989.htm#itemid1205989'
     },
     dashboard: 'https://tottori-covid19.netlify.app/en'
   },
   toyama: {
     gov: {
-      patients: 'http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html'
+      patients: 'http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html',
+      summary: 'http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html'
     },
     cities: {
       toyamaCity: {
@@ -810,7 +822,8 @@ export const sources = {
   },
   wakayama: {
     gov: {
-      patients: 'https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html'
+      patients: 'https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html',
+      summary: 'https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html'
     },
     dashboard: 'https://stopcovid19.wakayama.jp/'
   },

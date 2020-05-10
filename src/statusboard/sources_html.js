@@ -106,7 +106,7 @@ export const fukuokaExtract = ($) => {
     lastUpdated: lastUpdated.text(),
     tested: $(cells[0]).text(),
     confirmed: $(cells[1]).text(),
-    deceased: $(cells[2]).text(),
+    deceased: $(cells[3]).text(),
     recovered: $(cells[4]).text()
   }
 }
