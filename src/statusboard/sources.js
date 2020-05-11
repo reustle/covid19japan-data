@@ -536,7 +536,7 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/kanai3id/covid19/development/data/data.json',
     },
     gov: {
-      patients: 'https://www.pref.nagano.lg.jp/koho/koho/pressreleases/2004happyoshiryo.html',
+      patients: 'https://www.pref.nagano.lg.jp/kensei/koho/pressreleases/index.html',
       summary: 'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
     },
     cities: {
