@@ -61,12 +61,14 @@ export const sources = {
       key: 'patients.data'
     },
     summary: {
-      format: 'json',
-      url: 'https://raw.githubusercontent.com/asaba-zauberer/covid19-akita/development/data/data.json',
-      deceased: 'main_summary.children[0].children[2].value',
-      recovered: 'main_summary.children[0].children[1].value',
+      format: 'html',
+      url: 'https://www.pref.akita.lg.jp/pages/archive/47957',
+      extract: html.akitaSummaryExtract
     },
-    gov: { patients: 'https://www.pref.akita.lg.jp/pages/archive/47957' },
+    gov: { 
+      patients: 'https://www.pref.akita.lg.jp/pages/archive/47957',
+      summary: 'https://www.pref.akita.lg.jp/pages/archive/47957'
+    },
     source: 'https://github.com/asaba-zauberer/covid19-akita/tree/development/data',
     dashboard: 'https://covid19-akita.netlify.app/en'
   },
@@ -199,6 +201,11 @@ export const sources = {
       patients: 'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona_kansendoko.html',
       summary: 'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona_kansendoko.html'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona_kansendoko.html',
+      extract: html.gifuSummaryExtract
+    }, 
     source: 'https://github.com/CODE-for-GIFU/covid19/blob/development/api/sheet.js',
     dashboard: 'https://covid19-gifu.netlify.app/',
   },
@@ -243,6 +250,11 @@ export const sources = {
       encoding: 'SJIS',
       url: 'https://www.harp.lg.jp/opendata/dataset/1369/resource/2828/patients.csv'
     },
+    summary: {
+      format: 'html',
+      url: 'http://www.pref.hokkaido.lg.jp/ss/tkk/singatakoronahaien.htm',
+      extract: html.hokkaidoSummaryExtract
+    },    
     latest: {
       format: 'html',
       url: 'http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm',
@@ -310,6 +322,11 @@ export const sources = {
       patients: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/hassei.html',
       summary: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/index.html'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/index.html',
+      extract: html.ibarakiSummaryExtract
+    },
     latest: {
       format: 'html',
       url: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/hassei.html',
@@ -328,6 +345,11 @@ export const sources = {
       patients: 'https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html',
       summary: 'https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html',
+      extract: html.ishikawaSummaryExtract
+    },
     source: 'https://github.com/Retsuki/covid19-ishikawa',
     dashboard: 'https://ishikawa-covid19.netlify.app/'
   },
@@ -340,6 +362,12 @@ export const sources = {
     gov: {
       patients: 'https://www.pref.kagawa.lg.jp/content/dir1/dir1_6/dir1_6_1/index.shtml',
       summary: 'https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/sr5cfn200127213457.shtml'
+    },
+    summary: {
+      format: 'html',
+      encoding: 'EUCJP',
+      url: 'https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/sr5cfn200127213457.shtml',
+      extract: html.kagawaSummaryExtract
     },
     source: 'https://github.com/codeforkagawa/covid19',
     dashboard: 'https://kagawa.stopcovid19.jp/en'

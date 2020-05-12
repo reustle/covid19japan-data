@@ -22,15 +22,15 @@ export const fetchSummaryFromHtml = (url, crawl, encoding, fetchImpl) => {
         return response.text()
       }
       return response.arrayBuffer().then(arrayBuffer => {
-        let sjisArray = new Uint8Array(arrayBuffer)
-        let unicodeArray = Encoding.convert(sjisArray, 'UNICODE', 'SJIS')
+        let nonUnicodeArray = new Uint8Array(arrayBuffer)
+        let unicodeArray = Encoding.convert(nonUnicodeArray, 'UNICODE', encoding)
         let unicodeString = Encoding.codeToString(unicodeArray)
         return unicodeString
       })
     })
     .then(text =>  {
       let dom = cheerio.load(text)
-      return crawl(dom)
+      return crawl(dom, url)
     })
 }
 

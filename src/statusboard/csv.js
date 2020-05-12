@@ -25,8 +25,8 @@ const fetchCsv = (url, encoding, fetcher) => {
         return response.text()
       }
       return response.arrayBuffer().then(arrayBuffer => {
-        let sjisArray = new Uint8Array(arrayBuffer)
-        let unicodeArray = Encoding.convert(sjisArray, 'UNICODE', 'SJIS')
+        let nonUnicodeArray = new Uint8Array(arrayBuffer)
+        let unicodeArray = Encoding.convert(nonUnicodeArray, 'UNICODE', encoding)
         let unicodeString = Encoding.codeToString(unicodeArray)
         return unicodeString
       })

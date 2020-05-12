@@ -44,7 +44,6 @@ const fetchPrefectureSummary = (prefectureSource, prefectureId) => {
           let summaries = _.at(response, [prefectureSource.summary.mainSummaryKey])[0]
           mainSummary = _.last(summaries)
         }
-
         if (prefectureSource.summary.deceased) {
           let number = _.at(mainSummary, [prefectureSource.summary.deceased])[0]
           createCell(prefectureId, 'gov-deceased', number)
@@ -59,6 +58,9 @@ const fetchPrefectureSummary = (prefectureSource, prefectureId) => {
       .then(result => {
         console.log(result)
         if (result) {
+          if (result.image) {
+            createLinkCell(prefectureId, 'gov-confirmed', 'image', 'image', result.image)
+          }
           if (result.deceased) {
             createCell(prefectureId, 'gov-deceased', result.deceased)
           }
@@ -266,6 +268,20 @@ const createCell = (rowId, column, text, title) => {
     .style('grid-row', rowByPrefecture[rowId])
     .style('grid-column', column)
     .text(text)
+}
+
+const createLinkCell = (rowId, column, text, title, url) => {
+  select('#statusboard') 
+    .append('div')
+    .attr('class', _.join(['item', column, rowId], ' '))
+    .attr('data-prefecture-id', rowId)
+    .attr('title', title)
+    .style('grid-row', rowByPrefecture[rowId])
+    .style('grid-column', column)
+    .append('a')
+      .attr('href', url)
+      .attr('target', '_blank')
+      .text(text)
 }
 
 const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureCity) => {
