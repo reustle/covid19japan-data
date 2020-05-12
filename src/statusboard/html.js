@@ -29,6 +29,7 @@ export const fetchSummaryFromHtml = (url, crawl, encoding, fetchImpl) => {
       })
     })
     .then(text =>  {
+      console.log(url)
       let dom = cheerio.load(text)
       return crawl(dom, url)
     })

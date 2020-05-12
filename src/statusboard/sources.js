@@ -490,6 +490,11 @@ export const sources = {
       patients: 'https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F',
       summary: 'https://www.pref.kyoto.jp/kentai/corona/pcrkensa.html'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.kyoto.jp/kentai/corona/pcrkensa.html',
+      extract: html.kyotoSummaryExtract
+    },
     latest: {
       format: 'html',
       url: 'https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F',
@@ -537,6 +542,11 @@ export const sources = {
       patients: 'https://www.pref.miyagi.jp/site/covid-19/02.html',
       summary: 'https://www.pref.miyagi.jp/site/covid-19/02.html'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.miyagi.jp/site/covid-19/02.html',
+      extract: html.miyagiSummaryExtract
+    },
     cities: {
       sendai: {
         gov: {
@@ -563,6 +573,11 @@ export const sources = {
       format: 'json',
       url: 'https://raw.githubusercontent.com/kanai3id/covid19/development/data/data.json',
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html',
+      extract: html.naganoSummaryExtract
+    },    
     gov: {
       patients: 'https://www.pref.nagano.lg.jp/kensei/koho/pressreleases/index.html',
       summary: 'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
@@ -689,6 +704,12 @@ export const sources = {
       key: 'patients.data'
 
     },
+    summary: {
+      format: 'html',
+      encoding: 'SJIS',
+      url: 'http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html',
+      extract: html.osakaSummaryExtract
+    },
     gov: {
       patients: 'http://www.pref.osaka.lg.jp/hodo/index.php?HST_TITLE1=%83R%83%8D%83i&SEARCH_NUM=10&searchFlg=%8C%9F%81@%8D%F5&site=fumin',
       summary: 'http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html'
@@ -726,7 +747,7 @@ export const sources = {
     summary: {
       format: 'html',
       url: 'https://www.pref.saitama.lg.jp/a0701/shingatacoronavirus.html',
-      extract: html.saitamaExtract
+      extract: html.saitamaSummaryExtract
     },
     latest: {
       format: 'html',
@@ -875,10 +896,6 @@ export const sources = {
     patients: {
       format: 'json',
       url: 'https://raw.githubusercontent.com/nishidayoshikatsu/covid19-yamaguchi/development/data/data.json'
-    },
-    summary: {
-      format: 'html',
-      url: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html'
     },
     gov: {
       patients: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html',
