@@ -1463,11 +1463,11 @@
         0,
         0,
         0,
-        0,
+        1,
         0
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 42,
+      "deceased": 43,
       "cruisePassenger": 1,
       "recovered": 642,
       "critical": 0,
@@ -1528,9 +1528,9 @@
         "Hidaka": 1
       },
       "newlyDeceased": 0,
-      "yesterdayDeceased": 0,
+      "yesterdayDeceased": 1,
       "name_ja": "埼玉県",
-      "deaths": 42,
+      "deaths": 43,
       "name": "Saitama"
     },
     {
@@ -16933,23 +16933,23 @@
     {
       "confirmed": 71,
       "confirmedCumulative": 15892,
-      "deceased": 17,
-      "deceasedCumulative": 671,
+      "deceased": 18,
+      "deceasedCumulative": 672,
       "recovered": 1090,
       "recoveredCumulative": 9823,
       "critical": -6,
       "criticalCumulative": 243,
       "tested": 5445,
       "testedCumulative": 223649,
-      "active": -1036,
-      "activeCumulative": 5398,
+      "active": -1037,
+      "activeCumulative": 5397,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 9,
       "date": "2020-05-12",
-      "deaths": 17,
+      "deaths": 18,
       "confirmedAvg3d": 59,
       "confirmedCumulativeAvg3d": 15796,
       "confirmedAvg7d": 82,
@@ -16959,7 +16959,7 @@
       "confirmed": 3,
       "confirmedCumulative": 15895,
       "deceased": 0,
-      "deceasedCumulative": 671,
+      "deceasedCumulative": 672,
       "recovered": 0,
       "recoveredCumulative": 9823,
       "critical": 0,
@@ -16967,7 +16967,7 @@
       "tested": 0,
       "testedCumulative": 223649,
       "active": 3,
-      "activeCumulative": 5401,
+      "activeCumulative": 5400,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
@@ -16981,5 +16981,5 @@
       "confirmedCumulativeAvg7d": 15699
     }
   ],
-  "updated": "2020-05-13T16:32:02+09:00"
+  "updated": "2020-05-13T16:47:06+09:00"
 }
