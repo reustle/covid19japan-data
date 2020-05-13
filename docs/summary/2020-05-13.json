@@ -2342,8 +2342,8 @@
         1,
         1,
         0,
-        1,
-        1
+        0,
+        2
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 37,
@@ -2368,14 +2368,14 @@
         "Akashi": 1,
         "Inami": 1
       },
-      "newlyDeceased": 1,
-      "yesterdayDeceased": 1,
+      "newlyDeceased": 2,
+      "yesterdayDeceased": 0,
       "name_ja": "兵庫県",
       "deaths": 37,
       "name": "Hyogo"
     },
     {
-      "confirmed": 654,
+      "confirmed": 655,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2503,10 +2503,10 @@
         1,
         0,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -2654,7 +2654,7 @@
         "Chikugo": 2,
         "Kurume": 15,
         "Kyotogun": 1,
-        "Fukuoka City": 99,
+        "Fukuoka City": 100,
         "Itoshima": 4,
         "Buzen": 6,
         "Nakama": 1,
@@ -3283,7 +3283,7 @@
       "name": "Kyoto"
     },
     {
-      "confirmed": 283,
+      "confirmed": 284,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3411,10 +3411,10 @@
         1,
         2,
         3,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
@@ -3571,7 +3571,7 @@
       "name": "Ishikawa"
     },
     {
-      "confirmed": 221,
+      "confirmed": 222,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3698,12 +3698,12 @@
         3,
         0,
         0,
-        0,
+        1,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
         0,
@@ -4435,7 +4435,7 @@
       "name": "Hiroshima"
     },
     {
-      "confirmed": 160,
+      "confirmed": 163,
       "dailyConfirmedCount": [
         0,
         0,
@@ -4562,12 +4562,12 @@
         0,
         2,
         0,
-        0,
-        0
+        2,
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "newlyConfirmed": 1,
+      "yesterdayConfirmed": 2,
       "dailyDeceasedCount": [
         0,
         0,
@@ -4711,10 +4711,10 @@
         "Narita Airport": 3,
         "Haneda": 14,
         "Haneda Airport": 11,
-        "Haneda airport": 46,
-        "Kansai airport": 7,
+        "Haneda airport": 47,
+        "Kansai airport": 8,
         "Naha": 1,
-        "Narita airport": 55,
+        "Narita airport": 56,
         "Unspecified": 2,
         "Narita": 1
       },
@@ -9830,7 +9830,7 @@
       "name": "Tochigi"
     },
     {
-      "confirmed": 48,
+      "confirmed": 51,
       "dailyConfirmedCount": [
         0,
         0,
@@ -9957,12 +9957,12 @@
         0,
         0,
         0,
-        0,
-        0
+        1,
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "newlyConfirmed": 2,
+      "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
         0,
@@ -10100,7 +10100,7 @@
       "tested": 0,
       "confirmedByCity": {
         "Ainan": 1,
-        "Matsuyama": 4,
+        "Matsuyama": 7,
         "Niihama": 1,
         "Matsumae": 2
       },
@@ -10392,7 +10392,7 @@
       "name": "Kumamoto"
     },
     {
-      "confirmed": 45,
+      "confirmed": 46,
       "dailyConfirmedCount": [
         0,
         0,
@@ -10520,10 +10520,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -10670,7 +10670,7 @@
         "Karatsu": 1,
         "Yoshinogari": 1,
         "Sasebo": 1,
-        "Arita": 1,
+        "Arita": 2,
         "Ōmachi": 2,
         "Kurume": 1
       },
@@ -16932,55 +16932,55 @@
       "confirmedCumulativeAvg7d": 15549
     },
     {
-      "confirmed": 83,
-      "confirmedCumulative": 15904,
-      "deceased": 19,
-      "deceasedCumulative": 675,
+      "confirmed": 87,
+      "confirmedCumulative": 15908,
+      "deceased": 18,
+      "deceasedCumulative": 674,
       "recovered": 1090,
       "recoveredCumulative": 9823,
       "critical": -6,
       "criticalCumulative": 243,
       "tested": 5445,
       "testedCumulative": 223649,
-      "active": -1026,
-      "activeCumulative": 5406,
+      "active": -1021,
+      "activeCumulative": 5411,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 9,
       "date": "2020-05-12",
-      "deaths": 19,
-      "confirmedAvg3d": 63,
-      "confirmedCumulativeAvg3d": 15800,
-      "confirmedAvg7d": 84,
-      "confirmedCumulativeAvg7d": 15633
+      "deaths": 18,
+      "confirmedAvg3d": 64,
+      "confirmedCumulativeAvg3d": 15801,
+      "confirmedAvg7d": 85,
+      "confirmedCumulativeAvg7d": 15634
     },
     {
-      "confirmed": 38,
-      "confirmedCumulative": 15942,
-      "deceased": 16,
+      "confirmed": 44,
+      "confirmedCumulative": 15952,
+      "deceased": 17,
       "deceasedCumulative": 691,
       "recovered": 143,
       "recoveredCumulative": 9966,
-      "critical": 0,
-      "criticalCumulative": 243,
+      "critical": 16,
+      "criticalCumulative": 259,
       "tested": 18,
       "testedCumulative": 223667,
-      "active": -121,
-      "activeCumulative": 5285,
+      "active": -116,
+      "activeCumulative": 5295,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 9,
       "date": "2020-05-13",
-      "deaths": 16,
-      "confirmedAvg3d": 53,
-      "confirmedCumulativeAvg3d": 15853,
-      "confirmedAvg7d": 75,
-      "confirmedCumulativeAvg7d": 15708
+      "deaths": 17,
+      "confirmedAvg3d": 56,
+      "confirmedCumulativeAvg3d": 15857,
+      "confirmedAvg7d": 77,
+      "confirmedCumulativeAvg7d": 15711
     }
   ],
-  "updated": "2020-05-13T22:47:02+09:00"
+  "updated": "2020-05-13T23:04:23+09:00"
 }
