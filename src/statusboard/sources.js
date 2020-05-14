@@ -381,7 +381,8 @@ export const sources = {
     gov: {
       patients: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html',
       pressRelease: 'https://www.pref.kanagawa.jp/prs/list-2020-1-1.html',
-      summary: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html'
+      summary: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html',
+      deaths: 'https://www.pref.kanagawa.jp/prs/list-2020-1-1.html'
     },
     latest: {
       format: 'html',
