@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 5000,
+      "confirmed": 5030,
       "dailyConfirmedCount": [
         0,
         0,
@@ -130,10 +130,10 @@
         15,
         28,
         10,
-        0
+        30
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 30,
       "yesterdayConfirmed": 10,
       "dailyDeceasedCount": [
         0,
@@ -3598,7 +3598,7 @@
       "name": "Ishikawa"
     },
     {
-      "confirmed": 222,
+      "confirmed": 224,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3727,10 +3727,10 @@
         0,
         1,
         0,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -3865,7 +3865,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 15,
       "cruisePassenger": 0,
-      "recovered": 122,
+      "recovered": 126,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -5023,10 +5023,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 6,
+      "deceased": 7,
       "cruisePassenger": 0,
       "recovered": 131,
       "critical": 0,
@@ -5048,10 +5048,10 @@
         "Hatori": 1,
         "Tajimi": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "name_ja": "岐阜県",
-      "deaths": 6,
+      "deaths": 7,
       "name": "Gifu"
     },
     {
@@ -17083,7 +17083,32 @@
       "confirmedCumulativeAvg3d": 15865,
       "confirmedAvg7d": 80,
       "confirmedCumulativeAvg7d": 15714
+    },
+    {
+      "confirmed": 32,
+      "confirmedCumulative": 16008,
+      "deceased": 1,
+      "deceasedCumulative": 693,
+      "recovered": 0,
+      "recoveredCumulative": 9966,
+      "critical": 0,
+      "criticalCumulative": 259,
+      "tested": 0,
+      "testedCumulative": 223667,
+      "active": 31,
+      "activeCumulative": 5349,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 651,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 9,
+      "date": "2020-05-14",
+      "deaths": 1,
+      "confirmedAvg3d": 62,
+      "confirmedCumulativeAvg3d": 15927,
+      "confirmedAvg7d": 71,
+      "confirmedCumulativeAvg7d": 15785
     }
   ],
-  "updated": "2020-05-14T12:32:20+09:00"
+  "updated": "2020-05-14T17:32:13+09:00"
 }
