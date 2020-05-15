@@ -1,5 +1,29 @@
 import { normalizeFixedWidthNumbers } from './translation.js'
 
+const resultForimageWithAlt = ($, url, alt) => {
+  const summaryImage = $('img').filter((i, v) => {
+    if ($(v).attr('alt').match(alt)) {
+      return true
+    }
+  })
+  if (summaryImage.length < 1) {
+    return {}
+  }
+  return {image: absoluteURL(url, summaryImage.attr('src'))}
+}
+
+const absoluteURL = (baseURL, path) => {
+  const baseURLURL = new URL(baseURL)
+  let newPath = path
+  if (!newPath.startsWith('/')) {
+    let originalPath = baseURLURL.pathname
+    let components = originalPath.split('/')
+    newPath = components.slice(0, components.length - 1).join('/') + '/' + path
+  }
+  return `${baseURLURL.protocol}//${baseURLURL.host}${newPath}`
+
+}
+
 export const aichiLatestExtract = ($) => {
   let patientNews = $('.detail_free p').first()
   return {
@@ -29,26 +53,17 @@ export const aichiToyohashiLatestExtract = ($) => {
 }
 
 export const akitaSummaryExtract = ($) => {
-  let cells = $('table.c-table--full td')
+  let cells = $('table.c-table--full tr:nth-child(2) td')
   return {
-    confirmed: $(cells[6]).text(),
-    recovered: $(cells[10]).text()
+    confirmed: cells.eq(0).text(),
+    deceased: cells.eq(3).text(),
+    recovered: cells.eq(4).text()
   }
 }
 
 
 export const chibaSummaryExtract = ($) => {
   let result = {}
-
-  const countPattern = new RegExp('感染者数：([0-9]+)名（患者：([0-9]+)名、無症状病原体保有者：([0-9]+)名、うち([0-9]+)名死亡）', 'gi')
-  let countText = $('#tmp_contents ul li:first-child').text()
-  if (countText) {
-    let counts = [...countText.matchAll(countPattern)]
-    if (counts) {
-      result['confirmed'] = counts[0][1]
-      result['deceased'] = counts[0][4]
-    }
-  }
 
   const lastUpdatePattern = new RegExp('令和[0-9]+年([0-9]+)月([0-9]+)日現在', 'gi')
   let lastUpdateText = $('#tmp_contents h2').text()
@@ -58,6 +73,15 @@ export const chibaSummaryExtract = ($) => {
       result['lastUpdate'] = `2020-${lastUpdate[0][1]}-${lastUpdate[0][2]}`
     }
   }
+
+  const cells = $('table').first().find('tr:nth-child(2) td')
+  console.log(cells)
+  result.tested = cells.eq(0).text()
+  result.confirmed = cells.eq(1).text()
+  result.active = cells.eq(2).text()
+  result.recovered = cells.eq(3).text()
+  result.deceased = cells.eq(4).text()
+
   return result
 }
 
@@ -77,8 +101,6 @@ export const chigasakiLatestExtract = ($) => {
   }
 }
 
-
-
 export const fujisawaLatestExtract = ($) => {
   const latestText = $('h4').first().text()
   return {
@@ -89,35 +111,22 @@ export const fujisawaLatestExtract = ($) => {
 
 export const fukuiSummaryExtract = ($) => {
   let tables = $('table')
-  let summaryTable = $(tables[2])
-  let hospitalized = $(tables[3])
+  let deceasedCell = tables.eq(1).find('tr:nth-child(2) td:nth-child(2)')
+  let recoveredCell = tables.eq(1).find('tr:nth-child(5) td:nth-child(2)')
+  let confirmedCell = tables.eq(3).find('tr').last().find('td:nth-child(4)')
   let pageInfo = $('#page-information .date').text()
   let result = {
-    deceased:  normalizeFixedWidthNumbers($(summaryTable.find('td')[1]).text()),
-    recovered:  normalizeFixedWidthNumbers($(summaryTable.find('td')[10]).text()),
-    hospitalized: normalizeFixedWidthNumbers($(hospitalized.find('td')[2]).text()) + 
-                  normalizeFixedWidthNumbers($(hospitalized.find('td')[5]).text()),
+    deceased:  normalizeFixedWidthNumbers(deceasedCell.text()),
+    recovered:  normalizeFixedWidthNumbers(recoveredCell.text()),
+    confirmed: normalizeFixedWidthNumbers(confirmedCell.text()),
     lastUpdated: pageInfo
   }
   return result
 }
 
 
-export const fukuokaExtract = ($, url) => {
-  const summaryImage = $('img').filter((i, v) => {
-    if ($(v).attr('alt').match('感染者数と退院者数')) {
-      return true
-    }
-  })
-  if (summaryImage.length < 1) {
-    return {}
-  }
-  const path = summaryImage.attr('src')
-  const host = new URL(url).hostname
-  const imageURL = `http://${host}/${path}`
-  return {
-    image: imageURL
-  }
+export const fukuokaSummaryExtract = ($, url) => {
+  return resultForimageWithAlt($, url, '感染者数と退院者数')
 }
 
 export const fukuokaLatestExtract = ($) => {
@@ -138,11 +147,13 @@ export const gifuSummaryExtract = ($, url) => {
   if (summaryImage.length < 1) {
     return {}
   }
-  const path = summaryImage.attr('src')
-  const host = new URL(url).hostname
-  const imageURL = `http://${host}/${path}`
+  return { image: absoluteURL(url, summaryImage.attr('src')) }
+}
+
+export const gunmaSummaryExtract = ($, url) => {
+  const pdfLink = $('div.honbun a').first().attr('href')
   return {
-    image: imageURL
+    image: absoluteURL(url, pdfLink)
   }
 }
 
@@ -233,20 +244,7 @@ export const ibarakiLatestExtract = ($) => {
 
 
 export const ibarakiSummaryExtract = ($, url) => {
-  const summaryImage = $('img').filter((i, v) => {
-    if ($(v).attr('alt').match('陽性者の状況')) {
-      return true
-    }
-  })
-  if (summaryImage.length < 1) {
-    return {}
-  }
-  const path = summaryImage.attr('src')
-  const host = new URL(url).hostname
-  const imageURL = `http://${host}/${path}`
-  return {
-    image: imageURL
-  }
+  return resultForimageWithAlt($, url, '陽性者の状況')
 }
 
 export const ishikawaSummaryExtract = ($) => {
@@ -260,18 +258,17 @@ export const ishikawaSummaryExtract = ($) => {
 }
 
 export const kagawaSummaryExtract = ($, url) => {
-  const summaryImage = $('img').filter((i, v) => {
-    if ($(v).attr('alt').match('患者の状況')) {
-      return true
-    }
-    return false
-  })
+  return resultForimageWithAlt($, url, '患者の状況')
+}
 
-  const path = summaryImage.attr('src')
-  const host = new URL(url).hostname
-  const imageURL = `http://${host}/${path}`
+export const kanagawaSummaryExtract = ($, url) => {
+  const confirmedCell = $('table').first().find('tbody tr').eq(0).find('td').eq(1)
+  const recoveredCell = $('table').first().find('tbody tr').eq(11).find('td').eq(1)
+  const deceasedCell = $('table').first().find('tbody tr').eq(12).find('td').eq(1)
   return {
-    image: imageURL
+    confirmed: confirmedCell.text(),
+    recovered: recoveredCell.text(),
+    deceased: deceasedCell.text()
   }
 }
 
@@ -294,22 +291,14 @@ export const kawasakiLatestExtract = ($) => {
   }
 }
 
+export const kochiSummaryExtract = ($, url) => {
+  return {
+    image: absoluteURL(url, $('div.body a.iconPdf').first().attr('href'))
+  }
+}
 
 export const kyotoSummaryExtract = ($, url) => {
-  const summaryImage = $('img').filter((i, v) => {
-    if ($(v).attr('alt').match('_pcr')) {
-      return true
-    }
-  })
-  if (summaryImage.length < 1) {
-    return {}
-  }
-  const path = summaryImage.attr('src')
-  const host = new URL(url).hostname
-  const imageURL = `http://${host}/${path}`
-  return {
-    image: imageURL
-  }
+  return resultForimageWithAlt($, url, new RegExp('.*pcr'))
 }
 
 export const kyotoLatestExtract = ($) => {
@@ -328,57 +317,103 @@ export const kyotoCityLatestExtract = ($) => {
   }
 }
 
+export const mieSummaryExtract = ($, url) => {
+  const lastRow = $('table').eq(1).find('tr').last()
+  const secondLastRow = $('table').eq(1).find('tr').eq(1)
+
+  const extractNumber = (t) => {
+    let num =  t.match(/([０-９]+)/)
+    if (num) {
+      return normalizeFixedWidthNumbers(num[1])
+    }
+    return ''
+  }
+  return {
+    tested: extractNumber(lastRow.find('td').eq(0).text()),
+    confirmed: extractNumber(lastRow.find('td').eq(1).text()),
+    deceased: extractNumber(secondLastRow.find('td').eq(5).text()),
+    recovered: extractNumber(secondLastRow.find('td').eq(6).text())
+  }
+}
+
 
 export const miyagiSummaryExtract = ($, url) => {
-  const summaryImage = $('img').filter((i, v) => {
-    if ($(v).attr('alt').match('陽性患者の現在の状況')) {
-      return true
-    }
-  })
-  if (summaryImage.length < 1) {
-    return {}
-  }
-  const path = summaryImage.attr('src')
-  const host = new URL(url).hostname
-  const imageURL = `http://${host}/${path}`
-  return {
-    image: imageURL
-  }
+  return resultForimageWithAlt($, url, '陽性患者の現在の状況')
 }
 
 
 export const naganoSummaryExtract = ($, url) => {
-  const summaryImage = $('img').filter((i, v) => {
-    if ($(v).attr('alt').match('感染者')) {
-      return true
-    }
-  })
-  if (summaryImage.length < 1) {
-    return {}
-  }
-  const path = summaryImage.attr('src')
-  const host = new URL(url).hostname
-  const imageURL = `http://${host}/${path}`
+  return resultForimageWithAlt($, url, '感染者')
+}
+
+
+export const naraSummaryExtract = ($, url) => {
+  const numberRow = $('.Contents > table').eq(1).find('tr').eq(4)
+
   return {
-    image: imageURL
+    confirmed: numberRow.find('td').eq(0).text(),
+    deceased: numberRow.find('td').eq(5).text(),
+    recovered: numberRow.find('td').eq(6).text(),
   }
 }
 
-export const osakaSummaryExtract = ($, url) => {
-  const summaryImage = $('img').filter((i, v) => {
-    if ($(v).attr('alt').match('発生状況')) {
-      return true
-    }
-  })
-  if (summaryImage.length < 1) {
-    return {}
-  }
-  const path = summaryImage.attr('src')
-  const host = new URL(url).hostname
-  const imageURL = `http://${host}/${path}`
+
+export const niigataSummaryExtract = ($, url) => {
+  const numberRow = $('table').first().find('tbody tr').first()
+
   return {
-    image: imageURL
+    tested: numberRow.find('td').eq(0).text(),
+    confirmed: numberRow.find('td').eq(1).text(),
+    recovered: numberRow.find('td').eq(5).text(),
   }
+}
+
+
+export const niigataLatestExtract = ($, url) => {
+  const latestRow = $('table').eq(1).find('tbody tr').first()
+  return {
+    latest: latestRow.find('td').eq(2).text() + ' ' + latestRow.find('td').eq(1).text()
+  }
+}
+
+export const oitaSummaryExtract = ($, url) => {
+  const summary = $('.detail_free p').first()
+  console.log(summary)
+  const pattern = new RegExp('これまでに延べ([0-9,]+)人実施し、陰性([0-9,]+)人、陽性([0-9,]+)人（うち退院([0-9,]+)名、死亡([0-9,]+)名）')
+  let match = summary.text().match(pattern)
+  if (match) {
+    return {
+      tested: match[1],
+      confirmed: match[3],
+      recovered: match[4],
+      deceased: match[5]
+    }
+  }
+  return {}
+}
+
+export const oitaLatestExtract = ($, url) => {
+  const summary = $('.detail_free p').eq(1)
+  return {
+    latest: summary.text()
+  }
+}
+
+
+export const okinawaSummaryExtract = ($, url) => {
+  const pdfLink = $('a.icon_pdf').first().attr('href')
+  if (pdfLink) {
+    return {
+      image: absoluteURL(url, pdfLink)
+    }
+  }
+  return {}
+}
+
+
+
+export const osakaSummaryExtract = ($, url) => {
+  return resultForimageWithAlt($, url, '発生状況')
 }
 
 
@@ -390,6 +425,21 @@ export const osakaLatestExtract = ($) => {
     latest: patientNews.first().text()
   }
 }
+
+
+export const sagaSummaryExtract = ($, url) => {
+  const confirmedText = $('table').first().find('tbody tr').first().find('th').eq(1).text()
+  const confirmedPattern = /^[\s]*([0-9]+)/
+  const recoveredText = $('table').first().find('tbody tr').eq(4).find('td').eq(1).text()
+  const deceasedText = $('table').first().find('tbody tr').eq(6).find('td').eq(1).text()
+
+  return {
+    confirmed: confirmedText.match(confirmedPattern)[1],
+    recovered: recoveredText,
+    deceased: deceasedText
+  }
+}
+
 
 export const saitamaSummaryExtract = ($) => {
   const confirmedPattern = new RegExp('県内の陽性確認者数：([0-9]+)人')
@@ -430,11 +480,92 @@ export const saitamaLatestExtract = ($) => {
   }
 }
 
+
 export const sagamiharaLatestExtract = ($) => {
   const latestText = $('h2').first().text()
   return {
     latest: latestText
   }
+}
+
+
+export const shigaSummaryExtract = ($) => {
+  const row = $('div.table table').eq(1).find('tr').last()
+  return {
+    tested: row.find('td').eq(0).text(),
+    confirmed: row.find('td').eq(1).text(),
+    recovered: row.find('td').eq(6).text(),
+    deceased: row.find('td').eq(7).text()
+  }
+}
+
+export const shimaneSummaryExtract = ($) => {
+  const p = $('#page-content p').first().text()
+  const pattern = new RegExp('島根県内で、(.*)現在、新型コロナウイルス感染者が([0-9]+)名確認されています。\（うち([0-9]+)名が回復し退院しています。\）')
+  const match = p.match(pattern)
+  if (match) {
+    return {
+      confirmed: match[2],
+      recovered: match[3]
+    }
+  }
+  return {}
+}
+
+export const shizuokaSummaryExtract = ($, url) => {
+  return resultForimageWithAlt($, url, 'kennnai_youseisyasuujoukyou')
+}
+
+export const toyamaSummaryExtract = ($, url) => {
+  const summary = $('#contents #main p').first().text()
+  const pattern = new RegExp('([0-9]+)例\（入院中又は入院等調整中([0-9]+)例、退院([0-9]+)例、死亡([0-9]+)例')
+  const match = summary.match(pattern)
+  if (match) {
+    return {
+      confirmed: match[1],
+      recovered: match[3],
+      deceased: match[4]
+    }
+  }
+  return {}
+}
+
+
+export const toyamaLatestExtract = ($, url) => {
+  const summary = $('#file li').last().text()
+  return { latest: summary }
+}
+
+export const wakayamaSummaryExtract = ($, url) => {
+  const summary = $('#content a').first()
+  return { image: absoluteURL(url, summary.attr('href'))}
+}
+
+export const wakayamaLatestExtract = ($, url) => {
+  const summary = $('#content a').first()
+  return { latest: summary.text() }
+}
+
+export const yamagataSummaryExtract = ($, url) => {
+  return resultForimageWithAlt($, url, '感染者数グラフ')
+}
+
+export const yamaguchiSummaryExtract = ($, url) => {
+  const summary = $('table').first().find('p').eq(1).text()
+  const pattern = new RegExp('山口県の感染者数：　([0-9]+)人.*入院等：([0-9]+)人／退院：([0-9]+)人')
+  const match = summary.match(pattern)
+  if (match) {
+    return {
+      confirmed: match[1],
+      recovered: match[3]
+    }
+  }
+  return {}
+}
+
+export const yamanashiLatestExtract = ($, url) => {
+  const latestRow = $('table').first().find('a.icon_pdf').first()
+  return { latest: latestRow.text() }
 }
 
 export const yokohamaLatestExtract = ($) => {

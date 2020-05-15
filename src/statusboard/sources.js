@@ -108,7 +108,8 @@ export const sources = {
       extract: html.chibaLatestExtract
     },
     gov: {
-      patients: 'https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html'
+      patients: 'https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html',
+      summary: 'https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html'
     },
     source: 'https://github.com/civictechzenchiba/covid19-chiba',
     dashboard: 'https://covid19.civictech.chiba.jp/'
@@ -118,12 +119,12 @@ export const sources = {
       format: 'json',
       url: 'https://raw.githubusercontent.com/ehime-covid19/covid19/master/data/data.json',
     },
-    summary: {
-      format: 'json',
-      url: 'https://raw.githubusercontent.com/ehime-covid19/covid19/master/data/data.json',
-      deceased: 'main_summary.children[0].children[2].value',
-      recovered: 'main_summary.children[0].children[1].value',
-    },
+    // summary: {
+    //   format: 'json',
+    //   url: 'https://raw.githubusercontent.com/ehime-covid19/covid19/master/data/data.json',
+    //   deceased: 'main_summary.children[0].children[2].value',
+    //   recovered: 'main_summary.children[0].children[1].value',
+    // },
     gov: {
       patients: 'https://www.pref.ehime.jp/h25500/kansen/covid19.html',
       summary: 'https://www.pref.ehime.jp/h25500/kansen/documents/kennai_link.pdf'
@@ -164,7 +165,7 @@ export const sources = {
     summary: {
       format: 'html',
       url: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
-      extract: html.fukuokaExtract
+      extract: html.fukuokaSummaryExtract
     },
     latest: {
       format: 'html',
@@ -183,6 +184,14 @@ export const sources = {
       format: 'csvdir',
       encoding: 'sjis',
       url: 'http://www.pref.fukushima.lg.jp/w4/covid19/patients/'
+    },
+    summary: {
+      format: 'json',
+      url: 'https://cdn2.dott.dev/data.json',
+      tested: 'main_summary.value',
+      confirmed: 'main_summary.children[0].value',
+      deceased: 'main_summary.children[0].children[2].value',
+      recovered: 'main_summary.children[0].children[1].value'
     },
     gov: {
       patients: 'https://www.pref.fukushima.lg.jp/sec/21045c/fukushima-hasseijyoukyou.html'
@@ -218,6 +227,11 @@ export const sources = {
       patients: 'https://www.pref.gunma.jp/07/z87g_00016.html',
       summary: 'https://stopcovid19.pref.gunma.jp/',
       deaths: 'https://www.pref.gunma.jp/07/z87g_00025.html'
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.gunma.jp/07/z87g_00016.html',
+      extract: html.gunmaSummaryExtract
     },
     source: 'https://github.com/bpr-gunma/covid19',
     dashboard: 'https://stopcovid19.pref.gunma.jp/'
@@ -384,6 +398,11 @@ export const sources = {
       summary: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html',
       deaths: 'https://www.pref.kanagawa.jp/prs/list-2020-1-1.html'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html',
+      extract: html.kanagawaSummaryExtract
+    },
     latest: {
       format: 'html',
       url: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence_07.html',
@@ -464,7 +483,13 @@ export const sources = {
   kochi: {
     gov: {
       patients: 'https://www.pref.kochi.lg.jp/soshiki/130401/2020022900049.html',
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.kochi.lg.jp/soshiki/130401/2020022900049.html',
+      extract: html.kochiSummaryExtract
     }
+
   },
   kumamoto: {
     patients: {
@@ -475,6 +500,14 @@ export const sources = {
       patients: 'https://www.pref.kumamoto.jp/kiji_32300.html',
       data: 'https://www.pref.kumamoto.jp/common/UploadFileOutput.ashx?c_id=3&id=22038&sub_id=7&flid=231833',
       dataIndex: 'https://www.pref.kumamoto.jp/kiji_22038.html',
+    },
+    summary: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/codeforkumamoto/covid19/development/data/data.json',
+      tested: 'main_summary.value',
+      confirmed: 'main_summary.children[0].value',
+      deceased: 'main_summary.children[0].children[2].value',
+      recovered: 'main_summary.children[0].children[1].value'
     },
     cities: {
       kumamotoCity: { gov: { patients: 'https://www.city.kumamoto.jp/corona/hpKiji/pub/detail.aspx?c_id=5&id=27681&class_set_id=22&class_id=3261 '}}
@@ -526,6 +559,11 @@ export const sources = {
     patients: {
       format: 'json',
       url: 'https://raw.githubusercontent.com/FlexiblePrintedCircuits/covid19-mie/develop/data/data.json'
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066_00002.htm',
+      extract: html.mieSummaryExtract
     },
     gov: {
       patients: 'https://www.pref.mie.lg.jp/YAKUMUS/HP/m0068000066_00002.htm',
@@ -620,6 +658,11 @@ export const sources = {
       format: 'json',
       url: 'https://raw.githubusercontent.com/code4nara/covid19/development/data/data.json'
     },
+    summary: {
+      format: 'html',
+      url: 'http://www.pref.nara.jp/module/1356.htm',
+      extract: html.naraSummaryExtract
+    },
     gov: {
       patients: 'http://www.pref.nara.jp/module/1356.htm#moduleid1356',
       summary: 'http://www.pref.nara.jp/module/1356.htm'
@@ -631,6 +674,16 @@ export const sources = {
     patients: {
       format: 'json',
       url: 'https://raw.githubusercontent.com/CodeForNiigata/covid19/development/data/data.json',
+    },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.niigata.lg.jp/site/shingata-corona/hasseijokyo-covid19-niigataken.html',
+      extract: html.niigataLatestExtract
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.niigata.lg.jp/site/shingata-corona/hasseijokyo-covid19-niigataken.html',
+      extract: html.niigataSummaryExtract
     },
     gov: {
       patients: 'https://www.pref.niigata.lg.jp/site/shingata-corona/hasseijokyo-covid19-niigataken.html',
@@ -654,6 +707,16 @@ export const sources = {
     tests: {
       format: 'csv',
       url: 'https://data.bodik.jp/dataset/f632f467-716c-46aa-8838-0d535f98b291/resource/96440e66-3061-43d6-adf3-ef1f24211d3a/download/440001oitacovid19datasummary.csv'
+    },
+    latest: {
+      format: 'html',
+      url: 'http://www.pref.oita.jp/site/covid19-oita/covid19-pcr.html',
+      extract: html.oitaLatestExtract
+    },
+    summary: {
+      format: 'html',
+      url: 'http://www.pref.oita.jp/site/covid19-oita/covid19-pcr.html',
+      extract: html.oitaSummaryExtract
     },
     gov: {
       patients: 'http://www.pref.oita.jp/site/covid19-oita/covid19-pcr.html',
@@ -690,6 +753,11 @@ export const sources = {
     patients: {
       format: 'json',
       url: 'https://raw.githubusercontent.com/Code-for-OKINAWA/covid19/development/data/data.json'
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/covid19_hasseijoukyou.html',
+      extract: html.okinawaSummaryExtract
     },
     gov: {
       patients: 'https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/covid19_hasseijoukyou.html',
@@ -729,6 +797,11 @@ export const sources = {
       format: 'json',
       url: 'https://raw.githubusercontent.com/codeforsaga/covid19/development/data/data.json'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.saga.lg.jp/kiji00373220/index.html',
+      extract: html.sagaSummaryExtract
+    },
     gov: {
       patients: 'https://www.pref.saga.lg.jp/kiji00373220/index.html'
     },
@@ -763,6 +836,11 @@ export const sources = {
       patients: 'https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/310735.html',
       summary: 'https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/309252.html'
     },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/309252.html',
+      extract: html.shigaSummaryExtract
+    },
     source: 'https://github.com/shiga-pref-org/covid19',
     dashboard: 'https://stopcovid19.pref.shiga.jp/',
   },
@@ -770,6 +848,11 @@ export const sources = {
     patients: {
       format: 'json',
       url: 'https://raw.githubusercontent.com/TaigaMikami/shimane-covid19/shimane/data/data.json'
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.shimane.lg.jp/bousai_info/bousai/kikikanri/shingata_taisaku/new_coronavirus_portal.html',
+      extract: html.shimaneSummaryExtract
     },
     gov: {
       patients: 'https://www.pref.shimane.lg.jp/bousai_info/bousai/kikikanri/shingata_taisaku/new_coronavirus_portal.html'
@@ -784,7 +867,13 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.shizuoka.jp/kinkyu/covid-19-tyuumokujouhou.html',
+      summary: 'https://www.pref.shizuoka.jp/kinkyu/covid-19.html',
       citySummary: 'https://www.pref.shizuoka.jp/kinkyu/covid-19-bunnpujoukyou.html'
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.shizuoka.jp/kinkyu/covid-19.html',
+      extract: html.shizuokaSummaryExtract
     },
     source: 'https://github.com/hiroyuki-ichikawa/covid19',
     dashboard: 'https://stopcovid19.code4numazu.org/en',
@@ -810,6 +899,14 @@ export const sources = {
       format: 'json',
       url: 'https://raw.githubusercontent.com/covid19-tochigi/covid19/development/data/data.json'
     },
+    summary: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/covid19-tochigi/covid19/development/data/data.json',
+      tested: 'main_summary.value',
+      confirmed: 'main_summary.children[0].value',
+      deceased: 'main_summary.children[0].children[2].value',
+      recovered: 'main_summary.children[0].children[1].value'
+    },
     gov: {
       patients: 'http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/coronakensahasseijyoukyou.html',
       summary: 'http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/coronakensahasseijyoukyou.html'
@@ -830,6 +927,29 @@ export const sources = {
       patients: 'https://www.pref.tokushima.lg.jp/ippannokata/kenko/kansensho/5034012#25'
     }
   },
+  
+  tokyo: {
+    patients: { 
+      format: 'csv',
+      url: 'https://stopcovid19.metro.tokyo.lg.jp/data/130001_tokyo_covid19_patients.csv'
+    },
+    summary: {
+      format: 'json',
+      url: 'https://raw.githubusercontent.com/tokyo-metropolitan-gov/covid19/development/data/data.json',
+      tested: 'main_summary.value',
+      confirmed: 'main_summary.children[0].value',
+      deceased: 'main_summary.children[0].children[2].value',
+      recovered: 'main_summary.children[0].children[1].value'
+    },
+    gov: {
+      patients: 'https://www.fukushihoken.metro.tokyo.lg.jp/hodo/index.html'
+    },
+    source: 'https://github.com/tokyo-metropolitan-gov/covid19',
+    dashboard: 'https://stopcovid19.metro.tokyo.lg.jp/',
+    dashboards: [
+      'https://covid19tokyo.live/'
+    ]
+  },
   tottori: {
     gov: {
       patients: 'https://www.pref.tottori.lg.jp/corona-virus/',
@@ -842,6 +962,18 @@ export const sources = {
       patients: 'http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html',
       summary: 'http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html'
     },
+    summary: {
+      format: 'html',
+      encoding: 'SJIS',
+      url: 'http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html',
+      extract: html.toyamaSummaryExtract
+    },
+    latest: {
+      format: 'html',
+      encoding: 'SJIS',
+      url: 'http://www.pref.toyama.jp/cms_sec/1205/kj00021798.html',
+      extract: html.toyamaLatestExtract
+    },
     cities: {
       toyamaCity: {
         gov: {
@@ -850,30 +982,20 @@ export const sources = {
       }
     },
   },
-  tokyo: {
-    patients: { 
-      format: 'csv',
-      url: 'https://stopcovid19.metro.tokyo.lg.jp/data/130001_tokyo_covid19_patients.csv'
-    },
-    summary: {
-      format: 'json',
-      url: 'https://raw.githubusercontent.com/tokyo-metropolitan-gov/covid19/development/data/data.json',
-      deceased: 'main_summary.children[0].children[2].value',
-      recovered: 'main_summary.children[0].children[1].value',      
-    },
-    gov: {
-      patients: 'https://www.fukushihoken.metro.tokyo.lg.jp/hodo/index.html'
-    },
-    source: 'https://github.com/tokyo-metropolitan-gov/covid19',
-    dashboard: 'https://stopcovid19.metro.tokyo.lg.jp/',
-    dashboards: [
-      'https://covid19tokyo.live/'
-    ]
-  },
   wakayama: {
     gov: {
       patients: 'https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html',
       summary: 'https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html'
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html',
+      extract: html.wakayamaSummaryExtract
+    },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.wakayama.lg.jp/prefg/041200/d00203387.html',
+      extract: html.wakayamaLatestExtract
     },
     dashboard: 'https://stopcovid19.wakayama.jp/'
   },
@@ -881,6 +1003,11 @@ export const sources = {
     patients: {
       format: 'json',
       url: 'https://raw.githubusercontent.com/yamaserif/covid19/development/data/data.json',
+    },
+    summary: {
+      format: 'html',
+      url: 'http://www.pref.yamagata.jp/ou/bosai/020072/kochibou/coronavirus/coronavirus.html',
+      extract: html.yamagataSummaryExtract
     },
     gov: {
       patients: 'http://www.pref.yamagata.jp/ou/bosai/020072/kochibou/coronavirus/coronavirus.html'
@@ -894,9 +1021,10 @@ export const sources = {
     dashboard: 'https://stopcovid19-yamagata.netlify.app/'
   },
   yamaguchi: {
-    patients: {
-      format: 'json',
-      url: 'https://raw.githubusercontent.com/nishidayoshikatsu/covid19-yamaguchi/development/data/data.json'
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html',
+      extract: html.yamaguchiSummaryExtract
     },
     gov: {
       patients: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html',
@@ -908,6 +1036,11 @@ export const sources = {
     patients: {
       format: 'json',
       url: 'https://raw.githubusercontent.com/covid19-yamanashi/covid19/development/data/data.json'
+    },
+    latest: {
+      format: 'html',
+      url: 'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html',
+      extract: html.yamanashiLatestExtract
     },
     gov: {
       patients: 'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html'

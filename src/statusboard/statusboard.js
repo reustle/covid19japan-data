@@ -44,6 +44,10 @@ const fetchPrefectureSummary = (prefectureSource, prefectureId) => {
           let summaries = _.at(response, [prefectureSource.summary.mainSummaryKey])[0]
           mainSummary = _.last(summaries)
         }
+        if (prefectureSource.summary.confirmed) {
+          let number = _.at(mainSummary, [prefectureSource.summary.confirmed])[0]
+          createCell(prefectureId, 'gov-confirmed', number)
+        }
         if (prefectureSource.summary.deceased) {
           let number = _.at(mainSummary, [prefectureSource.summary.deceased])[0]
           createCell(prefectureId, 'gov-deceased', number)
@@ -96,7 +100,6 @@ const fetchPrefectureData = (prefectureSource, prefectureId) => {
 
   if (fetcher) {
     fetcher.then(patients => {
-      console.log(patients)
       responses[prefectureId] = patients
       createPrefecturePatientCountCell(prefectureId, patients)
       createPrefecturePatientTodayCell(prefectureId, patients)
@@ -146,8 +149,6 @@ const createPatientItemCells = (prefectureId, patientList, patient, row) => {
     return [k, v]
   })
   const data = _.filter(dataPairs, _.negate(_.isNull))
-  console.log(data)
-
   for (let d of data) {
     let value = d[1]
     if (d[0] == 'patientId') {
@@ -170,7 +171,6 @@ const createPrefecturePatientTodayCell = (prefectureId, patients) => {
 
   let today = moment().format('YYYY-MM-DD')
   let yesterday = moment().subtract(1, 'days').format('YYYY-MM-DD')
-  console.log(today, yesterday)
   if (patients) {
     for (let patient of patients) {
       if (patient.dateAnnounced == today) {
@@ -306,8 +306,6 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureC
       .html(name)
       .on('click', () => { 
         event.preventDefault()
-        //event(this).preventDefault()
-        //console.log(this)
         fetchPrefectureData(prefectureSource, placeId)
         fetchPrefectureSummary(prefectureSource, placeId)
         fetchPrefectureLatest(prefectureSource, placeId)
@@ -369,7 +367,6 @@ const fetchNHKReport = (url) => {
   extractDailySummary(url).then(values => {
     let results = prefectureCountsInEnglish(values)
     responses.nhk = results
-    console.log(results)
     _.forEach(results, (v, k) => {
       let prefectureId = k.toLowerCase()
       if (typeof rowByPrefecture[prefectureId] === 'undefined') {
@@ -448,7 +445,6 @@ const initNHKButton = () => {
   document.querySelector('#nhk-copy-action').addEventListener('click', e => {
     let nhkItems = document.querySelectorAll('.item.nhk-value')
     let clipboardContents = ''
-    console.log(nhkItems)
     let valuesByPrefecture = {}
 
     for (let item of nhkItems) {
