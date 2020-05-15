@@ -194,15 +194,13 @@ export const hiroshimaLatestExtract = ($) => {
 
 
 export const hokkaidoSummaryExtract = ($, url) => {
-  const summaryHeader = $('.submenu-main h2')[1]
-  let nextP = $(summaryHeader).next()
+  const summaryHeader = $('.submenu-main h2').eq(2)
+  let nextP = summaryHeader.next()
   let nextA = nextP.find('a')
 
   const path = nextA.attr('href')
-  const host = new URL(url).hostname
-  const imageURL = `http://${host}/${path}`
   return {
-    image: imageURL
+    image: absoluteURL(url, path)
   }
 }
 
@@ -430,7 +428,7 @@ export const osakaLatestExtract = ($) => {
 export const sagaSummaryExtract = ($, url) => {
   const confirmedText = $('table').first().find('tbody tr').first().find('th').eq(1).text()
   const confirmedPattern = /^[\s]*([0-9]+)/
-  const recoveredText = $('table').first().find('tbody tr').eq(4).find('td').eq(1).text()
+  const recoveredText = $('table').first().find('tbody tr').eq(5).find('td').eq(1).text()
   const deceasedText = $('table').first().find('tbody tr').eq(6).find('td').eq(1).text()
 
   return {
