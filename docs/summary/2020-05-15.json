@@ -3035,7 +3035,7 @@
       "name": "Aichi"
     },
     {
-      "confirmed": 357,
+      "confirmed": 358,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3164,12 +3164,12 @@
         0,
         4,
         1,
-        0,
+        1,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
         0,
@@ -3309,7 +3309,7 @@
       "tested": 0,
       "confirmedByCity": {
         "Kyoto": 27,
-        "Kyoto city": 104,
+        "Kyoto city": 105,
         "Yamashiro": 44,
         "Chutan": 6,
         "Otokuni": 11,
@@ -17186,8 +17186,8 @@
       "confirmedCumulativeAvg7d": 15714
     },
     {
-      "confirmed": 78,
-      "confirmedCumulative": 16055,
+      "confirmed": 79,
+      "confirmedCumulative": 16056,
       "deceased": 12,
       "deceasedCumulative": 708,
       "recovered": 523,
@@ -17196,8 +17196,8 @@
       "criticalCumulative": 245,
       "tested": 9477,
       "testedCumulative": 233144,
-      "active": -457,
-      "activeCumulative": 4858,
+      "active": -456,
+      "activeCumulative": 4859,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
@@ -17211,5 +17211,5 @@
       "confirmedCumulativeAvg7d": 15791
     }
   ],
-  "updated": "2020-05-15T01:17:02+09:00"
+  "updated": "2020-05-15T09:22:50+09:00"
 }
