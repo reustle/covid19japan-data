@@ -65,14 +65,14 @@ export const akitaSummaryExtract = ($) => {
 export const chibaSummaryExtract = ($) => {
   let result = {}
 
-  const lastUpdatePattern = new RegExp('令和[0-9]+年([0-9]+)月([0-9]+)日現在', 'gi')
-  let lastUpdateText = $('#tmp_contents h2').text()
-  if (lastUpdateText) {
-    let lastUpdate = [...lastUpdateText.matchAll(lastUpdatePattern)]
-    if (lastUpdate) {
-      result['lastUpdate'] = `2020-${lastUpdate[0][1]}-${lastUpdate[0][2]}`
-    }
-  }
+  // const lastUpdatePattern = new RegExp('令和[0-9]+年([0-9]+)月([0-9]+)日現在', 'gi')
+  // let lastUpdateText = $('#tmp_contents h2').text()
+  // if (lastUpdateText) {
+  //   let lastUpdate = [...lastUpdateText.matchAll(lastUpdatePattern)]
+  //   if (lastUpdate) {
+  //     result['lastUpdate'] = `2020-${lastUpdate[0][1]}-${lastUpdate[0][2]}`
+  //   }
+  // }
 
   const cells = $('table').first().find('tr:nth-child(2) td')
   console.log(cells)
