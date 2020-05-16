@@ -116,3 +116,6 @@ h1 {
   #statusboard .place a:hover {
     color: #2bcf90; }
 
+#statusboard.hide-cities .city {
+  display: none; }
+
