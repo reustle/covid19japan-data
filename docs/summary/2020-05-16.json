@@ -272,7 +272,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 219,
       "cruisePassenger": 0,
-      "recovered": 3386,
+      "recovered": 3474,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -559,7 +559,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 67,
       "cruisePassenger": 0,
-      "recovered": 1228,
+      "recovered": 1265,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -603,7 +603,7 @@
       "name": "Osaka"
     },
     {
-      "confirmed": 1253,
+      "confirmed": 1265,
       "dailyConfirmedCount": [
         0,
         0,
@@ -734,10 +734,10 @@
         10,
         32,
         16,
-        0
+        12
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 12,
       "yesterdayConfirmed": 16,
       "dailyDeceasedCount": [
         0,
@@ -879,16 +879,16 @@
       "tested": 0,
       "confirmedByCity": {
         "Sagamihara": 56,
-        "Yokohama": 476,
+        "Yokohama": 484,
         "Atsugi": 56,
         "Kanagawa": 2,
         "Kamakura": 40,
         "Kamamura": 1,
-        "Hiratsuka": 31,
-        "Odawara": 49,
+        "Hiratsuka": 33,
+        "Odawara": 51,
         "Fujisawa": 55,
         "Kawasaki": 239,
-        "Yokosuka": 41,
+        "Yokosuka": 43,
         "Chigasaki": 25,
         "Kawasaki, Tama": 1,
         "Kawasaki, Miyamae": 1,
@@ -1568,7 +1568,7 @@
       "name": "Saitama"
     },
     {
-      "confirmed": 890,
+      "confirmed": 898,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1698,12 +1698,12 @@
         2,
         0,
         0,
-        2,
-        0
+        3,
+        7
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
-      "yesterdayConfirmed": 2,
+      "newlyConfirmed": 7,
+      "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
         0,
@@ -5621,7 +5621,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 18,
       "cruisePassenger": 0,
-      "recovered": 82,
+      "recovered": 93,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -17306,8 +17306,8 @@
       "confirmedCumulativeAvg7d": 15791
     },
     {
-      "confirmed": 51,
-      "confirmedCumulative": 16107,
+      "confirmed": 52,
+      "confirmedCumulative": 16108,
       "deceased": 12,
       "deceasedCumulative": 724,
       "recovered": 605,
@@ -17316,8 +17316,8 @@
       "criticalCumulative": 237,
       "tested": 4710,
       "testedCumulative": 230882,
-      "active": -566,
-      "activeCumulative": 4289,
+      "active": -565,
+      "activeCumulative": 4290,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
@@ -17331,8 +17331,8 @@
       "confirmedCumulativeAvg7d": 15863
     },
     {
-      "confirmed": 31,
-      "confirmedCumulative": 16138,
+      "confirmed": 50,
+      "confirmedCumulative": 16158,
       "deceased": 6,
       "deceasedCumulative": 730,
       "recovered": 0,
@@ -17341,8 +17341,8 @@
       "criticalCumulative": 237,
       "tested": 0,
       "testedCumulative": 230882,
-      "active": 25,
-      "activeCumulative": 4314,
+      "active": 44,
+      "activeCumulative": 4334,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
@@ -17350,11 +17350,11 @@
       "cruiseCriticalCumulative": 9,
       "date": "2020-05-16",
       "deaths": 6,
-      "confirmedAvg3d": 54,
-      "confirmedCumulativeAvg3d": 16063,
-      "confirmedAvg7d": 60,
-      "confirmedCumulativeAvg7d": 15923
+      "confirmedAvg3d": 60,
+      "confirmedCumulativeAvg3d": 16069,
+      "confirmedAvg7d": 63,
+      "confirmedCumulativeAvg7d": 15926
     }
   ],
-  "updated": "2020-05-16T20:47:13+09:00"
+  "updated": "2020-05-16T21:03:27+09:00"
 }
