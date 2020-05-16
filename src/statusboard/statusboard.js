@@ -424,6 +424,13 @@ const initPopulateButton = () => {
   })
 }
 
+const initCitiesToggle = () => {
+  document.querySelector('#toggle-cities').addEventListener('click', e => {
+    e.preventDefault()
+    document.querySelector('#statusboard').classList.toggle('hide-cities')
+  })
+}
+
 const initNHKButton = () => {
   let nhkUrl = window.localStorage.getItem('nhk-url')
   if (nhkUrl) {
@@ -468,20 +475,14 @@ const initNHKButton = () => {
   })
 }
 
-const initSiteDataButton = () => {
-  document.querySelector('#site-data-action').addEventListener('click', e => {
-    e.preventDefault()
-    fetchSiteData()
-    e.target.classList.add('active')
-  })
-}
 
 const main = () => {
   initConsole()
   initStatusBoard()
+  fetchSiteData()
   initPopulateButton()
+  initCitiesToggle()
   initNHKButton()
-  initSiteDataButton()
 }
 
 window.addEventListener('DOMContentLoaded', e => {
