@@ -231,7 +231,7 @@ data that we use to cross check and verify.
 
  NHK News is the most comprehensive and standardized reporting of infection cases per prefecture as well as a daily sum up every evening.
  
-  * Example: [Daily Report (新型コロナウイルス 国内感染者)](https://www3.nhk.or.jp/news/html/20200323/k10012344821000.html?utm_int=news_contents_news-main_001)
+  * Example: [Daily Report (新型コロナウイルス 国内感染者)](https://www3.nhk.or.jp/news/special/coronavirus/data-all/)
   * [COVID News Page](https://www3.nhk.or.jp/news/special/coronavirus/latest-news/)
 
 
