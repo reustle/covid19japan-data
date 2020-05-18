@@ -129,6 +129,11 @@ export const sources = {
       patients: 'https://www.pref.ehime.jp/h25500/kansen/covid19.html',
       summary: 'https://www.pref.ehime.jp/h25500/kansen/documents/kennai_link.pdf'
     },
+    cities: {
+      matsuyama: {
+        gov: { patients: 'https://www.city.matsuyama.ehime.jp/kurashi/iryo/hokenyobo/kansensho/tyuui/sinngatakorona.html' }
+      }
+    },
     source: 'https://github.com/ehime-covid19/covid19',
     dashboard: 'https://ehime-covid19.com/'
   },

@@ -336,7 +336,7 @@ export const mieSummaryExtract = ($, url) => {
 
 
 export const miyagiSummaryExtract = ($, url) => {
-  return resultForimageWithAlt($, url, '陽性患者の現在の状況')
+  return resultForimageWithAlt($, url, new RegExp('(陽性患者の現在の状況|グラフ)'))
 }
 
 
