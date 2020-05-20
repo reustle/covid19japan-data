@@ -469,7 +469,10 @@ export const sources = {
         source: 'https://github.com/covid19yokohama/covid19'
       },
       yokosuka: {
-        gov: { patients: 'https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html' },
+        gov: { 
+          patients: 'https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html',
+          deaths: 'https://www.city.yokosuka.kanagawa.jp/0520/nagekomi/2020_5.html' 
+        },
         latest: {
           format: 'html',
           url:  'https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html',
@@ -543,7 +546,8 @@ export const sources = {
       kyotoCity: {
         gov: {
           news: 'https://www.city.kyoto.lg.jp/',
-          patients: 'https://www.city.kyoto.lg.jp/hokenfukushi/page/0000266641.html'
+          patients: 'https://www.city.kyoto.lg.jp/hokenfukushi/page/0000266641.html',
+          deaths: 'https://www.city.kyoto.lg.jp/menu3/category/36-6-1-0-0-0-0-0-0-0.html'
         },
         latest: {
           format: 'html',

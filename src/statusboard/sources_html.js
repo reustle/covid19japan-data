@@ -53,7 +53,7 @@ export const aichiToyohashiLatestExtract = ($) => {
 }
 
 export const akitaSummaryExtract = ($) => {
-  let cells = $('table.c-table--full tr:nth-child(2) td')
+  let cells = $('table.c-table--full').eq(1).find('td')
   return {
     confirmed: cells.eq(0).text(),
     deceased: cells.eq(3).text(),
