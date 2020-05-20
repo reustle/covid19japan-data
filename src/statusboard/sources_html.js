@@ -316,11 +316,10 @@ export const kyotoCityLatestExtract = ($) => {
 }
 
 export const mieSummaryExtract = ($, url) => {
-  const lastRow = $('table').eq(1).find('tr').last()
+  const lastRow = $('table').eq(2).find('tr').last()
   const secondLastRow = $('table').eq(1).find('tr').eq(1)
-
   const extractNumber = (t) => {
-    let num =  t.match(/([０-９]+)/)
+    let num =  t.match(new RegExp('([０-９0-9]+)', 'm'))
     if (num) {
       return normalizeFixedWidthNumbers(num[1])
     }
@@ -329,8 +328,8 @@ export const mieSummaryExtract = ($, url) => {
   return {
     tested: extractNumber(lastRow.find('td').eq(0).text()),
     confirmed: extractNumber(lastRow.find('td').eq(1).text()),
-    deceased: extractNumber(secondLastRow.find('td').eq(5).text()),
-    recovered: extractNumber(secondLastRow.find('td').eq(6).text())
+    deceased: extractNumber(secondLastRow.find('td').eq(4).text()),
+    recovered: extractNumber(secondLastRow.find('td').eq(5).text())
   }
 }
 
