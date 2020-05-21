@@ -453,7 +453,8 @@ export const sources = {
       yokohama: {
         gov: { 
           patients: 'https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html' ,
-          summary: 'https://www.city.yokohama.lg.jp/city-info/koho-kocho/koho/topics/corona-data.html'
+          summary: 'https://www.city.yokohama.lg.jp/city-info/koho-kocho/koho/topics/corona-data.html',
+          deaths: 'https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/'
         },
         latest: {
           format: 'html',
