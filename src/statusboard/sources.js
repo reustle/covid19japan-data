@@ -247,7 +247,7 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/tatsuya1970/covid19/development/data/data.json',
     },
     gov: {
-      patients: 'https://www.pref.hiroshima.lg.jp/soshiki/57/covid19-cases.html',
+      patients: 'https://www.pref.hiroshima.lg.jp/site/hcdc/covid19-kanjya.html',
       summary: 'https://www.pref.hiroshima.lg.jp/soshiki/57/covid19-cases.html',
     },
     summary: {
@@ -257,7 +257,7 @@ export const sources = {
     },
     latest: {
       format: 'html',
-      url: 'https://www.pref.hiroshima.lg.jp/soshiki/57/covid19-cases.html',
+      url: 'https://www.pref.hiroshima.lg.jp/site/hcdc/covid19-kanjya.html',
       extract: html.hiroshimaLatestExtract
     },
     source: 'https://github.com/tatsuya1970/covid19',

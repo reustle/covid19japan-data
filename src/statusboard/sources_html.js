@@ -75,12 +75,12 @@ export const chibaSummaryExtract = ($) => {
   // }
 
   const cells = $('table').first().find('tr:nth-child(2) td')
-  console.log(cells)
-  result.tested = cells.eq(0).text()
-  result.confirmed = cells.eq(1).text()
-  result.active = cells.eq(2).text()
-  result.recovered = cells.eq(3).text()
-  result.deceased = cells.eq(4).text()
+  result.confirmed = cells.eq(0).text()
+  result.active = cells.eq(1).text()
+  result.recovered = cells.eq(2).text()
+  result.deceased = cells.eq(3).text()
+
+  result.tested = $('table').eq(2).find('tr:nth-child(2) td').first().text()
 
   return result
 }
@@ -183,8 +183,7 @@ export const hiroshimaLatestExtract = ($) => {
   if (tables.length < 1) {
     return {}
   }
-  let rows = $(tables[0]).find('tr')
-  let latestRowCells = $(rows[2]).find('td')
+  let latestRowCells = tables.eq(0).find('tr').eq(1).find('td')
   let latestInfo = $(latestRowCells[1]).text() + ' ' + $(latestRowCells[0]).text() 
   return {
     latest: latestInfo
@@ -335,7 +334,7 @@ export const mieSummaryExtract = ($, url) => {
 
 
 export const miyagiSummaryExtract = ($, url) => {
-  return resultForimageWithAlt($, url, new RegExp('(陽性患者の現在の状況|グラフ)'))
+  return resultForimageWithAlt($, url, new RegExp('(現在)'))
 }
 
 
@@ -345,7 +344,7 @@ export const naganoSummaryExtract = ($, url) => {
 
 
 export const naraSummaryExtract = ($, url) => {
-  const numberRow = $('.Contents > table').eq(1).find('tr').eq(4)
+  const numberRow = $('.Contents > table').eq(1).find('tr').eq(5)
 
   return {
     confirmed: numberRow.find('td').eq(0).text(),
@@ -356,7 +355,7 @@ export const naraSummaryExtract = ($, url) => {
 
 
 export const niigataSummaryExtract = ($, url) => {
-  const numberRow = $('table').first().find('tbody tr').first()
+  const numberRow = $('table').first().find('table').first().find('tbody tr').first()
 
   return {
     tested: numberRow.find('td').eq(0).text(),
@@ -447,7 +446,7 @@ export const saitamaSummaryExtract = ($) => {
   let totalConfirmed = 0
   let totalRecovered = 0
   let totalDeceased = 0
-  $('.outline_type1 p').each((i, v) => {
+  $('.outline_type1 li').each((i, v) => {
     let text =  $(v).text()
     console.log(text)
     let confirmedResult = text.match(confirmedPattern)
