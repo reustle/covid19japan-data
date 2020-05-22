@@ -284,7 +284,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 256,
       "cruisePassenger": 0,
-      "recovered": 4073,
+      "recovered": 4189,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -1415,10 +1415,10 @@
         0,
         5,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -18087,8 +18087,8 @@
       "confirmedCumulativeAvg7d": 16214
     },
     {
-      "confirmed": 22,
-      "confirmedCumulative": 16386,
+      "confirmed": 23,
+      "confirmedCumulative": 16387,
       "deceased": 8,
       "deceasedCumulative": 807,
       "recovered": 0,
@@ -18097,8 +18097,8 @@
       "criticalCumulative": 199,
       "tested": 0,
       "testedCumulative": 261572,
-      "active": 14,
-      "activeCumulative": 2764,
+      "active": 15,
+      "activeCumulative": 2765,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 653,
@@ -18106,35 +18106,10 @@
       "cruiseCriticalCumulative": 9,
       "date": "2020-05-22",
       "deaths": 8,
-      "confirmedAvg3d": 32,
-      "confirmedCumulativeAvg3d": 16317,
+      "confirmedAvg3d": 33,
+      "confirmedCumulativeAvg3d": 16318,
       "confirmedAvg7d": 33,
       "confirmedCumulativeAvg7d": 16247
-    },
-    {
-      "confirmed": 1,
-      "confirmedCumulative": 16387,
-      "deceased": 0,
-      "deceasedCumulative": 807,
-      "recovered": 0,
-      "recoveredCumulative": 12815,
-      "critical": 0,
-      "criticalCumulative": 199,
-      "tested": 0,
-      "testedCumulative": 261572,
-      "active": 1,
-      "activeCumulative": 2765,
-      "cruiseConfirmedCumulative": 861,
-      "cruiseDeceasedCumulative": 13,
-      "cruiseRecoveredCumulative": 653,
-      "cruiseTestedCumulative": 4857,
-      "cruiseCriticalCumulative": 9,
-      "date": "2020ｰ05-22",
-      "deaths": 0,
-      "confirmedAvg3d": 21,
-      "confirmedCumulativeAvg3d": 16338,
-      "confirmedAvg7d": 26,
-      "confirmedCumulativeAvg7d": 16273
     }
   ],
   "updated": "2020-05-22T20:02:55+09:00"
