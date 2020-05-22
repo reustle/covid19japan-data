@@ -20,6 +20,26 @@ const postProcessData = (rawData) => {
       return parseInt(n)
     }
 
+    const normalizeDate = n => {
+      if (!n) {
+        return n
+      }
+      return normalizeFixedWidthNumbers(n.replace('ｰ', '-'))
+    }
+
+    const normalizeFixedWidthNumbers = v => {
+      return v.replace(/０/g, '0')
+       .replace(/１/g, '1')
+       .replace(/２/g, '2')
+       .replace(/３/g, '3')
+       .replace(/４/g, '4')
+       .replace(/５/g, '5')
+       .replace(/６/g, '6')
+       .replace(/７/g, '7')
+       .replace(/８/g, '8')
+       .replace(/９/g, '9')
+    }
+
     // Converts the number into a string, if possible.
     const normalizeId = n => {
       // Check if it has any number in it.
@@ -55,7 +75,7 @@ const postProcessData = (rawData) => {
 
     let transformedRow = {
       'patientId': normalizeId(row.patientNumber),
-      'dateAnnounced': row.dateAnnounced,
+      'dateAnnounced': normalizeDate(row.dateAnnounced),
       'ageBracket': normalizeNumber(row.ageBracket),
       'gender': normalizeGender(row.gender),
       'residence': row.residenceCityPrefecture,
