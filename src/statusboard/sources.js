@@ -826,7 +826,7 @@ export const sources = {
     gov: {
       summary: 'https://www.pref.saitama.lg.jp/a0701/shingatacoronavirus.html',
       patients: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/5gatsu/index.html',
-      patientList: 'https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html',
+      deaths: 'https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html',
     },
     summary: {
       format: 'html',
@@ -837,6 +837,11 @@ export const sources = {
       format: 'html',
       url: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/5gatsu/index.html',
       extract: html.saitamaLatestExtract
+    },
+    cities: {
+      kawaguchi: {
+        gov: { patients: "https://www.city.kawaguchi.lg.jp/soshiki/01090/018/30169.html" }
+      }
     },
     source: 'https://opendata.pref.saitama.lg.jp/data/dataset/covid19-jokyo',
     dashboard: 'https://saitama.stopcovid19.jp/'
