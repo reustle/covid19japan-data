@@ -922,7 +922,7 @@
       "confirmedByCity": {
         "Sagamihara": 78,
         "Yokohama": 527,
-        "Kamakura": 44,
+        "Kamakura": 45,
         "Atsugi": 64,
         "Kanagawa": 2,
         "Kamamura": 1,
@@ -944,7 +944,7 @@
       "name": "Kanagawa"
     },
     {
-      "confirmed": 1025,
+      "confirmed": 1032,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1081,12 +1081,12 @@
         3,
         1,
         5,
-        6,
-        0
+        5,
+        8
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
-      "yesterdayConfirmed": 6,
+      "newlyConfirmed": 8,
+      "yesterdayConfirmed": 5,
       "dailyDeceasedCount": [
         0,
         0,
@@ -1223,8 +1223,8 @@
         0,
         1,
         0,
-        1,
-        0
+        0,
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 79,
@@ -1233,7 +1233,7 @@
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
-        "Sapporo": 228,
+        "Sapporo": 234,
         "Nanae, Oshima": 1,
         "Nakafurano": 2,
         "Chitose, Ishikari": 2,
@@ -1279,8 +1279,8 @@
         "Unspecified": 2,
         "Eniwa": 1
       },
-      "newlyDeceased": 0,
-      "yesterdayDeceased": 1,
+      "newlyDeceased": 1,
+      "yesterdayDeceased": 0,
       "name_ja": "北海道",
       "deaths": 79,
       "name": "Hokkaido"
@@ -2625,8 +2625,8 @@
         4,
         6,
         4,
-        2,
-        18,
+        3,
+        17,
         32,
         22,
         19,
@@ -2655,8 +2655,8 @@
         11,
         9,
         4,
-        14,
-        2,
+        13,
+        3,
         3,
         3,
         0,
@@ -6528,7 +6528,7 @@
       "name": "Fukui"
     },
     {
-      "confirmed": 99,
+      "confirmed": 100,
       "dailyConfirmedCount": [
         0,
         0,
@@ -6666,10 +6666,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -8063,7 +8063,7 @@
       "name": "Fukushima"
     },
     {
-      "confirmed": 78,
+      "confirmed": 79,
       "dailyConfirmedCount": [
         0,
         0,
@@ -8201,10 +8201,10 @@
         0,
         1,
         3,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
@@ -16860,8 +16860,8 @@
       "confirmedCumulativeAvg7d": 1439
     },
     {
-      "confirmed": 93,
-      "confirmedCumulative": 2000,
+      "confirmed": 94,
+      "confirmedCumulative": 2001,
       "deceased": 2,
       "deceasedCumulative": 65,
       "recovered": 0,
@@ -16870,8 +16870,8 @@
       "criticalCumulative": 59,
       "tested": 206,
       "testedCumulative": 28966,
-      "active": 91,
-      "activeCumulative": 1511,
+      "active": 92,
+      "activeCumulative": 1512,
       "cruiseConfirmedCumulative": 712,
       "cruiseDeceasedCumulative": 11,
       "cruiseRecoveredCumulative": 603,
@@ -16879,13 +16879,13 @@
       "cruiseCriticalCumulative": 11,
       "date": "2020-03-30",
       "deaths": 2,
-      "confirmedAvg3d": 156,
-      "confirmedCumulativeAvg3d": 1858,
+      "confirmedAvg3d": 157,
+      "confirmedCumulativeAvg3d": 1859,
       "confirmedAvg7d": 122,
       "confirmedCumulativeAvg7d": 1561
     },
     {
-      "confirmed": 255,
+      "confirmed": 254,
       "confirmedCumulative": 2255,
       "deceased": 2,
       "deceasedCumulative": 67,
@@ -16895,7 +16895,7 @@
       "criticalCumulative": 59,
       "tested": 3531,
       "testedCumulative": 32497,
-      "active": 253,
+      "active": 252,
       "activeCumulative": 1764,
       "cruiseConfirmedCumulative": 712,
       "cruiseDeceasedCumulative": 11,
@@ -16905,7 +16905,7 @@
       "date": "2020-03-31",
       "deaths": 2,
       "confirmedAvg3d": 175,
-      "confirmedCumulativeAvg3d": 2033,
+      "confirmedCumulativeAvg3d": 2034,
       "confirmedAvg7d": 148,
       "confirmedCumulativeAvg7d": 1709
     },
@@ -16930,7 +16930,7 @@
       "date": "2020-04-01",
       "deaths": 5,
       "confirmedAvg3d": 209,
-      "confirmedCumulativeAvg3d": 2242,
+      "confirmedCumulativeAvg3d": 2243,
       "confirmedAvg7d": 174,
       "confirmedCumulativeAvg7d": 1883
     },
@@ -16955,7 +16955,7 @@
       "date": "2020-04-02",
       "deaths": 3,
       "confirmedAvg3d": 272,
-      "confirmedCumulativeAvg3d": 2514,
+      "confirmedCumulativeAvg3d": 2515,
       "confirmedAvg7d": 200,
       "confirmedCumulativeAvg7d": 2083
     },
@@ -16980,7 +16980,7 @@
       "date": "2020-04-03",
       "deaths": 6,
       "confirmedAvg3d": 299,
-      "confirmedCumulativeAvg3d": 2813,
+      "confirmedCumulativeAvg3d": 2814,
       "confirmedAvg7d": 232,
       "confirmedCumulativeAvg7d": 2315
     },
@@ -17005,7 +17005,7 @@
       "date": "2020-04-04",
       "deaths": 6,
       "confirmedAvg3d": 330,
-      "confirmedCumulativeAvg3d": 3143,
+      "confirmedCumulativeAvg3d": 3144,
       "confirmedAvg7d": 256,
       "confirmedCumulativeAvg7d": 2571
     },
@@ -17030,7 +17030,7 @@
       "date": "2020-04-05",
       "deaths": 6,
       "confirmedAvg3d": 352,
-      "confirmedCumulativeAvg3d": 3495,
+      "confirmedCumulativeAvg3d": 3496,
       "confirmedAvg7d": 281,
       "confirmedCumulativeAvg7d": 2852
     },
@@ -17055,7 +17055,7 @@
       "date": "2020-04-06",
       "deaths": 3,
       "confirmedAvg3d": 318,
-      "confirmedCumulativeAvg3d": 3813,
+      "confirmedCumulativeAvg3d": 3814,
       "confirmedAvg7d": 301,
       "confirmedCumulativeAvg7d": 3153
     },
@@ -17080,7 +17080,7 @@
       "date": "2020-04-07",
       "deaths": 2,
       "confirmedAvg3d": 320,
-      "confirmedCumulativeAvg3d": 4133,
+      "confirmedCumulativeAvg3d": 4134,
       "confirmedAvg7d": 318,
       "confirmedCumulativeAvg7d": 3471
     },
@@ -17105,7 +17105,7 @@
       "date": "2020-04-08",
       "deaths": 7,
       "confirmedAvg3d": 381,
-      "confirmedCumulativeAvg3d": 4514,
+      "confirmedCumulativeAvg3d": 4515,
       "confirmedAvg7d": 355,
       "confirmedCumulativeAvg7d": 3826
     },
@@ -17130,7 +17130,7 @@
       "date": "2020-04-09",
       "deaths": 8,
       "confirmedAvg3d": 501,
-      "confirmedCumulativeAvg3d": 5015,
+      "confirmedCumulativeAvg3d": 5016,
       "confirmedAvg7d": 399,
       "confirmedCumulativeAvg7d": 4225
     },
@@ -17155,7 +17155,7 @@
       "date": "2020-04-10",
       "deaths": 12,
       "confirmedAvg3d": 588,
-      "confirmedCumulativeAvg3d": 5603,
+      "confirmedCumulativeAvg3d": 5604,
       "confirmedAvg7d": 442,
       "confirmedCumulativeAvg7d": 4667
     },
@@ -17180,7 +17180,7 @@
       "date": "2020-04-11",
       "deaths": 13,
       "confirmedAvg3d": 643,
-      "confirmedCumulativeAvg3d": 6246,
+      "confirmedCumulativeAvg3d": 6247,
       "confirmedAvg7d": 489,
       "confirmedCumulativeAvg7d": 5156
     },
@@ -17205,7 +17205,7 @@
       "date": "2020-04-12",
       "deaths": 9,
       "confirmedAvg3d": 619,
-      "confirmedCumulativeAvg3d": 6865,
+      "confirmedCumulativeAvg3d": 6866,
       "confirmedAvg7d": 513,
       "confirmedCumulativeAvg7d": 5669
     },
@@ -17230,7 +17230,7 @@
       "date": "2020-04-13",
       "deaths": 9,
       "confirmedAvg3d": 507,
-      "confirmedCumulativeAvg3d": 7372,
+      "confirmedCumulativeAvg3d": 7373,
       "confirmedAvg7d": 523,
       "confirmedCumulativeAvg7d": 6192
     },
@@ -17255,7 +17255,7 @@
       "date": "2020-04-14",
       "deaths": 14,
       "confirmedAvg3d": 442,
-      "confirmedCumulativeAvg3d": 7814,
+      "confirmedCumulativeAvg3d": 7815,
       "confirmedAvg7d": 541,
       "confirmedCumulativeAvg7d": 6733
     },
@@ -17280,7 +17280,7 @@
       "date": "2020-04-15",
       "deaths": 16,
       "confirmedAvg3d": 454,
-      "confirmedCumulativeAvg3d": 8268,
+      "confirmedCumulativeAvg3d": 8269,
       "confirmedAvg7d": 545,
       "confirmedCumulativeAvg7d": 7278
     },
@@ -17305,7 +17305,7 @@
       "date": "2020-04-16",
       "deaths": 18,
       "confirmedAvg3d": 541,
-      "confirmedCumulativeAvg3d": 8809,
+      "confirmedCumulativeAvg3d": 8810,
       "confirmedAvg7d": 540,
       "confirmedCumulativeAvg7d": 7818
     },
@@ -17330,7 +17330,7 @@
       "date": "2020-04-17",
       "deaths": 13,
       "confirmedAvg3d": 560,
-      "confirmedCumulativeAvg3d": 9369,
+      "confirmedCumulativeAvg3d": 9370,
       "confirmedAvg7d": 529,
       "confirmedCumulativeAvg7d": 8347
     },
@@ -17355,7 +17355,7 @@
       "date": "2020-04-18",
       "deaths": 18,
       "confirmedAvg3d": 571,
-      "confirmedCumulativeAvg3d": 9940,
+      "confirmedCumulativeAvg3d": 9941,
       "confirmedAvg7d": 513,
       "confirmedCumulativeAvg7d": 8860
     },
@@ -17380,7 +17380,7 @@
       "date": "2020-04-19",
       "deaths": 19,
       "confirmedAvg3d": 505,
-      "confirmedCumulativeAvg3d": 10445,
+      "confirmedCumulativeAvg3d": 10446,
       "confirmedAvg7d": 491,
       "confirmedCumulativeAvg7d": 9351
     },
@@ -17405,7 +17405,7 @@
       "date": "2020-04-20",
       "deaths": 20,
       "confirmedAvg3d": 433,
-      "confirmedCumulativeAvg3d": 10878,
+      "confirmedCumulativeAvg3d": 10879,
       "confirmedAvg7d": 497,
       "confirmedCumulativeAvg7d": 9848
     },
@@ -17430,7 +17430,7 @@
       "date": "2020-04-21",
       "deaths": 27,
       "confirmedAvg3d": 364,
-      "confirmedCumulativeAvg3d": 11242,
+      "confirmedCumulativeAvg3d": 11243,
       "confirmedAvg7d": 480,
       "confirmedCumulativeAvg7d": 10328
     },
@@ -17455,7 +17455,7 @@
       "date": "2020-04-22",
       "deaths": 20,
       "confirmedAvg3d": 374,
-      "confirmedCumulativeAvg3d": 11616,
+      "confirmedCumulativeAvg3d": 11617,
       "confirmedAvg7d": 457,
       "confirmedCumulativeAvg7d": 10785
     },
@@ -17480,7 +17480,7 @@
       "date": "2020-04-23",
       "deaths": 28,
       "confirmedAvg3d": 403,
-      "confirmedCumulativeAvg3d": 12019,
+      "confirmedCumulativeAvg3d": 12020,
       "confirmedAvg7d": 438,
       "confirmedCumulativeAvg7d": 11223
     },
@@ -17505,7 +17505,7 @@
       "date": "2020-04-24",
       "deaths": 9,
       "confirmedAvg3d": 404,
-      "confirmedCumulativeAvg3d": 12423,
+      "confirmedCumulativeAvg3d": 12424,
       "confirmedAvg7d": 413,
       "confirmedCumulativeAvg7d": 11636
     },
@@ -17530,7 +17530,7 @@
       "date": "2020-04-25",
       "deaths": 19,
       "confirmedAvg3d": 383,
-      "confirmedCumulativeAvg3d": 12806,
+      "confirmedCumulativeAvg3d": 12807,
       "confirmedAvg7d": 376,
       "confirmedCumulativeAvg7d": 12012
     },
@@ -17555,7 +17555,7 @@
       "date": "2020-04-26",
       "deaths": 16,
       "confirmedAvg3d": 312,
-      "confirmedCumulativeAvg3d": 13118,
+      "confirmedCumulativeAvg3d": 13119,
       "confirmedAvg7d": 355,
       "confirmedCumulativeAvg7d": 12367
     },
@@ -17580,7 +17580,7 @@
       "date": "2020-04-27",
       "deaths": 22,
       "confirmedAvg3d": 240,
-      "confirmedCumulativeAvg3d": 13358,
+      "confirmedCumulativeAvg3d": 13359,
       "confirmedAvg7d": 331,
       "confirmedCumulativeAvg7d": 12698
     },
@@ -17605,13 +17605,13 @@
       "date": "2020-04-28",
       "deaths": 19,
       "confirmedAvg3d": 224,
-      "confirmedCumulativeAvg3d": 13582,
+      "confirmedCumulativeAvg3d": 13583,
       "confirmedAvg7d": 317,
       "confirmedCumulativeAvg7d": 13015
     },
     {
-      "confirmed": 217,
-      "confirmedCumulative": 14077,
+      "confirmed": 216,
+      "confirmedCumulative": 14076,
       "deceased": 18,
       "deceasedCumulative": 452,
       "recovered": 215,
@@ -17620,8 +17620,8 @@
       "criticalCumulative": 306,
       "tested": 3709,
       "testedCumulative": 164255,
-      "active": -16,
-      "activeCumulative": 10101,
+      "active": -17,
+      "activeCumulative": 10100,
       "cruiseConfirmedCumulative": 860,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 651,
@@ -17629,13 +17629,13 @@
       "cruiseCriticalCumulative": 5,
       "date": "2020-04-29",
       "deaths": 18,
-      "confirmedAvg3d": 224,
+      "confirmedAvg3d": 223,
       "confirmedCumulativeAvg3d": 13806,
       "confirmedAvg7d": 291,
       "confirmedCumulativeAvg7d": 13306
     },
     {
-      "confirmed": 207,
+      "confirmed": 208,
       "confirmedCumulative": 14284,
       "deceased": 27,
       "deceasedCumulative": 479,
@@ -17645,7 +17645,7 @@
       "criticalCumulative": 308,
       "tested": 1354,
       "testedCumulative": 165609,
-      "active": -65,
+      "active": -64,
       "activeCumulative": 10036,
       "cruiseConfirmedCumulative": 860,
       "cruiseDeceasedCumulative": 13,
@@ -17806,8 +17806,8 @@
       "deaths": 11,
       "confirmedAvg3d": 131,
       "confirmedCumulativeAvg3d": 15312,
-      "confirmedAvg7d": 196,
-      "confirmedCumulativeAvg7d": 14928
+      "confirmedAvg7d": 197,
+      "confirmedCumulativeAvg7d": 14929
     },
     {
       "confirmed": 98,
@@ -17832,7 +17832,7 @@
       "confirmedAvg3d": 108,
       "confirmedCumulativeAvg3d": 15420,
       "confirmedAvg7d": 181,
-      "confirmedCumulativeAvg7d": 15109
+      "confirmedCumulativeAvg7d": 15110
     },
     {
       "confirmed": 87,
@@ -17857,7 +17857,7 @@
       "confirmedAvg3d": 95,
       "confirmedCumulativeAvg3d": 15515,
       "confirmedAvg7d": 154,
-      "confirmedCumulativeAvg7d": 15263
+      "confirmedCumulativeAvg7d": 15264
     },
     {
       "confirmed": 115,
@@ -17882,7 +17882,7 @@
       "confirmedAvg3d": 100,
       "confirmedCumulativeAvg3d": 15615,
       "confirmedAvg7d": 127,
-      "confirmedCumulativeAvg7d": 15390
+      "confirmedCumulativeAvg7d": 15391
     },
     {
       "confirmed": 69,
@@ -17907,7 +17907,7 @@
       "confirmedAvg3d": 90,
       "confirmedCumulativeAvg3d": 15705,
       "confirmedAvg7d": 109,
-      "confirmedCumulativeAvg7d": 15499
+      "confirmedCumulativeAvg7d": 15500
     },
     {
       "confirmed": 37,
@@ -17932,7 +17932,7 @@
       "confirmedAvg3d": 73,
       "confirmedCumulativeAvg3d": 15778,
       "confirmedAvg7d": 90,
-      "confirmedCumulativeAvg7d": 15589
+      "confirmedCumulativeAvg7d": 15590
     },
     {
       "confirmed": 87,
@@ -17957,7 +17957,7 @@
       "confirmedAvg3d": 64,
       "confirmedCumulativeAvg3d": 15842,
       "confirmedAvg7d": 84,
-      "confirmedCumulativeAvg7d": 15673
+      "confirmedCumulativeAvg7d": 15674
     },
     {
       "confirmed": 50,
@@ -17982,7 +17982,7 @@
       "confirmedAvg3d": 58,
       "confirmedCumulativeAvg3d": 15900,
       "confirmedAvg7d": 77,
-      "confirmedCumulativeAvg7d": 15750
+      "confirmedCumulativeAvg7d": 15751
     },
     {
       "confirmed": 98,
@@ -18007,7 +18007,7 @@
       "confirmedAvg3d": 78,
       "confirmedCumulativeAvg3d": 15978,
       "confirmedAvg7d": 77,
-      "confirmedCumulativeAvg7d": 15827
+      "confirmedCumulativeAvg7d": 15828
     },
     {
       "confirmed": 52,
@@ -18032,7 +18032,7 @@
       "confirmedAvg3d": 66,
       "confirmedCumulativeAvg3d": 16044,
       "confirmedAvg7d": 72,
-      "confirmedCumulativeAvg7d": 15899
+      "confirmedCumulativeAvg7d": 15900
     },
     {
       "confirmed": 54,
@@ -18057,7 +18057,7 @@
       "confirmedAvg3d": 68,
       "confirmedCumulativeAvg3d": 16112,
       "confirmedAvg7d": 63,
-      "confirmedCumulativeAvg7d": 15962
+      "confirmedCumulativeAvg7d": 15963
     },
     {
       "confirmed": 24,
@@ -18082,7 +18082,7 @@
       "confirmedAvg3d": 43,
       "confirmedCumulativeAvg3d": 16155,
       "confirmedAvg7d": 57,
-      "confirmedCumulativeAvg7d": 16019
+      "confirmedCumulativeAvg7d": 16020
     },
     {
       "confirmed": 33,
@@ -18107,7 +18107,7 @@
       "confirmedAvg3d": 37,
       "confirmedCumulativeAvg3d": 16192,
       "confirmedAvg7d": 56,
-      "confirmedCumulativeAvg7d": 16075
+      "confirmedCumulativeAvg7d": 16076
     },
     {
       "confirmed": 28,
@@ -18132,7 +18132,7 @@
       "confirmedAvg3d": 28,
       "confirmedCumulativeAvg3d": 16220,
       "confirmedAvg7d": 48,
-      "confirmedCumulativeAvg7d": 16123
+      "confirmedCumulativeAvg7d": 16124
     },
     {
       "confirmed": 34,
@@ -18157,7 +18157,7 @@
       "confirmedAvg3d": 31,
       "confirmedCumulativeAvg3d": 16251,
       "confirmedAvg7d": 46,
-      "confirmedCumulativeAvg7d": 16169
+      "confirmedCumulativeAvg7d": 16170
     },
     {
       "confirmed": 41,
@@ -18182,13 +18182,13 @@
       "confirmedAvg3d": 34,
       "confirmedCumulativeAvg3d": 16285,
       "confirmedAvg7d": 38,
-      "confirmedCumulativeAvg7d": 16207
+      "confirmedCumulativeAvg7d": 16208
     },
     {
-      "confirmed": 24,
-      "confirmedCumulative": 16386,
-      "deceased": 9,
-      "deceasedCumulative": 817,
+      "confirmed": 23,
+      "confirmedCumulative": 16385,
+      "deceased": 8,
+      "deceasedCumulative": 816,
       "recovered": 257,
       "recoveredCumulative": 13072,
       "critical": -23,
@@ -18203,16 +18203,16 @@
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 9,
       "date": "2020-05-22",
-      "deaths": 9,
-      "confirmedAvg3d": 33,
-      "confirmedCumulativeAvg3d": 16318,
-      "confirmedAvg7d": 34,
+      "deaths": 8,
+      "confirmedAvg3d": 32,
+      "confirmedCumulativeAvg3d": 16317,
+      "confirmedAvg7d": 33,
       "confirmedCumulativeAvg7d": 16241
     },
     {
-      "confirmed": 7,
-      "confirmedCumulative": 16393,
-      "deceased": 0,
+      "confirmed": 17,
+      "confirmedCumulative": 16402,
+      "deceased": 1,
       "deceasedCumulative": 817,
       "recovered": 0,
       "recoveredCumulative": 13072,
@@ -18220,20 +18220,20 @@
       "criticalCumulative": 176,
       "tested": 0,
       "testedCumulative": 265502,
-      "active": 7,
-      "activeCumulative": 2504,
+      "active": 16,
+      "activeCumulative": 2513,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 653,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 9,
       "date": "2020-05-23",
-      "deaths": 0,
-      "confirmedAvg3d": 24,
-      "confirmedCumulativeAvg3d": 16342,
-      "confirmedAvg7d": 27,
-      "confirmedCumulativeAvg7d": 16268
+      "deaths": 1,
+      "confirmedAvg3d": 27,
+      "confirmedCumulativeAvg3d": 16344,
+      "confirmedAvg7d": 28,
+      "confirmedCumulativeAvg7d": 16269
     }
   ],
-  "updated": "2020-05-23T18:46:57+09:00"
+  "updated": "2020-05-23T19:04:00+09:00"
 }
