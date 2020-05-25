@@ -957,7 +957,7 @@
       "name": "Kanagawa"
     },
     {
-      "confirmed": 1049,
+      "confirmed": 1050,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1097,10 +1097,10 @@
         5,
         8,
         15,
-        2
+        3
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 2,
+      "newlyConfirmed": 3,
       "yesterdayConfirmed": 15,
       "dailyDeceasedCount": [
         0,
@@ -2247,7 +2247,7 @@
       "deceased": 13,
       "cruisePassenger": 0,
       "recovered": 653,
-      "critical": 4,
+      "critical": 1,
       "tested": 4234,
       "patients": [],
       "confirmedByCity": {},
@@ -4167,7 +4167,7 @@
       "name": "Toyama"
     },
     {
-      "confirmed": 170,
+      "confirmed": 171,
       "dailyConfirmedCount": [
         0,
         0,
@@ -4307,10 +4307,10 @@
         0,
         1,
         2,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 2,
       "dailyDeceasedCount": [
         0,
@@ -4456,7 +4456,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 0,
       "cruisePassenger": 0,
-      "recovered": 2,
+      "recovered": 151,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -4470,7 +4470,7 @@
         "Haneda airport": 49,
         "Kansai airport": 8,
         "Naha": 1,
-        "Narita airport": 58,
+        "Narita airport": 59,
         "Kansai Airport": 1,
         "Unspecified": 2,
         "Narita": 1
@@ -5666,7 +5666,7 @@
       "dailyDeceasedStartDate": "2020-02-04",
       "deceased": 0,
       "cruisePassenger": 0,
-      "recovered": 112,
+      "recovered": 113,
       "critical": 5,
       "tested": 623,
       "patients": [],
@@ -18461,30 +18461,30 @@
       "confirmedCumulativeAvg7d": 16302
     },
     {
-      "confirmed": 12,
-      "confirmedCumulative": 16464,
+      "confirmed": 14,
+      "confirmedCumulative": 16466,
       "deceased": 11,
       "deceasedCumulative": 850,
-      "recovered": 279,
-      "recoveredCumulative": 13612,
+      "recovered": 222,
+      "recoveredCumulative": 13555,
       "critical": -3,
       "criticalCumulative": 165,
       "tested": 1487,
       "testedCumulative": 272688,
-      "active": -278,
-      "activeCumulative": 2002,
+      "active": -219,
+      "activeCumulative": 2061,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
-      "cruiseRecoveredCumulative": 765,
+      "cruiseRecoveredCumulative": 766,
       "cruiseTestedCumulative": 4857,
-      "cruiseCriticalCumulative": 9,
+      "cruiseCriticalCumulative": 6,
       "date": "2020-05-25",
       "deaths": 11,
-      "confirmedAvg3d": 26,
-      "confirmedCumulativeAvg3d": 16401,
+      "confirmedAvg3d": 27,
+      "confirmedCumulativeAvg3d": 16402,
       "confirmedAvg7d": 29,
       "confirmedCumulativeAvg7d": 16331
     }
   ],
-  "updated": "2020-05-25T21:32:13+09:00"
+  "updated": "2020-05-25T22:17:18+09:00"
 }
