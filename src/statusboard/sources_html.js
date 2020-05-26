@@ -344,7 +344,7 @@ export const naganoSummaryExtract = ($, url) => {
 
 
 export const naraSummaryExtract = ($, url) => {
-  const numberRow = $('.Contents > table').eq(1).find('tr').eq(5)
+  const numberRow = $('table.smartoff').first().find('table:first-child table').find('tr').eq(4)
 
   return {
     confirmed: numberRow.find('td').eq(0).text(),
@@ -355,7 +355,7 @@ export const naraSummaryExtract = ($, url) => {
 
 
 export const niigataSummaryExtract = ($, url) => {
-  const numberRow = $('table').first().find('table').first().find('tbody tr').first()
+  const numberRow = $('table').first().find('tbody tr').first()
 
   return {
     tested: numberRow.find('td').eq(0).text(),
