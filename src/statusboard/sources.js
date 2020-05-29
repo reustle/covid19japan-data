@@ -362,7 +362,9 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html',
-      summary: 'https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html'
+      summary: 'https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html',
+      deaths: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/0401d.html',
+      patientsList: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/ichiran.html'
     },
     summary: {
       format: 'html',
