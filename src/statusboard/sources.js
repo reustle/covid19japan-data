@@ -181,6 +181,14 @@ export const sources = {
       patients: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
       summary: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
     },
+    cities: {
+      fukuokaCity: {
+        gov: { 
+          patients: 'https://www.city.fukuoka.lg.jp/hofuku/hokenyobo/health/kansen/cohs.html',
+          summary: 'https://www.city.fukuoka.lg.jp/hofuku/hokenyobo/health/kansen/cohs.html' 
+        }
+      }
+    },
     source: 'https://ckan.open-governmentdata.org/dataset/401000_pref_fukuoka_covid19_patients',
     dashboard: 'https://fukuoka.stopcovid19.jp/',
   },
