@@ -187,6 +187,11 @@ export const sources = {
           patients: 'https://www.city.fukuoka.lg.jp/hofuku/hokenyobo/health/kansen/cohs.html',
           summary: 'https://www.city.fukuoka.lg.jp/hofuku/hokenyobo/health/kansen/cohs.html' 
         }
+      },
+      kitakyushu: {
+        gov: {
+          patients: 'https://www.city.kitakyushu.lg.jp/kurashi/menu01_00278.html'
+        }
       }
     },
     source: 'https://ckan.open-governmentdata.org/dataset/401000_pref_fukuoka_covid19_patients',
