@@ -16,7 +16,7 @@ const DATA_START_ROW = 3
 const rowByPrefecture = {}
 const responses = {}
 
-const fetchPrefectureLatest = (prefectureSource, rowId) => {
+const fetchPrefectureLatest = (prefectureSource, rowId, city) => {
   console.log(rowId)
   if (prefectureSource.latest) {
     fetchSummaryFromHtml(prefectureSource.latest.url, prefectureSource.latest.extract, prefectureSource.latest.encoding)
@@ -24,14 +24,14 @@ const fetchPrefectureLatest = (prefectureSource, rowId) => {
         if (result) {
           console.log('latest:', rowId, result.latest)
           if (result.latest) {
-            createCell(rowId, 'gov-latest', result.latest, result.latest)
+            createCell(rowId, 'gov-latest', result.latest, result.latest, city)
           }
         }
       })
   }
 }
 
-const fetchPrefectureSummary = (prefectureSource, prefectureId) => {
+const fetchPrefectureSummary = (prefectureSource, prefectureId, city) => {
   if (!prefectureSource.summary) {
     return;
   }
@@ -46,15 +46,15 @@ const fetchPrefectureSummary = (prefectureSource, prefectureId) => {
         }
         if (prefectureSource.summary.confirmed) {
           let number = _.at(mainSummary, [prefectureSource.summary.confirmed])[0]
-          createCell(prefectureId, 'gov-confirmed', number)
+          createCell(prefectureId, 'gov-confirmed', number, city)
         }
         if (prefectureSource.summary.deceased) {
           let number = _.at(mainSummary, [prefectureSource.summary.deceased])[0]
-          createCell(prefectureId, 'gov-deceased', number)
+          createCell(prefectureId, 'gov-deceased', number, city)
         }
         if (prefectureSource.summary.recovered) {
           let number = _.at(mainSummary, [prefectureSource.summary.recovered])[0]
-          createCell(prefectureId, 'gov-recovered', number)
+          createCell(prefectureId, 'gov-recovered', number, city)
         }
       })
   } else if (prefectureSource.summary.format == 'html') {
@@ -63,16 +63,16 @@ const fetchPrefectureSummary = (prefectureSource, prefectureId) => {
         console.log(prefectureId, result)
         if (result) {
           if (result.image) {
-            createLinkCell(prefectureId, 'gov-confirmed', 'image', 'image', result.image)
+            createLinkCell(prefectureId, 'gov-confirmed', 'image', 'image', result.image, city)
           }
           if (result.deceased) {
-            createCell(prefectureId, 'gov-deceased', result.deceased)
+            createCell(prefectureId, 'gov-deceased', result.deceased, city)
           }
           if (result.recovered) { 
-            createCell(prefectureId, 'gov-recovered', result.recovered)
+            createCell(prefectureId, 'gov-recovered', result.recovered, city)
           }
           if (result.confirmed) { 
-            createCell(prefectureId, 'gov-confirmed', result.confirmed)
+            createCell(prefectureId, 'gov-confirmed', result.confirmed, city)
           }
         }
       })
@@ -116,8 +116,8 @@ const fetchAllPrefectureData = (prefectureSources) => {
       for (let cityId of _.keys(prefectureSource.cities)) {
         let prefectureCitySource = prefectureSource.cities[cityId]
         fetchPrefectureData(prefectureCitySource, cityId)
-        fetchPrefectureSummary(prefectureCitySource, cityId)
-        fetchPrefectureLatest(prefectureCitySource, cityId)
+        fetchPrefectureSummary(prefectureCitySource, cityId, cityId)
+        fetchPrefectureLatest(prefectureCitySource, cityId, cityId)
     
       }
     }
@@ -259,10 +259,11 @@ const createPrefectureNHKCountCell = (prefectureId, count) => {
     .text(count)
 }
 
-const createCell = (rowId, column, text, title) => {
+const createCell = (rowId, column, text, title, city) => {
+  let cityClass = city ? 'city' : ''
   select('#statusboard') 
     .append('div')
-    .attr('class', _.join(['item', column, rowId], ' '))
+    .attr('class', _.join(['item', column, rowId, cityClass], ' '))
     .attr('data-prefecture-id', rowId)
     .attr('title', title)
     .style('grid-row', rowByPrefecture[rowId])
@@ -270,10 +271,11 @@ const createCell = (rowId, column, text, title) => {
     .text(text)
 }
 
-const createLinkCell = (rowId, column, text, title, url) => {
+const createLinkCell = (rowId, column, text, title, url, city) => {
+  let cityClass = city ? 'city' : ''
   select('#statusboard') 
     .append('div')
-    .attr('class', _.join(['item', column, rowId], ' '))
+    .attr('class', _.join(['item', column, rowId, cityClass], ' '))
     .attr('data-prefecture-id', rowId)
     .attr('title', title)
     .style('grid-row', rowByPrefecture[rowId])

@@ -52,6 +52,24 @@ export const aichiToyohashiLatestExtract = ($) => {
   }
 }
 
+export const aomoriSummaryExtract = ($) => {
+  let hospitalized = $('h2').filter((i, v) => {
+    return $(v).text().match('感染者の入院の状況')
+  })
+  
+  let hospitalizedText = hospitalized.first().next().text()
+  let hospitalizedPattern = new RegExp('までの感染者数は([0-9]+)名であり、新型コロナウイルス感染症患者として現在入院されている方は([0-9]+)名です。')
+  let hospitalizedMatch = hospitalizedText.match(hospitalizedPattern)
+  if (hospitalizedMatch) {
+    let recovered = parseInt(hospitalizedMatch[1]) - parseInt(hospitalizedMatch[2])
+    return {
+      recovered: recovered,
+      confirmed: parseInt(hospitalizedMatch[1])
+    }
+  }
+  return {}
+}
+
 export const akitaSummaryExtract = ($) => {
   let cells = $('table.c-table--full').eq(1).find('td')
   return {
@@ -339,7 +357,7 @@ export const miyagiSummaryExtract = ($, url) => {
 
 
 export const naganoSummaryExtract = ($, url) => {
-  return resultForimageWithAlt($, url, '感染者')
+  return resultForimageWithAlt($, url, '(陽性|感染者)')
 }
 
 
@@ -393,6 +411,19 @@ export const oitaLatestExtract = ($, url) => {
   return {
     latest: summary.text()
   }
+}
+
+export const okayamaSummaryExtract = ($, url) => {
+  const summaryText = $('#main_body p').eq(2).text()
+  const summaryPattern = new RegExp('岡山県内の感染者数 ([０-９]+) 人 \（うち退院 ([０-９]+) 人\）')
+  const summaryMatch = summaryText.match(summaryPattern)
+  if (summaryMatch) {
+    return {
+      confirmed: normalizeFixedWidthNumbers(summaryMatch[1]),
+      recovered: normalizeFixedWidthNumbers(summaryMatch[2])
+    }
+  }
+  return {}
 }
 
 
@@ -496,7 +527,7 @@ export const shigaSummaryExtract = ($) => {
 }
 
 export const shimaneSummaryExtract = ($) => {
-  const p = $('#page-content p').first().text()
+  const p = $('#page-content p').eq(3).text()
   const pattern = new RegExp('島根県内で、(.*)現在、新型コロナウイルス感染者が([0-9]+)名確認されています。\（うち([0-9]+)名が回復し退院しています。\）')
   const match = p.match(pattern)
   if (match) {
@@ -547,7 +578,7 @@ export const yamagataSummaryExtract = ($, url) => {
 }
 
 export const yamaguchiSummaryExtract = ($, url) => {
-  const summary = $('table').first().find('p').eq(1).text()
+  const summary = $('table').eq(1).find('p').eq(1).text()
   const pattern = new RegExp('山口県の感染者数：　([0-9]+)人.*入院等：([0-9]+)人／退院：([0-9]+)人')
   const match = summary.match(pattern)
   if (match) {

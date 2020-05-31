@@ -88,6 +88,11 @@ export const sources = {
     gov: {
       patients: 'http://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html'
     },
+    summary: {
+      format: 'html',
+      url: 'http://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html',
+      extract: html.aomoriSummaryExtract      
+    },
     index: 'https://opendata.pref.aomori.lg.jp/api/package_show?id=5e4612ce-1636-41d9-82a3-c5130a79ffe0',
     source: [ 'https://opendata.pref.aomori.lg.jp/dataset/1531.html' ],
     dashboard: 'https://covid19.codeforaomori.org/'
@@ -770,6 +775,11 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.okayama.jp/page/645925.html'
+    },
+    summary: {
+      format: 'html',
+      url: 'https://www.pref.okayama.jp/page/645925.html',
+      extract: html.okayamaSummaryExtract      
     },
     source: 'http://www.okayama-opendata.jp/opendata/ga120PreAction.action?keyTitle=d9c4776db7f09fff161953a2aaf03b80a9abad48&datasetId=e6b3c1d2-2f1f-4735-b36e-e45d36d94761',
     dashboard: 'https://okayama.stopcovid19.jp/'
