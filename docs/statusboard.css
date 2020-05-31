@@ -115,6 +115,11 @@ h1 {
     text-decoration: none; }
   #statusboard .place a:hover {
     color: #2bcf90; }
+  #statusboard .city {
+    background-color: #f9f9f9;
+    color: #aaa; }
+    #statusboard .city.item a {
+      color: #aaa; }
 
 #statusboard.hide-cities .city {
   display: none; }
