@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 5253,
+      "confirmed": 5283,
       "dailyConfirmedCount": [
         0,
         0,
@@ -149,10 +149,10 @@
         14,
         5,
         13,
-        0
+        30
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 30,
       "yesterdayConfirmed": 13,
       "dailyDeceasedCount": [
         0,
@@ -1314,7 +1314,7 @@
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
-        "Sapporo": 259,
+        "Sapporo": 260,
         "Nanae, Oshima": 1,
         "Nakafurano": 2,
         "Chitose, Ishikari": 2,
@@ -1341,7 +1341,7 @@
         "Fukagawa, Sorachiso": 1,
         "Nakafurano, Kamikawa": 1,
         "Tomakomai": 2,
-        "Sorachi": 11,
+        "Sorachi": 14,
         "Sorachi Region": 1,
         "Okhotsk (Seaside)": 5,
         "Otaru": 6,
@@ -19460,7 +19460,32 @@
       "confirmedCumulativeAvg3d": 16706,
       "confirmedAvg7d": 45,
       "confirmedCumulativeAvg7d": 16596
+    },
+    {
+      "confirmed": 30,
+      "confirmedCumulative": 16817,
+      "deceased": 0,
+      "deceasedCumulative": 899,
+      "recovered": 0,
+      "recoveredCumulative": 14463,
+      "critical": 0,
+      "criticalCumulative": 115,
+      "tested": 0,
+      "testedCumulative": 292569,
+      "active": 30,
+      "activeCumulative": 1455,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 801,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 3,
+      "date": "2020-06-02",
+      "deaths": 0,
+      "confirmedAvg3d": 33,
+      "confirmedCumulativeAvg3d": 16739,
+      "confirmedAvg7d": 45,
+      "confirmedCumulativeAvg7d": 16641
     }
   ],
-  "updated": "2020-06-01T23:17:35+09:00"
+  "updated": "2020-06-02T15:03:56+09:00"
 }
