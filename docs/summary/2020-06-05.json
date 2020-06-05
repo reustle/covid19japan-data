@@ -684,7 +684,7 @@
       "name": "Osaka"
     },
     {
-      "confirmed": 1380,
+      "confirmed": 1386,
       "dailyConfirmedCount": [
         0,
         0,
@@ -835,10 +835,10 @@
         3,
         2,
         6,
-        0
+        6
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 6,
       "yesterdayConfirmed": 6,
       "dailyDeceasedCount": [
         0,
@@ -19840,7 +19840,32 @@
       "confirmedCumulativeAvg3d": 16826,
       "confirmedAvg7d": 45,
       "confirmedCumulativeAvg7d": 16734
+    },
+    {
+      "confirmed": 6,
+      "confirmedCumulative": 16917,
+      "deceased": 0,
+      "deceasedCumulative": 911,
+      "recovered": 0,
+      "recoveredCumulative": 14785,
+      "critical": 0,
+      "criticalCumulative": 102,
+      "tested": 0,
+      "testedCumulative": 303633,
+      "active": 6,
+      "activeCumulative": 1221,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 801,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 3,
+      "date": "2020-06-05",
+      "deaths": 0,
+      "confirmedAvg3d": 26,
+      "confirmedCumulativeAvg3d": 16852,
+      "confirmedAvg7d": 35,
+      "confirmedCumulativeAvg7d": 16769
     }
   ],
-  "updated": "2020-06-04T23:32:54+09:00"
+  "updated": "2020-06-05T17:04:29+09:00"
 }
