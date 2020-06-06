@@ -51,6 +51,9 @@ export const sources = {
           url: 'https://www.city.okazaki.lg.jp/1550/1562/1615/p025980.html',
           extract: html.aichiOkazakiiLatestExtract
         }
+      },
+      toyota: {
+        gov: { patients: 'https://www.city.toyota.aichi.jp/kurashi/kenkou/eisei/1037578.html' }
       }
     }
   },
