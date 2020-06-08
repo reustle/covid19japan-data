@@ -3131,10 +3131,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 42,
+      "deceased": 43,
       "cruisePassenger": 0,
       "recovered": 652,
       "critical": 0,
@@ -3156,10 +3156,10 @@
         "Akashi": 1,
         "Inami": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "name_ja": "兵庫県",
-      "deaths": 42,
+      "deaths": 43,
       "name": "Hyogo"
     },
     {
@@ -20221,7 +20221,32 @@
       "confirmedCumulativeAvg3d": 16955,
       "confirmedAvg7d": 41,
       "confirmedCumulativeAvg7d": 16856
+    },
+    {
+      "confirmed": 0,
+      "confirmedCumulative": 17039,
+      "deceased": 1,
+      "deceasedCumulative": 918,
+      "recovered": 0,
+      "recoveredCumulative": 14983,
+      "critical": 0,
+      "criticalCumulative": 98,
+      "tested": 0,
+      "testedCumulative": 314483,
+      "active": -1,
+      "activeCumulative": 1138,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 802,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 2,
+      "date": "2020-06-08",
+      "deaths": 1,
+      "confirmedAvg3d": 27,
+      "confirmedCumulativeAvg3d": 16982,
+      "confirmedAvg7d": 36,
+      "confirmedCumulativeAvg7d": 16892
     }
   ],
-  "updated": "2020-06-07T23:47:07+09:00"
+  "updated": "2020-06-08T15:03:59+09:00"
 }
