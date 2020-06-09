@@ -177,14 +177,12 @@ export const gunmaSummaryExtract = ($, url) => {
 
 export const hiroshimaSummaryExtract = ($) => {
   const datePattern = new RegExp('([0-9]+)月([0-9]+)日現在')
-  let summaryTable = $('table')[0]
-  let summaryCells = $(summaryTable).find('td')
-  let lastUpdated = $('h3').first().text().match(datePattern)[0]
+  let summaryTable = $('table').eq(0)
+  let summaryCells = summaryTable.find('td')
   return {
-    lastUpdated: lastUpdated,
-    confirmed: $(summaryCells[4]).text(),
-    recovered: $(summaryCells[6]).text(),
-    deceased: $(summaryCells[7]).text()
+    confirmed: summaryCells.eq(4).text(),
+    recovered:  summaryCells.eq(6).text(),
+    deceased: summaryCells.eq(7).text()
   }
 
 }
@@ -211,7 +209,7 @@ export const hiroshimaLatestExtract = ($) => {
 
 
 export const hokkaidoSummaryExtract = ($, url) => {
-  const summaryHeader = $('.submenu-main h2').eq(2)
+  const summaryHeader = $('.submenu-main h2').eq(3)
   let nextP = summaryHeader.next()
   let nextA = nextP.find('a')
 
@@ -357,7 +355,9 @@ export const miyagiSummaryExtract = ($, url) => {
 
 
 export const naganoSummaryExtract = ($, url) => {
-  return resultForimageWithAlt($, url, '(陽性|感染者)')
+  let img = $('tmp_contents h3').eq(1).find('p').first().find('img')
+  return absoluteURL(url, img.attr('src'))
+  //return resultForimageWithAlt($, url, '(陽性|感染者)')
 }
 
 
@@ -520,9 +520,9 @@ export const shigaSummaryExtract = ($) => {
   const row = $('div.table table').eq(1).find('tr').last()
   return {
     tested: row.find('td').eq(0).text(),
-    confirmed: row.find('td').eq(1).text(),
-    recovered: row.find('td').eq(6).text(),
-    deceased: row.find('td').eq(7).text()
+    confirmed: row.find('td').eq(2).text(),
+    recovered: row.find('td').eq(7).text(),
+    deceased: row.find('td').eq(8).text()
   }
 }
 

@@ -853,7 +853,7 @@ export const sources = {
     },
     gov: {
       summary: 'https://www.pref.saitama.lg.jp/a0701/shingatacoronavirus.html',
-      patients: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/5gatsu/index.html',
+      patients: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/6gatsu/index.html',
       deaths: 'https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html',
     },
     summary: {
