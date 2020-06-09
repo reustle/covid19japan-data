@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 5400,
+      "confirmed": 5412,
       "dailyConfirmedCount": [
         0,
         0,
@@ -156,10 +156,10 @@
         26,
         14,
         13,
-        0
+        12
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 12,
       "yesterdayConfirmed": 13,
       "dailyDeceasedCount": [
         0,
@@ -1020,10 +1020,10 @@
         1,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 89,
+      "deceased": 90,
       "cruisePassenger": 0,
       "recovered": 1163,
       "critical": 0,
@@ -1046,10 +1046,10 @@
         "Astugi": 6,
         "outside of Yokohama": 3
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "name_ja": "神奈川県",
-      "deaths": 89,
+      "deaths": 90,
       "name": "Kanagawa"
     },
     {
@@ -2197,7 +2197,7 @@
       "name": "Chiba"
     },
     {
-      "confirmed": 802,
+      "confirmed": 805,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2352,10 +2352,10 @@
         2,
         3,
         3,
-        0
+        3
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 3,
       "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
@@ -20347,7 +20347,32 @@
       "confirmedCumulativeAvg3d": 16989,
       "confirmedAvg7d": 39,
       "confirmedCumulativeAvg7d": 16895
+    },
+    {
+      "confirmed": 15,
+      "confirmedCumulative": 17075,
+      "deceased": 1,
+      "deceasedCumulative": 921,
+      "recovered": 0,
+      "recoveredCumulative": 15043,
+      "critical": 0,
+      "criticalCumulative": 99,
+      "tested": 0,
+      "testedCumulative": 316848,
+      "active": 14,
+      "activeCumulative": 1111,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 802,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 2,
+      "date": "2020-06-09",
+      "deaths": 1,
+      "confirmedAvg3d": 23,
+      "confirmedCumulativeAvg3d": 17012,
+      "confirmedAvg7d": 33,
+      "confirmedCumulativeAvg7d": 16928
     }
   ],
-  "updated": "2020-06-09T00:03:52+09:00"
+  "updated": "2020-06-09T20:44:59+09:00"
 }
