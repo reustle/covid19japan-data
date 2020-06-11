@@ -1037,7 +1037,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 90,
       "cruisePassenger": 0,
-      "recovered": 1186,
+      "recovered": 1194,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -4281,7 +4281,7 @@
       "name": "Ishikawa"
     },
     {
-      "confirmed": 231,
+      "confirmed": 234,
       "dailyConfirmedCount": [
         0,
         0,
@@ -4437,12 +4437,12 @@
         6,
         0,
         15,
-        0,
-        0
+        2,
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "newlyConfirmed": 1,
+      "yesterdayConfirmed": 2,
       "dailyDeceasedCount": [
         0,
         0,
@@ -4604,7 +4604,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 0,
       "cruisePassenger": 0,
-      "recovered": 163,
+      "recovered": 168,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -4616,9 +4616,9 @@
         "Haneda": 14,
         "Haneda Airport": 17,
         "Haneda airport": 62,
-        "Kansai airport": 8,
+        "Kansai airport": 9,
         "Naha": 1,
-        "Narita airport": 95,
+        "Narita airport": 97,
         "Kansai Airport": 1,
         "Unspecified": 2,
         "Narita": 1
@@ -11113,7 +11113,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 1,
       "cruisePassenger": 0,
-      "recovered": 63,
+      "recovered": 64,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -11453,7 +11453,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 0,
       "cruisePassenger": 1,
-      "recovered": 60,
+      "recovered": 62,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -20576,18 +20576,18 @@
       "confirmedCumulativeAvg7d": 16935
     },
     {
-      "confirmed": 34,
-      "confirmedCumulative": 17146,
+      "confirmed": 36,
+      "confirmedCumulative": 17148,
       "deceased": 1,
       "deceasedCumulative": 922,
       "recovered": 76,
       "recoveredCumulative": 15217,
-      "critical": 0,
-      "criticalCumulative": 99,
+      "critical": -8,
+      "criticalCumulative": 91,
       "tested": 3622,
       "testedCumulative": 324675,
-      "active": -43,
-      "activeCumulative": 1007,
+      "active": -41,
+      "activeCumulative": 1009,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 803,
@@ -20595,24 +20595,24 @@
       "cruiseCriticalCumulative": 2,
       "date": "2020-06-10",
       "deaths": 1,
-      "confirmedAvg3d": 33,
-      "confirmedCumulativeAvg3d": 17062,
+      "confirmedAvg3d": 34,
+      "confirmedCumulativeAvg3d": 17063,
       "confirmedAvg7d": 39,
       "confirmedCumulativeAvg7d": 16974
     },
     {
-      "confirmed": 36,
-      "confirmedCumulative": 17182,
+      "confirmed": 37,
+      "confirmedCumulative": 17185,
       "deceased": 0,
       "deceasedCumulative": 922,
-      "recovered": 0,
-      "recoveredCumulative": 15217,
-      "critical": 0,
-      "criticalCumulative": 99,
-      "tested": 0,
-      "testedCumulative": 324675,
-      "active": 36,
-      "activeCumulative": 1043,
+      "recovered": 38,
+      "recoveredCumulative": 15255,
+      "critical": -3,
+      "criticalCumulative": 88,
+      "tested": 4055,
+      "testedCumulative": 328730,
+      "active": -1,
+      "activeCumulative": 1008,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 803,
@@ -20620,11 +20620,11 @@
       "cruiseCriticalCumulative": 2,
       "date": "2020-06-11",
       "deaths": 0,
-      "confirmedAvg3d": 38,
-      "confirmedCumulativeAvg3d": 17100,
-      "confirmedAvg7d": 37,
-      "confirmedCumulativeAvg7d": 17011
+      "confirmedAvg3d": 39,
+      "confirmedCumulativeAvg3d": 17102,
+      "confirmedAvg7d": 38,
+      "confirmedCumulativeAvg7d": 17012
     }
   ],
-  "updated": "2020-06-11T19:03:40+09:00"
+  "updated": "2020-06-11T22:03:45+09:00"
 }
