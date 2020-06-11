@@ -340,7 +340,7 @@
       "name": "Tokyo"
     },
     {
-      "confirmed": 1785,
+      "confirmed": 1786,
       "dailyConfirmedCount": [
         0,
         0,
@@ -497,10 +497,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -1065,7 +1065,7 @@
       "name": "Kanagawa"
     },
     {
-      "confirmed": 1128,
+      "confirmed": 1135,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1222,10 +1222,10 @@
         4,
         7,
         5,
-        0
+        7
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 7,
       "yesterdayConfirmed": 5,
       "dailyDeceasedCount": [
         0,
@@ -1836,7 +1836,7 @@
       "name": "Saitama"
     },
     {
-      "confirmed": 922,
+      "confirmed": 924,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1993,10 +1993,10 @@
         0,
         3,
         0,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -20599,7 +20599,32 @@
       "confirmedCumulativeAvg3d": 17062,
       "confirmedAvg7d": 39,
       "confirmedCumulativeAvg7d": 16974
+    },
+    {
+      "confirmed": 10,
+      "confirmedCumulative": 17156,
+      "deceased": 0,
+      "deceasedCumulative": 922,
+      "recovered": 0,
+      "recoveredCumulative": 15217,
+      "critical": 0,
+      "criticalCumulative": 99,
+      "tested": 0,
+      "testedCumulative": 324675,
+      "active": 10,
+      "activeCumulative": 1017,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 803,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 2,
+      "date": "2020-06-11",
+      "deaths": 0,
+      "confirmedAvg3d": 29,
+      "confirmedCumulativeAvg3d": 17091,
+      "confirmedAvg7d": 33,
+      "confirmedCumulativeAvg7d": 17007
     }
   ],
-  "updated": "2020-06-10T22:47:39+09:00"
+  "updated": "2020-06-11T18:17:31+09:00"
 }
