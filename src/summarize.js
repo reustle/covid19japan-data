@@ -152,7 +152,7 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
 
   // Calculate active/activeCumulative (must happen after we bring forward any missing cumulative numbers)
   for (let dailySum of orderedDailySummary) {
-    dailySum.activeCumulative = dailySum.confirmedCumulative - dailySum.deceasedCumulative - dailySum.recoveredCumulative
+    dailySum.activeCumulative = Math.max(0, dailySum.confirmedCumulative - dailySum.deceasedCumulative - dailySum.recoveredCumulative)
   }
 
   // Calculate daily incrementals that we're missing by using the cumulative numbers.
@@ -172,7 +172,7 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
     yesterdayCriticalCumulative = dailySum.criticalCumulative
     // active
     dailySum.active = dailySum.activeCumulative - yesterdayActiveCumulative
-    yesterdayActiveCumulative = dailySum.activeCumulative
+    yesterdayActiveCumulative = Math.max(0, dailySum.activeCumulative)
 
   }
 
