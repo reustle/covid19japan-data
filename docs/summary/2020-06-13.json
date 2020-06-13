@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 5477,
+      "confirmed": 5501,
       "dailyConfirmedCount": [
         0,
         0,
@@ -160,10 +160,10 @@
         18,
         22,
         25,
-        0
+        24
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 24,
       "yesterdayConfirmed": 25,
       "dailyDeceasedCount": [
         0,
@@ -666,10 +666,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 85,
+      "deceased": 86,
       "cruisePassenger": 0,
       "recovered": 1655,
       "critical": 0,
@@ -715,10 +715,10 @@
         "Takaishi": 1,
         "outside of Osaka": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "name_ja": "大阪府",
-      "deaths": 85,
+      "deaths": 86,
       "name": "Osaka"
     },
     {
@@ -1077,7 +1077,7 @@
       "name": "Kanagawa"
     },
     {
-      "confirmed": 1145,
+      "confirmed": 1154,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1236,10 +1236,10 @@
         5,
         7,
         10,
-        0
+        9
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 9,
       "yesterdayConfirmed": 10,
       "dailyDeceasedCount": [
         0,
@@ -20851,7 +20851,32 @@
       "confirmedCumulativeAvg3d": 17149,
       "confirmedAvg7d": 42,
       "confirmedCumulativeAvg7d": 17053
+    },
+    {
+      "confirmed": 33,
+      "confirmedCumulative": 17283,
+      "deceased": 1,
+      "deceasedCumulative": 925,
+      "recovered": 0,
+      "recoveredCumulative": 15328,
+      "critical": 0,
+      "criticalCumulative": 82,
+      "tested": 0,
+      "testedCumulative": 332207,
+      "active": 32,
+      "activeCumulative": 1030,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 803,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 2,
+      "date": "2020-06-13",
+      "deaths": 1,
+      "confirmedAvg3d": 45,
+      "confirmedCumulativeAvg3d": 17194,
+      "confirmedAvg7d": 40,
+      "confirmedCumulativeAvg7d": 17093
     }
   ],
-  "updated": "2020-06-13T00:11:35+09:00"
+  "updated": "2020-06-13T17:17:13+09:00"
 }
