@@ -799,7 +799,8 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/covid19_hasseijoukyou.html',
-      summary: 'https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/covid19_hasseijoukyou.html'
+      summary: 'https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/covid19_hasseijoukyou.html',
+      deaths: 'https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/press/20200416_covid19_pr.html'
     },
     source: 'https://github.com/Code-for-OKINAWA/covid19/tree/development/data',
     dashboard: 'https://okinawa.stopcovid19.jp/'
