@@ -2258,7 +2258,7 @@
       "name": "Chiba"
     },
     {
-      "confirmed": 818,
+      "confirmed": 819,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2417,12 +2417,12 @@
         2,
         2,
         9,
-        0,
+        1,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
         0,
@@ -2591,7 +2591,7 @@
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
-        "Kitakyushu": 200,
+        "Kitakyushu": 201,
         "Fukuoka": 9,
         "Munakata": 3,
         "Fukuoka city": 108,
@@ -4694,10 +4694,10 @@
         "Narita Airport": 4,
         "Haneda": 14,
         "Haneda Airport": 17,
-        "Haneda airport": 63,
+        "Haneda airport": 64,
         "Kansai airport": 9,
         "Naha": 1,
-        "Narita airport": 101,
+        "Narita airport": 103,
         "Kansai Airport": 1,
         "Unspecified": 2,
         "Narita": 1
@@ -7095,7 +7095,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 7,
       "cruisePassenger": 0,
-      "recovered": 139,
+      "recovered": 138,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -20953,8 +20953,8 @@
       "confirmedCumulativeAvg7d": 17053
     },
     {
-      "confirmed": 42,
-      "confirmedCumulative": 17292,
+      "confirmed": 43,
+      "confirmedCumulative": 17293,
       "deceased": 1,
       "deceasedCumulative": 927,
       "recovered": 131,
@@ -20963,8 +20963,8 @@
       "criticalCumulative": 76,
       "tested": 2954,
       "testedCumulative": 335161,
-      "active": -90,
-      "activeCumulative": 906,
+      "active": -89,
+      "activeCumulative": 907,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 803,
@@ -20972,11 +20972,11 @@
       "cruiseCriticalCumulative": 2,
       "date": "2020-06-13",
       "deaths": 1,
-      "confirmedAvg3d": 48,
-      "confirmedCumulativeAvg3d": 17197,
+      "confirmedAvg3d": 49,
+      "confirmedCumulativeAvg3d": 17198,
       "confirmedAvg7d": 41,
       "confirmedCumulativeAvg7d": 17094
     }
   ],
-  "updated": "2020-06-13T23:17:27+09:00"
+  "updated": "2020-06-14T11:03:45+09:00"
 }
