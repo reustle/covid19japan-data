@@ -1,6 +1,3 @@
-Error: PatientError: Duplicated patientIds detected TOK5434
-    at Object.verifyPatients (/home/runner/work/covid19japan-data/covid19japan-data/src/verify.js:51:11)
-    at Object.mergePatients (/home/runner/work/covid19japan-data/covid19japan-data/src/merge_patients.js:11:12)
-    at /home/runner/work/covid19japan-data/covid19japan-data/generate.js:62:36
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Total patients fetched: 18208
+Patients data updated. New: 18208 Old: 18157
+Success.
