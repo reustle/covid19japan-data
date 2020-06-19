@@ -1511,7 +1511,7 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 1025,
+      "confirmed": 1026,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1676,10 +1676,10 @@
         1,
         1,
         2,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 2,
       "dailyDeceasedCount": [
         0,
@@ -2318,7 +2318,7 @@
       "name": "Chiba"
     },
     {
-      "confirmed": 830,
+      "confirmed": 834,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2483,10 +2483,10 @@
         1,
         3,
         3,
-        0
+        4
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 4,
       "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
@@ -2689,7 +2689,8 @@
         "Koga": 1,
         "Nakagawa": 1,
         "Kama": 1,
-        "Kasuya-gun": 1
+        "Kasuya-gun": 1,
+        "KItakyushu": 4
       },
       "newlyDeceased": 0,
       "yesterdayDeceased": 0,
@@ -3363,7 +3364,7 @@
       "name": "Hyogo"
     },
     {
-      "confirmed": 519,
+      "confirmed": 520,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3528,10 +3529,10 @@
         1,
         3,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -3706,7 +3707,7 @@
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
-        "Nagoya": 245,
+        "Nagoya": 246,
         "Owari": 11,
         "Gamagori, Mikawa": 4,
         "Mikawa": 1,
@@ -21605,8 +21606,8 @@
       "confirmedCumulativeAvg7d": 17361
     },
     {
-      "confirmed": 49,
-      "confirmedCumulative": 17648,
+      "confirmed": 55,
+      "confirmedCumulative": 17654,
       "deceased": 2,
       "deceasedCumulative": 938,
       "recovered": 0,
@@ -21615,8 +21616,8 @@
       "criticalCumulative": 70,
       "tested": 0,
       "testedCumulative": 348051,
-      "active": 47,
-      "activeCumulative": 957,
+      "active": 53,
+      "activeCumulative": 963,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 803,
@@ -21624,11 +21625,11 @@
       "cruiseCriticalCumulative": 2,
       "date": "2020-06-19",
       "deaths": 2,
-      "confirmedAvg3d": 55,
-      "confirmedCumulativeAvg3d": 17546,
+      "confirmedAvg3d": 57,
+      "confirmedCumulativeAvg3d": 17548,
       "confirmedAvg7d": 57,
       "confirmedCumulativeAvg7d": 17418
     }
   ],
-  "updated": "2020-06-19T19:17:47+09:00"
+  "updated": "2020-06-19T19:32:19+09:00"
 }
