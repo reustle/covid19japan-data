@@ -1050,11 +1050,12 @@ export const sources = {
     },
     summary: {
       format: 'html',
-      url: 'http://www.pref.yamagata.jp/ou/bosai/020072/kochibou/coronavirus/coronavirus.html',
+      url: 'http://www.pref.yamagata.jp/kenfuku/kenko/kansen/720130425shingata_corona.html',
       extract: html.yamagataSummaryExtract
     },
     gov: {
-      patients: 'http://www.pref.yamagata.jp/ou/bosai/020072/kochibou/coronavirus/coronavirus.html'
+      patients: 'http://www.pref.yamagata.jp/kenfuku/kenko/kansen/720130425shingata_corona.html',
+      summary: 'http://www.pref.yamagata.jp/kenfuku/kenko/kansen/720130425shingata_corona.html'      
     },
     cities: {
       yonezawa: {
