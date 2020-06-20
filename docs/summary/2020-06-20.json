@@ -1460,7 +1460,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 94,
       "cruisePassenger": 0,
-      "recovered": 977,
+      "recovered": 988,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -2267,7 +2267,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 45,
       "cruisePassenger": 2,
-      "recovered": 857,
+      "recovered": 859,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -3382,7 +3382,7 @@
       "name": "Hyogo"
     },
     {
-      "confirmed": 520,
+      "confirmed": 521,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3548,10 +3548,10 @@
         3,
         0,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -3737,7 +3737,7 @@
         "Handa": 3,
         "Kiyosu": 3,
         "Taketoyo": 1,
-        "Kasugai": 11,
+        "Kasugai": 12,
         "Konan": 2,
         "Chita": 10,
         "Toyokawa": 1,
@@ -21710,14 +21710,14 @@
       "confirmedCumulative": 17659,
       "deceased": 15,
       "deceasedCumulative": 951,
-      "recovered": 78,
-      "recoveredCumulative": 16008,
-      "critical": 0,
-      "criticalCumulative": 62,
-      "tested": 6947,
-      "testedCumulative": 403380,
-      "active": -37,
-      "activeCumulative": 700,
+      "recovered": 147,
+      "recoveredCumulative": 16077,
+      "critical": -1,
+      "criticalCumulative": 61,
+      "tested": 12589,
+      "testedCumulative": 409022,
+      "active": -106,
+      "activeCumulative": 631,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 803,
@@ -21731,18 +21731,18 @@
       "confirmedCumulativeAvg7d": 17420
     },
     {
-      "confirmed": 65,
-      "confirmedCumulative": 17724,
+      "confirmed": 66,
+      "confirmedCumulative": 17725,
       "deceased": 0,
       "deceasedCumulative": 951,
       "recovered": 0,
-      "recoveredCumulative": 16008,
+      "recoveredCumulative": 16077,
       "critical": 0,
-      "criticalCumulative": 62,
+      "criticalCumulative": 61,
       "tested": 0,
-      "testedCumulative": 403380,
-      "active": 65,
-      "activeCumulative": 765,
+      "testedCumulative": 409022,
+      "active": 66,
+      "activeCumulative": 697,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 803,
@@ -21756,5 +21756,5 @@
       "confirmedCumulativeAvg7d": 17481
     }
   ],
-  "updated": "2020-06-20T23:32:17+09:00"
+  "updated": "2020-06-20T23:47:28+09:00"
 }
