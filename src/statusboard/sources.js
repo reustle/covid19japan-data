@@ -553,7 +553,7 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/stopcovid19-kyoto/covid19/development/data/data.json'
     },
     gov: {
-      patients: 'https://www.pref.kyoto.jp/kentai/news/novelcoronavirus.html#F',
+      patients: 'https://www.pref.kyoto.jp/kentai/corona/hassei1-50.html',
       summary: 'https://www.pref.kyoto.jp/kentai/corona/pcrkensa.html'
     },
     summary: {
