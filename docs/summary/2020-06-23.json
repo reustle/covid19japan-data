@@ -1137,7 +1137,7 @@
       "name": "Kanagawa"
     },
     {
-      "confirmed": 1188,
+      "confirmed": 1190,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1305,12 +1305,12 @@
         3,
         3,
         2,
-        0,
+        2,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 2,
       "dailyDeceasedCount": [
         0,
         0,
@@ -1488,7 +1488,7 @@
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
-        "Sapporo": 332,
+        "Sapporo": 334,
         "Nanae, Oshima": 1,
         "Nakafurano": 2,
         "Chitose, Ishikari": 2,
@@ -2308,7 +2308,7 @@
       "tested": 0,
       "confirmedByCity": {
         "Chiba": 5,
-        "Ichikawa": 57,
+        "Ichikawa": 58,
         "Kashiwa": 21,
         "Matsudo": 85,
         "Isumishi": 1,
@@ -2337,7 +2337,7 @@
         "Togane": 1,
         "Choshi": 1,
         "Toshocho": 5,
-        "Kamagaya": 5,
+        "Kamagaya": 6,
         "Shisuimachi": 2,
         "Shirai": 1,
         "Tokyo": 3,
@@ -22082,8 +22082,8 @@
       "confirmedCumulativeAvg7d": 17540
     },
     {
-      "confirmed": 37,
-      "confirmedCumulative": 17818,
+      "confirmed": 39,
+      "confirmedCumulative": 17820,
       "deceased": 0,
       "deceasedCumulative": 955,
       "recovered": 25,
@@ -22092,8 +22092,8 @@
       "criticalCumulative": 59,
       "tested": 5282,
       "testedCumulative": 417951,
-      "active": 12,
-      "activeCumulative": 730,
+      "active": 14,
+      "activeCumulative": 732,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 806,
@@ -22101,11 +22101,11 @@
       "cruiseCriticalCumulative": 2,
       "date": "2020-06-22",
       "deaths": 0,
-      "confirmedAvg3d": 52,
-      "confirmedCumulativeAvg3d": 17726,
+      "confirmedAvg3d": 53,
+      "confirmedCumulativeAvg3d": 17727,
       "confirmedAvg7d": 54,
       "confirmedCumulativeAvg7d": 17594
     }
   ],
-  "updated": "2020-06-23T12:47:50+09:00"
+  "updated": "2020-06-23T13:04:23+09:00"
 }
