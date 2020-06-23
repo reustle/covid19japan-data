@@ -581,7 +581,7 @@ export const sources = {
       },
       muko: {
         gov: {
-          patients: 'https://www.city.muko.kyoto.jp/kurashi/kinkyu/1585565517890.html'
+          patients: 'https://www.city.muko.kyoto.jp/kurashi/soshiki/biminnsabisubu/2/1/kinkyu/1585555920594.html'
         }
       }
     },
@@ -715,12 +715,12 @@ export const sources = {
     },
     summary: {
       format: 'html',
-      url: 'https://www.pref.niigata.lg.jp/site/shingata-corona/hasseijokyo-covid19-niigataken.html',
+      url: 'https://www.pref.niigata.lg.jp/site/shingata-corona/#status',
       extract: html.niigataSummaryExtract
     },
     gov: {
-      patients: 'https://www.pref.niigata.lg.jp/site/shingata-corona/hasseijokyo-covid19-niigataken.html',
-      summary: 'https://www.pref.niigata.lg.jp/site/shingata-corona/hasseijokyo-covid19-niigataken.html'
+      patients: 'https://www.pref.niigata.lg.jp/site/shingata-corona/256362836.html',
+      summary: 'https://www.pref.niigata.lg.jp/site/shingata-corona/#status'
     },
     cities: {
       niigataCity: {
