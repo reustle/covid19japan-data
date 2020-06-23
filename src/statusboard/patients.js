@@ -124,7 +124,8 @@ const updatePatientsTable = (patients, patientIdPrefix) => {
   document.querySelector('#results').className = 'patients-results'
   let table = document.querySelector('table#patients-table tbody#patients-body')
   table.innerHTML = ''
-  for (let patient of patients) {
+  let sortedPatients = _.sortBy(patients, ['dateAnnounced', 'patientId'], ['asc', 'asc'])
+  for (let patient of sortedPatients) {
     if (_recentOnly) {
       let dateAnnounced = moment(patient.dateAnnounced)
       if (dateAnnounced &&  dateAnnounced.isBefore(lastWeek)) {
