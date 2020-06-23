@@ -403,12 +403,12 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.kagawa.lg.jp/content/dir1/dir1_6/dir1_6_1/index.shtml',
-      summary: 'https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/sr5cfn200127213457.shtml'
+      summary: 'https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/se9si9200517102553.shtml'
     },
     summary: {
       format: 'html',
       encoding: 'EUCJP',
-      url: 'https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/sr5cfn200127213457.shtml',
+      url: 'https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/se9si9200517102553.shtml',
       extract: html.kagawaSummaryExtract
     },
     source: 'https://github.com/codeforkagawa/covid19',
