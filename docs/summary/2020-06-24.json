@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 5849,
+      "confirmed": 5904,
       "dailyConfirmedCount": [
         0,
         0,
@@ -171,10 +171,10 @@
         35,
         29,
         31,
-        0
+        55
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 55,
       "yesterdayConfirmed": 31,
       "dailyDeceasedCount": [
         0,
@@ -1143,7 +1143,7 @@
       "name": "Kanagawa"
     },
     {
-      "confirmed": 1200,
+      "confirmed": 1201,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1313,10 +1313,10 @@
         2,
         2,
         1,
-        9
+        10
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 9,
+      "newlyConfirmed": 10,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -1487,10 +1487,10 @@
         0,
         0,
         2,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 97,
+      "deceased": 98,
       "cruisePassenger": 0,
       "recovered": 1011,
       "critical": 0,
@@ -1544,10 +1544,10 @@
         "Iwamizawa": 2,
         "Shiribeshi": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 2,
       "name_ja": "北海道",
-      "deaths": 97,
+      "deaths": 98,
       "name": "Hokkaido"
     },
     {
@@ -22233,30 +22233,30 @@
       "confirmedCumulativeAvg7d": 17650
     },
     {
-      "confirmed": 10,
-      "confirmedCumulative": 17889,
-      "deceased": 0,
-      "deceasedCumulative": 965,
+      "confirmed": 66,
+      "confirmedCumulative": 17945,
+      "deceased": 1,
+      "deceasedCumulative": 966,
       "recovered": 0,
       "recoveredCumulative": 16212,
       "critical": 0,
       "criticalCumulative": 62,
       "tested": 0,
       "testedCumulative": 424767,
-      "active": 10,
-      "activeCumulative": 712,
+      "active": 65,
+      "activeCumulative": 767,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 806,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 2,
       "date": "2020-06-24",
-      "deaths": 0,
-      "confirmedAvg3d": 36,
-      "confirmedCumulativeAvg3d": 17814,
-      "confirmedAvg7d": 51,
-      "confirmedCumulativeAvg7d": 17701
+      "deaths": 1,
+      "confirmedAvg3d": 54,
+      "confirmedCumulativeAvg3d": 17832,
+      "confirmedAvg7d": 59,
+      "confirmedCumulativeAvg7d": 17709
     }
   ],
-  "updated": "2020-06-24T14:17:53+09:00"
+  "updated": "2020-06-24T14:47:33+09:00"
 }
