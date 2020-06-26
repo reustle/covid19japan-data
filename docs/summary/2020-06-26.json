@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 5952,
+      "confirmed": 6006,
       "dailyConfirmedCount": [
         0,
         0,
@@ -173,10 +173,10 @@
         31,
         55,
         48,
-        0
+        54
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 54,
       "yesterdayConfirmed": 48,
       "dailyDeceasedCount": [
         0,
@@ -22483,7 +22483,32 @@
       "confirmedCumulativeAvg3d": 17921,
       "confirmedAvg7d": 64,
       "confirmedCumulativeAvg7d": 17778
+    },
+    {
+      "confirmed": 54,
+      "confirmedCumulative": 18109,
+      "deceased": 0,
+      "deceasedCumulative": 971,
+      "recovered": 0,
+      "recoveredCumulative": 16320,
+      "critical": 0,
+      "criticalCumulative": 58,
+      "tested": 0,
+      "testedCumulative": 435495,
+      "active": 54,
+      "activeCumulative": 818,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 806,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 2,
+      "date": "2020-06-26",
+      "deaths": 0,
+      "confirmedAvg3d": 75,
+      "confirmedCumulativeAvg3d": 17996,
+      "confirmedAvg7d": 64,
+      "confirmedCumulativeAvg7d": 17842
     }
   ],
-  "updated": "2020-06-26T00:17:56+09:00"
+  "updated": "2020-06-26T15:17:41+09:00"
 }
