@@ -870,6 +870,17 @@ export const sources = {
     cities: {
       kawaguchi: {
         gov: { patients: "https://www.city.kawaguchi.lg.jp/soshiki/01090/018/30169.html" }
+      },
+      saitamaCity: {
+        gov: {
+          patients: 'https://www.city.saitama.jp/002/001/008/006/013/001/p070442.html',
+          sum: 'https://www.city.saitama.jp/002/001/008/006/013/001/p070442.html'
+        }
+      },
+      koshigaya: {
+        gov: {
+          patients: 'https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/hokenjo/kansensho/koshigaya_contents0310.html'
+        }
       }
     },
     source: 'https://opendata.pref.saitama.lg.jp/data/dataset/covid19-jokyo',
