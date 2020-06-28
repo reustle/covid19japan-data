@@ -1169,7 +1169,7 @@
       "name": "Kanagawa"
     },
     {
-      "confirmed": 1213,
+      "confirmed": 1227,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1343,10 +1343,10 @@
         6,
         5,
         1,
-        0
+        14
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 14,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -22733,7 +22733,32 @@
       "confirmedCumulativeAvg3d": 18107,
       "confirmedAvg7d": 76,
       "confirmedCumulativeAvg7d": 17925
+    },
+    {
+      "confirmed": 14,
+      "confirmedCumulative": 18268,
+      "deceased": 0,
+      "deceasedCumulative": 971,
+      "recovered": 0,
+      "recoveredCumulative": 16392,
+      "critical": 0,
+      "criticalCumulative": 51,
+      "tested": 0,
+      "testedCumulative": 440739,
+      "active": 14,
+      "activeCumulative": 905,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 806,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 2,
+      "date": "2020-06-28",
+      "deaths": 0,
+      "confirmedAvg3d": 70,
+      "confirmedCumulativeAvg3d": 18177,
+      "confirmedAvg7d": 69,
+      "confirmedCumulativeAvg7d": 17994
     }
   ],
-  "updated": "2020-06-28T00:04:03+09:00"
+  "updated": "2020-06-28T14:03:59+09:00"
 }
