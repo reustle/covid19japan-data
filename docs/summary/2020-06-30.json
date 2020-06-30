@@ -1547,7 +1547,7 @@
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
-        "Sapporo": 338,
+        "Sapporo": 345,
         "Nanae, Oshima": 1,
         "Nakafurano": 2,
         "Chitose, Ishikari": 2,
@@ -1560,7 +1560,7 @@
         "Kitami, Okhotsk": 7,
         "Biei, Kamikawa": 3,
         "Kushiro": 10,
-        "Ishikari": 31,
+        "Ishikari": 32,
         "Kamikawa": 12,
         "Okhotsk": 15,
         "Hidaka": 2,
@@ -1577,7 +1577,7 @@
         "Sorachi": 20,
         "Sorachi Region": 1,
         "Okhotsk (Seaside)": 5,
-        "Otaru": 39,
+        "Otaru": 42,
         "Kutchan": 1,
         "Bibai": 1,
         "Chitose": 12,
@@ -2030,7 +2030,7 @@
       "name": "Saitama"
     },
     {
-      "confirmed": 961,
+      "confirmed": 962,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2206,10 +2206,10 @@
         5,
         3,
         4,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 4,
       "dailyDeceasedCount": [
         0,
@@ -5109,7 +5109,7 @@
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 27,
       "cruisePassenger": 0,
-      "recovered": 252,
+      "recovered": 256,
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
@@ -22986,7 +22986,32 @@
       "confirmedCumulativeAvg3d": 18314,
       "confirmedAvg7d": 93,
       "confirmedCumulativeAvg7d": 18101
+    },
+    {
+      "confirmed": 1,
+      "confirmedCumulative": 18477,
+      "deceased": 0,
+      "deceasedCumulative": 972,
+      "recovered": 0,
+      "recoveredCumulative": 16557,
+      "critical": 0,
+      "criticalCumulative": 43,
+      "tested": 0,
+      "testedCumulative": 454609,
+      "active": 1,
+      "activeCumulative": 948,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 806,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 2,
+      "date": "2020-06-30",
+      "deaths": 0,
+      "confirmedAvg3d": 74,
+      "confirmedCumulativeAvg3d": 18388,
+      "confirmedAvg7d": 85,
+      "confirmedCumulativeAvg7d": 18186
     }
   ],
-  "updated": "2020-06-29T21:32:50+09:00"
+  "updated": "2020-06-30T14:47:22+09:00"
 }
