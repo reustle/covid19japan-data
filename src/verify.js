@@ -14,7 +14,7 @@ const verifyDailySummary = (dailySummary) => {
   // Ensure none of the fields are zero.
   let latestDay = dailySummary[dailySummary.length - 1]
   for (let key in _.keys(latestDay)) {
-    if (key.endsWith('Cumulative')) {
+    if (key.endsWith('Cumulative') && !key.match(/active/)) {
       if (latestDay[key] < 1) {
         throw new Error(`DailySummaryError: ${key} for the latest day is 0.`)
       }
