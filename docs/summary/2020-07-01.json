@@ -1545,8 +1545,8 @@
         0,
         0,
         0,
-        0,
-        1
+        1,
+        0
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "deceased": 100,
@@ -1555,7 +1555,7 @@
       "critical": 0,
       "tested": 0,
       "confirmedByCity": {
-        "Sapporo": 357,
+        "Sapporo": 358,
         "Nanae, Oshima": 1,
         "Nakafurano": 2,
         "Chitose, Ishikari": 2,
@@ -1603,8 +1603,8 @@
         "Iwamizawa": 2,
         "Shiribeshi": 1
       },
-      "newlyDeceased": 1,
-      "yesterdayDeceased": 0,
+      "newlyDeceased": 0,
+      "yesterdayDeceased": 1,
       "name_ja": "北海道",
       "deaths": 100,
       "name": "Hokkaido"
@@ -23091,23 +23091,23 @@
     {
       "confirmed": 138,
       "confirmedCumulative": 18615,
-      "deceased": 2,
-      "deceasedCumulative": 974,
+      "deceased": 3,
+      "deceasedCumulative": 975,
       "recovered": 74,
       "recoveredCumulative": 16631,
       "critical": -1,
       "criticalCumulative": 42,
       "tested": 6837,
       "testedCumulative": 461446,
-      "active": 62,
-      "activeCumulative": 1010,
+      "active": 61,
+      "activeCumulative": 1009,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 806,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 2,
       "date": "2020-06-30",
-      "deaths": 2,
+      "deaths": 3,
       "confirmedAvg3d": 120,
       "confirmedCumulativeAvg3d": 18435,
       "confirmedAvg7d": 104,
@@ -23116,7 +23116,7 @@
     {
       "confirmed": 126,
       "confirmedCumulative": 18741,
-      "deceased": 2,
+      "deceased": 1,
       "deceasedCumulative": 976,
       "recovered": 2092,
       "recoveredCumulative": 18723,
@@ -23124,7 +23124,7 @@
       "criticalCumulative": 40,
       "tested": 5998,
       "testedCumulative": 467444,
-      "active": -1010,
+      "active": -1009,
       "activeCumulative": 0,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
@@ -23132,12 +23132,12 @@
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 2,
       "date": "2020-07-01",
-      "deaths": 2,
+      "deaths": 1,
       "confirmedAvg3d": 125,
       "confirmedCumulativeAvg3d": 18560,
       "confirmedAvg7d": 109,
       "confirmedCumulativeAvg7d": 18314
     }
   ],
-  "updated": "2020-07-01T23:32:29+09:00"
+  "updated": "2020-07-01T23:47:21+09:00"
 }
