@@ -1,16 +1,10 @@
 const cheerio = require('cheerio')
 const _ = require('lodash')
 const { fetchPatients } = require('./csv.js')
-
-const USE_PROXY = true
+const { urlWithProxy } = require('./proxy.js')
 
 const listFiles = (url, pattern, fetcher) => {
-  let fetchUrl = url
-  if (USE_PROXY) {
-    fetchUrl = 'https://us-central1-covid19-analysis.cloudfunctions.net/proxy?url=' +
-      encodeURIComponent(url)
-  }
-
+  let fetchUrl = urlWithProxy(url)
   return fetcher(fetchUrl)
     .then(response => response.text())
     .then(html => {

@@ -2,16 +2,11 @@ const cheerio = require('cheerio')
 const _ = require('lodash')
 const Encoding = require('encoding-japanese')
 
-// Using our proxy in order to fetch files with permissive CORS headers
-// so we can do the manipulation from the browser.
-const USE_PROXY = true
+const { urlWithProxy } = require('./proxy.js')
 
 export const fetchSummaryFromHtml = (url, crawl, encoding, fetchImpl) => {
-  let fetchUrl = url
-  if (USE_PROXY) {
-    fetchUrl = 'https://us-central1-covid19-analysis.cloudfunctions.net/proxy?url=' +
-      encodeURIComponent(url)
-  }  
+  let fetchUrl = urlWithProxy(url)
+ 
   if (!fetchImpl) {
     fetchImpl = window.fetch
   }

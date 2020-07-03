@@ -1,5 +1,7 @@
 const cheerio = require('cheerio')
 const _ = require('lodash')
+const { urlWithProxy } = require('./proxy.js')
+
 
 const prefectureLookup = _.fromPairs(_.map([
 "愛知県	Aichi",
@@ -66,6 +68,8 @@ const normalizeFixedWidthNumbers = v => {
 }
 
 const extractDailySummary = (url, fetchImpl) => {
+  url = urlWithProxy(url)
+  console.log(url)
   if (!fetchImpl) {
     fetchImpl = window.fetch
   }

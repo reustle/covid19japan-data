@@ -4,17 +4,10 @@ const Papa = require('papaparse')
 const _ = require('lodash')
 const { translateRows } = require('./translation.js')
 const Encoding = require('encoding-japanese')
-
-// Using our proxy in order to fetch files with permissive CORS headers
-// so we can do the manipulation from the browser.
-const USE_PROXY = true
+const { urlWithProxy } = require('./proxy.js')
 
 const fetchCsv = (url, encoding, fetcher) => {
-  let fetchUrl = url
-  if (USE_PROXY) {
-    fetchUrl = 'https://us-central1-covid19-analysis.cloudfunctions.net/proxy?url=' +
-      encodeURIComponent(url)
-  }
+  let fetchUrl = urlWithProxy(url)
   if (!fetcher) {
     fetcher = fetch
   }
