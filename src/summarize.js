@@ -182,34 +182,48 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
     thisDay.deaths = thisDay.deceased
   }
 
-  // Calculate a rolling 3/7 day average for confirmed.
-  let threeDayBuffer = []
-  let sevenDayBuffer = []
-  let confirmedCumulativeAvg3d = 0
-  let confirmedCumulativeAvg7d = 0
-  for (let dailySum of orderedDailySummary) {
-    threeDayBuffer.push(dailySum.confirmed)
-    sevenDayBuffer.push(dailySum.confirmed)
-    if (threeDayBuffer.length > 3) {
-      threeDayBuffer = threeDayBuffer.slice(threeDayBuffer.length - 3)
+  // Calculate a rolling 3/7 day averages
+  const rollingAverageValues = (values, size, key) => {
+    let buffer = []
+    let averagedValues = []
+  
+    for (let value of values) {
+      buffer.push(value[key])
+      if (buffer.length > size) {
+        buffer = buffer.slice(buffer.length - size)
+      }
+      
+      let average = Math.floor(_.sum(buffer) / size)
+      averagedValues.push(average)
     }
-    if (sevenDayBuffer.length > 7) {
-      sevenDayBuffer = sevenDayBuffer.slice(sevenDayBuffer.length - 7) 
-    }
-    dailySum.confirmedAvg3d = Math.floor(_.sum(threeDayBuffer) / 3)
-    confirmedCumulativeAvg3d += dailySum.confirmedAvg3d
-    dailySum.confirmedCumulativeAvg3d = confirmedCumulativeAvg3d
+    return averagedValues
+  }
 
-    dailySum.confirmedAvg7d = Math.floor(_.sum(sevenDayBuffer) / 7)
-    confirmedCumulativeAvg7d += dailySum.confirmedAvg7d
-    dailySum.confirmedCumulativeAvg7d = confirmedCumulativeAvg7d
+  const averages = {}
+  const averagableKeys = [
+    'confirmed', 
+    'confirmedCumulative', 
+    'deceased', 
+    'deceasedCumulative',
+    'recovered',
+    'recoveredCumulative'
+  ]
+
+  for (let key of averagableKeys) {
+    averages[`${key}Avg3d`] = rollingAverageValues(orderedDailySummary, 3, key)
+    averages[`${key}Avg7d`] = rollingAverageValues(orderedDailySummary, 7, key)
+  }
+
+  for (let i = 0; i < orderedDailySummary.length; i++) {
+    for (let key of averagableKeys) {
+      orderedDailySummary[i][`${key}Avg3d`] = averages[`${key}Avg3d`][i]
+      orderedDailySummary[i][`${key}Avg7d`] = averages[`${key}Avg7d`][i]
+    }
   }
 
   orderedDailySummary = verify.verifyDailySummary(orderedDailySummary)
   return orderedDailySummary
 }
-
-
 
 
 const PREFECTURE_SUMMARY_TEMPLATE = {
