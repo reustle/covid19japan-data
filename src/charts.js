@@ -19,6 +19,20 @@ const rollingAverage = (values, size, key) => {
   return averagedValues
 }
 
+const niceMax = (values) => {
+  const tickCount = 3
+  let max = Math.max(...values);
+  
+  let tickIncrement = max / tickCount;
+  // Take the tickIncrement and find the nearest power of 10 smaller than tickIncrement.
+  // e.g. 45 -> 10, 455 -> 100
+  let magnitude10 = Math.pow(10, Math.ceil(Math.log10(tickIncrement)) - 1);
+  // Round up tickIncrement to the nearest power of 10.
+  // e.g. 45 -> 50, 455 -> 500
+  tickIncrement = Math.ceil(tickIncrement / magnitude10) * magnitude10;
+  return tickIncrement * tickCount;
+}
+
 
 // Returns an SVG of the line chart given the values.
 //
@@ -52,7 +66,7 @@ const svgSparklineWithData = (values, width, height, options) => {
   x.domain(d3.extent(values, function(d) { return d.date; }));
 
   const valueMin =  d3.min([d3.min(values, function(d) { return d.value; }), 0])
-  const valueMax =  d3.max(values, function(d) { return d.value; })
+  const valueMax =  niceMax(values.map(d => d.value))
   y.domain([valueMin, valueMax]);
 
   let line = d3.line()
@@ -118,14 +132,14 @@ const svgSparklineWithData = (values, width, height, options) => {
     };
 
  
-    const ceilingValue = roundUp(valueMax)
+    const ceilingValue = niceMax(values.map(e => e.value))
     const ceilingY = y(ceilingValue)
     const linePoints = [[chartWidth - ceilingLineLength, ceilingY], [chartWidth, ceilingY]]
     const ceiling = d3.line()(linePoints)
 
     let ceilingDisplayValue = ceilingValue
     if (options.absValues) {
-      ceilingDisplayValue = roundUp(d3.max(options.absValues, d => d.value))
+      ceilingDisplayValue = niceMax(options.absValues.map(e => e.value))
     }
 
     svg.append('path')
