@@ -13137,7 +13137,7 @@
       "name": "Kochi"
     },
     {
-      "confirmed": 70,
+      "confirmed": 71,
       "dailyConfirmedCount": [
         0,
         0,
@@ -13319,10 +13319,10 @@
         0,
         1,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -25019,7 +25019,40 @@
       "recoveredAvg7d": 64,
       "recoveredCumulativeAvg3d": 16928,
       "recoveredCumulativeAvg7d": 16782
+    },
+    {
+      "confirmed": 1,
+      "confirmedCumulative": 19668,
+      "deceased": 0,
+      "deceasedCumulative": 977,
+      "recovered": 0,
+      "recoveredCumulative": 16959,
+      "critical": 0,
+      "criticalCumulative": 32,
+      "tested": 0,
+      "testedCumulative": 490287,
+      "active": 1,
+      "activeCumulative": 1732,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 806,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2020-07-06",
+      "deaths": 0,
+      "confirmedAvg3d": 161,
+      "confirmedAvg7d": 170,
+      "confirmedCumulativeAvg3d": 19598,
+      "confirmedCumulativeAvg7d": 19182,
+      "deceasedAvg3d": 0,
+      "deceasedAvg7d": 0,
+      "deceasedCumulativeAvg3d": 977,
+      "deceasedCumulativeAvg7d": 976,
+      "recoveredAvg3d": 31,
+      "recoveredAvg7d": 57,
+      "recoveredCumulativeAvg3d": 16959,
+      "recoveredCumulativeAvg7d": 16839
     }
   ],
-  "updated": "2020-07-05T21:47:31+09:00"
+  "updated": "2020-07-06T13:04:44+09:00"
 }
