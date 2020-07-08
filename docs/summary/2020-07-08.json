@@ -394,7 +394,7 @@
       "name": "Tokyo"
     },
     {
-      "confirmed": 1905,
+      "confirmed": 1915,
       "dailyConfirmedCount": [
         0,
         0,
@@ -578,10 +578,10 @@
         6,
         8,
         12,
-        0
+        10
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 10,
       "yesterdayConfirmed": 12,
       "dailyDeceasedCount": [
         0,
@@ -824,7 +824,7 @@
       "name": "Osaka"
     },
     {
-      "confirmed": 1606,
+      "confirmed": 1628,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1008,10 +1008,10 @@
         21,
         11,
         8,
-        1
+        23
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 23,
       "yesterdayConfirmed": 8,
       "dailyDeceasedCount": [
         0,
@@ -1196,10 +1196,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
-      "deceased": 96,
+      "deceased": 97,
       "cruisePassenger": 0,
       "recovered": 1382,
       "critical": 0,
@@ -1225,10 +1225,10 @@
         "Izehara": 1,
         "Hadano": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "name_ja": "神奈川県",
-      "deaths": 96,
+      "deaths": 97,
       "name": "Kanagawa"
     },
     {
@@ -2112,7 +2112,7 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 1034,
+      "confirmed": 1043,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2296,10 +2296,10 @@
         7,
         9,
         11,
-        0
+        9
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 9,
       "yesterdayConfirmed": 11,
       "dailyDeceasedCount": [
         0,
@@ -5739,7 +5739,7 @@
       "name": "Toyama"
     },
     {
-      "confirmed": 187,
+      "confirmed": 188,
       "dailyConfirmedCount": [
         0,
         0,
@@ -5923,10 +5923,10 @@
         0,
         3,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -10885,7 +10885,7 @@
       "name": "Tochigi"
     },
     {
-      "confirmed": 84,
+      "confirmed": 85,
       "dailyConfirmedCount": [
         0,
         0,
@@ -11069,10 +11069,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -25291,29 +25291,29 @@
       "recoveredCumulativeAvg7d": 16957
     },
     {
-      "confirmed": 88,
-      "confirmedCumulative": 20142,
-      "deceased": 0,
-      "deceasedCumulative": 981,
+      "confirmed": 131,
+      "confirmedCumulative": 20185,
+      "deceased": 1,
+      "deceasedCumulative": 982,
       "recovered": 0,
       "recoveredCumulative": 17197,
       "critical": 0,
       "criticalCumulative": 36,
       "tested": 0,
       "testedCumulative": 509993,
-      "active": 88,
-      "activeCumulative": 1964,
+      "active": 130,
+      "activeCumulative": 2006,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 806,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-08",
-      "deaths": 0,
-      "confirmedAvg3d": 158,
-      "confirmedAvg7d": 200,
-      "confirmedCumulativeAvg3d": 20013,
-      "confirmedCumulativeAvg7d": 19613,
+      "deaths": 1,
+      "confirmedAvg3d": 172,
+      "confirmedAvg7d": 206,
+      "confirmedCumulativeAvg3d": 20027,
+      "confirmedCumulativeAvg7d": 19619,
       "deceasedAvg3d": 1,
       "deceasedAvg7d": 0,
       "deceasedCumulativeAvg3d": 980,
@@ -25324,5 +25324,5 @@
       "recoveredCumulativeAvg7d": 17023
     }
   ],
-  "updated": "2020-07-08T17:18:34+09:00"
+  "updated": "2020-07-08T17:32:30+09:00"
 }
