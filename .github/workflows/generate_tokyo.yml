@@ -30,7 +30,7 @@ jobs:
 
       - name: Commit files
         run: |
-          git config --local user.email alastair+auto@liquidx.net
+          git config --local user.email alastair+automated@liquidx.net
           git config --local user.name "Automated Action"
           git add docs/tokyo/counts.json
           git commit -m "Automated Data Update: Tokyo" || exit 0
