@@ -18998,7 +18998,7 @@
       "name": "Akita"
     },
     {
-      "confirmed": 9,
+      "confirmed": 10,
       "dailyConfirmedCount": [
         0,
         0,
@@ -19184,10 +19184,10 @@
         3,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -25556,7 +25556,40 @@
       "recoveredAvg7d": 99,
       "recoveredCumulativeAvg3d": 17331,
       "recoveredCumulativeAvg7d": 17141
+    },
+    {
+      "confirmed": 1,
+      "confirmedCumulative": 20615,
+      "deceased": 0,
+      "deceasedCumulative": 982,
+      "recovered": 0,
+      "recoveredCumulative": 17466,
+      "critical": 0,
+      "criticalCumulative": 38,
+      "tested": 0,
+      "testedCumulative": 527546,
+      "active": 1,
+      "activeCumulative": 2167,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 806,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2020-07-10",
+      "deaths": 0,
+      "confirmedAvg3d": 188,
+      "confirmedAvg7d": 204,
+      "confirmedCumulativeAvg3d": 20496,
+      "confirmedCumulativeAvg7d": 20072,
+      "deceasedAvg3d": 0,
+      "deceasedAvg7d": 0,
+      "deceasedCumulativeAvg3d": 982,
+      "deceasedCumulativeAvg7d": 980,
+      "recoveredAvg3d": 89,
+      "recoveredAvg7d": 85,
+      "recoveredCumulativeAvg3d": 17421,
+      "recoveredCumulativeAvg7d": 17227
     }
   ],
-  "updated": "2020-07-10T08:47:30+09:00"
+  "updated": "2020-07-10T10:32:34+09:00"
 }
