@@ -518,7 +518,6 @@ const generateRegionSummary = (prefectureSummary) => {
       }
     }
   }
-  console.log(regionSummary)
   return regionSummary
 }
 
