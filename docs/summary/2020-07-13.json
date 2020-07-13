@@ -7538,7 +7538,7 @@
       "name": "Gunma"
     },
     {
-      "confirmed": 152,
+      "confirmed": 151,
       "dailyConfirmedCount": [
         0,
         0,
@@ -7726,12 +7726,12 @@
         1,
         1,
         2,
-        1,
+        0,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 1,
+      "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
         0,
@@ -13607,7 +13607,7 @@
       "name": "Yamanashi"
     },
     {
-      "confirmed": 74,
+      "confirmed": 75,
       "dailyConfirmedCount": [
         0,
         0,
@@ -13796,10 +13796,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -18072,7 +18072,7 @@
         "Isahaya": 1,
         "Iki": 5,
         "Nagasaki City": 1,
-        "Nagasaki": 2
+        "Nagasaki": 6
       },
       "newlyDeceased": 0,
       "yesterdayDeceased": 0,
@@ -25931,8 +25931,8 @@
       "recoveredCumulativeAvg7d": 17381
     },
     {
-      "confirmed": 409,
-      "confirmedCumulative": 21839,
+      "confirmed": 408,
+      "confirmedCumulative": 21838,
       "deceased": 0,
       "deceasedCumulative": 983,
       "recovered": 154,
@@ -25941,8 +25941,8 @@
       "criticalCumulative": 32,
       "tested": 6964,
       "testedCumulative": 558622,
-      "active": 255,
-      "activeCumulative": 2853,
+      "active": 254,
+      "activeCumulative": 2852,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 807,
@@ -25962,7 +25962,40 @@
       "recoveredAvg7d": 136,
       "recoveredCumulativeAvg3d": 17834,
       "recoveredCumulativeAvg7d": 17517
+    },
+    {
+      "confirmed": 1,
+      "confirmedCumulative": 21839,
+      "deceased": 0,
+      "deceasedCumulative": 983,
+      "recovered": 0,
+      "recoveredCumulative": 18003,
+      "critical": 0,
+      "criticalCumulative": 32,
+      "tested": 0,
+      "testedCumulative": 558622,
+      "active": 1,
+      "activeCumulative": 2853,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 807,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2020-07-13",
+      "deaths": 0,
+      "confirmedAvg3d": 265,
+      "confirmedAvg7d": 285,
+      "confirmedCumulativeAvg3d": 21702,
+      "confirmedCumulativeAvg7d": 21010,
+      "deceasedAvg3d": 0,
+      "deceasedAvg7d": 0,
+      "deceasedCumulativeAvg3d": 983,
+      "deceasedCumulativeAvg7d": 982,
+      "recoveredAvg3d": 117,
+      "recoveredAvg7d": 125,
+      "recoveredCumulativeAvg3d": 17951,
+      "recoveredCumulativeAvg7d": 17643
     }
   ],
-  "updated": "2020-07-12T22:17:38+09:00"
+  "updated": "2020-07-13T11:33:21+09:00"
 }
