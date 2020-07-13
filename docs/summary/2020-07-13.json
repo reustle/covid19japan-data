@@ -20538,35 +20538,65 @@
     }
   ],
   "regions": {
-    "Kanto": {
-      "confirmed": 12442,
-      "newlyConfirmed": 179,
-      "yesterdayConfirmed": 291,
-      "deceased": 536,
-      "recovered": 9832,
+    "Chubu": {
+      "confirmed": 1682,
+      "newlyConfirmed": 4,
+      "yesterdayConfirmed": 4,
+      "deceased": 100,
+      "recovered": 1532,
       "critical": 0,
       "tested": 0,
-      "active": 2074
+      "active": 50
+    },
+    "Tohoku": {
+      "confirmed": 313,
+      "newlyConfirmed": 4,
+      "yesterdayConfirmed": 2,
+      "deceased": 3,
+      "recovered": 286,
+      "critical": 0,
+      "tested": 0,
+      "active": 24
+    },
+    "Kanto": {
+      "confirmed": 12899,
+      "newlyConfirmed": 187,
+      "yesterdayConfirmed": 296,
+      "deceased": 565,
+      "recovered": 10217,
+      "critical": 0,
+      "tested": 0,
+      "active": 2117
     },
     "Shikoku": {
-      "confirmed": 82,
-      "newlyConfirmed": 0,
+      "confirmed": 197,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 0,
-      "deceased": 5,
-      "recovered": 77,
+      "deceased": 9,
+      "recovered": 180,
       "critical": 0,
       "tested": 0,
-      "active": 0
+      "active": 8
     },
     "Kyushu": {
-      "confirmed": 1227,
+      "confirmed": 1423,
       "newlyConfirmed": 10,
       "yesterdayConfirmed": 19,
-      "deceased": 38,
-      "recovered": 967,
+      "deceased": 45,
+      "recovered": 1151,
       "critical": 0,
       "tested": 0,
-      "active": 222
+      "active": 227
+    },
+    "Chugoku": {
+      "confirmed": 268,
+      "newlyConfirmed": 3,
+      "yesterdayConfirmed": 1,
+      "deceased": 3,
+      "recovered": 253,
+      "critical": 0,
+      "tested": 0,
+      "active": 12
     },
     "Hokkaido": {
       "confirmed": 1287,
@@ -20578,15 +20608,15 @@
       "tested": 0,
       "active": 55
     },
-    "Kinki": {
-      "confirmed": 3363,
-      "newlyConfirmed": 32,
-      "yesterdayConfirmed": 52,
-      "deceased": 151,
-      "recovered": 2891,
+    "Kansai": {
+      "confirmed": 3606,
+      "newlyConfirmed": 35,
+      "yesterdayConfirmed": 62,
+      "deceased": 156,
+      "recovered": 3100,
       "critical": 0,
       "tested": 0,
-      "active": 321
+      "active": 350
     }
   },
   "daily": [
