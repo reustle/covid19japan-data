@@ -56,7 +56,7 @@ const drawDailyLineCharts = (dailySummaries, duration) => {
     values = _.slice(values, values.length - duration)
     let lastValue = _.last(values)
     drawLineChart(values, `${chartValue}_daily`)
-    drawLineChart(avgValues, `${chartValue}_daily_avg`, values)
+    drawLineChart(avgValues, `${chartValue}_daily_avg`)
   }
 
   for (let chartValue of dailyCharts) {
