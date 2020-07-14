@@ -1245,7 +1245,7 @@
       "active": 174,
       "confirmedByCity": {
         "Kanagawa": 3,
-        "Sagamihara": 97,
+        "Sagamihara": 99,
         "Yokohama": 692,
         "Kamakura": 53,
         "Atsugi": 104,
@@ -1253,7 +1253,7 @@
         "Hiratsuka": 47,
         "Odawara": 72,
         "Fujisawa": 70,
-        "Kawasaki": 346,
+        "Kawasaki": 349,
         "Yokosuka": 59,
         "Chigasaki": 28,
         "Kawasaki, Tama": 1,
@@ -3067,7 +3067,7 @@
       "name": "Fukuoka"
     },
     {
-      "confirmed": 739,
+      "confirmed": 747,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3257,10 +3257,10 @@
         5,
         7,
         1,
-        0
+        8
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 8,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -3459,7 +3459,7 @@
       "recovered": 662,
       "critical": 0,
       "tested": 0,
-      "active": 32,
+      "active": 40,
       "confirmedByCity": {
         "Nishinomiya": 16,
         "Kobe": 75,
@@ -20714,14 +20714,14 @@
       "active": 62
     },
     "Kansai": {
-      "confirmed": 3606,
-      "newlyConfirmed": 0,
+      "confirmed": 3614,
+      "newlyConfirmed": 8,
       "yesterdayConfirmed": 35,
       "deceased": 156,
       "recovered": 3100,
       "critical": 0,
       "tested": 0,
-      "active": 350
+      "active": 358
     }
   },
   "daily": [
@@ -26236,8 +26236,8 @@
       "recoveredCumulativeAvg7d": 17657
     },
     {
-      "confirmed": 34,
-      "confirmedCumulative": 22132,
+      "confirmed": 42,
+      "confirmedCumulative": 22140,
       "deceased": 0,
       "deceasedCumulative": 984,
       "recovered": 0,
@@ -26246,8 +26246,8 @@
       "criticalCumulative": 34,
       "tested": 0,
       "testedCumulative": 562105,
-      "active": 34,
-      "activeCumulative": 3045,
+      "active": 42,
+      "activeCumulative": 3053,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 807,
@@ -26255,10 +26255,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-14",
       "deaths": 0,
-      "confirmedAvg3d": 234,
-      "confirmedAvg7d": 297,
-      "confirmedCumulativeAvg3d": 22022,
-      "confirmedCumulativeAvg7d": 21344,
+      "confirmedAvg3d": 237,
+      "confirmedAvg7d": 298,
+      "confirmedCumulativeAvg3d": 22025,
+      "confirmedCumulativeAvg7d": 21345,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 0,
       "deceasedCumulativeAvg3d": 984,
@@ -26269,5 +26269,5 @@
       "recoveredCumulativeAvg7d": 17786
     }
   ],
-  "updated": "2020-07-14T14:47:39+09:00"
+  "updated": "2020-07-14T15:05:34+09:00"
 }
