@@ -2178,7 +2178,7 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 1138,
+      "confirmed": 1162,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2368,10 +2368,10 @@
         13,
         30,
         17,
-        0
+        24
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 24,
       "yesterdayConfirmed": 17,
       "dailyDeceasedCount": [
         0,
@@ -2570,7 +2570,7 @@
       "recovered": 921,
       "critical": 0,
       "tested": 0,
-      "active": 171,
+      "active": 195,
       "confirmedByCity": {
         "Chiba": 5,
         "Ichikawa": 64,
@@ -6345,7 +6345,7 @@
       "name": "Ibaraki"
     },
     {
-      "confirmed": 179,
+      "confirmed": 180,
       "dailyConfirmedCount": [
         0,
         0,
@@ -6535,10 +6535,10 @@
         3,
         1,
         3,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
@@ -6737,7 +6737,7 @@
       "recovered": 166,
       "critical": 0,
       "tested": 0,
-      "active": 10,
+      "active": 11,
       "confirmedByCity": {
         "Hiroshima": 4,
         "Onomichi": 2,
@@ -6761,7 +6761,7 @@
       "name": "Hiroshima"
     },
     {
-      "confirmed": 162,
+      "confirmed": 164,
       "dailyConfirmedCount": [
         0,
         0,
@@ -6951,10 +6951,10 @@
         0,
         0,
         0,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -7153,7 +7153,7 @@
       "recovered": 148,
       "critical": 0,
       "tested": 0,
-      "active": 7,
+      "active": 9,
       "confirmedByCity": {
         "Ogaki ": 2,
         "Gifu city": 28,
@@ -20642,14 +20642,14 @@
   ],
   "regions": {
     "Chubu": {
-      "confirmed": 1682,
-      "newlyConfirmed": 0,
+      "confirmed": 1684,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 4,
       "deceased": 100,
       "recovered": 1532,
       "critical": 0,
       "tested": 0,
-      "active": 50
+      "active": 52
     },
     "Tohoku": {
       "confirmed": 313,
@@ -20662,14 +20662,14 @@
       "active": 24
     },
     "Kanto": {
-      "confirmed": 12899,
-      "newlyConfirmed": 0,
+      "confirmed": 12923,
+      "newlyConfirmed": 24,
       "yesterdayConfirmed": 187,
       "deceased": 565,
       "recovered": 10217,
       "critical": 0,
       "tested": 0,
-      "active": 2117
+      "active": 2141
     },
     "Shikoku": {
       "confirmed": 197,
@@ -20692,14 +20692,14 @@
       "active": 228
     },
     "Chugoku": {
-      "confirmed": 268,
-      "newlyConfirmed": 0,
+      "confirmed": 269,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 3,
       "deceased": 3,
       "recovered": 253,
       "critical": 0,
       "tested": 0,
-      "active": 12
+      "active": 13
     },
     "Hokkaido": {
       "confirmed": 1287,
@@ -26232,7 +26232,40 @@
       "recoveredAvg7d": 139,
       "recoveredCumulativeAvg3d": 17985,
       "recoveredCumulativeAvg7d": 17657
+    },
+    {
+      "confirmed": 27,
+      "confirmedCumulative": 22125,
+      "deceased": 0,
+      "deceasedCumulative": 984,
+      "recovered": 0,
+      "recoveredCumulative": 18103,
+      "critical": 0,
+      "criticalCumulative": 34,
+      "tested": 0,
+      "testedCumulative": 562105,
+      "active": 27,
+      "activeCumulative": 3038,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 807,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2020-07-14",
+      "deaths": 0,
+      "confirmedAvg3d": 232,
+      "confirmedAvg7d": 296,
+      "confirmedCumulativeAvg3d": 22020,
+      "confirmedCumulativeAvg7d": 21343,
+      "deceasedAvg3d": 0,
+      "deceasedAvg7d": 0,
+      "deceasedCumulativeAvg3d": 984,
+      "deceasedCumulativeAvg7d": 983,
+      "recoveredAvg3d": 84,
+      "recoveredAvg7d": 129,
+      "recoveredCumulativeAvg3d": 18069,
+      "recoveredCumulativeAvg7d": 17786
     }
   ],
-  "updated": "2020-07-14T06:17:49+09:00"
+  "updated": "2020-07-14T13:04:55+09:00"
 }
