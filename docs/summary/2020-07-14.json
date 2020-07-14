@@ -6348,7 +6348,7 @@
       "name": "Ibaraki"
     },
     {
-      "confirmed": 181,
+      "confirmed": 183,
       "dailyConfirmedCount": [
         0,
         0,
@@ -6538,10 +6538,10 @@
         3,
         1,
         3,
-        2
+        4
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 2,
+      "newlyConfirmed": 4,
       "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
@@ -6740,7 +6740,7 @@
       "recovered": 166,
       "critical": 0,
       "tested": 0,
-      "active": 12,
+      "active": 14,
       "confirmedByCity": {
         "Hiroshima": 4,
         "Onomichi": 2,
@@ -10420,7 +10420,7 @@
       "name": "Shiga"
     },
     {
-      "confirmed": 98,
+      "confirmed": 103,
       "dailyConfirmedCount": [
         0,
         0,
@@ -10610,10 +10610,10 @@
         0,
         2,
         3,
-        0
+        5
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 5,
       "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
@@ -10812,7 +10812,7 @@
       "recovered": 82,
       "critical": 0,
       "tested": 0,
-      "active": 16,
+      "active": 21,
       "confirmedByCity": {
         "Utsunomiya": 37,
         "Oyama": 3,
@@ -20665,14 +20665,14 @@
       "active": 27
     },
     "Kanto": {
-      "confirmed": 13137,
-      "newlyConfirmed": 238,
+      "confirmed": 13142,
+      "newlyConfirmed": 243,
       "yesterdayConfirmed": 187,
       "deceased": 565,
       "recovered": 10217,
       "critical": 0,
       "tested": 0,
-      "active": 2355
+      "active": 2360
     },
     "Shikoku": {
       "confirmed": 197,
@@ -20695,14 +20695,14 @@
       "active": 235
     },
     "Chugoku": {
-      "confirmed": 271,
-      "newlyConfirmed": 3,
+      "confirmed": 273,
+      "newlyConfirmed": 5,
       "yesterdayConfirmed": 3,
       "deceased": 3,
       "recovered": 253,
       "critical": 0,
       "tested": 0,
-      "active": 15
+      "active": 17
     },
     "Hokkaido": {
       "confirmed": 1295,
@@ -26237,8 +26237,8 @@
       "recoveredCumulativeAvg7d": 17657
     },
     {
-      "confirmed": 317,
-      "confirmedCumulative": 22415,
+      "confirmed": 324,
+      "confirmedCumulative": 22422,
       "deceased": 0,
       "deceasedCumulative": 984,
       "recovered": 0,
@@ -26247,8 +26247,8 @@
       "criticalCumulative": 34,
       "tested": 0,
       "testedCumulative": 562105,
-      "active": 317,
-      "activeCumulative": 3328,
+      "active": 324,
+      "activeCumulative": 3335,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 807,
@@ -26256,10 +26256,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-14",
       "deaths": 0,
-      "confirmedAvg3d": 328,
-      "confirmedAvg7d": 337,
-      "confirmedCumulativeAvg3d": 22116,
-      "confirmedCumulativeAvg7d": 21385,
+      "confirmedAvg3d": 331,
+      "confirmedAvg7d": 338,
+      "confirmedCumulativeAvg3d": 22119,
+      "confirmedCumulativeAvg7d": 21386,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 0,
       "deceasedCumulativeAvg3d": 984,
@@ -26270,5 +26270,5 @@
       "recoveredCumulativeAvg7d": 17786
     }
   ],
-  "updated": "2020-07-14T19:47:40+09:00"
+  "updated": "2020-07-14T20:18:00+09:00"
 }
