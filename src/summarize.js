@@ -509,6 +509,7 @@ const generateRegionSummary = (prefectureSummary) => {
   let regionSummary = {}
   for (let regionName of Object.keys(regionPrefectures)) {
     regionSummary[regionName] = Object.assign({}, REGION_TEMPLATE)
+    regionSummary[regionName].prefectures = regionPrefectures[regionName]
     for (let prefectureName of regionPrefectures[regionName]) {
       let prefecture = _.find(prefectureSummary, _.matchesProperty('name', prefectureName))
       if (prefecture) {
