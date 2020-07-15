@@ -1,11 +1,3 @@
-Total patients fetched: 23706
-Patients data updated. New: 23706 Old: 23702
-(node:2757) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'dpConfirmed' of undefined
-    at generateCruiseShipPrefectureSummary (/home/runner/work/covid19japan-data/covid19japan-data/src/summarize.js:482:54)
-    at generatePrefectureSummary (/home/runner/work/covid19japan-data/covid19japan-data/src/summarize.js:346:27)
-    at Object.summarize (/home/runner/work/covid19japan-data/covid19japan-data/src/summarize.js:43:27)
-    at /home/runner/work/covid19japan-data/covid19japan-data/generate.js:72:37
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-(node:2757) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
-(node:2757) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+Total patients fetched: 23707
+Patients data updated. New: 23707 Old: 23706
+Success.
