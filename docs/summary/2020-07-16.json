@@ -8086,7 +8086,7 @@
       "name": "Kagoshima"
     },
     {
-      "confirmed": 151,
+      "confirmed": 152,
       "dailyConfirmedCount": [
         0,
         0,
@@ -8278,10 +8278,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -8482,7 +8482,7 @@
       "recovered": 139,
       "critical": 0,
       "tested": 0,
-      "active": 5,
+      "active": 6,
       "confirmedByCity": {
         "Naha": 21,
         "Kadena": 2,
@@ -20922,14 +20922,14 @@
       ]
     },
     "Kyushu": {
-      "confirmed": 1447,
-      "newlyConfirmed": 0,
+      "confirmed": 1448,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 13,
       "deceased": 45,
       "recovered": 1155,
       "critical": 0,
       "tested": 0,
-      "active": 247,
+      "active": 248,
       "prefectures": [
         "Fukuoka",
         "Kagoshima",
@@ -26569,8 +26569,8 @@
       "recoveredCumulativeAvg7d": 17985
     },
     {
-      "confirmed": 289,
-      "confirmedCumulative": 23171,
+      "confirmed": 290,
+      "confirmedCumulative": 23172,
       "deceased": 0,
       "deceasedCumulative": 984,
       "recovered": 0,
@@ -26579,8 +26579,8 @@
       "criticalCumulative": 38,
       "tested": 0,
       "testedCumulative": 586706,
-      "active": 289,
-      "activeCumulative": 3642,
+      "active": 290,
+      "activeCumulative": 3643,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 807,
@@ -26588,7 +26588,7 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-16",
       "deaths": 0,
-      "confirmedAvg3d": 357,
+      "confirmedAvg3d": 358,
       "confirmedAvg7d": 365,
       "confirmedCumulativeAvg3d": 22828,
       "confirmedCumulativeAvg7d": 22126,
@@ -26602,5 +26602,5 @@
       "recoveredCumulativeAvg7d": 18139
     }
   ],
-  "updated": "2020-07-16T13:05:18+09:00"
+  "updated": "2020-07-16T13:32:42+09:00"
 }
