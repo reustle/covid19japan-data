@@ -411,7 +411,7 @@
       "name": "Tokyo"
     },
     {
-      "confirmed": 2126,
+      "confirmed": 2192,
       "dailyConfirmedCount": [
         0,
         0,
@@ -603,10 +603,10 @@
         18,
         20,
         61,
-        0
+        66
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 66,
       "yesterdayConfirmed": 61,
       "dailyDeceasedCount": [
         0,
@@ -807,7 +807,7 @@
       "recovered": 1806,
       "critical": 0,
       "tested": 0,
-      "active": 234,
+      "active": 300,
       "confirmedByCity": {
         "Osaka": 90,
         "HigashiOsaka": 1,
@@ -20971,14 +20971,14 @@
       ]
     },
     "Kansai": {
-      "confirmed": 3767,
-      "newlyConfirmed": 26,
+      "confirmed": 3833,
+      "newlyConfirmed": 92,
       "yesterdayConfirmed": 90,
       "deceased": 156,
       "recovered": 3135,
       "critical": 0,
       "tested": 0,
-      "active": 476,
+      "active": 542,
       "prefectures": [
         "Hyogo",
         "Kyoto",
@@ -26569,8 +26569,8 @@
       "recoveredCumulativeAvg7d": 17985
     },
     {
-      "confirmed": 345,
-      "confirmedCumulative": 23227,
+      "confirmed": 411,
+      "confirmedCumulative": 23293,
       "deceased": 0,
       "deceasedCumulative": 984,
       "recovered": 0,
@@ -26579,8 +26579,8 @@
       "criticalCumulative": 38,
       "tested": 0,
       "testedCumulative": 586706,
-      "active": 345,
-      "activeCumulative": 3698,
+      "active": 411,
+      "activeCumulative": 3764,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 807,
@@ -26588,10 +26588,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-16",
       "deaths": 0,
-      "confirmedAvg3d": 376,
-      "confirmedAvg7d": 373,
-      "confirmedCumulativeAvg3d": 22847,
-      "confirmedCumulativeAvg7d": 22134,
+      "confirmedAvg3d": 398,
+      "confirmedAvg7d": 383,
+      "confirmedCumulativeAvg3d": 22869,
+      "confirmedCumulativeAvg7d": 22144,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 0,
       "deceasedCumulativeAvg3d": 984,
@@ -26602,5 +26602,5 @@
       "recoveredCumulativeAvg7d": 18139
     }
   ],
-  "updated": "2020-07-16T16:47:51+09:00"
+  "updated": "2020-07-16T17:18:11+09:00"
 }
