@@ -15586,7 +15586,7 @@
       "name": "Mie"
     },
     {
-      "confirmed": 48,
+      "confirmed": 49,
       "dailyConfirmedCount": [
         0,
         0,
@@ -15778,12 +15778,12 @@
         0,
         0,
         0,
-        0,
+        1,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
         0,
@@ -15984,7 +15984,7 @@
       "recovered": 45,
       "critical": 0,
       "tested": 0,
-      "active": 0,
+      "active": 1,
       "confirmedByCity": {
         "Kumamoto": 5,
         "Kumamoto city": 15,
@@ -16831,7 +16831,7 @@
       "name": "Kagawa"
     },
     {
-      "confirmed": 38,
+      "confirmed": 41,
       "dailyConfirmedCount": [
         0,
         0,
@@ -17024,10 +17024,10 @@
         0,
         0,
         1,
-        0
+        3
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 3,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -17229,7 +17229,7 @@
       "recovered": 37,
       "critical": 0,
       "tested": 0,
-      "active": 1,
+      "active": 4,
       "confirmedByCity": {
         "Shimonoseki": 4,
         "Yamaguchi City": 2,
@@ -21023,14 +21023,14 @@
       ]
     },
     "Kyushu": {
-      "confirmed": 1468,
+      "confirmed": 1469,
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 21,
+      "yesterdayConfirmed": 22,
       "deceased": 45,
       "recovered": 1208,
       "critical": 0,
       "tested": 0,
-      "active": 215,
+      "active": 216,
       "prefectures": [
         "Fukuoka",
         "Kagoshima",
@@ -21043,14 +21043,14 @@
       ]
     },
     "Chugoku": {
-      "confirmed": 290,
-      "newlyConfirmed": 0,
+      "confirmed": 293,
+      "newlyConfirmed": 3,
       "yesterdayConfirmed": 5,
       "deceased": 3,
       "recovered": 257,
       "critical": 0,
       "tested": 0,
-      "active": 30,
+      "active": 33,
       "prefectures": [
         "Hiroshima",
         "Okayama",
@@ -26670,8 +26670,8 @@
       "recoveredCumulativeAvg7d": 17985
     },
     {
-      "confirmed": 619,
-      "confirmedCumulative": 23502,
+      "confirmed": 620,
+      "confirmedCumulative": 23503,
       "deceased": 0,
       "deceasedCumulative": 985,
       "recovered": 269,
@@ -26680,8 +26680,8 @@
       "criticalCumulative": 37,
       "tested": 12533,
       "testedCumulative": 599239,
-      "active": 350,
-      "activeCumulative": 3703,
+      "active": 351,
+      "activeCumulative": 3704,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 807,
@@ -26701,7 +26701,40 @@
       "recoveredAvg7d": 192,
       "recoveredCumulativeAvg3d": 18547,
       "recoveredCumulativeAvg7d": 18178
+    },
+    {
+      "confirmed": 3,
+      "confirmedCumulative": 23506,
+      "deceased": 0,
+      "deceasedCumulative": 985,
+      "recovered": 0,
+      "recoveredCumulative": 18814,
+      "critical": 0,
+      "criticalCumulative": 37,
+      "tested": 0,
+      "testedCumulative": 599239,
+      "active": 3,
+      "activeCumulative": 3707,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 807,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2020-07-17",
+      "deaths": 0,
+      "confirmedAvg3d": 359,
+      "confirmedAvg7d": 352,
+      "confirmedCumulativeAvg3d": 23297,
+      "confirmedCumulativeAvg7d": 22526,
+      "deceasedAvg3d": 0,
+      "deceasedAvg7d": 0,
+      "deceasedCumulativeAvg3d": 985,
+      "deceasedCumulativeAvg7d": 984,
+      "recoveredAvg3d": 177,
+      "recoveredAvg7d": 166,
+      "recoveredCumulativeAvg3d": 18724,
+      "recoveredCumulativeAvg7d": 18344
     }
   ],
-  "updated": "2020-07-17T00:22:44+09:00"
+  "updated": "2020-07-17T10:33:01+09:00"
 }
