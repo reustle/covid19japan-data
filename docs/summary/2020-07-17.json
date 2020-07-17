@@ -413,7 +413,7 @@
       "name": "Tokyo"
     },
     {
-      "confirmed": 2192,
+      "confirmed": 2245,
       "dailyConfirmedCount": [
         0,
         0,
@@ -606,10 +606,10 @@
         20,
         61,
         66,
-        0
+        53
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 53,
       "yesterdayConfirmed": 66,
       "dailyDeceasedCount": [
         0,
@@ -811,7 +811,7 @@
       "recovered": 1826,
       "critical": 0,
       "tested": 0,
-      "active": 280,
+      "active": 333,
       "confirmedByCity": {
         "Osaka": 90,
         "HigashiOsaka": 1,
@@ -2213,7 +2213,7 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 1224,
+      "confirmed": 1244,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2406,10 +2406,10 @@
         25,
         29,
         32,
-        0
+        20
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 20,
       "yesterdayConfirmed": 32,
       "dailyDeceasedCount": [
         0,
@@ -2611,7 +2611,7 @@
       "recovered": 959,
       "critical": 0,
       "tested": 0,
-      "active": 219,
+      "active": 239,
       "confirmedByCity": {
         "Chiba": 5,
         "Ichikawa": 64,
@@ -20988,14 +20988,14 @@
       ]
     },
     "Kanto": {
-      "confirmed": 14164,
-      "newlyConfirmed": 309,
+      "confirmed": 14184,
+      "newlyConfirmed": 329,
       "yesterdayConfirmed": 425,
       "deceased": 566,
       "recovered": 10632,
       "critical": 0,
       "tested": 0,
-      "active": 2966,
+      "active": 2986,
       "prefectures": [
         "Chiba",
         "Gunma",
@@ -21072,14 +21072,14 @@
       ]
     },
     "Kansai": {
-      "confirmed": 3877,
-      "newlyConfirmed": 30,
+      "confirmed": 3930,
+      "newlyConfirmed": 83,
       "yesterdayConfirmed": 106,
       "deceased": 156,
       "recovered": 3186,
       "critical": 0,
       "tested": 0,
-      "active": 535,
+      "active": 588,
       "prefectures": [
         "Hyogo",
         "Kyoto",
@@ -26703,8 +26703,8 @@
       "recoveredCumulativeAvg7d": 18178
     },
     {
-      "confirmed": 349,
-      "confirmedCumulative": 23854,
+      "confirmed": 422,
+      "confirmedCumulative": 23927,
       "deceased": 0,
       "deceasedCumulative": 985,
       "recovered": 0,
@@ -26713,8 +26713,8 @@
       "criticalCumulative": 37,
       "tested": 0,
       "testedCumulative": 599239,
-      "active": 349,
-      "activeCumulative": 4055,
+      "active": 422,
+      "activeCumulative": 4128,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 807,
@@ -26722,10 +26722,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-17",
       "deaths": 0,
-      "confirmedAvg3d": 475,
-      "confirmedAvg7d": 401,
-      "confirmedCumulativeAvg3d": 23414,
-      "confirmedCumulativeAvg7d": 22576,
+      "confirmedAvg3d": 499,
+      "confirmedAvg7d": 412,
+      "confirmedCumulativeAvg3d": 23438,
+      "confirmedCumulativeAvg7d": 22586,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 0,
       "deceasedCumulativeAvg3d": 985,
@@ -26736,5 +26736,5 @@
       "recoveredCumulativeAvg7d": 18344
     }
   ],
-  "updated": "2020-07-17T17:05:49+09:00"
+  "updated": "2020-07-17T17:18:45+09:00"
 }
