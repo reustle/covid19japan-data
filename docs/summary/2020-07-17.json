@@ -15167,7 +15167,7 @@
       "name": "Oita"
     },
     {
-      "confirmed": 53,
+      "confirmed": 54,
       "dailyConfirmedCount": [
         0,
         0,
@@ -15360,10 +15360,10 @@
         0,
         2,
         2,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 2,
       "dailyDeceasedCount": [
         0,
@@ -15565,7 +15565,7 @@
       "recovered": 45,
       "critical": 0,
       "tested": 0,
-      "active": 7,
+      "active": 8,
       "confirmedByCity": {
         "Iga": 6,
         "Kuwana": 2,
@@ -17658,7 +17658,7 @@
       "name": "Aomori"
     },
     {
-      "confirmed": 32,
+      "confirmed": 33,
       "dailyConfirmedCount": [
         0,
         0,
@@ -17851,10 +17851,10 @@
         1,
         1,
         2,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 2,
       "dailyDeceasedCount": [
         0,
@@ -18056,7 +18056,7 @@
       "recovered": 28,
       "critical": 0,
       "tested": 0,
-      "active": 4,
+      "active": 5,
       "confirmedByCity": {
         "Okayama city": 15,
         "Satoshou": 1,
@@ -21043,14 +21043,14 @@
       ]
     },
     "Chugoku": {
-      "confirmed": 293,
-      "newlyConfirmed": 3,
+      "confirmed": 294,
+      "newlyConfirmed": 4,
       "yesterdayConfirmed": 5,
       "deceased": 3,
       "recovered": 257,
       "critical": 0,
       "tested": 0,
-      "active": 33,
+      "active": 34,
       "prefectures": [
         "Hiroshima",
         "Okayama",
@@ -21072,14 +21072,14 @@
       ]
     },
     "Kansai": {
-      "confirmed": 3847,
-      "newlyConfirmed": 0,
+      "confirmed": 3848,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 106,
       "deceased": 156,
       "recovered": 3186,
       "critical": 0,
       "tested": 0,
-      "active": 505,
+      "active": 506,
       "prefectures": [
         "Hyogo",
         "Kyoto",
@@ -26703,8 +26703,8 @@
       "recoveredCumulativeAvg7d": 18178
     },
     {
-      "confirmed": 6,
-      "confirmedCumulative": 23510,
+      "confirmed": 8,
+      "confirmedCumulative": 23512,
       "deceased": 0,
       "deceasedCumulative": 985,
       "recovered": 0,
@@ -26713,8 +26713,8 @@
       "criticalCumulative": 37,
       "tested": 0,
       "testedCumulative": 599239,
-      "active": 6,
-      "activeCumulative": 3711,
+      "active": 8,
+      "activeCumulative": 3713,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 807,
@@ -26722,10 +26722,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-17",
       "deaths": 0,
-      "confirmedAvg3d": 360,
-      "confirmedAvg7d": 352,
+      "confirmedAvg3d": 361,
+      "confirmedAvg7d": 353,
       "confirmedCumulativeAvg3d": 23299,
-      "confirmedCumulativeAvg7d": 22526,
+      "confirmedCumulativeAvg7d": 22527,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 0,
       "deceasedCumulativeAvg3d": 985,
@@ -26736,5 +26736,5 @@
       "recoveredCumulativeAvg7d": 18344
     }
   ],
-  "updated": "2020-07-17T12:05:26+09:00"
+  "updated": "2020-07-17T13:47:24+09:00"
 }
