@@ -23,6 +23,7 @@ export const sources = {
     gov: {
       patients: 'https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html',
       patientList: 'https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html',
+      deaths: 'https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html',
       summary: 'https://www.pref.aichi.jp/site/covid19-aichi/'
     },
     source: 'https://github.com/code4nagoya/covid19',
@@ -280,6 +281,13 @@ export const sources = {
       format: 'html',
       url: 'https://www.pref.hiroshima.lg.jp/site/hcdc/covid19-kanjya.html',
       extract: html.hiroshimaLatestExtract
+    },
+    cities: {
+      hiroshimaCity: {
+        gov: {
+          patients: 'https://www.city.hiroshima.lg.jp/site/korona/108656.html'
+        },
+      },
     },
     source: 'https://github.com/tatsuya1970/covid19',
     dashboard: 'https://covid19-hiroshima.netlify.app/en'
