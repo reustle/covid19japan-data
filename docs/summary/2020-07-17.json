@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 8940,
+      "confirmed": 8943,
       "dailyConfirmedCount": [
         0,
         0,
@@ -194,10 +194,10 @@
         143,
         165,
         286,
-        290
+        293
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 290,
+      "newlyConfirmed": 293,
       "yesterdayConfirmed": 286,
       "dailyDeceasedCount": [
         0,
@@ -399,7 +399,7 @@
       "recovered": 6608,
       "critical": 0,
       "tested": 0,
-      "active": 2006,
+      "active": 2009,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
@@ -6442,7 +6442,7 @@
       "name": "Ibaraki"
     },
     {
-      "confirmed": 195,
+      "confirmed": 200,
       "dailyConfirmedCount": [
         0,
         0,
@@ -6635,10 +6635,10 @@
         4,
         10,
         2,
-        0
+        5
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 5,
       "yesterdayConfirmed": 2,
       "dailyDeceasedCount": [
         0,
@@ -6840,7 +6840,7 @@
       "recovered": 167,
       "critical": 0,
       "tested": 0,
-      "active": 25,
+      "active": 30,
       "confirmedByCity": {
         "Hiroshima": 4,
         "Onomichi": 2,
@@ -20988,14 +20988,14 @@
       ]
     },
     "Kanto": {
-      "confirmed": 14147,
-      "newlyConfirmed": 293,
+      "confirmed": 14150,
+      "newlyConfirmed": 296,
       "yesterdayConfirmed": 424,
       "deceased": 566,
       "recovered": 10632,
       "critical": 0,
       "tested": 0,
-      "active": 2949,
+      "active": 2952,
       "prefectures": [
         "Chiba",
         "Gunma",
@@ -21043,14 +21043,14 @@
       ]
     },
     "Chugoku": {
-      "confirmed": 294,
-      "newlyConfirmed": 4,
+      "confirmed": 299,
+      "newlyConfirmed": 9,
       "yesterdayConfirmed": 5,
       "deceased": 3,
       "recovered": 257,
       "critical": 0,
       "tested": 0,
-      "active": 34,
+      "active": 39,
       "prefectures": [
         "Hiroshima",
         "Okayama",
@@ -26703,8 +26703,8 @@
       "recoveredCumulativeAvg7d": 18178
     },
     {
-      "confirmed": 298,
-      "confirmedCumulative": 23802,
+      "confirmed": 306,
+      "confirmedCumulative": 23810,
       "deceased": 0,
       "deceasedCumulative": 985,
       "recovered": 0,
@@ -26713,8 +26713,8 @@
       "criticalCumulative": 37,
       "tested": 0,
       "testedCumulative": 599239,
-      "active": 298,
-      "activeCumulative": 4003,
+      "active": 306,
+      "activeCumulative": 4011,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 807,
@@ -26722,10 +26722,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-17",
       "deaths": 0,
-      "confirmedAvg3d": 457,
-      "confirmedAvg7d": 394,
-      "confirmedCumulativeAvg3d": 23396,
-      "confirmedCumulativeAvg7d": 22568,
+      "confirmedAvg3d": 460,
+      "confirmedAvg7d": 395,
+      "confirmedCumulativeAvg3d": 23399,
+      "confirmedCumulativeAvg7d": 22569,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 0,
       "deceasedCumulativeAvg3d": 985,
@@ -26736,5 +26736,5 @@
       "recoveredCumulativeAvg7d": 18344
     }
   ],
-  "updated": "2020-07-17T14:05:28+09:00"
+  "updated": "2020-07-17T14:33:20+09:00"
 }
