@@ -7711,7 +7711,7 @@
       "name": "Gunma"
     },
     {
-      "confirmed": 162,
+      "confirmed": 163,
       "dailyConfirmedCount": [
         0,
         0,
@@ -7904,10 +7904,10 @@
         5,
         3,
         4,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 4,
       "dailyDeceasedCount": [
         0,
@@ -8109,7 +8109,7 @@
       "recovered": 74,
       "critical": 0,
       "tested": 0,
-      "active": 88,
+      "active": 89,
       "confirmedByCity": {
         "Wadomari town": 1,
         "Kirishima": 1,
@@ -16422,7 +16422,7 @@
       "name": "Saga"
     },
     {
-      "confirmed": 42,
+      "confirmed": 43,
       "dailyConfirmedCount": [
         0,
         0,
@@ -16615,10 +16615,10 @@
         1,
         1,
         10,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 10,
       "dailyDeceasedCount": [
         0,
@@ -16820,7 +16820,7 @@
       "recovered": 28,
       "critical": 0,
       "tested": 0,
-      "active": 14,
+      "active": 15,
       "confirmedByCity": {
         "Marukame": 1,
         "Takamatsu": 7,
@@ -21010,14 +21010,14 @@
       ]
     },
     "Shikoku": {
-      "confirmed": 210,
-      "newlyConfirmed": 0,
+      "confirmed": 211,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 11,
       "deceased": 9,
       "recovered": 180,
       "critical": 0,
       "tested": 0,
-      "active": 21,
+      "active": 22,
       "prefectures": [
         "Ehime",
         "Kagawa",
@@ -21026,14 +21026,14 @@
       ]
     },
     "Kyushu": {
-      "confirmed": 1485,
-      "newlyConfirmed": 16,
+      "confirmed": 1486,
+      "newlyConfirmed": 17,
       "yesterdayConfirmed": 22,
       "deceased": 45,
       "recovered": 1238,
       "critical": 0,
       "tested": 0,
-      "active": 202,
+      "active": 203,
       "prefectures": [
         "Fukuoka",
         "Kagoshima",
@@ -26706,8 +26706,8 @@
       "recoveredCumulativeAvg7d": 18178
     },
     {
-      "confirmed": 588,
-      "confirmedCumulative": 24093,
+      "confirmed": 590,
+      "confirmedCumulative": 24095,
       "deceased": 0,
       "deceasedCumulative": 985,
       "recovered": 282,
@@ -26716,8 +26716,8 @@
       "criticalCumulative": 39,
       "tested": 17810,
       "testedCumulative": 617049,
-      "active": 306,
-      "activeCumulative": 4012,
+      "active": 308,
+      "activeCumulative": 4014,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 808,
@@ -26725,7 +26725,7 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-17",
       "deaths": 0,
-      "confirmedAvg3d": 554,
+      "confirmedAvg3d": 555,
       "confirmedAvg7d": 436,
       "confirmedCumulativeAvg3d": 23494,
       "confirmedCumulativeAvg7d": 22610,
@@ -26739,5 +26739,5 @@
       "recoveredCumulativeAvg7d": 18384
     }
   ],
-  "updated": "2020-07-17T23:05:07+09:00"
+  "updated": "2020-07-18T01:32:44+09:00"
 }
