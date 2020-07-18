@@ -16500,7 +16500,7 @@
       "name": "Saga"
     },
     {
-      "confirmed": 43,
+      "confirmed": 44,
       "dailyConfirmedCount": [
         0,
         0,
@@ -16694,10 +16694,10 @@
         1,
         10,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -16900,7 +16900,7 @@
       "recovered": 28,
       "critical": 0,
       "tested": 0,
-      "active": 15,
+      "active": 16,
       "confirmedByCity": {
         "Marukame": 1,
         "Takamatsu": 7,
@@ -21110,14 +21110,14 @@
       ]
     },
     "Shikoku": {
-      "confirmed": 211,
-      "newlyConfirmed": 0,
+      "confirmed": 212,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "deceased": 9,
       "recovered": 180,
       "critical": 0,
       "tested": 0,
-      "active": 22,
+      "active": 23,
       "prefectures": [
         "Ehime",
         "Kagawa",
@@ -26837,7 +26837,40 @@
       "recoveredAvg7d": 206,
       "recoveredCumulativeAvg3d": 18818,
       "recoveredCumulativeAvg7d": 18384
+    },
+    {
+      "confirmed": 1,
+      "confirmedCumulative": 24100,
+      "deceased": 0,
+      "deceasedCumulative": 985,
+      "recovered": 0,
+      "recoveredCumulative": 19096,
+      "critical": 0,
+      "criticalCumulative": 39,
+      "tested": 0,
+      "testedCumulative": 617049,
+      "active": 1,
+      "activeCumulative": 4019,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 808,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2020-07-18",
+      "deaths": 0,
+      "confirmedAvg3d": 405,
+      "confirmedAvg7d": 381,
+      "confirmedCumulativeAvg3d": 23901,
+      "confirmedCumulativeAvg7d": 22993,
+      "deceasedAvg3d": 0,
+      "deceasedAvg7d": 0,
+      "deceasedCumulativeAvg3d": 985,
+      "deceasedCumulativeAvg7d": 985,
+      "recoveredAvg3d": 183,
+      "recoveredAvg7d": 178,
+      "recoveredCumulativeAvg3d": 19002,
+      "recoveredCumulativeAvg7d": 18562
     }
   ],
-  "updated": "2020-07-18T04:47:58+09:00"
+  "updated": "2020-07-18T11:32:29+09:00"
 }
