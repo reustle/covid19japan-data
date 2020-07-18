@@ -20,8 +20,17 @@ const rollingAverage = (values, size, key) => {
 }
 
 const niceMax = (values) => {
-  const tickCount = 3
+  const tickCount = 5
   let max = Math.max(...values);
+  if (max == 0) {
+    return 1
+  }
+  if (max < 5) {
+    return 5
+  }
+  if (max < 10) {
+    return 10
+  }
   
   let tickIncrement = max / tickCount;
   // Take the tickIncrement and find the nearest power of 10 smaller than tickIncrement.

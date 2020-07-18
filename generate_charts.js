@@ -65,6 +65,24 @@ const drawPrefectureLineCharts = (prefectureSummaries, duration) => {
   }
 }
 
+const drawRegionalLineCharts = (regionalSummaries, duration) => {
+  const avgPeriod = 7
+
+  for (let prefecture of regionalSummaries) {
+    let name = prefecture.name.toLowerCase().replace(/[\s]+/g, '_')
+    let startDate = moment(prefecture.dailyConfirmedStartDate, 'YYYY-MM-DD')
+    let values = _.map(prefecture.dailyConfirmedCount, (o, i) => { 
+      return {value: o, i: i, date: startDate.add(1, 'days').format('YYYY-MM-DD')}
+    })
+    let avgValues = _.slice(charts.rollingAverage(values, avgPeriod, 'value'), values.length - duration)
+
+    values = _.slice(values, values.length - duration)
+    avgValues = _.slice(avgValues, avgValues.length - duration)
+    drawLineChart(values, `region_${name}_confirmed_daily`)
+    drawLineChart(avgValues, `region_${name}_confirmed_daily_avg`)
+  } 
+}
+
 const drawDailyLineCharts = (dailySummaries, duration) => {
   const avgPeriod = 7
 
@@ -91,8 +109,10 @@ const drawDailyLineCharts = (dailySummaries, duration) => {
 const main = () => {
   const summaryFile = fs.readFileSync(`./docs/summary/latest.json`)
   const summary = JSON.parse(summaryFile)
+  console.log(summary.regions)
   drawPrefectureBarCharts(summary.prefectures, 30)
   drawPrefectureLineCharts(summary.prefectures, 60)
+  drawRegionalLineCharts(summary.regions, 60)
   drawDailyLineCharts(summary.daily, 60)
 }
 

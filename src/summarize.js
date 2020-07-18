@@ -7,6 +7,7 @@ const fs = require('fs')
 const verify = require('./verify.js')
 
 const CRUISE_PASSENGER_DISEMBARKED = /^Cruise Disembarked Passenger/
+const TIMELINE_FIRST_DAY = moment('2020-01-08')
 
 const allPrefectures = () => {
   let prefecturesCsv = fs.readFileSync('./src/statusboard/prefectures.csv', 'utf8')
@@ -307,7 +308,7 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
 
   for (let prefectureName of _.keys(prefectureSummary)) {
     let prefecture = prefectureSummary[prefectureName]
-    const firstDay = moment('2020-01-08')
+    const firstDay = TIMELINE_FIRST_DAY
     const daily = generateDailyStatsForPrefecture(prefecture.patients, firstDay)
     if (daily.confirmed && daily.confirmed.length) {
       prefecture.dailyConfirmedCount = daily.confirmed
@@ -348,6 +349,10 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
     prefectureSummary['Diamond Princess Cruise Ship'] = cruiseSummaries.diamondPrincess
   }
 
+  // Give Port of Entry and Unspecified identifiers
+  prefectureSummary['Port Quarantine'].identifier = 'port-of-entry'
+  prefectureSummary['Unspecified'].identifier = 'unspecified'
+
   const prefecturesEn = allPrefectures()
 
   // Mark pseudo-prefectures as such (e.g. Unspecified, Port of Entry, Diamond Princess, Nagasaki Cruise Ship)
@@ -384,9 +389,11 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
 const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
   let diamondPrincess = _.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
   diamondPrincess.name = 'Diamond Princess Cruise Ship'
+  diamondPrincess.idenfifier = 'diamond-princess'
   diamondPrincess.name_ja = 'ダイヤモンド・プリンセス'
   let nagasakiCruise = _.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
   nagasakiCruise.name = 'Nagasaki Cruise Ship'
+  nagasakiCruise.idenfifier = 'nagasaki-cruise'
   nagasakiCruise.name_ja = '長崎のクルーズ船'
 
   let diamondPrincessConfirmedCounts = [0]
@@ -397,7 +404,6 @@ const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
   let diamondPrincessLastDeceased = 0
   let nagasakiLastConfirmed = 0
   let nagasakiLastDeceased = 0
-
 
   // Generate per-day increment data.
   const firstDay = moment('2020-02-04')
@@ -503,6 +509,8 @@ const generateRegionSummary = (prefectureSummary) => {
     critical: 0,
     tested: 0,
     active: 0,
+    dailyConfirmedCount: [],
+    dailyConfirmedStartDate: null,
   }
   const regionPrefectures = getRegionPrefectures()
 
@@ -510,16 +518,31 @@ const generateRegionSummary = (prefectureSummary) => {
   for (let regionName of Object.keys(regionPrefectures)) {
     regionSummary[regionName] = Object.assign({}, REGION_TEMPLATE)
     regionSummary[regionName].prefectures = regionPrefectures[regionName]
+    regionSummary[regionName].name = regionName
+    regionSummary[regionName].dailyConfirmedStartDate = TIMELINE_FIRST_DAY.format('YYYY-MM-DD')
+
     for (let prefectureName of regionPrefectures[regionName]) {
       let prefecture = _.find(prefectureSummary, _.matchesProperty('name', prefectureName))
       if (prefecture) {
         for (let metric of Object.keys(REGION_TEMPLATE)) {
-          regionSummary[regionName][metric] += prefecture[metric]
+          if (typeof prefecture[metric] == 'number') {
+            regionSummary[regionName][metric] += prefecture[metric]
+          }
+        }
+        if (regionSummary[regionName].dailyConfirmedCount.length < 1) {
+          regionSummary[regionName].dailyConfirmedCount = [...prefecture.dailyConfirmedCount]
+        }
+        for (let i = 0; i < prefecture.dailyConfirmedCount.length; i++) {
+          regionSummary[regionName].dailyConfirmedCount[i] += prefecture.dailyConfirmedCount[i]
         }
       }
     }
   }
-  return regionSummary
+
+  // Convert regionSummary in to a sorted array.
+  return _.orderBy(_.values(regionSummary), 
+    ['active', 'newlyConfirmed'],
+    ['desc', 'desc'])
 }
 
 const generateDailyStatsForPrefecture = (patients, firstDay) => {
