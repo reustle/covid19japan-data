@@ -332,6 +332,7 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
   for (let row of manualPrefectureData) {
     if (prefectureSummary[row.prefecture]) {
       prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered)
+      prefectureSummary[row.prefecture].reinfected = safeParseInt(row.reinfected)
       prefectureSummary[row.prefecture].name_ja = row.prefectureJa
     }
   }
@@ -371,7 +372,7 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
 
   // Calculate active patients
   prefectureSummary = _.mapValues(prefectureSummary, (v, k) => {
-    v.active = v.confirmed - v.deceased - v.recovered
+    v.active = v.confirmed - v.deceased - v.recovered + v.reinfected
     return v
   })
 
@@ -490,11 +491,13 @@ const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
   diamondPrincess.deceased = safeParseInt(latestRow.dpDeceased)
   diamondPrincess.critical = safeParseInt(latestRow.dpCritical)
   diamondPrincess.tested = safeParseInt(latestRow.dpTested)
+  diamondPrincess.reinfected = 0
   nagasakiCruise.confirmed = safeParseInt(latestRow.nagasakiConfirmed)
   nagasakiCruise.recovered = safeParseInt(latestRow.nagasakiRecovered)
   nagasakiCruise.deceased = safeParseInt(latestRow.nagasakiDeceased)
   nagasakiCruise.critical = safeParseInt(latestRow.nagasakiCritical)
   nagasakiCruise.tested = safeParseInt(latestRow.nagasakiTested)
+  nagasakiCruise.reinfected = 0
 
   return {diamondPrincess: diamondPrincess, nagasakiCruise: nagasakiCruise}
 }
