@@ -274,12 +274,19 @@ const PREFECTURE_SUMMARY_TEMPLATE = {
 const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts) => {
   let prefectureSummary = {}
 
+  const prefecturesEn = allPrefectures()
+  for (let prefecture of prefecturesEn) {
+    prefectureSummary[prefecture] = Object.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
+    prefectureSummary[prefecture].patients = []
+    prefectureSummary[prefecture].confirmedByCity = {}
+}
+
   for (let patient of patients) {
     let prefectureName = patient.detectedPrefecture
     let cityName = patient.detectedCityTown
 
     if (typeof prefectureSummary[prefectureName] === 'undefined') {
-      prefectureSummary[prefectureName] = _.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
+      prefectureSummary[prefectureName] = Object.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
       prefectureSummary[prefectureName].patients = []
       prefectureSummary[prefectureName].confirmedByCity = {}
     }
@@ -353,8 +360,6 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
   // Give Port of Entry and Unspecified identifiers
   prefectureSummary['Port Quarantine'].identifier = 'port-of-entry'
   prefectureSummary['Unspecified'].identifier = 'unspecified'
-
-  const prefecturesEn = allPrefectures()
 
   // Mark pseudo-prefectures as such (e.g. Unspecified, Port of Entry, Diamond Princess, Nagasaki Cruise Ship)
   prefectureSummary = _.mapValues(prefectureSummary, (v, k) => {
