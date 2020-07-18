@@ -389,11 +389,11 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
 const generateCruiseShipPrefectureSummary = (cruiseCounts) => {
   let diamondPrincess = _.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
   diamondPrincess.name = 'Diamond Princess Cruise Ship'
-  diamondPrincess.idenfifier = 'diamond-princess'
+  diamondPrincess.identifier = 'diamond-princess'
   diamondPrincess.name_ja = 'ダイヤモンド・プリンセス'
   let nagasakiCruise = _.assign({}, PREFECTURE_SUMMARY_TEMPLATE)
   nagasakiCruise.name = 'Nagasaki Cruise Ship'
-  nagasakiCruise.idenfifier = 'nagasaki-cruise'
+  nagasakiCruise.identifier = 'nagasaki-cruise'
   nagasakiCruise.name_ja = '長崎のクルーズ船'
 
   let diamondPrincessConfirmedCounts = [0]
