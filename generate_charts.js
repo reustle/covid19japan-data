@@ -109,7 +109,6 @@ const drawDailyLineCharts = (dailySummaries, duration) => {
 const main = () => {
   const summaryFile = fs.readFileSync(`./docs/summary/latest.json`)
   const summary = JSON.parse(summaryFile)
-  console.log(summary.regions)
   drawPrefectureBarCharts(summary.prefectures, 30)
   drawPrefectureLineCharts(summary.prefectures, 60)
   drawRegionalLineCharts(summary.regions, 60)
