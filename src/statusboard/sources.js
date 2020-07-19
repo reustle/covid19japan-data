@@ -516,7 +516,12 @@ export const sources = {
   },
   kagoshima: {
     gov: {
-      patients: 'https://www.pref.kagoshima.jp/ae06/kenko-fukushi/kenko-iryo/kansen/kansensho/coronavirus.html'
+      patients: 'https://www.pref.kagoshima.jp/ae06/kenko-fukushi/kenko-iryo/kansen/kansensho/coronavirus.html#kokunai'
+    },
+    cities: {
+      kagoshimaCity: {
+        gov: { patients: 'https://www.city.kagoshima.lg.jp/soumu/shichoshitu/kouhou/covid-19/jyoukyousiryou.html' }
+      }
     },
     dashboard: 'https://covid19.code4kagoshima.org/en',
   },
@@ -745,7 +750,7 @@ export const sources = {
     cities: {
       niigataCity: {
         gov: {
-          patients: 'https://www.city.niigata.lg.jp/iryo/kenko/yobou_kansen/kansen/coronavirus.html'
+          patients: 'https://www.city.niigata.lg.jp/iryo/kenko/yobou_kansen/kansen/covid-19/hasseizyoukyou.html'
         }
       }
     },
@@ -797,7 +802,8 @@ export const sources = {
       url: 'http://www.okayama-opendata.jp/ckan/dataset/e6b3c1d2-2f1f-4735-b36e-e45d36d94761/resource/60ecd874-0f71-4d9f-9a8a-936fad9c99bc/download/pcr.csv'
     },
     gov: {
-      patients: 'https://www.pref.okayama.jp/page/645925.html'
+      summary: 'https://www.pref.okayama.jp/page/645925.html#03-kennaijoukyou',
+      patients: 'https://www.pref.okayama.jp/page/667843.html',
     },
     summary: {
       format: 'html',
