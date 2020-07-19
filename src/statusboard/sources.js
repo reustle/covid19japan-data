@@ -685,6 +685,13 @@ export const sources = {
     gov: {
       patients: 'https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/'
     },
+    cities: {
+      nagasakiCity: {
+        gov: {
+          patients: 'https://www.city.nagasaki.lg.jp/fukushi/450000/454000/p034301.html'
+        }
+      }
+    },
     source: 'https://github.com/CodeForNagasaki/covid19',
     dashboard: 'https://nagasaki.stopcovid19.jp/'
   },
