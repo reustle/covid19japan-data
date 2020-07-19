@@ -690,7 +690,12 @@ export const sources = {
         gov: {
           patients: 'https://www.city.nagasaki.lg.jp/fukushi/450000/454000/p034301.html'
         }
-      }
+      },
+      sasebo: {
+        gov: {
+          patients: 'https://www.city.sasebo.lg.jp/hokenhukusi/kenkou/covid19-hasseijokyo.html'
+        }
+      },
     },
     source: 'https://github.com/CodeForNagasaki/covid19',
     dashboard: 'https://nagasaki.stopcovid19.jp/'
