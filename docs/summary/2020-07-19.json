@@ -3938,7 +3938,7 @@
       "deaths": 13
     },
     {
-      "confirmed": 622,
+      "confirmed": 638,
       "dailyConfirmedCount": [
         0,
         0,
@@ -4133,10 +4133,10 @@
         21,
         19,
         25,
-        5
+        21
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 5,
+      "newlyConfirmed": 21,
       "yesterdayConfirmed": 25,
       "dailyDeceasedCount": [
         0,
@@ -4340,7 +4340,7 @@
       "recovered": 485,
       "critical": 0,
       "tested": 0,
-      "active": 108,
+      "active": 124,
       "confirmedByCity": {
         "Nagoya": 305,
         "Owari": 11,
@@ -22272,14 +22272,14 @@
       "name": "Kyushu"
     },
     {
-      "confirmed": 1817,
-      "newlyConfirmed": 13,
+      "confirmed": 1833,
+      "newlyConfirmed": 29,
       "yesterdayConfirmed": 33,
       "deceased": 100,
       "recovered": 1542,
       "critical": 0,
       "tested": 0,
-      "active": 182,
+      "active": 198,
       "dailyConfirmedCount": [
         0,
         0,
@@ -22474,7 +22474,7 @@
         48,
         49,
         58,
-        18
+        50
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -29023,8 +29023,8 @@
       "recoveredCumulativeAvg7d": 18601
     },
     {
-      "confirmed": 464,
-      "confirmedCumulative": 25229,
+      "confirmed": 480,
+      "confirmedCumulative": 25245,
       "deceased": 0,
       "deceasedCumulative": 986,
       "recovered": 0,
@@ -29033,8 +29033,8 @@
       "criticalCumulative": 41,
       "tested": 0,
       "testedCumulative": 626149,
-      "active": 464,
-      "activeCumulative": 4877,
+      "active": 480,
+      "activeCumulative": 4893,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -29042,10 +29042,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-19",
       "deaths": 0,
-      "confirmedAvg3d": 574,
-      "confirmedAvg7d": 484,
-      "confirmedCumulativeAvg3d": 24698,
-      "confirmedCumulativeAvg7d": 23573,
+      "confirmedAvg3d": 580,
+      "confirmedAvg7d": 487,
+      "confirmedCumulativeAvg3d": 24704,
+      "confirmedCumulativeAvg7d": 23575,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 0,
       "deceasedCumulativeAvg3d": 986,
@@ -29056,5 +29056,5 @@
       "recoveredCumulativeAvg7d": 18796
     }
   ],
-  "updated": "2020-07-19T19:47:41+09:00"
+  "updated": "2020-07-19T20:17:49+09:00"
 }
