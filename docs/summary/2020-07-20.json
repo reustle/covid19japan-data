@@ -3581,7 +3581,8 @@
         "Kakogawa": 1,
         "Kasai": 1,
         "Akashi": 1,
-        "Inami": 1
+        "Inami": 1,
+        "Akaishi": 1
       },
       "newlyDeceased": 0,
       "yesterdayDeceased": 0,
@@ -8260,7 +8261,7 @@
       "name": "Kagoshima"
     },
     {
-      "confirmed": 154,
+      "confirmed": 156,
       "dailyConfirmedCount": [
         0,
         0,
@@ -8456,10 +8457,10 @@
         5,
         8,
         3,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
@@ -8664,7 +8665,7 @@
       "recovered": 100,
       "critical": 0,
       "tested": 0,
-      "active": 52,
+      "active": 54,
       "confirmedByCity": {
         "Nara": 14,
         "Koriyama": 2,
@@ -8689,7 +8690,7 @@
       "name": "Nara"
     },
     {
-      "confirmed": 152,
+      "confirmed": 154,
       "dailyConfirmedCount": [
         0,
         0,
@@ -8885,10 +8886,10 @@
         0,
         0,
         0,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -9093,7 +9094,7 @@
       "recovered": 141,
       "critical": 0,
       "tested": 0,
-      "active": 8,
+      "active": 10,
       "confirmedByCity": {
         "Naha": 21,
         "Kadena": 2,
@@ -13723,7 +13724,8 @@
         "Matsuyama": 35,
         "Niihama": 1,
         "Matsumae": 2,
-        "Touon": 1
+        "Touon": 1,
+        "Uwajima": 1
       },
       "newlyDeceased": 0,
       "yesterdayDeceased": 0,
@@ -21938,14 +21940,14 @@
       "name": "Kanto"
     },
     {
-      "confirmed": 4211,
-      "newlyConfirmed": 8,
+      "confirmed": 4213,
+      "newlyConfirmed": 10,
       "yesterdayConfirmed": 127,
       "deceased": 156,
       "recovered": 3268,
       "critical": 0,
       "tested": 0,
-      "active": 788,
+      "active": 790,
       "dailyConfirmedCount": [
         0,
         0,
@@ -22141,7 +22143,7 @@
         123,
         148,
         148,
-        15
+        17
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -22156,14 +22158,14 @@
       "name": "Kansai"
     },
     {
-      "confirmed": 1555,
-      "newlyConfirmed": 0,
+      "confirmed": 1557,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 34,
       "deceased": 45,
       "recovered": 1264,
       "critical": 0,
       "tested": 0,
-      "active": 257,
+      "active": 259,
       "dailyConfirmedCount": [
         0,
         0,
@@ -22359,7 +22361,7 @@
         40,
         55,
         66,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -29165,8 +29167,8 @@
       "recoveredCumulativeAvg7d": 18826
     },
     {
-      "confirmed": 185,
-      "confirmedCumulative": 25459,
+      "confirmed": 189,
+      "confirmedCumulative": 25463,
       "deceased": 0,
       "deceasedCumulative": 986,
       "recovered": 0,
@@ -29175,8 +29177,8 @@
       "criticalCumulative": 43,
       "tested": 0,
       "testedCumulative": 634997,
-      "active": 185,
-      "activeCumulative": 4897,
+      "active": 189,
+      "activeCumulative": 4901,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -29184,10 +29186,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-20",
       "deaths": 0,
-      "confirmedAvg3d": 452,
+      "confirmedAvg3d": 453,
       "confirmedAvg7d": 480,
-      "confirmedCumulativeAvg3d": 25166,
-      "confirmedCumulativeAvg7d": 24059,
+      "confirmedCumulativeAvg3d": 25167,
+      "confirmedCumulativeAvg7d": 24060,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 0,
       "deceasedCumulativeAvg3d": 986,
@@ -29198,5 +29200,5 @@
       "recoveredCumulativeAvg7d": 19036
     }
   ],
-  "updated": "2020-07-20T15:47:35+09:00"
+  "updated": "2020-07-20T16:05:32+09:00"
 }
