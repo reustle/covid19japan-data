@@ -47,39 +47,40 @@ const drawPrefectureBarCharts = (prefectureSummaries, duration) => {
   }
 }
 
+const drawLineChartsForPlace = (place, period, avgPeriod, outputName) => {
+  let startDate = moment(place.dailyConfirmedStartDate, 'YYYY-MM-DD')
+  let values = _.map(place.dailyConfirmedCount, (o, i) => { 
+    return {value: o, i: i, date: startDate.add(1, 'days').format('YYYY-MM-DD')}
+  })
+
+  // Calculate avg values.
+  let avgValues = _.slice(charts.rollingAverage(values, avgPeriod, 'value'), values.length - period)
+  // Strip values to only the desired duration.
+  avgValues = _.slice(avgValues, avgValues.length - period)
+  values = _.slice(values, values.length - period)
+  // Remove the last value if it is 0 (indicating we don't have any new data for that day.)
+  if (values[values.length - 1].value == 0) {
+    values = _.slice(values, 0, values.length - 1)
+  }
+  if (avgValues[avgValues.length - 1].value == 0) {
+    avgValues = _.slice(avgValues, 0, avgValues.length - 1)
+  }
+
+  drawLineChart(values, outputName)
+  drawLineChart(avgValues, `${outputName}_avg`)
+}
+
 const drawPrefectureLineCharts = (prefectureSummaries, duration) => {
-  const avgPeriod = 7
-
-  for (let prefecture of prefectureSummaries) {
-    let name = prefecture.name.toLowerCase().replace(/[\s]+/g, '_')
-    let startDate = moment(prefecture.dailyConfirmedStartDate, 'YYYY-MM-DD')
-    let values = _.map(prefecture.dailyConfirmedCount, (o, i) => { 
-      return {value: o, i: i, date: startDate.add(1, 'days').format('YYYY-MM-DD')}
-    })
-    let avgValues = _.slice(charts.rollingAverage(values, avgPeriod, 'value'), values.length - duration)
-
-    values = _.slice(values, values.length - duration)
-    avgValues = _.slice(avgValues, avgValues.length - duration)
-    drawLineChart(values, `${name}_confirmed_daily`)
-    drawLineChart(avgValues, `${name}_confirmed_daily_avg`)
+  for (let place of prefectureSummaries) {
+    let name = place.name.toLowerCase().replace(/[\s]+/g, '_')
+    drawLineChartsForPlace(place, duration, 7, `${name}_confirmed_daily`)
   }
 }
 
 const drawRegionalLineCharts = (regionalSummaries, duration) => {
-  const avgPeriod = 7
-
-  for (let prefecture of regionalSummaries) {
-    let name = prefecture.name.toLowerCase().replace(/[\s]+/g, '_')
-    let startDate = moment(prefecture.dailyConfirmedStartDate, 'YYYY-MM-DD')
-    let values = _.map(prefecture.dailyConfirmedCount, (o, i) => { 
-      return {value: o, i: i, date: startDate.add(1, 'days').format('YYYY-MM-DD')}
-    })
-    let avgValues = _.slice(charts.rollingAverage(values, avgPeriod, 'value'), values.length - duration)
-
-    values = _.slice(values, values.length - duration)
-    avgValues = _.slice(avgValues, avgValues.length - duration)
-    drawLineChart(values, `region_${name}_confirmed_daily`)
-    drawLineChart(avgValues, `region_${name}_confirmed_daily_avg`)
+  for (let place of regionalSummaries) {
+    let name = place.name.toLowerCase().replace(/[\s]+/g, '_')
+    drawLineChartsForPlace(place, duration, 7, `region_${name}_confirmed_daily`)
   } 
 }
 
@@ -89,18 +90,34 @@ const drawDailyLineCharts = (dailySummaries, duration) => {
   let dailyCharts = ['deceased', 'recovered', 'critical', 'tested', 'confirmed', 'active']
   for (let chartValue of dailyCharts) {
     let values = _.map(dailySummaries, o => { return { date: o.date, value:o[chartValue] } })
-    const avgValues = _.slice(charts.rollingAverage(values, avgPeriod, 'value'), values.length - duration)
+    let avgValues = _.slice(charts.rollingAverage(values, avgPeriod, 'value'), values.length - duration)
     values = _.slice(values, values.length - duration)
-    let lastValue = _.last(values)
+    // Remove the last value if it is 0 (indicating we don't have any new data for that day.)
+    if (values[values.length - 1].value == 0) {
+      values = _.slice(values, 0, values.length - 1)
+    }
+    if (avgValues[avgValues.length - 1].value == 0) {
+      avgValues = _.slice(avgValues, 0, avgValues.length - 1)
+    }
+  
+
     drawLineChart(values, `${chartValue}_daily`)
     drawLineChart(avgValues, `${chartValue}_daily_avg`)
   }
 
   for (let chartValue of dailyCharts) {
     let values = _.map(dailySummaries, o => { return { date: o.date, value:o[`${chartValue}Cumulative`] } })
-    const avgValues = _.slice(charts.rollingAverage(values, avgPeriod, 'value'), values.length - duration)
+    let avgValues = _.slice(charts.rollingAverage(values, avgPeriod, 'value'), values.length - duration)
     values = _.slice(values, values.length - duration)
-    let lastValue = _.last(values)
+    // Remove the last value if it is 0 (indicating we don't have any new data for that day.)
+    if (values[values.length - 1].value == 0) {
+      values = _.slice(values, 0, values.length - 1)
+    }
+    if (avgValues[avgValues.length - 1].value == 0) {
+      avgValues = _.slice(avgValues, 0, avgValues.length - 1)
+    }
+  
+
     drawLineChart(values, `${chartValue}_cumulative`)
     drawLineChart(avgValues, `${chartValue}_cumulative_avg`)
   }
