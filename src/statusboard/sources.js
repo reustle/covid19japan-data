@@ -913,7 +913,8 @@ export const sources = {
       },
       koshigaya: {
         gov: {
-          patients: 'https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/hokenjo/kansensho/koshigaya_contents0310.html'
+          patients: 'https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/hokenjo/kansensho/kansensyo/index.html',
+          summary: 'https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/hokenjo/kansensho/koshigaya_contents0310.html'
         }
       }
     },
