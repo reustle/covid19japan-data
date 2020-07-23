@@ -120,6 +120,14 @@ export const sources = {
       patients: 'https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html',
       summary: 'https://www.pref.chiba.lg.jp/shippei/press/2019/ncov-index.html'
     },
+    cities: {
+      funabashi: {
+        gov: { patients: 'https://www.city.funabashi.lg.jp/kenkou/kansenshou/001/p076941.html' }
+      },
+      chibaCity: {
+        gov: { patients: 'https://www.city.chiba.jp/hokenfukushi/iryoeisei/seisaku/covid-19/kanjamatome.html' }
+      },
+    },
     source: 'https://github.com/civictechzenchiba/covid19-chiba',
     dashboard: 'https://covid19.civictech.chiba.jp/'
   },
