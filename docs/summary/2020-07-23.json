@@ -9616,7 +9616,7 @@
       "deaths": 0
     },
     {
-      "confirmed": 139,
+      "confirmed": 142,
       "dailyConfirmedCount": [
         0,
         0,
@@ -9814,12 +9814,12 @@
         9,
         3,
         3,
-        0,
+        3,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
         0,
@@ -10026,7 +10026,7 @@
       "recovered": 91,
       "critical": 0,
       "tested": 0,
-      "active": 48,
+      "active": 51,
       "confirmedByCity": {
         "Utsunomiya": 40,
         "Oyama": 3,
@@ -22033,14 +22033,14 @@
   ],
   "regions": [
     {
-      "confirmed": 15988,
+      "confirmed": 15991,
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 418,
+      "yesterdayConfirmed": 421,
       "deceased": 570,
       "recovered": 12052,
       "critical": 0,
       "tested": 0,
-      "active": 3366,
+      "active": 3369,
       "dailyConfirmedCount": [
         0,
         0,
@@ -22238,7 +22238,7 @@
         320,
         235,
         353,
-        458,
+        461,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
@@ -29568,8 +29568,8 @@
       "recoveredCumulativeAvg7d": 19329
     },
     {
-      "confirmed": 789,
-      "confirmedCumulative": 27116,
+      "confirmed": 792,
+      "confirmedCumulative": 27119,
       "deceased": 1,
       "deceasedCumulative": 990,
       "recovered": 496,
@@ -29578,8 +29578,8 @@
       "criticalCumulative": 55,
       "tested": 13084,
       "testedCumulative": 670619,
-      "active": 292,
-      "activeCumulative": 5475,
+      "active": 295,
+      "activeCumulative": 5478,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -29587,9 +29587,9 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-22",
       "deaths": 1,
-      "confirmedAvg3d": 611,
-      "confirmedAvg7d": 604,
-      "confirmedCumulativeAvg3d": 26378,
+      "confirmedAvg3d": 612,
+      "confirmedAvg7d": 605,
+      "confirmedCumulativeAvg3d": 26379,
       "confirmedCumulativeAvg7d": 25256,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 0,
@@ -29601,5 +29601,5 @@
       "recoveredCumulativeAvg7d": 19630
     }
   ],
-  "updated": "2020-07-23T09:43:38+09:00"
+  "updated": "2020-07-23T10:18:35+09:00"
 }
