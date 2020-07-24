@@ -67,6 +67,16 @@ const normalizeFixedWidthNumbers = v => {
     .replace(/９/g, '9')
 }
 
+const parseJapaneseNumber = (v) => {
+  let num = normalizeFixedWidthNumbers(v)
+  const tenThousandPattern = new RegExp('([0-9]+)万([0-9]+)', 'iu')
+  const tenThousandMatch = num.match(tenThousandPattern)
+  if (tenThousandMatch) {
+    return parseInt(tenThousandMatch[1]) * 10000 + parseInt(tenThousandMatch[2])
+  }
+  return parseInt(num)
+}
+
 const extractDailySummary = (url, fetchImpl) => {
   url = urlWithProxy(url)
   console.log(url)
@@ -82,7 +92,7 @@ const extractDailySummary = (url, fetchImpl) => {
       let dom = cheerio.load(text)
       let contents = dom('section.module--content').text()
 
-      const prefecturePattern = new RegExp('▽([^▽ ]+?)は([0-9０-９]+)人', 'igu')
+      const prefecturePattern = new RegExp('▽([^▽ ]+?)は([0-9０-９万]+)人', 'igu')
       let prefectureMatches = contents.matchAll(prefecturePattern)
       if (prefectureMatches) {
         for (const prefectureMatch of prefectureMatches) {
@@ -90,37 +100,65 @@ const extractDailySummary = (url, fetchImpl) => {
           // Sometimes prefectures are comma separated.
           const multiPrefectures = prefectureMatch[1].split('、')
           if (multiPrefectures.length == 1) {
-            values.prefectureCounts[prefectureMatch[1]] = parseInt(normalizeFixedWidthNumbers(prefectureMatch[2]))
+            values.prefectureCounts[prefectureMatch[1]] = parseJapaneseNumber(prefectureMatch[2])
           } else {
             for (let multiPrefecture of multiPrefectures) {
 
-              values.prefectureCounts[multiPrefecture.trim()] = parseInt(normalizeFixedWidthNumbers(prefectureMatch[2]))
+              values.prefectureCounts[multiPrefecture.trim()] = parseJapaneseNumber(prefectureMatch[2])
             }
           }
         }
       }
 
-      const portAndQuartantine = new RegExp('▽厚生労働省の職員.*?([0-9０-９]+)人', 'iu')
+      const portAndQuartantine = new RegExp('▽空港の検疫で.*?([0-9０-９万]+)人', 'iu')
       let portMatch = contents.match(portAndQuartantine)
       if (portMatch) {
-        values.portQuarantineCount = parseInt(normalizeFixedWidthNumbers(portMatch[1]))
+        values.portQuarantineCount = parseJapaneseNumber(portMatch[1])
       }
 
-      const totalPatients = new RegExp('日本で感染が確認された人は.*?([0-9０-９]+)人', 'iu')
+      const totalPatients = new RegExp('日本で感染が確認された人は.*?([0-9０-９万]+)人', 'iu')
       let totalMatch = contents.match(totalPatients)
       if (totalMatch) {
-        values.totalCount = parseInt(normalizeFixedWidthNumbers(totalMatch[1]))
+        values.totalCount = parseJapaneseNumber(totalMatch[1])
       }
 
-      //const criticalPatients = new RegExp('厚生労働省によりますと、重症者は.*')
-      //console.log(values)
+      const deathsPattern = new RegExp('亡くなった人は、.*▽国内で感染した人が([0-9０-９万]+)人', 'iu')
+      let deathsMatch = contents.match(deathsPattern)
+      if (deathsMatch) {
+        values.deceased = parseJapaneseNumber(deathsMatch[1])
+      }
+
+      const criticalPatientsPattern = new RegExp('厚生労働省によりますと、重症者は.*?([0-9０-９万]+)人', 'iu')
+      let criticalMatch = contents.match(criticalPatientsPattern)
+      if (criticalMatch) {
+        values.critical = parseJapaneseNumber(criticalMatch[1])
+      }
+
+      const recoveredJapanPattern = new RegExp('症状が改善して退院した人などは、.*▽国内で感染した人が([0-9０-９万]+)人', 'iu')
+      let recoveredJapan = contents.match(recoveredJapanPattern)
+      if (recoveredJapan) {
+        values.recoveredJapan = parseJapaneseNumber(recoveredJapan[1])
+      }
+
+      const recoveredTotalPattern = new RegExp('▽クルーズ船の乗客・乗員が([0-9０-９万]+)人の合わせて([0-9０-９万]+)', 'iu')
+      let recoveredTotal = contents.match(recoveredTotalPattern)
+      if (recoveredTotal) {
+        values.recoveredTotal = parseJapaneseNumber(recoveredTotal[2])
+      }
+
+      console.log(values)
+
       return values
     })
 }
 
-const prefectureCountsInEnglish = (values) => {
-  return  _.mapKeys(values.prefectureCounts, (v, k) => { return prefectureLookup[k] })
+const prefectureCountsInEnglish = (result) => {
+  const prefectureCountsInEn =  _.mapKeys(result.prefectureCounts, (v, k) => { return prefectureLookup[k] })
+  const translatedResults = Object.assign({}, result)
+  translatedResults.prefectureCounts = prefectureCountsInEn
+  return translatedResults
 }
+
 
 const sortedPrefectureCounts = (values) => {
   let prefectureCountsInEnglish = prefectureCountsInEnglish(values)

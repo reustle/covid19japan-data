@@ -11,6 +11,7 @@ const { fetchSummaryFromHtml } = require('./html.js')
 import { select, selectAll, event } from 'd3-selection'
 import _ from 'lodash';
 import moment from 'moment';
+//import { response } from 'express'
 
 const DATA_START_ROW = 3
 const rowByPrefecture = {}
@@ -369,7 +370,8 @@ const fetchNHKReport = (url) => {
   extractDailySummary(url).then(values => {
     let results = prefectureCountsInEnglish(values)
     responses.nhk = results
-    _.forEach(results, (v, k) => {
+    let prefectureCounts = results.prefectureCounts
+    _.forEach(prefectureCounts, (v, k) => {
       let prefectureId = k.toLowerCase()
       if (typeof rowByPrefecture[prefectureId] === 'undefined') {
         return
@@ -470,6 +472,21 @@ const initNHKButton = () => {
       }
       clipboardContents += `${value}\n`
       console.log(prefectureId, value)
+    }
+
+    // Add other aux data at the end.
+    console.log(responses.nhk)
+    if (responses.nhk) {
+      if (!responses.nhk.portQuarantineCount) { responses.nhk.portQuarantineCount = 0 }
+      clipboardContents += `${responses.nhk.portQuarantineCount}\n`
+      if (!responses.nhk.critical) { responses.nhk.critical = 0 }
+      clipboardContents += `${responses.nhk.critical}\n`
+      if (!responses.nhk.deceased) { responses.nhk.deceased = 0 }
+      clipboardContents += `${responses.nhk.deceased}\n`
+      if (!responses.nhk.recoveredJapan) { responses.nhk.recoveredJapan = 0 }
+      clipboardContents += `${responses.nhk.recoveredJapan}\n`
+      if (!responses.nhk.recoveredTotal) { responses.nhk.recoveredTotal = 0 }
+      clipboardContents += `${responses.nhk.recoveredTotal}\n`
     }
 
     navigator.clipboard.writeText(clipboardContents)
