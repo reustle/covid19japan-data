@@ -209,7 +209,12 @@ export const sources = {
         gov: {
           patients: 'https://www.city.kitakyushu.lg.jp/kurashi/menu01_00278.html'
         }
-      }
+      },
+      kurume: {
+        gov: {
+          patients: 'http://www.city.kurume.fukuoka.jp/1050kurashi/2060hokeneisei/3005cov2019/index.html#corona-ind9'
+        }
+      },
     },
     source: 'https://ckan.open-governmentdata.org/dataset/401000_pref_fukuoka_covid19_patients',
     dashboard: 'https://fukuoka.stopcovid19.jp/',
