@@ -23,6 +23,8 @@ jobs:
         run: npm install
         
       - name: Download and Generate JSON data
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: node generate.js 2>&1 | tee docs/output.txt
 
       - name: Generate charts

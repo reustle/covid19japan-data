@@ -3,19 +3,29 @@
 // like object for consumption.
 //
 
+const process = require('process')
 const fetch = require('node-fetch')
 const _ = require('lodash')
+const dotenv = require('dotenv')
 
-const SHEET_API_KEY = 'AIzaSyADbri4duIMaXSaqtFMyAJW0qCDCgFdlF0'
+// Read GOOGLE_API_KEY from .env if it exists.
+dotenv.config()
+
 const SHEET_ID = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
 
+const getSheetApiKey = () => {
+  return process.env.GOOGLE_API_KEY
+}
+
 const sheetURL = (sheetId) => {
-  return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}?key=${SHEET_API_KEY}`
+  const sheetApiKey = getSheetApiKey()
+  return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}?key=${sheetApiKey}`
 }
 
 const sheetRowsURL = (sheetId, sheetName) => {
-  let encodedSheetName = encodeURIComponent(sheetName)
-  return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodedSheetName}?key=${SHEET_API_KEY}`
+  const sheetApiKey = getSheetApiKey()
+  const encodedSheetName = encodeURIComponent(sheetName)
+  return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodedSheetName}?key=${sheetApiKey}`
 }
 
 const fetchTabs = () => {

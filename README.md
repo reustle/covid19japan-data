@@ -348,6 +348,13 @@ Our data can sometimes disagree with MHLW or prefectural governments because of 
 
 # Development
 
+Create a `.env` file that defines your own [Google Sheets API Key](https://developers.google.com/sheets/api/guides/authorizing#APIKey) in the repository with the following:
+
+```
+GOOGLE_API_KEY={{your_generated_google_sheets_api_key}
+```
+
+
 To build the data ingestion and publishing tool:
 
 ```
@@ -373,6 +380,8 @@ node publish.js
 Every 15 minutes a Github Workflow runs `.github/workflows/update.yml` to fetch the latest
 data from the spreadsheet, runs a set of post processing on it and checks in the generated
 JSON file in to the `docs/` directory.
+
+Github workflow will use Github secrets for the main repository for the api key, reading from GOOGLE_API_KEY.
 
 If it detects some data inconsistencies, it will abort and not check in any data. The data
 verification checks are in `src/verify.js`
