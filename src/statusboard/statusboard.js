@@ -11,7 +11,6 @@ const { fetchSummaryFromHtml } = require('./html.js')
 import { select, selectAll, event } from 'd3-selection'
 import _ from 'lodash';
 import moment from 'moment';
-//import { response } from 'express'
 
 const DATA_START_ROW = 3
 const rowByPrefecture = {}
