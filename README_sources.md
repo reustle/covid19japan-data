@@ -32,7 +32,7 @@ For the most comprehensive and up-to-date list of sources, use our data source s
 For the machine readable list of data sources, see [src/sources.js](src/sources.js)
 
 
-**Prefecture-specific Data**
+### Prefecture-specific Data
 
 |Prefecture/City    | Patients Source    | Dashboard | Notes |
 |--------|----------|----------|------|
@@ -115,7 +115,7 @@ For the machine readable list of data sources, see [src/sources.js](src/sources.
 |Yamaguchi    |[新型コロナウイルス感染症の山口県内での発生について](https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/koronahassei.html)||
 |Yamanashi    |[新型コロナウイルス感染症の県内における発生状況](https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html)||
 
-**Machine Readable Data Sources**
+### Machine readable
 
 | Prefecture/City | Dashboard | Patient Data | PCR | Other |
 |-----------------|-----------|--------------|-----|-------|
@@ -124,7 +124,7 @@ For the machine readable list of data sources, see [src/sources.js](src/sources.
 | Saitama | [saitama.stopcovid19.jp](https://saitama.stopcovid19.jp/) |
 | Tokyo | [stopcovid19.metro.tokyo.lg.jp](https://stopcovid19.metro.tokyo.lg.jp/en/) |
 
-# Data Discrepancies
+## Data Discrepancies
 
 Our data can sometimes disagree with MHLW or prefectural governments because of different policies we are using to input the data. Here are our known discrepancies and why:
 
