@@ -5,9 +5,9 @@
 This repository publishes the data export of the [COVID19 Japan Patient Database (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY/edit) that is used by [covid19japan.com](https://covid19japan.com). You can find more details about contributing to the sheet [in this document](https://docs.google.com/document/d/1JbQn10KvmYYUHCPa7LObsUCG1m_tVY-S4BrchzRMzBI/edit).
 
 
- * [Data Formats](README_data_formats.md)
  * [Data Sources](README_sources.md)
  * [Development](README_development.md)
+ * [Data Format](README_data_format.md)
  * [Help Wanted](#help-wanted)
  * [Licensing](#data-license-and-attribution)
 
