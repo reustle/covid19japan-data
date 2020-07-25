@@ -93,7 +93,11 @@ const postProcessData = (rawData) => {
       'cruisePassengerDisembarked': row.cruisePassengerDisembarked,
       'detectedAtPort': row.detectedAtPort,
       'deceasedDate': parseShortDate(row.deceased),
+      'deceasedReportedDate': parseShortDate(row.deathReportedDate),
       'sourceURL': row.sourceS,
+      'prefectureURL': row.prefectureURLAuto,
+      'cityURL': row.cityURLAuto,
+      'deathURL': row.deathURLAuto
     }
 
     // filter empty cells.
