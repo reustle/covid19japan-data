@@ -377,7 +377,11 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts)
 
   // Calculate active patients
   prefectureSummary = _.mapValues(prefectureSummary, (v, k) => {
-    v.active = Math.max(v.confirmed - v.deceased - v.recovered + v.reinfected, 0)
+    let reinfected = v.reinfected
+    if (typeof reinfected != "number") {
+      reinfected = 0
+    }
+    v.active = Math.max(v.confirmed - v.deceased - v.recovered + reinfected, 0)
     return v
   })
 
