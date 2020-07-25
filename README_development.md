@@ -2,10 +2,10 @@
 
 ## Setting up
 
-Create a `.env` file that defines your own [Google Sheets API Key](https://developers.google.com/sheets/api/guides/authorizing#APIKey) in the repository with the following:
+Create a `.env` file that defines your own [Google Sheets API Key (Instructions to generate one)](https://developers.google.com/sheets/api/guides/authorizing#APIKey) in the repository with the following:
 
 ```
-GOOGLE_API_KEY={{your_generated_google_sheets_api_key}
+GOOGLE_API_KEY="Generated_Google_API_Key"
 ```
 
 
