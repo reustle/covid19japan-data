@@ -17,7 +17,6 @@ const rowByPrefecture = {}
 const responses = {}
 
 const fetchPrefectureLatest = (prefectureSource, rowId, city) => {
-  console.log(rowId)
   if (prefectureSource.latest) {
     fetchSummaryFromHtml(prefectureSource.latest.url, prefectureSource.latest.extract, prefectureSource.latest.encoding)
       .then(result => {
@@ -60,7 +59,6 @@ const fetchPrefectureSummary = (prefectureSource, prefectureId, city) => {
   } else if (prefectureSource.summary.format == 'html') {
     fetchSummaryFromHtml(prefectureSource.summary.url, prefectureSource.summary.extract, prefectureSource.summary.encoding)
       .then(result => {
-        console.log(prefectureId, result)
         if (result) {
           if (result.image) {
             createLinkCell(prefectureId, 'gov-confirmed', 'image', 'image', result.image, city)
