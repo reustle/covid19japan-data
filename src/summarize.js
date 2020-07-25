@@ -68,6 +68,8 @@ const DAILY_SUMMARY_TEMPLATE = {
   confirmedCumulative: 0,
   deceased: 0,
   deceasedCumulative: 0,
+  reportedDeceased: 0,
+  reportedDeceasedCumulative: 0,
   recovered: 0,
   recoveredCumulative: 0,
   critical: 0,
@@ -98,13 +100,33 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
       } 
       dailySummary[dateAnnounced].confirmed += 1
     }
+
     if (patient.patientStatus == 'Deceased') {
-      let dateDeceased = patient.deceasedDate
+      let dateDeceased = dateAnnounced
+      let dateReported = dateAnnounced
+
+      // Use deceasedDate if that exists.
+      if (patient.deceasedDate) {
+        dateDeceased = patient.deceasedDate
+      }
+
+      // Use reported date if that exists when it comes to death reports.
+      if (patient.deceasedReportedDate) {
+        dateReported = patient.deceasedReportedDate
+      }
+
       if (dateDeceased) {
         if (!dailySummary[dateDeceased]) {
           dailySummary[dateDeceased] = _.assign({}, DAILY_SUMMARY_TEMPLATE)
         } 
         dailySummary[dateDeceased].deceased += 1
+      }
+
+      if (dateReported) {
+        if (!dailySummary[dateReported]) {
+          dailySummary[dateReported] = _.assign({}, DAILY_SUMMARY_TEMPLATE)
+        } 
+        dailySummary[dateReported].reportedDeceased += 1
       }
     }
   }
@@ -137,6 +159,7 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
   // Calculate the cumulative and incremental numbers by iterating through all the days in order
   let confirmedCumulative = 0
   let deceasedCumulative = 0
+  let reportedDeceasedCumulative = 0
 
   for (let dailySum of orderedDailySummary) {
     // confirmed.
@@ -145,11 +168,15 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
     // deceased
     deceasedCumulative += dailySum.deceased
     dailySum.deceasedCumulative = deceasedCumulative
+    // reportedDeceased
+    reportedDeceasedCumulative += dailySum.reportedDeceased
+    dailySum.reportedDeceasedCumulative = reportedDeceasedCumulative
   }  
 
   const cumulativeKeys = [
     'recoveredCumulative',
     'deceasedCumulative',
+    'reportedDeceasedCumulative',
     'criticalCumulative',
     'testedCumulative',
     'cruiseConfirmedCumulative',
@@ -224,6 +251,8 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
     'confirmedCumulative', 
     'deceased', 
     'deceasedCumulative',
+    'reportedDeceased',
+    'reportedDeceasedCumulative',
     'recovered',
     'recoveredCumulative'
   ]
