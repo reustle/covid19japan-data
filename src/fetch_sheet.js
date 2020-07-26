@@ -7,6 +7,7 @@ const process = require('process')
 const fetch = require('node-fetch')
 const _ = require('lodash')
 const dotenv = require('dotenv')
+const {google} = require('googleapis')
 
 // Read GOOGLE_API_KEY from .env if it exists.
 dotenv.config()
@@ -24,6 +25,24 @@ const sheetRowsURL = (sheetId, sheetName) => {
   const sheetApiKey = getSheetApiKey()
   const encodedSheetName = encodeURIComponent(sheetName)
   return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodedSheetName}?key=${sheetApiKey}`
+}
+
+const fetchWithSheetsService = (sheetId, sheetName, fields) => {
+  const sheets = google.sheets({version: 'v4', auth: getSheetApiKey()});
+  return new Promise((resolve, reject) => {
+    sheets.spreadsheets.get({
+      spreadsheetId: sheetId,
+      ranges: [sheetName],
+      fields: fields
+    }, (err, res) => {
+      if (err) {
+        reject(err)
+        return
+      }
+      //const rows = res.sheets[0];
+      resolve(res.data)
+    });
+  })
 }
 
 const fetchTabs = (sheetId) => {
@@ -82,3 +101,4 @@ const fetchRows = (sheetId, sheetName, headerNormalizer) => {
 
 exports.fetchTabs = fetchTabs;
 exports.fetchRows = fetchRows;
+exports.fetchWithSheetsService = fetchWithSheetsService;
