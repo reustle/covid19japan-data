@@ -323,7 +323,7 @@ export const sources = {
     },
     gov: {
       patients: 'http://www.pref.hokkaido.lg.jp/hf/kth/kak/hasseijoukyou.htm',
-      summary: 'http://www.pref.hokkaido.lg.jp/ss/tkk/singatakoronahaien.htm',
+      summary: 'http://www.pref.hokkaido.lg.jp/ss/ssa/singatakoronahaien.htm',
     },
     cities: {
       sapporo: {
@@ -368,7 +368,16 @@ export const sources = {
           patients: 'https://www.nishi.or.jp/kurashi/anshin/infomation/k_00022020111.html',
           summary: 'https://www.nishi.or.jp/kurashi/anshin/infomation/k_00022020111.html'
         }
-      }
+      },
+      akashi: {
+        gov: { patients: 'https://www.city.akashi.lg.jp/anshin/corona/sinai_kansen.html' }
+      },
+      kobe: {
+        gov: { patients: 'https://www.city.kobe.lg.jp/a73576/kenko/health/infection/protection/covid_19.html' }
+      },
+      amagasaki: {
+        gov: { patients: 'https://www.city.amagasaki.hyogo.jp/kurashi/kenko/kansensyo/1020379.html' }
+      },
     },
     source: 'https://github.com/stop-covid19-hyogo/covid19',
     dashboard: 'https://stop-covid19-hyogo.org/'
