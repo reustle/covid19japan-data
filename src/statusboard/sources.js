@@ -670,7 +670,7 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/covid19-miyazaki/covid19/development/data/data.json'
     },
     gov: {
-      patients: 'https://www.pref.miyazaki.lg.jp/kenko/hoken/kansensho/covid19/hassei.html'
+      patients: 'https://www.pref.miyazaki.lg.jp/kansensho-taisaku/covid-19/hassei_list.html'
     },
     source: 'https://github.com/covid19-miyazaki/covid19',
     dashboard: 'https://covid19-miyazaki.netlify.app/'
