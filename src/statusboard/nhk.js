@@ -110,7 +110,7 @@ const extractDailySummary = (url, fetchImpl) => {
         }
       }
 
-      const portAndQuartantine = new RegExp('▽空港の検疫で.*?([0-9０-９万]+)人', 'iu')
+      const portAndQuartantine = new RegExp('空港の検疫で.*?([0-9０-９万]+)人', 'iu')
       let portMatch = contents.match(portAndQuartantine)
       if (portMatch) {
         values.portQuarantineCount = parseJapaneseNumber(portMatch[1])
@@ -134,13 +134,13 @@ const extractDailySummary = (url, fetchImpl) => {
         values.critical = parseJapaneseNumber(criticalMatch[1])
       }
 
-      const recoveredJapanPattern = new RegExp('症状が改善して退院した人などは、.*国内で感染した人が([0-9０-９万]+)人', 'iu')
+      const recoveredJapanPattern = new RegExp('症状が改善して退院した.*国内で感染した人が([0-9０-９万]+)人', 'iu')
       let recoveredJapan = contents.match(recoveredJapanPattern)
       if (recoveredJapan) {
         values.recoveredJapan = parseJapaneseNumber(recoveredJapan[1])
       }
 
-      const recoveredTotalPattern = new RegExp('症状が改善して退院した人などは、.*クルーズ船の乗客・乗員が([0-9０-９万]+)人の合わせて([0-9０-９万]+)', 'iu')
+      const recoveredTotalPattern = new RegExp('症状が改善して退院した.*クルーズ船の乗客・乗員が([0-9０-９万]+)人の合わせて([0-9０-９万]+)', 'iu')
       let recoveredTotal = contents.match(recoveredTotalPattern)
       if (recoveredTotal) {
         values.recoveredTotal = parseJapaneseNumber(recoveredTotal[2])
