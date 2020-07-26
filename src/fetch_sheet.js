@@ -27,22 +27,32 @@ const sheetRowsURL = (sheetId, sheetName) => {
   return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodedSheetName}?key=${sheetApiKey}`
 }
 
-const fetchWithSheetsService = (sheetId, sheetName, fields) => {
+const fetchSheets = (sheetsAndTabs, fields) => {
   const sheets = google.sheets({version: 'v4', auth: getSheetApiKey()});
-  return new Promise((resolve, reject) => {
-    sheets.spreadsheets.get({
-      spreadsheetId: sheetId,
-      ranges: [sheetName],
-      fields: fields
-    }, (err, res) => {
-      if (err) {
-        reject(err)
-        return
-      }
-      //const rows = res.sheets[0];
-      resolve(res.data)
-    });
-  })
+  const requests = []
+  for (let sheetInfo of sheetsAndTabs) {
+    let tabs = sheetInfo.tabs
+    let sheetId = sheetInfo.sheetId
+
+    let request = new Promise((resolve, reject) => {
+      sheets.spreadsheets.get({
+        spreadsheetId: sheetId,
+        ranges: tabs,
+        fields: fields
+      }, (err, res) => {
+        if (err) {
+          reject(err)
+          return
+        }
+        console.log(res.data)
+        //const rows = res.sheets[0];
+        resolve(res.data)
+      });
+    })
+    requests.push(request)
+  }
+
+  return Promise.all(requests)
 }
 
 const fetchTabs = (sheetId) => {
@@ -101,4 +111,4 @@ const fetchRows = (sheetId, sheetName, headerNormalizer) => {
 
 exports.fetchTabs = fetchTabs;
 exports.fetchRows = fetchRows;
-exports.fetchWithSheetsService = fetchWithSheetsService;
+exports.fetchSheets = fetchSheets;
