@@ -33,7 +33,8 @@ const headerOrDateNormalizer = v => {
 }
 
 const fetchTokyoCounts = async () => {
-  return FetchSheet.fetchRows('Tokyo Counts', headerOrDateNormalizer)
+  const sheetId = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
+  return FetchSheet.fetchRows(sheetId, 'Tokyo Counts', headerOrDateNormalizer)
     .then(data => {
       return createTokyoDataset(data)
     })

@@ -39,22 +39,23 @@ const generateLastUpdated = async (patients) => {
   return lastUpdated
 }
 
-
 const fetchAndSummarize = async (dateString) => {
-  const daily = await FetchSheet.fetchRows('Sum By Day')
-  const prefectures = await FetchSheet.fetchRows('Prefecture Data')
-  const cruiseCounts = await FetchSheet.fetchRows('Cruise Sum By Day')
+  const latestSheetId = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
+
+  const daily = await FetchSheet.fetchRows(latestSheetId, 'Sum By Day')
+  const prefectures = await FetchSheet.fetchRows(latestSheetId, 'Prefecture Data')
+  const cruiseCounts = await FetchSheet.fetchRows(latestSheetId, 'Cruise Sum By Day')
 
   // Merge multiple patient lists.
   const patientListFetches = [
-    FetchPatientData.fetchPatientData('Patient Data'),
-    FetchPatientData.fetchPatientData('Tokyo'),
-    FetchPatientData.fetchPatientData('Osaka'),
-    FetchPatientData.fetchPatientData('Kanagawa'),
-    FetchPatientData.fetchPatientData('Aichi'),
-    FetchPatientData.fetchPatientData('Chiba'),
-    FetchPatientData.fetchPatientData('Saitama'),
-    FetchPatientData.fetchPatientData('Hokkaido'),
+    FetchPatientData.fetchPatientData(latestSheetId, 'Patient Data'),
+    FetchPatientData.fetchPatientData(latestSheetId, 'Tokyo'),
+    FetchPatientData.fetchPatientData(latestSheetId, 'Osaka'),
+    FetchPatientData.fetchPatientData(latestSheetId, 'Kanagawa'),
+    FetchPatientData.fetchPatientData(latestSheetId, 'Aichi'),
+    FetchPatientData.fetchPatientData(latestSheetId, 'Chiba'),
+    FetchPatientData.fetchPatientData(latestSheetId, 'Saitama'),
+    FetchPatientData.fetchPatientData(latestSheetId, 'Hokkaido'),
   ]
 
   Promise.all(patientListFetches)

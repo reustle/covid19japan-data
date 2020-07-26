@@ -138,8 +138,8 @@ const postProcessData = (rawData) => {
 }
 
 
-async function fetchPatientData(sheetName) {
-  return FetchSheet.fetchRows(sheetName)
+async function fetchPatientData(sheetId, sheetName) {
+  return FetchSheet.fetchRows(sheetId, sheetName)
     .then(data => {
       return postProcessData(data)
     })

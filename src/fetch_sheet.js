@@ -11,8 +11,6 @@ const dotenv = require('dotenv')
 // Read GOOGLE_API_KEY from .env if it exists.
 dotenv.config()
 
-const SHEET_ID = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
-
 const getSheetApiKey = () => {
   return process.env.GOOGLE_API_KEY
 }
@@ -28,8 +26,8 @@ const sheetRowsURL = (sheetId, sheetName) => {
   return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodedSheetName}?key=${sheetApiKey}`
 }
 
-const fetchTabs = () => {
-  return fetch(sheetURL(SHEET_ID))
+const fetchTabs = (sheetId) => {
+  return fetch(sheetURL(sheetId))
     .then(response => response.json())
     .then(json => {
       let tabs = {}
@@ -70,8 +68,8 @@ const rowsToObjects = (json, normalizeHeaderName) => {
 
 /// @param sheetName String, name of the tab to fetch.
 /// @param headerNormalizer Function, takes a header name and normalize it into a key. Default _.camelCase.
-const fetchRows = (sheetName, headerNormalizer) => {
-  return fetch(sheetRowsURL(SHEET_ID, sheetName))
+const fetchRows = (sheetId, sheetName, headerNormalizer) => {
+  return fetch(sheetRowsURL(sheetId, sheetName))
     .then(response => response.json())
     .then(json => {
        return rowsToObjects(json, headerNormalizer)
