@@ -3,7 +3,12 @@
 
 const functions = require('firebase-functions');
 const proxy = require('./proxy.js');
+const status = require('./status.js');
 
 exports.proxy = functions.https.onRequest((request, response) => {
   proxy.fetch(request, response)
+})
+
+exports.status = functions.https.onRequest((request, response) => {
+  status.setStatus(request, response)
 })
