@@ -25,7 +25,7 @@ jobs:
       - name: Download and Generate JSON data
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        run: node generate.js 2>&1 | tee docs/output.txt
+        run: node generate.js 2>&1 | tee output.txt
 
       - name: Generate charts
         run: node generate_charts.js
