@@ -14624,7 +14624,7 @@
       "name": "Ehime"
     },
     {
-      "confirmed": 80,
+      "confirmed": 84,
       "dailyConfirmedCount": [
         0,
         0,
@@ -15042,7 +15042,7 @@
       "recovered": 46,
       "critical": 0,
       "tested": 0,
-      "active": 32,
+      "active": 36,
       "confirmedByCity": {
         "Kumamoto": 5,
         "Kumamoto city": 15,
@@ -23130,14 +23130,14 @@
       "name": "Chubu"
     },
     {
-      "confirmed": 2159,
+      "confirmed": 2163,
       "newlyConfirmed": 0,
       "yesterdayConfirmed": 132,
       "deceased": 46,
       "recovered": 1358,
       "critical": 0,
       "tested": 0,
-      "active": 766,
+      "active": 770,
       "dailyConfirmedCount": [
         0,
         0,
@@ -31263,7 +31263,46 @@
       "recoveredAvg7d": 312,
       "recoveredCumulativeAvg3d": 21552,
       "recoveredCumulativeAvg7d": 20893
+    },
+    {
+      "confirmed": 4,
+      "confirmedCumulative": 30523,
+      "deceased": 0,
+      "deceasedCumulative": 998,
+      "reportedDeceased": 0,
+      "reportedDeceasedCumulative": 998,
+      "recovered": 0,
+      "recoveredCumulative": 21762,
+      "critical": 0,
+      "criticalCumulative": 66,
+      "tested": 0,
+      "testedCumulative": 715283,
+      "active": 4,
+      "activeCumulative": 7763,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2020-07-37",
+      "deaths": 0,
+      "confirmedAvg3d": 547,
+      "confirmedAvg7d": 690,
+      "confirmedCumulativeAvg3d": 30242,
+      "confirmedCumulativeAvg7d": 28737,
+      "deceasedAvg3d": 0,
+      "deceasedAvg7d": 1,
+      "deceasedCumulativeAvg3d": 998,
+      "deceasedCumulativeAvg7d": 995,
+      "reportedDeceasedAvg3d": 1,
+      "reportedDeceasedAvg7d": 1,
+      "reportedDeceasedCumulativeAvg3d": 998,
+      "reportedDeceasedCumulativeAvg7d": 994,
+      "recoveredAvg3d": 144,
+      "recoveredAvg7d": 286,
+      "recoveredCumulativeAvg3d": 21697,
+      "recoveredCumulativeAvg7d": 21180
     }
   ],
-  "updated": "2020-07-27T00:44:10+09:00"
+  "updated": "2020-07-27T10:33:01+09:00"
 }
