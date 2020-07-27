@@ -33,6 +33,9 @@ jobs:
       - name: Publish Latest Data
         run: node publish.js
 
+      - name: Send run status
+        run: curl --data-urlencode "status@output.txt" --data-urlencode "name=covid19japan-update" https://us-central1-covid19-analysis.cloudfunctions.net/status
+
       - name: Git Status
         run: git status
 
