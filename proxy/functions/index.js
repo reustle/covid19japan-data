@@ -10,5 +10,5 @@ exports.proxy = functions.https.onRequest((request, response) => {
 })
 
 exports.status = functions.https.onRequest((request, response) => {
-  status.setStatus(request, response)
+  status.status(request, response)
 })

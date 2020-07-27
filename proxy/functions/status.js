@@ -1,7 +1,7 @@
 const admin = require('firebase-admin');
 admin.initializeApp();
 
-exports.setStatus = async (request, response) => {
+exports.status = async (request, response) => {
   let name = 'latest'
   if (request.query.name) {
     name = request.query.name
@@ -10,12 +10,32 @@ exports.setStatus = async (request, response) => {
     name = request.body.name
   }
 
-  let status = 'blank'
+  let status = ''
   if (request.query.status) {
     status = request.query.status
   }
   if (request.body.status) {
     status = request.body.status
+  }
+
+  if (!status || status.length < 1) {
+    // read only
+    const db = admin.firestore();
+    db.collection('status').doc(name).get()
+      .then(doc => {
+        let data = doc.data()
+        console.log(data)
+        if (data && data.status) {
+          response.send(data.status)
+        } else {
+          response.send(`Not found for "${name}".`)
+        }
+        return
+      })
+      .catch(err => {
+        response.send(err)
+      })
+    return
   }
 
   const jstOffset = 9 * 60 * 60 * 1000
