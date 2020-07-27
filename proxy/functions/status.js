@@ -18,10 +18,19 @@ exports.setStatus = async (request, response) => {
     status = request.body.status
   }
 
-  console.log({status: status, name: name})
+  const jstOffset = 9 * 60 * 60 * 1000
+  let utcTimestamp = new Date(new Date().toUTCString())
+  let jstTimestamp = new Date()
+  jstTimestamp.setTime((utcTimestamp.getTime() + jstOffset))
+
+  let statusInfo = {
+    status: status,
+    utcTimestamp: utcTimestamp.toISOString(),
+    japanTimestamp: jstTimestamp.toISOString()
+  }
 
   const db = admin.firestore();
   const docRef = db.collection('status').doc(name);
-  const writeResult = await docRef.set({status: status})
-  response.json({result: writeResult, status: status})
+  const writeResult = await docRef.set(statusInfo)
+  response.json({result: writeResult, status: statusInfo})
 }
