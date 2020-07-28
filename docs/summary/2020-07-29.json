@@ -21695,7 +21695,7 @@
       "name": "Unspecified"
     },
     {
-      "confirmed": 7,
+      "confirmed": 8,
       "dailyConfirmedCount": [
         0,
         0,
@@ -21899,10 +21899,10 @@
         1,
         0,
         0,
-        1
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -22115,7 +22115,7 @@
       "recovered": 4,
       "critical": 0,
       "tested": 0,
-      "active": 3,
+      "active": 4,
       "confirmedByCity": {},
       "newlyDeceased": 0,
       "yesterdayDeceased": 0,
@@ -23464,14 +23464,14 @@
       "name": "Kyushu"
     },
     {
-      "confirmed": 437,
-      "newlyConfirmed": 23,
+      "confirmed": 438,
+      "newlyConfirmed": 24,
       "yesterdayConfirmed": 11,
       "deceased": 3,
       "recovered": 295,
       "critical": 0,
       "tested": 0,
-      "active": 142,
+      "active": 143,
       "dailyConfirmedCount": [
         0,
         0,
@@ -23675,7 +23675,7 @@
         26,
         12,
         17,
-        42
+        43
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -31416,8 +31416,8 @@
       "recoveredCumulativeAvg7d": 21230
     },
     {
-      "confirmed": 979,
-      "confirmedCumulative": 32096,
+      "confirmed": 980,
+      "confirmedCumulative": 32097,
       "deceased": 1,
       "deceasedCumulative": 1001,
       "reportedDeceased": 3,
@@ -31428,8 +31428,8 @@
       "criticalCumulative": 76,
       "tested": 25728,
       "testedCumulative": 746229,
-      "active": 283,
-      "activeCumulative": 8284,
+      "active": 284,
+      "activeCumulative": 8285,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -31455,5 +31455,5 @@
       "recoveredCumulativeAvg7d": 21610
     }
   ],
-  "updated": "2020-07-28T23:06:12+09:00"
+  "updated": "2020-07-29T01:06:20+09:00"
 }
