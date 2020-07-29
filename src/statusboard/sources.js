@@ -710,7 +710,9 @@ export const sources = {
       url: 'https://data.bodik.jp/dataset/420000_covidcounts/resource/438f03f1-0ee8-466d-a5d9-e874f5367507'
     },
     gov: {
-      patients: 'https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/'
+      patients: 'https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/',
+      patientsList: 'https://twitter.com/ngs_ken_iryou',
+      deaths: 'https://twitter.com/ngs_ken_iryou',
     },
     cities: {
       nagasakiCity: {
@@ -722,6 +724,9 @@ export const sources = {
         gov: {
           patients: 'https://www.city.sasebo.lg.jp/hokenhukusi/kenkou/covid19-hasseijokyo.html'
         }
+      },
+      isahaya: {
+        gov: { patients: 'https://www.city.isahaya.nagasaki.jp/post77/64813.html' }
       },
     },
     source: 'https://github.com/CodeForNagasaki/covid19',
@@ -984,12 +989,13 @@ export const sources = {
     cities: {
       shizuokaCity: {
         gov: {
-          patients: 'https://www.city.shizuoka.lg.jp/388_000101.html'
+          patients: 'https://www.city.shizuoka.lg.jp/388_000109.html'
         },
         source: 'https://github.com/kazuomatz/covid19',
         dashboard: 'https://stopcovid19.city.shizuoka.lg.jp/'
       },
       hanamatsu: {
+        gov: { patients: 'https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_kanjya.html' },
         patients: {
           url: 'https://opendata.pref.shizuoka.jp/dataset/8113/resource/44704/221309_hamamatsu_covid19_patients.csv'
         },
