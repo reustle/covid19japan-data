@@ -9590,7 +9590,7 @@
       "name": "Nara"
     },
     {
-      "confirmed": 191,
+      "confirmed": 192,
       "dailyConfirmedCount": [
         0,
         0,
@@ -9797,10 +9797,10 @@
         4,
         14,
         6,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 6,
       "dailyDeceasedCount": [
         0,
@@ -10016,7 +10016,7 @@
       "recovered": 127,
       "critical": 0,
       "tested": 0,
-      "active": 64,
+      "active": 65,
       "confirmedByCity": {
         "Utsunomiya": 43,
         "Oyama": 3,
@@ -13547,7 +13547,7 @@
       "name": "Fukui"
     },
     {
-      "confirmed": 118,
+      "confirmed": 110,
       "dailyConfirmedCount": [
         0,
         0,
@@ -13754,10 +13754,10 @@
         3,
         2,
         4,
-        16
+        8
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 16,
+      "newlyConfirmed": 8,
       "yesterdayConfirmed": 4,
       "dailyDeceasedCount": [
         0,
@@ -13973,7 +13973,7 @@
       "recovered": 88,
       "critical": 0,
       "tested": 0,
-      "active": 30,
+      "active": 22,
       "confirmedByCity": {
         "Niigata": 11,
         "Kamo": 1,
@@ -13989,7 +13989,7 @@
         "Shibata": 1,
         "Kashiwazaki": 3,
         "Kashiwazaki ": 1,
-        "Niigata City": 3
+        "Niigata City": 11
       },
       "newlyDeceased": 0,
       "yesterdayDeceased": 0,
@@ -17566,7 +17566,7 @@
         "Tsuyama": 1,
         "Kurashiki": 3,
         "Osaka": 2,
-        "Okayama City": 19
+        "Okayama City": 21
       },
       "newlyDeceased": 0,
       "yesterdayDeceased": 0,
@@ -22872,14 +22872,14 @@
   ],
   "regions": [
     {
-      "confirmed": 19833,
-      "newlyConfirmed": 621,
+      "confirmed": 19834,
+      "newlyConfirmed": 622,
       "yesterdayConfirmed": 568,
       "deceased": 580,
       "recovered": 14869,
       "critical": 0,
       "tested": 0,
-      "active": 4384,
+      "active": 4385,
       "dailyConfirmedCount": [
         0,
         0,
@@ -23086,7 +23086,7 @@
         422,
         501,
         617,
-        656
+        657
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -23330,14 +23330,14 @@
       "name": "Kansai"
     },
     {
-      "confirmed": 3411,
-      "newlyConfirmed": 249,
+      "confirmed": 3403,
+      "newlyConfirmed": 241,
       "yesterdayConfirmed": 210,
       "deceased": 101,
       "recovered": 1694,
       "critical": 0,
       "tested": 0,
-      "active": 1623,
+      "active": 1615,
       "dailyConfirmedCount": [
         0,
         0,
@@ -23544,7 +23544,7 @@
         275,
         394,
         370,
-        441
+        433
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -31872,8 +31872,8 @@
       "recoveredCumulativeAvg7d": 22467
     },
     {
-      "confirmed": 1550,
-      "confirmedCumulative": 36216,
+      "confirmed": 1543,
+      "confirmedCumulative": 36209,
       "deceased": 0,
       "deceasedCumulative": 1008,
       "reportedDeceased": 1,
@@ -31884,8 +31884,8 @@
       "criticalCumulative": 87,
       "tested": 20843,
       "testedCumulative": 806067,
-      "active": 800,
-      "activeCumulative": 10279,
+      "active": 793,
+      "activeCumulative": 10272,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -31893,10 +31893,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-31",
       "deaths": 0,
-      "confirmedAvg3d": 1372,
-      "confirmedAvg7d": 1048,
-      "confirmedCumulativeAvg3d": 34749,
-      "confirmedCumulativeAvg7d": 32523,
+      "confirmedAvg3d": 1370,
+      "confirmedAvg7d": 1047,
+      "confirmedCumulativeAvg3d": 34747,
+      "confirmedCumulativeAvg7d": 32522,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 1,
       "deceasedCumulativeAvg3d": 1007,
@@ -31911,5 +31911,5 @@
       "recoveredCumulativeAvg7d": 22981
     }
   ],
-  "updated": "2020-07-31T23:06:22+09:00"
+  "updated": "2020-07-31T23:19:25+09:00"
 }
