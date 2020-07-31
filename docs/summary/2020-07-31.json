@@ -1874,7 +1874,7 @@
       "name": "Saitama"
     },
     {
-      "confirmed": 1785,
+      "confirmed": 1799,
       "dailyConfirmedCount": [
         0,
         0,
@@ -2081,10 +2081,10 @@
         110,
         167,
         160,
-        178
+        192
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 178,
+      "newlyConfirmed": 192,
       "yesterdayConfirmed": 160,
       "dailyDeceasedCount": [
         0,
@@ -2300,7 +2300,7 @@
       "recovered": 529,
       "critical": 0,
       "tested": 0,
-      "active": 1226,
+      "active": 1240,
       "confirmedByCity": {
         "Nagoya": 691,
         "Owari": 11,
@@ -2818,7 +2818,7 @@
       "name": "Fukuoka"
     },
     {
-      "confirmed": 1621,
+      "confirmed": 1656,
       "dailyConfirmedCount": [
         0,
         0,
@@ -3025,10 +3025,10 @@
         23,
         49,
         49,
-        0
+        35
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 35,
       "yesterdayConfirmed": 49,
       "dailyDeceasedCount": [
         0,
@@ -3244,7 +3244,7 @@
       "recovered": 1207,
       "critical": 0,
       "tested": 0,
-      "active": 366,
+      "active": 401,
       "confirmedByCity": {
         "Chiba": 12,
         "Ichikawa": 64,
@@ -8226,13 +8226,13 @@
       "active": 162,
       "confirmedByCity": {
         "Shizuoka": 3,
-        "Hamamatsu": 54,
+        "Hamamatsu": 58,
         "Shizuoka city": 7,
         "Fujinomiya": 5,
         "Kikukawa": 1,
         "Suntou-gun": 1,
         "Nagaizumi": 1,
-        "Shizuoka City": 8,
+        "Shizuoka City": 10,
         "Kakegawa": 2,
         "Fuji": 1,
         "Shimoda": 1,
@@ -22870,14 +22870,14 @@
   ],
   "regions": [
     {
-      "confirmed": 19672,
-      "newlyConfirmed": 463,
+      "confirmed": 19707,
+      "newlyConfirmed": 498,
       "yesterdayConfirmed": 568,
       "deceased": 579,
       "recovered": 14388,
       "critical": 0,
       "tested": 0,
-      "active": 4705,
+      "active": 4740,
       "dailyConfirmedCount": [
         0,
         0,
@@ -23084,7 +23084,7 @@
         420,
         500,
         617,
-        463
+        533
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -23328,14 +23328,14 @@
       "name": "Kansai"
     },
     {
-      "confirmed": 3369,
-      "newlyConfirmed": 207,
+      "confirmed": 3383,
+      "newlyConfirmed": 221,
       "yesterdayConfirmed": 210,
       "deceased": 101,
       "recovered": 1659,
       "critical": 0,
       "tested": 0,
-      "active": 1616,
+      "active": 1630,
       "dailyConfirmedCount": [
         0,
         0,
@@ -23542,7 +23542,7 @@
         275,
         394,
         370,
-        385
+        413
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -31870,8 +31870,8 @@
       "recoveredCumulativeAvg7d": 22467
     },
     {
-      "confirmed": 810,
-      "confirmedCumulative": 35473,
+      "confirmed": 859,
+      "confirmedCumulative": 35522,
       "deceased": 0,
       "deceasedCumulative": 1007,
       "reportedDeceased": 0,
@@ -31882,8 +31882,8 @@
       "criticalCumulative": 90,
       "tested": 0,
       "testedCumulative": 785224,
-      "active": 810,
-      "activeCumulative": 10287,
+      "active": 859,
+      "activeCumulative": 10336,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -31891,10 +31891,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-07-31",
       "deaths": 0,
-      "confirmedAvg3d": 1125,
-      "confirmedAvg7d": 941,
-      "confirmedCumulativeAvg3d": 34500,
-      "confirmedCumulativeAvg7d": 32417,
+      "confirmedAvg3d": 1141,
+      "confirmedAvg7d": 948,
+      "confirmedCumulativeAvg3d": 34516,
+      "confirmedCumulativeAvg7d": 32424,
       "deceasedAvg3d": 0,
       "deceasedAvg7d": 1,
       "deceasedCumulativeAvg3d": 1007,
@@ -31909,5 +31909,5 @@
       "recoveredCumulativeAvg7d": 22874
     }
   ],
-  "updated": "2020-07-31T16:48:00+09:00"
+  "updated": "2020-07-31T17:06:13+09:00"
 }
