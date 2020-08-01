@@ -5,10 +5,11 @@ const numberPattern = /[0-9]+$/
 const shortDatePattern = /([0-9]+)\/([0-9]+)/
 
 // Post processes the data to normalize field names etc.
-const postProcessData = (rawData) => {
+const postProcessData = (rows) => {
 
   // Check validity of the row.
   const isValidRow = row => {
+    if (!row.patientId || row.patientId == '' || typeof row === 'undefined') { return false }
     if (!row.detectedPrefecture) { return false }
     if (!row.dateAnnounced) { return false }
     return true
@@ -88,7 +89,9 @@ const postProcessData = (rawData) => {
       'mhlwPatientNumber': row.mhlwOrigPatientNumber,
       'prefecturePatientNumber': row.prefecturePatientNumber,
       'cityPrefectureNumber': row.cityPatientNumber,
-      'prefectureSourceURL': row.prefectureUrlAuto,
+      'prefectureSourceURL': row.prefectureSourceURL,
+      'citySourceURL': row.citySourceURL,
+      'deathSourceURL': row.deathSourceURL,
       'charterFlightPassenger': row.charterFlightPassenger,
       'cruisePassengerDisembarked': row.cruisePassengerDisembarked,
       'detectedAtPort': row.detectedAtPort,
@@ -120,6 +123,12 @@ const postProcessData = (rawData) => {
       return v
     })
 
+    // Use row.prefectureUrlAuto if that exists (for backwards compat if the spreadsheet
+    // has that column). Remove after August 2020.
+    if (row.prefectureUrlAuto && !transformedRow.prefectureSourceURL) {
+      transformedRow.prefectureSourceURL = row.prefectureUrlAuto
+    }
+
     // Add a field to indicate whether we count as patient or not.
     transformedRow.confirmedPatient = (transformedRow.patientId != -1)
 
@@ -133,16 +142,64 @@ const postProcessData = (rawData) => {
     return transformedRow
   }
 
-  const rows = _.filter(_.map(rawData, transformRow), isValidRow)
-  return rows
+  const filteredRows = _.filter(_.map(rows, transformRow), isValidRow)
+  return filteredRows
+}
+
+const valuesFromCellObject = (cellObjectRows) => {
+  const rowTransformer = (row) => {
+    let transformed = {}
+    for (let k of _.keys(row)) {
+      let v = row[k]
+      transformed[k] = v.formattedValue
+
+      if (k == 'prefecturePatientNumber' && v.hyperlink) {
+        transformed['prefectureSourceURL'] = v.hyperlink
+      }
+      if (k == 'cityPatientNumber' && v.hyperlink) {
+        transformed['citySourceURL'] = v.hyperlink
+      }
+      if (k == 'deceased' && v.hyperlink) {
+        transformed['deathSourceURL'] = v.hyperlink
+      }
+      if (k == 'deathReportedDate' && v.hyperlink) {
+        transformed['deathSourceURL'] = v.hyperlink
+      }
+    }
+    return transformed
+  }
+
+  const isValidRow = (row) => {
+    if (!row) { return false }
+    if (typeof row.patientNumber === 'undefined' || row.patientNumber == '') { return false }
+    return true
+  }
+
+  return _.filter(_.map(cellObjectRows, rowTransformer), isValidRow)
 }
 
 
-async function fetchPatientData(sheetId, sheetName) {
+const fetchPatientData = async (sheetId, sheetName) => {
   return FetchSheet.fetchRows(sheetId, sheetName)
     .then(data => {
       return postProcessData(data)
     })
 }
 
+// Fetching using the new fetchSheets API.
+const fetchPatientDataFromSheets = async (sheets) => {
+  return FetchSheet.fetchSheets(sheets)
+    .then(responses => {
+      let allPatients = []
+      for (let sheets of responses) {
+        for (let rowsOfSheet of sheets) {
+          const patients = postProcessData(valuesFromCellObject(rowsOfSheet))
+          allPatients = allPatients.concat(patients)
+        }
+      }
+      return allPatients
+    })
+}
+
 exports.fetchPatientData = fetchPatientData;
+exports.fetchPatientDataFromSheets = fetchPatientDataFromSheets;

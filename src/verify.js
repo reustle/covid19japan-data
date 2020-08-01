@@ -48,7 +48,11 @@ const verifyPatients = (patients) => {
   }
 
   if (duplicates.length > 0) {
-    throw new Error(`PatientError: Duplicated patientIds detected ${duplicates}`)
+    if (duplicates.length > 1000) {
+      throw new Error(`PatientError: Duplicated patientIds detected: Total: ${duplicates.length}: First: ${duplicates[0]} `)
+    } else {
+      throw new Error(`PatientError: Duplicated patientIds detected: ${duplicates}: `)
+    }
   }
 
   return patients
