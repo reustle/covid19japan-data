@@ -123,6 +123,12 @@ const postProcessData = (rows) => {
       return v
     })
 
+    // Use row.prefectureUrlAuto if that exists (for backwards compat if the spreadsheet
+    // has that column). Remove after August 2020.
+    if (row.prefectureUrlAuto && !transformedRow.prefectureSourceURL) {
+      transformedRow.prefectureSourceURL = row.prefectureUrlAuto
+    }
+
     // Add a field to indicate whether we count as patient or not.
     transformedRow.confirmedPatient = (transformedRow.patientId != -1)
 
