@@ -27,7 +27,7 @@ const sheetRowsURL = (sheetId, sheetName) => {
   return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodedSheetName}?key=${sheetApiKey}`
 }
 
-const fetchSheets = (sheetsAndTabs, fields) => {
+const fetchSheets = (sheetsAndTabs, fieldMask) => {
   const sheets = google.sheets({version: 'v4', auth: getSheetApiKey()});
   const requests = []
   for (let sheetInfo of sheetsAndTabs) {
@@ -38,15 +38,19 @@ const fetchSheets = (sheetsAndTabs, fields) => {
       sheets.spreadsheets.get({
         spreadsheetId: sheetId,
         ranges: tabs,
-        fields: fields
+        fields: fieldMask
       }, (err, res) => {
         if (err) {
           reject(err)
           return
         }
-        console.log(res.data)
-        //const rows = res.sheets[0];
-        resolve(res.data)
+
+        let parsedSheets = []
+        for (let sheet of res.data.sheets) {
+          let rows = _.map(sheet.data[0].rowData, _.property('values'))
+          parsedSheets.push(sheetRowsToObject(rows))
+        }
+        resolve(parsedSheets)
       });
     })
     requests.push(request)
@@ -54,6 +58,23 @@ const fetchSheets = (sheetsAndTabs, fields) => {
 
   return Promise.all(requests)
 }
+
+
+const sheetRowsToObject = (rows, normalizeHeaderName) => {
+  if (!rows || !rows.length || rows.length < 1) {
+    return []
+  }
+
+  const headerValues = _.map(rows[0], _.property('formattedValue'))
+  const fields = headerFields(_.map(headerValues, normalizeHeaderName))
+  if (fields) {
+    return _.map(_.slice(rows, 1), (v) => { 
+      return _.omitBy(_.zipObject(fields, v), _.isUndefined)
+    })
+  }
+  return []
+}
+
 
 const fetchTabs = (sheetId) => {
   return fetch(sheetURL(sheetId))
@@ -70,29 +91,36 @@ const fetchTabs = (sheetId) => {
     })
 }
 
+
 const defaultNormalizeName = (headerName) => {
   return _.camelCase(headerName)
 }
 
-const headerFields = (json, normalizeHeaderName) => {
-  if (!json || !json.values || json.values.length < 1) {
+const headerFields = (headerRowValues, normalizeHeaderName) => {
+  if (!headerRowValues || headerRowValues.length < 1) {
     return null
   }
   if (!normalizeHeaderName) {
     normalizeHeaderName = defaultNormalizeName
   }
-  return _.filter(_.map(json.values[0], normalizeHeaderName), _.isString)
+  return _.filter(_.map(headerRowValues, normalizeHeaderName), _.isString)
 }
+
 
 const rowsToObjects = (json, normalizeHeaderName) => {
   // First row is the key.
-  let fields = headerFields(json, normalizeHeaderName)
-  if (fields) {
-    return _.map(_.slice(json.values, 1), (v) => { 
-      return _.omitBy(_.zipObject(fields, v), _.isUndefined)
-    })
+  if (!json.values || !json.values.length || json.values.length < 1) {
+    return []
   }
-  return []
+
+  let fields = headerFields(json.values[0], normalizeHeaderName)
+  if (!fields) {
+    return []
+  }
+
+  return _.map(_.slice(json.values, 1), (v) => { 
+    return _.omitBy(_.zipObject(fields, v), _.isUndefined)
+  })
 }
 
 /// @param sheetName String, name of the tab to fetch.

@@ -3,25 +3,31 @@ const _ = require('lodash')
 const Papa = require('papaparse')
 const verify = require('./src/verify.js')
 const FetchSheet = require('./src/fetch_sheet.js')
+const FetchPatient = require('./src/fetch_patient_data.js')
 
 // let summary = JSON.parse(fs.readFileSync('docs/summary/latest.json'))
 // verify.verifyDailySummary(summary.daily)
 // console.log(summary.daily[summary.daily.length - 1])
 
-const fields = "sheets.data.rowData.values(effectiveValue,formattedValue,effectiveFormat.hyperlinkDisplayType,hyperlink)"
+const fieldMask = "sheets.data.rowData.values(effectiveValue,formattedValue,effectiveFormat.hyperlinkDisplayType,hyperlink)"
 const sheetsAndTabs = [
   {sheetId: '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY', tabs: ['Patient Data', 'Aichi']}
 ]
 
-FetchSheet.fetchSheets(sheetsAndTabs, fields)
-  .then((responses) => {
-    for (let response of responses) {
-      for (let sheet of response.sheets) {
-        console.log(sheet.data[0].rowData[146].values)
-      }
-    }
+FetchPatient.fetchPatientDataFromSheets(sheetsAndTabs)
+  .then(patients => {
+    console.log(patients)
+  })
 
-  })
-  .catch((err) => {
-    console.error(err)
-  })
+// FetchSheet.fetchSheets(sheetsAndTabs, fieldMask)
+//   .then((responses) => {
+//     for (let sheetsResponse of responses) {
+//       for (let rows of sheetsResponse) {
+//         console.log(rows[2])
+//       }
+//     }
+
+//   })
+//   .catch((err) => {
+//     console.error(err)
+//   })

@@ -137,12 +137,54 @@ const postProcessData = (rawData) => {
   return rows
 }
 
+const valuesFromCellObject = (cellObjectRows) => {
+  const rowTransformer = (row) => {
+    let transformed = {}
+    for (let k of _.keys(row)) {
+      let v = row[k]
+      transformed[k] = v.formattedValue
 
-async function fetchPatientData(sheetId, sheetName) {
+      if (k == 'prefecturePatientNumber' && v.hyperlink) {
+        transformed['prefectureSourceURL'] = v.hyperlink
+      }
+      if (k == 'cityPatientNumber' && v.hyperlink) {
+        transformed['citySourceURL'] = v.hyperlink
+      }
+      if (k == 'deceased' && v.hyperlink) {
+        transformed['deathSourceURL'] = v.hyperlink
+      }
+      if (k == 'deathReportedDate' && v.hyperlink) {
+        transformed['deathReprotedDate'] = v.hyperlink
+      }
+    }
+    return transformed
+  }
+
+  console.log(cellObjectRows[0])
+  return _.map(cellObjectRows, rowTransformer)
+}
+
+
+const fetchPatientData = async (sheetId, sheetName) => {
   return FetchSheet.fetchRows(sheetId, sheetName)
     .then(data => {
       return postProcessData(data)
     })
 }
 
+const fetchPatientDataFromSheets = async (sheets) => {
+  const fieldMask = 'sheets.data.rowData.values(effectiveValue,formattedValue,effectiveFormat.hyperlinkDisplayType,hyperlink)'
+  return FetchSheet.fetchSheets(sheets, fieldMask)
+    .then(responses => {
+      let patients = []
+      for (let sheets of responses) {
+        console.log(sheets[10])
+        //console.log(_.map(responses, valuesFromCellObject))
+        patients = patients.concat(_.map(_.map(sheets, valuesFromCellObject), postProcessData))
+      }
+      return patients
+    })
+}
+
 exports.fetchPatientData = fetchPatientData;
+exports.fetchPatientDataFromSheets = fetchPatientDataFromSheets;
