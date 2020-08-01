@@ -9,25 +9,23 @@ const FetchPatient = require('./src/fetch_patient_data.js')
 // verify.verifyDailySummary(summary.daily)
 // console.log(summary.daily[summary.daily.length - 1])
 
-const fieldMask = "sheets.data.rowData.values(effectiveValue,formattedValue,effectiveFormat.hyperlinkDisplayType,hyperlink)"
+const fieldMask = 'spreadsheetId,properties,sheets.properties,sheets.data.rowData.values(effectiveValue,formattedValue,effectiveFormat.hyperlinkDisplayType,hyperlink)'
+
 const sheetsAndTabs = [
   {sheetId: '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY', tabs: ['Patient Data', 'Aichi']}
 ]
 
-FetchPatient.fetchPatientDataFromSheets(sheetsAndTabs)
-  .then(patients => {
-    console.log(patients)
+// FetchPatient.fetchPatientDataFromSheets(sheetsAndTabs)
+//   .then(patients => {
+//     console.log(patients)
+//   })
+
+FetchSheet.fetchSheets(sheetsAndTabs, fieldMask)
+  .then((responses) => {
+    for (let sheetsResponse of responses) {
+//      console.log(sheetsResponse)
+    }
   })
-
-// FetchSheet.fetchSheets(sheetsAndTabs, fieldMask)
-//   .then((responses) => {
-//     for (let sheetsResponse of responses) {
-//       for (let rows of sheetsResponse) {
-//         console.log(rows[2])
-//       }
-//     }
-
-//   })
-//   .catch((err) => {
-//     console.error(err)
-//   })
+  .catch((err) => {
+    console.error(err)
+  })

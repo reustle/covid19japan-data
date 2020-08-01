@@ -9,6 +9,8 @@ const _ = require('lodash')
 const dotenv = require('dotenv')
 const {google} = require('googleapis')
 
+const DEFAULT_FIELD_MASK = 'spreadsheetId,properties,sheets.properties,sheets.data.rowData.values(effectiveValue,formattedValue,effectiveFormat.hyperlinkDisplayType,hyperlink)'
+
 // Read GOOGLE_API_KEY from .env if it exists.
 dotenv.config()
 
@@ -27,9 +29,13 @@ const sheetRowsURL = (sheetId, sheetName) => {
   return `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodedSheetName}?key=${sheetApiKey}`
 }
 
+// Use the v4 JS API to fetch sheet data.
 const fetchSheets = (sheetsAndTabs, fieldMask) => {
   const sheets = google.sheets({version: 'v4', auth: getSheetApiKey()});
   const requests = []
+  if (!fieldMask) {
+    fieldMask = DEFAULT_FIELD_MASK
+  }
   for (let sheetInfo of sheetsAndTabs) {
     let tabs = sheetInfo.tabs
     let sheetId = sheetInfo.sheetId

@@ -5,10 +5,11 @@ const numberPattern = /[0-9]+$/
 const shortDatePattern = /([0-9]+)\/([0-9]+)/
 
 // Post processes the data to normalize field names etc.
-const postProcessData = (rawData) => {
+const postProcessData = (rows) => {
 
   // Check validity of the row.
   const isValidRow = row => {
+    if (!row.patientId || row.patientId == '' || typeof row === 'undefined') { return false }
     if (!row.detectedPrefecture) { return false }
     if (!row.dateAnnounced) { return false }
     return true
@@ -88,7 +89,9 @@ const postProcessData = (rawData) => {
       'mhlwPatientNumber': row.mhlwOrigPatientNumber,
       'prefecturePatientNumber': row.prefecturePatientNumber,
       'cityPrefectureNumber': row.cityPatientNumber,
-      'prefectureSourceURL': row.prefectureUrlAuto,
+      'prefectureSourceURL': row.prefectureSourceURL,
+      'citySourceURL': row.citySourceURL,
+      'deathSourceURL': row.deathSourceURL,
       'charterFlightPassenger': row.charterFlightPassenger,
       'cruisePassengerDisembarked': row.cruisePassengerDisembarked,
       'detectedAtPort': row.detectedAtPort,
@@ -133,8 +136,8 @@ const postProcessData = (rawData) => {
     return transformedRow
   }
 
-  const rows = _.filter(_.map(rawData, transformRow), isValidRow)
-  return rows
+  const filteredRows = _.filter(_.map(rows, transformRow), isValidRow)
+  return filteredRows
 }
 
 const valuesFromCellObject = (cellObjectRows) => {
@@ -154,14 +157,19 @@ const valuesFromCellObject = (cellObjectRows) => {
         transformed['deathSourceURL'] = v.hyperlink
       }
       if (k == 'deathReportedDate' && v.hyperlink) {
-        transformed['deathReprotedDate'] = v.hyperlink
+        transformed['deathSourceURL'] = v.hyperlink
       }
     }
     return transformed
   }
 
-  console.log(cellObjectRows[0])
-  return _.map(cellObjectRows, rowTransformer)
+  const isValidRow = (row) => {
+    if (!row) { return false }
+    if (typeof row.patientNumber === 'undefined' || row.patientNumber == '') { return false }
+    return true
+  }
+
+  return _.filter(_.map(cellObjectRows, rowTransformer), isValidRow)
 }
 
 
@@ -172,17 +180,18 @@ const fetchPatientData = async (sheetId, sheetName) => {
     })
 }
 
+// Fetching using the new fetchSheets API.
 const fetchPatientDataFromSheets = async (sheets) => {
-  const fieldMask = 'sheets.data.rowData.values(effectiveValue,formattedValue,effectiveFormat.hyperlinkDisplayType,hyperlink)'
-  return FetchSheet.fetchSheets(sheets, fieldMask)
+  return FetchSheet.fetchSheets(sheets)
     .then(responses => {
-      let patients = []
+      let allPatients = []
       for (let sheets of responses) {
-        console.log(sheets[10])
-        //console.log(_.map(responses, valuesFromCellObject))
-        patients = patients.concat(_.map(_.map(sheets, valuesFromCellObject), postProcessData))
+        for (let rowsOfSheet of sheets) {
+          const patients = postProcessData(valuesFromCellObject(rowsOfSheet))
+          allPatients = allPatients.concat(patients)
+        }
       }
-      return patients
+      return allPatients
     })
 }
 
