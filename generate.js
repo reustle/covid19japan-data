@@ -46,6 +46,20 @@ const fetchAndSummarize = async (dateString) => {
   const prefectures = await FetchSheet.fetchRows(latestSheetId, 'Prefecture Data')
   const cruiseCounts = await FetchSheet.fetchRows(latestSheetId, 'Cruise Sum By Day')
 
+    // Merge multiple patient lists.
+  const patientListTabs = [
+    {sheetId: latestSheetId, tabs: [
+      'Patient Data', 
+      'Aichi',
+      'Chiba',
+      'Hokkaido',
+      'Kanagawa',
+      'Osaka',
+      'Saitama',
+      'Tokyo' 
+    ]}
+]
+
   // Merge multiple patient lists.
   const patientListFetches = [
     FetchPatientData.fetchPatientData(latestSheetId, 'Patient Data'),
@@ -60,7 +74,8 @@ const fetchAndSummarize = async (dateString) => {
 
   Promise.all(patientListFetches)
     .then(patientLists => {
-      let patients = MergePatients.mergePatients(patientLists)
+      let allPatients = _.flatten(patientLists)
+      let patients = MergePatients.mergePatients(allPatients)
       console.log(`Total patients fetched: ${patients.length}`)
 
       generateLastUpdated(patients)
