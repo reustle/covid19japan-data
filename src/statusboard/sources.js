@@ -23,7 +23,6 @@ export const sources = {
     gov: {
       patients: 'https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html',
       patientList: 'https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html',
-      deaths: 'https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html',
       summary: 'https://www.pref.aichi.jp/site/covid19-aichi/'
     },
     source: 'https://github.com/code4nagoya/covid19',
@@ -392,7 +391,7 @@ export const sources = {
       patients: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/hassei.html',
       summary: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/index.html',
       deaths: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/0401d.html',
-      patientsList: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/ichiran.html'
+      patientList: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/ichiran.html'
     },
     summary: {
       format: 'html',
@@ -711,7 +710,7 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/',
-      patientsList: 'https://twitter.com/ngs_ken_iryou',
+      patientList: 'https://twitter.com/ngs_ken_iryou',
       deaths: 'https://twitter.com/ngs_ken_iryou',
     },
     cities: {
@@ -851,7 +850,7 @@ export const sources = {
       extract: html.okinawaSummaryExtract
     },
     gov: {
-      patients: 'https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/covid19_hasseijoukyou.html',
+      patients: 'https://www.pref.okinawa.lg.jp/site/hoken/chiikihoken/kekkaku/press/20200214_covid19_pr1.html',
       summary: 'https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/covid19_hasseijoukyou.html',
       deaths: 'https://www.pref.okinawa.jp/site/hoken/chiikihoken/kekkaku/press/20200416_covid19_pr.html'
     },
@@ -907,8 +906,8 @@ export const sources = {
     },
     gov: {
       summary: 'https://www.pref.saitama.lg.jp/a0701/shingatacoronavirus.html',
-      patients: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/7gatsu/index.html',
-      deaths: 'https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html',
+      patients: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/8gatsu/index.html',
+      patientList: 'https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html'
     },
     summary: {
       format: 'html',

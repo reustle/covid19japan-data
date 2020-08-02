@@ -357,7 +357,18 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureC
           .attr('href', prefectureSource.gov.deaths)
           .attr('target', '_blank')
           .text('link')    
-      }      
+      }    
+      if (prefectureSource.gov.patientList) {
+        select('#statusboard')
+          .append('div')
+          .attr('class', htmlClass)
+          .style('grid-row', rowNumber)
+          .style('grid-column', 'gov-link-list')
+          .append('a')
+          .attr('href', prefectureSource.gov.patientList)
+          .attr('target', '_blank')
+          .text('link')    
+      }    
     }
   }      
 }
