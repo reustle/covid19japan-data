@@ -17731,7 +17731,7 @@
       "name": "Okayama"
     },
     {
-      "confirmed": 80,
+      "confirmed": 81,
       "dailyConfirmedCount": [
         0,
         0,
@@ -17940,10 +17940,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -18161,7 +18161,7 @@
       "recovered": 73,
       "critical": 0,
       "tested": 0,
-      "active": 4,
+      "active": 5,
       "confirmedByCity": {
         "Kochi": 10,
         "Aki": 2,
@@ -24689,14 +24689,14 @@
       "name": "Tohoku"
     },
     {
-      "confirmed": 246,
-      "newlyConfirmed": 2,
+      "confirmed": 247,
+      "newlyConfirmed": 3,
       "yesterdayConfirmed": 3,
       "deceased": 9,
       "recovered": 205,
       "critical": 0,
       "tested": 0,
-      "active": 32,
+      "active": 33,
       "dailyConfirmedCount": [
         0,
         0,
@@ -24905,7 +24905,7 @@
         2,
         1,
         6,
-        2
+        3
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -32172,8 +32172,8 @@
       "recoveredCumulativeAvg7d": 23544
     },
     {
-      "confirmed": 32,
-      "confirmedCumulative": 37811,
+      "confirmed": 33,
+      "confirmedCumulative": 37812,
       "deceased": 0,
       "deceasedCumulative": 1012,
       "reportedDeceased": 0,
@@ -32184,8 +32184,8 @@
       "criticalCumulative": 80,
       "tested": 0,
       "testedCumulative": 824748,
-      "active": 32,
-      "activeCumulative": 11293,
+      "active": 33,
+      "activeCumulative": 11294,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -32211,5 +32211,5 @@
       "recoveredCumulativeAvg7d": 24079
     }
   ],
-  "updated": "2020-08-02T14:07:41+09:00"
+  "updated": "2020-08-02T14:18:22+09:00"
 }
