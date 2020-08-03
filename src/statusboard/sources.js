@@ -206,7 +206,8 @@ export const sources = {
       },
       kitakyushu: {
         gov: {
-          patients: 'https://www.city.kitakyushu.lg.jp/kurashi/menu01_00278.html'
+          patients: 'https://www.city.kitakyushu.lg.jp/kurashi/menu01_00278.html',
+          summary: 'https://www.city.kitakyushu.lg.jp/ho-huku/18901209.html'
         }
       },
       kurume: {
