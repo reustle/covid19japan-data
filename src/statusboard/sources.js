@@ -404,6 +404,11 @@ export const sources = {
       url: 'https://www.pref.ibaraki.jp/1saigai/2019-ncov/hassei.html',
       extract: html.ibarakiLatestExtract
     },
+    cities: {
+      mito: {
+        gov: { patients: 'https://www.city.mito.lg.jp/001245/hokenjo/kansensyou/p021677.html' }
+      }
+    },
     source: 'https://github.com/a01sa01to/covid19-ibaraki/tree/development/data',
     dashboard: 'https://ibaraki.stopcovid19.jp/'
   },
