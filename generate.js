@@ -128,7 +128,7 @@ const writePerPrefecturePatients = (prefectureName, allPatients, dateString) => 
 try {
   // Add 540 = UTC+9 for JST.
   const dateString = moment().utcOffset(540).format('YYYY-MM-DD')
-  fetchAndSummarize(dateString, false)
+  fetchAndSummarize(dateString, true)
 } catch (e) {
   console.error(e)
 }
