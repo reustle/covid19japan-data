@@ -128,7 +128,7 @@ const extractDailySummary = (url, fetchImpl) => {
         values.deceased = parseJapaneseNumber(deathsMatch[1])
       }
 
-      const criticalPatientsPattern = new RegExp('厚生労働省によりますと、重症者は.*?([0-9０-９万]+)人', 'iu')
+      const criticalPatientsPattern = new RegExp('重症者は.*?([0-9０-９万]+)人', 'iu')
       let criticalMatch = contents.match(criticalPatientsPattern)
       if (criticalMatch) {
         values.critical = parseJapaneseNumber(criticalMatch[1])
