@@ -273,6 +273,11 @@ export const sources = {
       url: 'https://www.pref.gunma.jp/07/z87g_00016.html',
       extract: html.gunmaSummaryExtract
     },
+    cities: {
+      maebashi: {
+        gov: { patients: 'https://www.city.maebashi.gunma.jp/kurashi_tetsuzuki/covid19_info/4/index.html' }
+      }
+    },
     source: 'https://github.com/bpr-gunma/covid19',
     dashboard: 'https://stopcovid19.pref.gunma.jp/'
   },
@@ -300,6 +305,11 @@ export const sources = {
         gov: {
           patients: 'https://www.city.hiroshima.lg.jp/site/korona/108656.html'
         },
+      },
+      fukuyama: {
+        gov: {
+          patients: 'http://www.city.fukuyama.hiroshima.jp/soshiki/hokenyobo/'
+        }
       },
     },
     source: 'https://github.com/tatsuya1970/covid19',
@@ -370,10 +380,17 @@ export const sources = {
         }
       },
       akashi: {
-        gov: { patients: 'https://www.city.akashi.lg.jp/anshin/corona/sinai_kansen.html' }
+        gov: { 
+          patients: 'https://www.city.akashi.lg.jp/anshin/anzen/coronataiyo.html',
+          patientList: 'https://www.city.akashi.lg.jp/anshin/corona/sinai_kansen.html' 
+        }
       },
       kobe: {
-        gov: { patients: 'https://www.city.kobe.lg.jp/a73576/kenko/health/infection/protection/covid_19.html' }
+        gov: { 
+          patients: 'https://www.city.kobe.lg.jp/a97852/coronazokusei501_600.html',
+          patientList: 'https://www.city.kobe.lg.jp/a97852/coronazokusei501_600.html',
+          summary: 'https://www.city.kobe.lg.jp/a73576/kenko/health/infection/protection/covid_19.html',
+        }
       },
       amagasaki: {
         gov: { patients: 'https://www.city.amagasaki.hyogo.jp/kurashi/kenko/kansensyo/1020379.html' }
@@ -940,7 +957,12 @@ export const sources = {
           patients: 'https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/hokenjo/kansensho/kansensyo/index.html',
           summary: 'https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/hokenjo/kansensho/koshigaya_contents0310.html'
         }
-      }
+      },
+      kawagoe: {
+        gov: {
+          patients: 'https://www.city.kawagoe.saitama.jp/kenkofukushi/byoki_iryo/kansensho/index.html'
+        }
+      },
     },
     source: 'https://opendata.pref.saitama.lg.jp/data/dataset/covid19-jokyo',
     dashboard: 'https://saitama.stopcovid19.jp/'
