@@ -81,7 +81,7 @@ h1 {
 #statusboard {
   flex-grow: 1;
   display: grid;
-  grid-template-columns: [place] 90px [site-confirmed] 80px [site-recovered] 80px [nhk-confirmed] 60px [gov-link-patients] 60px [gov-latest] 300px [gov-link-summary] 80px [gov-link-list] 60px [gov-link-deaths] 60px [gov-confirmed] 60px [gov-recovered] 60px [gov-deceased] 60px [dash-link] 40px [dash-confirmed] 60px [dash-latest] 80px [dash-today] 60px [dash-yesterday] 60px [row-end];
+  grid-template-columns: [place] 90px [site-confirmed] 80px [site-recovered] 80px [nhk-confirmed] 60px [gov-link-patients] 60px [gov-link-list] 60px [gov-link-summary] 80px [gov-link-deaths] 60px [gov-latest] 300px [gov-confirmed] 60px [gov-recovered] 60px [gov-deceased] 60px [dash-link] 40px [dash-confirmed] 60px [dash-latest] 80px [dash-today] 60px [dash-yesterday] 60px [row-end];
   grid-template-rows: repeat(49, 30px);
   grid-gap: 1px; }
   #statusboard .item {
