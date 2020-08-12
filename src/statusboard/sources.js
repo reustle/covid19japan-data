@@ -72,6 +72,11 @@ export const sources = {
       patients: 'https://www.pref.akita.lg.jp/pages/archive/47957',
       summary: 'https://www.pref.akita.lg.jp/pages/archive/47957'
     },
+    cities: {
+      akitaCity: {
+        gov: { patients: 'https://www.city.akita.lg.jp/bosai-kinkyu/1024149/1024151.html' }
+      }
+    },
     source: 'https://github.com/asaba-zauberer/covid19-akita/tree/development/data',
     dashboard: 'https://covid19-akita.netlify.app/en'
   },
@@ -527,9 +532,10 @@ export const sources = {
 
       yokohama: {
         gov: { 
-          patients: 'https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html' ,
+          patients: 'https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/' ,
           summary: 'https://www.city.yokohama.lg.jp/city-info/koho-kocho/koho/topics/corona-data.html',
-          deaths: 'https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/'
+          deaths: 'https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/',
+          patientList: 'https://www.city.yokohama.lg.jp/kurashi/kenko-iryo/yobosesshu/kansensho/coronavirus/kanja.html',
         },
         latest: {
           format: 'html',
@@ -1045,7 +1051,8 @@ export const sources = {
       recovered: 'main_summary.children[0].children[1].value'
     },
     gov: {
-      patients: 'http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/coronakensahasseijyoukyou.html',
+      patients: 'http://www.pref.tochigi.lg.jp/c05/kouhou/korona.html#houdou',
+      patientList: 'http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/coronakensahasseijyoukyou.html',
       summary: 'http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/coronakensahasseijyoukyou.html'
     },
     cities: {
