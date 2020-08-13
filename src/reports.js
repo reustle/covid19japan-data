@@ -24,7 +24,6 @@ const extractReportURLs = (inputFilename) => {
       prefecture: '',
       prefectureIds: [],
       cityIds: [],
-      deaths: 0,
       deathDates: [],
     }
   }
@@ -51,74 +50,84 @@ const extractReportURLs = (inputFilename) => {
         cityURLs.add(url)
       }
 
-      if (url) {
-        let dateUrl = `${patient.dateAnnounced} ${patient.detectedPrefecture} ${url}`
-        let report = reports[dateUrl]
-        if (!report) {
-          report = createReport(url)
-          reports[dateUrl] = report
-        } 
+      let reportId = `${patient.dateAnnounced} ${patient.detectedPrefecture} ${url}`
+      let report = reports[reportId]
+      if (!report) {
+        report = createReport(url)
+      } 
 
-        let patientId = patient.patientId
-        if (patient.prefecturePatientNumber) {
-          patientId = patient.prefecturePatientNumber
-          report.prefectureIds.push(patient.prefecturePatientNumber)
-        }
-        if (patient.cityPrefectureNumber) {
-          patientId = patient.cityPrefectureNumber
-          report.cityIds.push(patient.cityPrefectureNumber)
-        }
-
-        if (patient.patientId != -1) {
-          report.patients.push(patientId)
-        }
-        if (patient.prefectureSourceURL) {
-          report.prefectureSourceURL = patient.prefectureSourceURL
-        }
-        if (patient.citySourceURL) {
-          report.citySourceURL = patient.citySourceURL
-        }
-        if (patient.sourceURL && !patient.sourceURL.match(/gov/)) {
-          report.newsURL = normalizeURL(patient.sourceURL)
-        }
-
-        report.reportDate = patient.dateAnnounced
-        report.prefecture = patient.detectedPrefecture
+      let patientId = patient.patientId
+      if (patient.prefecturePatientNumber) {
+        patientId = patient.prefecturePatientNumber
+        report.prefectureIds.push(patient.prefecturePatientNumber)
+      }
+      if (patient.cityPrefectureNumber) {
+        patientId = patient.cityPrefectureNumber
+        report.cityIds.push(patient.cityPrefectureNumber)
       }
 
+      if (patient.patientId != -1) {
+        report.patients.push(patientId)
+      }
+
+      if (patient.prefectureSourceURL) {
+        report.prefectureSourceURL = patient.prefectureSourceURL
+      }
+      if (patient.citySourceURL) {
+        report.citySourceURL = patient.citySourceURL
+      }
+      if (patient.sourceURL && !patient.sourceURL.match(/gov/)) {
+        report.newsURL = normalizeURL(patient.sourceURL)
+      }
+
+      report.reportDate = patient.dateAnnounced
+      report.prefecture = patient.detectedPrefecture
+
       if (patient.patientStatus == 'Deceased') {
-        let deathURL = patient.newsURL
+        let deathURL = 'unverified'
+        if (patient.sourceURL) {
+          deathURL = normalizeURL(patient.sourceURL)
+        }
         if (patient.deathSourceURL) {
           deathURL = patient.deathSourceURL
         }
 
-        let dateURL = `${patient.dateAnnounced} ${patient.detectedPrefecture} ${deathURL}`
-        let report = reports[dateURL]
-        if (!report) {
-          report = createReport(deathURL)
-          reports[deathURL] = report 
-        }
-        report.prefecture = patient.detectedPrefecture
-        if (patient.deathSourceURL) {
-          report.deathSourceURL = patient.deathSourceURL
-        }
-        if (patient.newsURL) {
-          report.newsURL = patient.newsURL
-        }
-
         let date = patient.dateAnnounced
         if (patient.deceasedDate) {
-          report.deathDates.push(patient.deceasedDate)
+          date = patient.deceasedDate
         }
-        // if (patient.deceasedDate) {
-        //   date = patient.deceasedDate
-        // }
+        if (patient.deceasedReportedDate) {
+          date = patient.deceasedReportedDate
+        }
 
-        report.reportDate = date
-        report.deaths += 1
+        let deathDateId = `${date} ${patient.detectedPrefecture} ${deathURL}`
+       
+        let deathReport = reports[deathDateId]
+        if (!deathReport) {
+          deathReport = createReport(deathURL)
+          reports[deathDateId] = deathReport 
+        }
+        deathReport.prefecture = patient.detectedPrefecture
+        if (patient.deathSourceURL) {
+          deathReport.deathSourceURL = patient.deathSourceURL
+        }
+     
+        let deathDate = patient.dateAnnounced
+        if (patient.deceasedDate) {
+          deathDate = patient.deceasedDate
+        }
+        deathReport.deathDates.push(deathDate)
+        if (patient.detectedPrefecture == 'Fukuoka') {
+          console.log(deathDateId, deathReport.deathDates.length)
+        }
       }
 
+      // Only record this report if there is a patient added
+      if (report.patients.length > 0 || report.deathDates.length > 0) {
+        reports[reportId] = report
+      }
     }
+
     resolve({
       sourceURLs: sourceURLs,
       prefectureURLs: prefectureURLs,
@@ -190,7 +199,7 @@ const main = () => {
           prefectureIds: patientsRange(report.prefectureIds),
           cityIds: patientsRange(report.cityIds),
           confirmed: report.patients.length,
-          deaths: report.deaths,
+          deaths: report.deathDates.length,
           deathDates: report.deathDates.join(',')
         }
         groups.push(group)
