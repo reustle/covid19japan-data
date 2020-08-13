@@ -17,8 +17,9 @@ const normalizeURL = (url) => {
 
 const extractReportURLs = (inputFilename) => {
 
-  const createReport = (url) => {
+  const createReport = (announceDate, url) => {
     return {
+      reportDate: announceDate,
       url: url,
       patients: [],
       prefecture: '',
@@ -36,6 +37,10 @@ const extractReportURLs = (inputFilename) => {
     let reports = {}
     let patientData = JSON.parse(fs.readFileSync(inputFilename))
     for (let patient of patientData) {
+      if (!patient.confirmedPatient) {
+        continue  // Ignore.
+      }
+
       let url = 'unverified'
       if (patient.sourceURL) {
         url = normalizeURL(patient.sourceURL)
@@ -50,24 +55,32 @@ const extractReportURLs = (inputFilename) => {
         cityURLs.add(url)
       }
 
-      let reportId = `${patient.dateAnnounced} ${patient.detectedPrefecture} ${url}`
-      let report = reports[reportId]
-      if (!report) {
-        report = createReport(url)
-      } 
-
       let patientId = patient.patientId
       if (patient.prefecturePatientNumber) {
         patientId = patient.prefecturePatientNumber
-        report.prefectureIds.push(patient.prefecturePatientNumber)
       }
       if (patient.cityPrefectureNumber) {
         patientId = patient.cityPrefectureNumber
-        report.cityIds.push(patient.cityPrefectureNumber)
       }
 
-      if (patient.patientId != -1) {
-        report.patients.push(patientId)
+      let place = patient.detectedPrefecture
+      let placeIdMatch = patientId.match(/^(.*)\#/)
+      if (placeIdMatch) {
+        place = placeIdMatch[1]
+      }
+
+      let reportId = `${patient.dateAnnounced} ${place} ${url}`
+      let report = reports[reportId]
+      if (!report) {
+        report = createReport(patient.dateAnnounced, url)
+        reports[reportId] = report
+      } 
+
+      if (patient.prefecturePatientNumber) {
+        report.prefectureIds.push(patient.prefecturePatientNumber)
+      }
+      if (patient.cityPrefectureNumber) {
+        report.cityIds.push(patient.cityPrefectureNumber)
       }
 
       if (patient.prefectureSourceURL) {
@@ -80,51 +93,59 @@ const extractReportURLs = (inputFilename) => {
         report.newsURL = normalizeURL(patient.sourceURL)
       }
 
-      report.reportDate = patient.dateAnnounced
       report.prefecture = patient.detectedPrefecture
+      report.patients.push(patientId)
+    }
 
-      if (patient.patientStatus == 'Deceased') {
-        let deathURL = 'unverified'
-        if (patient.sourceURL) {
-          deathURL = normalizeURL(patient.sourceURL)
-        }
-        if (patient.deathSourceURL) {
-          deathURL = patient.deathSourceURL
-        }
-
-        let date = patient.dateAnnounced
-        if (patient.deceasedDate) {
-          date = patient.deceasedDate
-        }
-        if (patient.deceasedReportedDate) {
-          date = patient.deceasedReportedDate
-        }
-
-        let deathDateId = `${date} ${patient.detectedPrefecture} ${deathURL}`
-       
-        let deathReport = reports[deathDateId]
-        if (!deathReport) {
-          deathReport = createReport(deathURL)
-          reports[deathDateId] = deathReport 
-        }
-        deathReport.prefecture = patient.detectedPrefecture
-        if (patient.deathSourceURL) {
-          deathReport.deathSourceURL = patient.deathSourceURL
-        }
-     
-        let deathDate = patient.dateAnnounced
-        if (patient.deceasedDate) {
-          deathDate = patient.deceasedDate
-        }
-        deathReport.deathDates.push(deathDate)
-        if (patient.detectedPrefecture == 'Fukuoka') {
-          console.log(deathDateId, deathReport.deathDates.length)
-        }
+    // Count patient deaths.
+    for (let patient of patientData) {
+      if (patient.patientStatus != 'Deceased') {
+        continue
       }
 
-      // Only record this report if there is a patient added
-      if (report.patients.length > 0 || report.deathDates.length > 0) {
-        reports[reportId] = report
+      let deathURL = 'unverified'
+      if (patient.sourceURL) {
+        deathURL = normalizeURL(patient.sourceURL)
+      }
+      if (patient.deathSourceURL) {
+        deathURL = patient.deathSourceURL
+      }
+
+      let reportDate = patient.dateAnnounced
+      if (patient.deceasedReportedDate) {
+        reportDate = patient.deceasedReportedDate
+      }
+
+      let deathDateId = `${reportDate} ${patient.detectedPrefecture} ${deathURL}`
+      
+      let deathReport = reports[deathDateId]
+      if (!deathReport) {
+        deathReport = createReport(patient.dateAnnounced, deathURL)
+        reports[deathDateId] = deathReport 
+      }
+      deathReport.prefecture = patient.detectedPrefecture
+      if (patient.deathSourceURL) {
+        deathReport.deathSourceURL = patient.deathSourceURL
+      }
+
+      if (patient.sourceURL && !patient.sourceURL.match(/gov/)) {
+        deathReport.newsURL = normalizeURL(patient.sourceURL)
+      }
+
+      if (patient.prefecturePatientNumber) {
+        deathReport.prefectureIds.push(patient.prefecturePatientNumber)
+      }
+      if (patient.cityPrefectureNumber) {
+        deathReport.cityIds.push(patient.cityPrefectureNumber)
+      }
+    
+      let deathDate = patient.dateAnnounced
+      if (patient.deceasedDate) {
+        deathDate = patient.deceasedDate
+      }
+      deathReport.deathDates.push(deathDate)
+      if (patient.detectedPrefecture == 'Fukuoka') {
+        console.log(deathDateId, deathReport.deathDates.length)
       }
     }
 
@@ -168,7 +189,7 @@ const patientsRange = (patients) => {
       const maxId = Math.max(...ids)
       if (ids.length < maxId - minId + 1) {
         // If the range is not continous, we give up and list all ids.
-        results.push(_.map(ids, i => `${placeId}#${i}`).join(','))
+        results.push(_.map(ids.sort(), i => `${placeId}#${i}`).join(','))
       } else {
         results.push(`${placeId}#${minId} - ${placeId}#${maxId}`)
       }
@@ -190,7 +211,7 @@ const main = () => {
         let report = results.reports[identifier]
         let group = {
           identifier: identifier,
-          announceDate: report.reportDate,
+          reportDate: report.reportDate,
           newsURL: report.newsURL,
           prefecture: report.prefecture,
           prefectureSourceURL: report.prefectureSourceURL,
@@ -205,10 +226,10 @@ const main = () => {
         groups.push(group)
       }    
 
-      groups = _.orderBy(groups, ['announceDate', 'prefecture'], ['asc', 'asc'])
+      groups = _.orderBy(groups, ['reportDate', 'prefecture'], ['asc', 'asc'])
 
       let csv = Papa.unparse(groups, {header: true, columns: [
-        'announceDate',
+        'reportDate',
         'prefecture',
         'confirmed',
         'deaths',
