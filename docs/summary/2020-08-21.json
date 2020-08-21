@@ -8522,7 +8522,7 @@
       "name": "Nara"
     },
     {
-      "confirmed": 441,
+      "confirmed": 442,
       "dailyConfirmedCount": [
         0,
         0,
@@ -8750,10 +8750,10 @@
         5,
         10,
         15,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 15,
       "dailyDeceasedCount": [
         0,
@@ -8990,7 +8990,7 @@
       "recovered": 316,
       "critical": 0,
       "tested": 0,
-      "active": 119,
+      "active": 120,
       "confirmedByCity": {
         "Kumamoto": 5,
         "Kumamoto city": 15,
@@ -25533,14 +25533,14 @@
       "name": "Kansai"
     },
     {
-      "confirmed": 7345,
-      "newlyConfirmed": 0,
+      "confirmed": 7346,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 149,
       "deceased": 83,
       "recovered": 4753,
       "critical": 0,
       "tested": 0,
-      "active": 2520,
+      "active": 2521,
       "dailyConfirmedCount": [
         0,
         0,
@@ -25768,7 +25768,7 @@
         168,
         306,
         219,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -35018,7 +35018,46 @@
       "recoveredAvg7d": 1447,
       "recoveredCumulativeAvg3d": 43795,
       "recoveredCumulativeAvg7d": 41297
+    },
+    {
+      "confirmed": 1,
+      "confirmedCumulative": 59898,
+      "deceased": 0,
+      "deceasedCumulative": 1157,
+      "reportedDeceased": 0,
+      "reportedDeceasedCumulative": 1157,
+      "recovered": 0,
+      "recoveredCumulative": 45266,
+      "critical": 0,
+      "criticalCumulative": 237,
+      "tested": 0,
+      "testedCumulative": 1259422,
+      "active": 1,
+      "activeCumulative": 13475,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2020-08-21",
+      "deaths": 0,
+      "confirmedAvg3d": 754,
+      "confirmedAvg7d": 868,
+      "confirmedCumulativeAvg3d": 59502,
+      "confirmedCumulativeAvg7d": 57711,
+      "deceasedAvg3d": 4,
+      "deceasedAvg7d": 8,
+      "deceasedCumulativeAvg3d": 1154,
+      "deceasedCumulativeAvg7d": 1136,
+      "reportedDeceasedAvg3d": 7,
+      "reportedDeceasedAvg7d": 9,
+      "reportedDeceasedCumulativeAvg3d": 1154,
+      "reportedDeceasedCumulativeAvg7d": 1130,
+      "recoveredAvg3d": 994,
+      "recoveredAvg7d": 1112,
+      "recoveredCumulativeAvg3d": 44789,
+      "recoveredCumulativeAvg7d": 42410
     }
   ],
-  "updated": "2020-08-21T10:22:59+09:00"
+  "updated": "2020-08-21T11:07:29+09:00"
 }
