@@ -11,7 +11,7 @@ const _state = {
 }
 
 const cellWithValue = (klass, value) => {
-  if (value != undefined) { 
+  if (value != undefined && value != 0) { 
     return td(klass, `${value}`)
   } 
   return td(klass, '')
@@ -45,7 +45,7 @@ const render = () => {
       let fieldName = `daily${_.capitalize(_state.selectedField)}Count`
       let dailyValues = prefecture[fieldName]
       for (let daysAgo of _.range(0, _state.maxDaysBefore)) {
-        let val = dailyValues[dailyValues.length - 1 - daysAgo]
+        let val = parseInt(dailyValues[dailyValues.length - 1 - daysAgo])
         cells.push(cellWithValue('', val))
       }
     }
