@@ -1,0 +1,63 @@
+$color-table-header: rgb(240, 240, 240);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+@import "src/statusboard/header";
+@import "src/statusboard/console";
+
+#page {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: nowrap;
+  margin-bottom: 50px;
+}
+
+a.action {
+  font-size: 0.8rem;
+  display: block;
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+  background-color: rgb(64, 64, 64);
+  border-radius: 0.7rem;
+  padding: 0.2rem 0.8rem;
+  margin: 0 0.5rem;
+}
+
+a.action:hover {
+  background-color: rgb(128, 128, 128);
+}
+
+a.action.active {
+  color: red;
+}
+
+
+h1 {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 1rem;
+  color: rgb(250, 250, 250);
+}
+
+table#prefectures {
+  font-size: 0.8rem;
+  td, th {
+    padding: 0.3rem 0.5rem;
+    text-align: left;
+  }
+
+  thead {
+    background-color: $color-table-header;
+  }
+
+}
