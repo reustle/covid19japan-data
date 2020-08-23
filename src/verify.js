@@ -1,6 +1,6 @@
 // Methods that are used to verify and fix any data issues before pushing.
 const _ = require('lodash')
-
+const moment = require('moment')
 // Verification of the daily summary.
 //
 // @throws ValidationError if the data is not correct.
@@ -19,6 +19,13 @@ const verifyDailySummary = (dailySummary) => {
         throw new Error(`DailySummaryError: ${key} for the latest day is 0.`)
       }
     }
+  }
+
+  // Ensure latest date is a valid date and not in the future (accounting for some timezone issues.)
+  let latestDate = moment(latestDay.date)
+  let latestDiff = latestDate.diff(moment(new Date()))
+  if (latestDate.diff(moment(new Date())) > 24 * 60 * 60 * 1000) {
+    throw new Error(`DailySummaryError: Latest day is in the future. ${latestDate}`)
   }
 
   return dailySummary

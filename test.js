@@ -5,9 +5,9 @@ const verify = require('./src/verify.js')
 const FetchSheet = require('./src/fetch_sheet.js')
 const FetchPatient = require('./src/fetch_patient_data.js')
 
-// let summary = JSON.parse(fs.readFileSync('docs/summary/latest.json'))
-// verify.verifyDailySummary(summary.daily)
-// console.log(summary.daily[summary.daily.length - 1])
+let summary = JSON.parse(fs.readFileSync('docs/summary/latest.json'))
+verify.verifyDailySummary(summary.daily)
+console.log(summary.daily[summary.daily.length - 1])
 
 const fieldMask = 'spreadsheetId,properties,sheets.properties,sheets.data.rowData.values(effectiveValue,formattedValue,effectiveFormat.hyperlinkDisplayType,hyperlink)'
 
@@ -20,12 +20,12 @@ const sheetsAndTabs = [
 //     console.log(patients)
 //   })
 
-FetchSheet.fetchSheets(sheetsAndTabs, fieldMask)
-  .then((responses) => {
-    for (let sheetsResponse of responses) {
-//      console.log(sheetsResponse)
-    }
-  })
-  .catch((err) => {
-    console.error(err)
-  })
+// FetchSheet.fetchSheets(sheetsAndTabs, fieldMask)
+//   .then((responses) => {
+//     for (let sheetsResponse of responses) {
+// //      console.log(sheetsResponse)
+//     }
+//   })
+//   .catch((err) => {
+//     console.error(err)
+//   })
