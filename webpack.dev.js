@@ -7,6 +7,7 @@ module.exports = {
   entry: {
     patients: ["./src/statusboard/patients.js", "./src/statusboard/patients.scss"],
     statusboard: ["./src/statusboard/statusboard.js", "./src/statusboard/statusboard.scss"],
+    explore: ["./src/explore/explore.js", "./src/explore/explore.scss"],
   },
   output: {
     path: path.resolve(__dirname, "docs"),
@@ -28,6 +29,11 @@ module.exports = {
       filename: "statusboard/index.html",
       template: "src/statusboard/statusboard.html",
       chunks: ["statusboard"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "explore/index.html",
+      template: "src/explore/explore.html",
+      chunks: ["explore"],
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
