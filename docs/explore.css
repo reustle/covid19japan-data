@@ -91,4 +91,6 @@ table#prefectures {
   table#prefectures td.val {
     min-width: 3rem;
     max-width: 3rem; }
+  table#prefectures td.neg {
+    background-color: #ff9696; }
 
