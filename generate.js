@@ -48,7 +48,7 @@ const fetchAndSummarize = async (dateString, useNewMethod) => {
   const daily = await FetchSheet.fetchRows(latestSheetId, 'Sum By Day')
   const prefectures = await FetchSheet.fetchRows(latestSheetId, 'Prefecture Data')
   const cruiseCounts = await FetchSheet.fetchRows(latestSheetId, 'Cruise Sum By Day')
-
+  const recoveries = await FetchSheet.fetchRows(latestSheetId, 'Recoveries')
 
   const mergeAndOutput = (allPatients) => {
     let patients = MergePatients.mergePatients(allPatients)
@@ -61,7 +61,7 @@ const fetchAndSummarize = async (dateString, useNewMethod) => {
         fs.writeFileSync(patientOutputFilename, JSON.stringify(patients, null, '  '))
 
         // Write daily and prefectural summary.
-        const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, prefectureNames, regions, lastUpdated)
+        const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, recoveries, prefectureNames, regions, lastUpdated)
         const summaryOutputFilename = `./docs/summary/${dateString}.json`
         fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
 
