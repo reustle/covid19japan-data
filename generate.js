@@ -50,6 +50,7 @@ const fetchAndSummarize = async (dateString, useNewMethod) => {
   const cruiseCounts = await FetchSheet.fetchRows(latestSheetId, 'Cruise Sum By Day')
   const recoveries = await FetchSheet.fetchRows(latestSheetId, 'Recoveries')
 
+
   const mergeAndOutput = (allPatients) => {
     let patients = MergePatients.mergePatients(allPatients)
     console.log(`Total patients fetched: ${patients.length}`)

@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0; }
+
+header {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 3rem;
+  padding: 0.5rem;
+  background: #252525;
+  color: #fafafa;
+  font-size: 0.8rem; }
+  header #nhk-url {
+    font-size: 0.8rem;
+    width: 20rem;
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.7rem;
+    border: 1px solid black; }
+
+#console-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  padding: 0 1rem;
+  background: #202020; }
+  #console-panel #toggle-console {
+    display: inline-block;
+    text-decoration: none;
+    color: #c8c8c8;
+    margin: 0.7rem 0 0.7rem 0; }
+  #console-panel textarea#console {
+    width: 100%; }
+
+#console-panel.collapsed {
+  transform: translateY(260px); }
+
+#page {
+  margin-bottom: 60px; }
+
+#page {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: nowrap;
+  margin-bottom: 50px; }
+
+a.action {
+  font-size: 0.8rem;
+  display: block;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #404040;
+  border-radius: 0.7rem;
+  padding: 0.2rem 0.8rem;
+  margin: 0 0.5rem; }
+
+a.action:hover {
+  background-color: gray; }
+
+a.action.selected {
+  background-color: gray; }
+
+h1 {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 1rem;
+  color: #fafafa; }
+
+#body {
+  overflow-x: scroll; }
+
+table#prefectures {
+  font-size: 0.8rem; }
+  table#prefectures td, table#prefectures th {
+    padding: 0.3rem 0.5rem;
+    text-align: left; }
+  table#prefectures thead {
+    background-color: #f0f0f0; }
+  table#prefectures td.val {
+    min-width: 3rem;
+    max-width: 3rem; }
+
