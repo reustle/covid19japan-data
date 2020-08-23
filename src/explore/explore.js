@@ -32,9 +32,14 @@ const render = () => {
     th('', 'Total'),
   ]
 
-  const fieldWithHistory = ['confirmed', 'deceased', 'recovered']
+  const fieldProperties = {
+    confirmed: { count: 'daily', name: 'dailyConfirmedCount' },
+    deceased: { count: 'daily', name: 'dailyDeceasedCount' },
+    recovered: { count: 'cumulative', name: 'dailyRecoveredCumulative'},
+    active: { count: 'cumulative', name: 'dailyActive' }
+  }
 
-  if (fieldWithHistory.indexOf(_state.selectedField) != -1) {
+  if (fieldProperties[_state.selectedField]) {
     let dates = _.map(_.range(0, _state.maxDaysBefore), i => { return moment().subtract(i, 'days').format('M/DD') })
     columnHeaders = _.concat(columnHeaders, _.map(dates, date => th('', date)))
   }
@@ -45,34 +50,26 @@ const render = () => {
     let cells = [cellWithValue('prefectureName', prefecture.name)]
     cells.push(cellWithValue(_state.selectedField, prefecture[_state.selectedField]))
 
-    if (_state.selectedField == 'confirmed' || _state.selectedField == 'deceased') {
-      let fieldName = `daily${_.capitalize(_state.selectedField)}Count`
-      let dailyValues = prefecture[fieldName]
-      for (let daysAgo of _.range(0, _state.maxDaysBefore)) {
-        let totalValue = _.sum(_.slice(dailyValues, 0, dailyValues.length - 1 - daysAgo))
-        let dailyValue = parseInt(dailyValues[dailyValues.length - 1 - daysAgo])
-        let val = dailyValue
-        if (_state.countMethod == 'cumulative') {
-          val = totalValue
+    if (fieldProperties[_state.selectedField].count == 'daily') {
+      const dailyValues = prefecture[fieldProperties[_state.selectedField].name]
+      if (dailyValues) {
+        for (const daysAgo of _.range(0, _state.maxDaysBefore)) {
+          const totalValue = _.sum(_.slice(dailyValues, 0, dailyValues.length - 1 - daysAgo))
+          const dailyValue = parseInt(dailyValues[dailyValues.length - 1 - daysAgo])
+          const val = dailyValue
+          if (_state.countMethod == 'cumulative') {
+            val = totalValue
+          }
+          cells.push(cellWithValue('val', val))
         }
-      cells.push(cellWithValue('val', val))
       }
-    } else if (_state.selectedField == 'recovered') {
-      let recoveries = _state.prefectureRecoveries[prefecture.name]
-      if (recoveries) {
-        for (let daysAgo of _.range(0, _state.maxDaysBefore)) {
-          const dateString = moment().subtract(daysAgo, 'days').format('YYYY-MM-DD')
-          const prevDateString = moment().subtract(daysAgo + 1, 'days').format('YYYY-MM-DD')
-          const totalValue = parseInt(recoveries[dateString])
-          const prevTotalValue = parseInt(recoveries[prevDateString])
-          if (isNaN(prevTotalValue)) {
-            prevTotalValue = 0
-          }
-          let dailyValue = totalValue - prevTotalValue
-          if (prefecture.name == 'Tokyo') {
-            console.log(prevDateString, prevTotalValue)
-          }
-
+    } else if (fieldProperties[_state.selectedField].count == 'cumulative') {
+      const totalValues = prefecture[fieldProperties[_state.selectedField].name]
+      if (totalValues) {
+        for (const daysAgo of _.range(0, _state.maxDaysBefore)) {
+          const totalValue = parseInt(totalValues[totalValues.length - 1 - daysAgo])
+          const yesterdayTotalValue = parseInt(totalValues[totalValues.length - 1 - daysAgo - 1])
+          const dailyValue = totalValue - yesterdayTotalValue
           let val = dailyValue
           if (_state.countMethod == 'cumulative') {
             val = totalValue
@@ -124,15 +121,13 @@ const main = () => {
   const requests = [
     fetch('/patient_data/latest.json').then(response => response.json()),
     fetch('/summary/latest.json').then(response => response.json()),
-    fetch('/prefecture_recoveries.json').then(response => response.json()),
   ]
 
   Promise.all(requests)
     .then(responses => {
       const patients = responses[0]
       const summary = responses[1]
-      const prefectureRecoveries = responses[2]
-      process(summary, patients, prefectureRecoveries)
+      process(summary, patients)
       render()
     })
 }
