@@ -6,6 +6,7 @@ const FetchPatientData = require('./src/fetch_patient_data.js')
 const Summarize = require('./src/summarize.js')
 const FetchSheet = require('./src/fetch_sheet.js')
 const MergePatients = require('./src/merge_patients.js')
+const Prefectures = require('./src/prefectures.js')
 
 const generateLastUpdated = async (patients) => {
   // Check if patient list changed size, if it did, then update lastUpdated
@@ -40,11 +41,14 @@ const generateLastUpdated = async (patients) => {
 }
 
 const fetchAndSummarize = async (dateString, useNewMethod) => {
-  const latestSheetId = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
+  const prefectureNames = Prefectures.prefectureNamesEn()
+  const regions = Prefectures.regionPrefectures()
 
+  const latestSheetId = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
   const daily = await FetchSheet.fetchRows(latestSheetId, 'Sum By Day')
   const prefectures = await FetchSheet.fetchRows(latestSheetId, 'Prefecture Data')
   const cruiseCounts = await FetchSheet.fetchRows(latestSheetId, 'Cruise Sum By Day')
+  const recoveries = await FetchSheet.fetchRows(latestSheetId, 'Recoveries')
 
   const mergeAndOutput = (allPatients) => {
     let patients = MergePatients.mergePatients(allPatients)
@@ -57,7 +61,7 @@ const fetchAndSummarize = async (dateString, useNewMethod) => {
         fs.writeFileSync(patientOutputFilename, JSON.stringify(patients, null, '  '))
 
         // Write daily and prefectural summary.
-        const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, lastUpdated)
+        const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, recoveries, prefectureNames, regions, lastUpdated)
         const summaryOutputFilename = `./docs/summary/${dateString}.json`
         fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
 
