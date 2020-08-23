@@ -25,7 +25,7 @@ const summarize = (patientData, manualDailyData, manualPrefectureData, cruiseCou
 
   // Convert recoveries into an Object with prefecture names as keys.
   let recoveryByPrefecture = _.fromPairs(_.map(recoveries, row => {
-    return [row.name, _.omit(row, ['name'])]
+    return [row.name, _.omit(row, ['name', 'p'])]
   }))
 
   let prefectureSummary = generatePrefectureSummary(patients, manualPrefectureData, cruiseCounts, recoveryByPrefecture, prefectureNames)
@@ -372,7 +372,6 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts,
       prefecture.dailyActiveStartDate = activeCases.startDate
       prefecture.dailyActive = activeCases.dailyActive
     }
-
   }
 
   // Import manual data.
@@ -630,7 +629,6 @@ const generateDailyStatsForPrefecture = (patients, firstDay) => {
 }
 
 const generateDailyRecoveredForPrefecture = (recoveries) => {
-  console.log(recoveries)
   const dates = _.orderBy(_.keys(recoveries))
   const firstDay = moment(dates[0])
   const lastDay = moment().utcOffset(540)
@@ -639,7 +637,7 @@ const generateDailyRecoveredForPrefecture = (recoveries) => {
   let day = moment(firstDay)
   let lastValue = 0
   while (day < lastDay) {
-    let val = recoveries[day.format('YYYYMMDD')]
+    let val = safeParseInt(recoveries[day.format('YYYYMMDD')])
     if (val) {
       cumulativeRecoveries.push(val)
       lastValue = val
@@ -662,11 +660,13 @@ const generateDailyActiveForPrefecture = (prefecture) => {
 
   const dailyActives = []
   for (let daysFromToday = lastDay.diff(firstDay, 'days'); 
-    daysFromToday > 0;
+    daysFromToday >= 0;
     daysFromToday--) {
-      const cumulativeRecovered = prefecture.dailyRecoveredCumulative[prefecture.dailyRecoveredCumulative.length - 1 - daysFromToday]
-      const cumulativeConfirmed = _.sum(_.slice(prefecture.dailyConfirmedCount, 0, prefecture.dailyConfirmedCount.length - 1 - daysFromToday))
-      const cumulativeDeceased = _.sum(_.slice(prefecture.dailyDeceasedCount, 0, prefecture.dailyDeceasedCount.length - 1 - daysFromToday))
+      const recoveredIndex = prefecture.dailyRecoveredCumulative.length - 1 - daysFromToday
+      const cumulativeRecovered = prefecture.dailyRecoveredCumulative[recoveredIndex]
+      const confirmedIndex = prefecture.dailyConfirmedCount.length - 1 - daysFromToday
+      const cumulativeConfirmed = _.sum(_.slice(prefecture.dailyConfirmedCount, 0, confirmedIndex))
+      const cumulativeDeceased = _.sum(_.slice(prefecture.dailyDeceasedCount, 0, confirmedIndex))
       const active = cumulativeConfirmed - cumulativeDeceased - cumulativeRecovered
       dailyActives.push(active)
   }
@@ -679,3 +679,4 @@ const generateDailyActiveForPrefecture = (prefecture) => {
 
 exports.summarize = summarize;
 
+exports.generateDailyActiveForPrefecture = generateDailyActiveForPrefecture
