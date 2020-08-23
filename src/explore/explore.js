@@ -15,7 +15,7 @@ const _state = {
 }
 
 const cellWithValue = (klass, value) => {
-  if (value != undefined && value != 0) { 
+  if (value != undefined && !isNaN(value) && value != 0) { 
     return td(klass, `${value}`)
   } 
   return td(klass, '')
@@ -47,9 +47,12 @@ const render = () => {
 
   tableBody.innerHTML = ''
   for (let prefecture of _state.prefectureSummary) {
-    let cells = [cellWithValue('prefectureName', prefecture.name)]
+    let cells = [td('prefectureName', prefecture.name)]
+
+    // Total
     cells.push(cellWithValue(_state.selectedField, prefecture[_state.selectedField]))
 
+    // Historical
     if (fieldProperties[_state.selectedField].count == 'daily') {
       const dailyValues = prefecture[fieldProperties[_state.selectedField].name]
       if (dailyValues) {
@@ -74,7 +77,11 @@ const render = () => {
           if (_state.countMethod == 'cumulative') {
             val = totalValue
           }
-          cells.push(cellWithValue('val', val))
+          let classes = ['val']
+          if (val < 0) {
+            classes.push('neg')
+          }
+          cells.push(cellWithValue(classes, val))
         }
       }
     }
