@@ -69,14 +69,17 @@ a.action {
 a.action:hover {
   background-color: gray; }
 
-a.action.active {
-  color: red; }
+a.action.selected {
+  background-color: gray; }
 
 h1 {
   font-size: 0.9rem;
   padding: 0;
   margin: 0 1rem;
   color: #fafafa; }
+
+#body {
+  overflow-x: scroll; }
 
 table#prefectures {
   font-size: 0.8rem; }
@@ -85,4 +88,7 @@ table#prefectures {
     text-align: left; }
   table#prefectures thead {
     background-color: #f0f0f0; }
+  table#prefectures td.val {
+    min-width: 3rem;
+    max-width: 3rem; }
 
