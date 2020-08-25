@@ -280,7 +280,10 @@ export const sources = {
     },
     cities: {
       maebashi: {
-        gov: { patients: 'https://www.city.maebashi.gunma.jp/kurashi_tetsuzuki/covid19_info/4/index.html' }
+        gov: { 
+          patients: 'https://www.city.maebashi.gunma.jp/kurashi_tetsuzuki/covid19_info/4/index.html',
+          patientList: 'https://www.city.maebashi.gunma.jp/kurashi_tetsuzuki/covid19_info/4/23696.html',
+        }
       }
     },
     source: 'https://github.com/bpr-gunma/covid19',
