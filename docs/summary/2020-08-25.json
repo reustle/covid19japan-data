@@ -804,7 +804,7 @@
       "name": "Tokyo"
     },
     {
-      "confirmed": 7901,
+      "confirmed": 7902,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1036,10 +1036,10 @@
         134,
         121,
         60,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 60,
       "dailyDeceasedCount": [
         0,
@@ -1436,7 +1436,7 @@
       "recovered": 5983,
       "critical": 0,
       "tested": 0,
-      "active": 1787,
+      "active": 1788,
       "confirmedByCity": {
         "Osaka": 96,
         "HigashiOsaka": 1,
@@ -40677,14 +40677,14 @@
       "name": "Kanto"
     },
     {
-      "confirmed": 12881,
-      "newlyConfirmed": 43,
+      "confirmed": 12882,
+      "newlyConfirmed": 44,
       "yesterdayConfirmed": 100,
       "deceased": 215,
       "recovered": 9801,
       "critical": 0,
       "tested": 0,
-      "active": 2866,
+      "active": 2867,
       "dailyConfirmedCount": [
         0,
         0,
@@ -40916,7 +40916,7 @@
         254,
         202,
         108,
-        66
+        67
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -50598,8 +50598,8 @@
       "recoveredCumulativeAvg7d": 46207
     },
     {
-      "confirmed": 404,
-      "confirmedCumulative": 63549,
+      "confirmed": 405,
+      "confirmedCumulative": 63550,
       "deceased": 0,
       "deceasedCumulative": 1201,
       "reportedDeceased": 0,
@@ -50610,8 +50610,8 @@
       "criticalCumulative": 259,
       "tested": 0,
       "testedCumulative": 1333884,
-      "active": 404,
-      "activeCumulative": 12918,
+      "active": 405,
+      "activeCumulative": 12919,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -50637,5 +50637,5 @@
       "recoveredCumulativeAvg7d": 47228
     }
   ],
-  "updated": "2020-08-25T17:48:53+09:00"
+  "updated": "2020-08-25T18:08:10+09:00"
 }
