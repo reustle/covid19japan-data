@@ -455,6 +455,11 @@ export const sources = {
     source: 'https://github.com/Retsuki/covid19-ishikawa',
     dashboard: 'https://ishikawa-covid19.netlify.app/'
   },
+  iwate: {
+    gov: {
+      patients: 'https://www.pref.iwate.jp/kurashikankyou/iryou/covid19/1029635/index.html'
+    },
+  },
   kagawa: {
     patients: {
       format: 'json',
