@@ -39,9 +39,13 @@ const render = () => {
     active: { count: 'cumulative', name: 'dailyActive' }
   }
 
+  let totalsByDay = {}
+  let dates = []
+
   if (fieldProperties[_state.selectedField]) {
-    let dates = _.map(_.range(0, _state.maxDaysBefore), i => { return moment().subtract(i, 'days').format('M/DD') })
-    columnHeaders = _.concat(columnHeaders, _.map(dates, date => th('', date)))
+    dates = _.map(_.range(0, _state.maxDaysBefore), i => { return moment().subtract(i, 'days') })
+    columnHeaders = _.concat(columnHeaders, _.map(dates, date => th('', date.format('M/DD'))))
+    _.forEach(dates, o => { totalsByDay[o.format('YYYY-MM-DD')] = 0 })
   }
   tableHead.appendChild(tr('', columnHeaders))
 
@@ -64,6 +68,7 @@ const render = () => {
             val = totalValue
           }
           cells.push(cellWithValue('val', val))
+          totalsByDay[dates[daysAgo].format('YYYY-MM-DD')] += val
         }
       }
     } else if (fieldProperties[_state.selectedField].count == 'cumulative') {
@@ -82,6 +87,7 @@ const render = () => {
             classes.push('neg')
           }
           cells.push(cellWithValue(classes, val))
+          totalsByDay[dates[daysAgo].format('YYYY-MM-DD')] += val
         }
       }
     }
@@ -89,6 +95,16 @@ const render = () => {
     let row = tr('prefecture', cells)
     tableBody.appendChild(row)
   }
+
+  // Fill out total row.
+  let totalsByDayElements = [
+    td('', ''),
+    td('', ''),
+  ]
+  for (const date of dates) {
+    totalsByDayElements.push(td('', totalsByDay[date.format('YYYY-MM-DD')].toString()))
+  }
+  tableHead.appendChild(tr('', totalsByDayElements))
 }
 
 const process = (summary, patients, prefectureRecoveries) => {
