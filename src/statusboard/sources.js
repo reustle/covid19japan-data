@@ -21,7 +21,7 @@ export const sources = {
       extract: html.aichiLatestExtract
     },
     gov: {
-      patients: 'https://www.pref.aichi.jp/site/covid19-aichi/corona-kisya.html',
+      patients: 'https://www.pref.aichi.jp/site/covid19-aichi/index-2.html',
       patientList: 'https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html',
       summary: 'https://www.pref.aichi.jp/site/covid19-aichi/'
     },
