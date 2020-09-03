@@ -18481,7 +18481,7 @@
       "name": "Gunma"
     },
     {
-      "confirmed": 397,
+      "confirmed": 399,
       "dailyConfirmedCount": [
         0,
         0,
@@ -18722,10 +18722,10 @@
         3,
         6,
         3,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 3,
       "dailyDeceasedCount": [
         0,
@@ -19136,7 +19136,7 @@
       "recovered": 301,
       "critical": 0,
       "tested": 0,
-      "active": 71,
+      "active": 73,
       "confirmedByCity": {
         "Toyama City": 45,
         "Nanto": 1,
@@ -43016,14 +43016,14 @@
       "name": "Kyushu"
     },
     {
-      "confirmed": 7522,
-      "newlyConfirmed": 0,
+      "confirmed": 7524,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 62,
       "deceased": 154,
       "recovered": 6116,
       "critical": 0,
       "tested": 0,
-      "active": 1259,
+      "active": 1261,
       "dailyConfirmedCount": [
         0,
         0,
@@ -43264,7 +43264,7 @@
         103,
         96,
         90,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -52822,7 +52822,46 @@
       "recoveredAvg7d": 962,
       "recoveredCumulativeAvg3d": 57684,
       "recoveredCumulativeAvg7d": 55910
+    },
+    {
+      "confirmed": 2,
+      "confirmedCumulative": 69621,
+      "deceased": 0,
+      "deceasedCumulative": 1327,
+      "reportedDeceased": 0,
+      "reportedDeceasedCumulative": 1327,
+      "recovered": 0,
+      "recoveredCumulative": 58428,
+      "critical": 0,
+      "criticalCumulative": 225,
+      "tested": 0,
+      "testedCumulative": 1510462,
+      "active": 2,
+      "activeCumulative": 9866,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2020-09-03",
+      "deaths": 0,
+      "confirmedAvg3d": 410,
+      "confirmedAvg7d": 570,
+      "confirmedCumulativeAvg3d": 69421,
+      "confirmedCumulativeAvg7d": 68352,
+      "deceasedAvg3d": 7,
+      "deceasedAvg7d": 10,
+      "deceasedCumulativeAvg3d": 1323,
+      "deceasedCumulativeAvg7d": 1301,
+      "reportedDeceasedAvg3d": 9,
+      "reportedDeceasedAvg7d": 12,
+      "reportedDeceasedCumulativeAvg3d": 1322,
+      "reportedDeceasedCumulativeAvg7d": 1298,
+      "recoveredAvg3d": 542,
+      "recoveredAvg7d": 800,
+      "recoveredCumulativeAvg3d": 58226,
+      "recoveredCumulativeAvg7d": 56711
     }
   ],
-  "updated": "2020-09-02T22:23:31+09:00"
+  "updated": "2020-09-03T13:25:22+09:00"
 }
