@@ -31594,7 +31594,7 @@
       "deaths": 0
     },
     {
-      "confirmed": 145,
+      "confirmed": 146,
       "dailyConfirmedCount": [
         0,
         0,
@@ -31835,10 +31835,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -32253,7 +32253,7 @@
       "recovered": 128,
       "critical": 0,
       "tested": 0,
-      "active": 16,
+      "active": 17,
       "confirmedByCity": {
         "Okayama city": 26,
         "Satoshou": 1,
@@ -43538,14 +43538,14 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 938,
-      "newlyConfirmed": 3,
+      "confirmed": 939,
+      "newlyConfirmed": 4,
       "yesterdayConfirmed": 6,
       "deceased": 4,
       "recovered": 813,
       "critical": 0,
       "tested": 0,
-      "active": 124,
+      "active": 125,
       "dailyConfirmedCount": [
         0,
         0,
@@ -43786,7 +43786,7 @@
         4,
         2,
         7,
-        3
+        4
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -52824,8 +52824,8 @@
       "recoveredCumulativeAvg7d": 55910
     },
     {
-      "confirmed": 39,
-      "confirmedCumulative": 69658,
+      "confirmed": 40,
+      "confirmedCumulative": 69659,
       "deceased": 0,
       "deceasedCumulative": 1327,
       "reportedDeceased": 0,
@@ -52836,8 +52836,8 @@
       "criticalCumulative": 225,
       "tested": 0,
       "testedCumulative": 1510462,
-      "active": 39,
-      "activeCumulative": 9903,
+      "active": 40,
+      "activeCumulative": 9904,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -52845,7 +52845,7 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-09-03",
       "deaths": 0,
-      "confirmedAvg3d": 422,
+      "confirmedAvg3d": 423,
       "confirmedAvg7d": 575,
       "confirmedCumulativeAvg3d": 69433,
       "confirmedCumulativeAvg7d": 68357,
@@ -52863,5 +52863,5 @@
       "recoveredCumulativeAvg7d": 56711
     }
   ],
-  "updated": "2020-09-03T14:49:11+09:00"
+  "updated": "2020-09-03T15:08:26+09:00"
 }
