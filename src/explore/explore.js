@@ -82,7 +82,8 @@ const render = () => {
 
   const orderedPrefectures = _.orderBy(_state.prefectureSummary, [_state.orderBy], [orderByDirection[_state.orderBy]])
   for (let prefecture of orderedPrefectures) {
-    if (_state.ignoredPrefectures[prefecture.name]) {
+    if (_state.ignoredPrefectures.indexOf(prefecture.name) != -1) {
+      console.log('ignoring', prefecture.name)
       continue
     }
     let cells = [td('prefectureName', prefecture.name)]
