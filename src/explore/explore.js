@@ -3,7 +3,14 @@ import moment from 'moment'
 import { div, span, tr, td, el } from 'quickelement'
 import Summary from '../summarize.js'
 
-
+// Helper method to do parseInt safely (reverts to 0 if unparse)
+const safeParseInt = v => {
+  let result = parseInt(v)
+  if (isNaN(result)) {
+    return 0
+  }
+  return result
+}
 
 const th = (klass, attributes, contents) => { return el('th', klass, attributes, contents ) } 
 
@@ -11,7 +18,14 @@ const _state = {
   maxDaysBefore: 60,
   countMethod: 'cumulative',
   selectedField: 'confirmed',
+  orderBy: 'name',  
+  ignoredPrefectures: ['Diamond Princess Cruise Ship'],
   patients: []
+}
+
+const orderByDirection = {
+  name: 'asc',
+  confirmed: 'desc',
 }
 
 const cellWithValue = (klass, value) => {
@@ -27,9 +41,20 @@ const render = () => {
   const tableBody = table.querySelector('tbody')
 
   tableHead.innerHTML = ''
+  const prefectureHeaderCell = th('', {id: 'prefectureHeader'}, 'Prefecture')
+  prefectureHeaderCell.addEventListener('click', e => { 
+    _state.orderBy = 'name'
+    render()
+  })
+  const totalHeaderCell = th('', {id: 'totalHeader'}, 'Total')
+  totalHeaderCell.addEventListener('click', e => {
+    _state.orderBy = 'confirmed'
+    render()
+  })
+
   let columnHeaders = [
-    th('', 'Prefecture'),
-    th('', 'Total'),
+    prefectureHeaderCell,
+    totalHeaderCell
   ]
 
   const fieldProperties = {
@@ -42,15 +67,24 @@ const render = () => {
   let totalsByDay = {}
   let dates = []
 
+  const dateFormat = 'YYYY-MM-DD'
+  const samplePrefecture = _state.prefectureSummary[0]
+  const latestDataDay = moment(samplePrefecture.dailyConfirmedStartDate).add(samplePrefecture.dailyConfirmedCount.length - 1, 'days')
+
   if (fieldProperties[_state.selectedField]) {
-    dates = _.map(_.range(0, _state.maxDaysBefore), i => { return moment().subtract(i, 'days') })
+    dates = _.map(_.range(0, _state.maxDaysBefore), i => moment(latestDataDay).subtract(i, 'days'))
     columnHeaders = _.concat(columnHeaders, _.map(dates, date => th('', date.format('M/DD'))))
-    _.forEach(dates, o => { totalsByDay[o.format('YYYY-MM-DD')] = 0 })
+    _.forEach(dates, o => { totalsByDay[o.format(dateFormat)] = 0 })
   }
   tableHead.appendChild(tr('', columnHeaders))
 
   tableBody.innerHTML = ''
-  for (let prefecture of _state.prefectureSummary) {
+
+  const orderedPrefectures = _.orderBy(_state.prefectureSummary, [_state.orderBy], [orderByDirection[_state.orderBy]])
+  for (let prefecture of orderedPrefectures) {
+    if (_state.ignoredPrefectures[prefecture.name]) {
+      continue
+    }
     let cells = [td('prefectureName', prefecture.name)]
 
     // Total
@@ -61,22 +95,21 @@ const render = () => {
       const dailyValues = prefecture[fieldProperties[_state.selectedField].name]
       if (dailyValues) {
         for (const daysAgo of _.range(0, _state.maxDaysBefore)) {
-          const totalValue = _.sum(_.slice(dailyValues, 0, dailyValues.length - 1 - daysAgo))
-          const dailyValue = parseInt(dailyValues[dailyValues.length - 1 - daysAgo])
-          const val = dailyValue
+          const val = safeParseInt(dailyValues[dailyValues.length - 1 - daysAgo])
           if (_state.countMethod == 'cumulative') {
-            val = totalValue
+            val = _.sum(_.slice(dailyValues, 0, dailyValues.length - daysAgo))
           }
+
           cells.push(cellWithValue('val', val))
-          totalsByDay[dates[daysAgo].format('YYYY-MM-DD')] += val
+          totalsByDay[dates[daysAgo].format(dateFormat)] += val
         }
       }
     } else if (fieldProperties[_state.selectedField].count == 'cumulative') {
       const totalValues = prefecture[fieldProperties[_state.selectedField].name]
       if (totalValues) {
         for (const daysAgo of _.range(0, _state.maxDaysBefore)) {
-          const totalValue = parseInt(totalValues[totalValues.length - 1 - daysAgo])
-          const yesterdayTotalValue = parseInt(totalValues[totalValues.length - 1 - daysAgo - 1])
+          const totalValue = safeParseInt(totalValues[totalValues.length - 1 - daysAgo])
+          const yesterdayTotalValue = safeParseInt(totalValues[totalValues.length - 1 - daysAgo - 1])
           const dailyValue = totalValue - yesterdayTotalValue
           let val = dailyValue
           if (_state.countMethod == 'cumulative') {
@@ -87,7 +120,7 @@ const render = () => {
             classes.push('neg')
           }
           cells.push(cellWithValue(classes, val))
-          totalsByDay[dates[daysAgo].format('YYYY-MM-DD')] += val
+          totalsByDay[dates[daysAgo].format(dateFormat)] += val
         }
       }
     }
@@ -96,13 +129,13 @@ const render = () => {
     tableBody.appendChild(row)
   }
 
-  // Fill out total row.
+  // Fill out total row in the header.
   let totalsByDayElements = [
     td('', ''),
     td('', ''),
   ]
   for (const date of dates) {
-    totalsByDayElements.push(td('', totalsByDay[date.format('YYYY-MM-DD')].toString()))
+    totalsByDayElements.push(td('', totalsByDay[date.format(dateFormat)].toString()))
   }
   tableHead.appendChild(tr('', totalsByDayElements))
 }
