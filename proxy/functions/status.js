@@ -1,6 +1,10 @@
 const admin = require('firebase-admin');
 admin.initializeApp();
 
+// Example:
+// https://us-central1-covid19-analysis.cloudfunctions.net/status?name=covid19japan-update
+// https://us-central1-covid19-analysis.cloudfunctions.net/status?name=covid19japan-update-test&status=test%20message
+
 exports.status = async (request, response) => {
   let name = 'latest'
   if (request.query.name) {
