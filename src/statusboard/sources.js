@@ -200,7 +200,8 @@ export const sources = {
       extract: html.fukuokaLatestExtract
     },
     gov: {
-      patients: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
+      patients: 'https://www.pref.fukuoka.lg.jp/press/',
+      patientList: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
       summary: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
     },
     cities: {
