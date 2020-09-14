@@ -334,7 +334,7 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureC
           .append('a')
           .attr('href', prefectureSource.gov.patients)
           .attr('target', '_blank')
-          .text('patients')    
+          .text('reports')    
       }
       if (prefectureSource.gov.summary) {
         select('#statusboard')
@@ -356,7 +356,7 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureC
           .append('a')
           .attr('href', prefectureSource.gov.deaths)
           .attr('target', '_blank')
-          .text('link')    
+          .text('deaths')    
       }    
       if (prefectureSource.gov.patientList) {
         select('#statusboard')
@@ -367,7 +367,7 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureC
           .append('a')
           .attr('href', prefectureSource.gov.patientList)
           .attr('target', '_blank')
-          .text('link')    
+          .text('list')    
       }    
     }
   }      

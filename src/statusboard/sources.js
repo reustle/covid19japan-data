@@ -22,7 +22,7 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.aichi.jp/site/covid19-aichi/index-2.html',
-      patientList: 'https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html',
+      patientList: 'https://www.pref.aichi.jp/site/covid19-aichi/',
       summary: 'https://www.pref.aichi.jp/site/covid19-aichi/'
     },
     source: 'https://github.com/code4nagoya/covid19',
@@ -53,7 +53,7 @@ export const sources = {
         }
       },
       toyota: {
-        gov: { patients: 'https://www.city.toyota.aichi.jp/kurashi/kenkou/eisei/1037578.html' }
+        gov: { patient: 'https://www.city.toyota.aichi.jp/kurashi/kenkou/eisei/1037578.html' }
       }
     }
   },
@@ -70,6 +70,7 @@ export const sources = {
     },
     gov: { 
       patients: 'https://www.pref.akita.lg.jp/pages/archive/47957',
+      patientList: 'https://www.pref.akita.lg.jp/pages/archive/47957',
       summary: 'https://www.pref.akita.lg.jp/pages/archive/47957'
     },
     cities: {
@@ -147,7 +148,7 @@ export const sources = {
     //   recovered: 'main_summary.children[0].children[1].value',
     // },
     gov: {
-      patients: 'https://www.pref.ehime.jp/h25500/kansen/covid19.html',
+      patients: 'https://www.pref.ehime.jp/h25500/kansen/covid19.html#kansensha',
       summary: 'https://www.pref.ehime.jp/h25500/kansen/documents/kennai_link.pdf'
     },
     cities: {
@@ -239,7 +240,8 @@ export const sources = {
       recovered: 'main_summary.children[0].children[1].value'
     },
     gov: {
-      patients: 'https://www.pref.fukushima.lg.jp/sec/21045c/fukushima-hasseijyoukyou.html'
+      patients: 'https://www.pref.fukushima.lg.jp/sec/21045c/fukushima-hasseijyoukyou.html',
+      patientList: 'https://www.pref.fukushima.lg.jp/sec/21045c/fukushima-hasseijyoukyou.html'
     },
     source: 'http://www.pref.fukushima.lg.jp/w4/covid19/patients/',
     dashboard: 'https://fukushima-covid19.firebaseapp.com/'
@@ -253,7 +255,7 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona_kansendoko.html',
-      summary: 'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona_kansendoko.html'
+      summary: 'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona_kansendoko.html#doukou'
     },
     summary: {
       format: 'html',
@@ -296,6 +298,7 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.hiroshima.lg.jp/site/hcdc/covid19-kanjya.html',
+      patientList: 'https://www.pref.hiroshima.lg.jp/site/hcdc/covid19-kanjya.html',
       summary: 'https://www.pref.hiroshima.lg.jp/soshiki/57/covid19-cases.html',
     },
     summary: {
@@ -361,9 +364,10 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/stop-covid19-hyogo/covid19/development/data/patients.json'
     },
     gov: {
-      patients: 'https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html',
+      patientList: 'https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html',
+      patients: 'https://web.pref.hyogo.lg.jp/kk03/singatakoronataiou.html',
       summary: 'https://web.pref.hyogo.lg.jp/kk03/200129.html#kensa_new',
-      deaths: 'https://web.pref.hyogo.lg.jp/kk03/singatakoronataiou.html'
+      deaths: 'https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html',
     },
     summary: {
       format: 'html',
@@ -486,8 +490,8 @@ export const sources = {
       url: 'http://www.pref.kanagawa.jp/osirase/1369/data/csv/patient.csv'
     },
     gov: {
-      patients: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html',
-      pressRelease: 'https://www.pref.kanagawa.jp/prs/list-2020-1-1.html',
+      patientList: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html',
+      patients: 'https://www.pref.kanagawa.jp/prs/list-2020-1-1.html',
       summary: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html',
       deaths: 'https://www.pref.kanagawa.jp/prs/list-2020-1-1.html'
     },
@@ -504,7 +508,8 @@ export const sources = {
     cities: {
       chigasaki: {
         gov: { 
-          patients: 'https://www.city.chigasaki.kanagawa.jp/kenko/1022933/1038284.html',
+          patients: 'https://www.city.chigasaki.kanagawa.jp/koho/1030702/1038773/index.html',
+          patientList: 'https://www.city.chigasaki.kanagawa.jp/kenko/1022933/1038284.html',
           deaths: 'https://www.city.chigasaki.kanagawa.jp/koho/1030702/1038773/index.html'
         },
         latest: { 
@@ -522,7 +527,10 @@ export const sources = {
         }
       },
       kawasaki: {
-        gov: { patients: 'http://www.city.kawasaki.jp/350/page/0000115886.html' },
+        gov: { 
+          patients: 'http://www.city.kawasaki.jp/350/page/0000115886.html',
+          summary: 'http://www.city.kawasaki.jp/350/page/0000116827.html',
+        },
         latest: { 
           format: 'html',
           url: 'http://www.city.kawasaki.jp/350/page/0000115886.html',
@@ -560,8 +568,8 @@ export const sources = {
       },
       yokosuka: {
         gov: { 
-          patients: 'https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html',
-          deaths: 'https://www.city.yokosuka.kanagawa.jp/0520/nagekomi/2020_5.html' 
+          patientList: 'https://www.city.yokosuka.kanagawa.jp/3130/hasseijoukyou.html',
+          patients: 'https://www.city.yokosuka.kanagawa.jp/0520/nagekomi/index2.html' 
         },
         latest: {
           format: 'html',
@@ -746,9 +754,8 @@ export const sources = {
       url: 'https://data.bodik.jp/dataset/420000_covidcounts/resource/438f03f1-0ee8-466d-a5d9-e874f5367507'
     },
     gov: {
-      patients: 'https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/',
-      patientList: 'https://twitter.com/ngs_ken_iryou',
-      deaths: 'https://twitter.com/ngs_ken_iryou',
+      patientList: 'https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/corona_nagasaki_shousai/',
+      patients: 'https://twitter.com/ngs_ken_iryou',
     },
     cities: {
       nagasakiCity: {
@@ -808,7 +815,7 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.niigata.lg.jp/site/shingata-corona/256362836.html',
-      summary: 'https://www.pref.niigata.lg.jp/site/shingata-corona/#status'
+      summary: 'https://www.pref.niigata.lg.jp/site/shingata-corona/#kijun'
     },
     cities: {
       niigataCity: {
@@ -943,7 +950,7 @@ export const sources = {
     },
     gov: {
       summary: 'https://www.pref.saitama.lg.jp/a0701/shingatacoronavirus.html',
-      patients: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/8gatsu/index.html',
+      patients: 'https://www.pref.saitama.lg.jp/kense/shiryo/nyu-su/2020/9gatsu/index.html',
       patientList: 'https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html'
     },
     summary: {
@@ -1005,7 +1012,15 @@ export const sources = {
       extract: html.shimaneSummaryExtract
     },
     gov: {
-      patients: 'https://www.pref.shimane.lg.jp/bousai_info/bousai/kikikanri/shingata_taisaku/new_coronavirus_portal.html'
+      patients: 'https://www.pref.shimane.lg.jp/medical/yakuji/kansensyo/other/topics/bukan2020.html',
+      patientList: 'https://www.pref.shimane.lg.jp/bousai_info/bousai/kikikanri/shingata_taisaku/new_coronavirus_portal.html'
+    },
+    cities: {
+      matsue: {
+        gov: {
+          patients: 'http://www1.city.matsue.shimane.jp/kenkou/kenkoudukuri/kansensyo_yobou/coronavirus-disease/coronahasseijoukyou.html'
+        }
+      }
     },
     source: 'https://github.com/TaigaMikami/shimane-covid19/',
     dashboard: 'https://shimane-covid19.netlify.app/en'
@@ -1016,9 +1031,10 @@ export const sources = {
       url: 'https://raw.githubusercontent.com/hiroyuki-ichikawa/covid19/development/data/data.json'
     },
     gov: {
-      patients: 'https://www.pref.shizuoka.jp/kinkyu/covid-19-tyuumokujouhou.html',
+      patients: 'http://www2.pref.shizuoka.jp/all/kisha20.nsf/webDateView',
       summary: 'https://www.pref.shizuoka.jp/kinkyu/covid-19.html',
-      citySummary: 'https://www.pref.shizuoka.jp/kinkyu/covid-19-bunnpujoukyou.html'
+      citySummary: 'https://www.pref.shizuoka.jp/kinkyu/covid-19-bunnpujoukyou.html',
+      patientList: 'https://www.pref.shizuoka.jp/kinkyu/covid-19-tyuumokujouhou.html',
     },
     summary: {
       format: 'html',
@@ -1180,8 +1196,8 @@ export const sources = {
       extract: html.yamaguchiSummaryExtract
     },
     gov: {
-      patients: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html',
-      summary: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html'
+      patients: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202007270002.html',
+      summary: 'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202007270002.html'
     },
     source: 'https://github.com/nishidayoshikatsu/covid19-yamaguchi/'
   },
