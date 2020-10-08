@@ -12069,7 +12069,7 @@
       "name": "Port Quarantine"
     },
     {
-      "confirmed": 778,
+      "confirmed": 779,
       "dailyConfirmedCount": [
         0,
         0,
@@ -12345,10 +12345,10 @@
         1,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -12833,7 +12833,7 @@
       "recovered": 704,
       "critical": 0,
       "tested": 0,
-      "active": 27,
+      "active": 28,
       "confirmedByCity": {
         "Kanazawa": 53,
         "Ishikawa": 1,
@@ -50125,14 +50125,14 @@
       "name": "Kyushu"
     },
     {
-      "confirmed": 8831,
-      "newlyConfirmed": 22,
+      "confirmed": 8832,
+      "newlyConfirmed": 23,
       "yesterdayConfirmed": 26,
       "deceased": 189,
       "recovered": 8156,
       "critical": 0,
       "tested": 0,
-      "active": 493,
+      "active": 494,
       "dailyConfirmedCount": [
         0,
         0,
@@ -50408,7 +50408,7 @@
         26,
         32,
         41,
-        37
+        38
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -61473,8 +61473,8 @@
       "recoveredCumulativeAvg7d": 78183
     },
     {
-      "confirmed": 618,
-      "confirmedCumulative": 87655,
+      "confirmed": 619,
+      "confirmedCumulative": 87656,
       "deceased": 2,
       "deceasedCumulative": 1616,
       "reportedDeceased": 2,
@@ -61485,8 +61485,8 @@
       "criticalCumulative": 141,
       "tested": 0,
       "testedCumulative": 2218653,
-      "active": 616,
-      "activeCumulative": 6363,
+      "active": 617,
+      "activeCumulative": 6364,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -61495,9 +61495,9 @@
       "date": "2020-10-08",
       "deaths": 2,
       "confirmedAvg3d": 543,
-      "confirmedAvg7d": 489,
+      "confirmedAvg7d": 490,
       "confirmedCumulativeAvg3d": 87073,
-      "confirmedCumulativeAvg7d": 86157,
+      "confirmedCumulativeAvg7d": 86158,
       "deceasedAvg3d": 4,
       "deceasedAvg7d": 5,
       "deceasedCumulativeAvg3d": 1613,
@@ -61512,5 +61512,5 @@
       "recoveredCumulativeAvg7d": 78624
     }
   ],
-  "updated": "2020-10-08T20:28:09+09:00"
+  "updated": "2020-10-08T22:10:28+09:00"
 }
