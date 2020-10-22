@@ -35184,7 +35184,7 @@
       "name": "Nagasaki"
     },
     {
-      "confirmed": 210,
+      "confirmed": 211,
       "dailyConfirmedCount": [
         0,
         0,
@@ -35474,10 +35474,10 @@
         0,
         0,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -35990,7 +35990,7 @@
       "recovered": 205,
       "critical": 0,
       "tested": 0,
-      "active": 3,
+      "active": 4,
       "confirmedByCity": {
         "Shimonoseki": 4,
         "Yamaguchi City": 2,
@@ -53900,14 +53900,14 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 1220,
-      "newlyConfirmed": 0,
+      "confirmed": 1221,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 13,
       "deceased": 8,
       "recovered": 1150,
       "critical": 0,
       "tested": 0,
-      "active": 65,
+      "active": 66,
       "dailyConfirmedCount": [
         0,
         0,
@@ -54197,7 +54197,7 @@
         2,
         1,
         14,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -64933,8 +64933,8 @@
       "recoveredCumulativeAvg7d": 85480
     },
     {
-      "confirmed": 4,
-      "confirmedCumulative": 94515,
+      "confirmed": 5,
+      "confirmedCumulative": 94516,
       "deceased": 0,
       "deceasedCumulative": 1686,
       "reportedDeceased": 0,
@@ -64945,8 +64945,8 @@
       "criticalCumulative": 150,
       "tested": 0,
       "testedCumulative": 2482485,
-      "active": 4,
-      "activeCumulative": 5722,
+      "active": 5,
+      "activeCumulative": 5723,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -64955,7 +64955,7 @@
       "date": "2020-10-22",
       "deaths": 0,
       "confirmedAvg3d": 369,
-      "confirmedAvg7d": 445,
+      "confirmedAvg7d": 446,
       "confirmedCumulativeAvg3d": 94305,
       "confirmedCumulativeAvg7d": 93443,
       "deceasedAvg3d": 3,
@@ -64972,5 +64972,5 @@
       "recoveredCumulativeAvg7d": 85947
     }
   ],
-  "updated": "2020-10-22T11:12:20+09:00"
+  "updated": "2020-10-22T13:35:13+09:00"
 }
