@@ -20005,7 +20005,7 @@
       "name": "Miyagi"
     },
     {
-      "confirmed": 654,
+      "confirmed": 655,
       "dailyConfirmedCount": [
         0,
         0,
@@ -20301,10 +20301,10 @@
         1,
         0,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -20829,7 +20829,7 @@
       "recovered": 632,
       "critical": 0,
       "tested": 0,
-      "active": 20,
+      "active": 21,
       "confirmedByCity": {
         "Hiroshima": 4,
         "Onomichi": 2,
@@ -55137,14 +55137,14 @@
       "name": "Tohoku"
     },
     {
-      "confirmed": 1261,
-      "newlyConfirmed": 0,
+      "confirmed": 1262,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 11,
       "deceased": 9,
       "recovered": 1175,
       "critical": 0,
       "tested": 0,
-      "active": 80,
+      "active": 81,
       "dailyConfirmedCount": [
         0,
         0,
@@ -55440,7 +55440,7 @@
         9,
         4,
         12,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -66416,8 +66416,8 @@
       "recoveredCumulativeAvg7d": 88706
     },
     {
-      "confirmed": 13,
-      "confirmedCumulative": 98159,
+      "confirmed": 14,
+      "confirmedCumulative": 98160,
       "deceased": 0,
       "deceasedCumulative": 1726,
       "reportedDeceased": 0,
@@ -66428,8 +66428,8 @@
       "criticalCumulative": 165,
       "tested": 0,
       "testedCumulative": 2606199,
-      "active": 13,
-      "activeCumulative": 6285,
+      "active": 14,
+      "activeCumulative": 6286,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -66437,9 +66437,9 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-10-28",
       "deaths": 0,
-      "confirmedAvg3d": 355,
+      "confirmedAvg3d": 356,
       "confirmedAvg7d": 522,
-      "confirmedCumulativeAvg3d": 97935,
+      "confirmedCumulativeAvg3d": 97936,
       "confirmedCumulativeAvg7d": 96926,
       "deceasedAvg3d": 3,
       "deceasedAvg7d": 5,
@@ -66455,5 +66455,5 @@
       "recoveredCumulativeAvg7d": 89140
     }
   ],
-  "updated": "2020-10-28T13:13:21+09:00"
+  "updated": "2020-10-28T13:39:17+09:00"
 }
