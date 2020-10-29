@@ -9814,7 +9814,7 @@
       "name": "Hyogo"
     },
     {
-      "confirmed": 2922,
+      "confirmed": 2962,
       "dailyConfirmedCount": [
         0,
         0,
@@ -10111,10 +10111,10 @@
         50,
         27,
         52,
-        0
+        40
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 40,
       "yesterdayConfirmed": 52,
       "dailyDeceasedCount": [
         0,
@@ -10641,7 +10641,7 @@
       "recovered": 2402,
       "critical": 0,
       "tested": 0,
-      "active": 422,
+      "active": 462,
       "confirmedByCity": {
         "Sapporo": 1533,
         "Nanae, Oshima": 1,
@@ -54712,14 +54712,14 @@
       "name": "Chubu"
     },
     {
-      "confirmed": 2922,
-      "newlyConfirmed": 0,
+      "confirmed": 2962,
+      "newlyConfirmed": 40,
       "yesterdayConfirmed": 52,
       "deceased": 109,
       "recovered": 2402,
       "critical": 0,
       "tested": 0,
-      "active": 422,
+      "active": 462,
       "dailyConfirmedCount": [
         0,
         0,
@@ -55016,7 +55016,7 @@
         100,
         54,
         104,
-        0
+        80
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -66663,8 +66663,8 @@
       "recoveredCumulativeAvg7d": 89234
     },
     {
-      "confirmed": 41,
-      "confirmedCumulative": 98918,
+      "confirmed": 81,
+      "confirmedCumulative": 98958,
       "deceased": 1,
       "deceasedCumulative": 1732,
       "reportedDeceased": 1,
@@ -66675,8 +66675,8 @@
       "criticalCumulative": 166,
       "tested": 0,
       "testedCumulative": 2633603,
-      "active": 40,
-      "activeCumulative": 6379,
+      "active": 80,
+      "activeCumulative": 6419,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -66684,10 +66684,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-10-29",
       "deaths": 1,
-      "confirmedAvg3d": 472,
-      "confirmedAvg7d": 542,
-      "confirmedCumulativeAvg3d": 98647,
-      "confirmedCumulativeAvg7d": 97571,
+      "confirmedAvg3d": 485,
+      "confirmedAvg7d": 548,
+      "confirmedCumulativeAvg3d": 98660,
+      "confirmedCumulativeAvg7d": 97577,
       "deceasedAvg3d": 3,
       "deceasedAvg7d": 5,
       "deceasedCumulativeAvg3d": 1729,
@@ -66702,5 +66702,5 @@
       "recoveredCumulativeAvg7d": 89683
     }
   ],
-  "updated": "2020-10-29T13:57:55+09:00"
+  "updated": "2020-10-29T15:13:24+09:00"
 }
