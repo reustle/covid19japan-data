@@ -201,7 +201,7 @@ export const sources = {
     },
     gov: {
       patients: 'https://www.pref.fukuoka.lg.jp/press/',
-      patientList: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
+      patientList: 'https://ckan.open-governmentdata.org/dataset/401000_pref_fukuoka_covid19_patients',
       summary: 'https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html',
     },
     cities: {
