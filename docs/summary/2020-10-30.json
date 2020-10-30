@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 30701,
+      "confirmed": 30905,
       "dailyConfirmedCount": [
         0,
         0,
@@ -299,10 +299,10 @@
         158,
         171,
         221,
-        0
+        204
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 204,
       "yesterdayConfirmed": 221,
       "dailyDeceasedCount": [
         0,
@@ -831,7 +831,7 @@
       "recovered": 28373,
       "critical": 0,
       "tested": 0,
-      "active": 1873,
+      "active": 2077,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
@@ -53633,14 +53633,14 @@
   ],
   "regions": [
     {
-      "confirmed": 52161,
-      "newlyConfirmed": 0,
+      "confirmed": 52365,
+      "newlyConfirmed": 204,
       "yesterdayConfirmed": 389,
       "deceased": 849,
       "recovered": 47804,
       "critical": 0,
       "tested": 0,
-      "active": 3509,
+      "active": 3713,
       "dailyConfirmedCount": [
         0,
         0,
@@ -53938,7 +53938,7 @@
         347,
         377,
         432,
-        0
+        204
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -66949,8 +66949,8 @@
       "recoveredCumulativeAvg7d": 89757
     },
     {
-      "confirmed": 43,
-      "confirmedCumulative": 99717,
+      "confirmed": 247,
+      "confirmedCumulative": 99921,
       "deceased": 0,
       "deceasedCumulative": 1748,
       "reportedDeceased": 0,
@@ -66961,8 +66961,8 @@
       "criticalCumulative": 161,
       "tested": 0,
       "testedCumulative": 2658586,
-      "active": 43,
-      "activeCumulative": 6647,
+      "active": 247,
+      "activeCumulative": 6851,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -66970,10 +66970,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-10-30",
       "deaths": 0,
-      "confirmedAvg3d": 529,
-      "confirmedAvg7d": 552,
-      "confirmedCumulativeAvg3d": 99418,
-      "confirmedCumulativeAvg7d": 98218,
+      "confirmedAvg3d": 597,
+      "confirmedAvg7d": 581,
+      "confirmedCumulativeAvg3d": 99486,
+      "confirmedCumulativeAvg7d": 98247,
       "deceasedAvg3d": 4,
       "deceasedAvg7d": 4,
       "deceasedCumulativeAvg3d": 1745,
@@ -66988,5 +66988,5 @@
       "recoveredCumulativeAvg7d": 90196
     }
   ],
-  "updated": "2020-10-30T15:09:23+09:00"
+  "updated": "2020-10-30T15:23:28+09:00"
 }
