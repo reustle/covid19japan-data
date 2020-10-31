@@ -122,7 +122,7 @@ const extractDailySummary = (url, fetchImpl) => {
         values.totalCount = parseJapaneseNumber(totalMatch[1])
       }
 
-      const deathsPattern = new RegExp('亡くなった人は、.*国内で感染した人が([0-9０-９万]+)人', 'iu')
+      const deathsPattern = new RegExp('亡くなった人は.*国内で感染した人が([0-9０-９万]+)人', 'iu')
       let deathsMatch = contents.match(deathsPattern)
       if (deathsMatch) {
         values.deceased = parseJapaneseNumber(deathsMatch[1])
