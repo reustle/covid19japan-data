@@ -92,7 +92,7 @@ const extractDailySummary = (url, fetchImpl) => {
       let dom = cheerio.load(text)
       let contents = dom('section.module--content').text()
 
-      const prefecturePattern = new RegExp('▽([^▽ ]+?)は([0-9０-９万]+)人', 'igu')
+      const prefecturePattern = new RegExp('▽([^▽ ]+?)は[※]?([0-9０-９万]+)人', 'igu')
       let prefectureMatches = contents.matchAll(prefecturePattern)
       if (prefectureMatches) {
         for (const prefectureMatch of prefectureMatches) {
