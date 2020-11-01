@@ -24643,7 +24643,7 @@
       "name": "Mie"
     },
     {
-      "confirmed": 552,
+      "confirmed": 553,
       "dailyConfirmedCount": [
         0,
         0,
@@ -24943,10 +24943,10 @@
         0,
         1,
         5,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 5,
       "dailyDeceasedCount": [
         0,
@@ -25479,7 +25479,7 @@
       "recovered": 521,
       "critical": 0,
       "tested": 0,
-      "active": 22,
+      "active": 23,
       "confirmedByCity": {
         "Otsu": 7,
         "Higashiomi": 2,
@@ -54355,14 +54355,14 @@
       "name": "Kanto"
     },
     {
-      "confirmed": 20115,
-      "newlyConfirmed": 27,
+      "confirmed": 20116,
+      "newlyConfirmed": 28,
       "yesterdayConfirmed": 207,
       "deceased": 362,
       "recovered": 18363,
       "critical": 0,
       "tested": 0,
-      "active": 1391,
+      "active": 1392,
       "dailyConfirmedCount": [
         0,
         0,
@@ -54662,7 +54662,7 @@
         175,
         203,
         235,
-        42
+        43
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -67443,8 +67443,8 @@
       "recoveredCumulativeAvg7d": 90804
     },
     {
-      "confirmed": 236,
-      "confirmedCumulative": 101563,
+      "confirmed": 237,
+      "confirmedCumulative": 101564,
       "deceased": 2,
       "deceasedCumulative": 1771,
       "reportedDeceased": 2,
@@ -67455,8 +67455,8 @@
       "criticalCumulative": 161,
       "tested": 0,
       "testedCumulative": 2706168,
-      "active": 234,
-      "activeCumulative": 7317,
+      "active": 235,
+      "activeCumulative": 7318,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -67464,7 +67464,7 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-11-01",
       "deaths": 2,
-      "confirmedAvg3d": 629,
+      "confirmedAvg3d": 630,
       "confirmedAvg7d": 641,
       "confirmedCumulativeAvg3d": 101113,
       "confirmedCumulativeAvg7d": 99642,
@@ -67482,5 +67482,5 @@
       "recoveredCumulativeAvg7d": 91260
     }
   ],
-  "updated": "2020-11-01T17:24:23+09:00"
+  "updated": "2020-11-01T17:35:59+09:00"
 }
