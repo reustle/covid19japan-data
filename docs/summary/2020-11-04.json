@@ -48987,7 +48987,7 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -49217,19 +49217,19 @@
         95
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 2,
+      "deceased": 3,
       "cruisePassenger": 0,
       "recovered": 95,
       "critical": 0,
       "tested": 0,
-      "active": 5,
+      "active": 4,
       "confirmedByCity": {
         "Marukame": 1,
         "Takamatsu": 9,
         "Sanuki": 1,
         "Sakaide": 3
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -49460,7 +49460,7 @@
       ],
       "reinfected": 0,
       "name_ja": "香川県",
-      "deaths": 2,
+      "deaths": 3,
       "name": "Kagawa"
     },
     {
@@ -56905,11 +56905,11 @@
       "confirmed": 526,
       "newlyConfirmed": 0,
       "yesterdayConfirmed": 0,
-      "deceased": 21,
+      "deceased": 22,
       "recovered": 498,
       "critical": 0,
       "tested": 0,
-      "active": 7,
+      "active": 6,
       "dailyConfirmedCount": [
         0,
         0,
@@ -68147,34 +68147,34 @@
     {
       "confirmed": 620,
       "confirmedCumulative": 103913,
-      "deceased": 4,
-      "deceasedCumulative": 1798,
-      "reportedDeceased": 4,
-      "reportedDeceasedCumulative": 1798,
+      "deceased": 5,
+      "deceasedCumulative": 1799,
+      "reportedDeceased": 5,
+      "reportedDeceasedCumulative": 1799,
       "recovered": 0,
       "recoveredCumulative": 93855,
       "critical": 0,
       "criticalCumulative": 163,
       "tested": 0,
       "testedCumulative": 2755446,
-      "active": 616,
-      "activeCumulative": 8260,
+      "active": 615,
+      "activeCumulative": 8259,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2020-11-04",
-      "deaths": 4,
+      "deaths": 5,
       "confirmedAvg3d": 658,
       "confirmedAvg7d": 721,
       "confirmedCumulativeAvg3d": 103211,
       "confirmedCumulativeAvg7d": 101859,
-      "deceasedAvg3d": 7,
+      "deceasedAvg3d": 8,
       "deceasedAvg7d": 8,
       "deceasedCumulativeAvg3d": 1793,
       "deceasedCumulativeAvg7d": 1776,
-      "reportedDeceasedAvg3d": 7,
+      "reportedDeceasedAvg3d": 8,
       "reportedDeceasedAvg7d": 8,
       "reportedDeceasedCumulativeAvg3d": 1793,
       "reportedDeceasedCumulativeAvg7d": 1775,
@@ -68184,5 +68184,5 @@
       "recoveredCumulativeAvg7d": 92820
     }
   ],
-  "updated": "2020-11-04T19:51:13+09:00"
+  "updated": "2020-11-04T20:23:04+09:00"
 }
