@@ -17803,7 +17803,7 @@
       "name": "Ishikawa"
     },
     {
-      "confirmed": 779,
+      "confirmed": 789,
       "dailyConfirmedCount": [
         0,
         0,
@@ -18107,10 +18107,10 @@
         3,
         2,
         4,
-        0
+        10
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 10,
       "yesterdayConfirmed": 4,
       "dailyDeceasedCount": [
         0,
@@ -18651,7 +18651,7 @@
       "recovered": 721,
       "critical": 0,
       "tested": 0,
-      "active": 39,
+      "active": 49,
       "confirmedByCity": {
         "Hitachinaka": 1,
         "Tsukuba": 16,
@@ -35962,7 +35962,7 @@
       "name": "Saga"
     },
     {
-      "confirmed": 262,
+      "confirmed": 264,
       "dailyConfirmedCount": [
         0,
         0,
@@ -36266,10 +36266,10 @@
         8,
         1,
         11,
-        6
+        8
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 6,
+      "newlyConfirmed": 8,
       "yesterdayConfirmed": 11,
       "dailyDeceasedCount": [
         0,
@@ -36810,7 +36810,7 @@
       "recovered": 162,
       "critical": 0,
       "tested": 0,
-      "active": 96,
+      "active": 98,
       "confirmedByCity": {
         "Hachinohe": 8,
         "Aomori City": 2,
@@ -54833,14 +54833,14 @@
   ],
   "regions": [
     {
-      "confirmed": 54339,
-      "newlyConfirmed": 440,
+      "confirmed": 54349,
+      "newlyConfirmed": 450,
       "yesterdayConfirmed": 248,
       "deceased": 866,
       "recovered": 49536,
       "critical": 0,
       "tested": 0,
-      "active": 3938,
+      "active": 3948,
       "dailyConfirmedCount": [
         0,
         0,
@@ -55144,7 +55144,7 @@
         182,
         395,
         278,
-        498
+        508
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -56460,14 +56460,14 @@
       "name": "Kyushu"
     },
     {
-      "confirmed": 1672,
-      "newlyConfirmed": 32,
+      "confirmed": 1674,
+      "newlyConfirmed": 34,
       "yesterdayConfirmed": 27,
       "deceased": 14,
       "recovered": 1251,
       "critical": 0,
       "tested": 0,
-      "active": 408,
+      "active": 410,
       "dailyConfirmedCount": [
         0,
         0,
@@ -56771,7 +56771,7 @@
         41,
         31,
         27,
-        32
+        34
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -68392,8 +68392,8 @@
       "recoveredCumulativeAvg7d": 92882
     },
     {
-      "confirmed": 956,
-      "confirmedCumulative": 104873,
+      "confirmed": 968,
+      "confirmedCumulative": 104885,
       "deceased": 2,
       "deceasedCumulative": 1800,
       "reportedDeceased": 2,
@@ -68404,8 +68404,8 @@
       "criticalCumulative": 165,
       "tested": 0,
       "testedCumulative": 2764092,
-      "active": 954,
-      "activeCumulative": 8778,
+      "active": 966,
+      "activeCumulative": 8790,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -68413,10 +68413,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-11-05",
       "deaths": 2,
-      "confirmedAvg3d": 815,
-      "confirmedAvg7d": 743,
-      "confirmedCumulativeAvg3d": 104027,
-      "confirmedCumulativeAvg7d": 102602,
+      "confirmedAvg3d": 819,
+      "confirmedAvg7d": 744,
+      "confirmedCumulativeAvg3d": 104031,
+      "confirmedCumulativeAvg7d": 102604,
       "deceasedAvg3d": 4,
       "deceasedAvg7d": 7,
       "deceasedCumulativeAvg3d": 1797,
@@ -68431,5 +68431,5 @@
       "recoveredCumulativeAvg7d": 93307
     }
   ],
-  "updated": "2020-11-05T20:10:45+09:00"
+  "updated": "2020-11-05T20:25:19+09:00"
 }
