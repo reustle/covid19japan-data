@@ -53706,7 +53706,7 @@
       "name": "Akita"
     },
     {
-      "confirmed": 64,
+      "confirmed": 69,
       "dailyConfirmedCount": [
         0,
         0,
@@ -54019,12 +54019,12 @@
         8,
         10,
         13,
-        0,
+        5,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 0,
+      "yesterdayConfirmed": 5,
       "dailyDeceasedCount": [
         0,
         0,
@@ -54470,7 +54470,7 @@
       "recovered": 27,
       "critical": 0,
       "tested": 0,
-      "active": 37,
+      "active": 42,
       "confirmedByCity": {
         "Kuji": 2
       },
@@ -54598,7 +54598,7 @@
         15,
         24,
         37,
-        37
+        42
       ],
       "reinfected": 0,
       "name_ja": "岩手県",
@@ -58513,14 +58513,14 @@
       "name": "Kyushu"
     },
     {
-      "confirmed": 1924,
+      "confirmed": 1929,
       "newlyConfirmed": 0,
-      "yesterdayConfirmed": 19,
+      "yesterdayConfirmed": 24,
       "deceased": 20,
       "recovered": 1536,
       "critical": 0,
       "tested": 0,
-      "active": 369,
+      "active": 374,
       "dailyConfirmedCount": [
         0,
         0,
@@ -58833,7 +58833,7 @@
         46,
         37,
         49,
-        20,
+        25,
         0
       ],
       "dailyConfirmedStartDate": "2020-01-08",
@@ -70826,8 +70826,8 @@
       "recoveredCumulativeAvg7d": 98531
     },
     {
-      "confirmed": 1735,
-      "confirmedCumulative": 117103,
+      "confirmed": 1740,
+      "confirmedCumulative": 117108,
       "deceased": 1,
       "deceasedCumulative": 1865,
       "reportedDeceased": 1,
@@ -70838,8 +70838,8 @@
       "criticalCumulative": 234,
       "tested": 25281,
       "testedCumulative": 3016345,
-      "active": 763,
-      "activeCumulative": 13249,
+      "active": 768,
+      "activeCumulative": 13254,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -70847,10 +70847,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-11-14",
       "deaths": 1,
-      "confirmedAvg3d": 1699,
-      "confirmedAvg7d": 1380,
-      "confirmedCumulativeAvg3d": 115378,
-      "confirmedCumulativeAvg7d": 112308,
+      "confirmedAvg3d": 1701,
+      "confirmedAvg7d": 1381,
+      "confirmedCumulativeAvg3d": 115379,
+      "confirmedCumulativeAvg7d": 112309,
       "deceasedAvg3d": 5,
       "deceasedAvg7d": 7,
       "deceasedCumulativeAvg3d": 1861,
@@ -70865,5 +70865,5 @@
       "recoveredCumulativeAvg7d": 99320
     }
   ],
-  "updated": "2020-11-14T22:21:56+09:00"
+  "updated": "2020-11-15T11:26:49+09:00"
 }
