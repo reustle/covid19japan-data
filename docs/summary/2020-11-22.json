@@ -17740,7 +17740,7 @@
       "name": "Miyagi"
     },
     {
-      "confirmed": 1033,
+      "confirmed": 1045,
       "dailyConfirmedCount": [
         0,
         0,
@@ -18061,10 +18061,10 @@
         20,
         22,
         17,
-        0
+        12
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 12,
       "yesterdayConfirmed": 17,
       "dailyDeceasedCount": [
         0,
@@ -18639,7 +18639,7 @@
       "recovered": 916,
       "critical": 0,
       "tested": 0,
-      "active": 97,
+      "active": 109,
       "confirmedByCity": {
         "Oota": 1,
         "Ota": 4,
@@ -58238,14 +58238,14 @@
   ],
   "regions": [
     {
-      "confirmed": 65631,
-      "newlyConfirmed": 471,
+      "confirmed": 65643,
+      "newlyConfirmed": 483,
       "yesterdayConfirmed": 1105,
       "deceased": 909,
       "recovered": 56505,
       "critical": 0,
       "tested": 0,
-      "active": 8218,
+      "active": 8230,
       "dailyConfirmedCount": [
         0,
         0,
@@ -58566,7 +58566,7 @@
         1122,
         1076,
         1214,
-        551
+        563
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -72563,14 +72563,14 @@
       "deceasedCumulative": 1932,
       "reportedDeceased": 2,
       "reportedDeceasedCumulative": 1932,
-      "recovered": 1473,
-      "recoveredCumulative": 109896,
+      "recovered": 1469,
+      "recoveredCumulative": 109892,
       "critical": 22,
       "criticalCumulative": 313,
       "tested": 43463,
       "testedCumulative": 3225667,
-      "active": 1121,
-      "activeCumulative": 19038,
+      "active": 1125,
+      "activeCumulative": 19042,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -72590,26 +72590,26 @@
       "reportedDeceasedAvg7d": 9,
       "reportedDeceasedCumulativeAvg3d": 1927,
       "reportedDeceasedCumulativeAvg7d": 1905,
-      "recoveredAvg3d": 1399,
+      "recoveredAvg3d": 1398,
       "recoveredAvg7d": 1129,
-      "recoveredCumulativeAvg3d": 108424,
+      "recoveredCumulativeAvg3d": 108423,
       "recoveredCumulativeAvg7d": 106016
     },
     {
-      "confirmed": 1214,
-      "confirmedCumulative": 132080,
+      "confirmed": 1226,
+      "confirmedCumulative": 132092,
       "deceased": 3,
       "deceasedCumulative": 1935,
       "reportedDeceased": 3,
       "reportedDeceasedCumulative": 1935,
-      "recovered": 0,
-      "recoveredCumulative": 109896,
-      "critical": 0,
-      "criticalCumulative": 313,
-      "tested": 0,
-      "testedCumulative": 3225667,
-      "active": 1211,
-      "activeCumulative": 20249,
+      "recovered": 1271,
+      "recoveredCumulative": 111163,
+      "critical": 10,
+      "criticalCumulative": 323,
+      "tested": 26856,
+      "testedCumulative": 3252523,
+      "active": -48,
+      "activeCumulative": 18994,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -72617,10 +72617,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-11-22",
       "deaths": 3,
-      "confirmedAvg3d": 2078,
-      "confirmedAvg7d": 1924,
-      "confirmedCumulativeAvg3d": 130405,
-      "confirmedCumulativeAvg7d": 125903,
+      "confirmedAvg3d": 2082,
+      "confirmedAvg7d": 1926,
+      "confirmedCumulativeAvg3d": 130409,
+      "confirmedCumulativeAvg7d": 125905,
       "deceasedAvg3d": 5,
       "deceasedAvg7d": 9,
       "deceasedCumulativeAvg3d": 1932,
@@ -72629,11 +72629,11 @@
       "reportedDeceasedAvg7d": 9,
       "reportedDeceasedCumulativeAvg3d": 1932,
       "reportedDeceasedCumulativeAvg7d": 1914,
-      "recoveredAvg3d": 980,
-      "recoveredAvg7d": 1008,
-      "recoveredCumulativeAvg3d": 109405,
-      "recoveredCumulativeAvg7d": 107025
+      "recoveredAvg3d": 1403,
+      "recoveredAvg7d": 1189,
+      "recoveredCumulativeAvg3d": 109826,
+      "recoveredCumulativeAvg7d": 107205
     }
   ],
-  "updated": "2020-11-22T17:30:48+09:00"
+  "updated": "2020-11-22T17:51:58+09:00"
 }
