@@ -4906,7 +4906,7 @@
       "name": "Aichi"
     },
     {
-      "confirmed": 9240,
+      "confirmed": 9446,
       "dailyConfirmedCount": [
         0,
         0,
@@ -5238,10 +5238,10 @@
         151,
         206,
         176,
-        0
+        206
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 206,
       "yesterdayConfirmed": 176,
       "dailyDeceasedCount": [
         0,
@@ -5574,7 +5574,7 @@
         0,
         14,
         5,
-        0
+        11
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -5833,12 +5833,12 @@
         6206
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 200,
+      "deceased": 211,
       "cruisePassenger": 0,
       "recovered": 6394,
       "critical": 0,
       "tested": 0,
-      "active": 2657,
+      "active": 2852,
       "confirmedByCity": {
         "Sapporo": 1662,
         "Nanae, Oshima": 1,
@@ -5893,7 +5893,7 @@
         "Shiribe": 1,
         "Tokyo": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 11,
       "yesterdayDeceased": 5,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -6153,7 +6153,7 @@
       ],
       "reinfected": 11,
       "name_ja": "北海道",
-      "deaths": 200,
+      "deaths": 211,
       "name": "Hokkaido"
     },
     {
@@ -13540,7 +13540,7 @@
       "name": "Kyoto"
     },
     {
-      "confirmed": 1768,
+      "confirmed": 1832,
       "dailyConfirmedCount": [
         0,
         0,
@@ -13872,10 +13872,10 @@
         42,
         42,
         58,
-        0
+        64
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 64,
       "yesterdayConfirmed": 58,
       "dailyDeceasedCount": [
         0,
@@ -14208,7 +14208,7 @@
         1,
         0,
         1,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -14467,12 +14467,12 @@
         1042
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 11,
+      "deceased": 12,
       "cruisePassenger": 0,
       "recovered": 1115,
       "critical": 0,
       "tested": 0,
-      "active": 643,
+      "active": 706,
       "confirmedByCity": {
         "Shizuoka": 3,
         "Hamamatsu": 72,
@@ -14491,7 +14491,7 @@
         "Shimada": 1,
         "Hanamatsu": 5
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 1,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -14751,7 +14751,7 @@
       ],
       "reinfected": 1,
       "name_ja": "静岡県",
-      "deaths": 11,
+      "deaths": 12,
       "name": "Shizuoka"
     },
     {
@@ -61146,14 +61146,14 @@
       "name": "Kansai"
     },
     {
-      "confirmed": 16522,
-      "newlyConfirmed": 5,
+      "confirmed": 16586,
+      "newlyConfirmed": 69,
       "yesterdayConfirmed": 331,
-      "deceased": 237,
+      "deceased": 238,
       "recovered": 12950,
       "critical": 0,
       "tested": 0,
-      "active": 3342,
+      "active": 3405,
       "dailyConfirmedCount": [
         0,
         0,
@@ -61485,7 +61485,7 @@
         301,
         499,
         550,
-        5
+        69
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -61502,14 +61502,14 @@
       "name": "Chubu"
     },
     {
-      "confirmed": 9240,
-      "newlyConfirmed": 0,
+      "confirmed": 9446,
+      "newlyConfirmed": 206,
       "yesterdayConfirmed": 176,
-      "deceased": 200,
+      "deceased": 211,
       "recovered": 6394,
       "critical": 0,
       "tested": 0,
-      "active": 2657,
+      "active": 2852,
       "dailyConfirmedCount": [
         0,
         0,
@@ -61841,7 +61841,7 @@
         302,
         412,
         352,
-        0
+        412
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -75313,44 +75313,44 @@
       "recoveredCumulativeAvg7d": 121840
     },
     {
-      "confirmed": 789,
-      "confirmedCumulative": 154198,
-      "deceased": 0,
-      "deceasedCumulative": 2141,
-      "reportedDeceased": 0,
-      "reportedDeceasedCumulative": 2141,
+      "confirmed": 1059,
+      "confirmedCumulative": 154468,
+      "deceased": 12,
+      "deceasedCumulative": 2153,
+      "reportedDeceased": 12,
+      "reportedDeceasedCumulative": 2153,
       "recovered": 0,
       "recoveredCumulative": 127304,
       "critical": 0,
       "criticalCumulative": 488,
       "tested": 0,
       "testedCumulative": 3591597,
-      "active": 789,
-      "activeCumulative": 24753,
+      "active": 1047,
+      "activeCumulative": 25011,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2020-12-03",
-      "deaths": 0,
-      "confirmedAvg3d": 1751,
-      "confirmedAvg7d": 1996,
-      "confirmedCumulativeAvg3d": 152860,
-      "confirmedCumulativeAvg7d": 149032,
-      "deceasedAvg3d": 22,
-      "deceasedAvg7d": 20,
-      "deceasedCumulativeAvg3d": 2130,
-      "deceasedCumulativeAvg7d": 2084,
-      "reportedDeceasedAvg3d": 22,
-      "reportedDeceasedAvg7d": 20,
-      "reportedDeceasedCumulativeAvg3d": 2130,
-      "reportedDeceasedCumulativeAvg7d": 2084,
+      "deaths": 12,
+      "confirmedAvg3d": 1841,
+      "confirmedAvg7d": 2034,
+      "confirmedCumulativeAvg3d": 152950,
+      "confirmedCumulativeAvg7d": 149071,
+      "deceasedAvg3d": 26,
+      "deceasedAvg7d": 22,
+      "deceasedCumulativeAvg3d": 2134,
+      "deceasedCumulativeAvg7d": 2086,
+      "reportedDeceasedAvg3d": 26,
+      "reportedDeceasedAvg7d": 22,
+      "reportedDeceasedCumulativeAvg3d": 2134,
+      "reportedDeceasedCumulativeAvg7d": 2086,
       "recoveredAvg3d": 1286,
       "recoveredAvg7d": 1560,
       "recoveredCumulativeAvg3d": 126692,
       "recoveredCumulativeAvg7d": 123401
     }
   ],
-  "updated": "2020-12-03T15:37:37+09:00"
+  "updated": "2020-12-03T16:11:47+09:00"
 }
