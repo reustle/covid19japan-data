@@ -17192,7 +17192,7 @@
       "name": "Port Quarantine"
     },
     {
-      "confirmed": 1283,
+      "confirmed": 1312,
       "dailyConfirmedCount": [
         0,
         0,
@@ -17524,10 +17524,10 @@
         12,
         32,
         44,
-        0
+        29
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 29,
       "yesterdayConfirmed": 44,
       "dailyDeceasedCount": [
         0,
@@ -18124,7 +18124,7 @@
       "recovered": 1007,
       "critical": 0,
       "tested": 0,
-      "active": 256,
+      "active": 285,
       "confirmedByCity": {
         "Oota": 1,
         "Ota": 4,
@@ -60438,14 +60438,14 @@
   ],
   "regions": [
     {
-      "confirmed": 75148,
-      "newlyConfirmed": 861,
+      "confirmed": 75177,
+      "newlyConfirmed": 890,
       "yesterdayConfirmed": 1052,
       "deceased": 964,
       "recovered": 64125,
       "critical": 0,
       "tested": 0,
-      "active": 10060,
+      "active": 10089,
       "dailyConfirmedCount": [
         0,
         0,
@@ -60777,7 +60777,7 @@
         638,
         890,
         1128,
-        943
+        972
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -75313,8 +75313,8 @@
       "recoveredCumulativeAvg7d": 121840
     },
     {
-      "confirmed": 1801,
-      "confirmedCumulative": 155210,
+      "confirmed": 1830,
+      "confirmedCumulative": 155239,
       "deceased": 20,
       "deceasedCumulative": 2161,
       "reportedDeceased": 20,
@@ -75325,8 +75325,8 @@
       "criticalCumulative": 488,
       "tested": 0,
       "testedCumulative": 3591597,
-      "active": 1781,
-      "activeCumulative": 25745,
+      "active": 1810,
+      "activeCumulative": 25774,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -75334,10 +75334,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2020-12-03",
       "deaths": 20,
-      "confirmedAvg3d": 2088,
-      "confirmedAvg7d": 2140,
-      "confirmedCumulativeAvg3d": 153198,
-      "confirmedCumulativeAvg7d": 149177,
+      "confirmedAvg3d": 2098,
+      "confirmedAvg7d": 2144,
+      "confirmedCumulativeAvg3d": 153207,
+      "confirmedCumulativeAvg7d": 149181,
       "deceasedAvg3d": 28,
       "deceasedAvg7d": 23,
       "deceasedCumulativeAvg3d": 2137,
@@ -75352,5 +75352,5 @@
       "recoveredCumulativeAvg7d": 123401
     }
   ],
-  "updated": "2020-12-03T17:54:16+09:00"
+  "updated": "2020-12-03T18:15:06+09:00"
 }
