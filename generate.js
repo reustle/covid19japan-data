@@ -7,6 +7,7 @@ const Summarize = require('./src/summarize.js')
 const FetchSheet = require('./src/fetch_sheet.js')
 const MergePatients = require('./src/merge_patients.js')
 const Prefectures = require('./src/prefectures.js')
+const { request } = require('http')
 
 const generateLastUpdated = async (patients) => {
   // Check if patient list changed size, if it did, then update lastUpdated
@@ -40,7 +41,7 @@ const generateLastUpdated = async (patients) => {
   return lastUpdated
 }
 
-const fetchAndSummarize = async (dateString, useNewMethod) => {
+const fetchAndSummarize = async (dateString) => {
   const prefectureNames = Prefectures.prefectureNamesEn()
   const regions = Prefectures.regionPrefectures()
 
@@ -58,69 +59,56 @@ const fetchAndSummarize = async (dateString, useNewMethod) => {
     generateLastUpdated(patients)
       .then(lastUpdated => {
         // Write patient data
-        const patientOutputFilename = `./docs/patient_data/${dateString}.json`
+        const patientOutputFilename = `./docs/patient_data/latest.json`
         fs.writeFileSync(patientOutputFilename, JSON.stringify(patients, null, '  '))
 
         // Write daily and prefectural summary.
         const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, recoveries, prefectureNames, regions, lastUpdated)
-        const summaryOutputFilename = `./docs/summary/${dateString}.json`
+        const summaryOutputFilename = `./docs/summary/latest.json`
         fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
 
         // Write minified version of daily/prefectural summary
-        const summaryMinifiedOutputFilename = `./docs/summary_min/${dateString}.json`
+        const summaryMinifiedOutputFilename = `./docs/summary_min/latest.json`
         fs.writeFileSync(summaryMinifiedOutputFilename, JSON.stringify(summary))
 
         console.log('Success.')
       })     
   }
 
-  if (useNewMethod) {
-    const patientListTabs = [
-      { 
-        sheetId: latestSheetId, 
-        tabs: [
-          'Patient Data', 
-          'Aichi',
-          'Chiba',
-          'Fukuoka',
-          'Hokkaido',
-          'Kanagawa',
-          'Osaka',
-          'Saitama',
-          'Tokyo' 
-        ]
-      }
-    ]
-    FetchPatientData.fetchPatientDataFromSheets(patientListTabs)
-      .then(allPatients => {
-        mergeAndOutput(allPatients)
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  } else {
-    // OLD method
-    const patientListFetches = [
-      FetchPatientData.fetchPatientData(latestSheetId, 'Patient Data'),
-      FetchPatientData.fetchPatientData(latestSheetId, 'Tokyo'),
-      FetchPatientData.fetchPatientData(latestSheetId, 'Osaka'),
-      FetchPatientData.fetchPatientData(latestSheetId, 'Kanagawa'),
-      FetchPatientData.fetchPatientData(latestSheetId, 'Aichi'),
-      FetchPatientData.fetchPatientData(latestSheetId, 'Fukuoka'),
-      FetchPatientData.fetchPatientData(latestSheetId, 'Chiba'),
-      FetchPatientData.fetchPatientData(latestSheetId, 'Saitama'),
-      FetchPatientData.fetchPatientData(latestSheetId, 'Hokkaido'),
-    ]
-    Promise.all(patientListFetches)
-      .then(patientLists => {
-        let allPatients = _.flatten(patientLists)
-        mergeAndOutput(allPatients)
-      })
-      .catch(error => {
-        console.log(error)
-      })
+  const tabsBatchSize = 6
+  let tabs = [
+    'Patient Data', 
+    'Aichi',
+    'Chiba',
+    'Fukuoka',
+    'Hokkaido',
+    'Kanagawa',
+    'Osaka',
+    'Saitama',
+    'Tokyo' 
+  ]
 
+  // Split tabs into requests with maximum tabBatchSize
+  // to prevent response from being too long.
+  const requests = []
+  while (tabs.length > 0) {
+    const thisRequestTabs = tabs.slice(0, tabsBatchSize)
+    tabs = tabs.slice(6)
+    requests.push(FetchPatientData.fetchPatientDataFromSheets([{
+      sheetId: latestSheetId,
+      tabs: thisRequestTabs
+    }]))
   }
+
+  // Execute the requests.
+  Promise.all(requests)
+    .then(patientLists => {
+      let allPatients = _.flatten(patientLists)
+      mergeAndOutput(allPatients)
+    })
+    .catch(error => {
+      console.log(error)
+    })
 }
 
 const writePerPrefecturePatients = (prefectureName, allPatients, dateString) => {
@@ -133,7 +121,7 @@ const writePerPrefecturePatients = (prefectureName, allPatients, dateString) => 
 try {
   // Add 540 = UTC+9 for JST.
   const dateString = moment().utcOffset(540).format('YYYY-MM-DD')
-  fetchAndSummarize(dateString, true)
+  fetchAndSummarize(dateString)
 } catch (e) {
   console.error(e)
 }
