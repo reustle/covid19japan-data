@@ -99,7 +99,7 @@ def extractImageAreas(image):
   criticalRect = (320, 140, 320 + 80, 140 + rowHeight)
   portRecoveriesRect = (400, 84, 400 + 80, 84 + rowHeight)
   recoveriesRect = (400, 140, 400 + 80, 140 + rowHeight)
-  deathsRect = (504, 140, 504 + 68, 140 + rowHeight)
+  deathsRect = (510, 140, 510 + 68, 140 + rowHeight)
   return {
     'pcr': image.crop(pcrRect),
     'critical': image.crop(criticalRect),
@@ -111,18 +111,139 @@ def extractImageAreas(image):
 def extractDailySummary(imageUrl):
   imageData = urllib.request.urlopen(imageUrl)
   image = Image.open(imageData)
+  image = image.resize((661, 181))
+  image = image.convert(mode='L')
   subImages = extractImageAreas(image)
   values = {}
   for key in subImages:
     subImage = subImages[key]
+    subImage.save('%s.png' % key)
     text = pytesseract.image_to_string(subImage)
-    num = int(text.replace(',', ''))
-    values[key] = num
+    try:
+      numberMatch = re.search('([0-9,]+)', text)
+      if numberMatch:
+        num = int(numberMatch.group(1).replace(',', ''))
+        values[key] = num
+      else:
+        print('Error: %s does not contain any numbers: %s' % (key, text))
+    except ValueError as e:
+      print(e)
+
     #print('%s %d' % (key, num))
   return values
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 SPREADSHEET_ID = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
+
+def writeSumByDay(sheet, valueDate, values):
+  result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range="'Sum By Day'!A2:G").execute()
+  if not result:
+    print('Error: No results')
+    return False
+
+  currentValues = result.get('values', [])
+  lastRow = currentValues[-2].copy()
+  if lastRow[0] == valueDate:
+    print('Value for today %s already exists.' % valueDate)
+    return False
+
+  for v in (values['recoveries'], values['deaths'], values['critical'], values['pcr']):
+    if not v or v == 0:
+      raise ValueError('Not all values for Sum By Day exists')
+
+  todaysRow = [valueDate, '', values['recoveries'], values['deaths'], values['critical'], values['pcr']]
+  rowBody = {
+    'values': [todaysRow]
+  }
+
+  return sheet.values().append(
+    spreadsheetId=SPREADSHEET_ID, 
+    range="'Sum By Day'",
+    valueInputOption='USER_ENTERED',
+    body=rowBody).execute()
+
+def writePrefectureData(sheet, values):
+  # Check the values
+  if 'prefectureRecoveries' not in values:
+    raise ValueError('prefectureRecoveries values are unavailable')
+  if len(values['prefectureRecoveries']) < 47:
+    raise ValueError('prefectureRecoveries are incomplete')
+  if 'portRecoveries' not in values or values['portRecoveries'] < 1:
+    raise ValueError('portRecoveries are unavailable')
+
+  # result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range="'Prefecture Data'!E3:E50").execute()
+  # print(result)
+
+  todaysValues = []
+  for v in values['prefectureRecoveries']:
+    todaysValues.append([v[1]])
+  todaysValues.append([values['portRecoveries']])
+
+  return sheet.values().update(
+    spreadsheetId=SPREADSHEET_ID, 
+    range="'Prefecture Data'!E3:E50", 
+    valueInputOption='USER_ENTERED',
+    body = {'values': todaysValues}).execute()
+
+def writeRecoveries(sheet, valueDate, values):
+  # Check the values
+  if 'prefectureRecoveries' not in values:
+    raise ValueError('prefectureRecoveries values are unavailable')
+  if len(values['prefectureRecoveries']) < 47:
+    raise ValueError('prefectureRecoveries are incomplete')
+  if 'portRecoveries' not in values or values['portRecoveries'] < 1:
+    raise ValueError('portRecoveries are unavailable')
+
+  # check if the values have already been written.
+  result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range="'Recoveries'!C1:C1").execute()
+  currentValues = result.get('values', [])
+  if currentValues[0][0] == valueDate:
+    print('Todays values already written in to Recoveries')
+    return False
+
+  # Construct the values for the column.
+  todaysRecoveryValues = [[valueDate]]
+  for v in values['prefectureRecoveries']:
+    todaysRecoveryValues.append([v[1]])
+  todaysRecoveryValues.append([values['portRecoveries']])
+  todaysRecoveryValues.append([8]) # last value is always 8 recoveries for "Unspecified"
+
+  # Get the Sheet ID for the recoveries
+  sheetsResult = sheet.get(spreadsheetId=SPREADSHEET_ID, fields='sheets.properties').execute()
+  recoveriesSheetId = 0
+  for sheetProperty in sheetsResult['sheets']:
+    if sheetProperty['properties']['title'] == 'Recoveries':
+      recoveriesSheetId = sheetProperty['properties']['sheetId']
+      break
+
+  if not recoveriesSheetId:
+    raise ValueError('Unable to find sheetId for Recoveries tab')
+
+  # Insert column into the Recoveries Sheet.
+  requests = []
+  requests.append({
+    'insertDimension': {
+      'range': {
+        'sheetId': recoveriesSheetId,
+        'dimension': 'COLUMNS',
+        'startIndex': 2,
+        'endIndex': 3
+      },
+      'inheritFromBefore': True
+    }
+  })
+  result = sheet.batchUpdate(
+    spreadsheetId=SPREADSHEET_ID, 
+    body = {'requests': requests}).execute()
+  print(result)
+
+  # Append values into the sheet.
+  return sheet.values().update(
+    spreadsheetId=SPREADSHEET_ID, 
+    range="'Recoveries'!C1:C50", 
+    valueInputOption='USER_ENTERED',
+    body = {'values': todaysRecoveryValues}).execute()    
+
 
 def writeValues(valueDate, values):
   creds=None
@@ -142,18 +263,19 @@ def writeValues(valueDate, values):
 
   service = build('sheets', 'v4', credentials=creds)
   sheet = service.spreadsheets()
-  result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range="'Sum By Day'!A2:G").execute()
-  if not result:
-    return False
 
-  values = result.get('values', [])
-  lastRow = values[-1]
-  if lastRow[0] == valueDate:
-    return False
 
-  #sheet.values().append(spreadsheetId=SPREADSHEET_ID, range="'Sum By Day'!A1:G").execute()
-  print(values[-1])
+  print('Writing to Sum By Day Sheet')
+  result = writeSumByDay(sheet, valueDate, values)
+  print(result)
 
+  print('Writing to Prefecture Data Sheet')
+  result = writePrefectureData(sheet, values)
+  print(result)
+
+  print('Writing to Recoveries Sheet')
+  result = writeRecoveries(sheet, valueDate, values)
+  print(result)
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
@@ -207,4 +329,5 @@ if __name__ == '__main__':
   #print(summaryValues)
 
   if args.writeResults:
+    print(summaryValues)
     writeValues(reportDate, summaryValues)
