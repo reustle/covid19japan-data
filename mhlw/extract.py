@@ -1,14 +1,34 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-#
-# Extracts data out of MHLW covid pdfs.
-#
+"""
+Extracts data from MHLW COVID PDFs, images and reports, and optionally writes
+them to the Google Spreadsheet.
+
+Install:
+pip3 install -r requirements.txt
+brew install tesseract # for mac
+
+
+Run:
+python3 extract.py --extractSummary --writeOutput
+
+Hacks:
+- In order to parse the image table on the COVID report, we hard code the
+  the location of the cells we want. If the format of the table changes, or even
+  the screenshot size changes, it may fail.
+- Camelot works fine on the MHLW per-prefecture recovery PDFs, but we only
+  look at the first 47 rows (of the prefectures) and assume that the order is
+  in the prefecture order, which is the same as the spreadsheet. If any of them
+  change, this will break.
+
+"""
 
 import sys
 import re
 import urllib.request
 import tempfile
 import argparse
+import pprint
 
 import camelot
 import pandas as pd
@@ -16,7 +36,6 @@ from bs4 import BeautifulSoup
 
 from PIL import Image
 import pytesseract
-
 
 import pickle
 import os.path
@@ -26,6 +45,12 @@ from google.auth.transport.requests import Request
 
 
 def getLatestCovidReport(indexUrl):
+  """ 
+  Returns the URL for the latest COVID report on MHLW.
+
+  @param indexUrl: URL of the index page of all reports.
+  @returns None if no report found, URL of the first report if found.
+  """
   covidReportName = '新型コロナウイルス感染症の現在の状況'
   contents = urllib.request.urlopen(indexUrl).read()
   soup = BeautifulSoup(contents, features="html.parser")
@@ -280,23 +305,22 @@ def writeValues(valueDate, values):
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
   parser.add_argument('--reportUrl')
+  parser.add_argument('--indexUrl', default='https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00204.html')
   parser.add_argument('--disableExtractRecoveries', action='store_true')
   parser.add_argument('--extractSummary', action='store_true')
   parser.add_argument('--outputText', action="store_true")
   parser.add_argument('--writeResults', action='store_true')
   args = parser.parse_args()
 
-  indexUrl = 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00204.html'
   reportUrl = None
   if args.reportUrl:
     reportUrl = args.reportUrl
   else:
-    reportUrl = getLatestCovidReport(indexUrl)
+    reportUrl = getLatestCovidReport(args.indexUrl)
 
   reportDate = None
   reportPdfData = None
-  tableImageData = None
-  
+  summaryTableUrl = None
   summaryValues = {}
 
   if reportUrl:
@@ -326,8 +350,6 @@ if __name__ == '__main__':
     print('recoveries,deaths,critical,tested')
     print('%(recoveries)d\t%(deaths)d\t%(critical)d\t%(pcr)d' % summaryValues)
 
-  #print(summaryValues)
-
   if args.writeResults:
-    print(summaryValues)
+    pprint.pprint(summaryValues)
     writeValues(reportDate, summaryValues)
