@@ -167,7 +167,7 @@ def writeSumByDay(sheet, valueDate, values):
     return False
 
   currentValues = result.get('values', [])
-  lastRow = currentValues[-2].copy()
+  lastRow = currentValues[-1].copy()
   if lastRow[0] == valueDate:
     print('Value for today %s already exists.' % valueDate)
     return False
