@@ -1252,7 +1252,7 @@
       "name": "Tokyo"
     },
     {
-      "confirmed": 25115,
+      "confirmed": 25421,
       "dailyConfirmedCount": [
         0,
         0,
@@ -1596,10 +1596,10 @@
         429,
         308,
         185,
-        0
+        306
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 306,
       "yesterdayConfirmed": 185,
       "dailyDeceasedCount": [
         0,
@@ -2220,7 +2220,7 @@
       "recovered": 19822,
       "critical": 0,
       "tested": 0,
-      "active": 4919,
+      "active": 5225,
       "confirmedByCity": {
         "Osaka": 96,
         "HigashiOsaka": 1,
@@ -6398,7 +6398,7 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 10557,
+      "confirmed": 10730,
       "dailyConfirmedCount": [
         0,
         0,
@@ -6742,10 +6742,10 @@
         199,
         144,
         102,
-        0
+        173
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 173,
       "yesterdayConfirmed": 102,
       "dailyDeceasedCount": [
         0,
@@ -7090,7 +7090,7 @@
         0,
         1,
         2,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -7361,12 +7361,12 @@
         8492
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 170,
+      "deceased": 171,
       "cruisePassenger": 1,
       "recovered": 8492,
       "critical": 0,
       "tested": 0,
-      "active": 1895,
+      "active": 2067,
       "confirmedByCity": {
         "Gyoda": 3,
         "Ageo": 1,
@@ -7424,7 +7424,7 @@
         "Ogawa": 3,
         "Kamisato": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 2,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -7696,7 +7696,7 @@
       ],
       "reinfected": 0,
       "name_ja": "埼玉県",
-      "deaths": 170,
+      "deaths": 171,
       "name": "Saitama"
     },
     {
@@ -62839,14 +62839,14 @@
   ],
   "regions": [
     {
-      "confirmed": 87031,
-      "newlyConfirmed": 845,
+      "confirmed": 87204,
+      "newlyConfirmed": 1018,
       "yesterdayConfirmed": 674,
-      "deceased": 1064,
+      "deceased": 1065,
       "recovered": 74019,
       "critical": 0,
       "tested": 0,
-      "active": 11949,
+      "active": 12121,
       "dailyConfirmedCount": [
         0,
         0,
@@ -63190,7 +63190,7 @@
         1384,
         1141,
         754,
-        964
+        1137
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -63205,14 +63205,14 @@
       "name": "Kanto"
     },
     {
-      "confirmed": 40070,
-      "newlyConfirmed": 240,
+      "confirmed": 40376,
+      "newlyConfirmed": 546,
       "yesterdayConfirmed": 334,
       "deceased": 568,
       "recovered": 32103,
       "critical": 0,
       "tested": 0,
-      "active": 7400,
+      "active": 7706,
       "dailyConfirmedCount": [
         0,
         0,
@@ -63556,7 +63556,7 @@
         835,
         642,
         399,
-        384
+        690
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -78278,38 +78278,38 @@
       "recoveredCumulativeAvg7d": 145056
     },
     {
-      "confirmed": 1777,
-      "confirmedCumulative": 184057,
-      "deceased": 29,
-      "deceasedCumulative": 2557,
-      "reportedDeceased": 29,
-      "reportedDeceasedCumulative": 2557,
+      "confirmed": 2256,
+      "confirmedCumulative": 184536,
+      "deceased": 30,
+      "deceasedCumulative": 2558,
+      "reportedDeceased": 30,
+      "reportedDeceasedCumulative": 2558,
       "recovered": 0,
       "recoveredCumulative": 150947,
       "critical": 0,
       "criticalCumulative": 588,
       "tested": 0,
       "testedCumulative": 4048710,
-      "active": 1748,
-      "activeCumulative": 30553,
+      "active": 2226,
+      "activeCumulative": 31031,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2020-12-15",
-      "deaths": 29,
-      "confirmedAvg3d": 1948,
-      "confirmedAvg7d": 2495,
-      "confirmedCumulativeAvg3d": 182312,
-      "confirmedCumulativeAvg7d": 177441,
-      "deceasedAvg3d": 31,
-      "deceasedAvg7d": 31,
-      "deceasedCumulativeAvg3d": 2521,
+      "deaths": 30,
+      "confirmedAvg3d": 2108,
+      "confirmedAvg7d": 2563,
+      "confirmedCumulativeAvg3d": 182471,
+      "confirmedCumulativeAvg7d": 177510,
+      "deceasedAvg3d": 32,
+      "deceasedAvg7d": 32,
+      "deceasedCumulativeAvg3d": 2522,
       "deceasedCumulativeAvg7d": 2464,
-      "reportedDeceasedAvg3d": 31,
-      "reportedDeceasedAvg7d": 31,
-      "reportedDeceasedCumulativeAvg3d": 2521,
+      "reportedDeceasedAvg3d": 32,
+      "reportedDeceasedAvg7d": 32,
+      "reportedDeceasedCumulativeAvg3d": 2522,
       "reportedDeceasedCumulativeAvg7d": 2464,
       "recoveredAvg3d": 1141,
       "recoveredAvg7d": 1707,
@@ -78317,5 +78317,5 @@
       "recoveredCumulativeAvg7d": 146763
     }
   ],
-  "updated": "2020-12-15T17:55:16+09:00"
+  "updated": "2020-12-15T20:07:53+09:00"
 }
