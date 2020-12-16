@@ -6,6 +6,7 @@ import re
 import argparse
 import pprint
 import datetime
+import urllib.parse
 
 import pickle
 import os.path
@@ -112,5 +113,10 @@ if __name__ == '__main__':
   tab = args.tab
   if args.prefecture in ('Aichi', 'Chiba', 'Fukuoka', 'Hokkaido', 'Kanagawa', 'Osaka', 'Saitama', 'Tokyo'):
     tab = args.prefecture
+
+  if args.source:
+    url = urllib.parse.urlsplit(args.source)
+    args.source = urllib.parse.urlunsplit((url.scheme, url.netloc, url.path, None, None))
+    print(args.source)
 
   writePatients(tab, args.prefecture, int(args.count), args.date, args.deceased, args.source)
