@@ -1,5 +1,13 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+"""
+Adds patients to the COVID19Japan spreadsheet.
+
+Credentials use a service account credentials that are created using
+these instructions and places in credentials.json:
+
+https://theoephraim.github.io/node-google-spreadsheet/#/getting-started/authentication?id=service-account
+"""
 
 import sys
 import re
@@ -8,10 +16,8 @@ import pprint
 import datetime
 import urllib.parse
 
-import pickle
-import os.path
 from googleapiclient.discovery import build
-from google_auth_oauthlib.flow import InstalledAppFlow
+from google.oauth2 import service_account
 from google.auth.transport.requests import Request
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
@@ -30,7 +36,6 @@ def getPatientNumberColumn(sheet, tabProperties):
   return ('', int(lastPatientNumber))
 
 def appendRows(sheet, tabProperties, prefecture,  count, date, deceased=False, source='', patientNumberPrefix='', lastPatientNumber=0):
-
   patientNumber = lastPatientNumber
   rows = []
   deceasedValue =  'Deceased' if deceased else ''
@@ -64,21 +69,9 @@ def appendRows(sheet, tabProperties, prefecture,  count, date, deceased=False, s
     body={'majorDimension': 'ROWS', 'values': rows}).execute()
 
 def writePatients(tabName, prefecture, count, date, deceased, source):  
-  creds=None
-  if os.path.exists('token.pickle'):
-    with open('token.pickle', 'rb') as token:
-      creds = pickle.load(token)
-  if not creds or not creds.valid:
-    if creds and creds.expired and creds.refresh_token:
-      creds.refresh(Request())
-    else:
-      flow = InstalledAppFlow.from_client_secrets_file(
-        'credentials.json', SCOPES)
-      creds = flow.run_local_server(port=0)
-    # Save the credentials for the next run
-    with open('token.pickle', 'wb') as token:
-      pickle.dump(creds, token)
-
+  creds = service_account.Credentials.from_service_account_file(
+    './credentials.json', scopes=SCOPES
+  )
   service = build('sheets', 'v4', credentials=creds)
   sheet = service.spreadsheets()
 
@@ -105,7 +98,7 @@ if __name__ == '__main__':
   parser.add_argument('prefecture')
   parser.add_argument('count', type=int)
   parser.add_argument('--tab', default='Patient Data')
-  parser.add_argument('--deceased', action="store_true")
+  parser.add_argument('--deaths', action="store_true")
   parser.add_argument('--date', default=datetime.datetime.now().strftime('%Y-%m-%d'))
   parser.add_argument('--source', default='')
   args = parser.parse_args()
@@ -117,6 +110,5 @@ if __name__ == '__main__':
   if args.source:
     url = urllib.parse.urlsplit(args.source)
     args.source = urllib.parse.urlunsplit((url.scheme, url.netloc, url.path, None, None))
-    print(args.source)
 
-  writePatients(tab, args.prefecture, int(args.count), args.date, args.deceased, args.source)
+  writePatients(tab, args.prefecture, int(args.count), args.date, args.deaths, args.source)
