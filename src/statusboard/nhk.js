@@ -146,8 +146,7 @@ const extractDailySummary = (url, fetchImpl) => {
         values.recoveredTotal = parseJapaneseNumber(recoveredTotal[2])
       }
 
-      console.log(values)
-
+      //console.log(values)
       return values
     })
 }
@@ -161,11 +160,10 @@ const prefectureCountsInEnglish = (result) => {
 
 
 const sortedPrefectureCounts = (values) => {
-  let prefectureCountsInEnglish = prefectureCountsInEnglish(values)
-  //console.log(prefectureCountsInEnglish)
+  let englishPrefectureCounts = prefectureCountsInEnglish(values)
   let counts = []
   for (let prefectureName of _.sortBy(_.values(prefectureLookup))) {
-    let count = prefectureCountsInEnglish[prefectureName]
+    let count = englishPrefectureCounts['prefectureCounts'][prefectureName]
     if (!count) {
       count = 0
     }
