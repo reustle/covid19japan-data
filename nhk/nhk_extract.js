@@ -9,12 +9,17 @@
 
 const fetch = require('node-fetch')
 const path = require('path')
+const process = require('process')
 
 const { GoogleSpreadsheet } = require('google-spreadsheet')
-const { DateTime, Interval } = require('luxon');
+const { program } = require('commander')
+const { DateTime, Interval } = require('luxon')
 const { extractDailySummary, sortedPrefectureCounts, prefectureLookup } = require('../src/statusboard/nhk.js')
 
 const SPREADSHEET_ID = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY';
+
+// test sheet
+//const SPREADSHEET_ID = '1hVMsINcHicoq-Ed68_puYlInLusnweniqG3As-lSF_o';
 
 const insertColumn = async (sheet, columnIndex) => {
   await sheet._makeSingleUpdateRequest('insertRange', 
@@ -53,8 +58,8 @@ const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCount
 
   const nhkSheet = doc.sheetsByTitle['NHK']
   await nhkSheet.loadCells('H1:H59')
-  const dateCell = nhkSheet.getCellByA1('H1')
-  const linkCell = nhkSheet.getCellByA1('H2')
+  let dateCell = nhkSheet.getCellByA1('H1')
+  let linkCell = nhkSheet.getCellByA1('H2')
 
   const mysteriousDayOffset = 2 // dunno why 2 days are missing between 1900-1970
   let sheetsStartDate = DateTime.fromISO('1900-01-01')
@@ -67,11 +72,15 @@ const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCount
   if (dateValue > dateCell.value) {
     // If the date to write it larger than the current value,
     // insert column and copy old values to the new column.
-    insertColumn(nhkSheet, 8)
-    copyPasteColumn(nhkSheet, 7, 8)
+    await insertColumn(nhkSheet, 8)
+    await copyPasteColumn(nhkSheet, 7, 8)
   }
 
-  // Update cells.
+  // Load cells again in case we inserted a new column.
+  await nhkSheet.loadCells('H1:H59')
+  dateCell = nhkSheet.getCellByA1('H1')
+  linkCell = nhkSheet.getCellByA1('H2')
+
   dateCell.value = dateValue
   linkCell.forumla = `=HYPERLINK("${url}", "Link")`
   console.log(linkCell.forumla)
@@ -97,13 +106,22 @@ const main = () => {
   //   console.log(url)
   // }
 
-  const credentials= path.join(__dirname, '../credentials.json')
-  let url = 'https://www3.nhk.or.jp/news/html/20201218/k10012771511000.html'
+  program.version('0.0.1')
+  program
+    .requiredOption('--url <url>', 'URL of NHK Report (e.g. https://www3.nhk.or.jp/news/html/20201219/k10012773101000.html)')
+    .requiredOption('-d, --date <date>', 'Date in YYYY-MM-DD format')
+  program.parse(process.argv)
 
-  extractDailySummary(url, fetch)
+  if (!program.url  || program.url.length < 10 || !program.date || program.date.length < 8) {
+    program.help()
+    return
+  }
+
+  const credentials= path.join(__dirname, '../credentials.json')
+
+  extractDailySummary(program.url, fetch)
     .then(values => {
       let prefectureCounts = sortedPrefectureCounts(values)
-      let dateString = '2020-12-18'
       let otherCounts = [
         values.portQuarantineCount,
         values.critical,
@@ -111,7 +129,7 @@ const main = () => {
         values.recoveredJapan,
         values.recoveredTotal
       ]
-      writeNhkSummary(credentials, dateString, url, prefectureCounts, otherCounts)
+      writeNhkSummary(credentials, program.date, program.url, prefectureCounts, otherCounts)
     })
 }
 
