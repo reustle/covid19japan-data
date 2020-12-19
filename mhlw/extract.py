@@ -274,7 +274,9 @@ def writeRecoveries(sheet, valueDate, values):
 
 
 def writeValues(valueDate, values):
-  creds = 
+  creds = service_account.Credentials.from_service_account_file(
+    './credentials.json', scopes=SCOPES
+  )
   service = build('sheets', 'v4', credentials=creds)
   sheet = service.spreadsheets()
 
