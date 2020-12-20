@@ -110,6 +110,7 @@ const main = () => {
   program
     .requiredOption('--url <url>', 'URL of NHK Report (e.g. https://www3.nhk.or.jp/news/html/20201219/k10012773101000.html)')
     .requiredOption('-d, --date <date>', 'Date in YYYY-MM-DD format')
+    .option('-w, --write', 'Write to spreadsheet')
   program.parse(process.argv)
 
   if (!program.url  || program.url.length < 10 || !program.date || program.date.length < 8) {
@@ -129,7 +130,12 @@ const main = () => {
         values.recoveredJapan,
         values.recoveredTotal
       ]
-      writeNhkSummary(credentials, program.date, program.url, prefectureCounts, otherCounts)
+      if (program.write) {
+        writeNhkSummary(credentials, program.date, program.url, prefectureCounts, otherCounts)
+      } else {
+        console.log(prefectureCounts)
+        console.log(otherCounts)
+      }
     })
 }
 

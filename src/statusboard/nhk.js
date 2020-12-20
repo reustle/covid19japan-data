@@ -92,22 +92,14 @@ const extractDailySummary = (url, fetchImpl) => {
       let dom = cheerio.load(text)
       let contents = dom('section.content--detail-main').text()
 
-      const prefecturePattern = new RegExp('▽([^▽ ]+?)は[※]?([0-9０-９万]+)人', 'igu')
-      let prefectureMatches = contents.matchAll(prefecturePattern)
-      if (prefectureMatches) {
-        for (const prefectureMatch of prefectureMatches) {
-          //console.log(prefectureMatch)
-          // Sometimes prefectures are comma separated.
-          const multiPrefectures = prefectureMatch[1].split('、')
-          if (multiPrefectures.length == 1) {
-            values.prefectureCounts[prefectureMatch[1]] = parseJapaneseNumber(prefectureMatch[2])
-          } else {
-            for (let multiPrefecture of multiPrefectures) {
-
-              values.prefectureCounts[multiPrefecture.trim()] = parseJapaneseNumber(prefectureMatch[2])
-            }
+      for (let prefectureName of Object.keys(prefectureLookup)) {
+        const prefecturePattern = new RegExp(prefectureName + 'は[※]?([0-9０-９万]+)人', 'igu')
+        let prefectureMatches = contents.matchAll(prefecturePattern)
+        if (prefectureMatches) {
+          for (const prefectureMatch of prefectureMatches) {
+            values.prefectureCounts[prefectureName] = parseJapaneseNumber(prefectureMatch[1])
           }
-        }
+        }        
       }
 
       const portAndQuartantine = new RegExp('空港の検疫で.*?([0-9０-９万]+)人', 'iu')
@@ -146,7 +138,7 @@ const extractDailySummary = (url, fetchImpl) => {
         values.recoveredTotal = parseJapaneseNumber(recoveredTotal[2])
       }
 
-      //console.log(values)
+      console.log(values)
       return values
     })
 }
