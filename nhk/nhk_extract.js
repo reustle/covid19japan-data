@@ -82,7 +82,7 @@ const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCount
   linkCell = nhkSheet.getCellByA1('H2')
 
   dateCell.value = dateValue
-  linkCell.forumla = `=HYPERLINK("${url}", "Link")`
+  linkCell.formula = `=HYPERLINK("${url}", "Link")`
   console.log(linkCell.forumla)
 
   for (let i = 0; i < prefectureCounts.length; i++) {
