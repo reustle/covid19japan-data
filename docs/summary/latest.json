@@ -4590,7 +4590,7 @@
         4,
         1,
         5,
-        3
+        5
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -4867,12 +4867,12 @@
         11581
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 149,
+      "deceased": 151,
       "cruisePassenger": 0,
       "recovered": 11581,
       "critical": 0,
       "tested": 0,
-      "active": 2511,
+      "active": 2509,
       "confirmedByCity": {
         "Nagoya": 4274,
         "Owari": 11,
@@ -4913,7 +4913,7 @@
         "Shizuoka": 1,
         "Gifu City": 1
       },
-      "newlyDeceased": 3,
+      "newlyDeceased": 5,
       "yesterdayDeceased": 5,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -5191,7 +5191,7 @@
       ],
       "reinfected": 5,
       "name_ja": "愛知県",
-      "deaths": 149,
+      "deaths": 151,
       "name": "Aichi"
     },
     {
@@ -34877,7 +34877,7 @@
       "name": "Kagoshima"
     },
     {
-      "confirmed": 754,
+      "confirmed": 756,
       "dailyConfirmedCount": [
         0,
         0,
@@ -35227,10 +35227,10 @@
         10,
         15,
         40,
-        17
+        19
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 17,
+      "newlyConfirmed": 19,
       "yesterdayConfirmed": 40,
       "dailyDeceasedCount": [
         0,
@@ -35863,7 +35863,7 @@
       "recovered": 552,
       "critical": 0,
       "tested": 0,
-      "active": 190,
+      "active": 192,
       "confirmedByCity": {
         "Iwaki": 2,
         "Koriyama": 4,
@@ -64786,11 +64786,11 @@
       "confirmed": 22155,
       "newlyConfirmed": 145,
       "yesterdayConfirmed": 218,
-      "deceased": 311,
+      "deceased": 313,
       "recovered": 17909,
       "critical": 0,
       "tested": 0,
-      "active": 3942,
+      "active": 3940,
       "dailyConfirmedCount": [
         0,
         0,
@@ -66266,14 +66266,14 @@
       "name": "Chugoku"
     },
     {
-      "confirmed": 3682,
-      "newlyConfirmed": 35,
+      "confirmed": 3684,
+      "newlyConfirmed": 37,
       "yesterdayConfirmed": 83,
       "deceased": 51,
       "recovered": 2764,
       "critical": 0,
       "tested": 0,
-      "active": 868,
+      "active": 870,
       "dailyConfirmedCount": [
         0,
         0,
@@ -66623,7 +66623,7 @@
         32,
         74,
         83,
-        35
+        37
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -79760,12 +79760,12 @@
       "recoveredCumulativeAvg7d": 158246
     },
     {
-      "confirmed": 1804,
-      "confirmedCumulative": 201043,
-      "deceased": 46,
-      "deceasedCumulative": 2830,
-      "reportedDeceased": 46,
-      "reportedDeceasedCumulative": 2830,
+      "confirmed": 1806,
+      "confirmedCumulative": 201045,
+      "deceased": 48,
+      "deceasedCumulative": 2832,
+      "reportedDeceased": 48,
+      "reportedDeceasedCumulative": 2832,
       "recovered": 2180,
       "recoveredCumulative": 167513,
       "critical": 10,
@@ -79780,18 +79780,18 @@
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2020-12-21",
-      "deaths": 46,
-      "confirmedAvg3d": 2430,
+      "deaths": 48,
+      "confirmedAvg3d": 2431,
       "confirmedAvg7d": 2680,
-      "confirmedCumulativeAvg3d": 199008,
-      "confirmedCumulativeAvg7d": 193443,
-      "deceasedAvg3d": 40,
+      "confirmedCumulativeAvg3d": 199009,
+      "confirmedCumulativeAvg7d": 193444,
+      "deceasedAvg3d": 41,
       "deceasedAvg7d": 43,
-      "deceasedCumulativeAvg3d": 2787,
+      "deceasedCumulativeAvg3d": 2788,
       "deceasedCumulativeAvg7d": 2705,
-      "reportedDeceasedAvg3d": 40,
+      "reportedDeceasedAvg3d": 41,
       "reportedDeceasedAvg7d": 43,
-      "reportedDeceasedCumulativeAvg3d": 2787,
+      "reportedDeceasedCumulativeAvg3d": 2788,
       "reportedDeceasedCumulativeAvg7d": 2705,
       "recoveredAvg3d": 2242,
       "recoveredAvg7d": 2366,
@@ -79799,5 +79799,5 @@
       "recoveredCumulativeAvg7d": 160613
     }
   ],
-  "updated": "2020-12-21T22:15:30+09:00"
+  "updated": "2020-12-21T22:54:51+09:00"
 }
