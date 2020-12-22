@@ -99,7 +99,25 @@ const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCount
   await nhkSheet.saveUpdatedCells()
 }
 
-
+const extractAndWriteSummary = (date, url, shouldWrite) => {
+  extractDailySummary(url, fetch)
+  .then(values => {
+    let prefectureCounts = sortedPrefectureCounts(values)
+    let otherCounts = [
+      values.portQuarantineCount,
+      values.critical,
+      values.deceased,
+      values.recoveredJapan,
+      values.recoveredTotal
+    ]
+    if (shouldWrite) {
+      writeNhkSummary(CREDENTIALS_PATH, date, url, prefectureCounts, otherCounts)
+    } else {
+      console.log(prefectureCounts)
+      console.log(otherCounts)
+    }
+  })
+}
 
 const main = async () => {
   // let url = 'https://www3.nhk.or.jp/news/html/20200411/k10012381781000.html?utm_int=detail_contents_news-related_002'
@@ -114,32 +132,16 @@ const main = async () => {
     .option('--url <url>', 'URL of NHK Report (e.g. https://www3.nhk.or.jp/news/html/20201219/k10012773101000.html)')
     .option('-w, --write', 'Write to spreadsheet')
     .option('-l, --list', 'List all articles')
+    .option('--today', 'Execute for today.')
   program.parse(process.argv)
 
-  if (!program.date  && !program.list) {
+  if (!program.date  && !program.list && !program.today) {
     program.help()
     return
   }
 
-
-  const extractAndWriteSummary = (date, url, shouldWrite) => {
-    extractDailySummary(url, fetch)
-    .then(values => {
-      let prefectureCounts = sortedPrefectureCounts(values)
-      let otherCounts = [
-        values.portQuarantineCount,
-        values.critical,
-        values.deceased,
-        values.recoveredJapan,
-        values.recoveredTotal
-      ]
-      if (shouldWrite) {
-        writeNhkSummary(CREDENTIALS_PATH, date, url, prefectureCounts, otherCounts)
-      } else {
-        console.log(prefectureCounts)
-        console.log(otherCounts)
-      }
-    })
+  if (program.today) {
+    program.date = DateTime.utc().plus({hours: 9}).toISODate()
   }
 
   if (program.list) {
