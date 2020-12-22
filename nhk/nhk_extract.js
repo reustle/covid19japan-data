@@ -53,9 +53,17 @@ const copyPasteColumn = async(sheet, fromColumnIndex, toColumnIndex) => {
   })  
 }
 
+const googleCredentials = () => {
+  if (process.env.GOOGLE_ACCOUNT_CREDENTIALS_JSON)  {
+    return JSON.parse(process.env.GOOGLE_ACCOUNT_CREDENTIALS_JSON)
+  } else {
+    return require(CREDENTIALS_PATH)
+  }
+}
+
 const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCounts, otherCounts) => {
   const doc = new GoogleSpreadsheet(SPREADSHEET_ID)
-  await doc.useServiceAccountAuth(require(credentialsJson))
+  await doc.useServiceAccountAuth(credentialsJson)
   await doc.loadInfo(); // loads document properties and worksheets
 
   const nhkSheet = doc.sheetsByTitle['NHK']
@@ -110,11 +118,31 @@ const extractAndWriteSummary = (date, url, shouldWrite) => {
       values.recoveredJapan,
       values.recoveredTotal
     ]
-    if (shouldWrite) {
-      writeNhkSummary(CREDENTIALS_PATH, date, url, prefectureCounts, otherCounts)
+
+    // Abort if any of the numbers look weird
+    let errors = ''
+    for (let count of otherCounts) {
+      if (!count) {
+        errors = 'otherCounts has 0s'
+      }
+    }
+    if (prefectureCounts.length < 47) {
+      errors ='prefectureCounts are less than 47'
+    }
+    for (let count of prefectureCounts) {
+      if (!count) {
+        errors = 'prefectureCounts has 0s'
+      }
+    }
+
+    if (!errors && shouldWrite) {
+      writeNhkSummary(googleCredentials(), date, url, prefectureCounts, otherCounts)
     } else {
       console.log(prefectureCounts)
       console.log(otherCounts)
+      if (errors) {
+        console.log(errors)
+      }
     }
   })
 }
