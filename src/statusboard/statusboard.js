@@ -375,7 +375,7 @@ const createPrefectureRow = (placeName, prefectureSource, rowNumber, prefectureC
 
 
 const fetchNHKReport = (url) => {
-  extractDailySummary(url).then(values => {
+  extractDailySummary(url, window.fetch, true).then(values => {
     let results = prefectureCountsInEnglish(values)
     responses.nhk = results
     let prefectureCounts = results.prefectureCounts

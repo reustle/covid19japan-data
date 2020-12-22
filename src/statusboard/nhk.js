@@ -1,7 +1,7 @@
 const cheerio = require('cheerio')
 const _ = require('lodash')
+const regen = require('regenerator-runtime')
 const { urlWithProxy } = require('./proxy.js')
-
 
 const prefectureLookup = _.fromPairs(_.map([
 "愛知県	Aichi",
@@ -77,9 +77,10 @@ const parseJapaneseNumber = (v) => {
   return parseInt(num)
 }
 
-const extractDailySummary = (url, fetchImpl) => {
-  url = urlWithProxy(url)
-  console.log(url)
+const extractDailySummary = (url, fetchImpl, useProxy) => {
+  if (useProxy) {
+    url = urlWithProxy(url)
+  }
   if (!fetchImpl) {
     fetchImpl = window.fetch
   }
@@ -164,7 +165,36 @@ const sortedPrefectureCounts = (values) => {
   return counts
 }
 
+const latestNhkArticles = async (fetchImpl, numberOfPages) => {
+  if (!numberOfPages) {
+    numberOfPages = 5
+  }
+
+  const articlesUrl = (pageNumber) => {
+    return `https://www3.nhk.or.jp/news/json16/word/0000969_00${pageNumber}.json`
+  }
+
+  if (!fetchImpl) {
+    fetchImpl = window.fetch
+  }
+
+  let articles = []
+  for (let page = 1; page <= numberOfPages; page++) {
+    let url = articlesUrl(page)
+    await fetchImpl(url)
+      .then(response => response.json())
+      .then(response => {
+        const channel = response['channel']
+        const items = channel['item']
+        articles = articles.concat(items)
+      })
+  }
+
+  return articles
+}
+
 exports.extractDailySummary = extractDailySummary
 exports.sortedPrefectureCounts = sortedPrefectureCounts
 exports.prefectureLookup = prefectureLookup
 exports.prefectureCountsInEnglish = prefectureCountsInEnglish
+exports.latestNhkArticles = latestNhkArticles

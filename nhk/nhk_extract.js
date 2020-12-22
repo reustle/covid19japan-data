@@ -1,6 +1,6 @@
 // Script to extract aggregate values from NHK and write them into 
 // the Google Spreadsheet using the account that exists in
-// covid19-credentials.json
+// credentials.json in the root directory of this checkout.
 //
 // These credentials are a service account that is generated using
 // these instructions:
@@ -14,9 +14,11 @@ const process = require('process')
 const { GoogleSpreadsheet } = require('google-spreadsheet')
 const { program } = require('commander')
 const { DateTime, Interval } = require('luxon')
-const { extractDailySummary, sortedPrefectureCounts, prefectureLookup } = require('../src/statusboard/nhk.js')
+const { extractDailySummary, sortedPrefectureCounts, latestNhkArticles, prefectureLookup } = require('../src/statusboard/nhk.js')
 
 const SPREADSHEET_ID = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY';
+const CREDENTIALS_PATH =  path.join(__dirname, '../credentials.json');
+const NHKNEWS_BASE_URL = 'https://www3.nhk.or.jp';
 
 // test sheet
 //const SPREADSHEET_ID = '1hVMsINcHicoq-Ed68_puYlInLusnweniqG3As-lSF_o';
@@ -83,7 +85,6 @@ const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCount
 
   dateCell.value = dateValue
   linkCell.formula = `=HYPERLINK("${url}", "Link")`
-  console.log(linkCell.forumla)
 
   for (let i = 0; i < prefectureCounts.length; i++) {
     let cell = nhkSheet.getCell(3 + i, 7)
@@ -96,10 +97,11 @@ const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCount
   }
 
   await nhkSheet.saveUpdatedCells()
-
 }
 
-const main = () => {
+
+
+const main = async () => {
   // let url = 'https://www3.nhk.or.jp/news/html/20200411/k10012381781000.html?utm_int=detail_contents_news-related_002'
   // if (process.argv[2]) {
   //   url = process.argv[2]
@@ -108,19 +110,20 @@ const main = () => {
 
   program.version('0.0.1')
   program
-    .requiredOption('--url <url>', 'URL of NHK Report (e.g. https://www3.nhk.or.jp/news/html/20201219/k10012773101000.html)')
-    .requiredOption('-d, --date <date>', 'Date in YYYY-MM-DD format')
+    .option('-d, --date <date>', 'Date in YYYY-MM-DD format')
+    .option('--url <url>', 'URL of NHK Report (e.g. https://www3.nhk.or.jp/news/html/20201219/k10012773101000.html)')
     .option('-w, --write', 'Write to spreadsheet')
+    .option('-l, --list', 'List all articles')
   program.parse(process.argv)
 
-  if (!program.url  || program.url.length < 10 || !program.date || program.date.length < 8) {
+  if (!program.date  && !program.list) {
     program.help()
     return
   }
 
-  const credentials= path.join(__dirname, '../credentials.json')
 
-  extractDailySummary(program.url, fetch)
+  const extractAndWriteSummary = (date, url, shouldWrite) => {
+    extractDailySummary(url, fetch)
     .then(values => {
       let prefectureCounts = sortedPrefectureCounts(values)
       let otherCounts = [
@@ -130,13 +133,48 @@ const main = () => {
         values.recoveredJapan,
         values.recoveredTotal
       ]
-      if (program.write) {
-        writeNhkSummary(credentials, program.date, program.url, prefectureCounts, otherCounts)
+      if (shouldWrite) {
+        writeNhkSummary(CREDENTIALS_PATH, date, url, prefectureCounts, otherCounts)
       } else {
         console.log(prefectureCounts)
         console.log(otherCounts)
       }
     })
+  }
+
+  if (program.list) {
+    latestNhkArticles(fetch, 5).then(articles => {
+      for (let article of articles) {
+        let date = DateTime.fromJSDate(new Date(article.pubDate)).toISODate()
+        let url = NHKNEWS_BASE_URL + article.link
+        console.log(date, article.title, url)
+      }
+    })
+  } else  if (!program.url) {
+    latestNhkArticles(fetch, 5).then(articles => {
+      let summaryArticleUrl = ''
+      const summaryArticleTitlePattern = new RegExp('【国内感染】')
+      for (let article of articles) {
+        let date = DateTime.fromJSDate(new Date(article.pubDate)).toISODate()
+        if (date == program.date && article.title.match(summaryArticleTitlePattern)) { 
+          summaryArticleUrl = NHKNEWS_BASE_URL + article.link
+        }
+      }
+
+      if (summaryArticleUrl) {
+        extractAndWriteSummary(program.date, summaryArticleUrl, program.write)
+      } else {
+        console.error('Not able to find articles')
+        for (let article of articles) {
+          let date = DateTime.fromJSDate(new Date(article.pubDate)).toISODate()
+          console.log(date, article.title, article.link)
+        }
+        return
+      }
+    })
+  } else {
+    extractAndWriteSummary(program.date, program.url, program.write)
+  }
 }
 
 main()
