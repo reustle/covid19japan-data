@@ -397,8 +397,12 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts,
   }
 
   // Give Port of Entry and Unspecified identifiers
-  prefectureSummary['Port Quarantine'].identifier = 'port-of-entry'
-  prefectureSummary['Unspecified'].identifier = 'unspecified'
+  if (prefectureSummary['Port Quarantine']) {
+    prefectureSummary['Port Quarantine'].identifier = 'port-of-entry'
+  }
+  if ( prefectureSummary['Unspecified']) {
+    prefectureSummary['Unspecified'].identifier = 'unspecified'
+  }
 
   // Mark pseudo-prefectures as such (e.g. Unspecified, Port of Entry, Diamond Princess, Nagasaki Cruise Ship)
   prefectureSummary = _.mapValues(prefectureSummary, (v, k) => {

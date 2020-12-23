@@ -51,6 +51,15 @@ const fetchAndSummarize = async (dateString) => {
   const cruiseCounts = await FetchSheet.fetchRows(latestSheetId, 'Cruise Sum By Day')
   const recoveries = await FetchSheet.fetchRows(latestSheetId, 'Recoveries')
 
+  const filterPatientForOutput = (patient) => {
+    let filtered = Object.assign({}, patient)
+    if (patient.ageBracket == -1) {
+      delete filtered.ageBracket
+    }
+    delete filtered.patientCount
+    return filtered
+  }
+
 
   const mergeAndOutput = (allPatients) => {
     let patients = MergePatients.mergePatients(allPatients)
@@ -60,7 +69,8 @@ const fetchAndSummarize = async (dateString) => {
       .then(lastUpdated => {
         // Write patient data
         const patientOutputFilename = `./docs/patient_data/latest.json`
-        fs.writeFileSync(patientOutputFilename, JSON.stringify(patients, null, '  '))
+        const patientOutput = patients.map(filterPatientForOutput)
+        fs.writeFileSync(patientOutputFilename, JSON.stringify(patientOutput, null, '  '))
 
         // Write daily and prefectural summary.
         const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, recoveries, prefectureNames, regions, lastUpdated)
@@ -93,7 +103,7 @@ const fetchAndSummarize = async (dateString) => {
   const requests = []
   while (tabs.length > 0) {
     const thisRequestTabs = tabs.slice(0, tabsBatchSize)
-    tabs = tabs.slice(6)
+    tabs = tabs.slice(tabsBatchSize)
     requests.push(FetchPatientData.fetchPatientDataFromSheets([{
       sheetId: latestSheetId,
       tabs: thisRequestTabs

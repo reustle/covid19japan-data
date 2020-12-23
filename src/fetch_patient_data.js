@@ -61,6 +61,17 @@ const postProcessData = (rows) => {
       return ''
     }
 
+    const normalizeCount = v => {
+      if (!v) {
+        return 1
+      }
+      let intValue = parseInt(v)
+      if (isNaN(intValue) || !intValue) {
+        return 1
+      }      
+      return intValue
+    }
+
     // Parse short date
     const parseShortDate = v => {
       if (v) {
@@ -83,6 +94,7 @@ const postProcessData = (rows) => {
       'detectedCityTown': row.detectedCity,
       'detectedPrefecture': row.detectedPrefecture,
       'patientStatus': row.status,
+      'patientCount': normalizeCount(row.count),
       'notes': row.notes,
       'knownCluster': row.knownCluster,
       'relatedPatients': row.relatedPatients,
@@ -92,8 +104,6 @@ const postProcessData = (rows) => {
       'prefectureSourceURL': row.prefectureSourceURL,
       'citySourceURL': row.citySourceURL,
       'deathSourceURL': row.deathSourceURL,
-      'charterFlightPassenger': row.charterFlightPassenger,
-      'cruisePassengerDisembarked': row.cruisePassengerDisembarked,
       'detectedAtPort': row.detectedAtPort,
       'deceasedDate': parseShortDate(row.deceased),
       'deceasedReportedDate': parseShortDate(row.deathReportedDate),
@@ -109,18 +119,6 @@ const postProcessData = (rows) => {
         return false
       }
       return true
-    })
-
-    // convert boolean fields
-    let booleanFields = [ 
-      'charterFlightPassenger', 
-      'cruisePassengerDisembarked', 
-    ]
-    transformedRow = _.mapValues(transformedRow, (v, k) => {
-      if (booleanFields.indexOf(k) != -1) {
-        return (v == '1')
-      }
-      return v
     })
 
     // Use row.prefectureUrlAuto if that exists (for backwards compat if the spreadsheet
@@ -142,8 +140,25 @@ const postProcessData = (rows) => {
     return transformedRow
   }
 
+  // Expand rows if the patient count is more than 1
+  const expandRows = (row) => {
+    if (row.patientCount <= 1) {
+      return [row]
+    }
+
+    let expandedPatients = []
+    for (let i = 0; i < row.patientCount; i++) {
+      let patient = Object.assign({}, row)
+      delete patient.patientCount
+      patient.patientId = `${patient.patientId}.${i}`
+      expandedPatients.push(patient)
+    }
+    return expandedPatients
+  }
+
   const filteredRows = _.filter(_.map(rows, transformRow), isValidRow)
-  return filteredRows
+  const expandedRows = filteredRows.map(expandRows).reduce((flattened, other) => flattened.concat(other))
+  return expandedRows
 }
 
 const valuesFromCellObject = (cellObjectRows) => {
