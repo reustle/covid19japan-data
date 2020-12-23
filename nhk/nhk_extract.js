@@ -186,7 +186,7 @@ const main = async () => {
     console.log(matchDate)
     latestNhkArticles(fetch, 5).then(articles => {
       let summaryArticleUrl = ''
-      const summaryArticleTitlePattern = new RegExp('【国内感染】')
+      const summaryArticleTitlePattern = new RegExp('(【国内感染】|【国内】)')
       for (let article of articles) {
         if (article.link.match('/' + matchDate + '/') && article.title.match(summaryArticleTitlePattern)) { 
           summaryArticleUrl = NHKNEWS_BASE_URL + article.link
