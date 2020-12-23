@@ -148,9 +148,11 @@ const postProcessData = (rows) => {
 
     let expandedPatients = []
     for (let i = 0; i < row.patientCount; i++) {
-      let patient = Object.assign({}, row)
+      let patient = Object.assign({}, row) // copy
       delete patient.patientCount
-      patient.patientId = `${patient.patientId}.${i}`
+      if (patient.patientId != -1) {
+        patient.patientId = `${patient.patientId}.${i}`
+      }
       expandedPatients.push(patient)
     }
     return expandedPatients
