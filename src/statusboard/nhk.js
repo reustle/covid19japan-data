@@ -133,7 +133,7 @@ const extractDailySummary = (url, fetchImpl, useProxy) => {
         values.recoveredJapan = parseJapaneseNumber(recoveredJapan[1])
       }
 
-      const recoveredTotalPattern = new RegExp('症状が改善して退院した.*クルーズ船の乗客・乗員が([0-9０-９万]+)人の合わせて([0-9０-９万]+)', 'iu')
+      const recoveredTotalPattern = new RegExp('症状が改善して退院した.*クルーズ船の乗客・乗員が([0-9０-９万]+)人.*合わせて([0-9０-９万]+)', 'iu')
       let recoveredTotal = contents.match(recoveredTotalPattern)
       if (recoveredTotal) {
         values.recoveredTotal = parseJapaneseNumber(recoveredTotal[2])

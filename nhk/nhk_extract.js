@@ -108,6 +108,7 @@ const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCount
 }
 
 const extractAndWriteSummary = (date, url, shouldWrite) => {
+  console.log(url)
   extractDailySummary(url, fetch)
   .then(values => {
     let prefectureCounts = sortedPrefectureCounts(values)
@@ -181,12 +182,13 @@ const main = async () => {
       }
     })
   } else  if (!program.url) {
+    let matchDate = DateTime.fromISO(program.date).toFormat('yyyyMMdd')
+    console.log(matchDate)
     latestNhkArticles(fetch, 5).then(articles => {
       let summaryArticleUrl = ''
       const summaryArticleTitlePattern = new RegExp('【国内感染】')
       for (let article of articles) {
-        let date = DateTime.fromJSDate(new Date(article.pubDate)).toISODate()
-        if (date == program.date && article.title.match(summaryArticleTitlePattern)) { 
+        if (article.link.match('/' + matchDate + '/') && article.title.match(summaryArticleTitlePattern)) { 
           summaryArticleUrl = NHKNEWS_BASE_URL + article.link
         }
       }
