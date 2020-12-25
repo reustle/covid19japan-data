@@ -127,18 +127,19 @@ def extractImageAreas(image):
   rowHeight = 16
   pcrRect = (70, 140, 70 + 88, 140 + rowHeight)
   criticalRect = (320, 140, 320 + 80, 140 + rowHeight)
+  criticalRectTall = (320, 140, 320 + 80, 140 + 36)
   portRecoveriesRect = (400, 84, 400 + 80, 84 + rowHeight)
   recoveriesRect = (400, 140, 400 + 80, 140 + rowHeight)
   deathsRect = (510, 140, 510 + 68, 140 + rowHeight)
   return {
-    'pcr': image.crop(pcrRect),
-    'critical': image.crop(criticalRect),
-    'recoveries': image.crop(recoveriesRect),
-    'portRecoveries': image.crop(portRecoveriesRect),
-    'deaths': image.crop(deathsRect)
+    'pcr': [image.crop(pcrRect)],
+    'critical': [image.crop(criticalRect), image.crop(criticalRectTall)],
+    'recoveries': [image.crop(recoveriesRect)],
+    'portRecoveries': [image.crop(portRecoveriesRect)],
+    'deaths': [image.crop(deathsRect)]
   }
 
-def extractDailySummary(imageUrl):
+def extractDailySummary(imageUrl, outputImages):
   imageData = urllib.request.urlopen(imageUrl)
   image = Image.open(imageData)
   image = image.resize((661, 181))
@@ -146,18 +147,21 @@ def extractDailySummary(imageUrl):
   subImages = extractImageAreas(image)
   values = {}
   for key in subImages:
-    subImage = subImages[key]
-    subImage.save('%s.png' % key)
-    text = pytesseract.image_to_string(subImage)
-    try:
-      numberMatch = re.search('([0-9,]+)', text)
-      if numberMatch:
-        num = int(numberMatch.group(1).replace(',', ''))
-        values[key] = num
-      else:
-        print('Error: %s does not contain any numbers: %s' % (key, text))
-    except ValueError as e:
-      print(e)
+    for i in range(len(subImages[key])):
+      subImage = subImages[key][i]
+      if outputImages:
+        subImage.save('%s%d.png' % (key, i))
+      text = pytesseract.image_to_string(subImage)
+      try:
+        numberMatch = re.search('([0-9,]+)', text)
+        if numberMatch:
+          num = int(numberMatch.group(1).replace(',', ''))
+          values[key] = num
+          break
+        else:
+          print('Error: %s does not contain any numbers: %s' % (key, text))
+      except ValueError as e:
+        print(e)
 
     #print('%s %d' % (key, num))
   return values
@@ -300,6 +304,7 @@ if __name__ == '__main__':
   parser.add_argument('--disableExtractRecoveries', action='store_true')
   parser.add_argument('--extractSummary', action='store_true')
   parser.add_argument('--outputText', action="store_true")
+  parser.add_argument('--outputImages', action="store_true")
   parser.add_argument('--writeResults', action='store_true')
   args = parser.parse_args()
 
@@ -324,14 +329,13 @@ if __name__ == '__main__':
 
   if not args.disableExtractRecoveries:
     if reportPdfData:
-      open('test.pdf', 'wb').write(reportPdfData)
       with tempfile.NamedTemporaryFile(suffix='.pdf') as temp:
         temp.write(reportPdfData)
         recoveries = extractRecoveryNumbers(temp.name)
         summaryValues['prefectureRecoveries'] = recoveries
 
   if args.extractSummary and summaryTableUrl:
-    values = extractDailySummary(summaryTableUrl)
+    values = extractDailySummary(summaryTableUrl, args.outputImages)
     summaryValues.update(values)
 
   if args.outputText:
