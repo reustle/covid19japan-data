@@ -23,6 +23,57 @@ from google.auth.transport.requests import Request
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 SPREADSHEET_ID = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
 
+PREFECTURE_PREFIX = {
+  "Aichi": "AC",
+  "Akita": "AK",
+  "Aomori": "AM",
+  "Chiba": "CHB",
+  "Ehime": "EH",
+  "Fukui": "FKI",
+  "Fukuoka": "FK",
+  "Fukushima": "FKS",
+  "Gifu": "GF",
+  "Gunma": "GM",
+  "Hiroshima": "HRS",
+  "Hokkaido": "HKD",
+  "Hyogo": "HY",
+  "Ibaraki": "IB",
+  "Ishikawa": "ISK",
+  "Iwate": "IW",
+  "Kagawa": "KGW",
+  "Kagoshima": "KGS",
+  "Kanagawa": "KNG",
+  "Kochi": "KC",
+  "Kumamoto": "KM",
+  "Kyoto": "KYT",
+  "Mie": "ME",
+  "Miyagi": "MYG",
+  "Miyazaki": "MYZ",
+  "Nagano": "NGN",
+  "Nagasaki": "NGS",
+  "Nara": "NR",
+  "Niigata": "NGT",
+  "Oita": "OIT",
+  "Okayama": "OKY",
+  "Okinawa": "OKN",
+  "Osaka": "OSK",
+  "Saga": "SG",
+  "Saitama": "STM",
+  "Shiga": "SG",
+  "Shimane": "SM",
+  "Shizuoka": "SZ",
+  "Tochigi": "TCG",
+  "Tokushima": "TKS",
+  "Tokyo": "TOK",
+  "Tottori": "TTR",
+  "Toyama": "TY",
+  "Wakayama": "WKY",
+  "Yamagata": "YGT",
+  "Yamaguchi": "YGC",
+  "Yamanashi": "YNS",
+  "Port Quarantine": "PRT"
+}
+
 def getPatientNumberColumn(sheet, tabProperties):
   patientNumbers = sheet.values().get(spreadsheetId=SPREADSHEET_ID, 
       range="'%s'!A:A" % (tabProperties['title'])).execute()
@@ -35,29 +86,48 @@ def getPatientNumberColumn(sheet, tabProperties):
     return (isAlphaNumericPattern.group(1), int(isAlphaNumericPattern.group(2)))
   return ('', int(lastPatientNumber))
 
-def appendRows(sheet, tabProperties, prefecture,  count, date, deceased=False, source='', patientNumberPrefix='', lastPatientNumber=0):
+def appendRows(sheet, tabProperties, prefecture, count, date, deceased=False, source='', patientNumberPrefix='', lastPatientNumber=0, useCountColumn=False):
   patientNumber = lastPatientNumber
   rows = []
   deceasedValue =  'Deceased' if deceased else ''
-  for i in range(count):
-    patientNumber += 1
+
+  if useCountColumn:
     rows.append([
-      'Existing' if deceased else '%s%d' % (patientNumberPrefix, patientNumber),
-      '',
-      '',
-      date,
-      date,
-      '',  # age
-      '',  # gender
-      '',  # city
-      '',  # detectedCity
-      prefecture,
-      'Deceased' if deceased else '',
-      '',
-      '',
-      source
+        'Existing' if deceased else '%s%d' % (patientNumberPrefix, patientNumber),
+        '',
+        '',
+        date,
+        date,
+        '',  # age
+        '',  # gender
+        '',  # city
+        '',  # detectedCity
+        prefecture,
+        'Deceased' if deceased else '',
+        count,
+        '',
+        source
     ])
-  pprint.pprint(rows)
+  else:
+    for i in range(count):
+      patientNumber += 1
+      rows.append([
+        'Existing' if deceased else '%s%d' % (patientNumberPrefix, patientNumber),
+        '',
+        '',
+        date,
+        date,
+        '',  # age
+        '',  # gender
+        '',  # city
+        '',  # detectedCity
+        prefecture,
+        'Deceased' if deceased else '',
+        '',
+        '',
+        source
+      ])
+    pprint.pprint(rows)
 
   return sheet.values().append(
     spreadsheetId=SPREADSHEET_ID, 
@@ -68,7 +138,7 @@ def appendRows(sheet, tabProperties, prefecture,  count, date, deceased=False, s
     responseValueRenderOption='FORMATTED_VALUE',
     body={'majorDimension': 'ROWS', 'values': rows}).execute()
 
-def writePatients(tabName, prefecture, count, date, deceased, source):  
+def writePatients(tabName, prefecture, count, date, deceased, source, useCountColumn):  
   creds = service_account.Credentials.from_service_account_file(
     './credentials.json', scopes=SCOPES
   )
@@ -87,8 +157,17 @@ def writePatients(tabName, prefecture, count, date, deceased, source):
     return
 
   pprint.pprint(tabProperties)
-  patientNumberPrefix, lastPatientNumber = getPatientNumberColumn(sheet, tabProperties)
-  result = appendRows(sheet, tabProperties, prefecture, count, date,  deceased, source, patientNumberPrefix, lastPatientNumber)
+  if useCountColumn:
+    patientNumberPrefix, lastPatientNumber = PREFECTURE_PREFIX[prefecture], int(date.replace('-', ''))
+  else:
+    patientNumberPrefix, lastPatientNumber = getPatientNumberColumn(sheet, tabProperties)
+
+  result = appendRows(sheet, tabProperties, prefecture, count, date, 
+    deceased = deceased, 
+    source = source, 
+    patientNumberPrefix = patientNumberPrefix, 
+    lastPatientNumber = lastPatientNumber,
+    useCountColumn = useCountColumn)
   pprint.pprint(result)
 
 
@@ -101,6 +180,7 @@ if __name__ == '__main__':
   parser.add_argument('--deaths', action="store_true")
   parser.add_argument('--date', default=datetime.datetime.now().strftime('%Y-%m-%d'))
   parser.add_argument('--source', default='')
+  parser.add_argument('--use-count-column', action=argparse.BooleanOptionalAction, default=True)
   args = parser.parse_args()
 
   tab = args.tab
@@ -111,4 +191,4 @@ if __name__ == '__main__':
     url = urllib.parse.urlsplit(args.source)
     args.source = urllib.parse.urlunsplit((url.scheme, url.netloc, url.path, None, None))
 
-  writePatients(tab, args.prefecture, int(args.count), args.date, args.deaths, args.source)
+  writePatients(tab, args.prefecture, int(args.count), args.date, args.deaths, args.source, args.use_count_column)
