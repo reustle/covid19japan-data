@@ -68,6 +68,8 @@ const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCount
 
   const nhkSheet = doc.sheetsByTitle['NHK']
   await nhkSheet.loadCells('H1:H59')
+  await nhkSheet.loadCells('A2')
+
   let dateCell = nhkSheet.getCellByA1('H1')
   let linkCell = nhkSheet.getCellByA1('H2')
 
@@ -86,6 +88,7 @@ const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCount
     await copyPasteColumn(nhkSheet, 7, 8)
   }
 
+
   // Load cells again in case we inserted a new column.
   await nhkSheet.loadCells('H1:H59')
   dateCell = nhkSheet.getCellByA1('H1')
@@ -103,6 +106,10 @@ const writeNhkSummary = async (credentialsJson, dateString, url, prefectureCount
     let cell = nhkSheet.getCell(50 + i, 7)
     cell.value = otherCounts[i]
   }
+
+  // Write the current date in to the A2 cell.
+  todayCell = nhkSheet.getCellByA1('A2')
+  todayCell.value = dateValue
 
   await nhkSheet.saveUpdatedCells()
 }
@@ -162,15 +169,20 @@ const main = async () => {
     .option('-w, --write', 'Write to spreadsheet')
     .option('-l, --list', 'List all articles')
     .option('--today', 'Execute for today.')
+    .option('--yesterday', 'Execute for yesterday.')
   program.parse(process.argv)
 
-  if (!program.date  && !program.list && !program.today) {
+  if (!program.date  && !program.list && !(program.today || program.yesterday)) {
     program.help()
     return
   }
 
   if (program.today) {
     program.date = DateTime.utc().plus({hours: 9}).toISODate()
+  }
+
+  if (program.yesterday) {
+    program.date = DateTime.utc().plus({hours: 9}).minus({days: 1}).toISODate()
   }
 
   if (program.list) {
