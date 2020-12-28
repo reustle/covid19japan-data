@@ -186,7 +186,7 @@ const main = async () => {
   }
 
   if (program.list) {
-    latestNhkArticles(fetch, 5).then(articles => {
+    latestNhkArticles(fetch, 7).then(articles => {
       for (let article of articles) {
         let date = DateTime.fromJSDate(new Date(article.pubDate)).toISODate()
         let url = NHKNEWS_BASE_URL + article.link
