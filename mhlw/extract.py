@@ -31,6 +31,7 @@ https://theoephraim.github.io/node-google-spreadsheet/#/getting-started/authenti
 import sys
 import re
 import urllib.request
+import urllib.parse
 import tempfile
 import argparse
 import pprint
@@ -48,6 +49,8 @@ from google.auth.transport.requests import Request
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 SPREADSHEET_ID = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
+DEFAULT_MHLW_INDEX_URL = 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_shingata_09444.html'
+# 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00204.html'
 
 def getLatestCovidReport(indexUrl):
   """ 
@@ -57,12 +60,17 @@ def getLatestCovidReport(indexUrl):
   @returns None if no report found, URL of the first report if found.
   """
   covidReportName = '新型コロナウイルス感染症の現在の状況'
+  covidReportPattern = re.compile(covidReportName)
   contents = urllib.request.urlopen(indexUrl).read()
   soup = BeautifulSoup(contents, features="html.parser")
   links = soup.find_all('a')
   for link in links:
-    if link and link.text and link.text.startswith(covidReportName):
+    if link and link.text and covidReportPattern.search(link.text):
+      if link['href'].startswith('http'):
         return link['href']
+      else:
+        baseurl = urllib.parse.urlparse(indexUrl)
+        return urllib.parse.urlunparse((baseurl.scheme, baseurl.netloc, link['href'], '', '', ''))
   return None
 
 def getSummaryTable(soup):
@@ -300,7 +308,7 @@ def writeValues(valueDate, values):
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
   parser.add_argument('--reportUrl')
-  parser.add_argument('--indexUrl', default='https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00204.html')
+  parser.add_argument('--indexUrl', default=DEFAULT_MHLW_INDEX_URL)
   parser.add_argument('--disableExtractRecoveries', action='store_true')
   parser.add_argument('--extractSummary', action='store_true')
   parser.add_argument('--outputText', action="store_true")
@@ -313,6 +321,7 @@ if __name__ == '__main__':
     reportUrl = args.reportUrl
   else:
     reportUrl = getLatestCovidReport(args.indexUrl)
+
 
   reportDate = None
   reportPdfData = None
@@ -338,7 +347,7 @@ if __name__ == '__main__':
     values = extractDailySummary(summaryTableUrl, args.outputImages)
     summaryValues.update(values)
 
-  if args.outputText:
+  if args.outputText and summaryValues:
     [print(v[1]) for v in summaryValues['prefectureRecoveries']]
     print(summaryValues['portRecoveries'])
     print('---')
