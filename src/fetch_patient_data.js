@@ -73,13 +73,19 @@ const postProcessData = (rows) => {
     }
 
     // Parse short date
-    const parseShortDate = v => {
+    const parseShortDate = (v, dateHint) => {
       if (v) {
+        // Use the date hint to guess which year it should be in.
+        let year = 2020
+        if (dateHint && dateHint.startsWith('202')) {
+          year = dateHint.slice(0, 4)
+        }
+
         let shortDateMatch = v.match(shortDatePattern)
         if (shortDateMatch) {
           let month = shortDateMatch[1].padStart(2, '0')
           let day = shortDateMatch[2].padStart(2, '0')
-          return `2020-${month}-${day}`
+          return `${year}-${month}-${day}`
         }
       }
       return v
@@ -105,8 +111,8 @@ const postProcessData = (rows) => {
       'citySourceURL': row.citySourceURL,
       'deathSourceURL': row.deathSourceURL,
       'detectedAtPort': row.detectedAtPort,
-      'deceasedDate': parseShortDate(row.deceased),
-      'deceasedReportedDate': parseShortDate(row.deathReportedDate),
+      'deceasedDate': parseShortDate(row.deceased, row.dateAnnounced),
+      'deceasedReportedDate': parseShortDate(row.deathReportedDate, row.dateAnnounced),
       'sourceURL': row.sourceS,
       'prefectureURL': row.prefectureURLAuto,
       'cityURL': row.cityURLAuto,
