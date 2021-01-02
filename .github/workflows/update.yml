@@ -43,11 +43,10 @@ jobs:
           git config --local user.email alastair+automated@liquidx.net
           git config --local user.name "Automated Action"
           git add docs/*/*.json docs/charts/*.svg
-          git commit -m "Automated Data Update" 
-          git push || exit 0
+          git commit -m "Automated Data Update"  || exit 0
 
-
-      # - name: Push changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
