@@ -59,7 +59,7 @@ PREFECTURE_PREFIX = {
   "Osaka": "OSK",
   "Saga": "SG",
   "Saitama": "STM",
-  "Shiga": "SG",
+  "Shiga": "SHG",
   "Shimane": "SM",
   "Shizuoka": "SZ",
   "Tochigi": "TCG",
