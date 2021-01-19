@@ -73,7 +73,16 @@ const render = () => {
 
   if (fieldProperties[_state.selectedField]) {
     dates = _.map(_.range(0, _state.maxDaysBefore), i => moment(latestDataDay).subtract(i, 'days'))
-    columnHeaders = _.concat(columnHeaders, _.map(dates, date => th('', date.format('M/DD'))))
+    columnHeaders = _.concat(columnHeaders, _.map(dates, date => th('d' + date.format('MMDD'),date.format('M/DD'))))
+    columnHeaders.map(cell => cell.addEventListener('click', e => {
+      let target = e.target
+      while (target && target.tagName != cell.tagName) {
+        target = target.parentElement;
+      }
+      if (target.className) {
+        document.querySelectorAll('.' + target.className).forEach(o => o.classList.toggle('highlight'))
+      }
+    }))
     _.forEach(dates, o => { totalsByDay[o.format(dateFormat)] = 0 })
   }
   tableHead.appendChild(tr('', columnHeaders))
@@ -101,7 +110,8 @@ const render = () => {
             val = _.sum(_.slice(dailyValues, 0, dailyValues.length - daysAgo))
           }
 
-          cells.push(cellWithValue('val', val))
+          let classes = ['val', 'd' + dates[daysAgo].format('MMDD')]
+          cells.push(cellWithValue(classes, val))
           totalsByDay[dates[daysAgo].format(dateFormat)] += val
         }
       }
@@ -116,7 +126,8 @@ const render = () => {
           if (_state.countMethod == 'cumulative') {
             val = totalValue
           }
-          let classes = ['val']
+
+          let classes = ['val', 'd' + dates[daysAgo].format('MMDD')]
           if (val < 0) {
             classes.push('neg')
           }
