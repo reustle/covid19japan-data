@@ -94,5 +94,6 @@ table#prefectures {
   table#prefectures td.neg {
     background-color: #ff9696; }
   table#prefectures .highlight {
+    display: none;
     background-color: rgba(255, 239, 150, 0.3); }
 

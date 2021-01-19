@@ -147,7 +147,8 @@ const render = () => {
     td('', ''),
   ]
   for (const date of dates) {
-    totalsByDayElements.push(td('', totalsByDay[date.format(dateFormat)].toString()))
+    let className = 'd' +date.format('MMDD')
+    totalsByDayElements.push(td(className, totalsByDay[date.format(dateFormat)].toString()))
   }
   tableHead.appendChild(tr('', totalsByDayElements))
 }
