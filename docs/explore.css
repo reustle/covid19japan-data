@@ -93,4 +93,6 @@ table#prefectures {
     max-width: 3rem; }
   table#prefectures td.neg {
     background-color: #ff9696; }
+  table#prefectures .highlight {
+    background-color: rgba(255, 239, 150, 0.3); }
 
