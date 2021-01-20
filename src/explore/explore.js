@@ -15,7 +15,7 @@ const safeParseInt = v => {
 const th = (klass, attributes, contents) => { return el('th', klass, attributes, contents ) } 
 
 const _state = {
-  maxDaysBefore: 120,
+  maxDaysBefore: 150,
   countMethod: 'cumulative',
   selectedField: 'confirmed',
   orderBy: 'name',  
