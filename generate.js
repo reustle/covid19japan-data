@@ -70,7 +70,7 @@ const fetchAndSummarize = async (dateString) => {
         // Write patient data
         const patientOutputFilename = `./docs/patient_data/latest.json`
         const patientOutput = patients.map(filterPatientForOutput)
-        fs.writeFileSync(patientOutputFilename, JSON.stringify(patientOutput, null, '  '))
+        fs.writeFileSync(patientOutputFilename, JSON.stringify(patientOutput))
 
         // Write daily and prefectural summary.
         const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, recoveries, prefectureNames, regions, lastUpdated)

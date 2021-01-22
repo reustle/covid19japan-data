@@ -101,22 +101,22 @@ const postProcessData = (rows) => {
       'detectedPrefecture': row.detectedPrefecture,
       'patientStatus': row.status,
       'patientCount': normalizeCount(row.count),
-      'notes': row.notes,
+//      'notes': row.notes,
       'knownCluster': row.knownCluster,
       'relatedPatients': row.relatedPatients,
       'mhlwPatientNumber': row.mhlwOrigPatientNumber,
       'prefecturePatientNumber': row.prefecturePatientNumber,
       'cityPrefectureNumber': row.cityPatientNumber,
-      'prefectureSourceURL': row.prefectureSourceURL,
-      'citySourceURL': row.citySourceURL,
+//      'prefectureSourceURL': row.prefectureSourceURL,
+//      'citySourceURL': row.citySourceURL,
       'deathSourceURL': row.deathSourceURL,
       'detectedAtPort': row.detectedAtPort,
       'deceasedDate': parseShortDate(row.deceased, row.dateAnnounced),
       'deceasedReportedDate': parseShortDate(row.deathReportedDate, row.dateAnnounced),
-      'sourceURL': row.sourceS,
-      'prefectureURL': row.prefectureURLAuto,
-      'cityURL': row.cityURLAuto,
-      'deathURL': row.deathURLAuto
+//      'sourceURL': row.sourceS,
+//      'prefectureURL': row.prefectureURLAuto,
+//      'cityURL': row.cityURLAuto,
+//      'deathURL': row.deathURLAuto
     }
 
     // filter empty cells.
