@@ -6942,7 +6942,7 @@
         4,
         3,
         4,
-        3
+        5
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -7276,12 +7276,12 @@
         23394
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 482,
+      "deceased": 484,
       "cruisePassenger": 0,
       "recovered": 23394,
       "critical": 0,
       "tested": 0,
-      "active": 1464,
+      "active": 1462,
       "confirmedByCity": {
         "Nagoya": 4274,
         "Owari": 11,
@@ -7322,7 +7322,7 @@
         "Shizuoka": 1,
         "Gifu City": 1
       },
-      "newlyDeceased": 3,
+      "newlyDeceased": 5,
       "yesterdayDeceased": 4,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -7657,7 +7657,7 @@
       ],
       "reinfected": 5,
       "name_ja": "愛知県",
-      "deaths": 482,
+      "deaths": 484,
       "name": "Aichi"
     },
     {
@@ -24417,7 +24417,7 @@
       "name": "Gunma"
     },
     {
-      "confirmed": 3981,
+      "confirmed": 3982,
       "dailyConfirmedCount": [
         0,
         0,
@@ -24824,10 +24824,10 @@
         16,
         8,
         9,
-        9
+        10
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 9,
+      "newlyConfirmed": 10,
       "yesterdayConfirmed": 9,
       "dailyDeceasedCount": [
         0,
@@ -25574,7 +25574,7 @@
       "recovered": 3684,
       "critical": 0,
       "tested": 0,
-      "active": 236,
+      "active": 237,
       "confirmedByCity": {
         "Utsunomiya": 50,
         "Oyama": 3,
@@ -75439,14 +75439,14 @@
   ],
   "regions": [
     {
-      "confirmed": 217289,
-      "newlyConfirmed": 786,
+      "confirmed": 217290,
+      "newlyConfirmed": 787,
       "yesterdayConfirmed": 612,
       "deceased": 2845,
       "recovered": 199864,
       "critical": 0,
       "tested": 0,
-      "active": 14581,
+      "active": 14582,
       "dailyConfirmedCount": [
         0,
         0,
@@ -75853,7 +75853,7 @@
         887,
         906,
         748,
-        931
+        932
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -76730,11 +76730,11 @@
       "confirmed": 42158,
       "newlyConfirmed": 134,
       "yesterdayConfirmed": 86,
-      "deceased": 850,
+      "deceased": 852,
       "recovered": 38980,
       "critical": 0,
       "tested": 0,
-      "active": 2335,
+      "active": 2333,
       "dailyConfirmedCount": [
         0,
         0,
@@ -93839,36 +93839,36 @@
       "recoveredCumulativeAvg7d": 377625
     },
     {
-      "confirmed": 1304,
-      "confirmedCumulative": 418420,
-      "deceased": 72,
-      "deceasedCumulative": 7110,
-      "reportedDeceased": 72,
-      "reportedDeceasedCumulative": 7110,
+      "confirmed": 1305,
+      "confirmedCumulative": 418421,
+      "deceased": 74,
+      "deceasedCumulative": 7112,
+      "reportedDeceased": 74,
+      "reportedDeceasedCumulative": 7112,
       "recovered": 0,
       "recoveredCumulative": 385097,
       "critical": 0,
       "criticalCumulative": 658,
       "tested": 0,
       "testedCumulative": 7587036,
-      "active": 1232,
-      "activeCumulative": 26213,
+      "active": 1231,
+      "activeCumulative": 26212,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-02-16",
-      "deaths": 72,
+      "deaths": 74,
       "confirmedAvg3d": 1211,
       "confirmedAvg7d": 1410,
       "confirmedCumulativeAvg3d": 417229,
       "confirmedCumulativeAvg7d": 414636,
-      "deceasedAvg3d": 60,
+      "deceasedAvg3d": 61,
       "deceasedAvg7d": 72,
       "deceasedCumulativeAvg3d": 7038,
       "deceasedCumulativeAvg7d": 6918,
-      "reportedDeceasedAvg3d": 60,
+      "reportedDeceasedAvg3d": 61,
       "reportedDeceasedAvg7d": 72,
       "reportedDeceasedCumulativeAvg3d": 7038,
       "reportedDeceasedCumulativeAvg7d": 6918,
@@ -93878,5 +93878,5 @@
       "recoveredCumulativeAvg7d": 379951
     }
   ],
-  "updated": "2021-02-16T19:08:33+09:00"
+  "updated": "2021-02-16T19:31:58+09:00"
 }
