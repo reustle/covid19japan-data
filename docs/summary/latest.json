@@ -827,7 +827,7 @@
         19,
         27,
         11,
-        0
+        27
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -1165,19 +1165,19 @@
         103667
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 1218,
+      "deceased": 1245,
       "cruisePassenger": 0,
       "recovered": 103667,
       "critical": 0,
       "tested": 0,
-      "active": 3807,
+      "active": 3780,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
         "Adachi": 3,
         "Nerima": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 27,
       "yesterdayDeceased": 11,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -1516,7 +1516,7 @@
       ],
       "reinfected": 0,
       "name_ja": "東京都",
-      "deaths": 1218,
+      "deaths": 1245,
       "name": "Tokyo"
     },
     {
@@ -3902,7 +3902,7 @@
         6,
         4,
         8,
-        0
+        7
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -4240,12 +4240,12 @@
         41942
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 642,
+      "deceased": 649,
       "cruisePassenger": 0,
       "recovered": 41942,
       "critical": 0,
       "tested": 0,
-      "active": 1455,
+      "active": 1448,
       "confirmedByCity": {
         "Kanagawa": 3,
         "Sagamihara": 504,
@@ -4275,7 +4275,7 @@
         "Osawara": 1,
         "Samukawa": 3
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 7,
       "yesterdayDeceased": 8,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -4614,7 +4614,7 @@
       ],
       "reinfected": 1,
       "name_ja": "神奈川県",
-      "deaths": 642,
+      "deaths": 649,
       "name": "Kanagawa"
     },
     {
@@ -76242,11 +76242,11 @@
       "confirmed": 220707,
       "newlyConfirmed": 765,
       "yesterdayConfirmed": 815,
-      "deceased": 3014,
+      "deceased": 3048,
       "recovered": 207344,
       "critical": 0,
       "tested": 0,
-      "active": 10350,
+      "active": 10316,
       "dailyConfirmedCount": [
         0,
         0,
@@ -94829,42 +94829,42 @@
     {
       "confirmed": 1234,
       "confirmedCumulative": 423952,
-      "deceased": 34,
-      "deceasedCumulative": 7394,
-      "reportedDeceased": 34,
-      "reportedDeceasedCumulative": 7394,
+      "deceased": 68,
+      "deceasedCumulative": 7428,
+      "reportedDeceased": 68,
+      "reportedDeceasedCumulative": 7428,
       "recovered": 1801,
       "recoveredCumulative": 397293,
       "critical": -21,
       "criticalCumulative": 526,
       "tested": 76111,
       "testedCumulative": 7901922,
-      "active": -601,
-      "activeCumulative": 19265,
+      "active": -635,
+      "activeCumulative": 19231,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-02-20",
-      "deaths": 34,
+      "deaths": 68,
       "confirmedAvg3d": 1360,
       "confirmedAvg7d": 1309,
       "confirmedCumulativeAvg3d": 422695,
       "confirmedCumulativeAvg7d": 419949,
-      "deceasedAvg3d": 58,
-      "deceasedAvg7d": 66,
-      "deceasedCumulativeAvg3d": 7349,
-      "deceasedCumulativeAvg7d": 7201,
-      "reportedDeceasedAvg3d": 58,
-      "reportedDeceasedAvg7d": 66,
-      "reportedDeceasedCumulativeAvg3d": 7349,
-      "reportedDeceasedCumulativeAvg7d": 7201,
+      "deceasedAvg3d": 70,
+      "deceasedAvg7d": 71,
+      "deceasedCumulativeAvg3d": 7360,
+      "deceasedCumulativeAvg7d": 7206,
+      "reportedDeceasedAvg3d": 70,
+      "reportedDeceasedAvg7d": 71,
+      "reportedDeceasedCumulativeAvg3d": 7360,
+      "reportedDeceasedCumulativeAvg7d": 7206,
       "recoveredAvg3d": 2028,
       "recoveredAvg7d": 2389,
       "recoveredCumulativeAvg3d": 395426,
       "recoveredCumulativeAvg7d": 390458
     }
   ],
-  "updated": "2021-02-20T18:48:02+09:00"
+  "updated": "2021-02-20T19:09:32+09:00"
 }
