@@ -22,7 +22,7 @@ Data exported on `data.covid19japan.com` is updated every 15 minutes. If you hav
 ## Help wanted
 
 * If you would like to suggest improvements to the data formats, please file an issue on this repo.
-* If you want to report a mistake in our data, please use this [feedback form](https://docs.google.com/forms/d/e/1FAIpQLSfswnfdNJeaUoAX2CDhnyQTE7bg5rzFzHIvhxsJQqVqICiwsw/viewform) or open up our [Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRj0RcpTglCmtDVP1RRx21ZwteYU2Y_8JExoeIVbMG1onsmHHah3DwI2HwunY8FOU3eqme82th_hYWF/pubhtml) and leave a comment.
+* If you want to report a mistake in our data, please [create an issue on this repo](https://github.com/reustle/covid19japan-data/issues/) or open up our [Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRj0RcpTglCmtDVP1RRx21ZwteYU2Y_8JExoeIVbMG1onsmHHah3DwI2HwunY8FOU3eqme82th_hYWF/pubhtml) and leave a comment.
 
 **We need your help!** Please submit any information sources via the "Issues" tab above. Thank you! ありがとう！
 
