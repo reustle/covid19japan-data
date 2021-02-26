@@ -40560,7 +40560,7 @@
       "name": "Miyazaki"
     },
     {
-      "confirmed": 1910,
+      "confirmed": 1920,
       "dailyConfirmedCount": [
         0,
         0,
@@ -40977,10 +40977,10 @@
         12,
         3,
         19,
-        0
+        10
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 10,
       "yesterdayConfirmed": 19,
       "dailyDeceasedCount": [
         0,
@@ -41747,7 +41747,7 @@
       "recovered": 1732,
       "critical": 0,
       "tested": 0,
-      "active": 107,
+      "active": 117,
       "confirmedByCity": {
         "Iwaki": 2,
         "Koriyama": 4,
@@ -73577,7 +73577,7 @@
       "name": "Akita"
     },
     {
-      "confirmed": 209,
+      "confirmed": 211,
       "dailyConfirmedCount": [
         0,
         0,
@@ -73994,10 +73994,10 @@
         0,
         0,
         0,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -74749,7 +74749,7 @@
       "recovered": 201,
       "critical": 0,
       "tested": 0,
-      "active": 6,
+      "active": 8,
       "confirmedByCity": {
         "Tottori City": 7,
         "Yonago": 3,
@@ -79631,14 +79631,14 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 7714,
-      "newlyConfirmed": 0,
+      "confirmed": 7724,
+      "newlyConfirmed": 10,
       "yesterdayConfirmed": 29,
       "deceased": 167,
       "recovered": 7211,
       "critical": 0,
       "tested": 0,
-      "active": 337,
+      "active": 347,
       "dailyConfirmedCount": [
         0,
         0,
@@ -80055,7 +80055,7 @@
         25,
         9,
         29,
-        0
+        10
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -80069,14 +80069,14 @@
       "name": "Tohoku"
     },
     {
-      "confirmed": 9367,
-      "newlyConfirmed": 0,
+      "confirmed": 9369,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 8,
       "deceased": 171,
       "recovered": 8952,
       "critical": 0,
       "tested": 0,
-      "active": 247,
+      "active": 249,
       "dailyConfirmedCount": [
         0,
         0,
@@ -80493,7 +80493,7 @@
         12,
         16,
         14,
-        0
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -96307,7 +96307,46 @@
       "recoveredAvg7d": 1680,
       "recoveredCumulativeAvg3d": 403482,
       "recoveredCumulativeAvg7d": 400343
+    },
+    {
+      "confirmed": 12,
+      "confirmedCumulative": 428816,
+      "deceased": 0,
+      "deceasedCumulative": 7738,
+      "reportedDeceased": 0,
+      "reportedDeceasedCumulative": 7738,
+      "recovered": 0,
+      "recoveredCumulative": 405257,
+      "critical": 0,
+      "criticalCumulative": 472,
+      "tested": 0,
+      "testedCumulative": 8083230,
+      "active": 12,
+      "activeCumulative": 15821,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2021-02-26",
+      "deaths": 0,
+      "confirmedAvg3d": 669,
+      "confirmedAvg7d": 871,
+      "confirmedCumulativeAvg3d": 428449,
+      "confirmedCumulativeAvg7d": 426687,
+      "deceasedAvg3d": 47,
+      "deceasedAvg7d": 54,
+      "deceasedCumulativeAvg3d": 7713,
+      "deceasedCumulativeAvg7d": 7599,
+      "reportedDeceasedAvg3d": 47,
+      "reportedDeceasedAvg7d": 54,
+      "reportedDeceasedCumulativeAvg3d": 7713,
+      "reportedDeceasedCumulativeAvg7d": 7599,
+      "recoveredAvg3d": 1149,
+      "recoveredAvg7d": 1395,
+      "recoveredCumulativeAvg3d": 404631,
+      "recoveredCumulativeAvg7d": 401738
     }
   ],
-  "updated": "2021-02-25T22:35:00+09:00"
+  "updated": "2021-02-26T13:38:29+09:00"
 }
