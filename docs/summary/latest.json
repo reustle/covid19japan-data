@@ -39416,7 +39416,7 @@
       "name": "Port Quarantine"
     },
     {
-      "confirmed": 1963,
+      "confirmed": 1970,
       "dailyConfirmedCount": [
         0,
         0,
@@ -39837,10 +39837,10 @@
         12,
         16,
         15,
-        0
+        7
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 7,
       "yesterdayConfirmed": 15,
       "dailyDeceasedCount": [
         0,
@@ -40615,7 +40615,7 @@
       "recovered": 1764,
       "critical": 0,
       "tested": 0,
-      "active": 127,
+      "active": 134,
       "confirmedByCity": {
         "Iwaki": 2,
         "Koriyama": 4,
@@ -80451,14 +80451,14 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 7818,
-      "newlyConfirmed": 0,
+      "confirmed": 7825,
+      "newlyConfirmed": 7,
       "yesterdayConfirmed": 24,
       "deceased": 168,
       "recovered": 7300,
       "critical": 0,
       "tested": 0,
-      "active": 351,
+      "active": 358,
       "dailyConfirmedCount": [
         0,
         0,
@@ -80879,7 +80879,7 @@
         33,
         30,
         24,
-        0
+        7
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -97295,7 +97295,46 @@
       "recoveredAvg7d": 1479,
       "recoveredCumulativeAvg3d": 409314,
       "recoveredCumulativeAvg7d": 406424
+    },
+    {
+      "confirmed": 7,
+      "confirmedCumulative": 432778,
+      "deceased": 0,
+      "deceasedCumulative": 7940,
+      "reportedDeceased": 0,
+      "reportedDeceasedCumulative": 7940,
+      "recovered": 0,
+      "recoveredCumulative": 410604,
+      "critical": 0,
+      "criticalCumulative": 436,
+      "tested": 0,
+      "testedCumulative": 8256602,
+      "active": 7,
+      "activeCumulative": 14234,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2021-03-02",
+      "deaths": 0,
+      "confirmedAvg3d": 568,
+      "confirmedAvg7d": 853,
+      "confirmedCumulativeAvg3d": 432540,
+      "confirmedCumulativeAvg7d": 430726,
+      "deceasedAvg3d": 27,
+      "deceasedAvg7d": 49,
+      "deceasedCumulativeAvg3d": 7923,
+      "deceasedCumulativeAvg7d": 7835,
+      "reportedDeceasedAvg3d": 27,
+      "reportedDeceasedAvg7d": 49,
+      "reportedDeceasedCumulativeAvg3d": 7923,
+      "reportedDeceasedCumulativeAvg7d": 7835,
+      "recoveredAvg3d": 861,
+      "recoveredAvg7d": 1256,
+      "recoveredCumulativeAvg3d": 410175,
+      "recoveredCumulativeAvg7d": 407681
     }
   ],
-  "updated": "2021-03-01T23:51:07+09:00"
+  "updated": "2021-03-02T11:09:20+09:00"
 }
