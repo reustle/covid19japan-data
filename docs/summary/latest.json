@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 114639,
+      "confirmed": 114814,
       "dailyConfirmedCount": [
         0,
         0,
@@ -435,10 +435,10 @@
         304,
         330,
         239,
-        0
+        175
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 175,
       "yesterdayConfirmed": 239,
       "dailyDeceasedCount": [
         0,
@@ -1239,7 +1239,7 @@
       "recovered": 110847,
       "critical": 0,
       "tested": 0,
-      "active": 2215,
+      "active": 2390,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
@@ -22900,7 +22900,7 @@
       "name": "Hiroshima"
     },
     {
-      "confirmed": 4694,
+      "confirmed": 4706,
       "dailyConfirmedCount": [
         0,
         0,
@@ -23334,10 +23334,10 @@
         20,
         19,
         10,
-        0
+        12
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 12,
       "yesterdayConfirmed": 10,
       "dailyDeceasedCount": [
         0,
@@ -23772,7 +23772,7 @@
         0,
         1,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -24133,12 +24133,12 @@
         4456
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 90,
+      "deceased": 91,
       "cruisePassenger": 0,
       "recovered": 4456,
       "critical": 0,
       "tested": 0,
-      "active": 148,
+      "active": 159,
       "confirmedByCity": {
         "Oota": 1,
         "Ota": 4,
@@ -24154,7 +24154,7 @@
         "Tone": 2,
         "Tokyo": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -24516,7 +24516,7 @@
       ],
       "reinfected": 0,
       "name_ja": "群馬県",
-      "deaths": 90,
+      "deaths": 91,
       "name": "Gunma"
     },
     {
@@ -80839,14 +80839,14 @@
   ],
   "regions": [
     {
-      "confirmed": 235184,
-      "newlyConfirmed": 0,
+      "confirmed": 235371,
+      "newlyConfirmed": 187,
       "yesterdayConfirmed": 583,
-      "deceased": 3778,
+      "deceased": 3779,
       "recovered": 224411,
       "critical": 0,
       "tested": 0,
-      "active": 6996,
+      "active": 7182,
       "dailyConfirmedCount": [
         0,
         0,
@@ -81280,7 +81280,7 @@
         857,
         920,
         689,
-        0
+        187
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -100508,31 +100508,31 @@
       "recoveredCumulativeAvg7d": 422488
     },
     {
-      "confirmed": 42,
-      "confirmedCumulative": 447326,
-      "deceased": 0,
-      "deceasedCumulative": 8587,
-      "reportedDeceased": 0,
-      "reportedDeceasedCumulative": 8587,
+      "confirmed": 229,
+      "confirmedCumulative": 447513,
+      "deceased": 1,
+      "deceasedCumulative": 8588,
+      "reportedDeceased": 1,
+      "reportedDeceasedCumulative": 8588,
       "recovered": 0,
       "recoveredCumulative": 425663,
       "critical": 0,
       "criticalCumulative": 328,
       "tested": 0,
       "testedCumulative": 8926296,
-      "active": 42,
-      "activeCumulative": 13076,
+      "active": 228,
+      "activeCumulative": 13262,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-03-15",
-      "deaths": 0,
-      "confirmedAvg3d": 783,
-      "confirmedAvg7d": 1055,
-      "confirmedCumulativeAvg3d": 446968,
-      "confirmedCumulativeAvg7d": 444719,
+      "deaths": 1,
+      "confirmedAvg3d": 846,
+      "confirmedAvg7d": 1081,
+      "confirmedCumulativeAvg3d": 447030,
+      "confirmedCumulativeAvg7d": 444746,
       "deceasedAvg3d": 24,
       "deceasedAvg7d": 41,
       "deceasedCumulativeAvg3d": 8580,
@@ -100547,5 +100547,5 @@
       "recoveredCumulativeAvg7d": 423407
     }
   ],
-  "updated": "2021-03-15T14:22:11+09:00"
+  "updated": "2021-03-15T15:36:56+09:00"
 }
