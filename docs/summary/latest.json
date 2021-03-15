@@ -6556,7 +6556,7 @@
       "name": "Saitama"
     },
     {
-      "confirmed": 27974,
+      "confirmed": 28050,
       "dailyConfirmedCount": [
         0,
         0,
@@ -6990,10 +6990,10 @@
         105,
         129,
         106,
-        0
+        76
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 76,
       "yesterdayConfirmed": 106,
       "dailyDeceasedCount": [
         0,
@@ -7428,7 +7428,7 @@
         3,
         6,
         0,
-        0
+        3
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -7789,12 +7789,12 @@
         26145
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 508,
+      "deceased": 511,
       "cruisePassenger": 2,
       "recovered": 26145,
       "critical": 0,
       "tested": 0,
-      "active": 1321,
+      "active": 1394,
       "confirmedByCity": {
         "Chiba": 12,
         "Ichikawa": 64,
@@ -7850,7 +7850,7 @@
         "ChibaCity": 10,
         "Kawashi": 4
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 3,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -8212,7 +8212,7 @@
       ],
       "reinfected": 0,
       "name_ja": "千葉県",
-      "deaths": 508,
+      "deaths": 511,
       "name": "Chiba"
     },
     {
@@ -80839,14 +80839,14 @@
   ],
   "regions": [
     {
-      "confirmed": 235385,
-      "newlyConfirmed": 201,
+      "confirmed": 235461,
+      "newlyConfirmed": 277,
       "yesterdayConfirmed": 583,
-      "deceased": 3780,
+      "deceased": 3783,
       "recovered": 224411,
       "critical": 0,
       "tested": 0,
-      "active": 7195,
+      "active": 7268,
       "dailyConfirmedCount": [
         0,
         0,
@@ -81280,7 +81280,7 @@
         857,
         920,
         689,
-        201
+        353
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -100508,44 +100508,44 @@
       "recoveredCumulativeAvg7d": 422488
     },
     {
-      "confirmed": 323,
-      "confirmedCumulative": 447607,
-      "deceased": 8,
-      "deceasedCumulative": 8595,
-      "reportedDeceased": 8,
-      "reportedDeceasedCumulative": 8595,
+      "confirmed": 399,
+      "confirmedCumulative": 447683,
+      "deceased": 11,
+      "deceasedCumulative": 8598,
+      "reportedDeceased": 11,
+      "reportedDeceasedCumulative": 8598,
       "recovered": 0,
       "recoveredCumulative": 425663,
       "critical": 0,
       "criticalCumulative": 328,
       "tested": 0,
       "testedCumulative": 8926296,
-      "active": 315,
-      "activeCumulative": 13349,
+      "active": 388,
+      "activeCumulative": 13422,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-03-15",
-      "deaths": 8,
-      "confirmedAvg3d": 877,
-      "confirmedAvg7d": 1095,
-      "confirmedCumulativeAvg3d": 447062,
-      "confirmedCumulativeAvg7d": 444759,
-      "deceasedAvg3d": 26,
+      "deaths": 11,
+      "confirmedAvg3d": 902,
+      "confirmedAvg7d": 1106,
+      "confirmedCumulativeAvg3d": 447087,
+      "confirmedCumulativeAvg7d": 444770,
+      "deceasedAvg3d": 27,
       "deceasedAvg7d": 42,
-      "deceasedCumulativeAvg3d": 8582,
-      "deceasedCumulativeAvg7d": 8498,
-      "reportedDeceasedAvg3d": 26,
+      "deceasedCumulativeAvg3d": 8583,
+      "deceasedCumulativeAvg7d": 8499,
+      "reportedDeceasedAvg3d": 27,
       "reportedDeceasedAvg7d": 42,
-      "reportedDeceasedCumulativeAvg3d": 8582,
-      "reportedDeceasedCumulativeAvg7d": 8498,
+      "reportedDeceasedCumulativeAvg3d": 8583,
+      "reportedDeceasedCumulativeAvg7d": 8499,
       "recoveredAvg3d": 681,
       "recoveredAvg7d": 919,
       "recoveredCumulativeAvg3d": 425337,
       "recoveredCumulativeAvg7d": 423407
     }
   ],
-  "updated": "2021-03-15T16:50:30+09:00"
+  "updated": "2021-03-15T17:43:42+09:00"
 }
