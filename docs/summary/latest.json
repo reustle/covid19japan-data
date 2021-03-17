@@ -11576,7 +11576,7 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 18648,
+      "confirmed": 18722,
       "dailyConfirmedCount": [
         0,
         0,
@@ -12012,10 +12012,10 @@
         38,
         33,
         78,
-        0
+        74
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 74,
       "yesterdayConfirmed": 78,
       "dailyDeceasedCount": [
         0,
@@ -12452,7 +12452,7 @@
         0,
         0,
         0,
-        0
+        6
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -12815,12 +12815,12 @@
         17441
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 565,
+      "deceased": 571,
       "cruisePassenger": 0,
       "recovered": 17441,
       "critical": 0,
       "tested": 0,
-      "active": 642,
+      "active": 710,
       "confirmedByCity": {
         "Nishinomiya": 263,
         "Kobe": 916,
@@ -12845,7 +12845,7 @@
         "Toyooka": 2,
         "Mita": 2
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 6,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -13209,7 +13209,7 @@
       ],
       "reinfected": 0,
       "name_ja": "兵庫県",
-      "deaths": 565,
+      "deaths": 571,
       "name": "Hyogo"
     },
     {
@@ -81697,14 +81697,14 @@
       "name": "Kanto"
     },
     {
-      "confirmed": 86139,
-      "newlyConfirmed": 0,
+      "confirmed": 86213,
+      "newlyConfirmed": 74,
       "yesterdayConfirmed": 202,
-      "deceased": 2068,
+      "deceased": 2074,
       "recovered": 81533,
       "critical": 0,
       "tested": 0,
-      "active": 2539,
+      "active": 2607,
       "dailyConfirmedCount": [
         0,
         0,
@@ -82140,7 +82140,7 @@
         198,
         149,
         280,
-        0
+        148
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -101002,44 +101002,44 @@
       "recoveredCumulativeAvg7d": 424599
     },
     {
-      "confirmed": 67,
-      "confirmedCumulative": 449180,
-      "deceased": 0,
-      "deceasedCumulative": 8682,
-      "reportedDeceased": 0,
-      "reportedDeceasedCumulative": 8682,
+      "confirmed": 141,
+      "confirmedCumulative": 449254,
+      "deceased": 6,
+      "deceasedCumulative": 8688,
+      "reportedDeceased": 6,
+      "reportedDeceasedCumulative": 8688,
       "recovered": 0,
       "recoveredCumulative": 427582,
       "critical": 0,
       "criticalCumulative": 337,
       "tested": 0,
       "testedCumulative": 9000093,
-      "active": 67,
-      "activeCumulative": 12916,
+      "active": 135,
+      "activeCumulative": 12984,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-03-17",
-      "deaths": 0,
-      "confirmedAvg3d": 632,
-      "confirmedAvg7d": 970,
-      "confirmedCumulativeAvg3d": 448757,
-      "confirmedCumulativeAvg7d": 446932,
-      "deceasedAvg3d": 31,
-      "deceasedAvg7d": 38,
-      "deceasedCumulativeAvg3d": 8663,
-      "deceasedCumulativeAvg7d": 8587,
-      "reportedDeceasedAvg3d": 31,
-      "reportedDeceasedAvg7d": 38,
-      "reportedDeceasedCumulativeAvg3d": 8663,
-      "reportedDeceasedCumulativeAvg7d": 8587,
+      "deaths": 6,
+      "confirmedAvg3d": 656,
+      "confirmedAvg7d": 981,
+      "confirmedCumulativeAvg3d": 448782,
+      "confirmedCumulativeAvg7d": 446943,
+      "deceasedAvg3d": 33,
+      "deceasedAvg7d": 39,
+      "deceasedCumulativeAvg3d": 8665,
+      "deceasedCumulativeAvg7d": 8588,
+      "reportedDeceasedAvg3d": 33,
+      "reportedDeceasedAvg7d": 39,
+      "reportedDeceasedCumulativeAvg3d": 8665,
+      "reportedDeceasedCumulativeAvg7d": 8588,
       "recoveredAvg3d": 639,
       "recoveredAvg7d": 880,
       "recoveredCumulativeAvg3d": 427283,
       "recoveredCumulativeAvg7d": 425479
     }
   ],
-  "updated": "2021-03-17T14:24:57+09:00"
+  "updated": "2021-03-17T14:41:43+09:00"
 }
