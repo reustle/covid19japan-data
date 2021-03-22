@@ -887,7 +887,7 @@
         6,
         2,
         4,
-        0
+        7
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -1255,19 +1255,19 @@
         112903
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 1626,
+      "deceased": 1633,
       "cruisePassenger": 0,
       "recovered": 112903,
       "critical": 0,
       "tested": 0,
-      "active": 2405,
+      "active": 2398,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
         "Adachi": 3,
         "Nerima": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 7,
       "yesterdayDeceased": 4,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -1636,7 +1636,7 @@
       ],
       "reinfected": 0,
       "name_ja": "東京都",
-      "deaths": 1626,
+      "deaths": 1633,
       "name": "Tokyo"
     },
     {
@@ -39762,7 +39762,7 @@
       "name": "Nagano"
     },
     {
-      "confirmed": 2338,
+      "confirmed": 2343,
       "dailyConfirmedCount": [
         0,
         0,
@@ -40203,10 +40203,10 @@
         3,
         6,
         9,
-        0
+        5
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 5,
       "yesterdayConfirmed": 9,
       "dailyDeceasedCount": [
         0,
@@ -41020,7 +41020,7 @@
       "recovered": 2242,
       "critical": 0,
       "tested": 0,
-      "active": 94,
+      "active": 99,
       "confirmedByCity": {
         "Kanagawa": 1,
         "Wakayama": 1,
@@ -82242,11 +82242,11 @@
       "confirmed": 240348,
       "newlyConfirmed": 440,
       "yesterdayConfirmed": 536,
-      "deceased": 3920,
+      "deceased": 3927,
       "recovered": 229624,
       "critical": 0,
       "tested": 0,
-      "active": 6805,
+      "active": 6798,
       "dailyConfirmedCount": [
         0,
         0,
@@ -102237,44 +102237,44 @@
       "recoveredCumulativeAvg7d": 429879
     },
     {
-      "confirmed": 817,
-      "confirmedCumulative": 457064,
-      "deceased": 26,
-      "deceasedCumulative": 8847,
-      "reportedDeceased": 26,
-      "reportedDeceasedCumulative": 8847,
+      "confirmed": 822,
+      "confirmedCumulative": 457069,
+      "deceased": 33,
+      "deceasedCumulative": 8854,
+      "reportedDeceased": 33,
+      "reportedDeceasedCumulative": 8854,
       "recovered": 1125,
       "recoveredCumulative": 434274,
       "critical": 2919,
       "criticalCumulative": 3243,
       "tested": 19307,
       "testedCumulative": 9320628,
-      "active": -334,
-      "activeCumulative": 13943,
+      "active": -336,
+      "activeCumulative": 13941,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-03-22",
-      "deaths": 26,
-      "confirmedAvg3d": 1151,
-      "confirmedAvg7d": 1297,
-      "confirmedCumulativeAvg3d": 456146,
-      "confirmedCumulativeAvg7d": 453422,
-      "deceasedAvg3d": 21,
-      "deceasedAvg7d": 31,
-      "deceasedCumulativeAvg3d": 8823,
-      "deceasedCumulativeAvg7d": 8771,
-      "reportedDeceasedAvg3d": 21,
-      "reportedDeceasedAvg7d": 31,
-      "reportedDeceasedCumulativeAvg3d": 8823,
-      "reportedDeceasedCumulativeAvg7d": 8771,
+      "deaths": 33,
+      "confirmedAvg3d": 1152,
+      "confirmedAvg7d": 1298,
+      "confirmedCumulativeAvg3d": 456148,
+      "confirmedCumulativeAvg7d": 453423,
+      "deceasedAvg3d": 23,
+      "deceasedAvg7d": 32,
+      "deceasedCumulativeAvg3d": 8825,
+      "deceasedCumulativeAvg7d": 8772,
+      "reportedDeceasedAvg3d": 23,
+      "reportedDeceasedAvg7d": 32,
+      "reportedDeceasedCumulativeAvg3d": 8825,
+      "reportedDeceasedCumulativeAvg7d": 8772,
       "recoveredAvg3d": 1115,
       "recoveredAvg7d": 1084,
       "recoveredCumulativeAvg3d": 433183,
       "recoveredCumulativeAvg7d": 430963
     }
   ],
-  "updated": "2021-03-22T18:42:25+09:00"
+  "updated": "2021-03-22T20:36:50+09:00"
 }
