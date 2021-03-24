@@ -8396,7 +8396,7 @@
       "name": "Chiba"
     },
     {
-      "confirmed": 26839,
+      "confirmed": 26913,
       "dailyConfirmedCount": [
         0,
         0,
@@ -8839,10 +8839,10 @@
         34,
         31,
         63,
-        0
+        74
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 74,
       "yesterdayConfirmed": 63,
       "dailyDeceasedCount": [
         0,
@@ -9661,7 +9661,7 @@
       "recovered": 25665,
       "critical": 0,
       "tested": 0,
-      "active": 610,
+      "active": 684,
       "confirmedByCity": {
         "Nagoya": 4274,
         "Owari": 11,
@@ -84033,14 +84033,14 @@
       "name": "Tohoku"
     },
     {
-      "confirmed": 45382,
-      "newlyConfirmed": 86,
+      "confirmed": 45456,
+      "newlyConfirmed": 160,
       "yesterdayConfirmed": 128,
       "deceased": 993,
       "recovered": 43246,
       "critical": 0,
       "tested": 0,
-      "active": 1168,
+      "active": 1242,
       "dailyConfirmedCount": [
         0,
         0,
@@ -84483,7 +84483,7 @@
         116,
         104,
         191,
-        86
+        234
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -102731,8 +102731,8 @@
       "recoveredCumulativeAvg7d": 432074
     },
     {
-      "confirmed": 1011,
-      "confirmedCumulative": 459583,
+      "confirmed": 1085,
+      "confirmedCumulative": 459657,
       "deceased": 6,
       "deceasedCumulative": 8914,
       "reportedDeceased": 6,
@@ -102743,8 +102743,8 @@
       "criticalCumulative": 320,
       "tested": 0,
       "testedCumulative": 9374845,
-      "active": 1005,
-      "activeCumulative": 15308,
+      "active": 1079,
+      "activeCumulative": 15382,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -102752,10 +102752,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2021-03-24",
       "deaths": 6,
-      "confirmedAvg3d": 1112,
-      "confirmedAvg7d": 1276,
-      "confirmedCumulativeAvg3d": 458408,
-      "confirmedCumulativeAvg7d": 456051,
+      "confirmedAvg3d": 1136,
+      "confirmedAvg7d": 1287,
+      "confirmedCumulativeAvg3d": 458432,
+      "confirmedCumulativeAvg7d": 456061,
       "deceasedAvg3d": 31,
       "deceasedAvg7d": 28,
       "deceasedCumulativeAvg3d": 8892,
@@ -102770,5 +102770,5 @@
       "recoveredCumulativeAvg7d": 433014
     }
   ],
-  "updated": "2021-03-24T16:50:33+09:00"
+  "updated": "2021-03-24T17:15:32+09:00"
 }
