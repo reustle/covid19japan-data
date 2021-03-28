@@ -42905,7 +42905,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0
       ],
       "dailyDeceasedStartDate": "2020-01-08",
@@ -43279,12 +43279,12 @@
         2260
       ],
       "dailyRecoveredStartDate": "2020-03-27",
-      "deceased": 2,
+      "deceased": 3,
       "cruisePassenger": 0,
       "recovered": 2260,
       "critical": 0,
       "tested": 0,
-      "active": 112,
+      "active": 111,
       "confirmedByCity": {
         "Kanagawa": 1,
         "Wakayama": 1,
@@ -43307,7 +43307,7 @@
         "Fukuoka airport": 4
       },
       "newlyDeceased": 0,
-      "yesterdayDeceased": 0,
+      "yesterdayDeceased": 1,
       "dailyActiveStartDate": "2020-03-27",
       "dailyActive": [
         40,
@@ -43676,13 +43676,13 @@
         93,
         95,
         100,
-        112
+        111
       ],
       "reinfected": 0,
       "name_ja": "空港検疫",
       "identifier": "port-of-entry",
       "pseudoPrefecture": true,
-      "deaths": 2,
+      "deaths": 3,
       "name": "Port Quarantine"
     },
     {
@@ -103682,25 +103682,25 @@
     {
       "confirmed": 2073,
       "confirmedCumulative": 466506,
-      "deceased": 31,
-      "deceasedCumulative": 9020,
-      "reportedDeceased": 31,
-      "reportedDeceasedCumulative": 9020,
+      "deceased": 32,
+      "deceasedCumulative": 9021,
+      "reportedDeceased": 32,
+      "reportedDeceasedCumulative": 9021,
       "recovered": 0,
       "recoveredCumulative": 438879,
       "critical": 0,
       "criticalCumulative": 323,
       "tested": 0,
       "testedCumulative": 9555049,
-      "active": 2042,
-      "activeCumulative": 18607,
+      "active": 2041,
+      "activeCumulative": 18606,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-03-27",
-      "deaths": 31,
+      "deaths": 32,
       "confirmedAvg3d": 2005,
       "confirmedAvg7d": 1625,
       "confirmedCumulativeAvg3d": 464448,
@@ -103719,5 +103719,5 @@
       "recoveredCumulativeAvg7d": 436386
     }
   ],
-  "updated": "2021-03-27T23:03:58+09:00"
+  "updated": "2021-03-28T10:52:05+09:00"
 }
