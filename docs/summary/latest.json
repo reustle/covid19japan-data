@@ -40434,7 +40434,7 @@
       "name": "Okayama"
     },
     {
-      "confirmed": 2462,
+      "confirmed": 2474,
       "dailyConfirmedCount": [
         0,
         0,
@@ -40882,10 +40882,10 @@
         34,
         19,
         21,
-        0
+        12
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 12,
       "yesterdayConfirmed": 21,
       "dailyDeceasedCount": [
         0,
@@ -41714,7 +41714,7 @@
       "recovered": 2010,
       "critical": 0,
       "tested": 0,
-      "active": 343,
+      "active": 355,
       "confirmedByCity": {
         "Iwaki": 2,
         "Koriyama": 4,
@@ -84579,14 +84579,14 @@
       "name": "Kansai"
     },
     {
-      "confirmed": 10846,
-      "newlyConfirmed": 0,
+      "confirmed": 10858,
+      "newlyConfirmed": 12,
       "yesterdayConfirmed": 205,
       "deceased": 211,
       "recovered": 8252,
       "critical": 0,
       "tested": 0,
-      "active": 2384,
+      "active": 2396,
       "dailyConfirmedCount": [
         0,
         0,
@@ -85034,7 +85034,7 @@
         238,
         203,
         205,
-        0
+        12
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -103964,7 +103964,46 @@
       "recoveredAvg7d": 1155,
       "recoveredCumulativeAvg3d": 440105,
       "recoveredCumulativeAvg7d": 437730
+    },
+    {
+      "confirmed": 12,
+      "confirmedCumulative": 468303,
+      "deceased": 0,
+      "deceasedCumulative": 9050,
+      "reportedDeceased": 0,
+      "reportedDeceasedCumulative": 9050,
+      "recovered": 0,
+      "recoveredCumulative": 441237,
+      "critical": 0,
+      "criticalCumulative": 341,
+      "tested": 0,
+      "testedCumulative": 9666033,
+      "active": 12,
+      "activeCumulative": 18016,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2021-03-29",
+      "deaths": 0,
+      "confirmedAvg3d": 1290,
+      "confirmedAvg7d": 1604,
+      "confirmedCumulativeAvg3d": 467700,
+      "confirmedCumulativeAvg7d": 464143,
+      "deceasedAvg3d": 20,
+      "deceasedAvg7d": 27,
+      "deceasedCumulativeAvg3d": 9040,
+      "deceasedCumulativeAvg7d": 8986,
+      "reportedDeceasedAvg3d": 20,
+      "reportedDeceasedAvg7d": 27,
+      "reportedDeceasedCumulativeAvg3d": 9040,
+      "reportedDeceasedCumulativeAvg7d": 8986,
+      "recoveredAvg3d": 786,
+      "recoveredAvg7d": 994,
+      "recoveredCumulativeAvg3d": 440891,
+      "recoveredCumulativeAvg7d": 438725
     }
   ],
-  "updated": "2021-03-28T20:03:36+09:00"
+  "updated": "2021-03-29T12:41:21+09:00"
 }
