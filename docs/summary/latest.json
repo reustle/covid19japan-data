@@ -8536,7 +8536,7 @@
       "name": "Chiba"
     },
     {
-      "confirmed": 27295,
+      "confirmed": 27394,
       "dailyConfirmedCount": [
         0,
         0,
@@ -8986,10 +8986,10 @@
         86,
         39,
         56,
-        0
+        99
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 99,
       "yesterdayConfirmed": 56,
       "dailyDeceasedCount": [
         0,
@@ -9440,7 +9440,7 @@
         0,
         2,
         3,
-        0
+        3
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -9817,12 +9817,12 @@
         25956
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 577,
+      "deceased": 580,
       "cruisePassenger": 0,
       "recovered": 25956,
       "critical": 0,
       "tested": 0,
-      "active": 767,
+      "active": 863,
       "confirmedByCity": {
         "Nagoya": 4274,
         "Owari": 11,
@@ -9863,7 +9863,7 @@
         "Shizuoka": 1,
         "Gifu City": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 3,
       "yesterdayDeceased": 3,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -10241,7 +10241,7 @@
       ],
       "reinfected": 5,
       "name_ja": "愛知県",
-      "deaths": 577,
+      "deaths": 580,
       "name": "Aichi"
     },
     {
@@ -85454,14 +85454,14 @@
       "name": "Tohoku"
     },
     {
-      "confirmed": 46515,
-      "newlyConfirmed": 128,
+      "confirmed": 46614,
+      "newlyConfirmed": 227,
       "yesterdayConfirmed": 153,
-      "deceased": 1007,
+      "deceased": 1010,
       "recovered": 43867,
       "critical": 0,
       "tested": 0,
-      "active": 1648,
+      "active": 1744,
       "dailyConfirmedCount": [
         0,
         0,
@@ -85911,7 +85911,7 @@
         252,
         138,
         209,
-        128
+        326
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -104460,44 +104460,44 @@
       "recoveredCumulativeAvg7d": 440070
     },
     {
-      "confirmed": 1929,
-      "confirmedCumulative": 473652,
-      "deceased": 8,
-      "deceasedCumulative": 9120,
-      "reportedDeceased": 8,
-      "reportedDeceasedCumulative": 9120,
+      "confirmed": 2028,
+      "confirmedCumulative": 473751,
+      "deceased": 11,
+      "deceasedCumulative": 9123,
+      "reportedDeceased": 11,
+      "reportedDeceasedCumulative": 9123,
       "recovered": 0,
       "recoveredCumulative": 443640,
       "critical": 0,
       "criticalCumulative": 368,
       "tested": 0,
       "testedCumulative": 9762131,
-      "active": 1921,
-      "activeCumulative": 20892,
+      "active": 2017,
+      "activeCumulative": 20988,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-03-31",
-      "deaths": 8,
-      "confirmedAvg3d": 1787,
-      "confirmedAvg7d": 1880,
-      "confirmedCumulativeAvg3d": 471670,
-      "confirmedCumulativeAvg7d": 468092,
-      "deceasedAvg3d": 23,
+      "deaths": 11,
+      "confirmedAvg3d": 1820,
+      "confirmedAvg7d": 1894,
+      "confirmedCumulativeAvg3d": 471703,
+      "confirmedCumulativeAvg7d": 468106,
+      "deceasedAvg3d": 24,
       "deceasedAvg7d": 27,
-      "deceasedCumulativeAvg3d": 9103,
-      "deceasedCumulativeAvg7d": 9046,
-      "reportedDeceasedAvg3d": 23,
+      "deceasedCumulativeAvg3d": 9104,
+      "deceasedCumulativeAvg7d": 9047,
+      "reportedDeceasedAvg3d": 24,
       "reportedDeceasedAvg7d": 27,
-      "reportedDeceasedCumulativeAvg3d": 9103,
-      "reportedDeceasedCumulativeAvg7d": 9046,
+      "reportedDeceasedCumulativeAvg3d": 9104,
+      "reportedDeceasedCumulativeAvg7d": 9047,
       "recoveredAvg3d": 801,
       "recoveredAvg7d": 1025,
       "recoveredCumulativeAvg3d": 443216,
       "recoveredCumulativeAvg7d": 441095
     }
   ],
-  "updated": "2021-03-31T17:04:04+09:00"
+  "updated": "2021-03-31T17:24:39+09:00"
 }
