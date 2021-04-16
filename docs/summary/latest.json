@@ -82888,7 +82888,7 @@
       "name": "Tottori"
     },
     {
-      "confirmed": 301,
+      "confirmed": 302,
       "dailyConfirmedCount": [
         0,
         0,
@@ -83354,10 +83354,10 @@
         1,
         1,
         1,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 1,
       "dailyDeceasedCount": [
         0,
@@ -84207,7 +84207,7 @@
       "recovered": 287,
       "critical": 0,
       "tested": 0,
-      "active": 14,
+      "active": 15,
       "confirmedByCity": {
         "Matsue": 122,
         "Izumo": 8
@@ -90163,14 +90163,14 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 10532,
-      "newlyConfirmed": 1,
+      "confirmed": 10533,
+      "newlyConfirmed": 2,
       "yesterdayConfirmed": 87,
       "deceased": 185,
       "recovered": 9596,
       "critical": 0,
       "tested": 0,
-      "active": 754,
+      "active": 755,
       "dailyConfirmedCount": [
         0,
         0,
@@ -90636,7 +90636,7 @@
         42,
         100,
         107,
-        1
+        2
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -108412,8 +108412,8 @@
       "recoveredCumulativeAvg7d": 466117
     },
     {
-      "confirmed": 1,
-      "confirmedCumulative": 521776,
+      "confirmed": 2,
+      "confirmedCumulative": 521777,
       "deceased": 0,
       "deceasedCumulative": 9506,
       "reportedDeceased": 0,
@@ -108424,8 +108424,8 @@
       "criticalCumulative": 631,
       "tested": 0,
       "testedCumulative": 10670227,
-      "active": 1,
-      "activeCumulative": 38700,
+      "active": 2,
+      "activeCumulative": 38701,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -108436,7 +108436,7 @@
       "confirmedAvg3d": 2963,
       "confirmedAvg7d": 3009,
       "confirmedCumulativeAvg3d": 520250,
-      "confirmedCumulativeAvg7d": 513553,
+      "confirmedCumulativeAvg7d": 513554,
       "deceasedAvg3d": 23,
       "deceasedAvg7d": 25,
       "deceasedCumulativeAvg3d": 9494,
@@ -108451,5 +108451,5 @@
       "recoveredCumulativeAvg7d": 468221
     }
   ],
-  "updated": "2021-04-16T10:27:24+09:00"
+  "updated": "2021-04-16T11:22:14+09:00"
 }
