@@ -74987,7 +74987,7 @@
         1,
         0,
         0,
-        0,
+        1,
         0
       ],
       "dailyDeceasedStartDate": "2020-01-08",
@@ -75384,12 +75384,12 @@
         583
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 24,
+      "deceased": 25,
       "cruisePassenger": 1,
       "recovered": 583,
       "critical": 0,
       "tested": 0,
-      "active": 296,
+      "active": 295,
       "confirmedByCity": {
         "Aizumi": 1,
         "Tokushima": 3,
@@ -75397,7 +75397,7 @@
         "Aichi": 2
       },
       "newlyDeceased": 0,
-      "yesterdayDeceased": 0,
+      "yesterdayDeceased": 1,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
         1,
@@ -75789,11 +75789,11 @@
         212,
         229,
         258,
-        296
+        295
       ],
       "reinfected": 0,
       "name_ja": "徳島県",
-      "deaths": 24,
+      "deaths": 25,
       "name": "Tokushima"
     },
     {
@@ -90784,11 +90784,11 @@
       "confirmed": 4884,
       "newlyConfirmed": 0,
       "yesterdayConfirmed": 95,
-      "deceased": 89,
+      "deceased": 90,
       "recovered": 3941,
       "critical": 0,
       "tested": 0,
-      "active": 854,
+      "active": 853,
       "dailyConfirmedCount": [
         0,
         0,
@@ -109116,25 +109116,25 @@
     {
       "confirmed": 4093,
       "confirmedCumulative": 535202,
-      "deceased": 15,
-      "deceasedCumulative": 9608,
-      "reportedDeceased": 15,
-      "reportedDeceasedCumulative": 9608,
+      "deceased": 16,
+      "deceasedCumulative": 9609,
+      "reportedDeceased": 16,
+      "reportedDeceasedCumulative": 9609,
       "recovered": 2415,
       "recoveredCumulative": 480793,
       "critical": 21,
       "criticalCumulative": 423,
       "tested": 52852,
       "testedCumulative": 10886748,
-      "active": 1663,
-      "activeCumulative": 44801,
+      "active": 1662,
+      "activeCumulative": 44800,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-04-18",
-      "deaths": 15,
+      "deaths": 16,
       "confirmedAvg3d": 4475,
       "confirmedAvg7d": 3982,
       "confirmedCumulativeAvg3d": 530872,
@@ -109153,5 +109153,5 @@
       "recoveredCumulativeAvg7d": 473429
     }
   ],
-  "updated": "2021-04-19T09:47:51+09:00"
+  "updated": "2021-04-19T10:27:09+09:00"
 }
