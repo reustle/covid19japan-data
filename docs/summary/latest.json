@@ -37424,7 +37424,7 @@
         1,
         2,
         1,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -37833,12 +37833,12 @@
         3157
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 44,
+      "deceased": 45,
       "cruisePassenger": 0,
       "recovered": 3157,
       "critical": 0,
       "tested": 0,
-      "active": 935,
+      "active": 934,
       "confirmedByCity": {
         "Okayama city": 26,
         "Satoshou": 1,
@@ -37852,7 +37852,7 @@
         "Osaka": 2,
         "Okayama City": 30
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 1,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -38262,7 +38262,7 @@
       ],
       "reinfected": 0,
       "name_ja": "岡山県",
-      "deaths": 44,
+      "deaths": 45,
       "name": "Okayama"
     },
     {
@@ -92959,11 +92959,11 @@
       "confirmed": 12932,
       "newlyConfirmed": 233,
       "yesterdayConfirmed": 175,
-      "deceased": 200,
+      "deceased": 201,
       "recovered": 10707,
       "critical": 0,
       "tested": 0,
-      "active": 2028,
+      "active": 2027,
       "dailyConfirmedCount": [
         0,
         0,
@@ -112366,34 +112366,34 @@
     {
       "confirmed": 5900,
       "confirmedCumulative": 605150,
-      "deceased": 58,
-      "deceasedCumulative": 10339,
-      "reportedDeceased": 58,
-      "reportedDeceasedCumulative": 10339,
+      "deceased": 59,
+      "deceasedCumulative": 10340,
+      "reportedDeceased": 59,
+      "reportedDeceasedCumulative": 10340,
       "recovered": 4006,
       "recoveredCumulative": 527233,
       "critical": 30,
       "criticalCumulative": 1050,
       "tested": 70658,
       "testedCumulative": 11968449,
-      "active": 1836,
-      "activeCumulative": 67578,
+      "active": 1835,
+      "activeCumulative": 67577,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-05-02",
-      "deaths": 58,
+      "deaths": 59,
       "confirmedAvg3d": 5523,
       "confirmedAvg7d": 5223,
       "confirmedCumulativeAvg3d": 599221,
       "confirmedCumulativeAvg7d": 588240,
-      "deceasedAvg3d": 59,
+      "deceasedAvg3d": 60,
       "deceasedAvg7d": 57,
       "deceasedCumulativeAvg3d": 10273,
       "deceasedCumulativeAvg7d": 10151,
-      "reportedDeceasedAvg3d": 59,
+      "reportedDeceasedAvg3d": 60,
       "reportedDeceasedAvg7d": 57,
       "reportedDeceasedCumulativeAvg3d": 10273,
       "reportedDeceasedCumulativeAvg7d": 10151,
@@ -112403,5 +112403,5 @@
       "recoveredCumulativeAvg7d": 515751
     }
   ],
-  "updated": "2021-05-02T21:58:23+09:00"
+  "updated": "2021-05-02T22:25:05+09:00"
 }
