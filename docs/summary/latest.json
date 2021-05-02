@@ -14685,7 +14685,7 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 23796,
+      "confirmed": 24212,
       "dailyConfirmedCount": [
         0,
         0,
@@ -15167,10 +15167,10 @@
         337,
         305,
         352,
-        1
+        417
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 1,
+      "newlyConfirmed": 417,
       "yesterdayConfirmed": 352,
       "dailyDeceasedCount": [
         0,
@@ -15653,7 +15653,7 @@
         1,
         2,
         2,
-        0
+        4
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -16062,12 +16062,12 @@
         20087
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 359,
+      "deceased": 363,
       "cruisePassenger": 0,
       "recovered": 20087,
       "critical": 0,
       "tested": 0,
-      "active": 3354,
+      "active": 3766,
       "confirmedByCity": {
         "Kitakyushu": 692,
         "Fukuoka": 4,
@@ -16103,7 +16103,7 @@
         "Ukiha": 1,
         "Yame": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 4,
       "yesterdayDeceased": 2,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -16513,7 +16513,7 @@
       ],
       "reinfected": 4,
       "name_ja": "福岡県",
-      "deaths": 359,
+      "deaths": 363,
       "name": "Fukuoka"
     },
     {
@@ -58175,7 +58175,7 @@
       "name": "Kagoshima"
     },
     {
-      "confirmed": 2108,
+      "confirmed": 2141,
       "dailyConfirmedCount": [
         0,
         0,
@@ -58657,10 +58657,10 @@
         27,
         20,
         31,
-        0
+        33
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 33,
       "yesterdayConfirmed": 31,
       "dailyDeceasedCount": [
         0,
@@ -59557,7 +59557,7 @@
       "recovered": 1729,
       "critical": 0,
       "tested": 0,
-      "active": 338,
+      "active": 371,
       "confirmedByCity": {
         "Sanuki": 1,
         "Sasebo": 13,
@@ -91447,14 +91447,14 @@
       "name": "Kanto"
     },
     {
-      "confirmed": 50937,
-      "newlyConfirmed": 231,
+      "confirmed": 51386,
+      "newlyConfirmed": 680,
       "yesterdayConfirmed": 720,
-      "deceased": 709,
+      "deceased": 713,
       "recovered": 43513,
       "critical": 0,
       "tested": 0,
-      "active": 6743,
+      "active": 7188,
       "dailyConfirmedCount": [
         0,
         0,
@@ -91936,7 +91936,7 @@
         938,
         852,
         1072,
-        232
+        1097
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -112364,44 +112364,44 @@
       "recoveredCumulativeAvg7d": 512091
     },
     {
-      "confirmed": 5430,
-      "confirmedCumulative": 604680,
-      "deceased": 47,
-      "deceasedCumulative": 10328,
-      "reportedDeceased": 47,
-      "reportedDeceasedCumulative": 10328,
+      "confirmed": 5879,
+      "confirmedCumulative": 605129,
+      "deceased": 51,
+      "deceasedCumulative": 10332,
+      "reportedDeceased": 51,
+      "reportedDeceasedCumulative": 10332,
       "recovered": 4006,
       "recoveredCumulative": 527233,
       "critical": 860,
       "criticalCumulative": 1950,
       "tested": 70658,
       "testedCumulative": 11968449,
-      "active": 1377,
-      "activeCumulative": 67119,
+      "active": 1822,
+      "activeCumulative": 67564,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-05-02",
-      "deaths": 47,
-      "confirmedAvg3d": 5366,
-      "confirmedAvg7d": 5156,
-      "confirmedCumulativeAvg3d": 599064,
-      "confirmedCumulativeAvg7d": 588172,
-      "deceasedAvg3d": 56,
-      "deceasedAvg7d": 55,
-      "deceasedCumulativeAvg3d": 10269,
-      "deceasedCumulativeAvg7d": 10149,
-      "reportedDeceasedAvg3d": 56,
-      "reportedDeceasedAvg7d": 55,
-      "reportedDeceasedCumulativeAvg3d": 10269,
-      "reportedDeceasedCumulativeAvg7d": 10149,
+      "deaths": 51,
+      "confirmedAvg3d": 5516,
+      "confirmedAvg7d": 5220,
+      "confirmedCumulativeAvg3d": 599214,
+      "confirmedCumulativeAvg7d": 588237,
+      "deceasedAvg3d": 57,
+      "deceasedAvg7d": 56,
+      "deceasedCumulativeAvg3d": 10270,
+      "deceasedCumulativeAvg7d": 10150,
+      "reportedDeceasedAvg3d": 57,
+      "reportedDeceasedAvg7d": 56,
+      "reportedDeceasedCumulativeAvg3d": 10270,
+      "reportedDeceasedCumulativeAvg7d": 10150,
       "recoveredAvg3d": 3891,
       "recoveredAvg7d": 3660,
       "recoveredCumulativeAvg3d": 523169,
       "recoveredCumulativeAvg7d": 515751
     }
   ],
-  "updated": "2021-05-02T19:51:45+09:00"
+  "updated": "2021-05-02T20:03:28+09:00"
 }
