@@ -50000,7 +50000,7 @@
       "name": "Port Quarantine"
     },
     {
-      "confirmed": 2571,
+      "confirmed": 2594,
       "dailyConfirmedCount": [
         0,
         0,
@@ -50490,10 +50490,10 @@
         28,
         50,
         38,
-        0
+        23
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 23,
       "yesterdayConfirmed": 38,
       "dailyDeceasedCount": [
         0,
@@ -51406,7 +51406,7 @@
       "recovered": 2158,
       "critical": 0,
       "tested": 0,
-      "active": 389,
+      "active": 412,
       "confirmedByCity": {
         "Niigata": 11,
         "Kamo": 1,
@@ -93576,14 +93576,14 @@
       "name": "Kyushu"
     },
     {
-      "confirmed": 63352,
-      "newlyConfirmed": 6,
+      "confirmed": 63375,
+      "newlyConfirmed": 29,
       "yesterdayConfirmed": 801,
       "deceased": 1160,
       "recovered": 54641,
       "critical": 0,
       "tested": 0,
-      "active": 7558,
+      "active": 7581,
       "dailyConfirmedCount": [
         0,
         0,
@@ -94073,7 +94073,7 @@
         1225,
         1547,
         1274,
-        6
+        29
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -114340,8 +114340,8 @@
       "recoveredCumulativeAvg7d": 542879
     },
     {
-      "confirmed": 127,
-      "confirmedCumulative": 642190,
+      "confirmed": 150,
+      "confirmedCumulative": 642213,
       "deceased": 0,
       "deceasedCumulative": 10860,
       "reportedDeceased": 0,
@@ -114352,8 +114352,8 @@
       "criticalCumulative": 1144,
       "tested": 0,
       "testedCumulative": 12426322,
-      "active": 127,
-      "activeCumulative": 75929,
+      "active": 150,
+      "activeCumulative": 75952,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -114361,10 +114361,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2021-05-10",
       "deaths": 0,
-      "confirmedAvg3d": 4623,
-      "confirmedAvg7d": 4652,
-      "confirmedCumulativeAvg3d": 639941,
-      "confirmedCumulativeAvg7d": 628873,
+      "confirmedAvg3d": 4631,
+      "confirmedAvg7d": 4656,
+      "confirmedCumulativeAvg3d": 639948,
+      "confirmedCumulativeAvg7d": 628877,
       "deceasedAvg3d": 49,
       "deceasedAvg7d": 67,
       "deceasedCumulativeAvg3d": 10838,
@@ -114379,5 +114379,5 @@
       "recoveredCumulativeAvg7d": 546355
     }
   ],
-  "updated": "2021-05-10T14:53:04+09:00"
+  "updated": "2021-05-10T15:09:58+09:00"
 }
