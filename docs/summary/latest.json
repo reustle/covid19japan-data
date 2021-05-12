@@ -44658,7 +44658,7 @@
       "name": "Nagano"
     },
     {
-      "confirmed": 3968,
+      "confirmed": 4061,
       "dailyConfirmedCount": [
         0,
         0,
@@ -45150,10 +45150,10 @@
         72,
         68,
         40,
-        0
+        93
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 93,
       "yesterdayConfirmed": 40,
       "dailyDeceasedCount": [
         0,
@@ -46070,7 +46070,7 @@
       "recovered": 3187,
       "critical": 0,
       "tested": 0,
-      "active": 655,
+      "active": 748,
       "confirmedByCity": {
         "Iwaki": 2,
         "Koriyama": 4,
@@ -68695,7 +68695,7 @@
       "name": "Aomori"
     },
     {
-      "confirmed": 1629,
+      "confirmed": 1645,
       "dailyConfirmedCount": [
         0,
         0,
@@ -69187,10 +69187,10 @@
         8,
         9,
         14,
-        0
+        16
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 16,
       "yesterdayConfirmed": 14,
       "dailyDeceasedCount": [
         0,
@@ -69683,7 +69683,7 @@
         1,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -70097,12 +70097,12 @@
         1450
       ],
       "dailyRecoveredStartDate": "2020-03-31",
-      "deceased": 37,
+      "deceased": 38,
       "cruisePassenger": 0,
       "recovered": 1450,
       "critical": 0,
       "tested": 0,
-      "active": 143,
+      "active": 158,
       "confirmedByCity": {
         "Kaminoyama": 2,
         "Shinjo": 1,
@@ -70117,7 +70117,7 @@
         "Takahata": 1,
         "Saitama": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-31",
       "dailyActive": [
@@ -70532,7 +70532,7 @@
       ],
       "reinfected": 1,
       "name_ja": "山形県",
-      "deaths": 37,
+      "deaths": 38,
       "name": "Yamagata"
     },
     {
@@ -95518,14 +95518,14 @@
       "name": "Chugoku"
     },
     {
-      "confirmed": 17608,
-      "newlyConfirmed": 0,
+      "confirmed": 17717,
+      "newlyConfirmed": 109,
       "yesterdayConfirmed": 149,
-      "deceased": 308,
+      "deceased": 309,
       "recovered": 15296,
       "critical": 0,
       "tested": 0,
-      "active": 2005,
+      "active": 2113,
       "dailyConfirmedCount": [
         0,
         0,
@@ -96017,7 +96017,7 @@
         170,
         146,
         168,
-        0
+        109
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -114832,7 +114832,46 @@
       "recoveredAvg7d": 4184,
       "recoveredCumulativeAvg3d": 559694,
       "recoveredCumulativeAvg7d": 551133
+    },
+    {
+      "confirmed": 109,
+      "confirmedCumulative": 653354,
+      "deceased": 1,
+      "deceasedCumulative": 11045,
+      "reportedDeceased": 1,
+      "reportedDeceasedCumulative": 11045,
+      "recovered": 0,
+      "recoveredCumulative": 564128,
+      "critical": 0,
+      "criticalCumulative": 1176,
+      "tested": 0,
+      "testedCumulative": 12602793,
+      "active": 108,
+      "activeCumulative": 78181,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2021-05-12",
+      "deaths": 1,
+      "confirmedAvg3d": 3763,
+      "confirmedAvg7d": 5066,
+      "confirmedCumulativeAvg3d": 651200,
+      "confirmedCumulativeAvg7d": 640259,
+      "deceasedAvg3d": 61,
+      "deceasedAvg7d": 77,
+      "deceasedCumulativeAvg3d": 11006,
+      "deceasedCumulativeAvg7d": 10850,
+      "reportedDeceasedAvg3d": 61,
+      "reportedDeceasedAvg7d": 77,
+      "reportedDeceasedCumulativeAvg3d": 11006,
+      "reportedDeceasedCumulativeAvg7d": 10850,
+      "recoveredAvg3d": 2909,
+      "recoveredAvg7d": 3597,
+      "recoveredCumulativeAvg3d": 562603,
+      "recoveredCumulativeAvg7d": 554730
     }
   ],
-  "updated": "2021-05-11T23:52:28+09:00"
+  "updated": "2021-05-12T12:02:58+09:00"
 }
