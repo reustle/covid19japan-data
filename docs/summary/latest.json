@@ -86946,7 +86946,7 @@
       "name": "Akita"
     },
     {
-      "confirmed": 445,
+      "confirmed": 449,
       "dailyConfirmedCount": [
         0,
         0,
@@ -87443,10 +87443,10 @@
         8,
         10,
         9,
-        0
+        4
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 4,
       "yesterdayConfirmed": 9,
       "dailyDeceasedCount": [
         0,
@@ -88358,7 +88358,7 @@
       "recovered": 369,
       "critical": 0,
       "tested": 0,
-      "active": 76,
+      "active": 80,
       "confirmedByCity": {
         "Matsue": 122,
         "Izumo": 8
@@ -96031,14 +96031,14 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 17832,
-      "newlyConfirmed": 0,
+      "confirmed": 17836,
+      "newlyConfirmed": 4,
       "yesterdayConfirmed": 428,
       "deceased": 236,
       "recovered": 12871,
       "critical": 0,
       "tested": 0,
-      "active": 4728,
+      "active": 4732,
       "dailyConfirmedCount": [
         0,
         0,
@@ -96535,7 +96535,7 @@
         651,
         729,
         637,
-        0
+        4
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -116067,7 +116067,46 @@
       "recoveredAvg7d": 4949,
       "recoveredCumulativeAvg3d": 584753,
       "recoveredCumulativeAvg7d": 574344
+    },
+    {
+      "confirmed": 4,
+      "confirmedCumulative": 685135,
+      "deceased": 0,
+      "deceasedCumulative": 11471,
+      "reportedDeceased": 0,
+      "reportedDeceasedCumulative": 11471,
+      "recovered": 0,
+      "recoveredCumulative": 590044,
+      "critical": 0,
+      "criticalCumulative": 1223,
+      "tested": 0,
+      "testedCumulative": 13084423,
+      "active": 4,
+      "activeCumulative": 83620,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2021-05-17",
+      "deaths": 0,
+      "confirmedAvg3d": 3895,
+      "confirmedAvg7d": 5447,
+      "confirmedCumulativeAvg3d": 683378,
+      "confirmedCumulativeAvg7d": 672044,
+      "deceasedAvg3d": 47,
+      "deceasedAvg7d": 77,
+      "deceasedCumulativeAvg3d": 11455,
+      "deceasedCumulativeAvg7d": 11305,
+      "reportedDeceasedAvg3d": 47,
+      "reportedDeceasedAvg7d": 77,
+      "reportedDeceasedCumulativeAvg3d": 11455,
+      "reportedDeceasedCumulativeAvg7d": 11305,
+      "recoveredAvg3d": 3532,
+      "recoveredAvg7d": 4355,
+      "recoveredCumulativeAvg3d": 588286,
+      "recoveredCumulativeAvg7d": 578700
     }
   ],
-  "updated": "2021-05-17T01:47:07+09:00"
+  "updated": "2021-05-17T11:01:09+09:00"
 }
