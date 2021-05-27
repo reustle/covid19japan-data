@@ -73839,7 +73839,7 @@
         0,
         0,
         1,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -74268,12 +74268,12 @@
         1641
       ],
       "dailyRecoveredStartDate": "2020-03-31",
-      "deceased": 40,
+      "deceased": 41,
       "cruisePassenger": 0,
       "recovered": 1641,
       "critical": 0,
       "tested": 0,
-      "active": 248,
+      "active": 247,
       "confirmedByCity": {
         "Kaminoyama": 2,
         "Shinjo": 1,
@@ -74288,7 +74288,7 @@
         "Takahata": 1,
         "Saitama": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 1,
       "dailyActiveStartDate": "2020-03-31",
       "dailyActive": [
@@ -74718,7 +74718,7 @@
       ],
       "reinfected": 1,
       "name_ja": "山形県",
-      "deaths": 40,
+      "deaths": 41,
       "name": "Yamagata"
     },
     {
@@ -98611,11 +98611,11 @@
       "confirmed": 19655,
       "newlyConfirmed": 0,
       "yesterdayConfirmed": 134,
-      "deceased": 340,
+      "deceased": 341,
       "recovered": 17757,
       "critical": 0,
       "tested": 0,
-      "active": 1559,
+      "active": 1558,
       "dailyConfirmedCount": [
         0,
         0,
@@ -118537,7 +118537,46 @@
       "recoveredAvg7d": 5860,
       "recoveredCumulativeAvg3d": 645051,
       "recoveredCumulativeAvg7d": 633530
+    },
+    {
+      "confirmed": 0,
+      "confirmedCumulative": 731071,
+      "deceased": 1,
+      "deceasedCumulative": 12573,
+      "reportedDeceased": 1,
+      "reportedDeceasedCumulative": 12573,
+      "recovered": 0,
+      "recoveredCumulative": 650111,
+      "critical": 0,
+      "criticalCumulative": 1413,
+      "tested": 0,
+      "testedCumulative": 13946747,
+      "active": -1,
+      "activeCumulative": 68387,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2021-05-27",
+      "deaths": 1,
+      "confirmedAvg3d": 2812,
+      "confirmedAvg7d": 3641,
+      "confirmedCumulativeAvg3d": 729559,
+      "confirmedCumulativeAvg7d": 722563,
+      "deceasedAvg3d": 74,
+      "deceasedAvg7d": 81,
+      "deceasedCumulativeAvg3d": 12533,
+      "deceasedCumulativeAvg7d": 12362,
+      "reportedDeceasedAvg3d": 74,
+      "reportedDeceasedAvg7d": 81,
+      "reportedDeceasedCumulativeAvg3d": 12533,
+      "reportedDeceasedCumulativeAvg7d": 12362,
+      "recoveredAvg3d": 3408,
+      "recoveredAvg7d": 4969,
+      "recoveredCumulativeAvg3d": 648459,
+      "recoveredCumulativeAvg7d": 638499
     }
   ],
-  "updated": "2021-05-26T22:53:29+09:00"
+  "updated": "2021-05-27T13:00:32+09:00"
 }
