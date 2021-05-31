@@ -1,11 +1,13 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 #console-panel {
   position: fixed;
@@ -14,20 +16,25 @@ body {
   width: 100%;
   height: 300px;
   padding: 0 1rem;
-  background: #202020; }
-  #console-panel #toggle-console {
-    display: inline-block;
-    text-decoration: none;
-    color: #c8c8c8;
-    margin: 0.7rem 0 0.7rem 0; }
-  #console-panel textarea#console {
-    width: 100%; }
+  background: #202020;
+}
+#console-panel #toggle-console {
+  display: inline-block;
+  text-decoration: none;
+  color: #c8c8c8;
+  margin: 0.7rem 0 0.7rem 0;
+}
+#console-panel textarea#console {
+  width: 100%;
+}
 
 #console-panel.collapsed {
-  transform: translateY(260px); }
+  transform: translateY(260px);
+}
 
 #page {
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+}
 
 header {
   flex-grow: 0;
@@ -40,14 +47,16 @@ header {
   padding: 0.5rem;
   background: #252525;
   color: #fafafa;
-  font-size: 0.8rem; }
-  header #nhk-url {
-    font-size: 0.8rem;
-    width: 20rem;
-    margin: 0 0.5rem;
-    padding: 0.2rem 0.6rem;
-    border-radius: 0.7rem;
-    border: 1px solid black; }
+  font-size: 0.8rem;
+}
+header #nhk-url {
+  font-size: 0.8rem;
+  width: 20rem;
+  margin: 0 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.7rem;
+  border: 1px solid black;
+}
 
 a.action {
   font-size: 0.8rem;
@@ -57,61 +66,79 @@ a.action {
   background-color: #404040;
   border-radius: 0.7rem;
   padding: 0.2rem 0.8rem;
-  margin: 0 0.5rem; }
+  margin: 0 0.5rem;
+}
 
 a.action:hover {
-  background-color: gray; }
+  background-color: gray;
+}
 
 h1 {
   font-size: 0.9rem;
   padding: 0;
   margin: 0 1rem;
-  color: #fafafa; }
+  color: #fafafa;
+}
 
 input[type=text] {
   font-size: 0.8rem;
   padding: 0.2rem 0.6rem;
   border-radius: 0.7rem;
   border: 1px solid lightgray;
-  width: auto; }
+  width: auto;
+}
 
 #results {
   flex-basis: 8rem;
   flex-grow: 999;
-  padding: 20px; }
-  #results table#patients-table thead td {
-    font-weight: bold; }
-  #results table#patients-table td {
-    font-size: 13px;
-    padding: 4px;
-    min-width: 100px; }
-  #results table#patients-table .filter-field {
-    max-width: 100px; }
-  #results table#patients-table .filter {
-    min-width: 40px;
-    width: 40px; }
-  #results .hide {
-    display: none; }
-  #results .hide-patientId .patientId {
-    display: none; }
-  #results .hide-dateAnnounced .dateAnnounced {
-    display: none; }
-  #results .hide-dateAdded .dateAdded {
-    display: none; }
-  #results .hide-age .age {
-    display: none; }
-  #results .hide-gender .gender {
-    display: none; }
+  padding: 20px;
+}
+#results table#patients-table thead td {
+  font-weight: bold;
+}
+#results table#patients-table td {
+  font-size: 13px;
+  padding: 4px;
+  min-width: 100px;
+}
+#results table#patients-table .filter-field {
+  max-width: 100px;
+}
+#results table#patients-table .filter {
+  min-width: 40px;
+  width: 40px;
+}
+#results .hide {
+  display: none;
+}
+#results .hide-patientId .patientId {
+  display: none;
+}
+#results .hide-dateAnnounced .dateAnnounced {
+  display: none;
+}
+#results .hide-dateAdded .dateAdded {
+  display: none;
+}
+#results .hide-age .age {
+  display: none;
+}
+#results .hide-gender .gender {
+  display: none;
+}
 
 #patients-results {
-  display: none; }
+  display: none;
+}
 
 .patients-results #patients-results {
-  display: block; }
+  display: block;
+}
 
 #nhk-results {
-  display: none; }
+  display: none;
+}
 
 .nhk-results #nhk-results {
-  display: block; }
-
+  display: block;
+}
