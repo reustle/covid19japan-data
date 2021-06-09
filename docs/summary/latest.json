@@ -47346,7 +47346,7 @@
       "name": "Nagano"
     },
     {
-      "confirmed": 4662,
+      "confirmed": 4677,
       "dailyConfirmedCount": [
         0,
         0,
@@ -47866,10 +47866,10 @@
         11,
         13,
         6,
-        0
+        15
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 15,
       "yesterdayConfirmed": 6,
       "dailyDeceasedCount": [
         0,
@@ -48842,7 +48842,7 @@
       "recovered": 4335,
       "critical": 0,
       "tested": 0,
-      "active": 177,
+      "active": 192,
       "confirmedByCity": {
         "Iwaki": 2,
         "Koriyama": 4,
@@ -75841,7 +75841,7 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -76283,12 +76283,12 @@
         1858
       ],
       "dailyRecoveredStartDate": "2020-03-31",
-      "deceased": 46,
+      "deceased": 47,
       "cruisePassenger": 0,
       "recovered": 1858,
       "critical": 0,
       "tested": 0,
-      "active": 104,
+      "active": 103,
       "confirmedByCity": {
         "Kaminoyama": 2,
         "Shinjo": 1,
@@ -76303,7 +76303,7 @@
         "Takahata": 1,
         "Saitama": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-31",
       "dailyActive": [
@@ -76746,7 +76746,7 @@
       ],
       "reinfected": 1,
       "name_ja": "山形県",
-      "deaths": 46,
+      "deaths": 47,
       "name": "Yamagata"
     },
     {
@@ -86293,7 +86293,7 @@
       "name": "Iwate"
     },
     {
-      "confirmed": 1056,
+      "confirmed": 1059,
       "dailyConfirmedCount": [
         0,
         0,
@@ -86813,10 +86813,10 @@
         1,
         1,
         0,
-        0
+        3
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 3,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -87789,7 +87789,7 @@
       "recovered": 996,
       "critical": 0,
       "tested": 0,
-      "active": 26,
+      "active": 29,
       "confirmedByCity": {
         "Fukui": 16,
         "Echizen": 7,
@@ -91224,7 +91224,7 @@
       "deaths": 13
     },
     {
-      "confirmed": 559,
+      "confirmed": 560,
       "dailyConfirmedCount": [
         0,
         0,
@@ -91744,10 +91744,10 @@
         0,
         2,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -92705,7 +92705,7 @@
       "recovered": 508,
       "critical": 0,
       "tested": 0,
-      "active": 51,
+      "active": 52,
       "confirmedByCity": {
         "Matsue": 122,
         "Izumo": 8
@@ -99666,14 +99666,14 @@
       "name": "Kyushu"
     },
     {
-      "confirmed": 83588,
-      "newlyConfirmed": 0,
+      "confirmed": 83591,
+      "newlyConfirmed": 3,
       "yesterdayConfirmed": 291,
       "deceased": 1471,
       "recovered": 76040,
       "critical": 0,
       "tested": 0,
-      "active": 6084,
+      "active": 6087,
       "dailyConfirmedCount": [
         0,
         0,
@@ -100193,7 +100193,7 @@
         467,
         268,
         461,
-        0
+        3
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -100746,14 +100746,14 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 22610,
-      "newlyConfirmed": 0,
+      "confirmed": 22611,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 53,
       "deceased": 329,
       "recovered": 20318,
       "critical": 0,
       "tested": 0,
-      "active": 1966,
+      "active": 1967,
       "dailyConfirmedCount": [
         0,
         0,
@@ -101273,7 +101273,7 @@
         95,
         78,
         79,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -101286,14 +101286,14 @@
       "name": "Chugoku"
     },
     {
-      "confirmed": 20412,
-      "newlyConfirmed": 0,
+      "confirmed": 20427,
+      "newlyConfirmed": 15,
       "yesterdayConfirmed": 32,
-      "deceased": 373,
+      "deceased": 374,
       "recovered": 19222,
       "critical": 0,
       "tested": 0,
-      "active": 818,
+      "active": 832,
       "dailyConfirmedCount": [
         0,
         0,
@@ -101813,7 +101813,7 @@
         44,
         33,
         32,
-        0
+        15
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -121748,7 +121748,46 @@
       "recoveredAvg7d": 4227,
       "recoveredCumulativeAvg3d": 706795,
       "recoveredCumulativeAvg7d": 698732
+    },
+    {
+      "confirmed": 19,
+      "confirmedCumulative": 766087,
+      "deceased": 1,
+      "deceasedCumulative": 13706,
+      "reportedDeceased": 1,
+      "reportedDeceasedCumulative": 13706,
+      "recovered": 0,
+      "recoveredCumulative": 710216,
+      "critical": 0,
+      "criticalCumulative": 1099,
+      "tested": 0,
+      "testedCumulative": 15042894,
+      "active": 18,
+      "activeCumulative": 42165,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2021-06-09",
+      "deaths": 1,
+      "confirmedAvg3d": 1060,
+      "confirmedAvg7d": 1897,
+      "confirmedCumulativeAvg3d": 765446,
+      "confirmedCumulativeAvg7d": 761999,
+      "deceasedAvg3d": 58,
+      "deceasedAvg7d": 69,
+      "deceasedCumulativeAvg3d": 13672,
+      "deceasedCumulativeAvg7d": 13539,
+      "reportedDeceasedAvg3d": 58,
+      "reportedDeceasedAvg7d": 69,
+      "reportedDeceasedCumulativeAvg3d": 13672,
+      "reportedDeceasedCumulativeAvg7d": 13539,
+      "recoveredAvg3d": 2230,
+      "recoveredAvg7d": 3550,
+      "recoveredCumulativeAvg3d": 709025,
+      "recoveredCumulativeAvg7d": 702282
     }
   ],
-  "updated": "2021-06-08T19:05:04+09:00"
+  "updated": "2021-06-09T13:46:41+09:00"
 }
