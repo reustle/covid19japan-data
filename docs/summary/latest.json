@@ -49566,7 +49566,7 @@
         1,
         0,
         0,
-        0
+        2
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -50025,12 +50025,12 @@
         4497
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 156,
+      "deceased": 158,
       "cruisePassenger": 1,
       "recovered": 4497,
       "critical": 0,
       "tested": 0,
-      "active": 132,
+      "active": 130,
       "confirmedByCity": {
         "Iwaki": 2,
         "Koriyama": 4,
@@ -50044,7 +50044,7 @@
         "Tokyo": 1,
         "Fukushima City": 2
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 2,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -50504,7 +50504,7 @@
       ],
       "reinfected": 0,
       "name_ja": "福島県",
-      "deaths": 156,
+      "deaths": 158,
       "name": "Fukushima"
     },
     {
@@ -90416,7 +90416,7 @@
       "name": "Fukui"
     },
     {
-      "confirmed": 769,
+      "confirmed": 776,
       "dailyConfirmedCount": [
         0,
         0,
@@ -90948,10 +90948,10 @@
         0,
         1,
         4,
-        0
+        7
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 7,
       "yesterdayConfirmed": 4,
       "dailyDeceasedCount": [
         0,
@@ -91948,7 +91948,7 @@
       "recovered": 738,
       "critical": 0,
       "tested": 0,
-      "active": 11,
+      "active": 18,
       "confirmedByCity": {
         "Yurihonjo": 2,
         "Akita city": 2,
@@ -103758,14 +103758,14 @@
       "name": "Chugoku"
     },
     {
-      "confirmed": 20782,
-      "newlyConfirmed": 12,
+      "confirmed": 20789,
+      "newlyConfirmed": 19,
       "yesterdayConfirmed": 18,
-      "deceased": 386,
+      "deceased": 388,
       "recovered": 19951,
       "critical": 0,
       "tested": 0,
-      "active": 446,
+      "active": 451,
       "dailyConfirmedCount": [
         0,
         0,
@@ -104297,7 +104297,7 @@
         22,
         26,
         22,
-        12
+        26
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -124714,38 +124714,38 @@
       "recoveredCumulativeAvg7d": 739832
     },
     {
-      "confirmed": 212,
-      "confirmedCumulative": 785904,
-      "deceased": 9,
-      "deceasedCumulative": 14382,
-      "reportedDeceased": 9,
-      "reportedDeceasedCumulative": 14382,
+      "confirmed": 219,
+      "confirmedCumulative": 785911,
+      "deceased": 11,
+      "deceasedCumulative": 14384,
+      "reportedDeceased": 11,
+      "reportedDeceasedCumulative": 14384,
       "recovered": 0,
       "recoveredCumulative": 748631,
       "critical": 0,
       "criticalCumulative": 714,
       "tested": 0,
       "testedCumulative": 15815670,
-      "active": 203,
-      "activeCumulative": 22891,
+      "active": 208,
+      "activeCumulative": 22896,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-06-21",
-      "deaths": 9,
-      "confirmedAvg3d": 1013,
-      "confirmedAvg7d": 1334,
-      "confirmedCumulativeAvg3d": 785326,
-      "confirmedCumulativeAvg7d": 782535,
+      "deaths": 11,
+      "confirmedAvg3d": 1015,
+      "confirmedAvg7d": 1335,
+      "confirmedCumulativeAvg3d": 785329,
+      "confirmedCumulativeAvg7d": 782536,
       "deceasedAvg3d": 19,
-      "deceasedAvg7d": 42,
-      "deceasedCumulativeAvg3d": 14369,
+      "deceasedAvg7d": 43,
+      "deceasedCumulativeAvg3d": 14370,
       "deceasedCumulativeAvg7d": 14298,
       "reportedDeceasedAvg3d": 19,
-      "reportedDeceasedAvg7d": 42,
-      "reportedDeceasedCumulativeAvg3d": 14369,
+      "reportedDeceasedAvg7d": 43,
+      "reportedDeceasedCumulativeAvg3d": 14370,
       "reportedDeceasedCumulativeAvg7d": 14298,
       "recoveredAvg3d": 1927,
       "recoveredAvg7d": 2597,
@@ -124753,5 +124753,5 @@
       "recoveredCumulativeAvg7d": 742430
     }
   ],
-  "updated": "2021-06-21T16:25:47+09:00"
+  "updated": "2021-06-21T16:47:08+09:00"
 }
