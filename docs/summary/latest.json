@@ -94386,7 +94386,7 @@
       "deaths": 13
     },
     {
-      "confirmed": 563,
+      "confirmed": 564,
       "dailyConfirmedCount": [
         0,
         0,
@@ -94923,10 +94923,10 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -95918,7 +95918,7 @@
       "recovered": 547,
       "critical": 0,
       "tested": 0,
-      "active": 15,
+      "active": 16,
       "confirmedByCity": {
         "Matsue": 122,
         "Izumo": 8
@@ -104231,14 +104231,14 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 23205,
-      "newlyConfirmed": 0,
+      "confirmed": 23206,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 18,
       "deceased": 378,
       "recovered": 22304,
       "critical": 0,
       "tested": 0,
-      "active": 526,
+      "active": 527,
       "dailyConfirmedCount": [
         0,
         0,
@@ -104775,7 +104775,7 @@
         34,
         40,
         30,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -125949,8 +125949,8 @@
       "recoveredCumulativeAvg7d": 752388
     },
     {
-      "confirmed": 17,
-      "confirmedCumulative": 793178,
+      "confirmed": 18,
+      "confirmedCumulative": 793179,
       "deceased": 0,
       "deceasedCumulative": 14582,
       "reportedDeceased": 0,
@@ -125961,8 +125961,8 @@
       "criticalCumulative": 590,
       "tested": 0,
       "testedCumulative": 16082802,
-      "active": 17,
-      "activeCumulative": 20423,
+      "active": 18,
+      "activeCumulative": 20424,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -125988,5 +125988,5 @@
       "recoveredCumulativeAvg7d": 754065
     }
   ],
-  "updated": "2021-06-26T11:39:47+09:00"
+  "updated": "2021-06-26T12:50:01+09:00"
 }
