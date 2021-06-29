@@ -87778,7 +87778,7 @@
       "name": "Iwate"
     },
     {
-      "confirmed": 1655,
+      "confirmed": 1656,
       "dailyConfirmedCount": [
         0,
         0,
@@ -88318,10 +88318,10 @@
         1,
         0,
         0,
-        0
+        1
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1,
       "yesterdayConfirmed": 0,
       "dailyDeceasedCount": [
         0,
@@ -89334,7 +89334,7 @@
       "recovered": 1582,
       "critical": 0,
       "tested": 0,
-      "active": 11,
+      "active": 12,
       "confirmedByCity": {
         "Aizumi": 1,
         "Tokushima": 3,
@@ -105967,14 +105967,14 @@
       "name": "Chugoku"
     },
     {
-      "confirmed": 8319,
-      "newlyConfirmed": 2,
+      "confirmed": 8320,
+      "newlyConfirmed": 3,
       "yesterdayConfirmed": 13,
       "deceased": 190,
       "recovered": 7969,
       "critical": 0,
       "tested": 0,
-      "active": 160,
+      "active": 161,
       "dailyConfirmedCount": [
         0,
         0,
@@ -106514,7 +106514,7 @@
         12,
         11,
         13,
-        2
+        3
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -126690,8 +126690,8 @@
       "recoveredCumulativeAvg7d": 758106
     },
     {
-      "confirmed": 19,
-      "confirmedCumulative": 797098,
+      "confirmed": 20,
+      "confirmedCumulative": 797099,
       "deceased": 0,
       "deceasedCumulative": 14659,
       "reportedDeceased": 0,
@@ -126702,8 +126702,8 @@
       "criticalCumulative": 564,
       "tested": 0,
       "testedCumulative": 16245155,
-      "active": 19,
-      "activeCumulative": 19075,
+      "active": 20,
+      "activeCumulative": 19076,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -126729,5 +126729,5 @@
       "recoveredCumulativeAvg7d": 759669
     }
   ],
-  "updated": "2021-06-29T13:52:45+09:00"
+  "updated": "2021-06-29T14:03:26+09:00"
 }
