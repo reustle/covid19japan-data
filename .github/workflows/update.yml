@@ -42,7 +42,7 @@ jobs:
         run: |
           git config --local user.email alastair+automated@liquidx.net
           git config --local user.name "Automated Action"
-          git add docs/*/*.json docs/charts/*.svg
+          git add docs/summary_min/*.json docs/summary/*.json docs/charts/*.svg
           git commit -m "Automated Data Update"  || exit 0
 
       - name: Push changes
