@@ -15104,7 +15104,7 @@
       "name": "Hokkaido"
     },
     {
-      "confirmed": 42147,
+      "confirmed": 42267,
       "dailyConfirmedCount": [
         0,
         0,
@@ -15666,10 +15666,10 @@
         75,
         39,
         129,
-        0
+        120
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 120,
       "yesterdayConfirmed": 129,
       "dailyDeceasedCount": [
         0,
@@ -16726,7 +16726,7 @@
       "recovered": 39907,
       "critical": 0,
       "tested": 0,
-      "active": 927,
+      "active": 1047,
       "confirmedByCity": {
         "Nishinomiya": 263,
         "Kobe": 916,
@@ -107023,14 +107023,14 @@
       "name": "Kanto"
     },
     {
-      "confirmed": 189066,
-      "newlyConfirmed": 0,
+      "confirmed": 189186,
+      "newlyConfirmed": 120,
       "yesterdayConfirmed": 538,
       "deceased": 4650,
       "recovered": 179061,
       "critical": 0,
       "tested": 0,
-      "active": 5356,
+      "active": 5476,
       "dailyConfirmedCount": [
         0,
         0,
@@ -107592,7 +107592,7 @@
         511,
         373,
         667,
-        0
+        240
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -132124,8 +132124,8 @@
       "recoveredCumulativeAvg7d": 795470
     },
     {
-      "confirmed": 103,
-      "confirmedCumulative": 848266,
+      "confirmed": 223,
+      "confirmedCumulative": 848386,
       "deceased": 0,
       "deceasedCumulative": 15026,
       "reportedDeceased": 0,
@@ -132136,8 +132136,8 @@
       "criticalCumulative": 406,
       "tested": 0,
       "testedCumulative": 17614879,
-      "active": 103,
-      "activeCumulative": 31903,
+      "active": 223,
+      "activeCumulative": 32023,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -132145,10 +132145,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2021-07-21",
       "deaths": 0,
-      "confirmedAvg3d": 2063,
-      "confirmedAvg7d": 2862,
-      "confirmedCumulativeAvg3d": 846944,
-      "confirmedCumulativeAvg7d": 841230,
+      "confirmedAvg3d": 2103,
+      "confirmedAvg7d": 2879,
+      "confirmedCumulativeAvg3d": 846984,
+      "confirmedCumulativeAvg7d": 841247,
       "deceasedAvg3d": 10,
       "deceasedAvg7d": 11,
       "deceasedCumulativeAvg3d": 15019,
@@ -132163,5 +132163,5 @@
       "recoveredCumulativeAvg7d": 797103
     }
   ],
-  "updated": "2021-07-21T14:33:11+09:00"
+  "updated": "2021-07-21T14:48:10+09:00"
 }
