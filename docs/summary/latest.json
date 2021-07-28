@@ -49891,7 +49891,7 @@
       "name": "Mie"
     },
     {
-      "confirmed": 5420,
+      "confirmed": 5500,
       "dailyConfirmedCount": [
         0,
         0,
@@ -50460,10 +50460,10 @@
         37,
         52,
         41,
-        0
+        80
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 80,
       "yesterdayConfirmed": 41,
       "dailyDeceasedCount": [
         0,
@@ -51534,7 +51534,7 @@
       "recovered": 4975,
       "critical": 0,
       "tested": 0,
-      "active": 286,
+      "active": 366,
       "confirmedByCity": {
         "Iwaki": 2,
         "Koriyama": 4,
@@ -111380,14 +111380,14 @@
       "name": "Chugoku"
     },
     {
-      "confirmed": 22867,
-      "newlyConfirmed": 3,
+      "confirmed": 22947,
+      "newlyConfirmed": 83,
       "yesterdayConfirmed": 93,
       "deceased": 395,
       "recovered": 21636,
       "critical": 0,
       "tested": 0,
-      "active": 837,
+      "active": 917,
       "dailyConfirmedCount": [
         0,
         0,
@@ -111956,7 +111956,7 @@
         90,
         80,
         94,
-        3
+        83
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -133853,8 +133853,8 @@
       "recoveredCumulativeAvg7d": 811459
     },
     {
-      "confirmed": 21,
-      "confirmedCumulative": 883687,
+      "confirmed": 101,
+      "confirmedCumulative": 883767,
       "deceased": 0,
       "deceasedCumulative": 15096,
       "reportedDeceased": 0,
@@ -133865,8 +133865,8 @@
       "criticalCumulative": 514,
       "tested": 0,
       "testedCumulative": 18013366,
-      "active": 21,
-      "activeCumulative": 48453,
+      "active": 101,
+      "activeCumulative": 48533,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -133874,10 +133874,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2021-07-28",
       "deaths": 0,
-      "confirmedAvg3d": 4114,
-      "confirmedAvg7d": 4368,
-      "confirmedCumulativeAvg3d": 881130,
-      "confirmedCumulativeAvg7d": 871759,
+      "confirmedAvg3d": 4140,
+      "confirmedAvg7d": 4380,
+      "confirmedCumulativeAvg3d": 881156,
+      "confirmedCumulativeAvg7d": 871770,
       "deceasedAvg3d": 8,
       "deceasedAvg7d": 7,
       "deceasedCumulativeAvg3d": 15092,
@@ -133892,5 +133892,5 @@
       "recoveredCumulativeAvg7d": 813810
     }
   ],
-  "updated": "2021-07-28T12:03:10+09:00"
+  "updated": "2021-07-28T12:22:46+09:00"
 }
