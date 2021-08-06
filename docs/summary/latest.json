@@ -1160,7 +1160,7 @@
         0,
         7,
         1,
-        0,
+        1,
         0
       ],
       "dailyDeceasedStartDate": "2020-01-08",
@@ -1666,12 +1666,12 @@
         199092
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 2284,
+      "deceased": 2285,
       "cruisePassenger": 0,
       "recovered": 199092,
       "critical": 0,
       "tested": 0,
-      "active": 34830,
+      "active": 34829,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
@@ -1679,7 +1679,7 @@
         "Nerima": 1
       },
       "newlyDeceased": 0,
-      "yesterdayDeceased": 0,
+      "yesterdayDeceased": 1,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
         180,
@@ -2180,11 +2180,11 @@
         25516,
         27670,
         29788,
-        34830
+        34829
       ],
       "reinfected": 0,
       "name_ja": "東京都",
-      "deaths": 2284,
+      "deaths": 2285,
       "name": "Tokyo"
     },
     {
@@ -7781,7 +7781,7 @@
         2,
         0,
         0,
-        0,
+        1,
         0
       ],
       "dailyDeceasedStartDate": "2020-01-08",
@@ -8287,12 +8287,12 @@
         49349
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 852,
+      "deceased": 853,
       "cruisePassenger": 1,
       "recovered": 49349,
       "critical": 0,
       "tested": 0,
-      "active": 11948,
+      "active": 11947,
       "confirmedByCity": {
         "Gyoda": 3,
         "Ageo": 1,
@@ -8351,7 +8351,7 @@
         "Kamisato": 1
       },
       "newlyDeceased": 0,
-      "yesterdayDeceased": 0,
+      "yesterdayDeceased": 1,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
         50,
@@ -8852,11 +8852,11 @@
         8809,
         9722,
         10713,
-        11948
+        11947
       ],
       "reinfected": 0,
       "name_ja": "埼玉県",
-      "deaths": 852,
+      "deaths": 853,
       "name": "Saitama"
     },
     {
@@ -109642,11 +109642,11 @@
       "confirmed": 474497,
       "newlyConfirmed": 0,
       "yesterdayConfirmed": 9543,
-      "deceased": 5281,
+      "deceased": 5283,
       "recovered": 399320,
       "critical": 0,
       "tested": 0,
-      "active": 69897,
+      "active": 69895,
       "dailyConfirmedCount": [
         0,
         0,
@@ -136039,42 +136039,42 @@
     {
       "confirmed": 15263,
       "confirmedCumulative": 987083,
-      "deceased": 6,
-      "deceasedCumulative": 15182,
-      "reportedDeceased": 6,
-      "reportedDeceasedCumulative": 15182,
+      "deceased": 8,
+      "deceasedCumulative": 15184,
+      "reportedDeceased": 8,
+      "reportedDeceasedCumulative": 15184,
       "recovered": 5854,
       "recoveredCumulative": 858461,
       "critical": 46,
       "criticalCumulative": 823,
       "tested": 103374,
       "testedCumulative": 18812492,
-      "active": 9403,
-      "activeCumulative": 113440,
+      "active": 9401,
+      "activeCumulative": 113438,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-08-05",
-      "deaths": 6,
+      "deaths": 8,
       "confirmedAvg3d": 13829,
       "confirmedAvg7d": 11877,
       "confirmedCumulativeAvg3d": 972172,
       "confirmedCumulativeAvg7d": 948718,
       "deceasedAvg3d": 10,
       "deceasedAvg7d": 9,
-      "deceasedCumulativeAvg3d": 15173,
-      "deceasedCumulativeAvg7d": 15153,
+      "deceasedCumulativeAvg3d": 15174,
+      "deceasedCumulativeAvg7d": 15154,
       "reportedDeceasedAvg3d": 10,
       "reportedDeceasedAvg7d": 9,
-      "reportedDeceasedCumulativeAvg3d": 15173,
-      "reportedDeceasedCumulativeAvg7d": 15153,
+      "reportedDeceasedCumulativeAvg3d": 15174,
+      "reportedDeceasedCumulativeAvg7d": 15154,
       "recoveredAvg3d": 5227,
       "recoveredAvg7d": 4441,
       "recoveredCumulativeAvg3d": 852980,
       "recoveredCumulativeAvg7d": 843860
     }
   ],
-  "updated": "2021-08-06T09:04:39+09:00"
+  "updated": "2021-08-06T09:25:34+09:00"
 }
