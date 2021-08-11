@@ -1171,7 +1171,7 @@
         1,
         3,
         3,
-        3
+        2
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -1681,19 +1681,19 @@
         217562
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 2303,
+      "deceased": 2302,
       "cruisePassenger": 0,
       "recovered": 217562,
       "critical": 0,
       "tested": 0,
-      "active": 39184,
+      "active": 39185,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
         "Adachi": 3,
         "Nerima": 1
       },
-      "newlyDeceased": 3,
+      "newlyDeceased": 2,
       "yesterdayDeceased": 3,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -2204,7 +2204,7 @@
       ],
       "reinfected": 0,
       "name_ja": "東京都",
-      "deaths": 2303,
+      "deaths": 2302,
       "name": "Tokyo"
     },
     {
@@ -66675,7 +66675,7 @@
       "name": "Nagasaki"
     },
     {
-      "confirmed": 3641,
+      "confirmed": 3640,
       "dailyConfirmedCount": [
         0,
         0,
@@ -67258,10 +67258,10 @@
         13,
         12,
         12,
-        17
+        16
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 17,
+      "newlyConfirmed": 16,
       "yesterdayConfirmed": 12,
       "dailyDeceasedCount": [
         0,
@@ -68359,7 +68359,7 @@
       "recovered": 3423,
       "critical": 0,
       "tested": 0,
-      "active": 214,
+      "active": 213,
       "confirmedByCity": {
         "Kanagawa": 1,
         "Wakayama": 1,
@@ -110642,11 +110642,11 @@
       "confirmed": 524892,
       "newlyConfirmed": 8466,
       "yesterdayConfirmed": 6636,
-      "deceased": 5334,
+      "deceased": 5333,
       "recovered": 433909,
       "critical": 0,
       "tested": 0,
-      "active": 85650,
+      "active": 85651,
       "dailyConfirmedCount": [
         0,
         0,
@@ -137311,12 +137311,12 @@
       "recoveredCumulativeAvg7d": 874286
     },
     {
-      "confirmed": 15813,
-      "confirmedCumulative": 1071349,
-      "deceased": 21,
-      "deceasedCumulative": 15278,
-      "reportedDeceased": 21,
-      "reportedDeceasedCumulative": 15278,
+      "confirmed": 15812,
+      "confirmedCumulative": 1071348,
+      "deceased": 20,
+      "deceasedCumulative": 15277,
+      "reportedDeceased": 20,
+      "reportedDeceasedCumulative": 15277,
       "recovered": 10617,
       "recoveredCumulative": 909741,
       "critical": 102,
@@ -137331,8 +137331,8 @@
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-08-11",
-      "deaths": 21,
-      "confirmedAvg3d": 12820,
+      "deaths": 20,
+      "confirmedAvg3d": 12819,
       "confirmedAvg7d": 14222,
       "confirmedCumulativeAvg3d": 1057282,
       "confirmedCumulativeAvg7d": 1030405,
@@ -137350,5 +137350,5 @@
       "recoveredCumulativeAvg7d": 882448
     }
   ],
-  "updated": "2021-08-11T23:03:55+09:00"
+  "updated": "2021-08-11T23:21:26+09:00"
 }
