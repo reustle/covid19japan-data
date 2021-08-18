@@ -12520,7 +12520,7 @@
         2,
         0,
         1,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -13037,12 +13037,12 @@
         54348
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 1000,
+      "deceased": 1001,
       "cruisePassenger": 0,
       "recovered": 54348,
       "critical": 0,
       "tested": 0,
-      "active": 7847,
+      "active": 7846,
       "confirmedByCity": {
         "Nagoya": 4274,
         "Owari": 11,
@@ -13083,7 +13083,7 @@
         "Shizuoka": 1,
         "Gifu City": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 1,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -13601,7 +13601,7 @@
       ],
       "reinfected": 5,
       "name_ja": "愛知県",
-      "deaths": 1000,
+      "deaths": 1001,
       "name": "Aichi"
     },
     {
@@ -113879,11 +113879,11 @@
       "confirmed": 117548,
       "newlyConfirmed": 2756,
       "yesterdayConfirmed": 2147,
-      "deceased": 1707,
+      "deceased": 1708,
       "recovered": 98410,
       "critical": 0,
       "tested": 0,
-      "active": 17438,
+      "active": 17437,
       "dailyConfirmedCount": [
         0,
         0,
@@ -139042,25 +139042,25 @@
     {
       "confirmed": 23917,
       "confirmedCumulative": 1207312,
-      "deceased": 29,
-      "deceasedCumulative": 15456,
-      "reportedDeceased": 29,
-      "reportedDeceasedCumulative": 15456,
+      "deceased": 30,
+      "deceasedCumulative": 15457,
+      "reportedDeceased": 30,
+      "reportedDeceasedCumulative": 15457,
       "recovered": 14655,
       "recoveredCumulative": 997295,
       "critical": 70,
       "criticalCumulative": 1716,
       "tested": 120423,
       "testedCumulative": 20085602,
-      "active": 9233,
-      "activeCumulative": 194561,
+      "active": 9232,
+      "activeCumulative": 194560,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-08-18",
-      "deaths": 29,
+      "deaths": 30,
       "confirmedAvg3d": 19575,
       "confirmedAvg7d": 19423,
       "confirmedCumulativeAvg3d": 1184715,
@@ -139079,5 +139079,5 @@
       "recoveredCumulativeAvg7d": 956926
     }
   ],
-  "updated": "2021-08-18T22:23:43+09:00"
+  "updated": "2021-08-18T22:35:41+09:00"
 }
