@@ -1187,7 +1187,7 @@
         5,
         8,
         6,
-        0
+        4
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -1705,19 +1705,19 @@
         249306
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 2337,
+      "deceased": 2341,
       "cruisePassenger": 0,
       "recovered": 249306,
       "critical": 0,
       "tested": 0,
-      "active": 45816,
+      "active": 45812,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
         "Adachi": 3,
         "Nerima": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 4,
       "yesterdayDeceased": 6,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -2236,7 +2236,7 @@
       ],
       "reinfected": 0,
       "name_ja": "東京都",
-      "deaths": 2337,
+      "deaths": 2341,
       "name": "Tokyo"
     },
     {
@@ -112242,11 +112242,11 @@
       "confirmed": 610434,
       "newlyConfirmed": 12340,
       "yesterdayConfirmed": 11409,
-      "deceased": 5459,
+      "deceased": 5463,
       "recovered": 496625,
       "critical": 0,
       "tested": 0,
-      "active": 108351,
+      "active": 108347,
       "dailyConfirmedCount": [
         0,
         0,
@@ -139289,36 +139289,36 @@
     {
       "confirmed": 25156,
       "confirmedCumulative": 1232468,
-      "deceased": 22,
-      "deceasedCumulative": 15479,
-      "reportedDeceased": 22,
-      "reportedDeceasedCumulative": 15479,
+      "deceased": 26,
+      "deceasedCumulative": 15483,
+      "reportedDeceased": 26,
+      "reportedDeceasedCumulative": 15483,
       "recovered": 14572,
       "recoveredCumulative": 1011867,
       "critical": 49,
       "criticalCumulative": 1765,
       "tested": 134433,
       "testedCumulative": 20220035,
-      "active": 10562,
-      "activeCumulative": 205122,
+      "active": 10558,
+      "activeCumulative": 205118,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-08-19",
-      "deaths": 22,
+      "deaths": 26,
       "confirmedAvg3d": 23009,
       "confirmedAvg7d": 20318,
       "confirmedCumulativeAvg3d": 1207725,
       "confirmedCumulativeAvg7d": 1168079,
-      "deceasedAvg3d": 33,
-      "deceasedAvg7d": 25,
-      "deceasedCumulativeAvg3d": 15454,
+      "deceasedAvg3d": 34,
+      "deceasedAvg7d": 26,
+      "deceasedCumulativeAvg3d": 15455,
       "deceasedCumulativeAvg7d": 15395,
-      "reportedDeceasedAvg3d": 33,
-      "reportedDeceasedAvg7d": 25,
-      "reportedDeceasedCumulativeAvg3d": 15454,
+      "reportedDeceasedAvg3d": 34,
+      "reportedDeceasedAvg7d": 26,
+      "reportedDeceasedCumulativeAvg3d": 15455,
       "reportedDeceasedCumulativeAvg7d": 15395,
       "recoveredAvg3d": 14495,
       "recoveredAvg7d": 13000,
@@ -139326,5 +139326,5 @@
       "recoveredCumulativeAvg7d": 969927
     }
   ],
-  "updated": "2021-08-19T21:56:04+09:00"
+  "updated": "2021-08-19T22:08:41+09:00"
 }
