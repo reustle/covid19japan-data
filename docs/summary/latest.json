@@ -84033,7 +84033,7 @@
         0,
         1,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -84559,12 +84559,12 @@
         3086
       ],
       "dailyRecoveredStartDate": "2020-03-30",
-      "deceased": 41,
+      "deceased": 42,
       "cruisePassenger": 0,
       "recovered": 3086,
       "critical": 0,
       "tested": 0,
-      "active": 1253,
+      "active": 1252,
       "confirmedByCity": {
         "Toyama City": 45,
         "Nanto": 1,
@@ -84573,7 +84573,7 @@
         "Imizu": 1,
         "Nyuzen": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-30",
       "dailyActive": [
@@ -85100,7 +85100,7 @@
       ],
       "reinfected": 0,
       "name_ja": "富山県",
-      "deaths": 41,
+      "deaths": 42,
       "name": "Toyama"
     },
     {
@@ -115892,11 +115892,11 @@
       "confirmed": 155170,
       "newlyConfirmed": 2713,
       "yesterdayConfirmed": 2184,
-      "deceased": 1760,
+      "deceased": 1761,
       "recovered": 117196,
       "critical": 0,
       "tested": 0,
-      "active": 36221,
+      "active": 36220,
       "dailyConfirmedCount": [
         0,
         0,
@@ -142253,35 +142253,35 @@
     {
       "confirmed": 17713,
       "confirmedCumulative": 1491458,
-      "deceased": 64,
-      "deceasedCumulative": 16007,
-      "reportedDeceased": 64,
-      "reportedDeceasedCumulative": 16007,
+      "deceased": 65,
+      "deceasedCumulative": 16008,
+      "reportedDeceased": 65,
+      "reportedDeceasedCumulative": 16008,
       "recovered": 40461,
       "recoveredCumulative": 1231521,
       "critical": 35,
       "criticalCumulative": 2110,
       "tested": 160071,
       "testedCumulative": 21768236,
-      "active": -22812,
-      "activeCumulative": 243930,
+      "active": -22813,
+      "activeCumulative": 243929,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-08-31",
-      "deaths": 64,
+      "deaths": 65,
       "confirmedAvg3d": 16887,
       "confirmedAvg7d": 20987,
       "confirmedCumulativeAvg3d": 1475103,
       "confirmedCumulativeAvg7d": 1435266,
       "deceasedAvg3d": 53,
-      "deceasedAvg7d": 50,
+      "deceasedAvg7d": 51,
       "deceasedCumulativeAvg3d": 15949,
       "deceasedCumulativeAvg7d": 15849,
       "reportedDeceasedAvg3d": 53,
-      "reportedDeceasedAvg7d": 50,
+      "reportedDeceasedAvg7d": 51,
       "reportedDeceasedCumulativeAvg3d": 15949,
       "reportedDeceasedCumulativeAvg7d": 15849,
       "recoveredAvg3d": 25891,
@@ -142290,5 +142290,5 @@
       "recoveredCumulativeAvg7d": 1158117
     }
   ],
-  "updated": "2021-08-31T21:56:10+09:00"
+  "updated": "2021-08-31T22:09:43+09:00"
 }
