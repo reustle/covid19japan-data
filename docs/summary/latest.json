@@ -108490,7 +108490,7 @@
       "name": "Tottori"
     },
     {
-      "confirmed": 1432,
+      "confirmed": 1445,
       "dailyConfirmedCount": [
         0,
         0,
@@ -109097,10 +109097,10 @@
         30,
         26,
         27,
-        0
+        13
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 13,
       "yesterdayConfirmed": 27,
       "dailyDeceasedCount": [
         0,
@@ -110232,7 +110232,7 @@
       "recovered": 1160,
       "critical": 0,
       "tested": 0,
-      "active": 270,
+      "active": 283,
       "confirmedByCity": {
         "Matsue": 122,
         "Izumo": 8
@@ -117958,14 +117958,14 @@
       "name": "Kyushu"
     },
     {
-      "confirmed": 41440,
-      "newlyConfirmed": 0,
+      "confirmed": 41453,
+      "newlyConfirmed": 13,
       "yesterdayConfirmed": 518,
       "deceased": 406,
       "recovered": 32756,
       "critical": 0,
       "tested": 0,
-      "active": 8281,
+      "active": 8294,
       "dailyConfirmedCount": [
         0,
         0,
@@ -118572,7 +118572,7 @@
         870,
         722,
         755,
-        0
+        13
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -143237,7 +143237,46 @@
       "recoveredAvg7d": 22977,
       "recoveredCumulativeAvg3d": 1276465,
       "recoveredCumulativeAvg7d": 1225562
+    },
+    {
+      "confirmed": 13,
+      "confirmedCumulative": 1546469,
+      "deceased": 0,
+      "deceasedCumulative": 16207,
+      "reportedDeceased": 0,
+      "reportedDeceasedCumulative": 16207,
+      "recovered": 0,
+      "recoveredCumulative": 1296746,
+      "critical": 0,
+      "criticalCumulative": 2221,
+      "tested": 0,
+      "testedCumulative": 22160932,
+      "active": 13,
+      "activeCumulative": 233516,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2021-09-04",
+      "deaths": 0,
+      "confirmedAvg3d": 11660,
+      "confirmedAvg7d": 15096,
+      "confirmedCumulativeAvg3d": 1540881,
+      "confirmedCumulativeAvg7d": 1508491,
+      "deceasedAvg3d": 42,
+      "deceasedAvg7d": 51,
+      "deceasedCumulativeAvg3d": 16186,
+      "deceasedCumulativeAvg7d": 16069,
+      "reportedDeceasedAvg3d": 42,
+      "reportedDeceasedAvg7d": 51,
+      "reportedDeceasedCumulativeAvg3d": 16186,
+      "reportedDeceasedCumulativeAvg7d": 16069,
+      "recoveredAvg3d": 14012,
+      "recoveredAvg7d": 20414,
+      "recoveredCumulativeAvg3d": 1290477,
+      "recoveredCumulativeAvg7d": 1245976
     }
   ],
-  "updated": "2021-09-04T11:39:53+09:00"
+  "updated": "2021-09-04T11:51:01+09:00"
 }
