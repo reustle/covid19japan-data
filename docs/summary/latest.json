@@ -74686,7 +74686,7 @@
       "name": "Saga"
     },
     {
-      "confirmed": 5299,
+      "confirmed": 5329,
       "dailyConfirmedCount": [
         0,
         0,
@@ -75297,10 +75297,10 @@
         42,
         22,
         31,
-        0
+        30
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 30,
       "yesterdayConfirmed": 31,
       "dailyDeceasedCount": [
         0,
@@ -76455,7 +76455,7 @@
       "recovered": 4604,
       "critical": 0,
       "tested": 0,
-      "active": 608,
+      "active": 638,
       "confirmedByCity": {
         "Shimonoseki": 4,
         "Yamaguchi City": 2,
@@ -118774,14 +118774,14 @@
       "name": "Kyushu"
     },
     {
-      "confirmed": 42781,
-      "newlyConfirmed": 28,
+      "confirmed": 42811,
+      "newlyConfirmed": 58,
       "yesterdayConfirmed": 253,
       "deceased": 411,
       "recovered": 35791,
       "critical": 0,
       "tested": 0,
-      "active": 6582,
+      "active": 6612,
       "dailyConfirmedCount": [
         0,
         0,
@@ -119392,7 +119392,7 @@
         470,
         391,
         389,
-        28
+        58
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -144227,8 +144227,8 @@
       "recoveredCumulativeAvg7d": 1319664
     },
     {
-      "confirmed": 182,
-      "confirmedCumulative": 1594395,
+      "confirmed": 212,
+      "confirmedCumulative": 1594425,
       "deceased": 0,
       "deceasedCumulative": 16396,
       "reportedDeceased": 0,
@@ -144239,8 +144239,8 @@
       "criticalCumulative": 2209,
       "tested": 0,
       "testedCumulative": 22654079,
-      "active": 182,
-      "activeCumulative": 197032,
+      "active": 212,
+      "activeCumulative": 197062,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -144248,10 +144248,10 @@
       "cruiseCriticalCumulative": 1,
       "date": "2021-09-08",
       "deaths": 0,
-      "confirmedAvg3d": 6339,
-      "confirmedAvg7d": 11843,
-      "confirmedCumulativeAvg3d": 1590739,
-      "confirmedCumulativeAvg7d": 1569462,
+      "confirmedAvg3d": 6349,
+      "confirmedAvg7d": 11848,
+      "confirmedCumulativeAvg3d": 1590749,
+      "confirmedCumulativeAvg7d": 1569466,
       "deceasedAvg3d": 34,
       "deceasedAvg7d": 45,
       "deceasedCumulativeAvg3d": 16375,
@@ -144266,5 +144266,5 @@
       "recoveredCumulativeAvg7d": 1337701
     }
   ],
-  "updated": "2021-09-08T14:33:36+09:00"
+  "updated": "2021-09-08T14:48:30+09:00"
 }
