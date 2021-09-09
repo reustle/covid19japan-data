@@ -1229,7 +1229,7 @@
         16,
         16,
         17,
-        9
+        19
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -1768,19 +1768,19 @@
         336545
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 2586,
+      "deceased": 2596,
       "cruisePassenger": 0,
       "recovered": 336545,
       "critical": 0,
       "tested": 0,
-      "active": 23638,
+      "active": 23628,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
         "Adachi": 3,
         "Nerima": 1
       },
-      "newlyDeceased": 9,
+      "newlyDeceased": 19,
       "yesterdayDeceased": 17,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -2320,7 +2320,7 @@
       ],
       "reinfected": 0,
       "name_ja": "東京都",
-      "deaths": 2586,
+      "deaths": 2596,
       "name": "Tokyo"
     },
     {
@@ -12989,7 +12989,7 @@
         3,
         10,
         12,
-        14
+        15
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -13528,12 +13528,12 @@
         81677
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 931,
+      "deceased": 932,
       "cruisePassenger": 2,
       "recovered": 81677,
       "critical": 0,
       "tested": 0,
-      "active": 12463,
+      "active": 12462,
       "confirmedByCity": {
         "Chiba": 12,
         "Ichikawa": 64,
@@ -13589,7 +13589,7 @@
         "ChibaCity": 10,
         "Kawashi": 4
       },
-      "newlyDeceased": 14,
+      "newlyDeceased": 15,
       "yesterdayDeceased": 12,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -14129,7 +14129,7 @@
       ],
       "reinfected": 0,
       "name_ja": "千葉県",
-      "deaths": 931,
+      "deaths": 932,
       "name": "Chiba"
     },
     {
@@ -116442,11 +116442,11 @@
       "confirmed": 779324,
       "newlyConfirmed": 4126,
       "yesterdayConfirmed": 4755,
-      "deceased": 6081,
+      "deceased": 6092,
       "recovered": 708936,
       "critical": 0,
       "tested": 0,
-      "active": 64308,
+      "active": 64297,
       "dailyConfirmedCount": [
         0,
         0,
@@ -144476,42 +144476,42 @@
     {
       "confirmed": 10400,
       "confirmedCumulative": 1617009,
-      "deceased": 77,
-      "deceasedCumulative": 16562,
-      "reportedDeceased": 77,
-      "reportedDeceasedCumulative": 16562,
+      "deceased": 88,
+      "deceasedCumulative": 16573,
+      "reportedDeceased": 88,
+      "reportedDeceasedCumulative": 16573,
       "recovered": 19378,
       "recoveredCumulative": 1423913,
       "critical": -38,
       "criticalCumulative": 2173,
       "tested": 135774,
       "testedCumulative": 22908236,
-      "active": -9055,
-      "activeCumulative": 176534,
+      "active": -9066,
+      "activeCumulative": 176523,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-09-09",
-      "deaths": 77,
+      "deaths": 88,
       "confirmedAvg3d": 11133,
       "confirmedAvg7d": 12470,
       "confirmedCumulativeAvg3d": 1605943,
       "confirmedCumulativeAvg7d": 1583677,
-      "deceasedAvg3d": 76,
-      "deceasedAvg7d": 59,
-      "deceasedCumulativeAvg3d": 16481,
-      "deceasedCumulativeAvg7d": 16363,
-      "reportedDeceasedAvg3d": 76,
-      "reportedDeceasedAvg7d": 59,
-      "reportedDeceasedCumulativeAvg3d": 16481,
-      "reportedDeceasedCumulativeAvg7d": 16363,
+      "deceasedAvg3d": 79,
+      "deceasedAvg7d": 61,
+      "deceasedCumulativeAvg3d": 16484,
+      "deceasedCumulativeAvg7d": 16364,
+      "reportedDeceasedAvg3d": 79,
+      "reportedDeceasedAvg7d": 61,
+      "reportedDeceasedCumulativeAvg3d": 16484,
+      "reportedDeceasedCumulativeAvg7d": 16364,
       "recoveredAvg3d": 19871,
       "recoveredAvg7d": 20853,
       "recoveredCumulativeAvg3d": 1403138,
       "recoveredCumulativeAvg7d": 1361921
     }
   ],
-  "updated": "2021-09-10T08:22:23+09:00"
+  "updated": "2021-09-10T08:33:48+09:00"
 }
