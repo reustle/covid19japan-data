@@ -53847,7 +53847,7 @@
       "name": "Shiga"
     },
     {
-      "confirmed": 9088,
+      "confirmed": 9129,
       "dailyConfirmedCount": [
         0,
         0,
@@ -54459,10 +54459,10 @@
         37,
         29,
         37,
-        0
+        41
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 41,
       "yesterdayConfirmed": 37,
       "dailyDeceasedCount": [
         0,
@@ -55619,7 +55619,7 @@
       "recovered": 8376,
       "critical": 0,
       "tested": 0,
-      "active": 544,
+      "active": 585,
       "confirmedByCity": {
         "Iwaki": 2,
         "Koriyama": 4,
@@ -95749,7 +95749,7 @@
       "name": "Kochi"
     },
     {
-      "confirmed": 3368,
+      "confirmed": 3393,
       "dailyConfirmedCount": [
         0,
         0,
@@ -96361,10 +96361,10 @@
         12,
         24,
         14,
-        0
+        25
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 25,
       "yesterdayConfirmed": 14,
       "dailyDeceasedCount": [
         0,
@@ -96977,7 +96977,7 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -97511,12 +97511,12 @@
         3049
       ],
       "dailyRecoveredStartDate": "2020-03-31",
-      "deceased": 51,
+      "deceased": 52,
       "cruisePassenger": 0,
       "recovered": 3049,
       "critical": 0,
       "tested": 0,
-      "active": 269,
+      "active": 293,
       "confirmedByCity": {
         "Kaminoyama": 2,
         "Shinjo": 1,
@@ -97531,7 +97531,7 @@
         "Takahata": 1,
         "Saitama": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-31",
       "dailyActive": [
@@ -98066,7 +98066,7 @@
       ],
       "reinfected": 1,
       "name_ja": "山形県",
-      "deaths": 51,
+      "deaths": 52,
       "name": "Yamagata"
     },
     {
@@ -119610,14 +119610,14 @@
       "name": "Chugoku"
     },
     {
-      "confirmed": 37935,
-      "newlyConfirmed": 0,
+      "confirmed": 38001,
+      "newlyConfirmed": 66,
       "yesterdayConfirmed": 241,
-      "deceased": 431,
+      "deceased": 432,
       "recovered": 33741,
       "critical": 0,
       "tested": 0,
-      "active": 3764,
+      "active": 3829,
       "dailyConfirmedCount": [
         0,
         0,
@@ -120229,7 +120229,7 @@
         146,
         228,
         257,
-        0
+        66
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -144474,31 +144474,31 @@
       "recoveredCumulativeAvg7d": 1341068
     },
     {
-      "confirmed": 28,
-      "confirmedCumulative": 1606637,
-      "deceased": 0,
-      "deceasedCumulative": 16485,
-      "reportedDeceased": 0,
-      "reportedDeceasedCumulative": 16485,
+      "confirmed": 94,
+      "confirmedCumulative": 1606703,
+      "deceased": 1,
+      "deceasedCumulative": 16486,
+      "reportedDeceased": 1,
+      "reportedDeceasedCumulative": 16486,
       "recovered": 0,
       "recoveredCumulative": 1404535,
       "critical": 0,
       "criticalCumulative": 2211,
       "tested": 0,
       "testedCumulative": 22772462,
-      "active": 28,
-      "activeCumulative": 185617,
+      "active": 93,
+      "activeCumulative": 185682,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-09-09",
-      "deaths": 0,
-      "confirmedAvg3d": 7675,
-      "confirmedAvg7d": 10988,
-      "confirmedCumulativeAvg3d": 1602486,
-      "confirmedCumulativeAvg7d": 1582195,
+      "deaths": 1,
+      "confirmedAvg3d": 7697,
+      "confirmedAvg7d": 10997,
+      "confirmedCumulativeAvg3d": 1602508,
+      "confirmedCumulativeAvg7d": 1582205,
       "deceasedAvg3d": 50,
       "deceasedAvg7d": 48,
       "deceasedCumulativeAvg3d": 16455,
@@ -144513,5 +144513,5 @@
       "recoveredCumulativeAvg7d": 1359153
     }
   ],
-  "updated": "2021-09-09T12:03:30+09:00"
+  "updated": "2021-09-09T12:22:49+09:00"
 }
