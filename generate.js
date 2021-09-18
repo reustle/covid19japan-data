@@ -20,7 +20,7 @@ const areSummariesDifferent = (summary, existingSummary) => {
     const latestDaily = summary.daily[summary.daily.length - 1];
     const latestDailyFromExisting = existingSummary.daily[existingSummary.daily.length - 1];
 
-    if (latestDaily.confirmed !== latestDailyFromExisting.confirmed) {
+    if (latestDaily.confirmedCumulative !== latestDailyFromExisting.confirmedCumulative) {
       return true;
     }
   }
