@@ -1,32 +1,40 @@
 const fs = require('fs')
 const moment = require('moment')
 const _ = require('lodash')
+const process = require('process')
+const { program } = require('commander');
 
 const FetchPatientData = require('./src/fetch_patient_data.js')
 const Summarize = require('./src/summarize.js')
 const FetchSheet = require('./src/fetch_sheet.js')
 const MergePatients = require('./src/merge_patients.js')
 const Prefectures = require('./src/prefectures.js')
-const { request } = require('http')
+const { writeSpreadsheets } = require('./src/test_data');
 
-const generateLastUpdated = async (patients) => {
-  // Check if patient list changed size, if it did, then update lastUpdated
-  let lastUpdated = null
-  const existingPatientsData = fs.readFileSync(`./docs/patient_data/latest.json`)
-  if (existingPatientsData) {
-    const existingPatients = JSON.parse(existingPatientsData)
-    if (existingPatients && existingPatients.length && existingPatients.length != patients.length) {
-      // Add 540 = UTC+9 for JST.
-      lastUpdated = moment().utcOffset(540).format()
-      console.log(`Patients data updated. New: ${patients.length} Old: ${existingPatients.length}`)
+
+const areSummariesDifferent = (summary, existingSummary) => {
+  if (existingSummary.daily) {
+    if (existingSummary.daily.length < summary.daily.length) {
+      return true;
+    }
+
+    const latestDaily = summary.daily[summary.daily.length - 1];
+    const latestDailyFromExisting = existingSummary.daily[existingSummary.daily.length - 1];
+
+    if (latestDaily.confirmed != latestDailyFromExisting.confirmed) {
+      return true;
     }
   }
+  return false;
+}
 
-  // Patient data didn't get updated, pull lastUpdate from the latest summary.
-  if (lastUpdated == null) {
-    const existingSummaryData = fs.readFileSync(`./docs/summary/latest.json`)
-    if (existingSummaryData) {
-      const existingSummary = JSON.parse(existingSummaryData)
+const calculateLastUpdated = async (summary) => {
+  let lastUpdated = null;
+  const existingSummaryData = fs.readFileSync(`./docs/summary/latest.json`)
+  if (existingSummaryData) {
+    const existingSummary = JSON.parse(existingSummaryData)
+    // Check if summary is different.
+    if (areSummariesDifferent(summary, existingSummary)) {
       if (existingSummary && existingSummary.updated && typeof existingSummary.updated === 'string') {
         lastUpdated = existingSummary.updated
         //console.log(`Pulling lastUpdated from summary/latest.json: ${lastUpdated}`)
@@ -34,57 +42,51 @@ const generateLastUpdated = async (patients) => {
     }
   }
 
-  // If it's still null, we don't know. So just use the latest timestamp.
+  // If the summary is different, then use the current time as the timestamp.
   if (lastUpdated == null) {
     lastUpdated = moment().utcOffset(540).format()
   }
   return lastUpdated
 }
 
-const fetchAndSummarize = async (dateString) => {
+
+const filterPatientForOutput = (patient) => {
+  let filtered = Object.assign({}, patient)
+  if (patient.ageBracket == -1) {
+    delete filtered.ageBracket
+  }
+  delete filtered.patientCount
+  return filtered
+}
+
+const mergeAndOutput = (allPatients, daily, prefectures, cruiseCounts, recoveries) => {
+  let patients = MergePatients.mergePatients(allPatients)
+  console.log(`Total patients fetched: ${patients.length}`)
+
+  // Write patient data
+  const patientOutputFilename = `./docs/patient_data/latest.json`
+  const patientOutput = patients.map(filterPatientForOutput)
+  fs.writeFileSync(patientOutputFilename, JSON.stringify(patientOutput))
+
+  // Write daily and prefectural summary.
   const prefectureNames = Prefectures.prefectureNamesEn()
   const regions = Prefectures.regionPrefectures()
+  const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, recoveries, prefectureNames, regions)
+  return calculateLastUpdated(summary).then((lastUpdated) => {
+    console.log('Using lastUpdate timestamp', lastUpdated);
+    summary.lastUpdated = lastUpdated;
 
-  const latestSheetId = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
-  const daily = await FetchSheet.fetchRows(latestSheetId, 'Sum By Day')
-  const prefectures = await FetchSheet.fetchRows(latestSheetId, 'Prefecture Data')
-  const cruiseCounts = await FetchSheet.fetchRows(latestSheetId, 'Cruise Sum By Day')
-  const recoveries = await FetchSheet.fetchRows(latestSheetId, 'Recoveries')
+    const summaryOutputFilename = `./docs/summary/latest.json`
+    fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
 
-  const filterPatientForOutput = (patient) => {
-    let filtered = Object.assign({}, patient)
-    if (patient.ageBracket == -1) {
-      delete filtered.ageBracket
-    }
-    delete filtered.patientCount
-    return filtered
-  }
+    // Write minified version of daily/prefectural summary
+    const summaryMinifiedOutputFilename = `./docs/summary_min/latest.json`
+    fs.writeFileSync(summaryMinifiedOutputFilename, JSON.stringify(summary))
+    console.log('Success.')
+  })
+}
 
-
-  const mergeAndOutput = (allPatients) => {
-    let patients = MergePatients.mergePatients(allPatients)
-    console.log(`Total patients fetched: ${patients.length}`)
-
-    generateLastUpdated(patients)
-      .then(lastUpdated => {
-        // Write patient data
-        const patientOutputFilename = `./docs/patient_data/latest.json`
-        const patientOutput = patients.map(filterPatientForOutput)
-        fs.writeFileSync(patientOutputFilename, JSON.stringify(patientOutput))
-
-        // Write daily and prefectural summary.
-        const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, recoveries, prefectureNames, regions, lastUpdated)
-        const summaryOutputFilename = `./docs/summary/latest.json`
-        fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
-
-        // Write minified version of daily/prefectural summary
-        const summaryMinifiedOutputFilename = `./docs/summary_min/latest.json`
-        fs.writeFileSync(summaryMinifiedOutputFilename, JSON.stringify(summary))
-
-        console.log('Success.')
-      })     
-  }
-
+const fetchPatients = async (sheetId) => {
   const tabsBatchSize = 6
   let tabs = [
     'Patient Data', 
@@ -105,20 +107,60 @@ const fetchAndSummarize = async (dateString) => {
     const thisRequestTabs = tabs.slice(0, tabsBatchSize)
     tabs = tabs.slice(tabsBatchSize)
     requests.push(FetchPatientData.fetchPatientDataFromSheets([{
-      sheetId: latestSheetId,
+      sheetId: sheetId,
       tabs: thisRequestTabs
     }]))
+  }    
+  // Execute the requests.
+  return Promise.all(requests)
+    .then(patientLists => {
+      return _.flatten(patientLists)
+    })
+}
+
+const fetchAndSummarize = async (testDataDir, outputTestDataDir) => {
+  const latestSheetId = '1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY'
+
+  let daily = [];
+  let prefectures = [];
+  let cruiseCounts = [];
+  let recoveries = [];
+
+  if (testDataDir) {
+    daily = JSON.parse(fs.readFileSync(`${testDataDir}/daily.json`))
+    prefectures = JSON.parse(fs.readFileSync(`${testDataDir}/prefectures.json`))
+    cruiseCounts = JSON.parse(fs.readFileSync(`${testDataDir}/cruiseCounts.json`))
+    recoveries = JSON.parse(fs.readFileSync(`${testDataDir}/recoveries.json`))
+    console.log(`Read daily,prefectures,cruiseCounts,recoveries from ${testDataDir}`);
+  } else {
+    daily = await FetchSheet.fetchRows(latestSheetId, 'Sum By Day')
+    prefectures = await FetchSheet.fetchRows(latestSheetId, 'Prefecture Data')
+    cruiseCounts = await FetchSheet.fetchRows(latestSheetId, 'Cruise Sum By Day')
+    recoveries = await FetchSheet.fetchRows(latestSheetId, 'Recoveries')
+    console.log(`Fetched daily,prefectures,cruiseCounts,recoveries from ${latestSheetId}`)
+    if (outputTestDataDir) {
+      writeSpreadsheets({
+        daily,
+        prefectures,
+        cruiseCounts,
+        recoveries
+      }, outputTestDataDir)
+    }
+  } 
+
+  let allPatients = [];
+  if (testDataDir) {
+    allPatients = JSON.parse(fs.readFileSync(`${testDataDir}/allPatients.json`))
+    console.log(`Read allPatients from ${testDataDir}`);
+  } else {
+    allPatients = await fetchPatients(latestSheetId);
+    console.log(`Fetched allPatients from ${latestSheetId}`)
+    if (outputTestDataDir) {
+      writeSpreadsheets({allPatients}, outputTestDataDir);
+    }
   }
 
-  // Execute the requests.
-  Promise.all(requests)
-    .then(patientLists => {
-      let allPatients = _.flatten(patientLists)
-      mergeAndOutput(allPatients)
-    })
-    .catch(error => {
-      console.log(error)
-    })
+  return mergeAndOutput(allPatients, daily, prefectures, cruiseCounts, recoveries)  
 }
 
 const writePerPrefecturePatients = (prefectureName, allPatients, dateString) => {
@@ -129,9 +171,16 @@ const writePerPrefecturePatients = (prefectureName, allPatients, dateString) => 
 }
 
 try {
-  // Add 540 = UTC+9 for JST.
-  const dateString = moment().utcOffset(540).format('YYYY-MM-DD')
-  fetchAndSummarize(dateString)
+  program.version('0.0.1')
+  program
+    .option('-t, --test-data-dir <testDataDir>', 'Use test data')
+    .option('-o, --output-test-data-dir <outputTestDataDir>', 'Output test data')
+  program.parse(process.argv)
+  
+  fetchAndSummarize(program.testDataDir, program.outputTestDataDir).then(() => {
+    const used = process.memoryUsage().heapUsed / 1024 / 1024;
+    console.log(`Memory used ${Math.round(used * 100) / 100} MB`);  
+  })
 } catch (e) {
   console.error(e)
 }
