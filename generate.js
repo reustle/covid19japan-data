@@ -34,10 +34,14 @@ const calculateLastUpdated = async (summary) => {
   if (existingSummaryData) {
     const existingSummary = JSON.parse(existingSummaryData)
     // Check if summary is different.
-    if (areSummariesDifferent(summary, existingSummary)) {
-      if (existingSummary && existingSummary.updated && typeof existingSummary.updated === 'string') {
-        lastUpdated = existingSummary.updated
-        //console.log(`Pulling lastUpdated from summary/latest.json: ${lastUpdated}`)
+    if (existingSummary) {
+      if (areSummariesDifferent(summary, existingSummary)) {
+        if (existingSummary.updated && typeof existingSummary.updated === 'string') {
+          lastUpdated = existingSummary.updated
+          //console.log(`Pulling lastUpdated from summary/latest.json: ${lastUpdated}`)
+        }
+      } else {
+        lastUpdated = existingSummary.lastUpdated;
       }
     }
   }
@@ -67,10 +71,12 @@ const mergeAndOutput = (allPatients, daily, prefectures, cruiseCounts, recoverie
   const patientOutputFilename = `./docs/patient_data/latest.json`
   const patientOutput = patients.map(filterPatientForOutput)
   fs.writeFileSync(patientOutputFilename, JSON.stringify(patientOutput))
+  console.log(`Patients written to: ${patientOutputFilename}`)
 
   // Write daily and prefectural summary.
   const prefectureNames = Prefectures.prefectureNamesEn()
   const regions = Prefectures.regionPrefectures()
+  console.log('Generating summary ...');
   const summary = Summarize.summarize(patients, daily, prefectures, cruiseCounts, recoveries, prefectureNames, regions)
   return calculateLastUpdated(summary).then((lastUpdated) => {
     console.log('Using lastUpdate timestamp', lastUpdated);
@@ -78,10 +84,12 @@ const mergeAndOutput = (allPatients, daily, prefectures, cruiseCounts, recoverie
 
     const summaryOutputFilename = `./docs/summary/latest.json`
     fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, '  '))
+    console.log(`Summary written to: ${summaryOutputFilename}`)
 
     // Write minified version of daily/prefectural summary
     const summaryMinifiedOutputFilename = `./docs/summary_min/latest.json`
     fs.writeFileSync(summaryMinifiedOutputFilename, JSON.stringify(summary))
+    console.log(`Summary (minimized) written to: ${summaryMinifiedOutputFilename}`)    
     console.log('Success.')
   })
 }
