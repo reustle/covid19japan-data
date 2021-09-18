@@ -27,6 +27,7 @@ jobs:
       - name: Download and Generate JSON data
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          NODE_OPTIONS: --max_old_space_size=4096
         run: node generate.js 2>&1 | tee output.txt
 
       - name: Generate charts
