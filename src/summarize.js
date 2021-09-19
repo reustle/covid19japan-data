@@ -20,8 +20,9 @@ const TIMELINE_FIRST_DAY = moment('2020-01-08')
 // lastUpdated: String representing when the data was last updated.
 //
 // @returns A dictionary with the prefecture and daily summaries.
-const summarize = (patientData, manualDailyData, manualPrefectureData, cruiseCounts, recoveries, prefectureNames, regions, lastUpdated) => {
+const summarize = (patientData, manualDailyData, manualPrefectureData, cruiseCounts, recoveries, prefectureNames, regions) => {
   const patients = _.orderBy(patientData, ['dateAnnounced'], ['asc'])
+  console.log('Patients ordered.')
 
   // Convert recoveries into an Object with prefecture names as keys.
   let recoveryByPrefecture = _.fromPairs(_.map(recoveries, row => {
@@ -29,14 +30,16 @@ const summarize = (patientData, manualDailyData, manualPrefectureData, cruiseCou
   }))
 
   let prefectureSummary = generatePrefectureSummary(patients, manualPrefectureData, cruiseCounts, recoveryByPrefecture, prefectureNames)
+  console.log('Generated prefectureSummary')
   let dailySummary = generateDailySummary(patients, manualDailyData, cruiseCounts)
+  console.log('Generated dailySummary')
   let regionSummary = generateRegionSummary(prefectureSummary, regions)
+  console.log('Generated regionSummary')
 
   return {
     prefectures: prefectureSummary,
     regions: regionSummary,
-    daily: dailySummary,
-    updated: lastUpdated
+    daily: dailySummary
   }
 }
 
