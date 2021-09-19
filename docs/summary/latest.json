@@ -56015,7 +56015,7 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -56564,12 +56564,12 @@
         8903
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 170,
+      "deceased": 171,
       "cruisePassenger": 1,
       "recovered": 8903,
       "critical": 0,
       "tested": 0,
-      "active": 294,
+      "active": 293,
       "confirmedByCity": {
         "Iwaki": 2,
         "Koriyama": 4,
@@ -56583,7 +56583,7 @@
         "Tokyo": 1,
         "Fukushima City": 2
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -57133,7 +57133,7 @@
       ],
       "reinfected": 0,
       "name_ja": "福島県",
-      "deaths": 170,
+      "deaths": 171,
       "name": "Fukushima"
     },
     {
@@ -112558,7 +112558,7 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -113092,17 +113092,17 @@
         1470
       ],
       "dailyRecoveredStartDate": "2020-04-10",
-      "deceased": 2,
+      "deceased": 3,
       "cruisePassenger": 0,
       "recovered": 1470,
       "critical": 0,
       "tested": 0,
-      "active": 86,
+      "active": 85,
       "confirmedByCity": {
         "Matsue": 122,
         "Izumo": 8
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-04-10",
       "dailyActive": [
@@ -113637,7 +113637,7 @@
       ],
       "reinfected": 0,
       "name_ja": "島根県",
-      "deaths": 2,
+      "deaths": 3,
       "name": "Shimane"
     },
     {
@@ -121021,11 +121021,11 @@
       "confirmed": 44898,
       "newlyConfirmed": 91,
       "yesterdayConfirmed": 105,
-      "deceased": 419,
+      "deceased": 420,
       "recovered": 41923,
       "critical": 0,
       "tested": 0,
-      "active": 2559,
+      "active": 2558,
       "dailyConfirmedCount": [
         0,
         0,
@@ -121663,11 +121663,11 @@
       "confirmed": 39617,
       "newlyConfirmed": 65,
       "yesterdayConfirmed": 145,
-      "deceased": 449,
+      "deceased": 450,
       "recovered": 37309,
       "critical": 0,
       "tested": 0,
-      "active": 1860,
+      "active": 1859,
       "dailyConfirmedCount": [
         0,
         0,
@@ -146946,34 +146946,34 @@
     {
       "confirmed": 3401,
       "confirmedCumulative": 1678077,
-      "deceased": 39,
-      "deceasedCumulative": 17147,
-      "reportedDeceased": 39,
-      "reportedDeceasedCumulative": 17147,
+      "deceased": 41,
+      "deceasedCumulative": 17149,
+      "reportedDeceased": 41,
+      "reportedDeceasedCumulative": 17149,
       "recovered": 11822,
       "recoveredCumulative": 1575919,
       "critical": -63,
       "criticalCumulative": 1496,
       "tested": 61850,
       "testedCumulative": 23971257,
-      "active": -8460,
-      "activeCumulative": 85011,
+      "active": -8462,
+      "activeCumulative": 85009,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-09-19",
-      "deaths": 39,
+      "deaths": 41,
       "confirmedAvg3d": 4399,
       "confirmedAvg7d": 5165,
       "confirmedCumulativeAvg3d": 1674242,
       "confirmedCumulativeAvg7d": 1663605,
-      "deceasedAvg3d": 55,
+      "deceasedAvg3d": 56,
       "deceasedAvg7d": 58,
       "deceasedCumulativeAvg3d": 17100,
       "deceasedCumulativeAvg7d": 16976,
-      "reportedDeceasedAvg3d": 55,
+      "reportedDeceasedAvg3d": 56,
       "reportedDeceasedAvg7d": 58,
       "reportedDeceasedCumulativeAvg3d": 17100,
       "reportedDeceasedCumulativeAvg7d": 16976,
@@ -146983,5 +146983,5 @@
       "recoveredCumulativeAvg7d": 1537941
     }
   ],
-  "updated": "2021-09-19T21:07:38+09:00"
+  "updated": "2021-09-19T21:28:08+09:00"
 }
