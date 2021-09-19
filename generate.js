@@ -80,7 +80,7 @@ const mergeAndOutput = (allPatients, daily, prefectures, cruiseCounts, recoverie
   );
   return calculateLastUpdated(summary).then((lastUpdated) => {
     console.log("Using lastUpdate timestamp", lastUpdated);
-    summary.lastUpdated = lastUpdated;
+    summary.updated = lastUpdated;
 
     const summaryOutputFilename = "./docs/summary/latest.json";
     fs.writeFileSync(summaryOutputFilename, JSON.stringify(summary, null, "  "));
