@@ -1315,7 +1315,7 @@
         13,
         5,
         2,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -1897,19 +1897,19 @@
         373600
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 3094,
+      "deceased": 3095,
       "cruisePassenger": 0,
       "recovered": 373600,
       "critical": 0,
       "tested": 0,
-      "active": 715,
+      "active": 714,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
         "Adachi": 3,
         "Nerima": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 2,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -2492,7 +2492,7 @@
       ],
       "reinfected": 0,
       "name_ja": "東京都",
-      "deaths": 3094,
+      "deaths": 3095,
       "name": "Tokyo"
     },
     {
@@ -125719,11 +125719,11 @@
       "confirmed": 818761,
       "newlyConfirmed": 15,
       "yesterdayConfirmed": 120,
-      "deceased": 6956,
+      "deceased": 6957,
       "recovered": 809899,
       "critical": 0,
       "tested": 0,
-      "active": 1907,
+      "active": 1906,
       "dailyConfirmedCount": [
         0,
         0,
@@ -155097,25 +155097,25 @@
     {
       "confirmed": 107,
       "confirmedCumulative": 1716954,
-      "deceased": 1,
-      "deceasedCumulative": 18100,
-      "reportedDeceased": 1,
-      "reportedDeceasedCumulative": 18100,
+      "deceased": 2,
+      "deceasedCumulative": 18101,
+      "reportedDeceased": 2,
+      "reportedDeceasedCumulative": 18101,
       "recovered": 642,
       "recoveredCumulative": 1691688,
       "critical": -43,
       "criticalCumulative": 217,
       "tested": 50664,
       "testedCumulative": 26021893,
-      "active": -536,
-      "activeCumulative": 7166,
+      "active": -537,
+      "activeCumulative": 7165,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
       "cruiseTestedCumulative": 4857,
       "cruiseCriticalCumulative": 1,
       "date": "2021-10-22",
-      "deaths": 1,
+      "deaths": 2,
       "confirmedAvg3d": 281,
       "confirmedAvg7d": 339,
       "confirmedCumulativeAvg3d": 1716767,
@@ -155134,5 +155134,5 @@
       "recoveredCumulativeAvg7d": 1689639
     }
   ],
-  "updated": "2021-10-22T22:53:36+09:00"
+  "updated": "2021-10-22T23:08:29+09:00"
 }
