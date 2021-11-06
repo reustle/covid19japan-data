@@ -28,7 +28,7 @@ const summarize = (patientData, manualDailyData, manualPrefectureData, cruiseCou
 
   const prefectureSummary = generatePrefectureSummary(patients, manualPrefectureData, cruiseCounts, recoveryByPrefecture, prefectureNames);
   console.log("Generated prefectureSummary");
-  const dailySummary = generateDailySummary(patients, manualDailyData, cruiseCounts);
+  const dailySummary = generateDailySummary(patients, manualDailyData, prefectureSummary, cruiseCounts);
   console.log("Generated dailySummary");
   const regionSummary = generateRegionSummary(prefectureSummary, regions);
   console.log("Generated regionSummary");
@@ -72,7 +72,7 @@ const DAILY_SUMMARY_TEMPLATE = {
 };
 
 // Generates the daily summary
-const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
+const generateDailySummary = (patients, manualDailyData, prefectureSummary, cruiseCounts) => {
   const dailySummary = {};
   for (const patient of patients) {
     const { dateAnnounced } = patient;
@@ -205,6 +205,22 @@ const generateDailySummary = (patients, manualDailyData, cruiseCounts) => {
     dailySum.active = dailySum.activeCumulative - yesterdayActiveCumulative;
     yesterdayActiveCumulative = Math.max(0, dailySum.activeCumulative);
   }
+
+  // Apply the manual recovery adjustment to the most recent day to ensure the latest
+  // numbers take into account the NHK/MHLW discrepency. It only gets applied
+  // for today because that's the only data we have.
+  let recoveryAdjustment = 0;
+  for (const prefecture of prefectureSummary) {
+    if (prefecture.recoveryAdjustment) {
+      console.log(prefecture.prefectureName, prefecture.recoveryAdjustment);
+      recoveryAdjustment += prefecture.recoveryAdjustment;
+    }
+  }
+
+  console.log("recoveryAdjustment", recoveryAdjustment);
+  const daySummary = orderedDailySummary[orderedDailySummary.length - 1];
+  daySummary.activeCumulative -= recoveryAdjustment;
+  daySummary.recoveredCumulative -= recoveryAdjustment;
 
   // For backwards compatibility, include deaths field. (Remove after 5/1)
   for (let i = 1; i < orderedDailySummary.length; i++) {
@@ -383,6 +399,7 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts,
       }
       prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered) + recoveryAdjustment;
       prefectureSummary[row.prefecture].reinfected = safeParseInt(row.reinfected);
+      prefectureSummary[row.prefecture].recoveryAdjustment = recoveryAdjustment;
       prefectureSummary[row.prefecture].name_ja = row.prefectureJa;
     }
   }
