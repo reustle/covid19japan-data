@@ -15723,7 +15723,7 @@
       "name": "Chiba"
     },
     {
-      "confirmed": 78836,
+      "confirmed": 78843,
       "dailyConfirmedCount": [
         0,
         0,
@@ -16401,10 +16401,10 @@
         4,
         10,
         16,
-        0
+        7
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 7,
       "yesterdayConfirmed": 16,
       "dailyDeceasedCount": [
         0,
@@ -17693,7 +17693,7 @@
       "recovered": 77302,
       "critical": 0,
       "tested": 0,
-      "active": 141,
+      "active": 148,
       "confirmedByCity": {
         "Nishinomiya": 263,
         "Kobe": 916,
@@ -129688,14 +129688,14 @@
   ],
   "regions": [
     {
-      "confirmed": 365963,
-      "newlyConfirmed": 0,
+      "confirmed": 365970,
+      "newlyConfirmed": 7,
       "yesterdayConfirmed": 56,
       "deceased": 5209,
       "recovered": 360142,
       "critical": 0,
       "tested": 0,
-      "active": 613,
+      "active": 620,
       "dailyConfirmedCount": [
         0,
         0,
@@ -130373,7 +130373,7 @@
         85,
         55,
         72,
-        0
+        14
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -160793,13 +160793,13 @@
       "reportedDeceased": 1,
       "reportedDeceasedCumulative": 18236,
       "recovered": 277,
-      "recoveredCumulative": 1708336,
+      "recoveredCumulative": 1705098,
       "critical": -4,
       "criticalCumulative": 83,
       "tested": 70040,
       "testedCumulative": 27109671,
       "active": 0,
-      "activeCumulative": 3238,
+      "activeCumulative": 0,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -160821,8 +160821,47 @@
       "reportedDeceasedCumulativeAvg7d": 18229,
       "recoveredAvg3d": 239,
       "recoveredAvg7d": 441,
-      "recoveredCumulativeAvg3d": 1705919,
-      "recoveredCumulativeAvg7d": 1704214
+      "recoveredCumulativeAvg3d": 1704840,
+      "recoveredCumulativeAvg7d": 1703752
+    },
+    {
+      "confirmed": 7,
+      "confirmedCumulative": 1722053,
+      "deceased": 0,
+      "deceasedCumulative": 18236,
+      "reportedDeceased": 0,
+      "reportedDeceasedCumulative": 18236,
+      "recovered": 0,
+      "recoveredCumulative": 1708336,
+      "critical": 0,
+      "criticalCumulative": 83,
+      "tested": 0,
+      "testedCumulative": 27109671,
+      "active": 0,
+      "activeCumulative": 3238,
+      "cruiseConfirmedCumulative": 861,
+      "cruiseDeceasedCumulative": 13,
+      "cruiseRecoveredCumulative": 848,
+      "cruiseTestedCumulative": 4857,
+      "cruiseCriticalCumulative": 1,
+      "date": "2021-11-14",
+      "deaths": 0,
+      "confirmedAvg3d": 136,
+      "confirmedAvg7d": 163,
+      "confirmedCumulativeAvg3d": 1721981,
+      "confirmedCumulativeAvg7d": 1721607,
+      "deceasedAvg3d": 0,
+      "deceasedAvg7d": 2,
+      "deceasedCumulativeAvg3d": 18235,
+      "deceasedCumulativeAvg7d": 18231,
+      "reportedDeceasedAvg3d": 0,
+      "reportedDeceasedAvg7d": 2,
+      "reportedDeceasedCumulativeAvg3d": 18235,
+      "reportedDeceasedCumulativeAvg7d": 18231,
+      "recoveredAvg3d": 165,
+      "recoveredAvg7d": 405,
+      "recoveredCumulativeAvg3d": 1706085,
+      "recoveredCumulativeAvg7d": 1704619
     }
   ],
   "updated": "2021-11-14T14:38:47+09:00"
