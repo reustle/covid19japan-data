@@ -141,6 +141,17 @@ const generateDailySummary = (patients, manualDailyData, prefectureSummary, crui
 
   let orderedDailySummary = _.map(_.sortBy(_.toPairs(dailySummary), (a) => a[0]), (v) => { const o = v[1]; o.date = v[0]; return o; });
 
+  // Aggregate the cumulative adjustments (NHK/MHLW discrepency data) from the prefecture data.
+  let recoveryAdjustment = 0;
+  let confirmedAdjustment = 0;
+  for (const prefecture of prefectureSummary) {
+    if (prefecture.recoveryAdjustment) {
+      console.log(prefecture.prefecture, prefecture.recoveryAdjustment, prefecture.confirmedAdjustment);
+      recoveryAdjustment += prefecture.recoveryAdjustment;
+      confirmedAdjustment += prefecture.confirmedAdjustment;
+    }
+  }
+
   // Calculate the cumulative and incremental numbers by iterating through all the days in order
   let confirmedCumulative = 0;
   let deceasedCumulative = 0;
@@ -156,6 +167,20 @@ const generateDailySummary = (patients, manualDailyData, prefectureSummary, crui
     // reportedDeceased
     reportedDeceasedCumulative += dailySum.reportedDeceased;
     dailySum.reportedDeceasedCumulative = reportedDeceasedCumulative;
+  }
+
+  // HACK. Calculate the smeared daily adjustment to be applied. This ensures the
+  // adjustments we apply don't appear as spikes in our data.
+  const days = orderedDailySummary.length;
+  const dailyRecoveryAdjustment = recoveryAdjustment / days;
+  const dailyConfirmedAdjustment = confirmedAdjustment / days;
+  let adjustedDay = 0;
+  console.log("recoveryAdjustment:", recoveryAdjustment, dailyRecoveryAdjustment);
+  console.log("confirmedAdjustment:", confirmedAdjustment, dailyConfirmedAdjustment);
+  for (const dailySum of orderedDailySummary) {
+    dailySum.confirmedCumulative += Math.round(adjustedDay * dailyConfirmedAdjustment);
+    dailySum.recoveredCumulative += Math.round(adjustedDay * dailyRecoveryAdjustment);
+    adjustedDay += 1;
   }
 
   const cumulativeKeys = [
@@ -205,22 +230,6 @@ const generateDailySummary = (patients, manualDailyData, prefectureSummary, crui
     dailySum.active = dailySum.activeCumulative - yesterdayActiveCumulative;
     yesterdayActiveCumulative = Math.max(0, dailySum.activeCumulative);
   }
-
-  // Apply the manual recovery adjustment to the most recent day to ensure the latest
-  // numbers take into account the NHK/MHLW discrepency. It only gets applied
-  // for today because that's the only data we have.
-  let recoveryAdjustment = 0;
-  for (const prefecture of prefectureSummary) {
-    if (prefecture.recoveryAdjustment) {
-      console.log(prefecture.prefectureName, prefecture.recoveryAdjustment);
-      recoveryAdjustment += prefecture.recoveryAdjustment;
-    }
-  }
-
-  console.log("recoveryAdjustment", recoveryAdjustment);
-  const daySummary = orderedDailySummary[orderedDailySummary.length - 1];
-  daySummary.activeCumulative -= recoveryAdjustment;
-  daySummary.recoveredCumulative -= recoveryAdjustment;
 
   // For backwards compatibility, include deaths field. (Remove after 5/1)
   for (let i = 1; i < orderedDailySummary.length; i++) {
@@ -386,20 +395,38 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts,
     }
   }
 
-  // Import manual data.
+  // Apply both the recoveryAdjustment and nhkCasesCorrection to the prefecture totals.
+  //
+  // We do not consistently record the correction made by the prefectures to historical
+  // case counts, therefore our cases total is not the same as the prefectures. So we apply
+  // a manual correction to the prefecture case counts.
+  //
+  // There is also a discrepency in recovery numbers from MHLW against the NHK prefecture
+  // case counts. We also apply a manual correction to recovery numbers when that occurs.
+  // (e.g. MHLW may count more cases and more recoveries than NHK, so we need to subtract
+  // that difference).
+  //
+  // This generally only applies to a limited set of prefectures.
   for (const row of manualPrefectureData) {
     if (prefectureSummary[row.prefecture]) {
       // Get and apply any manual adjustments to the recovery numbers to negate
       // discrepency between NHK counting and MHLW counting
-      // (e.g. MHLW may count more cases and more recoveries than NHK, so we need to subtract
-      // that difference).
       let recoveryAdjustment = safeParseInt(row.recoveryAdjustment);
       if (!recoveryAdjustment) {
         recoveryAdjustment = 0;
       }
+
+      let confirmedAdjustment = safeParseInt(row.nhkCasesCorrection);
+      if (!confirmedAdjustment) {
+        confirmedAdjustment = 0;
+      }
+
+      // Temporarily disable this until we do a pass through all NHK counts.
+      // prefectureSummary[row.prefecture].confirmed = safeParseInt(prefectureSummary[row.prefecture].confirmed) + confirmedAdjustment;
       prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered) + recoveryAdjustment;
       prefectureSummary[row.prefecture].reinfected = safeParseInt(row.reinfected);
       prefectureSummary[row.prefecture].recoveryAdjustment = recoveryAdjustment;
+      prefectureSummary[row.prefecture].confirmedAdjustment = confirmedAdjustment;
       prefectureSummary[row.prefecture].name_ja = row.prefectureJa;
     }
   }
