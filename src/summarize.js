@@ -142,14 +142,12 @@ const generateDailySummary = (patients, manualDailyData, prefectureSummary, crui
   let orderedDailySummary = _.map(_.sortBy(_.toPairs(dailySummary), (a) => a[0]), (v) => { const o = v[1]; o.date = v[0]; return o; });
 
   // Aggregate the cumulative adjustments (NHK/MHLW discrepency data) from the prefecture data.
-  let recoveryAdjustment = 0;
+  let recoveredAdjustment = 0;
   let confirmedAdjustment = 0;
   for (const prefecture of prefectureSummary) {
-    if (prefecture.recoveryAdjustment) {
-      console.log(prefecture.prefecture, prefecture.recoveryAdjustment, prefecture.confirmedAdjustment);
-      recoveryAdjustment += prefecture.recoveryAdjustment;
-      confirmedAdjustment += prefecture.confirmedAdjustment;
-    }
+    console.log(prefecture.name, prefecture.recoveredAdjustment, prefecture.confirmedAdjustment);
+    recoveredAdjustment += safeParseInt(prefecture.recoveredAdjustment);
+    confirmedAdjustment += safeParseInt(prefecture.confirmedAdjustment);
   }
 
   // Calculate the cumulative and incremental numbers by iterating through all the days in order
@@ -167,20 +165,6 @@ const generateDailySummary = (patients, manualDailyData, prefectureSummary, crui
     // reportedDeceased
     reportedDeceasedCumulative += dailySum.reportedDeceased;
     dailySum.reportedDeceasedCumulative = reportedDeceasedCumulative;
-  }
-
-  // HACK. Calculate the smeared daily adjustment to be applied. This ensures the
-  // adjustments we apply don't appear as spikes in our data.
-  const days = orderedDailySummary.length;
-  const dailyRecoveryAdjustment = recoveryAdjustment / days;
-  const dailyConfirmedAdjustment = confirmedAdjustment / days;
-  let adjustedDay = 0;
-  console.log("recoveryAdjustment:", recoveryAdjustment, dailyRecoveryAdjustment);
-  console.log("confirmedAdjustment:", confirmedAdjustment, dailyConfirmedAdjustment);
-  for (const dailySum of orderedDailySummary) {
-    dailySum.confirmedCumulative += Math.round(adjustedDay * dailyConfirmedAdjustment);
-    dailySum.recoveredCumulative += Math.round(adjustedDay * dailyRecoveryAdjustment);
-    adjustedDay += 1;
   }
 
   const cumulativeKeys = [
@@ -206,6 +190,23 @@ const generateDailySummary = (patients, manualDailyData, prefectureSummary, crui
     }
   }
 
+  // (Workaround) Calculate the smeared daily adjustment to be applied. This ensures the
+  // adjustments we apply don't appear as spikes in our data.
+  const days = orderedDailySummary.length;
+  const dailyRecoveredAdjustment = recoveredAdjustment / days;
+  const dailyConfirmedAdjustment = confirmedAdjustment / days;
+  let adjustedDay = 0;
+  console.log("recoveredAdjustment:", recoveredAdjustment, dailyRecoveredAdjustment);
+  console.log("confirmedAdjustment:", confirmedAdjustment, dailyConfirmedAdjustment);
+  for (const dailySum of orderedDailySummary) {
+    dailySum.confirmedAdjustment = Math.round(adjustedDay * dailyConfirmedAdjustment);
+    dailySum.confirmedCumulative += dailySum.confirmedAdjustment;
+    dailySum.recoveredAdjustment = Math.round(adjustedDay * dailyRecoveredAdjustment);
+    dailySum.recoveredCumulative += dailySum.recoveredAdjustment;
+
+    adjustedDay += 1;
+  }
+
   // Calculate active/activeCumulative (must happen after we bring forward any missing cumulative numbers)
   for (const dailySum of orderedDailySummary) {
     dailySum.activeCumulative = Math.max(0, dailySum.confirmedCumulative - dailySum.deceasedCumulative - dailySum.recoveredCumulative);
@@ -216,6 +217,7 @@ const generateDailySummary = (patients, manualDailyData, prefectureSummary, crui
   let yesterdayRecoveredCumulative = 0;
   let yesterdayCriticalCumulative = 0;
   let yesterdayActiveCumulative = 0;
+  let yesterdayConfirmedCumulative = 0;
   for (const dailySum of orderedDailySummary) {
     // tested
     dailySum.tested = dailySum.testedCumulative - yesterdayTestedCumulative;
@@ -229,6 +231,9 @@ const generateDailySummary = (patients, manualDailyData, prefectureSummary, crui
     // active
     dailySum.active = dailySum.activeCumulative - yesterdayActiveCumulative;
     yesterdayActiveCumulative = Math.max(0, dailySum.activeCumulative);
+    // confirmed (not necessarily needed, but we do it with this metric to ensure our applied fudge factor is reflected)
+    dailySum.confirmed = dailySum.confirmedCumulative - yesterdayConfirmedCumulative;
+    yesterdayConfirmedCumulative = dailySum.confirmedCumulative;
   }
 
   // For backwards compatibility, include deaths field. (Remove after 5/1)
@@ -411,9 +416,9 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts,
     if (prefectureSummary[row.prefecture]) {
       // Get and apply any manual adjustments to the recovery numbers to negate
       // discrepency between NHK counting and MHLW counting
-      let recoveryAdjustment = safeParseInt(row.recoveryAdjustment);
-      if (!recoveryAdjustment) {
-        recoveryAdjustment = 0;
+      let recoveredAdjustment = safeParseInt(row.recoveryAdjustment);
+      if (!recoveredAdjustment) {
+        recoveredAdjustment = 0;
       }
 
       let confirmedAdjustment = safeParseInt(row.nhkCasesCorrection);
@@ -421,12 +426,21 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts,
         confirmedAdjustment = 0;
       }
 
-      // Temporarily disable this until we do a pass through all NHK counts.
-      // prefectureSummary[row.prefecture].confirmed = safeParseInt(prefectureSummary[row.prefecture].confirmed) + confirmedAdjustment;
-      prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered) + recoveryAdjustment;
+      // Temporary Rollout: If we have both confirmedAdjustment and recoveredAdjustment, only take one of the adjustments to
+      // avoid applying double adjustments.
+      //
+      // Final state should be that both confirmedAdjustment and recoveredAdjustment should be applied.
+      if (confirmedAdjustment !== 0) {
+        prefectureSummary[row.prefecture].confirmed = safeParseInt(prefectureSummary[row.prefecture].confirmed) + confirmedAdjustment;
+        prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered);
+        prefectureSummary[row.prefecture].confirmedAdjustment = confirmedAdjustment;
+        prefectureSummary[row.prefecture].recoveredAdjustment = 0;
+      } else {
+        prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered) + recoveredAdjustment;
+        prefectureSummary[row.prefecture].recoveredAdjustment = recoveredAdjustment;
+        prefectureSummary[row.prefecture].confirmedAdjustment = 0;
+      }
       prefectureSummary[row.prefecture].reinfected = safeParseInt(row.reinfected);
-      prefectureSummary[row.prefecture].recoveryAdjustment = recoveryAdjustment;
-      prefectureSummary[row.prefecture].confirmedAdjustment = confirmedAdjustment;
       prefectureSummary[row.prefecture].name_ja = row.prefectureJa;
     }
   }
