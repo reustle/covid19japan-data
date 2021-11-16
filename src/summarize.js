@@ -426,20 +426,12 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts,
         confirmedAdjustment = 0;
       }
 
-      // Temporary Rollout: If we have both confirmedAdjustment and recoveredAdjustment, only take one of the adjustments to
-      // avoid applying double adjustments.
-      //
-      // Final state should be that both confirmedAdjustment and recoveredAdjustment should be applied.
-      if (confirmedAdjustment !== 0) {
-        prefectureSummary[row.prefecture].confirmed = safeParseInt(prefectureSummary[row.prefecture].confirmed) + confirmedAdjustment;
-        prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered);
-        prefectureSummary[row.prefecture].confirmedAdjustment = confirmedAdjustment;
-        prefectureSummary[row.prefecture].recoveredAdjustment = 0;
-      } else {
-        prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered) + recoveredAdjustment;
-        prefectureSummary[row.prefecture].recoveredAdjustment = recoveredAdjustment;
-        prefectureSummary[row.prefecture].confirmedAdjustment = 0;
-      }
+      // Apply adjustments.
+      prefectureSummary[row.prefecture].confirmed = safeParseInt(prefectureSummary[row.prefecture].confirmed) + confirmedAdjustment;
+      prefectureSummary[row.prefecture].confirmedAdjustment = confirmedAdjustment;
+      prefectureSummary[row.prefecture].recovered = safeParseInt(row.recovered) + recoveredAdjustment;
+      prefectureSummary[row.prefecture].recoveredAdjustment = recoveredAdjustment;
+
       prefectureSummary[row.prefecture].reinfected = safeParseInt(row.reinfected);
       prefectureSummary[row.prefecture].name_ja = row.prefectureJa;
     }
