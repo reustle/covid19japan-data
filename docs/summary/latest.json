@@ -108757,7 +108757,7 @@
         0,
         1,
         0,
-        0
+        2
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -109436,12 +109436,12 @@
         5838
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 29,
+      "deceased": 31,
       "cruisePassenger": 0,
       "recovered": 5838,
       "critical": 0,
       "tested": 0,
-      "active": 2274,
+      "active": 2272,
       "confirmedByCity": {
         "Yamanashi": 1,
         "Kofu": 12,
@@ -109449,7 +109449,7 @@
         "Minami Alps": 1,
         "Kafu": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 2,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -110131,7 +110131,7 @@
       "recoveredAdjustment": 0,
       "reinfected": 0,
       "name_ja": "山梨県",
-      "deaths": 29,
+      "deaths": 31,
       "name": "Yamanashi"
     },
     {
@@ -146088,11 +146088,11 @@
       "confirmed": 277737,
       "newlyConfirmed": 10171,
       "yesterdayConfirmed": 9277,
-      "deceased": 2000,
+      "deceased": 2002,
       "recovered": 206312,
       "critical": 0,
       "tested": 0,
-      "active": 69425,
+      "active": 69423,
       "dailyConfirmedCount": [
         0,
         0,
@@ -180612,18 +180612,18 @@
     {
       "confirmed": 78934,
       "confirmedCumulative": 2438353,
-      "deceased": 45,
-      "deceasedCumulative": 18541,
-      "reportedDeceased": 45,
-      "reportedDeceasedCumulative": 18541,
+      "deceased": 47,
+      "deceasedCumulative": 18543,
+      "reportedDeceased": 47,
+      "reportedDeceasedCumulative": 18543,
       "recovered": 27719,
       "recoveredCumulative": 1891539,
       "critical": 67,
       "criticalCumulative": 537,
       "tested": 290558,
       "testedCumulative": 32595453,
-      "active": 51170,
-      "activeCumulative": 528273,
+      "active": 51168,
+      "activeCumulative": 528271,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -180632,24 +180632,24 @@
       "date": "2022-01-27",
       "confirmedAdjustment": 2566,
       "recoveredAdjustment": -535,
-      "deaths": 45,
+      "deaths": 47,
       "confirmedAvg3d": 71062,
       "confirmedAvg7d": 58924,
       "confirmedCumulativeAvg3d": 2361851,
       "confirmedCumulativeAvg7d": 2242447,
-      "deceasedAvg3d": 40,
-      "deceasedAvg7d": 24,
-      "deceasedCumulativeAvg3d": 18499,
-      "deceasedCumulativeAvg7d": 18441,
-      "reportedDeceasedAvg3d": 40,
-      "reportedDeceasedAvg7d": 24,
-      "reportedDeceasedCumulativeAvg3d": 18499,
-      "reportedDeceasedCumulativeAvg7d": 18441,
+      "deceasedAvg3d": 41,
+      "deceasedAvg7d": 25,
+      "deceasedCumulativeAvg3d": 18500,
+      "deceasedCumulativeAvg7d": 18442,
+      "reportedDeceasedAvg3d": 41,
+      "reportedDeceasedAvg7d": 25,
+      "reportedDeceasedCumulativeAvg3d": 18500,
+      "reportedDeceasedCumulativeAvg7d": 18442,
       "recoveredAvg3d": 25994,
       "recoveredAvg7d": 19018,
       "recoveredCumulativeAvg3d": 1864580,
       "recoveredCumulativeAvg7d": 1821810
     }
   ],
-  "updated": "2022-01-27T21:33:19+09:00"
+  "updated": "2022-01-27T21:49:32+09:00"
 }
