@@ -57,13 +57,13 @@ const filterPatientForOutput = (patient) => {
   if (patient.ageBracket === -1) {
     delete filtered.ageBracket;
   }
-  delete filtered.patientCount;
+  // delete filtered.patientCount;
   return filtered;
 };
 
 const mergeAndOutput = (allPatients, daily, prefectures, cruiseCounts, recoveries) => {
   const patients = MergePatients.mergePatients(allPatients);
-  console.log(`Total patients fetched: ${patients.length}`);
+  console.log(`Total patient rows fetched: ${patients.length}`);
 
   // Write patient data
   const patientOutputFilename = "./docs/patient_data/latest.json";

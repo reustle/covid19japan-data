@@ -171,8 +171,9 @@ const postProcessData = (rows, minimalOutput) => {
   };
 
   const filteredRows = _.filter(_.map(rows, transformRow), isValidRow);
-  const expandedRows = filteredRows.map(expandRows).reduce((flattened, other) => flattened.concat(other));
-  return expandedRows;
+  // Don't expand rows any more, modify our code to deal with patientCount.
+  // const expandedRows = filteredRows.map(expandRows).reduce((flattened, other) => flattened.concat(other));
+  return filteredRows;
 };
 
 const valuesFromCellObject = (cellObjectRows) => {
@@ -198,7 +199,6 @@ const valuesFromCellObject = (cellObjectRows) => {
 
     return transformed;
   };
-
   const isValidRow = (row) => {
     if (!row) { return false; }
     if (typeof row.patientNumber === "undefined" || row.patientNumber == "") { return false; }
