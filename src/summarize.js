@@ -84,7 +84,7 @@ const generateDailySummary = (patients, manualDailyData, prefectureSummary, crui
       if (!dailySummary[dateAnnounced]) {
         dailySummary[dateAnnounced] = _.assign({}, DAILY_SUMMARY_TEMPLATE);
       }
-      dailySummary[dateAnnounced].confirmed += 1;
+      dailySummary[dateAnnounced].confirmed += patient.patientCount || 1;
     }
 
     if (patient.patientStatus == "Deceased") {
@@ -105,14 +105,14 @@ const generateDailySummary = (patients, manualDailyData, prefectureSummary, crui
         if (!dailySummary[dateDeceased]) {
           dailySummary[dateDeceased] = _.assign({}, DAILY_SUMMARY_TEMPLATE);
         }
-        dailySummary[dateDeceased].deceased += 1;
+        dailySummary[dateDeceased].deceased += patient.patientCount || 1;
       }
 
       if (dateReported) {
         if (!dailySummary[dateReported]) {
           dailySummary[dateReported] = _.assign({}, DAILY_SUMMARY_TEMPLATE);
         }
-        dailySummary[dateReported].reportedDeceased += 1;
+        dailySummary[dateReported].reportedDeceased += patient.patientCount || 1;
       }
     }
   }
@@ -336,22 +336,22 @@ const generatePrefectureSummary = (patients, manualPrefectureData, cruiseCounts,
     }
 
     if (patient.confirmedPatient) {
-      prefectureSummary[prefectureName].confirmed += 1;
+      prefectureSummary[prefectureName].confirmed += patient.patientCount || 1;
       if (cityName) {
         if (prefectureSummary[prefectureName].confirmedByCity[cityName]) {
-          prefectureSummary[prefectureName].confirmedByCity[cityName] += 1;
+          prefectureSummary[prefectureName].confirmedByCity[cityName] += patient.patientCount || 1;
         } else {
-          prefectureSummary[prefectureName].confirmedByCity[cityName] = 1;
+          prefectureSummary[prefectureName].confirmedByCity[cityName] = patient.patientCount || 1;
         }
       }
 
       if (patient.knownCluster && CRUISE_PASSENGER_DISEMBARKED.test(patient.knownCluster)) {
-        prefectureSummary[prefectureName].cruisePassenger += 1;
+        prefectureSummary[prefectureName].cruisePassenger += patient.patientCount || 1;
       }
     }
 
     if (patient.patientStatus == "Deceased") {
-      prefectureSummary[prefectureName].deceased += 1;
+      prefectureSummary[prefectureName].deceased += patient.patientCount || 1;
     }
 
     prefectureSummary[prefectureName].patients.push(patient);
@@ -662,9 +662,9 @@ const generateDailyStatsForPrefecture = (patients, firstDay) => {
   while (day <= lastDay) {
     const dayString = day.format("YYYY-MM-DD");
     const confirmed = _.filter(patients, (o) => o.dateAnnounced == dayString && o.confirmedPatient);
-    dailyConfirmed.push(confirmed.length);
+    dailyConfirmed.push(_.sumBy(confirmed, (v) => v.patientCount || 1));
     const deaths = _.filter(patients, (o) => o.deceasedDate == dayString && o.patientStatus == "Deceased");
-    dailyDeaths.push(deaths.length);
+    dailyDeaths.push(_.sumBy(deaths, (v) => v.patientCount || 1));
 
     const deathsAnnounced = _.filter(patients, (o) => {
       if (o.patientStatus == "Deceased") {
@@ -680,7 +680,7 @@ const generateDailyStatsForPrefecture = (patients, firstDay) => {
       }
     });
 
-    dailyDeathAnnoucements.push(deathsAnnounced.length);
+    dailyDeathAnnoucements.push(_.sumBy(deathsAnnounced, (v) => v.patientCount || 1));
     day = day.add(1, "days");
   }
   return { confirmed: dailyConfirmed, deaths: dailyDeaths, deathAnnouncements: dailyDeathAnnoucements };
