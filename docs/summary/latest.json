@@ -87637,7 +87637,7 @@
         2,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [
@@ -88333,12 +88333,12 @@
         13327
       ],
       "dailyRecoveredStartDate": "2020-03-26",
-      "deceased": 148,
+      "deceased": 149,
       "cruisePassenger": 0,
       "recovered": 13327,
       "critical": 0,
       "tested": 0,
-      "active": 5170,
+      "active": 5169,
       "confirmedByCity": {
         "Kanazawa": 53,
         "Ishikawa": 1,
@@ -88352,7 +88352,7 @@
         "Uchinada": 1,
         "Hodatsushimizu": 2
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "2020-03-26",
       "dailyActive": [
@@ -89051,7 +89051,7 @@
       "recoveredAdjustment": 0,
       "reinfected": 0,
       "name_ja": "石川県",
-      "deaths": 148,
+      "deaths": 149,
       "name": "Ishikawa"
     },
     {
@@ -149523,11 +149523,11 @@
       "confirmed": 450830,
       "newlyConfirmed": 9618,
       "yesterdayConfirmed": 8793,
-      "deceased": 2250,
+      "deceased": 2251,
       "recovered": 337597,
       "critical": 0,
       "tested": 0,
-      "active": 110983,
+      "active": 110982,
       "dailyConfirmedCount": [
         0,
         0,
@@ -184846,18 +184846,18 @@
     {
       "confirmed": 77454,
       "confirmedCumulative": 3904911,
-      "deceased": 136,
-      "deceasedCumulative": 20226,
-      "reportedDeceased": 136,
-      "reportedDeceasedCumulative": 20226,
+      "deceased": 137,
+      "deceasedCumulative": 20227,
+      "reportedDeceased": 137,
+      "reportedDeceasedCumulative": 20227,
       "recovered": 74339,
       "recoveredCumulative": 2918779,
       "critical": 14,
       "criticalCumulative": 1366,
       "tested": 108979,
       "testedCumulative": 36225435,
-      "active": 2979,
-      "activeCumulative": 965906,
+      "active": 2978,
+      "activeCumulative": 965905,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -184866,18 +184866,18 @@
       "date": "2022-02-13",
       "confirmedAdjustment": 2567,
       "recoveredAdjustment": -535,
-      "deaths": 136,
+      "deaths": 137,
       "confirmedAvg3d": 81432,
       "confirmedAvg7d": 85991,
       "confirmedCumulativeAvg3d": 3830452,
       "confirmedCumulativeAvg7d": 3649570,
       "deceasedAvg3d": 144,
       "deceasedAvg7d": 147,
-      "deceasedCumulativeAvg3d": 20086,
+      "deceasedCumulativeAvg3d": 20087,
       "deceasedCumulativeAvg7d": 19780,
       "reportedDeceasedAvg3d": 144,
       "reportedDeceasedAvg7d": 147,
-      "reportedDeceasedCumulativeAvg3d": 20086,
+      "reportedDeceasedCumulativeAvg3d": 20087,
       "reportedDeceasedCumulativeAvg7d": 19780,
       "recoveredAvg3d": 81481,
       "recoveredAvg7d": 76335,
@@ -184885,5 +184885,5 @@
       "recoveredCumulativeAvg7d": 2680693
     }
   ],
-  "updated": "2022-02-14T08:33:25+09:00"
+  "updated": "2022-02-14T08:48:07+09:00"
 }
