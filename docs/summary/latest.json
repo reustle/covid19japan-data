@@ -1,7 +1,7 @@
 {
   "prefectures": [
     {
-      "confirmed": 1175677,
+      "confirmed": 1179532,
       "dailyConfirmedCount": [
         0,
         0,
@@ -806,10 +806,10 @@
         7825,
         7444,
         6502,
-        0
+        3855
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 3855,
       "yesterdayConfirmed": 6502,
       "dailyDeceasedCount": [
         0,
@@ -1625,7 +1625,7 @@
       "recovered": 1055203,
       "critical": 0,
       "tested": 0,
-      "active": 116490,
+      "active": 120345,
       "confirmedByCity": {
         "Tokyo": 61,
         "Suginami": 1,
@@ -3324,7 +3324,7 @@
       "name": "Osaka"
     },
     {
-      "confirmed": 562182,
+      "confirmed": 566038,
       "dailyConfirmedCount": [
         0,
         0,
@@ -4129,10 +4129,10 @@
         5088,
         4271,
         4371,
-        0
+        3856
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 3856,
       "yesterdayConfirmed": 4371,
       "dailyDeceasedCount": [
         0,
@@ -4948,7 +4948,7 @@
       "recovered": 522696,
       "critical": 0,
       "tested": 0,
-      "active": 37533,
+      "active": 41389,
       "confirmedByCity": {
         "Kanagawa": 3,
         "Sagamihara": 504,
@@ -8361,7 +8361,7 @@
       "name": "Aichi"
     },
     {
-      "confirmed": 332077,
+      "confirmed": 333831,
       "dailyConfirmedCount": [
         0,
         0,
@@ -9166,10 +9166,10 @@
         3048,
         2623,
         2588,
-        0
+        1754
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 1754,
       "yesterdayConfirmed": 2588,
       "dailyDeceasedCount": [
         0,
@@ -9985,7 +9985,7 @@
       "recovered": 305515,
       "critical": 0,
       "tested": 0,
-      "active": 24960,
+      "active": 26714,
       "confirmedByCity": {
         "Chiba": 12,
         "Ichikawa": 64,
@@ -10053,7 +10053,7 @@
       "name": "Chiba"
     },
     {
-      "confirmed": 315182,
+      "confirmed": 316139,
       "dailyConfirmedCount": [
         0,
         0,
@@ -10858,10 +10858,10 @@
         2203,
         1917,
         1680,
-        0
+        957
       ],
       "dailyConfirmedStartDate": "2020-01-08",
-      "newlyConfirmed": 0,
+      "newlyConfirmed": 957,
       "yesterdayConfirmed": 1680,
       "dailyDeceasedCount": [
         0,
@@ -11677,7 +11677,7 @@
       "recovered": 291009,
       "critical": 0,
       "tested": 0,
-      "active": 22133,
+      "active": 23090,
       "confirmedByCity": {
         "Nishinomiya": 263,
         "Kobe": 916,
@@ -84202,14 +84202,14 @@
   ],
   "regions": [
     {
-      "confirmed": 2688722,
-      "newlyConfirmed": 4971,
+      "confirmed": 2698187,
+      "newlyConfirmed": 14436,
       "yesterdayConfirmed": 18940,
       "deceased": 9708,
       "recovered": 2445938,
       "critical": 0,
       "tested": 0,
-      "active": 233076,
+      "active": 242541,
       "dailyConfirmedCount": [
         0,
         0,
@@ -85014,7 +85014,7 @@
         26241,
         23118,
         21528,
-        4971
+        16190
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -85029,14 +85029,14 @@
       "name": "Kanto"
     },
     {
-      "confirmed": 1412220,
-      "newlyConfirmed": 3139,
+      "confirmed": 1413177,
+      "newlyConfirmed": 4096,
       "yesterdayConfirmed": 6599,
       "deceased": 8000,
       "recovered": 1320975,
       "critical": 0,
       "tested": 0,
-      "active": 83245,
+      "active": 84202,
       "dailyConfirmedCount": [
         0,
         0,
@@ -85841,7 +85841,7 @@
         11036,
         9847,
         8279,
-        3139
+        5053
       ],
       "dailyConfirmedStartDate": "2020-01-08",
       "prefectures": [
@@ -122872,8 +122872,8 @@
       "recoveredCumulativeAvg7d": 5342775
     },
     {
-      "confirmed": 17283,
-      "confirmedCumulative": 6106104,
+      "confirmed": 27705,
+      "confirmedCumulative": 6116526,
       "deceased": 58,
       "deceasedCumulative": 27021,
       "reportedDeceased": 58,
@@ -122884,8 +122884,8 @@
       "criticalCumulative": 951,
       "tested": 59599,
       "testedCumulative": 42017322,
-      "active": -33908,
-      "activeCumulative": 511895,
+      "active": -23486,
+      "activeCumulative": 522317,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -122895,10 +122895,10 @@
       "confirmedAdjustment": 2567,
       "recoveredAdjustment": -535,
       "deaths": 58,
-      "confirmedAvg3d": 33886,
-      "confirmedAvg7d": 44738,
-      "confirmedCumulativeAvg3d": 6081361,
-      "confirmedCumulativeAvg7d": 5992731,
+      "confirmedAvg3d": 37360,
+      "confirmedAvg7d": 46227,
+      "confirmedCumulativeAvg3d": 6084835,
+      "confirmedCumulativeAvg7d": 5994220,
       "deceasedAvg3d": 76,
       "deceasedAvg7d": 129,
       "deceasedCumulativeAvg3d": 26960,
