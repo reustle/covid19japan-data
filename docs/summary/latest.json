@@ -34141,17 +34141,17 @@
         0,
         1,
         2,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [],
       "dailyRecoveredStartDate": "Invalid date",
-      "deceased": 257,
+      "deceased": 258,
       "cruisePassenger": 1,
       "recovered": 63384,
       "critical": 0,
       "tested": 0,
-      "active": 6536,
+      "active": 6535,
       "confirmedByCity": {
         "Utsunomiya": 50,
         "Oyama": 3,
@@ -34164,7 +34164,7 @@
         "Moka": 2,
         "Otawara": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 2,
       "dailyActiveStartDate": "Invalid date",
       "dailyActive": [],
@@ -34172,7 +34172,7 @@
       "recoveredAdjustment": 0,
       "reinfected": 0,
       "name_ja": "栃木県",
-      "deaths": 257,
+      "deaths": 258,
       "name": "Tochigi"
     },
     {
@@ -86551,11 +86551,11 @@
       "confirmed": 3130349,
       "newlyConfirmed": 10741,
       "yesterdayConfirmed": 18065,
-      "deceased": 10307,
+      "deceased": 10308,
       "recovered": 2897431,
       "critical": 0,
       "tested": 0,
-      "active": 222611,
+      "active": 222610,
       "dailyConfirmedCount": [
         0,
         0,
@@ -126347,18 +126347,18 @@
     {
       "confirmed": 40019,
       "confirmedCumulative": 7153876,
-      "deceased": 63,
-      "deceasedCumulative": 28671,
-      "reportedDeceased": 63,
-      "reportedDeceasedCumulative": 28671,
+      "deceased": 64,
+      "deceasedCumulative": 28672,
+      "reportedDeceased": 64,
+      "reportedDeceasedCumulative": 28672,
       "recovered": 44733,
       "recoveredCumulative": 6590574,
       "critical": 1,
       "criticalCumulative": 468,
       "tested": 162581,
       "testedCumulative": 44996843,
-      "active": -4777,
-      "activeCumulative": 534631,
+      "active": -4778,
+      "activeCumulative": 534630,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -126367,7 +126367,7 @@
       "date": "2022-04-13",
       "confirmedAdjustment": 2567,
       "recoveredAdjustment": -535,
-      "deaths": 63,
+      "deaths": 64,
       "confirmedAvg3d": 40984,
       "confirmedAvg7d": 47404,
       "confirmedCumulativeAvg3d": 7110604,
@@ -126386,5 +126386,5 @@
       "recoveredCumulativeAvg7d": 6461715
     }
   ],
-  "updated": "2022-04-13T17:55:44+09:00"
+  "updated": "2022-04-13T18:53:33+09:00"
 }
