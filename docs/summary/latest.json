@@ -66572,17 +66572,17 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [],
       "dailyRecoveredStartDate": "Invalid date",
-      "deceased": 60,
+      "deceased": 61,
       "cruisePassenger": 0,
       "recovered": 24705,
       "critical": 0,
       "tested": 0,
-      "active": 2227,
+      "active": 2226,
       "confirmedByCity": {
         "Yamanashi": 1,
         "Kofu": 12,
@@ -66590,7 +66590,7 @@
         "Minami Alps": 1,
         "Kafu": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "Invalid date",
       "dailyActive": [],
@@ -66598,7 +66598,7 @@
       "recoveredAdjustment": 0,
       "reinfected": 0,
       "name_ja": "山梨県",
-      "deaths": 60,
+      "deaths": 61,
       "name": "Yamanashi"
     },
     {
@@ -89417,11 +89417,11 @@
       "confirmed": 900489,
       "newlyConfirmed": 6211,
       "yesterdayConfirmed": 6510,
-      "deceased": 3309,
+      "deceased": 3310,
       "recovered": 825170,
       "critical": 0,
       "tested": 0,
-      "active": 72010,
+      "active": 72009,
       "dailyConfirmedCount": [
         0,
         0,
@@ -126800,18 +126800,18 @@
     {
       "confirmed": 47012,
       "confirmedCumulative": 7322927,
-      "deceased": 39,
-      "deceasedCumulative": 28828,
-      "reportedDeceased": 39,
-      "reportedDeceasedCumulative": 28828,
+      "deceased": 40,
+      "deceasedCumulative": 28829,
+      "reportedDeceased": 40,
+      "reportedDeceasedCumulative": 28829,
       "recovered": 56019,
       "recoveredCumulative": 6737637,
       "critical": -8,
       "criticalCumulative": 222,
       "tested": 182076,
       "testedCumulative": 45528128,
-      "active": -9046,
-      "activeCumulative": 556462,
+      "active": -9047,
+      "activeCumulative": 556461,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -126820,7 +126820,7 @@
       "date": "2022-04-16",
       "confirmedAdjustment": 2567,
       "recoveredAdjustment": -535,
-      "deaths": 39,
+      "deaths": 40,
       "confirmedAvg3d": 50691,
       "confirmedAvg7d": 48741,
       "confirmedCumulativeAvg3d": 7274997,
@@ -126839,5 +126839,5 @@
       "recoveredCumulativeAvg7d": 6596256
     }
   ],
-  "updated": "2022-04-16T21:24:06+09:00"
+  "updated": "2022-04-16T21:42:47+09:00"
 }
