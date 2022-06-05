@@ -27242,17 +27242,17 @@
         0,
         1,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [],
       "dailyRecoveredStartDate": "Invalid date",
-      "deceased": 334,
+      "deceased": 335,
       "cruisePassenger": 0,
       "recovered": 97322,
       "critical": 0,
       "tested": 0,
-      "active": 4292,
+      "active": 4291,
       "confirmedByCity": {
         "Ogaki ": 2,
         "Gifu city": 28,
@@ -27273,7 +27273,7 @@
         "Gifiu city": 1,
         "Minokamo": 4
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "Invalid date",
       "dailyActive": [],
@@ -27281,7 +27281,7 @@
       "recoveredAdjustment": -1183,
       "reinfected": 0,
       "name_ja": "岐阜県",
-      "deaths": 334,
+      "deaths": 335,
       "name": "Gifu"
     },
     {
@@ -93764,11 +93764,11 @@
       "confirmed": 1134158,
       "newlyConfirmed": 2361,
       "yesterdayConfirmed": 2830,
-      "deceased": 3477,
+      "deceased": 3478,
       "recovered": 1096730,
       "critical": 0,
       "tested": 0,
-      "active": 33951,
+      "active": 33950,
       "dailyConfirmedCount": [
         0,
         0,
@@ -134350,18 +134350,18 @@
     {
       "confirmed": 14305,
       "confirmedCumulative": 8936647,
-      "deceased": 15,
-      "deceasedCumulative": 30571,
-      "reportedDeceased": 15,
-      "reportedDeceasedCumulative": 30571,
+      "deceased": 16,
+      "deceasedCumulative": 30572,
+      "reportedDeceased": 16,
+      "reportedDeceasedCumulative": 30572,
       "recovered": 27240,
       "recoveredCumulative": 8695313,
       "critical": -77,
       "criticalCumulative": 7,
       "tested": 78236,
       "testedCumulative": 53235782,
-      "active": -12950,
-      "activeCumulative": 210763,
+      "active": -12951,
+      "activeCumulative": 210762,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -134370,7 +134370,7 @@
       "date": "2022-06-05",
       "confirmedAdjustment": 7369,
       "recoveredAdjustment": 8385,
-      "deaths": 15,
+      "deaths": 16,
       "confirmedAvg3d": 17281,
       "confirmedAvg7d": 18508,
       "confirmedCumulativeAvg3d": 8921023,
@@ -134389,5 +134389,5 @@
       "recoveredCumulativeAvg7d": 8602949
     }
   ],
-  "updated": "2022-06-05T17:48:13+09:00"
+  "updated": "2022-06-05T18:33:57+09:00"
 }
