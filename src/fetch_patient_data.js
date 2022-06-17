@@ -5,7 +5,7 @@ const numberPattern = /[0-9]+$/;
 const shortDatePattern = /([0-9]+)\/([0-9]+)/;
 
 // Post processes the data to normalize field names etc.
-const postProcessData = (rows) => {
+const postProcessData = (rows, minimalOutput) => {
   // Check validity of the row.
   const isValidRow = (row) => {
     if (!row.patientId || row.patientId == "" || typeof row === "undefined") { return false; }
@@ -88,34 +88,42 @@ const postProcessData = (rows) => {
       return v;
     };
 
+    // Only use the essential fields.
     let transformedRow = {
       patientId: normalizeId(row.patientNumber),
       dateAnnounced: normalizeDate(row.dateAnnounced),
-      ageBracket: normalizeNumber(row.ageBracket),
-      gender: normalizeGender(row.gender),
-      residence: row.residenceCityPrefecture,
-      detectedCityTown: row.detectedCity,
       detectedPrefecture: row.detectedPrefecture,
       patientStatus: row.status,
       patientCount: normalizeCount(row.count),
-      knownCluster: row.knownCluster,
-      relatedPatients: row.relatedPatients,
-      mhlwPatientNumber: row.mhlwOrigPatientNumber,
-      prefecturePatientNumber: row.prefecturePatientNumber,
-      cityPrefectureNumber: row.cityPatientNumber,
-      deathSourceURL: row.deathSourceURL,
-      detectedAtPort: row.detectedAtPort,
       deceasedDate: parseShortDate(row.deceased, row.dateAnnounced),
       deceasedReportedDate: parseShortDate(row.deathReportedDate, row.dateAnnounced),
-      // Temporarily not reading these columns to minimize data export size.
-      //      'notes': row.notes,
-      //      'prefectureSourceURL': row.prefectureSourceURL,
-      //      'citySourceURL': row.citySourceURL,
-      //      'sourceURL': row.sourceS,
-      //      'prefectureURL': row.prefectureURLAuto,
-      //      'cityURL': row.cityURLAuto,
-      //      'deathURL': row.deathURLAuto
     };
+
+    if (!minimalOutput) {
+      transformedRow = Object.assign(transformRow, {
+        ageBracket: normalizeNumber(row.ageBracket),
+        gender: normalizeGender(row.gender),
+        residence: row.residenceCityPrefecture,
+        detectedCityTown: row.detectedCity,
+
+        knownCluster: row.knownCluster,
+        relatedPatients: row.relatedPatients,
+        mhlwPatientNumber: row.mhlwOrigPatientNumber,
+        prefecturePatientNumber: row.prefecturePatientNumber,
+        cityPrefectureNumber: row.cityPatientNumber,
+        deathSourceURL: row.deathSourceURL,
+        detectedAtPort: row.detectedAtPort,
+
+        // Temporarily not reading these columns to minimize data export size.
+        //      'notes': row.notes,
+        //      'prefectureSourceURL': row.prefectureSourceURL,
+        //      'citySourceURL': row.citySourceURL,
+        //      'sourceURL': row.sourceS,
+        //      'prefectureURL': row.prefectureURLAuto,
+        //      'cityURL': row.cityURLAuto,
+        //      'deathURL': row.deathURLAuto
+      });
+    }
 
     // filter empty cells.
     transformedRow = _.pickBy(transformedRow, (v, k) => {
@@ -188,9 +196,9 @@ const valuesFromCellObject = (cellObjectRows) => {
         transformed.deathSourceURL = v.hyperlink;
       }
     }
+
     return transformed;
   };
-
   const isValidRow = (row) => {
     if (!row) { return false; }
     if (typeof row.patientNumber === "undefined" || row.patientNumber == "") { return false; }
@@ -204,12 +212,12 @@ const fetchPatientData = async (sheetId, sheetName) => FetchSheet.fetchRows(shee
   .then((data) => postProcessData(data));
 
 // Fetching using the new fetchSheets API.
-const fetchPatientDataFromSheets = async (sheets) => FetchSheet.fetchSheets(sheets)
+const fetchPatientDataFromSheets = async (sheets, minimalOutput) => FetchSheet.fetchSheets(sheets)
   .then((responses) => {
     let allPatients = [];
     for (const sheets of responses) {
       for (const rowsOfSheet of sheets) {
-        const patients = postProcessData(valuesFromCellObject(rowsOfSheet));
+        const patients = postProcessData(valuesFromCellObject(rowsOfSheet), minimalOutput);
         allPatients = allPatients.concat(patients);
       }
     }

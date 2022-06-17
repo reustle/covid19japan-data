@@ -94,7 +94,7 @@ const mergeAndOutput = (allPatients, daily, prefectures, cruiseCounts, recoverie
   });
 };
 
-const fetchPatients = async (sheetId) => {
+const fetchPatients = async (sheetId, minimizeOutput, verbose) => {
   const tabsBatchSize = 6;
   let tabs = [
     "Patient Data",
@@ -111,22 +111,25 @@ const fetchPatients = async (sheetId) => {
   // Split tabs into requests with maximum tabBatchSize
   // to prevent response from being too long.
   const requests = [];
+  const minimal = minimizeOutput; // Minimize the data we read from the sheets
   while (tabs.length > 0) {
     const thisRequestTabs = tabs.slice(0, tabsBatchSize);
     tabs = tabs.slice(tabsBatchSize);
+    if (verbose) {
+      console.log(`Fetching ${thisRequestTabs}`);
+    }
     requests.push(FetchPatientData.fetchPatientDataFromSheets([{
       sheetId,
       tabs: thisRequestTabs,
-    }]));
+    }], minimal));
   }
   // Execute the requests.
   return Promise.all(requests)
     .then((patientLists) => _.flatten(patientLists));
 };
 
-const fetchAndSummarize = async (testDataDir, outputTestDataDir) => {
+const fetchAndSummarize = async (testDataDir, outputTestDataDir, minimizeOutput, verbose) => {
   const latestSheetId = "1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY";
-
   let daily = [];
   let prefectures = [];
   let cruiseCounts = [];
@@ -139,6 +142,9 @@ const fetchAndSummarize = async (testDataDir, outputTestDataDir) => {
     recoveries = JSON.parse(fs.readFileSync(`${testDataDir}/recoveries.json`));
     console.log(`Read daily,prefectures,cruiseCounts,recoveries from ${testDataDir}`);
   } else {
+    if (verbose) {
+      console.log("Fetching sum by day, prefecture data, etc");
+    }
     daily = await FetchSheet.fetchRows(latestSheetId, "Sum By Day");
     prefectures = await FetchSheet.fetchRows(latestSheetId, "Prefecture Data");
     cruiseCounts = await FetchSheet.fetchRows(latestSheetId, "Cruise Sum By Day");
@@ -159,7 +165,7 @@ const fetchAndSummarize = async (testDataDir, outputTestDataDir) => {
     allPatients = JSON.parse(fs.readFileSync(`${testDataDir}/allPatients.json`));
     console.log(`Read allPatients from ${testDataDir}`);
   } else {
-    allPatients = await fetchPatients(latestSheetId);
+    allPatients = await fetchPatients(latestSheetId, minimizeOutput, verbose);
     console.log(`Fetched allPatients from ${latestSheetId}`);
     if (outputTestDataDir) {
       writeSpreadsheets({ allPatients }, outputTestDataDir);
@@ -181,13 +187,18 @@ const fetchAndSummarize = async (testDataDir, outputTestDataDir) => {
 try {
   program.version("0.0.1");
   program
+    .option("-v, --verbose", "Verbose")
+    .option("--minimize-output", "Minimize data output to speed up processing")
     .option("-t, --test-data-dir <testDataDir>", "Use test data")
     .option("-o, --output-test-data-dir <outputTestDataDir>", "Output test data");
   program.parse(process.argv);
 
-  fetchAndSummarize(program.testDataDir, program.outputTestDataDir).then(() => {
+  const startTime = new Date();
+  fetchAndSummarize(program.testDataDir, program.outputTestDataDir, program.minimizeOutput, program.verbose).then(() => {
+    const interval = ((new Date()).getTime() - startTime.getTime()) / 1000;
     const used = process.memoryUsage().heapUsed / 1024 / 1024;
     console.log(`Memory used ${Math.round(used * 100) / 100} MB`);
+    console.log(`Time elapsed: ${interval}s`);
   });
 } catch (e) {
   console.error(e);
