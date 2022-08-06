@@ -84913,22 +84913,22 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [],
       "dailyRecoveredStartDate": "Invalid date",
-      "deceased": 42,
+      "deceased": 43,
       "cruisePassenger": 0,
       "recovered": 38605,
       "critical": 0,
       "tested": 0,
-      "active": 9319,
+      "active": 9318,
       "confirmedByCity": {
         "Matsue": 122,
         "Izumo": 8
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 0,
       "dailyActiveStartDate": "Invalid date",
       "dailyActive": [],
@@ -84936,7 +84936,7 @@
       "recoveredAdjustment": 0,
       "reinfected": 0,
       "name_ja": "島根県",
-      "deaths": 42,
+      "deaths": 43,
       "name": "Shimane"
     },
     {
@@ -90676,23 +90676,23 @@
         0,
         0,
         1,
-        0
+        1
       ],
       "dailyDeceasedStartDate": "2020-01-08",
       "dailyRecoveredCumulative": [],
       "dailyRecoveredStartDate": "Invalid date",
-      "deceased": 25,
+      "deceased": 26,
       "cruisePassenger": 0,
       "recovered": 24801,
       "critical": 0,
       "tested": 0,
-      "active": 8141,
+      "active": 8140,
       "confirmedByCity": {
         "Tottori City": 7,
         "Yonago": 3,
         "Tottori": 1
       },
-      "newlyDeceased": 0,
+      "newlyDeceased": 1,
       "yesterdayDeceased": 1,
       "dailyActiveStartDate": "Invalid date",
       "dailyActive": [],
@@ -90700,7 +90700,7 @@
       "recoveredAdjustment": 78,
       "reinfected": 0,
       "name_ja": "鳥取県",
-      "deaths": 25,
+      "deaths": 26,
       "name": "Tottori"
     },
     {
@@ -103108,11 +103108,11 @@
       "confirmed": 553188,
       "newlyConfirmed": 10849,
       "yesterdayConfirmed": 10777,
-      "deceased": 1076,
+      "deceased": 1078,
       "recovered": 456547,
       "critical": 0,
       "tested": 0,
-      "active": 95565,
+      "active": 95563,
       "dailyConfirmedCount": [
         0,
         0,
@@ -143712,18 +143712,18 @@
     {
       "confirmed": 227571,
       "confirmedCumulative": 14085649,
-      "deceased": 150,
-      "deceasedCumulative": 33221,
-      "reportedDeceased": 150,
-      "reportedDeceasedCumulative": 33221,
+      "deceased": 152,
+      "deceasedCumulative": 33223,
+      "reportedDeceased": 152,
+      "reportedDeceasedCumulative": 33223,
       "recovered": 203398,
       "recoveredCumulative": 11798154,
       "critical": 11,
       "criticalCumulative": 567,
       "tested": 358181,
       "testedCumulative": 64462892,
-      "active": 24023,
-      "activeCumulative": 2254274,
+      "active": 24021,
+      "activeCumulative": 2254272,
       "cruiseConfirmedCumulative": 861,
       "cruiseDeceasedCumulative": 13,
       "cruiseRecoveredCumulative": 848,
@@ -143732,16 +143732,16 @@
       "date": "2022-08-06",
       "confirmedAdjustment": 7370,
       "recoveredAdjustment": 8386,
-      "deaths": 150,
+      "deaths": 152,
       "confirmedAvg3d": 233363,
       "confirmedAvg7d": 213623,
       "confirmedCumulativeAvg3d": 13856009,
       "confirmedCumulativeAvg7d": 13401185,
-      "deceasedAvg3d": 169,
+      "deceasedAvg3d": 170,
       "deceasedAvg7d": 142,
       "deceasedCumulativeAvg3d": 33050,
       "deceasedCumulativeAvg7d": 32731,
-      "reportedDeceasedAvg3d": 169,
+      "reportedDeceasedAvg3d": 170,
       "reportedDeceasedAvg7d": 142,
       "reportedDeceasedCumulativeAvg3d": 33050,
       "reportedDeceasedCumulativeAvg7d": 32731,
@@ -143751,5 +143751,5 @@
       "recoveredCumulativeAvg7d": 11241868
     }
   ],
-  "updated": "2022-08-06T19:48:38+09:00"
+  "updated": "2022-08-06T20:23:55+09:00"
 }
