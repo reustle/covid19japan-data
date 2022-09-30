@@ -1,11 +1,4 @@
 name: Fetch and Summarize Data (Master)
-on: 
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: "*/15 * * * *"
-    
 jobs:
   summarize:
     name: summarize
@@ -23,7 +16,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        
+
       - name: Download and Generate JSON data
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
