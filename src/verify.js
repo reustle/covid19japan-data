@@ -1,5 +1,4 @@
 // Methods that are used to verify and fix any data issues before pushing.
-const _ = require('lodash')
 const moment = require('moment')
 // Verification of the daily summary.
 //
@@ -37,7 +36,7 @@ const verifyPrefectures = (prefectures) => {
       throw new Error(`PrefectureError: ${prefecture.name} has more recovered than confirmed`)
     }
   }
-  
+
 }
 
 const verifyPatients = (patients) => {

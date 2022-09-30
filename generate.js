@@ -10,6 +10,8 @@ const FetchSheet = require("./src/fetch_sheet");
 const MergePatients = require("./src/merge_patients");
 const Prefectures = require("./src/prefectures");
 const { writeSpreadsheets } = require("./src/test_data");
+const { fetchPrefectureCases } = require("./src/fetch_nhk.js");
+const { PATIENTS_FORMAT_COVID19JAPAN, PATIENTS_FORMAT_NHK } = require("./src/patient_format");
 
 const areSummariesDifferent = (summary, existingSummary) => {
   if (existingSummary.daily) {
@@ -61,15 +63,18 @@ const filterPatientForOutput = (patient) => {
   return filtered;
 };
 
-const mergeAndOutput = (allPatients, daily, prefectures, cruiseCounts, recoveries) => {
-  const patients = MergePatients.mergePatients(allPatients);
-  console.log(`Total patient rows fetched: ${patients.length}`);
+const mergeAndOutput = (patients, daily, prefectures, cruiseCounts, recoveries) => {
+  if (patients.format == PATIENTS_FORMAT_COVID19JAPAN) {
+    const mergedPatients = MergePatients.mergePatients(patients.patients);
+    console.log(`Total patient rows fetched: ${patients.length}`);
 
-  // Write patient data
-  const patientOutputFilename = "./docs/patient_data/latest.json";
-  const patientOutput = patients.map(filterPatientForOutput);
-  fs.writeFileSync(patientOutputFilename, JSON.stringify(patientOutput));
-  console.log(`Patients written to: ${patientOutputFilename}`);
+    // Write patient data
+    const patientOutputFilename = "./docs/patient_data/latest.json";
+    const patientOutput = mergedPatients.map(filterPatientForOutput);
+    fs.writeFileSync(patientOutputFilename, JSON.stringify(patientOutput));
+    console.log(`Patients written to: ${patientOutputFilename}`);
+    patients['patients'] = patientOutput;
+  }
 
   // Write daily and prefectural summary.
   const prefectureNames = Prefectures.prefectureNamesEn();
@@ -124,7 +129,7 @@ const fetchPatients = async (sheetId) => {
     .then((patientLists) => _.flatten(patientLists));
 };
 
-const fetchAndSummarize = async (testDataDir, outputTestDataDir) => {
+const fetchAndSummarize = async (patientsFormat, testDataDir, outputTestDataDir) => {
   const latestSheetId = "1vkw_Lku7F_F3F_iNmFFrDq9j7-tQ6EmZPOLpLt-s3TY";
 
   let daily = [];
@@ -159,14 +164,20 @@ const fetchAndSummarize = async (testDataDir, outputTestDataDir) => {
     allPatients = JSON.parse(fs.readFileSync(`${testDataDir}/allPatients.json`));
     console.log(`Read allPatients from ${testDataDir}`);
   } else {
-    allPatients = await fetchPatients(latestSheetId);
-    console.log(`Fetched allPatients from ${latestSheetId}`);
-    if (outputTestDataDir) {
-      writeSpreadsheets({ allPatients }, outputTestDataDir);
+    if (patientsFormat == PATIENTS_FORMAT_NHK) {
+      allPatients = await fetchPrefectureCases()
+    } else if (patientsFormat == PATIENTS_FORMAT_COVID19JAPAN) {
+      allPatients = await fetchPatients(latestSheetId);
+      console.log(`Fetched allPatients from ${latestSheetId}`);
+      if (outputTestDataDir) {
+        writeSpreadsheets({ allPatients }, outputTestDataDir);
+      }
     }
   }
 
-  return mergeAndOutput(allPatients, daily, prefectures, cruiseCounts, recoveries);
+  return mergeAndOutput(
+    { format: patientsFormat, patients: allPatients },
+    daily, prefectures, cruiseCounts, recoveries);
 };
 
 // Not yet completed.
@@ -178,17 +189,27 @@ const fetchAndSummarize = async (testDataDir, outputTestDataDir) => {
 //   fs.writeFileSync(prefecturePatientsFilename, JSON.stringify(prefecturePatients, null, "  "));
 // };
 
-try {
-  program.version("0.0.1");
-  program
-    .option("-t, --test-data-dir <testDataDir>", "Use test data")
-    .option("-o, --output-test-data-dir <outputTestDataDir>", "Output test data");
-  program.parse(process.argv);
+const main = async () => {
+  try {
+    program.version("0.0.1");
+    program
+      .option("-t, --test-data-dir <testDataDir>", "Use test data")
+      .option("-o, --output-test-data-dir <outputTestDataDir>", "Output test data")
+      .option('-f, --format <format>', 'Patient data format', PATIENTS_FORMAT_NHK);
+    program.parse(process.argv);
 
-  fetchAndSummarize(program.testDataDir, program.outputTestDataDir).then(() => {
-    const used = process.memoryUsage().heapUsed / 1024 / 1024;
-    console.log(`Memory used ${Math.round(used * 100) / 100} MB`);
-  });
-} catch (e) {
-  console.error(e);
+    if (program.testNhk) {
+      fetchPrefectureCases().then(cases => console.log(cases))
+      return
+    }
+
+    fetchAndSummarize(program.format, program.testDataDir, program.outputTestDataDir).then(() => {
+      const used = process.memoryUsage().heapUsed / 1024 / 1024;
+      console.log(`Memory used ${Math.round(used * 100) / 100} MB`);
+    });
+  } catch (e) {
+    console.error(e);
+  }
 }
+
+main()
