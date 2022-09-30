@@ -64,7 +64,7 @@ const filterPatientForOutput = (patient) => {
 };
 
 const mergeAndOutput = (patients, daily, prefectures, cruiseCounts, recoveries) => {
-  if (patients.format == 'covid19japan') {
+  if (patients.format == PATIENTS_FORMAT_COVID19JAPAN) {
     const mergedPatients = MergePatients.mergePatients(patients.patients);
     console.log(`Total patient rows fetched: ${patients.length}`);
 
