@@ -4,13 +4,19 @@ const fs = require('fs')
 
 const prefectureNamesEn = () => {
   let prefecturesCsv = fs.readFileSync('./src/statusboard/prefectures.csv', 'utf8')
-  let prefecturesList = Papa.parse(prefecturesCsv, {header: true})
+  let prefecturesList = Papa.parse(prefecturesCsv, { header: true })
   return _.map(prefecturesList.data, o => o.prefecture_en)
+}
+
+const prefectureJaToEn = () => {
+  let prefecturesCsv = fs.readFileSync('./src/statusboard/prefectures.csv', 'utf8')
+  let prefecturesList = Papa.parse(prefecturesCsv, { header: true })
+  return Object.fromEntries(_.map(prefecturesList.data, o => [o.prefecture_ja, o.prefecture_en]))
 }
 
 const regionPrefectures = () => {
   let prefecturesCsv = fs.readFileSync('./src/statusboard/prefectures.csv', 'utf8')
-  let prefecturesList = Papa.parse(prefecturesCsv, {header: true})
+  let prefecturesList = Papa.parse(prefecturesCsv, { header: true })
   let regions = {}
   for (let prefecture of prefecturesList.data) {
     if (prefecture.region) {
@@ -26,3 +32,4 @@ const regionPrefectures = () => {
 
 exports.prefectureNamesEn = prefectureNamesEn;
 exports.regionPrefectures = regionPrefectures;
+exports.prefectureJaToEn = prefectureJaToEn
