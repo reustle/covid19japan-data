@@ -28,6 +28,11 @@ const areSummariesDifferent = (summary, existingSummary) => {
 };
 
 const calculateLastUpdated = async (summary) => {
+  const lastDay = summary.daily[summary.daily.length - 1];
+  return lastDay.date;
+}
+
+const __calculateLastUpdated = async (summary) => {
   let lastUpdated = null;
   const existingSummaryData = fs.readFileSync("./docs/summary/latest.json");
   if (existingSummaryData) {
